@@ -18,4 +18,5 @@ async function refreshAuthUI(){const {data:{user}}=await sb.auth.getUser();docum
 function course(id){show(id+' · Vista del curso','<p>La experiencia del curso está preparada para conectar video-lecciones, PDFs, ejercicios, evaluación y progreso del estudiante.</p>')}
 function plan(name){show('Plan '+name,'<p>La selección comercial está preparada. El cobro recurrente se activará cuando conectemos el proveedor de pagos.</p>')}
 function growth(name){show(name+' · Fase 4','<p>Este módulo forma parte de la expansión de PLUTÓN ACADEMIC.</p>')}
-sb.auth.onAuthStateChange(()=>refreshAuthUI());refreshAuthUI();
+sb.auth.onAuthStateChange(()=>refreshAuthUI());refreshAuthUI();_
+// Supabase connected
