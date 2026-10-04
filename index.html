@@ -3,86 +3,73 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PLUTÓN ACADEMIC | Tu futuro comienza con conocimiento</title>
-<meta name="description" content="Cursos prácticos, membresías y certificaciones para impulsar tu crecimiento personal y profesional.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="#inicio"><span class="planet">♇</span><span>PLUTÓN <b>ACADEMIC</b></span></a>
-  <button class="menu" aria-label="Abrir menú" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
-  <nav class="links">
-    <a href="#inicio">Inicio</a><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a>
-    <a href="#certificados">Certificados</a><a href="#estudiante">Mi Cuenta</a><a class="mini" href="#contacto">Comenzar</a>
-  </nav>
+<header>
+  <a class="brand" href="#inicio"><span class="planet">◉</span><span>PLUTÓN <b>ACADEMIC</b></span></a>
+  <button class="menu" aria-label="Menú" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+  <nav><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a><a href="#plataforma">Mi plataforma</a><a href="#certificados">Certificados</a><button onclick="openLogin()">Iniciar sesión</button></nav>
 </header>
 
-<main>
-<section id="inicio" class="hero">
+<main id="inicio">
+<section class="hero">
  <div class="stars"></div>
  <div class="hero-copy">
-  <p class="eyebrow">CONOCIMIENTO HOY · OPORTUNIDADES MAÑANA</p>
-  <h1>Tu futuro comienza<br><span>con conocimiento.</span></h1>
-  <p class="lead">Cursos prácticos, actualizados y diseñados para tu crecimiento personal y profesional.</p>
-  <div class="actions"><a class="btn" href="#cursos">Explorar cursos →</a><a class="ghost" href="#membresias">Ver membresías</a></div>
-  <div class="trust"><span>✓ Aprende a tu ritmo</span><span>✓ Certificados digitales</span><span>✓ Acceso desde cualquier dispositivo</span></div>
+   <span class="eyebrow">EDUCACIÓN DIGITAL · A TU RITMO</span>
+   <h1>Tu futuro comienza<br><em>con conocimiento.</em></h1>
+   <p>Aprende habilidades prácticas, avanza a tu ritmo y construye nuevas oportunidades con una experiencia educativa moderna.</p>
+   <div class="actions"><a class="primary" href="#cursos">Explorar cursos</a><a class="secondary" href="#membresias">Ver membresías</a></div>
+   <div class="trust"><span>✓ 100% online</span><span>✓ Certificados digitales</span><span>✓ Multidispositivo</span></div>
  </div>
- <div class="orbit"><div class="pluto">♇</div><div class="ring"></div><div class="glow"></div></div>
+ <div class="orb"><div class="ring"></div><div class="pluto">P</div><small>PLUTÓN ACADEMIC</small></div>
 </section>
 
-<section class="section intro">
- <p class="eyebrow">APRENDE · CRECE · CERTIFÍCATE</p>
- <h2>Una academia creada para avanzar</h2>
- <p>PLUTÓN ACADEMIC reúne formación, recursos y seguimiento en una experiencia moderna y accesible.</p>
- <div class="features">
-  <article><i>01</i><h3>Contenido práctico</h3><p>Aprendizaje enfocado en conocimientos que puedes aplicar.</p></article>
-  <article><i>02</i><h3>Progreso organizado</h3><p>Continúa tus cursos y consulta tus materiales desde tu área personal.</p></article>
-  <article><i>03</i><h3>Certificación</h3><p>Completa tu formación y conserva tus certificados digitales.</p></article>
- </div>
-</section>
-
-<section id="cursos" class="section dark">
- <p class="eyebrow">CATÁLOGO</p><h2>Explora nuevas posibilidades</h2>
+<section id="cursos" class="section">
+ <div class="heading"><span>CATÁLOGO INICIAL</span><h2>Aprendizaje práctico para avanzar</h2><p>Rutas diseñadas para convertir conocimiento en habilidades aplicables.</p></div>
+ <div class="filters"><button class="active" data-filter="all">Todos</button><button data-filter="salud">Salud</button><button data-filter="profesional">Desarrollo profesional</button></div>
  <div class="grid courses">
-  <article><span>✚</span><h3>Salud y Ciencias Médicas</h3><p>Formación para ampliar conocimientos en el área de salud.</p></article>
-  <article><span>⌘</span><h3>Tecnología y Computación</h3><p>Herramientas digitales y habilidades para el mundo actual.</p></article>
-  <article><span>↗</span><h3>Negocios y Emprendimiento</h3><p>Ideas, gestión y estrategias para desarrollar proyectos.</p></article>
-  <article><span>★</span><h3>Desarrollo Personal</h3><p>Habilidades para crecer, comunicar y alcanzar objetivos.</p></article>
-  <article><span>A</span><h3>Idiomas</h3><p>Aprendizaje práctico para comunicarte con más confianza.</p></article>
-  <article><span>◆</span><h3>Oficios y Habilidades Prácticas</h3><p>Conocimientos útiles orientados a la vida y el trabajo.</p></article>
-  <article><span>✓</span><h3>Preparación de Exámenes</h3><p>Recursos organizados para estudiar con un objetivo claro.</p></article>
-  <article><span>∞</span><h3>Estilo de Vida y Bienestar</h3><p>Contenido para apoyar hábitos y crecimiento integral.</p></article>
+  <article data-cat="salud"><span class="code">PA-101</span><div class="icon">✚</div><h3>Asistente de Enfermería: Fundamentos</h3><p>Cuidado, seguridad, higiene, comunicación y apoyo al residente/paciente.</p><small>Nivel inicial</small><button onclick="course('PA-101')">Ver curso →</button></article>
+  <article data-cat="salud"><span class="code">PA-102</span><div class="icon">♥</div><h3>Signos Vitales y Cuidado Básico</h3><p>Temperatura, pulso, respiración, presión arterial y registro.</p><small>Nivel inicial</small><button onclick="course('PA-102')">Ver curso →</button></article>
+  <article data-cat="salud"><span class="code">PA-105</span><div class="icon">◈</div><h3>Introducción a Flebotomía</h3><p>Punción venosa, tubos, orden de extracción y errores frecuentes.</p><small>Nivel intermedio</small><button onclick="course('PA-105')">Ver curso →</button></article>
+  <article data-cat="salud"><span class="code">PA-106</span><div class="icon">⌁</div><h3>Fundamentos de ECG</h3><p>Anatomía cardíaca, conducción eléctrica, 12 derivaciones y procedimiento.</p><small>Nivel intermedio</small><button onclick="course('PA-106')">Ver curso →</button></article>
+  <article data-cat="profesional"><span class="code">PA-201</span><div class="icon">★</div><h3>Servicio al Cliente Profesional</h3><p>Comunicación, presentación, resolución de problemas y experiencia del cliente.</p><small>Nivel profesional</small><button onclick="course('PA-201')">Ver curso →</button></article>
+  <article data-cat="profesional"><span class="code">PA-203</span><div class="icon">⌘</div><h3>Herramientas Digitales e IA</h3><p>Productividad, documentos, organización y uso responsable de inteligencia artificial.</p><small>Nivel profesional</small><button onclick="course('PA-203')">Ver curso →</button></article>
  </div>
 </section>
 
-<section id="membresias" class="section">
- <p class="eyebrow">MEMBRESÍAS</p><h2>Elige cómo quieres aprender</h2>
- <div class="grid plans">
-  <article><h3>Básica</h3><div class="price">$9.99<small> USD/mes</small></div><p>Una puerta de entrada a PLUTÓN ACADEMIC.</p><ul><li>Acceso a contenido seleccionado</li><li>Recursos de aprendizaje</li><li>Comunidad académica</li></ul><a href="#contacto" class="ghost">Elegir Básica</a></article>
-  <article class="featured"><div class="badge">MÁS POPULAR</div><h3>Premium</h3><div class="price">$19.99<small> USD/mes</small></div><p>Más herramientas para acelerar tu aprendizaje.</p><ul><li>Acceso ampliado a cursos</li><li>Recursos y comunidad</li><li>Asesorías y beneficios especiales</li></ul><a href="#contacto" class="btn">Elegir Premium</a></article>
-  <article><h3>Pro</h3><div class="price">$29.99<small> USD/mes</small></div><p>La experiencia más completa de la academia.</p><ul><li>Acceso avanzado</li><li>Tutorías y acceso anticipado</li><li>Descuentos y soporte prioritario</li></ul><a href="#contacto" class="ghost">Elegir Pro</a></article>
+<section id="plataforma" class="platform">
+ <div>
+  <span class="eyebrow">EXPERIENCIA DEL ESTUDIANTE</span><h2>Todo tu aprendizaje<br>en un solo lugar.</h2>
+  <p>Una plataforma diseñada para acompañarte desde tu primera lección hasta tu certificado.</p>
+  <div class="feature-list"><span>▶ Mis cursos</span><span>▰ Materiales y recursos</span><span>✓ Mi progreso</span><span>♜ Certificados</span></div>
  </div>
-</section>
-
-<section id="certificados" class="section dark split">
- <div><p class="eyebrow">CERTIFICADOS</p><h2>Convierte tu progreso en un logro visible</h2><p>Al completar formaciones elegibles podrás acceder a certificados digitales desde tu área de estudiante.</p><a class="btn" href="#estudiante">Conocer el área estudiantil</a></div>
- <div class="certificate"><div class="seal">♇</div><small>PLUTÓN ACADEMIC</small><h3>CERTIFICADO</h3><p>DE FINALIZACIÓN</p><hr><b>Tu logro. Tu próximo paso.</b></div>
-</section>
-
-<section id="estudiante" class="section">
- <p class="eyebrow">ÁREA DEL ESTUDIANTE</p><h2>Todo tu aprendizaje en un solo lugar</h2>
  <div class="dashboard">
-  <div class="side"><b>PLUTÓN</b><span>Mi Aprendizaje</span><span>Certificados</span><span>Biblioteca</span><span>Perfil</span><span>Soporte</span></div>
-  <div class="dashmain"><small>BIENVENIDO</small><h3>Continúa construyendo tu futuro</h3><div class="lesson"><b>Curso en progreso</b><p>Tu avance académico</p><div class="bar"><i></i></div><button>Continuar curso</button></div></div>
+  <div class="dash-head"><b>Hola, Estudiante</b><span>Mi cuenta</span></div>
+  <div class="progress"><small>PROGRESO GENERAL</small><strong>68%</strong><div><i></i></div></div>
+  <div class="lesson"><b>PA-101 · Fundamentos</b><span>75% completo</span></div>
+  <div class="lesson"><b>PA-106 · ECG</b><span>42% completo</span></div>
+  <button onclick="openLogin()">Entrar a mi plataforma</button>
  </div>
- <p class="note">Vista previa de la experiencia del estudiante. Las funciones de cuenta y pagos se activarán en la siguiente etapa de la plataforma.</p>
 </section>
 
-<section id="contacto" class="cta">
- <p class="eyebrow">PLUTÓN ACADEMIC</p><h2>Tu futuro comienza hoy.</h2>
- <p>Aprende. Crece. Certifícate.</p>
- <a class="btn" href="mailto:info@plutonacademic.com">info@plutonacademic.com</a>
+<section id="membresias" class="section memberships">
+ <div class="heading"><span>MEMBRESÍAS</span><h2>Elige cómo quieres aprender</h2><p>Precios de lanzamiento sujetos a ajuste antes de la apertura comercial.</p></div>
+ <div class="grid plans">
+  <article><h3>START</h3><div class="price">$14.99<small>/mes</small></div><p>Biblioteca digital<br>Selección básica de cursos<br>Nuevos recursos periódicos<br>Certificados: pago por curso</p><button onclick="plan('START')">Seleccionar</button></article>
+  <article class="featured"><span class="popular">MÁS COMPLETO</span><h3>PLUS</h3><div class="price">$29.99<small>/mes</small></div><p>Catálogo ampliado<br>Contenido premium<br>Recursos prioritarios<br>Certificados seleccionados</p><button onclick="plan('PLUS')">Seleccionar</button></article>
+  <article><h3>PREMIUM</h3><div class="price">$49.99<small>/mes</small></div><p>Catálogo completo<br>Contenido premium<br>Certificados incluidos<br>Prioridad y recursos exclusivos</p><button onclick="plan('PREMIUM')">Seleccionar</button></article>
+ </div>
+</section>
+
+<section id="certificados" class="certificate">
+ <div class="cert-card"><div class="seal">PA</div><small>PLUTÓN ACADEMIC</small><h2>CERTIFICADO<br>DE FINALIZACIÓN</h2><p>Este certificado se otorga a</p><strong>Tu Nombre</strong><p>por haber completado satisfactoriamente el curso</p><div class="cert-foot"><span>RUSLAN VALDES<br><small>Fundador</small></span><span>PA-XXXX-XXXX<br><small>Código de verificación</small></span></div></div>
+ <div><span class="eyebrow">CERTIFICACIÓN DIGITAL</span><h2>Reconoce cada logro.</h2><p>Los cursos elegibles incluyen certificado digital de finalización con identificación del estudiante, curso, fecha y código de verificación.</p><p class="note">Conocimiento hoy · Oportunidades mañana.</p></div>
 </section>
 </main>
-<footer><div class="brand"><span class="planet">♇</span><span>PLUTÓN <b>ACADEMIC</b></span></div><p>Tu futuro comienza con conocimiento.</p><p>© 2026 PLUTÓN ACADEMIC</p></footer>
-<script>document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>document.querySelector('.links').classList.remove('open'));</script>
+
+<footer><div class="brand"><span class="planet">◉</span> PLUTÓN <b>ACADEMIC</b></div><p>Educación práctica para construir nuevas oportunidades.</p><small>© 2026 PLUTÓN ACADEMIC · Fundador: Ruslan Valdes</small></footer>
+
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modal-card"><button class="x" onclick="closeModal()">×</button><span class="eyebrow">PLUTÓN ACADEMIC</span><h2 id="modalTitle">Área del estudiante</h2><p id="modalText">La interfaz está preparada. La activación de cuentas y pagos se conectará al backend seguro antes del lanzamiento comercial.</p><button class="primary" onclick="closeModal()">Entendido</button></div></div>
+<script src="app.js"></script>
 </body></html>
