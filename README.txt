@@ -1,22 +1,18 @@
-PLUTÓN ACADEMIC — FASE 4 · CRECIMIENTO
-
-Actualización sobre la Fase 3.
-
-Archivos para subir a la raíz del repositorio Pluton-Academy:
-- index.html
-- styles.css
-- app.js
-- README.txt
+PLUTÓN ACADEMIC — ACTUALIZACIÓN CUENTAS REALES (SUPABASE)
 
 Incluye:
-- Conservación completa de Fase 3
-- Nueva sección Fase 4 · Crecimiento
-- App PLUTÓN (presentación/preparación)
-- Comunidad de estudiantes (presentación/preparación)
-- Automatizaciones (presentación/preparación)
-- Expansión de nuevos cursos
-- Ecosistema PLUTÓN y métricas visuales
-- Diseño responsive móvil
+- Registro real por correo y contraseña.
+- Confirmación de correo mediante Supabase.
+- Inicio y cierre de sesión.
+- Recuperación de contraseña.
+- Integración con el proyecto Supabase mediante Project URL + Publishable Key.
+- Mantiene la interfaz y contenido de Fase 4.
 
-IMPORTANTE:
-Esta entrega amplía el frontend público. Las funciones operativas que requieren backend —cuentas reales, autenticación, pagos, comunidad persistente, notificaciones y app nativa— todavía requieren conexión a servicios seguros antes del lanzamiento comercial.
+SEGURIDAD:
+- Solo se incluye la Publishable Key, diseñada para cliente web.
+- NO incluye contraseña de base de datos, secret key ni service_role.
+
+SIGUIENTE CONFIGURACIÓN:
+- Configurar Site URL / Redirect URLs en Supabase para https://plutonacademy.com
+- Probar registro real con un correo.
+- Después: perfiles/progreso en base de datos y pagos/membresías.
