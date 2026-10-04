@@ -1,0 +1,1 @@
+PLUTÓN ACADEMIC v2 — Static site package for Cloudflare. Upload index.html and styles.css as static assets. Domain: plutonacademic.com
