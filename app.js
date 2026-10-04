@@ -5,3 +5,4 @@ function course(id){show(id+" · Vista del curso","La ficha y experiencia del cu
 function plan(name){show("Plan "+name,"La selección comercial está preparada. El cobro recurrente se activará cuando se conecte el proveedor de pagos y se confirmen los precios finales.")}
 function show(t,p){document.getElementById("modalTitle").textContent=t;document.getElementById("modalText").textContent=p;document.getElementById("modal").classList.add("show")}
 function closeModal(){document.getElementById("modal").classList.remove("show")}
+function growth(name){show(name+" · Fase 4","Este módulo forma parte de la expansión de PLUTÓN ACADEMIC. La experiencia visual ya está integrada; las funciones que requieren cuentas, notificaciones, comunidad o app nativa se conectarán con servicios seguros durante la implementación operativa.")}
