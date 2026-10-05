@@ -2,7 +2,7 @@ const SUPABASE_URL='https://paifjzznyiehwidoqjqb.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY='sb_publishable_-Ip2JRpDGn-Ehx2C94Tk3Q_jg7p7VLz';
 const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 
-const filters=document.querySelectorAll('.filters button'),cards=document.querySelectorAll('.courses article');
+if (document.querySelector('.filters')) {const filters=document.querySelectorAll('.filters button'),cards=document.querySelectorAll('.courses article');
 filters.forEach(b=>b.addEventListener('click',()=>{filters.forEach(x=>x.classList.remove('active'));b.classList.add('active');cards.forEach(c=>c.style.display=b.dataset.filter==='all'||c.dataset.cat===b.dataset.filter?'block':'none')}));
 
 function show(t,html){document.getElementById('modalTitle').textContent=t;document.getElementById('modalText').innerHTML=html;document.getElementById('modal').classList.add('show')}
