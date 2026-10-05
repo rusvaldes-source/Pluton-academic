@@ -21,14 +21,14 @@ function growth(name){show(name+' · Fase 4','<p>Este módulo forma parte de la 
 sb.auth.onAuthStateChange(()=>refreshAuthUI());refreshAuthUI();_
 // Supabase connected
 // Student dashboard
-if (window.location.pathname.includes('dashboard')) {
+if (window.location.pathname.includes('dashboard.html')) {
   sb.auth.getSession().then(({ data }) => {
     if (!data.session) {
       window.location.href = '/';
       return;
     }
 
-    const email = document.getElementById('student-email');
+    const email = document.getElementById('studentEmail');
     if (email) {
       email.textContent = data.session.user.email;
     }
