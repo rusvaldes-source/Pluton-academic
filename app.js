@@ -19,26 +19,25 @@ function course(id){show(id+' · Vista del curso','<p>La experiencia del curso e
 function plan(name){show('Plan '+name,'<p>La selección comercial está preparada. El cobro recurrente se activará cuando conectemos el proveedor de pagos.</p>')}
 function growth(name){show(name+' · Fase 4','<p>Este módulo forma parte de la expansión de PLUTÓN ACADEMIC.</p>')}
 sb.auth.onAuthStateChange(()=>refreshAuthUI());refreshAuthUI();_
-// Supabase connected
-// Student dashboard
 // PANEL ESTUDIANTE
-if (document.getElementById("student-email")) {
-  sb.auth.getSession().then(({ data, error }) => {
-    const userEmail = document.getElementById("student-email");
+const studentEmail = document.getElementById('student-email');
 
-    if (error) {
-      userEmail.textContent = "Error al cargar la cuenta";
+if (studentEmail) {
+  sb.auth.getUser().then(({ data, error }) => {
+    if (error || !data.user) {
+      studentEmail.textContent = 'Sesión no iniciada';
       return;
     }
 
-    const user = data?.session?.user;
-
-    if (user) {
-      userEmail.textContent = user.email;
-    } else {
-      userEmail.textContent = "Sesión no iniciada";
-      window.location.href = "login.html";
-    }
+    studentEmail.textContent = data.user.email;
   });
 }
+
+const logoutButton = document.getElementById('logoutButton');
+
+if (logoutButton) {
+  logoutButton.addEventListener('click', async () => {
+    await sb.auth.signOut();
+    window.location.href = '/';
+  });
 }
