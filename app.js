@@ -1,58 +1,85 @@
 const SUPABASE_URL = 'https://paifjzznyiehwidoqjqb.supabase.co';
-const SUPABASE_PUBLISHABLE_KEY ="sb_publishable_Ip2JRpDGn-Ehx2C94Tk3Q_jg7p7VLz"; 
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_Ip2JRpDGn-Ehx2C94Tk3Q_jg7p7VLz';
 
 const sb = window.supabase.createClient(
   SUPABASE_URL,
   SUPABASE_PUBLISHABLE_KEY
 );
 
-// PANEL DEL ESTUDIANTE
-async function loadStudent() {
-  const studentEmail = document.getElementById('student-email');
-
-  if (!studentEmail) return;
-
-  studentEmail.textContent = 'Comprobando sesión...';
-
-  try {
-    const { data, error } = await sb.auth.getSession();
-
-    if (error) {
-      console.error(error);
-      studentEmail.textContent = 'Error al comprobar la sesión';
-      return;
-    }
-
-    const user = data?.session?.user;
-
-    if (!user) {
-      studentEmail.textContent = 'Sesión no iniciada';
-      return;
-    }
-
-    studentEmail.textContent = user.email;
-  } catch (error) {
-    console.error(error);
-    studentEmail.textContent = 'Error al cargar tu cuenta';
-  }
+function show(title, html) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalText').innerHTML = html;
+  document.getElementById('modal').classList.add('show');
 }
 
-// CERRAR SESIÓN
-async function closeStudentSession() {
-  await sb.auth.signOut();
-  window.location.href = '/';
+function closeModal() {
+  document.getElementById('modal').classList.remove('show');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  loadStudent();
+function authMessage(msg) {
+  const e = document.getElementById('authMessage');
+  if (e) e.textContent = msg;
+}
 
-  const logoutButton = document.getElementById('logoutButton');
+function openLogin() {
+  show('Área del estudiante', `
+    <div class="auth-box">
+      <label>Correo electrónico</label>
+      <input id="authEmail" type="email" autocomplete="email">
 
-  if (logoutButton) {
-    logoutButton.addEventListener('click', closeStudentSession);
+      <label>Contraseña</label>
+      <input id="authPassword" type="password" autocomplete="current-password">
+
+      <button onclick="signIn()">Iniciar sesión</button>
+      <button onclick="signUp()">Crear cuenta</button>
+      <button onclick="resetPassword()">Olvidé mi contraseña</button>
+
+      <p id="authMessage"></p>
+    </div>
+  `);
+}
+
+async function signUp() {
+  const email = document.getElementById('authEmail').value.trim();
+  const password = document.getElementById('authPassword').value;
+
+  if (!email || password.length < 6) {
+    authMessage('Escribe un correo válido y una contraseña de al menos 6 caracteres.');
+    return;
   }
-});
 
-sb.auth.onAuthStateChange(() => {
-  loadStudent();
-});
+  authMessage('Creando cuenta...');
+
+  const { error } = await sb.auth.signUp({
+    email,
+    password,
+    options: {
+      emailRedirectTo: location.origin
+    }
+  });
+
+  if (error) {
+    authMessage(error.message);
+    return;
+  }
+
+  authMessage('Revisa tu correo para confirmar tu cuenta.');
+}
+
+async function signIn() {
+  const email = document.getElementById('authEmail').value.trim();
+  const password = document.getElementById('authPassword').value;
+
+  authMessage('Entrando...');
+
+  const { error } = await sb.auth.signInWithPassword({
+    email,
+    password
+  });
+
+  if (error) {
+    authMessage(error.message);
+    return;
+  }
+
+  window.location.href =
