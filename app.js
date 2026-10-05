@@ -28,7 +28,7 @@ if (window.location.pathname.includes('dashboard.html')) {
       return;
     }
 
-    const email = document.getElementById('studentEmail');
+    const email = document.getElementById('student-email');
     if (email) {
       email.textContent = data.session.user.email;
     }
