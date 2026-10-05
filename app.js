@@ -1,10 +1,11 @@
 const SUPABASE_URL = 'https://paifjzznyiehwidoqjqb.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_Ip2JRpDGn-Ehx2C94Tk3Q_jg7p7VLz';
+let sb = null;
+if (window.supabase) {
+  sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+}
 
-const sb = window.supabase.createClient(
-  SUPABASE_URL,
-  SUPABASE_PUBLISHABLE_KEY
-);
+
 
 // MODAL
 function show(title, html) {
