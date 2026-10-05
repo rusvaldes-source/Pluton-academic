@@ -14,7 +14,7 @@ async function signUp(){const email=document.getElementById('authEmail').value.t
 async function signIn(){const email=document.getElementById('authEmail').value.trim(),password=document.getElementById('authPassword').value;if(!email||!password)return authMessage('Escribe tu correo y contraseña.');authMessage('Entrando…');const {error}=await sb.auth.signInWithPassword({email,password});if(error)return authMessage('No pudimos iniciar sesión. Verifica tus datos y la confirmación del correo.');closeModal();await refreshAuthUI()}
 async function resetPassword(){const email=document.getElementById('authEmail').value.trim();if(!email)return authMessage('Escribe primero tu correo electrónico.');const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin});if(error)return authMessage(error.message);authMessage('Te enviamos un enlace para restablecer tu contraseña.',true)}
 async function signOut(){await sb.auth.signOut();await refreshAuthUI()}
-async function refreshAuthUI(){return;}
+async function refreshAuthUI(){const {data}=await sb.auth.getUser();const e=document.getElementById('student-email');if(e)e.textContent=data.user?data.user.email:'Sesión no iniciada';}
 function course(id){show(id+' · Vista del curso','<p>La experiencia del curso está preparada para conectar video-lecciones, PDFs, ejercicios, evaluación y progreso del estudiante.</p>')}
 function plan(name){show('Plan '+name,'<p>La selección comercial está preparada. El cobro recurrente se activará cuando conectemos el proveedor de pagos.</p>')}
 function growth(name){show(name+' · Fase 4','<p>Este módulo forma parte de la expansión de PLUTÓN ACADEMIC.</p>')}
