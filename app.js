@@ -6,45 +6,78 @@ const sb = window.supabase.createClient(
   SUPABASE_PUBLISHABLE_KEY
 );
 
+// MODAL
 function show(title, html) {
-  document.getElementById('modalTitle').textContent = title;
-  document.getElementById('modalText').innerHTML = html;
-  document.getElementById('modal').classList.add('show');
+  const modal = document.getElementById('modal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalText = document.getElementById('modalText');
+
+  if (!modal || !modalTitle || !modalText) return;
+
+  modalTitle.textContent = title;
+  modalText.innerHTML = html;
+  modal.classList.add('show');
 }
 
 function closeModal() {
-  document.getElementById('modal').classList.remove('show');
+  const modal = document.getElementById('modal');
+  if (modal) modal.classList.remove('show');
 }
 
-function authMessage(msg) {
-  const e = document.getElementById('authMessage');
-  if (e) e.textContent = msg;
+function authMessage(message) {
+  const element = document.getElementById('authMessage');
+  if (element) element.textContent = message;
 }
 
+// LOGIN
 function openLogin() {
-  show('Área del estudiante', `
+  show(
+    'Área del estudiante',
+    `
     <div class="auth-box">
       <label>Correo electrónico</label>
-      <input id="authEmail" type="email" autocomplete="email">
+      <input
+        id="authEmail"
+        type="email"
+        autocomplete="email"
+        placeholder="tu@email.com"
+      >
 
       <label>Contraseña</label>
-      <input id="authPassword" type="password" autocomplete="current-password">
+      <input
+        id="authPassword"
+        type="password"
+        autocomplete="current-password"
+        placeholder="Contraseña"
+      >
 
-      <button onclick="signIn()">Iniciar sesión</button>
-      <button onclick="signUp()">Crear cuenta</button>
-      <button onclick="resetPassword()">Olvidé mi contraseña</button>
+      <button type="button" onclick="signIn()">
+        Iniciar sesión
+      </button>
+
+      <button type="button" onclick="signUp()">
+        Crear cuenta
+      </button>
+
+      <button type="button" onclick="resetPassword()">
+        Olvidé mi contraseña
+      </button>
 
       <p id="authMessage"></p>
     </div>
-  `);
+    `
+  );
 }
 
+// CREAR CUENTA
 async function signUp() {
-  const email = document.getElementById('authEmail').value.trim();
-  const password = document.getElementById('authPassword').value;
+  const email = document.getElementById('authEmail')?.value.trim();
+  const password = document.getElementById('authPassword')?.value;
 
-  if (!email || password.length < 6) {
-    authMessage('Escribe un correo válido y una contraseña de al menos 6 caracteres.');
+  if (!email || !password || password.length < 6) {
+    authMessage(
+      'Escribe un correo válido y una contraseña de al menos 6 caracteres.'
+    );
     return;
   }
 
@@ -54,7 +87,7 @@ async function signUp() {
     email,
     password,
     options: {
-      emailRedirectTo: location.origin
+      emailRedirectTo: window.location.origin
     }
   });
 
@@ -66,9 +99,15 @@ async function signUp() {
   authMessage('Revisa tu correo para confirmar tu cuenta.');
 }
 
+// INICIAR SESIÓN
 async function signIn() {
-  const email = document.getElementById('authEmail').value.trim();
-  const password = document.getElementById('authPassword').value;
+  const email = document.getElementById('authEmail')?.value.trim();
+  const password = document.getElementById('authPassword')?.value;
+
+  if (!email || !password) {
+    authMessage('Escribe tu correo y contraseña.');
+    return;
+  }
 
   authMessage('Entrando...');
 
@@ -83,4 +122,63 @@ async function signIn() {
   }
 
   window.location.href = 'dashboard.html';
+}
+
+// RECUPERAR CONTRASEÑA
+async function resetPassword() {
+  const email = document.getElementById('authEmail')?.value.trim();
+
+  if (!email) {
+    authMessage('Escribe primero tu correo electrónico.');
+    return;
+  }
+
+  authMessage('Enviando enlace...');
+
+  const { error } = await sb.auth.resetPasswordForEmail(email, {
+    redirectTo: window.location.origin
+  });
+
+  if (error) {
+    authMessage(error.message);
+    return;
+  }
+
+  authMessage('Revisa tu correo para restablecer la contraseña.');
+}
+
+// CURSOS
+function course(code) {
+  show(
+    'Curso ' + code,
+    `
+    <p>Este curso forma parte del catálogo de PLUTÓN ACADEMIC.</p>
+    <p>Inicia sesión para acceder al contenido y progreso académico.</p>
+    <button type="button" onclick="closeModal(); openLogin();">
+      Iniciar sesión
+    </button>
+    `
+  );
+}
+
+// MEMBRESÍAS
+function plan(name) {
+  show(
+    'Membresía ' + name,
+    `
+    <p>Has seleccionado la membresía <strong>${name}</strong>.</p>
+    <p>El sistema de suscripción y pagos se habilitará desde esta sección.</p>
+    `
+  );
+}
+
+// COMUNIDAD / CRECIMIENTO
+function growth(name) {
+  show(
+    name,
+    `
+    <p>Esta función forma parte del ecosistema PLUTÓN ACADEMIC.</p>
+    <p>Próximamente estará disponible para los estudiantes.</p>
+    `
+  );
 }
