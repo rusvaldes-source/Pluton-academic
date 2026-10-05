@@ -21,7 +21,7 @@ function growth(name){show(name+' · Fase 4','<p>Este módulo forma parte de la 
 sb.auth.onAuthStateChange(()=>refreshAuthUI());refreshAuthUI();_
 // Supabase connected
 // Student dashboard
-if (window.location.pathname.includes('dashboard.html')) {
+if (window.location.pathname.includes('dashboard')) {
   sb.auth.getSession().then(({ data }) => {
     if (!data.session) {
       window.location.href = '/';
@@ -29,14 +29,8 @@ if (window.location.pathname.includes('dashboard.html')) {
     }
 
     const email = document.getElementById('student-email');
-    if (email) email.textContent = data.session.user.email;
+    if (email) {
+      email.textContent = data.session.user.email;
+    }
   });
-
-  const logoutButton = document.getElementById('logoutButton');
-  if (logoutButton) {
-    logoutButton.addEventListener('click', async () => {
-      await sb.auth.signOut();
-      window.location.href = '/';
-    });
-  }
 }
