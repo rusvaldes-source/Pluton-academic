@@ -31,9 +31,9 @@ async function loadStudent() {
     alert('ERROR: ' + JSON.stringify(profileError) + ' PROFILE: ' + JSON.stringify(profile));
   if(profile) {   
   document.getElementById('membership').textContent = profile.membership || 'Sin membresía';
-  } catch (error
+  } catch (error) {
 
-  ) {
+  
 
     
     studentEmail.textContent = 'Error al cargar tu cuenta';
