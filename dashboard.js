@@ -27,8 +27,8 @@ async function loadStudent() {
     }
 
     studentEmail.textContent = user.email;
-    const { data: profile } = await sb.from('profiles').select('*').eq('email', user.email).single();
-    alert('PROFILE: ' + JSON.stringify(profile));
+    const { data: profile, error: profileError } = await sb.from('profiles').select('*').eq('email', user.email).single();
+    alert('ERROR: ' + JSON.stringify(profileError) + ' PROFILE: ' + JSON.stringify(profile));
   if(profile) {   
   document.getElementById('membership').textContent = profile.membership || 'Sin membresía';
   } catch (error
