@@ -27,7 +27,9 @@ async function loadStudent() {
     }
 
     studentEmail.textContent = user.email;
+    const { data: profile } = await sb.from('profiles').select('*').eq('email', user.email).single();
   } catch (error) {
+    
     studentEmail.textContent = 'Error al cargar tu cuenta';
   }
 }
