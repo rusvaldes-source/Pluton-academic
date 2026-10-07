@@ -9,7 +9,7 @@
 <header>
   <a class="brand" href="#inicio"><span class="planet">◉</span><span>PLUTÓN <b>ACADEMIC</b></span></a>
   <button class="menu" aria-label="Menú" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
-  <nav><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a><a href="dashboard.html">Mi plataforma</a><a href="#certificados">Certificados</a><a href="#crecimiento">Comunidad</a><button type="button" onclick="openLogin()">Iniciar sesión</button></nav>
+  <nav><a href="#cursos" data-es="Cursos" data-en="Courses">Cursos</a><a href="#membresias" data-es="Membresías" data-en="Memberships">Membresías</a><a href="dashboard.html" data-es="Mi plataforma" data-en="My platform">Mi plataforma</a><a href="#certificados" data-es="Certificados" data-en="Certificates">Certificados</a><a href="#crecimiento" data-es="Comunidad" data-en="Community">Comunidad</a><button id="languageToggle" class="lang-btn" type="button" onclick="toggleLanguage()">EN</button><button type="button" onclick="openLogin()" data-es="Iniciar sesión" data-en="Sign in">Iniciar sesión</button></nav>
 </header>
 
 <main id="inicio">
@@ -19,7 +19,7 @@
    <span class="eyebrow">EDUCACIÓN DIGITAL · A TU RITMO</span>
    <h1>Tu futuro comienza<br><em>con conocimiento.</em></h1>
    <p>Aprende habilidades prácticas, avanza a tu ritmo y construye nuevas oportunidades con una experiencia educativa moderna.</p>
-   <div class="actions"><a class="primary" href="#cursos">Explorar cursos</a><a class="secondary" href="#membresias">Ver membresías</a></div>
+   <div class="actions"><a class="primary" href="#cursos" data-es="Explorar cursos" data-en="Explore courses">Explorar cursos</a><a class="secondary" href="#membresias" data-es="Ver membresías" data-en="View memberships">Ver membresías</a></div>
    <div class="trust"><span>✓ 100% online</span><span>✓ Certificados digitales</span><span>✓ Multidispositivo</span></div>
  </div>
  <div class="orb"><div class="ring"></div><div class="pluto">P</div><small>PLUTÓN ACADEMIC</small></div>
@@ -27,7 +27,7 @@
 
 <section id="cursos" class="section">
  <div class="heading"><span>CATÁLOGO INICIAL</span><h2>Aprendizaje práctico para avanzar</h2><p>Rutas diseñadas para convertir conocimiento en habilidades aplicables.</p></div>
- <div class="filters"><button class="active" data-filter="all">Todos</button><button data-filter="salud">Salud</button><button data-filter="profesional">Desarrollo profesional</button></div>
+ <div class="filters"><button class="active" data-filter="all" data-es="Todos" data-en="All">Todos</button><button data-filter="salud" data-es="Salud" data-en="Health">Salud</button><button data-filter="profesional" data-es="Desarrollo profesional" data-en="Professional development">Desarrollo profesional</button></div>
  <div class="grid courses">
   <article data-cat="salud"><span class="code">PA-101</span><div class="icon">✚</div><h3>Asistente de Enfermería: Fundamentos</h3><p>Cuidado, seguridad, higiene, comunicación y apoyo al residente/paciente.</p><small>Nivel inicial</small><button onclick="course('PA-101')">Ver curso →</button></article>
   <article data-cat="salud"><span class="code">PA-102</span><div class="icon">♥</div><h3>Signos Vitales y Cuidado Básico</h3><p>Temperatura, pulso, respiración, presión arterial y registro.</p><small>Nivel inicial</small><button onclick="course('PA-102')">Ver curso →</button></article>

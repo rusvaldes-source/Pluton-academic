@@ -11,32 +11,33 @@
   <main class="student-dashboard">
     <header>
       <h1>PLUTÓN ACADEMIC</h1>
-      <p>Panel del Estudiante</p>
+      <p data-es="Panel del Estudiante" data-en="Student Dashboard">Panel del Estudiante</p>
     </header>
 
     <section>
-      <h2>Bienvenido</h2>
+      <h2 data-es="Bienvenido" data-en="Welcome">Bienvenido</h2>
       <p id="student-email">Cargando tu cuenta...</p>
     </section>
 
     <section>
-      <h2>Mi membresía</h2>
+      <h2 data-es="Mi membresía" data-en="My membership">Mi membresía</h2>
       <strong id="membership">Cargando...</strong>
     </section>
 
     <section>
-      <h2>Mis cursos</h2>
+      <h2 data-es="Mis cursos" data-en="My courses">Mis cursos</h2>
       <p>Aquí aparecerán tus cursos y tu progreso académico.</p>
     </section>
 
     <section>
-      <h2>Mi progreso</h2>
+      <h2 data-es="Mi progreso" data-en="My progress">Mi progreso</h2>
       <p>Progreso general: 0%</p>
     </section>
 
-    <button id="logoutButton" type="button">Cerrar sesión</button>
+    <div class="dashboard-actions"><a href="index.html">← Inicio</a><button id="languageToggle" class="lang-btn" type="button" onclick="toggleDashboardLanguage()">EN</button><button id="logoutButton" type="button" data-es="Cerrar sesión" data-en="Sign out">Cerrar sesión</button></div>
   </main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="dashboard.js"></script>
+<script>function applyDashboardLanguage(lang){document.documentElement.lang=lang;localStorage.setItem("pluton-lang",lang);document.querySelectorAll("[data-es]").forEach(el=>el.textContent=lang==="en"?(el.dataset.en||el.dataset.es):el.dataset.es);const b=document.getElementById("languageToggle");if(b)b.textContent=lang==="es"?"EN":"ES"} function toggleDashboardLanguage(){applyDashboardLanguage((localStorage.getItem("pluton-lang")||"es")==="es"?"en":"es")} document.addEventListener("DOMContentLoaded",()=>applyDashboardLanguage(localStorage.getItem("pluton-lang")||"es"));</script>
 </body>
 </html>

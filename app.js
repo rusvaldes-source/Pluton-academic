@@ -183,3 +183,43 @@ function growth(name) {
     `
   );
 }
+
+// FILTROS DEL CATÁLOGO
+function initCourseFilters() {
+  const buttons = document.querySelectorAll('.filters button[data-filter]');
+  const cards = document.querySelectorAll('.courses article[data-cat]');
+  buttons.forEach(button => button.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    button.classList.add('active');
+    const filter = button.dataset.filter;
+    cards.forEach(card => {
+      card.style.display = filter === 'all' || card.dataset.cat === filter ? '' : 'none';
+    });
+  }));
+}
+
+// IDIOMA ES / EN. Traduce la interfaz principal sin alterar datos del usuario.
+const translations = {
+  en: {
+    'Cursos':'Courses','Membresías':'Memberships','Mi plataforma':'My platform','Certificados':'Certificates','Comunidad':'Community','Iniciar sesión':'Sign in',
+    'Explorar cursos':'Explore courses','Ver membresías':'View memberships','Todos':'All','Salud':'Health','Desarrollo profesional':'Professional development',
+    'Cerrar sesión':'Sign out','Panel del Estudiante':'Student Dashboard','Bienvenido':'Welcome','Mi membresía':'My membership','Mis cursos':'My courses','Mi progreso':'My progress'
+  }
+};
+function applyLanguage(lang) {
+  document.documentElement.lang = lang;
+  localStorage.setItem('pluton-lang', lang);
+  document.querySelectorAll('[data-es]').forEach(el => {
+    el.textContent = lang === 'en' ? (el.dataset.en || el.dataset.es) : el.dataset.es;
+  });
+  const btn = document.getElementById('languageToggle');
+  if (btn) btn.textContent = lang === 'es' ? 'EN' : 'ES';
+}
+function toggleLanguage() {
+  applyLanguage((localStorage.getItem('pluton-lang') || 'es') === 'es' ? 'en' : 'es');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initCourseFilters();
+  applyLanguage(localStorage.getItem('pluton-lang') || 'es');
+});
