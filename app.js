@@ -158,7 +158,7 @@ async function resetPassword() {
 // CURSOS
 function course(code) {
   show(
-    'Curso ' + code,
+    (window.plutonLanguage?.current()==='en'?'Course ':'Curso ') + code,
     `
     <p>Este curso forma parte del catálogo de PLUTÓN ACADEMIC.</p>
     <p>Inicia sesión para acceder al contenido y progreso académico.</p>
@@ -172,9 +172,9 @@ function course(code) {
 // MEMBRESÍAS
 function plan(name) {
   show(
-    'Membresía ' + name,
+    (window.plutonLanguage?.current()==='en'?'Membership ':'Membresía ') + name,
     `
-    <p>Has seleccionado la membresía <strong>${name}</strong>.</p>
+    <p>${window.plutonLanguage?.current()==='en'?'You have selected the membership':'Has seleccionado la membresía'} <strong>${name}</strong>.</p>
     <p>El sistema de suscripción y pagos se habilitará desde esta sección.</p>
     `
   );
