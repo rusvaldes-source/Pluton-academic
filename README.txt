@@ -13,3 +13,5 @@ INSTALACIÓN: subir TODOS los archivos de este ZIP a la raíz del repositorio. M
 PRUEBAS: curso > lección > Imprimir / Guardar PDF > comprobar vista previa y guardar; volver y comprobar tarjeta, audio, cuestionario, progreso, panel y selector ES/EN.
 
 NOTAS: la sincronización entre dispositivos no está verificada; la exportación depende del diálogo de impresión del navegador. Los cursos son introductorios. No se ha modificado Supabase ni el sistema de autenticación.
+
+V10: Cuaderno de notas personales por lección (ES/EN). Guardar notas en este navegador; sin cambios en la sincronización de progreso ni en autenticación. Archivo nuevo: lesson-notes.js.
