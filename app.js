@@ -18,6 +18,7 @@ function show(title, html) {
   modalTitle.textContent = title;
   modalText.innerHTML = html;
   modal.classList.add('show');
+  if(window.plutonLanguage)window.plutonLanguage.apply(modal);
 }
 
 function closeModal() {
@@ -82,7 +83,7 @@ async function signUp() {
     return;
   }
 
-  if (!sb) return authMessage(t('No se pudo conectar al servicio. Recarga la página.', 'Unable to connect. Reload the page.'));
+  if (!sb) return authMessage('No se pudo conectar al servicio. Recarga la página.');
   authMessage('Creando cuenta...');
 
   try { const { error } = await sb.auth.signUp({
@@ -112,7 +113,7 @@ async function signIn() {
     return;
   }
 
-  if (!sb) return authMessage(t('No se pudo conectar al servicio. Recarga la página.', 'Unable to connect. Reload the page.'));
+  if (!sb) return authMessage('No se pudo conectar al servicio. Recarga la página.');
   authMessage('Entrando...');
 
   try { const { error } = await sb.auth.signInWithPassword({
@@ -138,7 +139,7 @@ async function resetPassword() {
     return;
   }
 
-  if (!sb) return authMessage(t('No se pudo conectar al servicio. Recarga la página.', 'Unable to connect. Reload the page.'));
+  if (!sb) return authMessage('No se pudo conectar al servicio. Recarga la página.');
   authMessage('Enviando enlace...');
 
   try { const { error } = await sb.auth.resetPasswordForEmail(email, {
@@ -190,44 +191,10 @@ function growth(name) {
   );
 }
 
-// Selector de idioma y filtros del catálogo
-const translations = {
- 'Cursos':'Courses','Membresías':'Memberships','Mi plataforma':'My platform','Certificados':'Certificates','Comunidad':'Community','Iniciar sesión':'Sign in',
- 'Explorar cursos':'Explore courses','Ver membresías':'View memberships','Todos':'All','Salud':'Health','Desarrollo profesional':'Professional development',
- 'Seleccionar':'Select','Ver curso →':'View course →','Cerrar sesión':'Sign out','Panel del Estudiante':'Student Dashboard',
- 'Bienvenido':'Welcome','Mi membresía':'My membership','Mis cursos':'My courses','Mi progreso':'My progress',
- 'Cargando tu cuenta...':'Loading your account...','Cargando...':'Loading...','Sin membresía':'No membership',
- 'Área del estudiante':'Student area','Correo electrónico':'Email','Contraseña':'Password','Crear cuenta':'Create account',
- 'Olvidé mi contraseña':'Forgot password','Nivel inicial':'Beginner level','Nivel intermedio':'Intermediate level',
- 'Nivel profesional':'Professional level','MÁS COMPLETO':'MOST COMPLETE','CATÁLOGO INICIAL':'INITIAL CATALOG',
- 'MEMBRESÍAS':'MEMBERSHIPS','CERTIFICACIÓN DIGITAL':'DIGITAL CERTIFICATION','EDUCACIÓN DIGITAL · A TU RITMO':'DIGITAL EDUCATION · AT YOUR PACE',
- 'Tu futuro comienza':'Your future begins','con conocimiento.':'with knowledge.',
- 'Aprendizaje práctico para avanzar':'Practical learning to move forward',
- 'Elige cómo quieres aprender':'Choose how you want to learn',
- 'Revisa tu correo para confirmar tu cuenta.':'Check your email to confirm your account.',
- 'Revisa tu correo para restablecer la contraseña.':'Check your email to reset your password.'
-};
-const reverseTranslations = Object.fromEntries(Object.entries(translations).map(([k,v])=>[v,k]));
-function lang(){return localStorage.getItem('pluton-lang') === 'en' ? 'en' : 'es';}
-function t(es,en){return lang()==='en'?en:es;}
-function translateNode(root){
- const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
- const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
- for(const node of nodes){if(node.parentElement?.closest('script,style'))continue;
-  const raw=node.nodeValue, trimmed=raw.trim();if(!trimmed)continue;
-  const base=reverseTranslations[trimmed]||trimmed;
-  if(translations[base])node.nodeValue=raw.replace(trimmed,lang()==='en'?translations[base]:base);
- }
- document.documentElement.lang=lang();
- const toggle=document.getElementById('languageToggle');if(toggle){toggle.textContent=lang()==='en'?'ES':'EN';toggle.setAttribute('aria-label',lang()==='en'?'Switch to Spanish':'Cambiar a inglés');}
-}
-function changeLanguage(){localStorage.setItem('pluton-lang',lang()==='en'?'es':'en');translateNode(document.body);}
-document.addEventListener('DOMContentLoaded',()=>{
- translateNode(document.body);
+// Filtros del catálogo
+ document.addEventListener('DOMContentLoaded',()=>{
  document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{
-  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b===btn));
-  document.querySelectorAll('.courses article[data-cat]').forEach(card=>{card.hidden=btn.dataset.filter!=='all'&&card.dataset.cat!==btn.dataset.filter;});
+ document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b===btn));
+ document.querySelectorAll('.courses article[data-cat]').forEach(card=>{card.hidden=btn.dataset.filter!=='all'&&card.dataset.cat!==btn.dataset.filter;});
  }));
-});
-const originalShow=show;
-show=function(title,html){originalShow(title,html);translateNode(document.getElementById('modal'));};
+ });

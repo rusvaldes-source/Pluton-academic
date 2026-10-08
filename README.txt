@@ -1,6 +1,6 @@
-PLUTÓN ACADEMIC — Paquete web revisado
-Subir todos los archivos de esta carpeta juntos a la raíz del repositorio GitHub.
-Incluye inicio de sesión Supabase, panel del estudiante, consulta de membresía, cierre de sesión, filtros y selector ES/EN.
-La traducción al inglés cubre los controles y textos principales, no todos los párrafos extensos.
-IMPORTANTE: La membresía requiere tabla profiles, permisos RLS de lectura y un registro asociado al correo del usuario. No se han comprobado credenciales reales, políticas RLS ni despliegue Cloudflare.
-No se habilitan pagos ni se atribuyen membresías automáticamente.
+PLUTÓN ACADEMIC — paquete completo corregido
+Subir TODOS los archivos del ZIP juntos a la raíz del repositorio GitHub.
+Correcciones: selector ES/EN compartido; recuperación del archivo courses.js faltante; conservación de login, consulta de membresía y cierre de sesión.
+Las lecciones son demostrativas y el progreso se guarda solo en el navegador. Los pagos no están activados.
+La traducción de la página principal cubre textos principales; algunos párrafos extensos siguen en español.
+No se han probado credenciales reales, RLS ni el despliegue en Cloudflare.
