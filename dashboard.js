@@ -55,5 +55,13 @@ function translateDashboard(){
  const b=document.getElementById('languageToggle');if(b)b.textContent=lang==='en'?'ES':'EN';document.documentElement.lang=lang;refreshProgress();
 }
 function changeDashboardLanguage(){window.plutonLanguage?.toggle();}
-function refreshProgress(){const codes=['PA-101','PA-102','PA-105','PA-106','PA-201','PA-203'];let sum=0;for(const c of codes){try{sum+=Math.min(100,Math.max(0,Number(localStorage.getItem('pluton-progress-'+c)||0)))}catch(e){}}const el=document.getElementById('overallProgress');if(el)el.textContent=dashboardStrings[dashboardLang()].overall+Math.round(sum/codes.length)+'%';}
+let allCourseCodes=[];
+function refreshProgress(){
+ const codes=allCourseCodes.length?allCourseCodes:['PA-101','PA-102','PA-105','PA-106','PA-201','PA-203'];
+ let sum=0;
+ for(const c of codes){try{sum+=Math.min(100,Math.max(0,Number(localStorage.getItem('pluton-progress-'+c)||0)))}catch(e){}}
+ const el=document.getElementById('overallProgress');
+ if(el)el.textContent=dashboardStrings[dashboardLang()].overall+Math.round(sum/codes.length)+'%';
+}
+document.addEventListener('DOMContentLoaded',()=>{fetch('catalog.json').then(r=>r.ok?r.json():Promise.reject()).then(data=>{allCourseCodes=data.map(c=>c.code);refreshProgress()}).catch(()=>{});});
 document.addEventListener('DOMContentLoaded',()=>{translateDashboard();});
