@@ -61,7 +61,7 @@ function refreshProgress(){
  let total=0,done=0;
  for(const c of courses){if(!Array.isArray(c.lessons))continue;total+=c.lessons.length;try{const list=JSON.parse(localStorage.getItem('pluton-completed-'+c.code)||'[]');if(Array.isArray(list))done+=new Set(list.filter(i=>Number.isInteger(i)&&i>=0&&i<c.lessons.length)).size;}catch(e){}}
  const el=document.getElementById('overallProgress');
- if(el)el.textContent=dashboardStrings[dashboardLang()].overall+(total?Math.round(done/total*100):0)+'% · '+done+'/'+total+' '+(dashboardLang()==='en'?'lessons on this device':'lecciones en este dispositivo');
+ if(el)el.textContent=dashboardStrings[dashboardLang()].overall+(total?Math.round(done/total*100):0)+'% · '+done+'/'+total+' '+(dashboardLang()==='en'?'lessons':'lecciones');const syncEl=document.getElementById('progressSyncStatus');if(syncEl)syncEl.textContent=window.plutonSync?.statusText()||'';
 }
 document.addEventListener('DOMContentLoaded',()=>{fetch('catalog.json').then(r=>r.ok?r.json():Promise.reject()).then(data=>{allCourseCodes=data.map(c=>c.code);refreshProgress()}).catch(()=>{});});
 document.addEventListener('DOMContentLoaded',()=>{translateDashboard();});
@@ -70,3 +70,5 @@ document.addEventListener('DOMContentLoaded',()=>{translateDashboard();});
 function refreshNextCourse(){const en=dashboardLang()==='en';const title=document.getElementById('nextTitle'),label=document.getElementById('nextCourse'),link=document.getElementById('nextCourseLink');if(!title||!label||!link)return;title.textContent=en?'Continue learning':'Continúa aprendiendo';document.getElementById('dashboardDailyTitle').textContent=en?'Today’s challenge':'Tu reto de hoy';document.getElementById('dashboardDailyText').textContent=en?'Practice one new question each day.':'Practica una pregunta nueva cada día.';document.getElementById('dashboardDailyLink').textContent=en?'View daily challenge →':'Ver reto diario →';const courses=window.plutonDashboardCatalog||[];const next=courses.find(c=>{try{return JSON.parse(localStorage.getItem('pluton-completed-'+c.code)||'[]').length<c.lessons.length}catch(e){return true}});label.textContent=next?(next[en?'en':'es']+' · '+next.code):(en?'All introductory lessons completed or catalog unavailable.':'Todas las lecciones introductorias completadas o catálogo no disponible.');link.href=next?'courses.html?course='+encodeURIComponent(next.code):'courses.html';link.textContent=en?'Continue course →':'Continuar curso →';}
 const originalTranslateDashboard=translateDashboard;translateDashboard=function(){originalTranslateDashboard();refreshNextCourse()};
 document.addEventListener('DOMContentLoaded',()=>fetch('catalog.json').then(r=>r.json()).then(data=>{window.plutonDashboardCatalog=data;refreshProgress();refreshNextCourse()}).catch(()=>refreshNextCourse()));
+
+document.addEventListener('pluton-progress-updated',()=>{refreshProgress();refreshNextCourse()});document.addEventListener('pluton-sync-status',refreshProgress);
