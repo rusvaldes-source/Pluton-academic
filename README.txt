@@ -5,3 +5,6 @@ Cursos: 6 cursos, 12 lecciones con material introductorio y cuestionarios; progr
 Noticias: titulares externos vía Google News RSS, procesados por Cloudflare Pages Function; caché y refresco al cargar la página. No se garantizan titulares si la fuente externa falla.
 Participación: buzón de ideas local en navegador, NO es todavía un foro compartido ni guarda respuestas en una base de datos.
 Idioma: ES/EN. Revisar en la página publicada las funciones de autenticación y traducción.
+
+
+Corrección 8 octubre: traducciones interiores de Participa, estilo de botones y campos. Noticias requiere que functions/api/news.js se conserve en su ruta de carpetas al desplegar Cloudflare Pages. Subir únicamente archivos planos a GitHub NO instala esa función. Si /api/news no está disponible, las noticias mostrarán un aviso, nunca titulares inventados.
