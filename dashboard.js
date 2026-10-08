@@ -57,11 +57,11 @@ function translateDashboard(){
 function changeDashboardLanguage(){window.plutonLanguage?.toggle();}
 let allCourseCodes=[];
 function refreshProgress(){
- const codes=allCourseCodes.length?allCourseCodes:['PA-101','PA-102','PA-105','PA-106','PA-201','PA-203'];
- let sum=0;
- for(const c of codes){try{sum+=Math.min(100,Math.max(0,Number(localStorage.getItem('pluton-progress-'+c)||0)))}catch(e){}}
+ const courses=window.plutonDashboardCatalog||[];
+ let total=0,done=0;
+ for(const c of courses){if(!Array.isArray(c.lessons))continue;total+=c.lessons.length;try{const list=JSON.parse(localStorage.getItem('pluton-completed-'+c.code)||'[]');if(Array.isArray(list))done+=new Set(list.filter(i=>Number.isInteger(i)&&i>=0&&i<c.lessons.length)).size;}catch(e){}}
  const el=document.getElementById('overallProgress');
- if(el)el.textContent=dashboardStrings[dashboardLang()].overall+Math.round(sum/codes.length)+'%';
+ if(el)el.textContent=dashboardStrings[dashboardLang()].overall+(total?Math.round(done/total*100):0)+'% · '+done+'/'+total+' '+(dashboardLang()==='en'?'lessons on this device':'lecciones en este dispositivo');
 }
 document.addEventListener('DOMContentLoaded',()=>{fetch('catalog.json').then(r=>r.ok?r.json():Promise.reject()).then(data=>{allCourseCodes=data.map(c=>c.code);refreshProgress()}).catch(()=>{});});
 document.addEventListener('DOMContentLoaded',()=>{translateDashboard();});
@@ -69,4 +69,4 @@ document.addEventListener('DOMContentLoaded',()=>{translateDashboard();});
 // V4: suggested next lesson based on local progress; no changes to authentication.
 function refreshNextCourse(){const en=dashboardLang()==='en';const title=document.getElementById('nextTitle'),label=document.getElementById('nextCourse'),link=document.getElementById('nextCourseLink');if(!title||!label||!link)return;title.textContent=en?'Continue learning':'Continúa aprendiendo';document.getElementById('dashboardDailyTitle').textContent=en?'Today’s challenge':'Tu reto de hoy';document.getElementById('dashboardDailyText').textContent=en?'Practice one new question each day.':'Practica una pregunta nueva cada día.';document.getElementById('dashboardDailyLink').textContent=en?'View daily challenge →':'Ver reto diario →';const courses=window.plutonDashboardCatalog||[];const next=courses.find(c=>{try{return JSON.parse(localStorage.getItem('pluton-completed-'+c.code)||'[]').length<c.lessons.length}catch(e){return true}});label.textContent=next?(next[en?'en':'es']+' · '+next.code):(en?'All introductory lessons completed or catalog unavailable.':'Todas las lecciones introductorias completadas o catálogo no disponible.');link.href=next?'courses.html?course='+encodeURIComponent(next.code):'courses.html';link.textContent=en?'Continue course →':'Continuar curso →';}
 const originalTranslateDashboard=translateDashboard;translateDashboard=function(){originalTranslateDashboard();refreshNextCourse()};
-document.addEventListener('DOMContentLoaded',()=>fetch('catalog.json').then(r=>r.json()).then(data=>{window.plutonDashboardCatalog=data;refreshNextCourse()}).catch(()=>refreshNextCourse()));
+document.addEventListener('DOMContentLoaded',()=>fetch('catalog.json').then(r=>r.json()).then(data=>{window.plutonDashboardCatalog=data;refreshProgress();refreshNextCourse()}).catch(()=>refreshNextCourse()));

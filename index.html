@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PLUTÓN ACADEMIC | Tu futuro comienza con conocimiento</title> 
-<link rel="stylesheet" href="styles.css?v=20261008-v5-expansion">
+<link rel="stylesheet" href="styles.css?v=20261008-v6-real">
 </head>
 <body>
 <header>
@@ -38,10 +38,9 @@
   <div class="feature-list"><span>▶ Mis cursos</span><span>▰ Materiales y recursos</span><span>✓ Mi progreso</span><span>♜ Certificados</span></div>
  </div>
  <div class="dashboard">
-  <div class="dash-head"><b>Hola, Estudiante</b><span>Mi cuenta</span></div>
-  <div class="progress"><small>VISTA DE EJEMPLO</small><strong>68%</strong><div><i></i></div></div>
-  <div class="lesson"><b>PA-101 · Fundamentos</b><span>75% completo</span></div>
-  <div class="lesson"><b>PA-106 · ECG</b><span>42% completo</span></div>
+  <div class="dash-head"><b id="liveGreeting">Mi aprendizaje</b><span id="liveProgressScope">En este dispositivo</span></div>
+  <div class="progress" aria-live="polite"><small id="liveProgressLabel">PROGRESO REAL DE LECCIONES</small><strong id="liveProgressNumber">—</strong><div class="pa-live-meter" role="progressbar" aria-label="Progreso de lecciones" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="liveProgressBar" style="width:0%"></i></div><p id="liveProgressDetail" class="pa-note">Cargando tus avances…</p></div>
+  <div id="liveCourseList" class="pa-live-course-list" aria-live="polite"></div>
   <button onclick="window.location.href='dashboard.html'">Entrar a mi plataforma</button>
  </div>
 </section>
@@ -86,4 +85,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="language.js?v=20261008-fix2"></script>
 <script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-v4"></script><script src="daily.js?v=20261008-v4"></script><script src="catalog-ui.js?v=20261008-v5-expansion"></script>
-<script src="resource-ui.js?v=20261008-v5-expansion"></script></body></html>
+<script src="resource-ui.js?v=20261008-v5-expansion"></script><script src="progress-ui.js?v=20261008-v6-real"></script></body></html>

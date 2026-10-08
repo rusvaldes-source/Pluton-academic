@@ -1,20 +1,16 @@
-PLUTÓN ACADEMIC — V5 EXPANSIÓN EDUCATIVA — 08 OCT 2026
-BASE ESTABLE: V4.1 Oct 8 (aprobada por el usuario).
+PLUTÓN ACADEMIC — V6 PROGRESO REAL — 08 OCT 2026
+BASE: V5, preservando las correcciones visuales V4.1 Oct 8.
 
-NUEVO EN V5
-- Catálogo ampliado de 14 a 20 cursos, con 18 lecciones nuevas en seis áreas: IA, bienes raíces, emprendimiento, finanzas, marketing y salud.
-- Buscador bilingüe por nombre y código en el catálogo de inicio y en la página de lecciones.
-- Recursos prácticos de estudio en la portada.
-- Cuaderno personal en el panel del estudiante, con guardar y borrar notas. SOLO localStorage en este dispositivo.
-- Se mantienen el reto diario, noticias, navegación, login Supabase, membresías informativas, dashboard y las correcciones visuales móviles V4.1.
+NOVEDAD: el resumen de la portada ya NO presenta 68%, 75% ni 42% ficticios.
+Calcula las lecciones completadas desde las claves pluton-completed-CODIGO del navegador.
+El panel del estudiante usa el mismo criterio para calcular el porcentaje general.
+La portada muestra hasta tres cursos con avance real y acceso a sus lecciones.
+Traducción ES/EN de la nueva sección y estilos móviles sin alterar cuestionarios.
 
-INSTALACIÓN
-Subir el contenido COMPLETO de este ZIP a la raíz del repositorio de GitHub, respetando las rutas ya preparadas. La carpeta functions/api contiene la función de noticias de Cloudflare y NO debe reordenarse. Si tu aplicación de GitHub para Android no admite subir carpetas completas, no muevas archivos manualmente: usa un método de carga que preserve rutas.
+IMPORTANTE: el progreso se almacena en el navegador/dispositivo actual, NO en Supabase
+ni sincronizado entre equipos. No se modifica autenticación, membresías ni pagos.
 
-LIMITACIONES IMPORTANTES
-- Los avances de lecciones y notas del cuaderno siguen siendo locales al dispositivo, NO se sincronizan con Supabase.
-- La comunidad es un buzón local, NO un foro público. No hay pagos, chat de IA, ni videos de terceros activados.
-- Noticias externas requieren Cloudflare Pages Functions; no se garantiza que las fuentes respondan.
-- Los cursos son introductorios, no acreditan una licencia profesional. Contenido de salud, finanzas y real estate es educativo, no asesoramiento individual.
-- No se cambiaron URL ni claves de Supabase.
-- Comprobar la web desplegada en móvil antes de dar por aprobada V5; conservar V4.1 Oct 8 como respaldo.
+INSTALACIÓN: subir TODOS los archivos de este paquete a la raíz del repositorio,
+conservando automáticamente la ruta functions/api/news.js.
+No es necesario abrir ni modificar esa carpeta manualmente.
+Mantener V5 como respaldo hasta validar V6 publicada.
