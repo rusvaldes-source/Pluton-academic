@@ -51,3 +51,10 @@ body:has(.pa-main)>header #languageToggle{padding:7px 10px;flex-shrink:0;backgro
 
 /* V11: notebook index */
 .pa-notes-library{max-width:1000px;margin:24px auto;padding:20px;border:1px solid #526988;border-radius:18px;background:#11233f}.pa-notes-library h2{color:#dbb762;margin-top:0}.pa-notes-library-actions{margin:16px 0}.pa-notes-library button{background:#d9b45f;color:#081a33;border:0;border-radius:10px;padding:12px 18px;font:inherit;font-weight:700;cursor:pointer}.pa-note-entry{background:#09172e;border:1px solid #435b7d;border-radius:12px;padding:16px;margin:12px 0;overflow-wrap:anywhere}.pa-note-entry h3{color:#dbb762;margin:0 0 8px}.pa-note-entry p{white-space:pre-wrap;line-height:1.5}.pa-notes-library #notesLibraryMessage{color:#dbb762}@media(max-width:520px){.pa-notes-library{padding:14px}.pa-notes-library button{width:100%}}
+
+/* V13: bilingual community tools; mobile-friendly controls */
+.pa-community-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:12px}
+.pa-community-actions button{min-height:44px}
+.pa-community .pa-secondary-button{background:transparent;color:#e2b95f;border:1px solid #d6ae57;border-radius:12px;padding:12px 20px;cursor:pointer}
+.pa-idea-count{color:#aabbd4;font-size:.9rem;margin-top:10px}
+@media(max-width:480px){.pa-community-actions{flex-direction:column;align-items:stretch}.pa-community-actions button{width:100%}}

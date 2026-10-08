@@ -29,3 +29,12 @@ V12 — CORRECCIÓN DE IDIOMA DEL RETO DIARIO
 - Preguntas y respuestas del reto toman el idioma actual del catálogo; las opciones EN originales se conservan.
 - Se revisaron las 46 lecciones: las frases de práctica en inglés del módulo de presentaciones se mantienen como contenido pedagógico y las opciones numéricas no requieren traducción.
 - Sin cambios en autenticación, notas, progreso, membresías, diseño ni infraestructura.
+
+
+V13 — REVISIÓN DE TRADUCCIÓN Y COMUNIDAD (08 OCT 2026)
+- Traducción explícita y reversible ES/EN de Comunidad: título, descripción, etiqueta, placeholder, botones y estado.
+- Traducidos textos estáticos adicionales de Recursos y búsqueda.
+- Nuevo contador de caracteres y opción de borrar la idea local. No se envía a servidores.
+- Actualización de versión de scripts de idioma/noticias y CSS para evitar caché.
+- Se preservan autenticación, membresías, progreso, PDF, audio, notas y catálogo.
+- Subir TODOS los archivos y la carpeta functions/ en la raíz del repositorio.
