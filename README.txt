@@ -1,9 +1,15 @@
-PLUTÓN ACADEMIC — paquete unificado 08 octubre 2026
+PLUTÓN ACADEMIC — V4 PLATAFORMA VIVA — 08 OCT 2026
+BASE: V3 reparación. Nombre único para evitar confusiones en Android.
 
-INSTRUCCIONES: Extrae este ZIP y sube su CONTENIDO a la raíz del repositorio GitHub. Conserva la subcarpeta functions/api/news.js. Cloudflare Pages debe desplegar desde GitHub para activar /api/news.
+Sube TODO el contenido de este ZIP a la raíz de GitHub, incluyendo la carpeta functions/api/news.js. No subas solamente la carpeta contenedora. Cloudflare Pages debe estar conectado al repositorio para ejecutar Pages Functions.
 
-Incluye 14 cursos introductorios bilingües y 28 lecciones con cuestionarios; catálogo filtrable dentro de Cursos, enlaces directos a lecciones y progreso local.
-Se conservan las configuraciones de Supabase de los archivos recibidos; los pagos siguen desactivados.
-NOTA IMPORTANTE: styles.css, news.js y functions/api/news.js NO estaban entre los archivos recibidos. Se reconstruyeron para completar el paquete, por lo que el diseño y la sección de noticias pueden diferir de la versión publicada. Guarda una copia de la versión actual antes de reemplazarla.
-Las noticias requieren RSS externo y Cloudflare Pages Functions. Si fallan, se muestra un aviso. El buzón de ideas y el progreso solo se guardan en el navegador.
-No se ha comprobado el despliegue real ni las credenciales de Supabase en producción.
+NOVEDADES V4:
+- Reto diario interactivo bilingüe, con resultado local en el navegador.
+- Panel: sugerencia de siguiente curso y enlace al reto del día; no cambia Supabase ni el login.
+- Noticias: función /api/news con RSS externo y mensajes de error si no hay servicio. Requiere Cloudflare Pages Functions y conexión a Internet; no garantiza disponibilidad ni verifica titulares.
+- Se preservan 14 cursos y lecciones, estilo móvil V3, selector ES/EN, membresías, login y cuestionarios.
+- Comunidad: el buzón existente es LOCAL, no es todavía un foro entre usuarios.
+- Fotografías y videos externos no incluidos: requieren recursos autorizados; no se han inventado materiales audiovisuales.
+- No se habilitaron pagos ni se modificaron las claves de Supabase.
+
+IMPORTANTE: conserva copia de V3 reparación antes de desplegar. Las comprobaciones de archivos y sintaxis no sustituyen pruebas reales en producción.

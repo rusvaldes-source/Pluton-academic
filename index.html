@@ -61,6 +61,7 @@
 </section>
 <section id="noticias" class="section pa-news"><div class="heading"><span>PLUTÓN INFORMA</span><h2 data-news-title>Noticias y actualidad</h2><p data-news-intro>Salud, tecnología y educación. Titulares de medios externos actualizados automáticamente cuando el servicio está disponible.</p></div><div class="pa-news-tabs"><button type="button" data-news-category="salud">Salud</button><button type="button" data-news-category="tecnologia">Tecnología</button><button type="button" data-news-category="educacion">Educación</button></div><p id="newsStatus" role="status"></p><div id="newsList" class="pa-news-grid"></div><p class="pa-news-disclaimer">Los enlaces conducen a fuentes externas. PLUTÓN ACADEMIC no redacta ni verifica independientemente estos titulares.</p></section>
 <section id="participa" class="section pa-community"><div class="heading"><span>PARTICIPA</span><h2 data-community-title>Pregunta de la comunidad</h2><p data-community-intro>Comparte una idea para mejorar tu aprendizaje. La respuesta se guarda únicamente en este navegador.</p></div><label for="communityIdea">Tu propuesta</label><textarea id="communityIdea" maxlength="600" rows="4" placeholder="¿Qué tema te gustaría aprender?"></textarea><button type="button" id="saveIdea">Guardar mi idea</button><p id="ideaStatus" role="status"></p></section>
+<section id="reto" class="section pa-daily"><div class="heading"><span>RETO DEL DÍA / DAILY CHALLENGE</span><h2 id="dailyTitle">Aprende algo nuevo hoy</h2><p id="dailyIntro">Una pregunta diaria para practicar tus conocimientos.</p></div><div class="pa-daily-box"><p id="dailyQuestion"></p><div id="dailyOptions" class="pa-daily-options"></div><p id="dailyFeedback" role="status"></p><a class="pa-link" href="courses.html" id="dailyLink">Ir a las lecciones →</a></div></section>
 <section id="crecimiento" class="section growth">
  <div class="heading"><span>FASE 4 · CRECIMIENTO</span><h2>Más que cursos: una comunidad para avanzar</h2><p>PLUTÓN ACADEMIC evoluciona hacia una experiencia continua con app, comunidad, automatizaciones y nuevas rutas de aprendizaje.</p></div>
  <div class="grid growth-grid">
@@ -83,5 +84,5 @@
 <div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modal-card"><button class="x" onclick="closeModal()">×</button><span class="eyebrow">PLUTÓN ACADEMIC</span><h2 id="modalTitle">Área del estudiante</h2><div id="modalText"></div></div></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="language.js?v=20261008-fix2"></script>
-<script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-final3"></script><script src="catalog-ui.js?v=20261008-final3"></script>
+<script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-v4"></script><script src="daily.js?v=20261008-v4"></script><script src="catalog-ui.js?v=20261008-final3"></script>
 </body></html>
