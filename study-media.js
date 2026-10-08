@@ -1,0 +1,18 @@
+/* PLUTÓN V8 — herramientas de estudio locales, sin afectar cuestionarios ni progreso */
+(()=>{'use strict';
+const lang=()=>window.plutonLanguage?.current()==='en'?'en':'es';
+const msg=(es,en)=>lang()==='en'?en:es;
+let currentSpeech=null;
+function stop(){if('speechSynthesis' in window){window.speechSynthesis.cancel();currentSpeech=null;}}
+function getLesson(button){const code=button.dataset.code,idx=Number(button.dataset.lesson);const card=button.closest('.pa-lesson');return {code,idx,card,content:card?.querySelector(':scope > p')?.textContent||'',question:card?.querySelector('strong')?.textContent||''};}
+function printLesson(button){const lesson=button.closest('.pa-lesson');if(!lesson)return;const card=button.closest('.pa-course-card');const title=card?.querySelector('h2')?.textContent||'PLUTÓN ACADEMIC';const name=lesson.querySelector('summary')?.textContent||'';const content=lesson.querySelector(':scope > p')?.textContent||'';const question=lesson.querySelector('strong')?.textContent||'';const w=window.open('','_blank');if(!w){alert(msg('Permite ventanas emergentes para imprimir.','Allow pop-ups to print.'));return;}const escape=s=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));w.document.write('<!doctype html><html><head><meta charset="utf-8"><title>'+escape(title)+'</title><style>body{font:18px/1.6 system-ui;margin:8%;color:#14233e}h1{color:#14233e}h2{color:#8a672b}footer{margin-top:40px;font-size:13px;color:#555}@media print{button{display:none}}</style></head><body><h1>PLUTÓN ACADEMIC</h1><h2>'+escape(title)+'</h2><h3>'+escape(name)+'</h3><p>'+escape(content)+'</p><p><strong>'+escape(question)+'</strong></p><footer>'+escape(msg('Material introductorio de estudio.','Introductory study material.'))+'</footer><button onclick="window.print()">'+escape(msg('Imprimir / Guardar PDF','Print / Save PDF'))+'</button></body></html>');w.document.close();}
+document.addEventListener('click',e=>{const button=e.target.closest('.pa-read-aloud,.pa-stop-audio,.pa-flashcard-toggle,.pa-reveal-answer,.pa-print-lesson');if(!button)return;const tools=button.closest('.pa-study-tools');if(!tools)return;const status=tools.querySelector('.pa-study-message');
+if(button.matches('.pa-stop-audio')){stop();status.textContent=msg('Lectura detenida.','Reading stopped.');return;}
+if(button.matches('.pa-flashcard-toggle')){const card=tools.querySelector('.pa-flashcard');card.hidden=!card.hidden;return;}
+if(button.matches('.pa-reveal-answer')){const back=tools.querySelector('.pa-flashcard-back');back.hidden=!back.hidden;button.textContent=back.hidden?msg('Ver respuesta','Reveal answer'):msg('Ocultar respuesta','Hide answer');return;}
+if(button.matches('.pa-print-lesson')){printLesson(button);return;}
+if(!('speechSynthesis' in window)){status.textContent=msg('Este navegador no admite lectura en voz alta.','Speech is not supported in this browser.');return;}
+stop();const data=getLesson(button);const title=data.card?.querySelector('summary')?.textContent||'';const utterance=new SpeechSynthesisUtterance([title,data.content,data.question].join('. '));utterance.lang=lang()==='en'?'en-US':'es-ES';utterance.rate=.9;currentSpeech=utterance;utterance.onend=()=>{status.textContent=msg('Lectura finalizada.','Reading finished.');currentSpeech=null;};utterance.onerror=()=>{status.textContent=msg('No se pudo reproducir el audio.','Audio playback was unavailable.');currentSpeech=null;};status.textContent=msg('Reproduciendo la lección…','Reading lesson…');window.speechSynthesis.speak(utterance);
+});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});window.addEventListener('pagehide',stop);
+})();

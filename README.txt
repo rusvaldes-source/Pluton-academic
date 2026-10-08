@@ -1,18 +1,20 @@
-PLUTÓN ACADEMIC V7 — SINCRONIZACIÓN DE PROGRESO — 08 OCT 2026
-BASE: V6 aprobada; conserva diseño V4.1, 20 cursos, 46 lecciones, ES/EN, login y membresía.
+PLUTÓN ACADEMIC V8 — AULA INTERACTIVA — 08 OCT 2026
+BASE: V7 validada en móvil. Conserva 20 cursos, 46 lecciones, progreso y sincronización, login, membresía, noticias y ES/EN.
 
-V7: guarda las lecciones completadas en el navegador y, si hay una sesión iniciada,
-las sincroniza mediante Supabase Auth user_metadata, campo pluton_completed_v7.
-NO necesita SQL, tablas nuevas, permisos adicionales ni cambios de claves.
-Al abrir otra computadora o teléfono, iniciar sesión con LA MISMA CUENTA para recuperar avance.
-El sistema fusiona los avances de ambos dispositivos y nunca borra lecciones completadas.
-La sincronización requiere Internet; si falla, mantiene copia local y muestra aviso.
-El progreso solo se sincroniza si el estudiante inició sesión. No sincroniza notas.
+NOVEDADES V8 EN LECCIONES:
+- Escuchar el contenido de cada lección usando la síntesis de voz del navegador (depende del dispositivo).
+- Detener audio.
+- Tarjeta de repaso con pregunta y respuesta que se revela al pulsar.
+- Imprimir o guardar PDF de la lección usando la función Imprimir del navegador (ventana emergente).
+- Controles accesibles, adaptados al móvil, textos ES/EN.
+- Las tarjetas de repaso NO cuentan como evaluación ni modifican el progreso.
 
-PRUEBA RECOMENDADA: abrir Mi plataforma con sesión iniciada; comprobar mensaje
-'Sincronizado con tu cuenta'; completar lección; entrar con la misma cuenta en otro
-navegador y comprobar porcentaje. Si sale aviso de error, no afirmar que sincronizó.
+NO SE INCLUYEN VIDEOS NI FOTOGRAFÍAS LICENCIADAS; esas piezas requieren material autorizado.
+V7 sincroniza progreso en user_metadata de Supabase; no se ha validado aún entre dos dispositivos.
+El audio requiere que el navegador admita SpeechSynthesis; imprimir requiere permitir ventana emergente.
 
-INSTALACIÓN: subir TODO el contenido del ZIP al repositorio, respetando automáticamente
-la carpeta functions/api. No editar archivos ni claves.
-Guardar V6 como respaldo hasta verificar el funcionamiento en producción.
+INSTALACIÓN: subir TODOS los archivos a la raíz del repositorio. La única subcarpeta
+functions/api/news.js es necesaria para la ruta de Cloudflare Pages; mantener su estructura.
+No cambiar claves ni editar código. Guardar V7 como respaldo.
+PRUEBA: abrir un curso > una lección > Escuchar > Detener > Tarjeta de estudio > Ver respuesta > Imprimir.
+Comprobar luego un cuestionario y que el progreso sigue actualizándose.
