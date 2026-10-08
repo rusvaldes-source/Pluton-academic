@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PLUTÓN ACADEMIC | Tu futuro comienza con conocimiento</title> 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=20261008-final3">
 </head>
 <body>
 <header>
@@ -28,15 +28,7 @@
 
 <section id="cursos" class="section">
  <div class="heading"><span>CATÁLOGO INICIAL</span><h2>Aprendizaje práctico para avanzar</h2><p>Rutas diseñadas para convertir conocimiento en habilidades aplicables.</p></div>
- <div class="filters"><button class="active" data-filter="all">Todos</button><button data-filter="salud">Salud</button><button data-filter="profesional">Desarrollo profesional</button></div>
- <div class="grid courses">
-  <article data-cat="salud"><span class="code">PA-101</span><div class="icon">✚</div><h3>Asistente de Enfermería: Fundamentos</h3><p>Cuidado, seguridad, higiene, comunicación y apoyo al residente/paciente.</p><small>Nivel inicial</small><button onclick="course('PA-101')">Ver curso →</button></article>
-  <article data-cat="salud"><span class="code">PA-102</span><div class="icon">♥</div><h3>Signos Vitales y Cuidado Básico</h3><p>Temperatura, pulso, respiración, presión arterial y registro.</p><small>Nivel inicial</small><button onclick="course('PA-102')">Ver curso →</button></article>
-  <article data-cat="salud"><span class="code">PA-105</span><div class="icon">◈</div><h3>Introducción a Flebotomía</h3><p>Punción venosa, tubos, orden de extracción y errores frecuentes.</p><small>Nivel intermedio</small><button onclick="course('PA-105')">Ver curso →</button></article>
-  <article data-cat="salud"><span class="code">PA-106</span><div class="icon">⌁</div><h3>Fundamentos de ECG</h3><p>Anatomía cardíaca, conducción eléctrica, 12 derivaciones y procedimiento.</p><small>Nivel intermedio</small><button onclick="course('PA-106')">Ver curso →</button></article>
-  <article data-cat="profesional"><span class="code">PA-201</span><div class="icon">★</div><h3>Servicio al Cliente Profesional</h3><p>Comunicación, presentación, resolución de problemas y experiencia del cliente.</p><small>Nivel profesional</small><button onclick="course('PA-201')">Ver curso →</button></article>
-  <article data-cat="profesional"><span class="code">PA-203</span><div class="icon">⌘</div><h3>Herramientas Digitales e IA</h3><p>Productividad, documentos, organización y uso responsable de inteligencia artificial.</p><small>Nivel profesional</small><button onclick="course('PA-203')">Ver curso →</button></article>
- </div>
+ <div class="filters" id="catalogFilters"></div><div class="grid courses" id="mainCatalog" aria-live="polite"></div>
 </section>
 
 <section id="plataforma" class="platform">
@@ -84,12 +76,12 @@
  <div class="growth-stats"><div><strong>4</strong><span>Pilares de crecimiento</span></div><div><strong>9+</strong><span>Cursos iniciales</span></div><div><strong>24/7</strong><span>Acceso digital</span></div></div>
 </section>
 
-<section id="nuevas-areas" class="section"><div class="heading"><span data-es="NUEVAS ÁREAS" data-en="NEW SUBJECT AREAS">NUEVAS ÁREAS</span><h2 data-es="Explora más profesiones" data-en="Explore more careers">Explora más profesiones</h2><p data-es="Lecciones introductorias de bienes raíces, negocios, finanzas, tecnología, construcción, marketing e idiomas." data-en="Introductory lessons in real estate, business, finance, technology, construction, marketing and languages.">Lecciones introductorias de bienes raíces, negocios, finanzas, tecnología, construcción, marketing e idiomas.</p></div><div class="pa-new-grid" id="expandedCatalog"></div></section><script>document.addEventListener('DOMContentLoaded',()=>{fetch('catalog.json').then(r=>r.json()).then(data=>{const root=document.getElementById('expandedCatalog');if(!root)return;const newCourses=data.filter(c=>!['salud','profesional'].includes(c.category));function draw(){const en=localStorage.getItem('pluton-lang')==='en';root.replaceChildren();newCourses.forEach(c=>{const card=document.createElement('article'),title=document.createElement('h3'),p=document.createElement('p'),link=document.createElement('a');title.textContent=c[en?'en':'es'];p.textContent=c.code;link.href='courses.html';link.textContent=en?'View lessons →':'Ver lecciones →';card.append(title,p,link);root.append(card)});document.querySelectorAll('#nuevas-areas [data-es]').forEach(el=>el.textContent=el.dataset[en?'en':'es']);}draw();document.getElementById('languageToggle')?.addEventListener('click',()=>setTimeout(draw,0));}).catch(()=>{});});</script></main>
+</main>
 
 <footer><div class="brand"><span class="planet">◉</span> PLUTÓN <b>ACADEMIC</b></div><p>Educación práctica para construir nuevas oportunidades.</p><small>© 2026 PLUTÓN ACADEMIC · Fundador: Ruslan Valdes</small></footer>
 
 <div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modal-card"><button class="x" onclick="closeModal()">×</button><span class="eyebrow">PLUTÓN ACADEMIC</span><h2 id="modalTitle">Área del estudiante</h2><div id="modalText"></div></div></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="language.js?v=20261008-fix2"></script>
-<script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-fix2"></script>
+<script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-final3"></script><script src="catalog-ui.js?v=20261008-final3"></script>
 </body></html>

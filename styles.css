@@ -13,3 +13,24 @@
 .pa-news-tabs{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:24px auto 30px}.pa-news-tabs button,.pa-community button,#saveIdea{appearance:none;border:1px solid #d6aa4c;background:#102c50;color:#f0d58b;border-radius:9px;padding:12px 18px;font:700 15px system-ui;cursor:pointer}.pa-news-tabs button.active{background:#d6aa4c;color:#061225}.pa-news-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}.pa-news-card{background:#0a1a32;border:1px solid #203758;border-radius:12px;padding:22px}.pa-news-card a{color:#f0d58b}.pa-community label{display:block;margin:16px 0 8px;color:#f0d58b;font-weight:700}.pa-community textarea,#communityIdea{display:block;width:100%;max-width:650px;min-height:135px;padding:16px;background:#09192f;color:#fff;border:1px solid #47617d;border-radius:10px;font:16px system-ui;resize:vertical;margin:0 auto 16px}.pa-community{text-align:center}.pa-community label{text-align:center}.pa-community button{display:inline-block}.pa-news-status,#newsStatus,#ideaStatus{margin:18px 0;color:#c7d2e2}@media(max-width:650px){.pa-news-tabs{gap:8px}.pa-news-tabs button{flex:1;min-width:95px;padding:10px 8px}}
 
 .pa-new-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.pa-new-grid article{padding:24px;border:1px solid #203758;border-radius:14px;background:#0a1a32}.pa-new-grid h3{font:700 23px Georgia;color:#f7f9fc}.pa-new-grid p{color:#aebbd0}.pa-new-grid a{color:#f0d58b;font-weight:700}
+
+/* Oct 8 unified course catalog and community fixes */
+#catalogFilters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:32px auto 42px;max-width:1100px}
+#catalogFilters button{appearance:none;background:#0b1b33;border:1px solid #345174;border-radius:999px;padding:11px 17px;color:#d5e0f0;font:600 14px system-ui;cursor:pointer}
+#catalogFilters button.active{border-color:#d6aa4c;color:#061225;background:#d6aa4c}
+#mainCatalog article{display:flex;flex-direction:column;min-width:0;overflow:hidden;padding:22px}
+#mainCatalog .catalog-visual{display:grid;place-items:center;height:135px;margin:-22px -22px 20px;background:radial-gradient(circle at 50% 50%,#1c5480 0%,#0b284a 44%,#061428 90%);border-bottom:1px solid #30476a}
+#mainCatalog .catalog-visual span{font-size:56px;color:#e7bc62;text-shadow:0 0 24px #cda94c55}
+#mainCatalog h3{font-size:clamp(21px,2vw,25px);line-height:1.3;margin:14px 0}
+#mainCatalog p{min-height:0;margin:0 0 15px}#mainCatalog small{margin-top:auto}
+#mainCatalog .catalog-cta{display:inline-flex;align-self:flex-start;color:#f0d58b;text-decoration:none;font-weight:750;padding:12px 0}
+#mainCatalog .catalog-cta:focus-visible{outline:2px solid #f0d58b}
+#participa.pa-community{width:min(100%,900px);max-width:none;margin-inline:auto;padding:70px 24px;min-height:0}
+#participa.pa-community label{display:block;margin:20px auto 10px;text-align:left;width:min(100%,600px);color:#f0d58b}
+#participa.pa-community textarea#communityIdea{box-sizing:border-box;display:block;position:static;float:none;width:min(100%,600px);max-width:100%;margin:0 auto 18px;min-height:145px;background:#0a1a32;color:#fff;border:1px solid #d6aa4c;border-radius:12px;padding:16px;font:16px/1.5 system-ui}
+#participa.pa-community button#saveIdea,.pa-news .pa-news-tabs button{appearance:none!important;display:inline-block;background:#102c50!important;color:#f0d58b!important;border:1px solid #d6aa4c!important;border-radius:9px!important;padding:12px 20px!important;font:700 15px system-ui!important;cursor:pointer}
+#participa.pa-community button#saveIdea:hover,.pa-news .pa-news-tabs button.active{background:#d6aa4c!important;color:#061225!important}
+#participa #ideaStatus{min-height:1.5em}
+.pa-news{min-height:0!important}.pa-news .pa-news-tabs{gap:10px;margin:28px auto}.pa-news #newsStatus{max-width:650px;margin:20px auto}
+.pa-course-card{scroll-margin-top:120px}.pa-highlight{border-color:#d6aa4c}
+@media(max-width:850px){#mainCatalog{grid-template-columns:1fr}#participa.pa-community{padding:65px 6%}#catalogFilters{justify-content:flex-start}}
