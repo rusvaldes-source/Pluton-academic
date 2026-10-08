@@ -7,11 +7,53 @@
     "lessons": [
       {
         "es": "Seguridad del paciente",
-        "en": "Patient safety"
+        "en": "Patient safety",
+        "content": {
+          "es": "Identifica riesgos de caídas, verifica la identidad antes de asistir y comunica cambios al profesional responsable.",
+          "en": "Identify fall risks, verify identity before care, and report changes to the responsible clinician."
+        },
+        "question": {
+          "es": "¿Qué debes verificar antes de ayudar a un paciente?",
+          "en": "What should you verify before assisting a patient?"
+        },
+        "options": {
+          "es": [
+            "Su identidad",
+            "Su color favorito",
+            "La hora del almuerzo"
+          ],
+          "en": [
+            "Their identity",
+            "Their favorite color",
+            "Lunch time"
+          ]
+        },
+        "answer": 0
       },
       {
         "es": "Higiene de manos y comunicación",
-        "en": "Hand hygiene and communication"
+        "en": "Hand hygiene and communication",
+        "content": {
+          "es": "Realiza higiene de manos antes y después del contacto y utiliza comunicación respetuosa y clara.",
+          "en": "Clean hands before and after contact and use clear, respectful communication."
+        },
+        "question": {
+          "es": "¿Cuándo debes higienizar tus manos?",
+          "en": "When should you clean your hands?"
+        },
+        "options": {
+          "es": [
+            "Solo al terminar el turno",
+            "Antes y después del contacto",
+            "Una vez al día"
+          ],
+          "en": [
+            "Only after the shift",
+            "Before and after contact",
+            "Once daily"
+          ]
+        },
+        "answer": 1
       }
     ]
   },
@@ -23,11 +65,53 @@
     "lessons": [
       {
         "es": "Registro de signos vitales",
-        "en": "Recording vital signs"
+        "en": "Recording vital signs",
+        "content": {
+          "es": "Registra temperatura, pulso, frecuencia respiratoria y presión arterial según el protocolo de tu centro.",
+          "en": "Record temperature, pulse, respiratory rate and blood pressure following your facility protocol."
+        },
+        "question": {
+          "es": "¿Qué dato debe acompañar una medición?",
+          "en": "What should accompany a measurement?"
+        },
+        "options": {
+          "es": [
+            "Fecha y hora",
+            "Color de uniforme",
+            "Nombre del edificio"
+          ],
+          "en": [
+            "Date and time",
+            "Uniform color",
+            "Building name"
+          ]
+        },
+        "answer": 0
       },
       {
         "es": "Observación y comunicación",
-        "en": "Observation and reporting"
+        "en": "Observation and reporting",
+        "content": {
+          "es": "Informa oportunamente lecturas inusuales y síntomas observados sin intentar diagnosticar.",
+          "en": "Promptly report unusual readings and observed symptoms without attempting to diagnose."
+        },
+        "question": {
+          "es": "¿Qué haces ante una lectura inusual?",
+          "en": "What should you do with an unusual reading?"
+        },
+        "options": {
+          "es": [
+            "Ignorarla",
+            "Informar al profesional responsable",
+            "Publicarla en redes"
+          ],
+          "en": [
+            "Ignore it",
+            "Report to the responsible clinician",
+            "Post it online"
+          ]
+        },
+        "answer": 1
       }
     ]
   },
@@ -39,11 +123,53 @@
     "lessons": [
       {
         "es": "Preparación y seguridad",
-        "en": "Preparation and safety"
+        "en": "Preparation and safety",
+        "content": {
+          "es": "Revisa las normas de bioseguridad, los equipos y el consentimiento según las reglas del centro.",
+          "en": "Review biosafety rules, equipment and consent under facility policies."
+        },
+        "question": {
+          "es": "¿Qué es prioritario antes del procedimiento?",
+          "en": "What is a priority before the procedure?"
+        },
+        "options": {
+          "es": [
+            "La seguridad del paciente",
+            "La velocidad",
+            "La decoración"
+          ],
+          "en": [
+            "Patient safety",
+            "Speed",
+            "Decoration"
+          ]
+        },
+        "answer": 0
       },
       {
         "es": "Identificación y orden de extracción",
-        "en": "Identification and order of draw"
+        "en": "Identification and order of draw",
+        "content": {
+          "es": "La identificación correcta y el orden de extracción reducen errores preanalíticos; practica solo bajo supervisión autorizada.",
+          "en": "Correct identification and order of draw reduce preanalytical errors; practice only under authorized supervision."
+        },
+        "question": {
+          "es": "¿Por qué se verifica la identidad?",
+          "en": "Why verify identity?"
+        },
+        "options": {
+          "es": [
+            "Para evitar errores de muestra",
+            "Para ahorrar papel",
+            "Para decorar etiquetas"
+          ],
+          "en": [
+            "To avoid specimen errors",
+            "To save paper",
+            "To decorate labels"
+          ]
+        },
+        "answer": 0
       }
     ]
   },
@@ -55,11 +181,53 @@
     "lessons": [
       {
         "es": "Derivaciones y preparación",
-        "en": "Leads and preparation"
+        "en": "Leads and preparation",
+        "content": {
+          "es": "Reconoce las 12 derivaciones del ECG y prepara la piel y los electrodos según el protocolo clínico.",
+          "en": "Recognize the 12 ECG leads and prepare skin and electrodes according to clinical protocol."
+        },
+        "question": {
+          "es": "¿Cuántas derivaciones tiene el ECG estándar?",
+          "en": "How many leads are in a standard ECG?"
+        },
+        "options": {
+          "es": [
+            "6",
+            "12",
+            "18"
+          ],
+          "en": [
+            "6",
+            "12",
+            "18"
+          ]
+        },
+        "answer": 1
       },
       {
         "es": "Calidad del registro",
-        "en": "Recording quality"
+        "en": "Recording quality",
+        "content": {
+          "es": "Reduce artefactos por movimiento y confirma que el registro sea legible antes de entregarlo.",
+          "en": "Reduce motion artifacts and confirm the tracing is legible before handing it off."
+        },
+        "question": {
+          "es": "¿Qué puede producir artefactos?",
+          "en": "What can cause artifacts?"
+        },
+        "options": {
+          "es": [
+            "Movimiento",
+            "Fecha correcta",
+            "Identificación correcta"
+          ],
+          "en": [
+            "Movement",
+            "Correct date",
+            "Correct identification"
+          ]
+        },
+        "answer": 0
       }
     ]
   },
@@ -71,11 +239,53 @@
     "lessons": [
       {
         "es": "Escucha activa",
-        "en": "Active listening"
+        "en": "Active listening",
+        "content": {
+          "es": "Escucha sin interrumpir, confirma lo entendido y responde con respeto.",
+          "en": "Listen without interrupting, confirm understanding, and respond respectfully."
+        },
+        "question": {
+          "es": "¿Qué demuestra escucha activa?",
+          "en": "What shows active listening?"
+        },
+        "options": {
+          "es": [
+            "Interrumpir",
+            "Resumir lo escuchado",
+            "Ignorar preguntas"
+          ],
+          "en": [
+            "Interrupting",
+            "Summarizing what you heard",
+            "Ignoring questions"
+          ]
+        },
+        "answer": 1
       },
       {
         "es": "Resolución de problemas",
-        "en": "Problem solving"
+        "en": "Problem solving",
+        "content": {
+          "es": "Define el problema, ofrece opciones realistas y verifica la satisfacción del cliente.",
+          "en": "Define the problem, offer realistic options and check customer satisfaction."
+        },
+        "question": {
+          "es": "¿Cuál es el primer paso?",
+          "en": "What is the first step?"
+        },
+        "options": {
+          "es": [
+            "Entender el problema",
+            "Culpar al cliente",
+            "Cerrar la conversación"
+          ],
+          "en": [
+            "Understand the problem",
+            "Blame the customer",
+            "End the conversation"
+          ]
+        },
+        "answer": 0
       }
     ]
   },
@@ -87,11 +297,53 @@
     "lessons": [
       {
         "es": "Organización digital",
-        "en": "Digital organization"
+        "en": "Digital organization",
+        "content": {
+          "es": "Usa carpetas con nombres claros, copias de seguridad y permisos adecuados para organizar documentos.",
+          "en": "Use clear folder names, backups and appropriate permissions to organize documents."
+        },
+        "question": {
+          "es": "¿Qué ayuda a proteger documentos?",
+          "en": "What helps protect documents?"
+        },
+        "options": {
+          "es": [
+            "Copias de seguridad",
+            "Compartir contraseñas",
+            "Eliminar respaldos"
+          ],
+          "en": [
+            "Backups",
+            "Sharing passwords",
+            "Deleting backups"
+          ]
+        },
+        "answer": 0
       },
       {
         "es": "Uso responsable de IA",
-        "en": "Responsible AI use"
+        "en": "Responsible AI use",
+        "content": {
+          "es": "Verifica las respuestas de la IA y evita introducir datos privados o sensibles en servicios no autorizados.",
+          "en": "Verify AI outputs and avoid entering private or sensitive data into unauthorized services."
+        },
+        "question": {
+          "es": "¿Qué debes hacer con respuestas de IA?",
+          "en": "What should you do with AI answers?"
+        },
+        "options": {
+          "es": [
+            "Verificarlas",
+            "Aceptarlas siempre",
+            "Compartir datos privados"
+          ],
+          "en": [
+            "Verify them",
+            "Always accept them",
+            "Share private data"
+          ]
+        },
+        "answer": 0
       }
     ]
   }

@@ -10,7 +10,7 @@
   <a class="brand" href="#inicio"><span class="planet">◉</span><span>PLUTÓN <b>ACADEMIC</b></span></a>
   <button id="languageToggle" class="language-toggle" type="button" onclick="changeLanguage()" aria-label="Cambiar a inglés">EN</button>
   <button class="menu" aria-label="Menú" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
-  <nav><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a><a href="dashboard.html">Mi plataforma</a><a href="courses.html">Lecciones</a><a href="#certificados">Certificados</a><a href="#crecimiento">Comunidad</a><button type="button" onclick="openLogin()">Iniciar sesión</button></nav>
+  <nav><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a><a href="dashboard.html">Mi plataforma</a><a href="courses.html">Lecciones</a><a href="#certificados">Certificados</a><a href="#noticias">Noticias</a><a href="#participa">Participa</a><a href="#crecimiento">Comunidad</a><button type="button" onclick="openLogin()">Iniciar sesión</button></nav>
 </header>
 
 <main id="inicio">
@@ -67,6 +67,8 @@
  <div class="cert-card"><div class="seal">PA</div><small>PLUTÓN ACADEMIC</small><h2>CERTIFICADO<br>DE FINALIZACIÓN</h2><p>Este certificado se otorga a</p><strong>Tu Nombre</strong><p>por haber completado satisfactoriamente el curso</p><div class="cert-foot"><span>RUSLAN VALDES<br><small>Fundador</small></span><span>PA-XXXX-XXXX<br><small>Código de verificación</small></span></div></div>
  <div><span class="eyebrow">CERTIFICACIÓN DIGITAL</span><h2>Reconoce cada logro.</h2><p>Los cursos elegibles incluyen certificado digital de finalización con identificación del estudiante, curso, fecha y código de verificación.</p><p class="note">Conocimiento hoy · Oportunidades mañana.</p></div>
 </section>
+<section id="noticias" class="section pa-news"><div class="heading"><span>PLUTÓN INFORMA</span><h2 data-news-title>Noticias y actualidad</h2><p data-news-intro>Salud, tecnología y educación. Titulares de medios externos actualizados automáticamente cuando el servicio está disponible.</p></div><div class="pa-news-tabs"><button type="button" data-news-category="salud">Salud</button><button type="button" data-news-category="tecnologia">Tecnología</button><button type="button" data-news-category="educacion">Educación</button></div><p id="newsStatus" role="status"></p><div id="newsList" class="pa-news-grid"></div><p class="pa-news-disclaimer">Los enlaces conducen a fuentes externas. PLUTÓN ACADEMIC no redacta ni verifica independientemente estos titulares.</p></section>
+<section id="participa" class="section pa-community"><div class="heading"><span>PARTICIPA</span><h2 data-community-title>Pregunta de la comunidad</h2><p data-community-intro>Comparte una idea para mejorar tu aprendizaje. La respuesta se guarda únicamente en este navegador.</p></div><label for="communityIdea">Tu propuesta</label><textarea id="communityIdea" maxlength="600" rows="4" placeholder="¿Qué tema te gustaría aprender?"></textarea><button type="button" id="saveIdea">Guardar mi idea</button><p id="ideaStatus" role="status"></p></section>
 <section id="crecimiento" class="section growth">
  <div class="heading"><span>FASE 4 · CRECIMIENTO</span><h2>Más que cursos: una comunidad para avanzar</h2><p>PLUTÓN ACADEMIC evoluciona hacia una experiencia continua con app, comunidad, automatizaciones y nuevas rutas de aprendizaje.</p></div>
  <div class="grid growth-grid">
@@ -89,5 +91,5 @@
 <div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modal-card"><button class="x" onclick="closeModal()">×</button><span class="eyebrow">PLUTÓN ACADEMIC</span><h2 id="modalTitle">Área del estudiante</h2><div id="modalText"></div></div></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="language.js?v=20261007-stable3"></script>
-<script src="app.js?v=20261007-stable3"></script>
+<script src="app.js?v=20261008-content"></script><script src="news.js?v=20261008-content"></script>
 </body></html>
