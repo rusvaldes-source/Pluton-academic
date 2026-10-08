@@ -82,9 +82,10 @@ async function signUp() {
     return;
   }
 
+  if (!sb) return authMessage(t('No se pudo conectar al servicio. Recarga la página.', 'Unable to connect. Reload the page.'));
   authMessage('Creando cuenta...');
 
-  const { error } = await sb.auth.signUp({
+  try { const { error } = await sb.auth.signUp({
     email,
     password,
     options: {
@@ -98,6 +99,7 @@ async function signUp() {
   }
 
   authMessage('Revisa tu correo para confirmar tu cuenta.');
+  } catch(e) { authMessage(e.message || 'Error de conexión'); }
 }
 
 // INICIAR SESIÓN
@@ -110,9 +112,10 @@ async function signIn() {
     return;
   }
 
+  if (!sb) return authMessage(t('No se pudo conectar al servicio. Recarga la página.', 'Unable to connect. Reload the page.'));
   authMessage('Entrando...');
 
-  const { error } = await sb.auth.signInWithPassword({
+  try { const { error } = await sb.auth.signInWithPassword({
     email,
     password
   });
@@ -123,6 +126,7 @@ async function signIn() {
   }
 
   window.location.href = 'dashboard.html';
+  } catch(e) { authMessage(e.message || 'Error de conexión'); }
 }
 
 // RECUPERAR CONTRASEÑA
@@ -134,9 +138,10 @@ async function resetPassword() {
     return;
   }
 
+  if (!sb) return authMessage(t('No se pudo conectar al servicio. Recarga la página.', 'Unable to connect. Reload the page.'));
   authMessage('Enviando enlace...');
 
-  const { error } = await sb.auth.resetPasswordForEmail(email, {
+  try { const { error } = await sb.auth.resetPasswordForEmail(email, {
     redirectTo: window.location.origin
   });
 
@@ -146,6 +151,7 @@ async function resetPassword() {
   }
 
   authMessage('Revisa tu correo para restablecer la contraseña.');
+  } catch(e) { authMessage(e.message || 'Error de conexión'); }
 }
 
 // CURSOS
@@ -184,42 +190,44 @@ function growth(name) {
   );
 }
 
-// FILTROS DEL CATÁLOGO
-function initCourseFilters() {
-  const buttons = document.querySelectorAll('.filters button[data-filter]');
-  const cards = document.querySelectorAll('.courses article[data-cat]');
-  buttons.forEach(button => button.addEventListener('click', () => {
-    buttons.forEach(b => b.classList.remove('active'));
-    button.classList.add('active');
-    const filter = button.dataset.filter;
-    cards.forEach(card => {
-      card.style.display = filter === 'all' || card.dataset.cat === filter ? '' : 'none';
-    });
-  }));
-}
-
-// IDIOMA ES / EN. Traduce la interfaz principal sin alterar datos del usuario.
+// Selector de idioma y filtros del catálogo
 const translations = {
-  en: {
-    'Cursos':'Courses','Membresías':'Memberships','Mi plataforma':'My platform','Certificados':'Certificates','Comunidad':'Community','Iniciar sesión':'Sign in',
-    'Explorar cursos':'Explore courses','Ver membresías':'View memberships','Todos':'All','Salud':'Health','Desarrollo profesional':'Professional development',
-    'Cerrar sesión':'Sign out','Panel del Estudiante':'Student Dashboard','Bienvenido':'Welcome','Mi membresía':'My membership','Mis cursos':'My courses','Mi progreso':'My progress'
-  }
+ 'Cursos':'Courses','Membresías':'Memberships','Mi plataforma':'My platform','Certificados':'Certificates','Comunidad':'Community','Iniciar sesión':'Sign in',
+ 'Explorar cursos':'Explore courses','Ver membresías':'View memberships','Todos':'All','Salud':'Health','Desarrollo profesional':'Professional development',
+ 'Seleccionar':'Select','Ver curso →':'View course →','Cerrar sesión':'Sign out','Panel del Estudiante':'Student Dashboard',
+ 'Bienvenido':'Welcome','Mi membresía':'My membership','Mis cursos':'My courses','Mi progreso':'My progress',
+ 'Cargando tu cuenta...':'Loading your account...','Cargando...':'Loading...','Sin membresía':'No membership',
+ 'Área del estudiante':'Student area','Correo electrónico':'Email','Contraseña':'Password','Crear cuenta':'Create account',
+ 'Olvidé mi contraseña':'Forgot password','Nivel inicial':'Beginner level','Nivel intermedio':'Intermediate level',
+ 'Nivel profesional':'Professional level','MÁS COMPLETO':'MOST COMPLETE','CATÁLOGO INICIAL':'INITIAL CATALOG',
+ 'MEMBRESÍAS':'MEMBERSHIPS','CERTIFICACIÓN DIGITAL':'DIGITAL CERTIFICATION','EDUCACIÓN DIGITAL · A TU RITMO':'DIGITAL EDUCATION · AT YOUR PACE',
+ 'Tu futuro comienza':'Your future begins','con conocimiento.':'with knowledge.',
+ 'Aprendizaje práctico para avanzar':'Practical learning to move forward',
+ 'Elige cómo quieres aprender':'Choose how you want to learn',
+ 'Revisa tu correo para confirmar tu cuenta.':'Check your email to confirm your account.',
+ 'Revisa tu correo para restablecer la contraseña.':'Check your email to reset your password.'
 };
-function applyLanguage(lang) {
-  document.documentElement.lang = lang;
-  localStorage.setItem('pluton-lang', lang);
-  document.querySelectorAll('[data-es]').forEach(el => {
-    el.textContent = lang === 'en' ? (el.dataset.en || el.dataset.es) : el.dataset.es;
-  });
-  const btn = document.getElementById('languageToggle');
-  if (btn) btn.textContent = lang === 'es' ? 'EN' : 'ES';
+const reverseTranslations = Object.fromEntries(Object.entries(translations).map(([k,v])=>[v,k]));
+function lang(){return localStorage.getItem('pluton-lang') === 'en' ? 'en' : 'es';}
+function t(es,en){return lang()==='en'?en:es;}
+function translateNode(root){
+ const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+ const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+ for(const node of nodes){if(node.parentElement?.closest('script,style'))continue;
+  const raw=node.nodeValue, trimmed=raw.trim();if(!trimmed)continue;
+  const base=reverseTranslations[trimmed]||trimmed;
+  if(translations[base])node.nodeValue=raw.replace(trimmed,lang()==='en'?translations[base]:base);
+ }
+ document.documentElement.lang=lang();
+ const toggle=document.getElementById('languageToggle');if(toggle){toggle.textContent=lang()==='en'?'ES':'EN';toggle.setAttribute('aria-label',lang()==='en'?'Switch to Spanish':'Cambiar a inglés');}
 }
-function toggleLanguage() {
-  applyLanguage((localStorage.getItem('pluton-lang') || 'es') === 'es' ? 'en' : 'es');
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  initCourseFilters();
-  applyLanguage(localStorage.getItem('pluton-lang') || 'es');
+function changeLanguage(){localStorage.setItem('pluton-lang',lang()==='en'?'es':'en');translateNode(document.body);}
+document.addEventListener('DOMContentLoaded',()=>{
+ translateNode(document.body);
+ document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b===btn));
+  document.querySelectorAll('.courses article[data-cat]').forEach(card=>{card.hidden=btn.dataset.filter!=='all'&&card.dataset.cat!==btn.dataset.filter;});
+ }));
 });
+const originalShow=show;
+show=function(title,html){originalShow(title,html);translateNode(document.getElementById('modal'));};

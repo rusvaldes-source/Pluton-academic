@@ -1,18 +1,6 @@
-PLUTÓN ACADEMIC — ACTUALIZACIÓN CUENTAS REALES (SUPABASE)
-
-Incluye:
-- Registro real por correo y contraseña.
-- Confirmación de correo mediante Supabase.
-- Inicio y cierre de sesión.
-- Recuperación de contraseña.
-- Integración con el proyecto Supabase mediante Project URL + Publishable Key.
-- Mantiene la interfaz y contenido de Fase 4.
-
-SEGURIDAD:
-- Solo se incluye la Publishable Key, diseñada para cliente web.
-- NO incluye contraseña de base de datos, secret key ni service_role.
-
-SIGUIENTE CONFIGURACIÓN:
-- Configurar Site URL / Redirect URLs en Supabase para https://plutonacademy.com
-- Probar registro real con un correo.
-- Después: perfiles/progreso en base de datos y pagos/membresías.
+PLUTÓN ACADEMIC — Paquete web revisado
+Subir todos los archivos de esta carpeta juntos a la raíz del repositorio GitHub.
+Incluye inicio de sesión Supabase, panel del estudiante, consulta de membresía, cierre de sesión, filtros y selector ES/EN.
+La traducción al inglés cubre los controles y textos principales, no todos los párrafos extensos.
+IMPORTANTE: La membresía requiere tabla profiles, permisos RLS de lectura y un registro asociado al correo del usuario. No se han comprobado credenciales reales, políticas RLS ni despliegue Cloudflare.
+No se habilitan pagos ni se atribuyen membresías automáticamente.

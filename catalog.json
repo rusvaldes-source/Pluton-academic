@@ -1,0 +1,98 @@
+[
+  {
+    "code": "PA-101",
+    "es": "Asistente de Enfermería: Fundamentos",
+    "en": "Nursing Assistant: Foundations",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Seguridad del paciente",
+        "en": "Patient safety"
+      },
+      {
+        "es": "Higiene de manos y comunicación",
+        "en": "Hand hygiene and communication"
+      }
+    ]
+  },
+  {
+    "code": "PA-102",
+    "es": "Signos Vitales y Cuidado Básico",
+    "en": "Vital Signs and Basic Care",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Registro de signos vitales",
+        "en": "Recording vital signs"
+      },
+      {
+        "es": "Observación y comunicación",
+        "en": "Observation and reporting"
+      }
+    ]
+  },
+  {
+    "code": "PA-105",
+    "es": "Introducción a Flebotomía",
+    "en": "Introduction to Phlebotomy",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Preparación y seguridad",
+        "en": "Preparation and safety"
+      },
+      {
+        "es": "Identificación y orden de extracción",
+        "en": "Identification and order of draw"
+      }
+    ]
+  },
+  {
+    "code": "PA-106",
+    "es": "Fundamentos de ECG",
+    "en": "ECG Fundamentals",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Derivaciones y preparación",
+        "en": "Leads and preparation"
+      },
+      {
+        "es": "Calidad del registro",
+        "en": "Recording quality"
+      }
+    ]
+  },
+  {
+    "code": "PA-201",
+    "es": "Servicio al Cliente Profesional",
+    "en": "Professional Customer Service",
+    "category": "profesional",
+    "lessons": [
+      {
+        "es": "Escucha activa",
+        "en": "Active listening"
+      },
+      {
+        "es": "Resolución de problemas",
+        "en": "Problem solving"
+      }
+    ]
+  },
+  {
+    "code": "PA-203",
+    "es": "Herramientas Digitales e IA",
+    "en": "Digital Tools and AI",
+    "category": "profesional",
+    "lessons": [
+      {
+        "es": "Organización digital",
+        "en": "Digital organization"
+      },
+      {
+        "es": "Uso responsable de IA",
+        "en": "Responsible AI use"
+      }
+    ]
+  }
+]
