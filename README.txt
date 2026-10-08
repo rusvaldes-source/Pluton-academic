@@ -8,3 +8,5 @@ Idioma: ES/EN. Revisar en la página publicada las funciones de autenticación y
 
 
 Corrección 8 octubre: traducciones interiores de Participa, estilo de botones y campos. Noticias requiere que functions/api/news.js se conserve en su ruta de carpetas al desplegar Cloudflare Pages. Subir únicamente archivos planos a GitHub NO instala esa función. Si /api/news no está disponible, las noticias mostrarán un aviso, nunca titulares inventados.
+
+AMPLIACION 8 OCT: Se agregan 8 cursos INTRODUCTORIOS bilingües en real estate, negocios, finanzas, IA, mantenimiento, marketing e idiomas, con 2 lecciones y cuestionarios por curso. NO son programas completos ni habilitan licencias profesionales. Se conservan los archivos y funciones previos.

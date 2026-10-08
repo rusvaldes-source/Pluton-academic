@@ -346,5 +346,469 @@
         "answer": 0
       }
     ]
+  },
+  {
+    "code": "RE-101",
+    "es": "Bienes raíces: fundamentos",
+    "en": "Real Estate Foundations",
+    "category": "real-estate",
+    "lessons": [
+      {
+        "es": "Propiedades y participantes",
+        "en": "Properties and participants",
+        "content": {
+          "es": "Identifica compradores, vendedores, agentes y tipos de propiedades.",
+          "en": "Identify buyers, sellers, agents, and property types."
+        },
+        "question": {
+          "es": "¿Quién compra una propiedad?",
+          "en": "Who purchases a property?"
+        },
+        "options": {
+          "es": [
+            "El comprador",
+            "El vendedor",
+            "El inspector"
+          ],
+          "en": [
+            "The buyer",
+            "The seller",
+            "The inspector"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Proceso de compraventa",
+        "en": "Purchase process",
+        "content": {
+          "es": "Reconoce oferta, contrato, inspección y cierre como etapas habituales; los requisitos varían por jurisdicción.",
+          "en": "Recognize offers, contracts, inspections and closing as common stages; rules vary by jurisdiction."
+        },
+        "question": {
+          "es": "¿Qué documento suele establecer condiciones de compra?",
+          "en": "Which document commonly sets purchase terms?"
+        },
+        "options": {
+          "es": [
+            "Un contrato",
+            "Un folleto",
+            "Un anuncio"
+          ],
+          "en": [
+            "A contract",
+            "A brochure",
+            "An advertisement"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "RE-102",
+    "es": "Inversión inmobiliaria inicial",
+    "en": "Introduction to Property Investing",
+    "category": "real-estate",
+    "lessons": [
+      {
+        "es": "Ingresos y gastos",
+        "en": "Income and expenses",
+        "content": {
+          "es": "Estima renta, mantenimiento, seguros, impuestos y vacancia antes de evaluar una propiedad.",
+          "en": "Estimate rent, maintenance, insurance, taxes and vacancy before evaluating a property."
+        },
+        "question": {
+          "es": "¿Qué reduce el rendimiento neto?",
+          "en": "What reduces net returns?"
+        },
+        "options": {
+          "es": [
+            "Los gastos",
+            "La dirección",
+            "El color"
+          ],
+          "en": [
+            "Expenses",
+            "The address",
+            "The color"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Riesgo y diligencia debida",
+        "en": "Risk and due diligence",
+        "content": {
+          "es": "Revisa documentos, condición del inmueble y riesgos; evita promesas de rentabilidad.",
+          "en": "Review documents, property condition and risks; avoid guaranteed-return claims."
+        },
+        "question": {
+          "es": "¿Qué conviene hacer antes de invertir?",
+          "en": "What should you do before investing?"
+        },
+        "options": {
+          "es": [
+            "Investigar riesgos",
+            "Ignorar costos",
+            "Asumir ganancias"
+          ],
+          "en": [
+            "Research risks",
+            "Ignore costs",
+            "Assume profits"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "NE-101",
+    "es": "Cómo iniciar un negocio",
+    "en": "Starting a Business",
+    "category": "negocios",
+    "lessons": [
+      {
+        "es": "Propuesta de valor",
+        "en": "Value proposition",
+        "content": {
+          "es": "Define a quién ayudas, qué problema resuelves y cómo ofreces tu servicio.",
+          "en": "Define whom you help, what problem you solve and how you deliver your service."
+        },
+        "question": {
+          "es": "¿Qué describe una propuesta de valor?",
+          "en": "What does a value proposition describe?"
+        },
+        "options": {
+          "es": [
+            "El beneficio al cliente",
+            "Solo el logotipo",
+            "Solo el local"
+          ],
+          "en": [
+            "Customer benefit",
+            "Only the logo",
+            "Only the location"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Costos y precios",
+        "en": "Costs and pricing",
+        "content": {
+          "es": "Distingue costos fijos y variables antes de establecer precios.",
+          "en": "Distinguish fixed and variable costs before setting prices."
+        },
+        "question": {
+          "es": "¿Qué debes considerar al fijar precios?",
+          "en": "What matters when setting prices?"
+        },
+        "options": {
+          "es": [
+            "Costos y margen",
+            "Solo competencia",
+            "Solo colores"
+          ],
+          "en": [
+            "Costs and margin",
+            "Only competitors",
+            "Only colors"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "FI-101",
+    "es": "Finanzas personales",
+    "en": "Personal Finance Basics",
+    "category": "finanzas",
+    "lessons": [
+      {
+        "es": "Presupuesto mensual",
+        "en": "Monthly budget",
+        "content": {
+          "es": "Clasifica ingresos, gastos esenciales y metas de ahorro.",
+          "en": "Classify income, essential expenses and savings goals."
+        },
+        "question": {
+          "es": "¿Qué compara un presupuesto?",
+          "en": "What does a budget compare?"
+        },
+        "options": {
+          "es": [
+            "Ingresos y gastos",
+            "Marcas y colores",
+            "Fechas y nombres"
+          ],
+          "en": [
+            "Income and expenses",
+            "Brands and colors",
+            "Dates and names"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Crédito responsable",
+        "en": "Responsible credit",
+        "content": {
+          "es": "Comprende pagos puntuales, intereses y utilización de crédito.",
+          "en": "Understand on-time payments, interest and credit utilization."
+        },
+        "question": {
+          "es": "¿Qué suele ayudar al historial crediticio?",
+          "en": "What often helps credit history?"
+        },
+        "options": {
+          "es": [
+            "Pagar a tiempo",
+            "Ignorar pagos",
+            "Exceder límites"
+          ],
+          "en": [
+            "Paying on time",
+            "Ignoring payments",
+            "Exceeding limits"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "TE-101",
+    "es": "Inteligencia artificial práctica",
+    "en": "Practical Artificial Intelligence",
+    "category": "tecnologia",
+    "lessons": [
+      {
+        "es": "Instrucciones claras",
+        "en": "Clear prompts",
+        "content": {
+          "es": "Formula solicitudes con contexto, objetivo y formato de respuesta.",
+          "en": "Write requests with context, goals and output format."
+        },
+        "question": {
+          "es": "¿Qué mejora una instrucción?",
+          "en": "What improves a prompt?"
+        },
+        "options": {
+          "es": [
+            "Contexto claro",
+            "Ambigüedad",
+            "Sin objetivo"
+          ],
+          "en": [
+            "Clear context",
+            "Ambiguity",
+            "No goal"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Verificación de resultados",
+        "en": "Checking outputs",
+        "content": {
+          "es": "Comprueba hechos y evita compartir datos confidenciales sin autorización.",
+          "en": "Check facts and avoid sharing confidential data without permission."
+        },
+        "question": {
+          "es": "¿Qué hacer con datos importantes generados por IA?",
+          "en": "What should you do with important AI-generated facts?"
+        },
+        "options": {
+          "es": [
+            "Verificarlos",
+            "Asumir exactitud",
+            "Publicar sin revisar"
+          ],
+          "en": [
+            "Verify them",
+            "Assume accuracy",
+            "Publish unchecked"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "CO-101",
+    "es": "Mantenimiento y handyman",
+    "en": "Maintenance and Handyman Basics",
+    "category": "construccion",
+    "lessons": [
+      {
+        "es": "Planificación segura",
+        "en": "Safe planning",
+        "content": {
+          "es": "Evalúa riesgos, herramientas y límites de trabajo que requieren profesionales autorizados.",
+          "en": "Assess risks, tools and work requiring licensed professionals."
+        },
+        "question": {
+          "es": "¿Qué se hace antes de una reparación?",
+          "en": "What comes before a repair?"
+        },
+        "options": {
+          "es": [
+            "Evaluar riesgos",
+            "Improvisar",
+            "Omitir protección"
+          ],
+          "en": [
+            "Assess risks",
+            "Improvise",
+            "Skip protection"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Presupuesto de materiales",
+        "en": "Materials estimate",
+        "content": {
+          "es": "Calcula cantidades, desperdicio y tiempo estimado para tareas sencillas.",
+          "en": "Calculate quantities, waste and estimated time for simple jobs."
+        },
+        "question": {
+          "es": "¿Qué se incluye en un estimado?",
+          "en": "What belongs in an estimate?"
+        },
+        "options": {
+          "es": [
+            "Materiales y mano de obra",
+            "Solo pintura",
+            "Solo fotos"
+          ],
+          "en": [
+            "Materials and labor",
+            "Only paint",
+            "Only photos"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "MA-101",
+    "es": "Marketing digital inicial",
+    "en": "Digital Marketing Foundations",
+    "category": "marketing",
+    "lessons": [
+      {
+        "es": "Público objetivo",
+        "en": "Target audience",
+        "content": {
+          "es": "Identifica necesidades y canales preferidos de tus clientes.",
+          "en": "Identify customer needs and preferred channels."
+        },
+        "question": {
+          "es": "¿Qué define un público objetivo?",
+          "en": "What defines a target audience?"
+        },
+        "options": {
+          "es": [
+            "Clientes potenciales",
+            "Cualquier persona",
+            "Solo empleados"
+          ],
+          "en": [
+            "Potential customers",
+            "Everyone",
+            "Only employees"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Medición de campañas",
+        "en": "Campaign measurement",
+        "content": {
+          "es": "Compara visitas, consultas y conversiones para mejorar mensajes.",
+          "en": "Compare visits, inquiries and conversions to improve messaging."
+        },
+        "question": {
+          "es": "¿Qué indica una conversión?",
+          "en": "What indicates a conversion?"
+        },
+        "options": {
+          "es": [
+            "Una acción deseada",
+            "Un color",
+            "Un horario"
+          ],
+          "en": [
+            "A desired action",
+            "A color",
+            "A schedule"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "ID-101",
+    "es": "Inglés para el trabajo",
+    "en": "Workplace English",
+    "category": "idiomas",
+    "lessons": [
+      {
+        "es": "Presentaciones profesionales",
+        "en": "Professional introductions",
+        "content": {
+          "es": "Practica saludos, nombre, cargo y preguntas básicas en inglés.",
+          "en": "Practice greetings, names, roles and basic questions in English."
+        },
+        "question": {
+          "es": "¿Cómo se dice «Mucho gusto»?",
+          "en": "How do you say «Mucho gusto»?"
+        },
+        "options": {
+          "es": [
+            "Nice to meet you",
+            "Good night",
+            "See you later"
+          ],
+          "en": [
+            "Nice to meet you",
+            "Good night",
+            "See you later"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Atención al cliente",
+        "en": "Customer conversations",
+        "content": {
+          "es": "Practica preguntas amables y confirmación de solicitudes.",
+          "en": "Practice polite questions and confirming requests."
+        },
+        "question": {
+          "es": "¿Cuál frase ofrece ayuda?",
+          "en": "Which phrase offers help?"
+        },
+        "options": {
+          "es": [
+            "How can I help you?",
+            "Go away",
+            "No thanks"
+          ],
+          "en": [
+            "How can I help you?",
+            "Go away",
+            "No thanks"
+          ]
+        },
+        "answer": 0
+      }
+    ]
   }
 ]
