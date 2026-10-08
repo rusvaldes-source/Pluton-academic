@@ -13,3 +13,5 @@ NOVEDADES V4:
 - No se habilitaron pagos ni se modificaron las claves de Supabase.
 
 IMPORTANTE: conserva copia de V3 reparación antes de desplegar. Las comprobaciones de archivos y sintaxis no sustituyen pruebas reales en producción.
+
+V4.1: corregidos los botones del reto diario y renovada la versión de CSS para evitar caché. Conservar functions/api/news.js en su ruta al subir el paquete completo.
