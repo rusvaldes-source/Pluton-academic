@@ -15,3 +15,17 @@ PRUEBAS: curso > lección > Imprimir / Guardar PDF > comprobar vista previa y gu
 NOTAS: la sincronización entre dispositivos no está verificada; la exportación depende del diálogo de impresión del navegador. Los cursos son introductorios. No se ha modificado Supabase ni el sistema de autenticación.
 
 V10: Cuaderno de notas personales por lección (ES/EN). Guardar notas en este navegador; sin cambios en la sincronización de progreso ni en autenticación. Archivo nuevo: lesson-notes.js.
+
+V11 — CUADERNO GENERAL DE NOTAS (08 OCT 2026)
+- En Mis cursos aparece un resumen de las notas guardadas en este dispositivo.
+- Abrir lección permite volver directamente a la lección con notas.
+- Exportar mis notas (.txt) genera un archivo de texto local.
+- No se modificaron credenciales, Supabase, progreso ni membresías.
+- Las notas continúan guardándose solo en este navegador. La exportación debe probarse en el dispositivo.
+- Subir todos los archivos y la carpeta functions/ a la raíz del repositorio.
+
+V12 — CORRECCIÓN DE IDIOMA DEL RETO DIARIO
+- En Atención al cliente (ID-101), opciones ES corregidas: ¿Cómo puedo ayudarte? / Vete de aquí / No, gracias.
+- Preguntas y respuestas del reto toman el idioma actual del catálogo; las opciones EN originales se conservan.
+- Se revisaron las 46 lecciones: las frases de práctica en inglés del módulo de presentaciones se mantienen como contenido pedagógico y las opciones numéricas no requieren traducción.
+- Sin cambios en autenticación, notas, progreso, membresías, diseño ni infraestructura.

@@ -797,9 +797,9 @@
         },
         "options": {
           "es": [
-            "How can I help you?",
-            "Go away",
-            "No thanks"
+            "¿Cómo puedo ayudarte?",
+            "Vete de aquí",
+            "No, gracias"
           ],
           "en": [
             "How can I help you?",
