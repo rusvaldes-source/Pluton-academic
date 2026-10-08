@@ -79,6 +79,7 @@ const reverse=Object.fromEntries(Object.entries(dictionary).map(([es,en])=>[en,e
 function current(){try{return localStorage.getItem('pluton-lang')==='en'?'en':'es'}catch(e){return 'es'}}
 function apply(root=document.body){
  if(!root)return;
+ if(observer)observer.disconnect();
  const language=current();document.documentElement.lang=language;
  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let node;
  while((node=walker.nextNode())){
@@ -94,11 +95,11 @@ function apply(root=document.body){
   const es=el.dataset.originalPlaceholder;
   el.setAttribute('placeholder',language==='en'?(dictionary[es]||es):es);
  });
- document.querySelectorAll('#languageToggle').forEach(b=>{b.textContent=language==='en'?'ES':'EN';b.setAttribute('aria-label',language==='en'?'Switch to Spanish':'Cambiar a inglés')});
+ document.querySelectorAll('#languageToggle').forEach(b=>{if(b.textContent!==(language==='en'?'ES':'EN'))b.textContent=language==='en'?'ES':'EN';b.setAttribute('aria-label',language==='en'?'Switch to Spanish':'Cambiar a inglés')});
+ if(observer)observer.observe(document.body,{childList:true,subtree:true});
 }
 function toggle(){try{localStorage.setItem('pluton-lang',current()==='en'?'es':'en')}catch(e){}apply();if(typeof window.translateDashboard==='function')window.translateDashboard();if(typeof window.renderCourses==='function')window.renderCourses();}
 window.plutonLanguage={current,apply,toggle};window.changeLanguage=toggle;window.changeDashboardLanguage=toggle;window.toggleLang=toggle;
+const observer=new MutationObserver(mutations=>{if(mutations.some(m=>Array.from(m.addedNodes).some(n=>n.nodeType===1))){apply();}});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>apply());else apply();
-const observer=new MutationObserver(mutations=>{for(const m of mutations){if(m.addedNodes.length){apply();break;}}});
-observer.observe(document.body,{childList:true,subtree:true});
 })();
