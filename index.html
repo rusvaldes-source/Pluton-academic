@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PLUTÓN ACADEMIC | Tu futuro comienza con conocimiento</title> 
-<link rel="stylesheet" href="styles.css?v=20261008-v41-reto">
+<link rel="stylesheet" href="styles.css?v=20261008-v5-expansion">
 </head>
 <body>
 <header>
   <a class="brand" href="#inicio"><span class="planet">◉</span><span>PLUTÓN <b>ACADEMIC</b></span></a>
   <button id="languageToggle" class="language-toggle" type="button" onclick="changeLanguage()" aria-label="Cambiar a inglés">EN</button>
   <button class="menu" aria-label="Menú" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
-  <nav><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a><a href="dashboard.html">Mi plataforma</a><a href="courses.html">Lecciones</a><a href="#certificados">Certificados</a><a href="#noticias">Noticias</a><a href="#participa">Participa</a><a href="#crecimiento">Comunidad</a><button type="button" onclick="openLogin()">Iniciar sesión</button></nav>
+  <nav><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a><a href="dashboard.html">Mi plataforma</a><a href="courses.html">Lecciones</a><a href="#certificados">Certificados</a><a href="#recursos">Recursos</a><a href="#noticias">Noticias</a><a href="#participa">Participa</a><a href="#crecimiento">Comunidad</a><button type="button" onclick="openLogin()">Iniciar sesión</button></nav>
 </header>
 
 <main id="inicio">
@@ -28,7 +28,7 @@
 
 <section id="cursos" class="section">
  <div class="heading"><span>CATÁLOGO INICIAL</span><h2>Aprendizaje práctico para avanzar</h2><p>Rutas diseñadas para convertir conocimiento en habilidades aplicables.</p></div>
- <div class="filters" id="catalogFilters"></div><div class="grid courses" id="mainCatalog" aria-live="polite"></div>
+ <div class="pa-search-bar"><label for="catalogSearch">Buscar / Search</label><input id="catalogSearch" type="search" autocomplete="off" placeholder="Buscar cursos por nombre o código / Search courses"></div><p id="catalogCount" class="pa-result-count" aria-live="polite"></p><div class="filters" id="catalogFilters"></div><div class="grid courses" id="mainCatalog" aria-live="polite"></div>
 </section>
 
 <section id="plataforma" class="platform">
@@ -46,6 +46,7 @@
  </div>
 </section>
 
+<section id="recursos" class="section pa-resources"><div class="heading"><span>RECURSOS / RESOURCES</span><h2>Herramientas para aprender y aplicar</h2><p>Material práctico para organizar tus estudios y tus proyectos.</p></div><div class="pa-resource-grid"><article><h3>Plan de estudio / Study plan</h3><p>Define una meta, elige un curso y dedica bloques cortos a practicar.</p><a href="dashboard.html">Abrir mi cuaderno →</a></article><article><h3>Práctica diaria / Daily practice</h3><p>Responde el reto del día y revisa tus respuestas con atención.</p><a href="#reto">Ir al reto →</a></article><article><h3>Catálogo ampliado / Expanded catalog</h3><p>20 cursos iniciales con actividades de comprobación.</p><a href="courses.html">Explorar lecciones →</a></article></div></section>
 <section id="membresias" class="section memberships">
  <div class="heading"><span>MEMBRESÍAS</span><h2>Elige cómo quieres aprender</h2><p>Precios de lanzamiento sujetos a ajuste antes de la apertura comercial.</p></div>
  <div class="grid plans">
@@ -74,7 +75,7 @@
 
 <section class="growth-band">
  <div><span class="eyebrow">ECOSISTEMA PLUTÓN</span><h2>Aprende. Avanza. Conecta.</h2><p>Una experiencia preparada para crecer con cada estudiante, desde la primera lección hasta nuevas oportunidades profesionales.</p></div>
- <div class="growth-stats"><div><strong>4</strong><span>Pilares de crecimiento</span></div><div><strong>14</strong><span>Cursos iniciales</span></div><div><strong>24/7</strong><span>Acceso digital</span></div></div>
+ <div class="growth-stats"><div><strong>4</strong><span>Pilares de crecimiento</span></div><div><strong>20</strong><span>Cursos iniciales</span></div><div><strong>24/7</strong><span>Acceso digital</span></div></div>
 </section>
 
 </main>
@@ -84,5 +85,5 @@
 <div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modal-card"><button class="x" onclick="closeModal()">×</button><span class="eyebrow">PLUTÓN ACADEMIC</span><h2 id="modalTitle">Área del estudiante</h2><div id="modalText"></div></div></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="language.js?v=20261008-fix2"></script>
-<script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-v4"></script><script src="daily.js?v=20261008-v4"></script><script src="catalog-ui.js?v=20261008-final3"></script>
-</body></html>
+<script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-v4"></script><script src="daily.js?v=20261008-v4"></script><script src="catalog-ui.js?v=20261008-v5-expansion"></script>
+<script src="resource-ui.js?v=20261008-v5-expansion"></script></body></html>
