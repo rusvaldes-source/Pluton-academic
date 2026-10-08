@@ -1,20 +1,15 @@
-PLUTÓN ACADEMIC V8 — AULA INTERACTIVA — 08 OCT 2026
-BASE: V7 validada en móvil. Conserva 20 cursos, 46 lecciones, progreso y sincronización, login, membresía, noticias y ES/EN.
+PLUTÓN ACADEMIC V9 — PDF PROFESIONAL — 08 OCT 2026
 
-NOVEDADES V8 EN LECCIONES:
-- Escuchar el contenido de cada lección usando la síntesis de voz del navegador (depende del dispositivo).
-- Detener audio.
-- Tarjeta de repaso con pregunta y respuesta que se revela al pulsar.
-- Imprimir o guardar PDF de la lección usando la función Imprimir del navegador (ventana emergente).
-- Controles accesibles, adaptados al móvil, textos ES/EN.
-- Las tarjetas de repaso NO cuentan como evaluación ni modifican el progreso.
+BASE: V8 validada por el usuario en Android. Paquete completo: 20 cursos, 46 lecciones, audio, tarjetas, progreso, sincronización de cuenta, login, membresías, noticias y ES/EN.
 
-NO SE INCLUYEN VIDEOS NI FOTOGRAFÍAS LICENCIADAS; esas piezas requieren material autorizado.
-V7 sincroniza progreso en user_metadata de Supabase; no se ha validado aún entre dos dispositivos.
-El audio requiere que el navegador admita SpeechSynthesis; imprimir requiere permitir ventana emergente.
+CAMBIO ÚNICO V9:
+- Diseño de impresión/PDF mejorado: portada compacta con marca, curso y código, lección, contenido legible, pregunta de repaso, líneas para notas y pie de página.
+- Diseño adaptable a pantalla y papel; estilos de impresión sin botones y márgenes de página apropiados.
+- La ventana de impresión y Guardar como PDF del navegador se mantienen, como se verificó en V8.
+- Etiquetas del documento en español o inglés según idioma seleccionado.
 
-INSTALACIÓN: subir TODOS los archivos a la raíz del repositorio. La única subcarpeta
-functions/api/news.js es necesaria para la ruta de Cloudflare Pages; mantener su estructura.
-No cambiar claves ni editar código. Guardar V7 como respaldo.
-PRUEBA: abrir un curso > una lección > Escuchar > Detener > Tarjeta de estudio > Ver respuesta > Imprimir.
-Comprobar luego un cuestionario y que el progreso sigue actualizándose.
+INSTALACIÓN: subir TODOS los archivos de este ZIP a la raíz del repositorio. Mantener la subcarpeta functions/api/news.js tal como viene. No subir la carpeta contenedora.
+
+PRUEBAS: curso > lección > Imprimir / Guardar PDF > comprobar vista previa y guardar; volver y comprobar tarjeta, audio, cuestionario, progreso, panel y selector ES/EN.
+
+NOTAS: la sincronización entre dispositivos no está verificada; la exportación depende del diálogo de impresión del navegador. Los cursos son introductorios. No se ha modificado Supabase ni el sistema de autenticación.
