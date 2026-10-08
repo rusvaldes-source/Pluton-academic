@@ -38,3 +38,6 @@ V13 — REVISIÓN DE TRADUCCIÓN Y COMUNIDAD (08 OCT 2026)
 - Actualización de versión de scripts de idioma/noticias y CSS para evitar caché.
 - Se preservan autenticación, membresías, progreso, PDF, audio, notas y catálogo.
 - Subir TODOS los archivos y la carpeta functions/ en la raíz del repositorio.
+
+V14 — BUSCADOR UNIVERSAL
+Lupa en portada, lecciones y panel. Busca secciones, cursos y lecciones ES/EN; clic lleva a la ubicación. Ctrl+K abre y Escape cierra. Usa catalog.json existente; si falla la carga, sigue buscando secciones. No requiere claves ni servicios externos. Se incluyen los archivos de Cloudflare en su estructura original (no mover manualmente).
