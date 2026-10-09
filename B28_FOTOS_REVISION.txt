@@ -1,0 +1,1 @@
+B28 revisión de fotografías: NE-101 y RE-201 ahora usan fotografías individuales 17 y 20. No se han modificado autenticación, idioma, navegación ni membresías. Verificar después de desplegar y limpiar caché.
