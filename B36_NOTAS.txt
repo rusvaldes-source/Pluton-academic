@@ -1,0 +1,1 @@
+B36: corrección de carga del banner aprobado (imagen local explícita + caché CSS renovada). Base B35 íntegra. No se modificaron JS, catálogo, autenticación ni traducciones. Comprobar visualización y funciones en producción después del despliegue.

@@ -166,3 +166,19 @@ button.pa-favorite-toggle:focus-visible { outline:3px solid #fff; outline-offset
 .hero{position:relative;isolation:isolate;overflow:hidden;background-image:linear-gradient(90deg,rgba(5,13,35,.97) 0%,rgba(5,13,35,.89) 42%,rgba(5,13,35,.35) 100%),url("assets/b35-banner-aprobado.png")!important;background-size:cover!important;background-position:center!important}
 .hero .hero-copy{position:relative;z-index:2}.hero .pa-hero-orb{opacity:.18;pointer-events:none}
 @media(max-width:700px){.hero{background-position:58% center!important}.hero .pa-hero-orb{display:none}.hero .hero-copy{background:rgba(5,13,35,.40);border-radius:16px;padding:12px}}
+
+/* B36: explicit approved hero banner; CSS background remains fallback. */
+.hero{position:relative;isolation:isolate;overflow:hidden;background-color:#071328}
+.hero .pa-b36-hero-banner{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;z-index:-2;pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(5,13,35,.95),rgba(5,13,35,.78) 46%,rgba(5,13,35,.12))}
+.hero .pa-hero-orb{display:none!important}
+.hero .stars{pointer-events:none}
+@media(max-width:700px){.hero .pa-b36-hero-banner{object-position:60% center}.hero::before{background:linear-gradient(90deg,rgba(5,13,35,.91),rgba(5,13,35,.60))}}
+
+/* B36: explicit approved hero banner; CSS background remains fallback. */
+.hero{position:relative;isolation:isolate;overflow:hidden;background-color:#071328}
+.hero .pa-b36-hero-banner{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;z-index:-2;pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(5,13,35,.95),rgba(5,13,35,.78) 46%,rgba(5,13,35,.12))}
+.hero .pa-hero-orb{display:none!important}
+.hero .stars{pointer-events:none}
+@media(max-width:700px){.hero .pa-b36-hero-banner{object-position:60% center}.hero::before{background:linear-gradient(90deg,rgba(5,13,35,.91),rgba(5,13,35,.60))}}
