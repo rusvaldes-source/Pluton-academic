@@ -99,7 +99,7 @@ function apply(root=document.body){
  document.querySelectorAll('#languageToggle').forEach(b=>{if(b.textContent!==(language==='en'?'ES':'EN'))b.textContent=language==='en'?'ES':'EN';b.setAttribute('aria-label',language==='en'?'Switch to Spanish':'Cambiar a inglés')});
  if(observer)observer.observe(document.body,{childList:true,subtree:true});
 }
-function toggle(){try{localStorage.setItem('pluton-lang',current()==='en'?'es':'en')}catch(e){}apply();if(typeof window.translateDashboard==='function')window.translateDashboard();if(typeof window.renderCourses==='function')window.renderCourses();document.dispatchEvent(new CustomEvent('pluton-language-changed',{detail:{language:current()}}));}
+function toggle(){try{localStorage.setItem('pluton-lang',current()==='en'?'es':'en')}catch(e){}apply();if(typeof window.translateDashboard==='function')window.translateDashboard();if(typeof window.renderCourses==='function')window.renderCourses();}
 window.plutonLanguage={current,apply,toggle};window.changeLanguage=toggle;window.changeDashboardLanguage=toggle;window.toggleLang=toggle;
 const observer=new MutationObserver(mutations=>{if(mutations.some(m=>Array.from(m.addedNodes).some(n=>n.nodeType===1))){apply();}});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>apply());else apply();

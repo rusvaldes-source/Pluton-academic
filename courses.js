@@ -11,5 +11,3 @@ function focusRequestedCourse(){const params=new URLSearchParams(location.search
 document.getElementById('lessonSearch')?.addEventListener('input',e=>{lessonSearch=e.target.value.trim().toLocaleLowerCase();renderCourses()});
 
 document.addEventListener('pluton-progress-updated',()=>renderCourses());
-
-document.addEventListener('pluton-language-changed',()=>renderCourses());
