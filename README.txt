@@ -79,3 +79,11 @@ B19 — CORRECCIÓN VISUAL DE FAVORITOS Y CACHÉ
 - El botón Guardar curso usa azul oscuro y dorado en móviles y navegadores.
 - Sin cambios en JavaScript, catálogo, Supabase, membresías, notas o progreso.
 - Mantener functions/api/news.js dentro de su carpeta original al desplegar.
+
+
+B20 — ILUSTRACIONES Y GRÁFICOS VISUALES
+- 9 ilustraciones vectoriales SVG para las categorías del catálogo, sin dependencias externas.
+- Gráfico circular de progreso real en portada: solo lectura, no altera los datos ni Supabase.
+- Planeta de portada refinado, mejoras responsive, carga diferida de ilustraciones.
+- Conservados menús, favoritos, cuaderno, cuestionarios, PDF, audio, login y membresías.
+- Subir el contenido completo del ZIP incluyendo assets/ y functions/api/.

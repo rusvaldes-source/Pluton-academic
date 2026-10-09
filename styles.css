@@ -79,3 +79,20 @@ button.pa-favorite-toggle, .pa-course-card button.pa-favorite-toggle {
 button.pa-favorite-toggle:hover { background:#203b61; }
 button.pa-favorite-toggle:focus-visible { outline:3px solid #fff; outline-offset:2px; }
 @media(max-width:520px){button.pa-favorite-toggle{width:auto;max-width:100%;}}
+
+/* B20 — lightweight editorial illustrations and truthful progress graphic */
+.catalog-visual.pa-illustrated{height:auto;aspect-ratio:10/7;overflow:hidden;position:relative;background:#0b1c37;border:1px solid #314f72}
+.catalog-visual.pa-illustrated img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.courses article:hover .pa-illustrated img{transform:scale(1.035)}
+.courses article{transition:border-color .2s ease,transform .2s ease}
+.courses article:hover{border-color:#a9894b}
+.pa-hero-orb .pluto{background:radial-gradient(circle at 30% 22%,#f0d7a0 0,#a58d7b 18%,#705d65 39%,#2d4268 70%,#111b31 100%);border:1px solid #e1c47a55;box-shadow:inset -22px -25px 55px #08132b99,0 0 85px #d9b56525,0 0 110px #48678a55}
+.pa-hero-orb:before,.pa-hero-orb:after{content:"";position:absolute;pointer-events:none;border:1px solid #d9b56533;border-radius:50%;width:315px;height:315px}
+.pa-hero-orb:after{width:390px;height:390px;border-color:#d9b5651b}
+.pa-visual-summary{display:flex;align-items:center;gap:18px;padding:16px 4px 20px;border-top:1px solid #334260;margin-top:14px}
+.pa-progress-ring{--pa-progress:0;width:104px;height:104px;flex:0 0 104px;display:grid;place-items:center;position:relative;border-radius:50%;background:conic-gradient(#d9b565 calc(var(--pa-progress)*1%),#354665 0)}
+.pa-progress-ring:before{content:"";position:absolute;inset:12px;border-radius:50%;background:#10203c}
+.pa-progress-ring span{position:relative;color:#f4d994;font-size:1.5rem;font-weight:800}
+.pa-visual-caption{font-weight:700;color:#d9b565}
+@media(max-width:650px){.pa-hero-orb:before{width:245px;height:245px}.pa-hero-orb:after{width:290px;height:290px}.pa-visual-summary{gap:14px}.pa-progress-ring{width:86px;height:86px;flex-basis:86px}}
+@media(prefers-reduced-motion:reduce){.catalog-visual.pa-illustrated img,.courses article{transition:none!important}}
