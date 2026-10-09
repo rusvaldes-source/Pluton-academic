@@ -87,3 +87,9 @@ B20 — ILUSTRACIONES Y GRÁFICOS VISUALES
 - Planeta de portada refinado, mejoras responsive, carga diferida de ilustraciones.
 - Conservados menús, favoritos, cuaderno, cuestionarios, PDF, audio, login y membresías.
 - Subir el contenido completo del ZIP incluyendo assets/ y functions/api/.
+
+B21 - Corrección integral de imágenes de catálogo:
+- Los 9 SVG se integran dentro de catalog-ui.js como imágenes data URI (sin dependencia de la carpeta assets en el servidor).
+- El ZIP conserva assets/ como respaldo, pero la portada ya no depende de esa carpeta.
+- Caché actualizado a B21. Sin cambios en cursos, progreso, inicio de sesión, notas ni membresías.
+- Para publicar, reemplazar archivos del proyecto completo; no es necesario subir assets/ para que funcionen las ilustraciones del catálogo.
