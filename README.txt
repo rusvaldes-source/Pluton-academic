@@ -95,3 +95,11 @@ B21 - Corrección integral de imágenes de catálogo:
 - Para publicar, reemplazar archivos del proyecto completo; no es necesario subir assets/ para que funcionen las ilustraciones del catálogo.
 
 B22: Nueva ruta visual de aprendizaje en portada y 9 ilustraciones autocontenidas en tarjetas de lecciones. Las imágenes originales del fundador y banner no están disponibles en este paquete; no se reemplazaron por imágenes no verificadas. Se conserva todo B21.
+
+B23 — CATÁLOGO MÁS COMPACTO Y PROFESIONAL (08 OCT 2026)
+- Tarjetas responsivas más compactas: imágenes panorámicas 16:9, menor espacio vacío y jerarquía visual refinada.
+- Ilustraciones SVG integradas en el catálogo: no dependen de la carpeta assets en producción.
+- Se preservan las 20 fichas, 46 lecciones, las 3 páginas, traducción, login, progreso, favoritos, notas, certificados, búsqueda y noticias.
+- Las imágenes originales del fundador no se incluyen: aún no se han recuperado los originales aprobados.
+- No se añaden fotografías externas que puedan romperse; B23 mejora las ilustraciones ya validadas.
+- Pruebas estáticas y de integridad completadas; comprobar visualmente en móvil tras despliegue.
