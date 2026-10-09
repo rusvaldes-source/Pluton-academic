@@ -150,3 +150,6 @@ button.pa-favorite-toggle:focus-visible { outline:3px solid #fff; outline-offset
   transform:none!important; transition:none;
 }
 @media(max-width:650px){.courses article .catalog-visual.pa-illustrated{aspect-ratio:10 / 7}}
+
+/* B26: photographic banners, fit fully and preserve B25 card geometry */
+.courses article .catalog-visual.pa-illustrated img{object-fit:contain;object-position:center;max-width:100%;max-height:100%;}

@@ -115,3 +115,5 @@ B24 — Corrección de recortes e idiomas (2026-10-08)
 
 
 B25: Corrige el recorte de las ilustraciones del catalogo usando la proporcion nativa 500:350 (10/7), sin zoom ni altura porcentual forzada. Se preserva el catalogo y toda la funcionalidad.
+
+B26: 9 banners fotográficos por categoría, incluidos localmente en assets. Todos los cursos muestran foto de su categoría. Mantiene iconos SVG como respaldo si la imagen falla. No se alteran lecciones, cuentas ni progreso.
