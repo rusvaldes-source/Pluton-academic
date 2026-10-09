@@ -121,3 +121,6 @@ B25: Corrige el recorte de las ilustraciones del catalogo usando la proporcion n
 B26: 9 banners fotográficos por categoría, incluidos localmente en assets. Todos los cursos muestran foto de su categoría. Mantiene iconos SVG como respaldo si la imagen falla. No se alteran lecciones, cuentas ni progreso.
 
 B28: 20 fotos individuales incluidas en assets/b28-photo-01.jpg a b28-photo-20.jpg; cada curso tiene una ruta propia por código. Diseño panorámico compacto. Se conserva el catálogo y sus funciones de B27.
+
+
+B29 — corrección de caché del catálogo: index.html usa una nueva versión de catalog-ui.js para obligar al navegador/Cloudflare a cargar la asignación 20 cursos = 20 fotos distintas. Se conserva la base funcional B28.
