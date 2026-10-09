@@ -1,0 +1,1 @@
+B44: corrección localizada de la franja que recortaba ACADEMY en ambas imágenes del banner, integradas en index.html. El resto de B43 se conserva sin cambios.
