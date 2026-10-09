@@ -157,3 +157,7 @@ button.pa-favorite-toggle:focus-visible { outline:3px solid #fff; outline-offset
 /* B27: course photographs are embedded; exact source aspect ratio, no crop */
 .courses article .catalog-visual.pa-illustrated{aspect-ratio:76/37!important;height:auto!important;overflow:hidden!important}
 .courses article .catalog-visual.pa-illustrated img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important}
+
+/* B28: compact panoramic photos for 20 individual courses; avoids blank bands */
+.courses article .catalog-visual.pa-illustrated{aspect-ratio:12/5!important;height:auto!important;overflow:hidden!important}
+.courses article .catalog-visual.pa-illustrated img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
