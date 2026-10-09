@@ -1,0 +1,1 @@
+B34: corrección exclusivamente de fotos. Las 20 fotos se incrustan directamente en catalog-ui.js y lesson-visuals.js para evitar fallos de rutas/carpeta assets al desplegar. Las imágenes originales se conservan en assets. Se actualizaron solamente las versiones de carga de esos dos scripts en index.html y courses.html. Resto de funciones sin modificar.
