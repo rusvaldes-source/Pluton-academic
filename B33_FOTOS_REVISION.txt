@@ -1,0 +1,1 @@
+B33: Corrección específica de fotografías. Se preserva B32. La vista de lecciones ahora utiliza la misma imagen individual por código de curso que el catálogo. Se actualizan las versiones de scripts para evitar caché de B22/B27. Sin cambios en login, traducción, progreso, noticias o membresías.
