@@ -1,0 +1,1 @@
+B42: Base B40. Dos banners bilingues EMBEBIDOS en index.html para que carguen sin rutas externas. Cambio de idioma con language.js. Se preservan botones reales y archivos originales. Al subir a GitHub, reemplazar todos los archivos en la raiz del sitio.

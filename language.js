@@ -100,7 +100,7 @@ function apply(root=document.body){
   const es=el.dataset.originalPlaceholder;
   el.setAttribute('placeholder',language==='en'?(dictionary[es]||es):es);
  });
- document.querySelectorAll('img[data-banner-es][data-banner-en]').forEach(img=>{const wanted=language==='en'?img.dataset.bannerEn:img.dataset.bannerEs;if(img.getAttribute('src')!==wanted)img.setAttribute('src',wanted);});
+ const bannerEs=document.getElementById('pa-banner-es'),bannerEn=document.getElementById('pa-banner-en');if(bannerEs&&bannerEn){bannerEs.style.display=language==='es'?'block':'none';bannerEn.style.display=language==='en'?'block':'none';}
  document.querySelectorAll('#languageToggle').forEach(b=>{if(b.textContent!==(language==='en'?'ES':'EN'))b.textContent=language==='en'?'ES':'EN';b.setAttribute('aria-label',language==='en'?'Switch to Spanish':'Cambiar a inglés')});
  if(observer)observer.observe(document.body,{childList:true,subtree:true});
 }
