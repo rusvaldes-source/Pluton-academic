@@ -10,7 +10,7 @@
   <a class="brand" href="#inicio"><span class="planet">◉</span><span>PLUTÓN <b>ACADEMIC</b></span></a>
   <button id="languageToggle" class="language-toggle" type="button" onclick="changeLanguage()" aria-label="Cambiar a inglés">EN</button>
   <button class="menu" aria-label="Menú" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
-  <nav><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a><a href="dashboard.html">Mi plataforma</a><a href="courses.html">Lecciones</a><a href="#certificados">Certificados</a><a href="#recursos">Recursos</a><a href="#noticias">Noticias</a><a href="#participa">Participa</a><a href="#crecimiento">Comunidad</a><button type="button" onclick="openLogin()">Iniciar sesión</button></nav>
+  <nav><a href="#cursos">Cursos</a><a href="#membresias">Membresías</a><a href="#empresas" data-pa-biz="nav">Empresas</a><a href="dashboard.html">Mi plataforma</a><a href="courses.html">Lecciones</a><a href="#certificados">Certificados</a><a href="#recursos">Recursos</a><a href="#noticias">Noticias</a><a href="#participa">Participa</a><a href="#crecimiento">Comunidad</a><button type="button" onclick="openLogin()">Iniciar sesión</button></nav>
 </header>
 
 <main id="inicio">
@@ -59,6 +59,17 @@
  </div>
 </section>
 
+<section id="empresas" class="section pa-enterprise" aria-labelledby="pa-enterprise-title">
+ <div class="heading"><span data-pa-biz="eyebrow">FORMACIÓN PARA EMPRESAS</span><h2 id="pa-enterprise-title" data-pa-biz="title">Capacita a tu equipo. Impulsa tu empresa.</h2><p data-pa-biz="intro">Licencias para empleados, aprendizaje práctico, seguimiento de progreso y certificados de finalización en cursos elegibles.</p></div>
+ <div class="pa-enterprise-grid">
+ <article><h3>BUSINESS START</h3><strong>$14.99 <small data-pa-biz="unit">/ empleado / mes</small></strong><p data-pa-biz="start">5 a 20 empleados · Cursos esenciales · Evaluaciones · Certificados elegibles</p></article>
+ <article><h3>BUSINESS PLUS</h3><strong>$11.99 <small data-pa-biz="unit">/ empleado / mes</small></strong><p data-pa-biz="plus">21 a 100 empleados · Catálogo ampliado · Rutas formativas · Seguimiento</p></article>
+ <article><h3>CORPORATE PREMIUM</h3><strong>$8.99 <small data-pa-biz="unit">/ empleado / mes</small></strong><p data-pa-biz="premium">101 a 500 empleados · Gestión de equipos · Reportes · Formación continua</p></article>
+ <article><h3>ENTERPRISE CUSTOM</h3><strong data-pa-biz="quote">Cotización personalizada</strong><p data-pa-biz="custom">Más de 500 empleados · Soluciones y contenidos a medida</p></article>
+ </div>
+ <p class="pa-enterprise-note" data-pa-biz="notice">Planes propuestos sujetos a disponibilidad y contrato. Esta sección es informativa; la contratación empresarial aún no está habilitada. Los certificados son de finalización, no acreditaciones profesionales oficiales.</p>
+ <a class="pa-enterprise-link" href="mailto:info@plutonacademic.com?subject=Consulta%20empresarial%20PLUTON%20ACADEMIC" data-pa-biz="contact">Solicitar información empresarial →</a>
+</section>
 <section id="certificados" class="certificate">
  <div class="cert-card"><div class="seal">PA</div><small>PLUTÓN ACADEMIC</small><h2>CERTIFICADO<br>DE FINALIZACIÓN</h2><p>Este certificado se otorga a</p><strong>Tu Nombre</strong><p>por haber completado satisfactoriamente el curso</p><div class="cert-foot"><span>RUSLAN VALDES<br><small>Fundador</small></span><span>PA-XXXX-XXXX<br><small>Código de verificación</small></span></div></div>
  <div><span class="eyebrow">CERTIFICACIÓN DIGITAL</span><h2>Reconoce cada logro.</h2><p>Los cursos elegibles incluyen certificado digital de finalización con identificación del estudiante, curso, fecha y código de verificación.</p><p class="note">Conocimiento hoy · Oportunidades mañana.</p></div>
@@ -89,4 +100,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="language.js?v=20261009-b42"></script>
 <script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-v13"></script><script src="daily.js?v=20261008-v4"></script><script src="catalog-ui.js?v=20261009-b34-embedded-photo"></script>
-<script src="resource-ui.js?v=20261008-v5-expansion"></script><script src="progress-sync.js?v=20261008-v7-sync"></script><script src="progress-ui.js?v=20261008-v7-sync"></script><script src="visual-enhancements.js?v=20261008-b20"></script><script src="global-search.js?v=20261008-b16"></script></body></html>
+<script src="resource-ui.js?v=20261008-v5-expansion"></script><script src="progress-sync.js?v=20261008-v7-sync"></script><script src="progress-ui.js?v=20261008-v7-sync"></script><script src="visual-enhancements.js?v=20261008-b20"></script><script src="global-search.js?v=20261008-b16"></script><script src="business-ui.js?v=20261009-b43"></script></body></html>
