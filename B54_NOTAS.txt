@@ -1,0 +1,1 @@
+B54: base B53 preservada; banner HTML traducible con foto independiente; corrección de franja superior en RE-301 y NE-101. No se modificaron otros archivos de fotografías ni planes Business.
