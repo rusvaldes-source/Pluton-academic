@@ -103,3 +103,12 @@ B23 — CATÁLOGO MÁS COMPACTO Y PROFESIONAL (08 OCT 2026)
 - Las imágenes originales del fundador no se incluyen: aún no se han recuperado los originales aprobados.
 - No se añaden fotografías externas que puedan romperse; B23 mejora las ilustraciones ya validadas.
 - Pruebas estáticas y de integridad completadas; comprobar visualmente en móvil tras despliegue.
+
+
+B24 — Corrección de recortes e idiomas (2026-10-08)
+- Se corrige object-fit:cover de B23 por contain en el catálogo, manteniendo las imágenes enteras en tarjetas 16:9.
+- Se desactiva el zoom hover que recortaba las ilustraciones.
+- Se evita el recorte en ilustraciones de lecciones B22.
+- Los títulos de rutas y recursos se muestran en español de forma predeterminada; se incorporan traducciones inglesas.
+- Se actualiza cache busting de estilos e idioma en las tres páginas.
+- Sin cambios en datos de cursos, lecciones, login, favoritos ni progreso.
