@@ -1,0 +1,1 @@
+B48: Base B42 con membresias empresariales B43. Imagenes de catalog-ui.js intactas, restauradas de B42. Banner bilingue original extraido a assets; presentacion movil adaptada sin cambiar escritorio. Traducciones y funciones existentes intactas.
