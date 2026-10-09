@@ -1,0 +1,35 @@
+/* PLUTÓN ACADEMIC B42 — parche conservador de proporciones de imágenes.
+   Cargar DESPUÉS de styles.css. No modifica scripts ni datos de cursos. */
+.courses article .catalog-visual.pa-illustrated {
+  width: 100% !important;
+  aspect-ratio: 10 / 7 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #0b1c37;
+}
+.courses article .catalog-visual.pa-illustrated img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
+.pa-b22-course-visual {
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: hidden !important;
+}
+.pa-b22-course-visual img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
