@@ -58,3 +58,9 @@ B16 — BÚSQUEDA PRECISA DE CURSOS Y LECCIONES
 - Cada resultado de lección identifica también el nombre de su curso para evitar confusiones.
 - Sin cambios en autenticación, membresías, progreso, notas, contenidos o noticias.
 - Subir el contenido completo del ZIP a la raíz de GitHub conservando functions/api/news.js.
+
+B17 — CURSOS FAVORITOS (08 OCT 2026)
+- Botón Guardar curso / Save course en cada curso; acceso rápido a favoritos en Mis cursos.
+- Almacenamiento exclusivamente local, sin cambios en Supabase, progreso, notas, membresías, buscador ni menús.
+- En español e inglés; favoritos persistentes al recargar en el mismo navegador.
+- Nuevo archivo course-favorites.js. Subir TODOS los archivos y mantener functions/api/news.js en su carpeta.
