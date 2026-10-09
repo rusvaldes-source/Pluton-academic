@@ -1,0 +1,15 @@
+PLUTÓN ACADEMIC — REVISIÓN DE FOTOGRAFÍAS (sobre el ZIP aportado)
+
+El ZIP aportado contiene notas hasta B49; por tanto, este paquete NO se certifica como una copia idéntica del commit B42.
+
+Cambios limitados a fotografías:
+- NE-101 (Cómo iniciar un negocio): imagen 20, persona trabajando en laptop, en lugar de imagen 17 de una casa.
+- RE-201 (Proceso de compraventa): imagen 17, vivienda, en lugar de imagen 20 de una persona con laptop.
+- Correcciones idénticas en catálogo y página de lecciones.
+- CSS al final para evitar recortes y deformaciones en las tarjetas y lecciones.
+- Versionado de URLs locales para evitar caché antigua.
+
+Sin cambios deliberados a login, Supabase, membresías, traducción, noticias o lógica de navegación.
+Comprobaciones: sintaxis JS, JSON y consistencia de las 20 fotos incrustadas.
+Estas comprobaciones son estáticas, no sustituyen pruebas de uso en producción.
+NO se ha publicado ni modificado GitHub.
