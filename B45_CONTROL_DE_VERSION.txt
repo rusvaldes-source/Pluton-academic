@@ -1,0 +1,7 @@
+B45 - VERSION CONSERVADORA
+Base: B43 empresarial reconstruido desde B42.
+Imagenes y banner: IDENTICOS bit a bit a B42.
+Membresias empresariales: IDENTICAS a B43 aprobado.
+Sin cambios en HTML, CSS, JavaScript ni imagenes con respecto a B43.
+B44 descartado.
+La visualizacion del logotipo dentro del banner debe comprobarse en el navegador; esta version conserva el aspecto original de B42 y no altera su imagen.
