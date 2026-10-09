@@ -3,19 +3,25 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PLUTÓN ACADEMIC | Tu futuro comienza con conocimiento</title> 
-<link rel="stylesheet" href="styles.css?v=20261009-b43-fix1">
-<style id="pa-b43-enterprise-fallback">
-/* Enterprise layout fallback: scoped, does not alter existing B42 components */
-#empresas.pa-enterprise{background:linear-gradient(135deg,#071527,#102b4b);color:#f5f5f5;padding:56px max(22px,5vw)}
-#empresas .pa-enterprise-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:25px auto;max-width:1400px}
-#empresas .pa-enterprise-grid article{display:block;min-width:0;border:1px solid rgba(220,181,91,.55);border-radius:16px;padding:22px;background:rgba(255,255,255,.06)}
-#empresas .pa-enterprise-grid h3{color:#eac67b;font-size:1.1rem;margin:0 0 12px}
-#empresas .pa-enterprise-grid strong{display:block;font-size:1.4rem;margin:10px 0 18px}
-#empresas .pa-enterprise-grid p{line-height:1.6;margin:0}
-#empresas .pa-enterprise-note{margin:24px 0;color:#d7deea;font-size:.9rem}
-#empresas .pa-enterprise-link{display:inline-block;background:#d7ac5a;color:#091a2e;border-radius:10px;padding:12px 20px;font-weight:700;text-decoration:none}
-@media(max-width:900px){#empresas .pa-enterprise-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){#empresas .pa-enterprise-grid{grid-template-columns:1fr}#empresas.pa-enterprise{padding:35px 18px}}
+<link rel="stylesheet" href="styles.css?v=20261009-b42">
+<style id="b43-enterprise-isolated">
+/* B43 Enterprise, fully isolated from B42 */
+#empresas.pa-enterprise{display:block;box-sizing:border-box;background:linear-gradient(140deg,#071527,#102b4b);color:#f5f5f5;padding:clamp(28px,5vw,70px) max(18px,5vw);width:100%;max-width:none}
+#empresas.pa-enterprise *,#empresas.pa-enterprise *::before,#empresas.pa-enterprise *::after{box-sizing:border-box}
+#empresas .heading{max-width:1120px;margin:0 auto 28px;text-align:center}
+#empresas .heading span{color:#e7bd65;letter-spacing:.15em;font-weight:700}
+#empresas .heading h2{color:#fff;font-size:clamp(1.6rem,4vw,2.7rem);line-height:1.2;margin:12px auto}
+#empresas .heading p{color:#c9d6e9;max-width:760px;margin:12px auto;line-height:1.65}
+#empresas .pa-enterprise-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;width:100%;max-width:1320px;margin:24px auto}
+#empresas .pa-enterprise-grid article{display:flex;flex-direction:column;gap:12px;min-width:0;margin:0;padding:25px 20px;border:1px solid #b99348;border-radius:18px;background:#10233d;box-shadow:0 10px 25px rgba(0,0,0,.18);color:#fff}
+#empresas .pa-enterprise-grid h3{color:#e7bd65;font-size:1.08rem;line-height:1.35;margin:0;font-weight:800}
+#empresas .pa-enterprise-grid strong{display:block;color:#fff;font-size:1.55rem;line-height:1.3;margin:0;font-weight:800}
+#empresas .pa-enterprise-grid small{font-size:.72rem;color:#d9dfeb;font-weight:500}
+#empresas .pa-enterprise-grid p{color:#d6deeb;font-size:.96rem;line-height:1.6;margin:0}
+#empresas .pa-enterprise-note{max-width:1100px;margin:24px auto;color:#cbd4e4;font-size:.87rem;line-height:1.6}
+#empresas .pa-enterprise-link{display:table;margin:20px auto 0;padding:14px 22px;border-radius:12px;background:#dfb762;color:#09192d;font-weight:800;text-decoration:none}
+@media(max-width:1020px){#empresas .pa-enterprise-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#empresas .pa-enterprise-grid{grid-template-columns:minmax(0,1fr);gap:15px}#empresas .pa-enterprise-grid article{padding:23px 19px}#empresas.pa-enterprise{padding:40px 18px}}
 </style>
 </head>
 <body>
@@ -113,4 +119,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="language.js?v=20261009-b42"></script>
 <script src="app.js?v=20261008-fix2"></script><script src="news.js?v=20261008-v13"></script><script src="daily.js?v=20261008-v4"></script><script src="catalog-ui.js?v=20261009-b34-embedded-photo"></script>
-<script src="resource-ui.js?v=20261008-v5-expansion"></script><script src="progress-sync.js?v=20261008-v7-sync"></script><script src="progress-ui.js?v=20261008-v7-sync"></script><script src="visual-enhancements.js?v=20261008-b20"></script><script src="global-search.js?v=20261008-b16"></script><script src="business-ui.js?v=20261009-b43"></script></body></html>
+<script src="resource-ui.js?v=20261008-v5-expansion"></script><script src="progress-sync.js?v=20261008-v7-sync"></script><script src="progress-ui.js?v=20261008-v7-sync"></script><script src="visual-enhancements.js?v=20261008-b20"></script><script src="global-search.js?v=20261008-b16"></script><script src="business-ui.js?v=b43-rebuild"></script>
+</body></html>

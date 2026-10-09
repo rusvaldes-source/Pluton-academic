@@ -1,1 +1,1 @@
-B43: base íntegra B42. Se añade sección empresarial bilingüe informativa y estilos aislados. Sin pagos ni licencias empresariales activadas. No se incorporan videos mudos; el video institucional audiovisual queda pendiente de producción. No se modifican scripts existentes.
+B43 reconstruido desde B42. Solo index.html modificado; business-ui.js y notas nuevos. Estilos empresariales aislados en index.html. Banners, CSS y scripts originales B42 preservados byte a byte. Membresías empresariales informativas; sin pagos activados.
