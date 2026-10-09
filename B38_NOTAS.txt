@@ -1,0 +1,1 @@
+B38: Banner aprobado incrustado directamente en index.html, sin dependencia de rutas assets para la imagen principal. Se preservan los demás archivos y traducción. El botón ES indica que el idioma actual es inglés y permite cambiar a español.
