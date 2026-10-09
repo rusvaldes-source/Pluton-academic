@@ -1,0 +1,7 @@
+Corrección de imágenes del catálogo sobre el ZIP recibido.
+26 cursos tienen ahora un archivo fotográfico propio con código visible.
+Se usan 20 fotografías originales; seis o más cursos reutilizan la fuente fotográfica temática, diferenciada por el código del curso. No se inventaron nuevas fotografías.
+Se evitó el recorte forzado (object-fit: contain).
+Se actualizó la versión del script del catálogo para evitar caché.
+No se alteraron los archivos de autenticación, idioma, noticias ni membresías.
+Verificación: sintaxis JS, JSON y referencias de 26 imágenes. Prueba visual en Cloudflare pendiente.
