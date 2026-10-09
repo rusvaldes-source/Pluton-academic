@@ -1,0 +1,1 @@
+B52: Banner móvil con imagen original recortada hacia la estudiante y texto vivo traducible ES/EN. Banner original intacto en escritorio. Fotografías y lógica de B51 conservadas. Pruebas: validación estática; navegador publicado pendiente.
