@@ -1,0 +1,1 @@
+B53: Banner visual aprobado en archivo PNG separado; corrección móvil sin superposición; sección Business de cuatro planes; traducciones complementarias ES/EN. Los precios son propuestas, no cobros activos. Base B52 preservada.\n
