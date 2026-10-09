@@ -93,3 +93,5 @@ B21 - Corrección integral de imágenes de catálogo:
 - El ZIP conserva assets/ como respaldo, pero la portada ya no depende de esa carpeta.
 - Caché actualizado a B21. Sin cambios en cursos, progreso, inicio de sesión, notas ni membresías.
 - Para publicar, reemplazar archivos del proyecto completo; no es necesario subir assets/ para que funcionen las ilustraciones del catálogo.
+
+B22: Nueva ruta visual de aprendizaje en portada y 9 ilustraciones autocontenidas en tarjetas de lecciones. Las imágenes originales del fundador y banner no están disponibles en este paquete; no se reemplazaron por imágenes no verificadas. Se conserva todo B21.
