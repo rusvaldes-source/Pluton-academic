@@ -1,0 +1,1 @@
+B55 — revisión centrada en banner. Se conserva la totalidad de archivos B54, sin editar fotografías de cursos ni planes Business. Se ajusta banner responsive, navegación horizontal y el selector de idioma para mostrar el idioma ACTUAL (ES/EN), no el idioma destino.
