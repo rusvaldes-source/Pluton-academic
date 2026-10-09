@@ -50,3 +50,11 @@ B15 — BUSCADOR Y NAVEGACIÓN ACCESIBLE (08 OCT 2026)
 - Se actualiza versión del script en las tres páginas para evitar caché.
 - No se modifican autenticación, membresías, progreso, notas, catálogo ni Cloudflare Functions.
 - Desplegar todos los archivos en la raíz, respetando functions/api/news.js.
+
+
+B16 — BÚSQUEDA PRECISA DE CURSOS Y LECCIONES
+- Al buscar un código exacto (por ejemplo RE-201), se muestra primero el curso correspondiente.
+- Después se priorizan coincidencias exactas y nombres de cursos y lecciones.
+- Cada resultado de lección identifica también el nombre de su curso para evitar confusiones.
+- Sin cambios en autenticación, membresías, progreso, notas, contenidos o noticias.
+- Subir el contenido completo del ZIP a la raíz de GitHub conservando functions/api/news.js.
