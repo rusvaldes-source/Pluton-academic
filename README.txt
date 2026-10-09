@@ -112,3 +112,6 @@ B24 — Corrección de recortes e idiomas (2026-10-08)
 - Los títulos de rutas y recursos se muestran en español de forma predeterminada; se incorporan traducciones inglesas.
 - Se actualiza cache busting de estilos e idioma en las tres páginas.
 - Sin cambios en datos de cursos, lecciones, login, favoritos ni progreso.
+
+
+B25: Corrige el recorte de las ilustraciones del catalogo usando la proporcion nativa 500:350 (10/7), sin zoom ni altura porcentual forzada. Se preserva el catalogo y toda la funcionalidad.

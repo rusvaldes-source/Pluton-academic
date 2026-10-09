@@ -137,3 +137,16 @@ button.pa-favorite-toggle:focus-visible { outline:3px solid #fff; outline-offset
 .courses article:hover .pa-illustrated img{transform:none!important}
 .pa-b22-course-visual img{object-fit:contain;object-position:center}
 @media(max-width:700px){.pa-b22-course-visual{aspect-ratio:16/9;max-height:none}}
+
+/* B25: exact 500:350 source ratio prevents cropping of course art.
+   A natural-height image avoids conflicting percentage heights in CSS grid. */
+.courses article .catalog-visual.pa-illustrated {
+  display:block; width:100%; height:auto; aspect-ratio:10 / 7; max-height:none;
+  overflow:hidden; line-height:0; background:#0b1c37;
+}
+.courses article .catalog-visual.pa-illustrated img {
+  display:block; width:100%; height:auto; aspect-ratio:10 / 7;
+  max-width:100%; max-height:none; object-fit:contain; object-position:center;
+  transform:none!important; transition:none;
+}
+@media(max-width:650px){.courses article .catalog-visual.pa-illustrated{aspect-ratio:10 / 7}}
