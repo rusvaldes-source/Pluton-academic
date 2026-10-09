@@ -64,3 +64,6 @@ body:has(.pa-main)>header #languageToggle{padding:7px 10px;flex-shrink:0;backgro
 
 /* B17: favoritos independientes; no altera menú ni cuestionarios */
 .pa-favorites{border:1px solid #526988;border-radius:14px;padding:18px;margin:18px 0 26px;background:#10203c}.pa-favorites h2{color:#d9b565;margin:0 0 8px}.pa-favorites p{color:#b9c6dd}.pa-favorites-links{display:flex;gap:10px;flex-wrap:wrap}.pa-favorites-links a{border:1px solid #d9b565;border-radius:9px;padding:9px 13px;color:#f0d18a;background:#142b4b}.pa-favorite-toggle{display:block;margin:10px 0;background:#142b4b;border:1px solid #d9b565;color:#f0d18a;border-radius:9px;padding:9px 13px;font-weight:700}.pa-favorite-toggle:focus-visible,.pa-favorites-links a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+
+/* B18: lightweight last-lesson shortcut */
+.pa-resume{margin:20px 0;padding:20px;border:1px solid #b99b58;border-radius:14px;background:#102440;color:#f3f5fb}.pa-resume[hidden]{display:none!important}.pa-resume h2{margin:0 0 8px;font-size:1.25rem;color:#e8c675}.pa-resume p{margin:0 0 14px;overflow-wrap:anywhere}.pa-resume .pa-link{display:inline-block}

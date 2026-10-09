@@ -64,3 +64,11 @@ B17 — CURSOS FAVORITOS (08 OCT 2026)
 - Almacenamiento exclusivamente local, sin cambios en Supabase, progreso, notas, membresías, buscador ni menús.
 - En español e inglés; favoritos persistentes al recargar en el mismo navegador.
 - Nuevo archivo course-favorites.js. Subir TODOS los archivos y mantener functions/api/news.js en su carpeta.
+
+
+B18 — CONTINUAR DONDE LO DEJASTE
+- Guarda localmente el último curso y la última lección abierta en Mis cursos.
+- En Mis cursos y panel del estudiante aparece acceso directo a esa lección, en ES/EN.
+- Sin cambios en autenticación, Supabase, progreso, notas, certificados, noticias o favoritos.
+- No se muestra hasta abrir una lección; datos guardados solo en el mismo dispositivo.
+- Conservar functions/api/news.js dentro de su carpeta al desplegar.
