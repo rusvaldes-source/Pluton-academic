@@ -1,0 +1,8 @@
+B51 - Corrección real de fotografías
+- Se recortaron los marcos negros integrados en los 26 JPG individuales.
+- Se corrigió PA-106: electrocardiograma, no farmacia.
+- Se estableció relación de aspecto 16:9 para tarjetas del catálogo.
+- Se invalidó caché de CSS, JS y fotografías.
+- Se conservaron los demás archivos y lógica de cursos, traducción, acceso y membresías.
+- Algunas fotografías de origen siguen siendo similares/reutilizadas; no se inventaron fotos nuevas.
+- Verificación: estructura ZIP, JSON y sintaxis JS. La comprobación de despliegue en navegador sigue pendiente.
