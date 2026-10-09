@@ -1,0 +1,12 @@
+PLUTÓN ACADEMIC — PAQUETE MAESTRO B49
+Base: B48, cotejada con los archivos originales B42 y B47.
+B42 -> B47: incorpora módulo empresarial y cambios de catálogo.
+B47 -> B48: restaura catálogo base B42, adapta banner móvil y añade banners ES/EN como archivos.
+Archivos base: 79. JavaScript: 21.
+Validación sintáctica JS, JSON y enlaces locales HTML: SIN ERRORES DETECTADOS.
+
+IMPORTANTE: estas son verificaciones estáticas, no pruebas reales de navegación, autenticación o pagos.
+No hay archivos de video MP4/WebM en los ZIP de origen; las herramientas de lectura en voz alta NO equivalen a videolecciones producidas.
+Las membresías empresariales son informativas: no hay pagos empresariales activos.
+No se modificaron las claves ni la configuración de Supabase.
+Para publicar: extraer este ZIP y subir todo su contenido conservando las carpetas assets/ y functions/.
