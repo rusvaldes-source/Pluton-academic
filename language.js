@@ -101,7 +101,7 @@ function apply(root=document.body){
   el.setAttribute('placeholder',language==='en'?(dictionary[es]||es):es);
  });
  const bannerEs=document.getElementById('pa-banner-es'),bannerEn=document.getElementById('pa-banner-en');if(bannerEs&&bannerEn){bannerEs.style.display=language==='es'?'block':'none';bannerEn.style.display=language==='en'?'block':'none';}
- document.querySelectorAll('#languageToggle').forEach(b=>{if(b.textContent!==(language==='en'?'ES':'EN'))b.textContent=language==='en'?'ES':'EN';b.setAttribute('aria-label',language==='en'?'Switch to Spanish':'Cambiar a inglés')});
+ document.querySelectorAll('#languageToggle').forEach(b=>{if(b.textContent!==(language==='en'?'EN':'ES'))b.textContent=language==='en'?'EN':'ES';b.setAttribute('aria-label',language==='en'?'Switch to Spanish':'Cambiar a inglés')});
  if(observer)observer.observe(document.body,{childList:true,subtree:true});
 }
 function toggle(){try{localStorage.setItem('pluton-lang',current()==='en'?'es':'en')}catch(e){}apply();if(typeof window.translateDashboard==='function')window.translateDashboard();if(typeof window.renderCourses==='function')window.renderCourses();}
