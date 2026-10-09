@@ -1,3 +1,5 @@
+B27 - Fotos JPEG incrustadas en catalog-ui.js como data URI: sin dependencia de rutas de imagen, caché previa ni carga de assets para mostrar fotografías. Las 9 fotos cubren las 9 categorías y los 20 cursos. CSS de proporción 760:370, sin recortes. No se cambió la lógica de login, membresías, progreso ni lecciones.
+
 PLUTÓN ACADEMIC V9 — PDF PROFESIONAL — 08 OCT 2026
 
 BASE: V8 validada por el usuario en Android. Paquete completo: 20 cursos, 46 lecciones, audio, tarjetas, progreso, sincronización de cuenta, login, membresías, noticias y ES/EN.
