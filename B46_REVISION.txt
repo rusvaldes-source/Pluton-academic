@@ -1,0 +1,1 @@
+B46: construido desde B43 reconstruido basado en B42. Corrección de marcos incrustados en fotografías del catálogo (catalog-ui.js + 12 JPG de respaldo), sin cambiar banner, membresías, CSS ni lógica de navegación. Actualizada referencia de cache catalog-ui.js en index.html. Verificación visual de fotografías previa a entrega; probar visualmente en web desplegada.
