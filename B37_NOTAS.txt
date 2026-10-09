@@ -1,0 +1,1 @@
+B37: Banner original aprobado mostrado como imagen HTML visible a ancho completo y sin recortes. Se eliminaron reglas B35/B36 conflictivas, manteniendo el resto de B36 sin cambios. La portada conserva sus enlaces y traducciones.

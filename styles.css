@@ -162,23 +162,11 @@ button.pa-favorite-toggle:focus-visible { outline:3px solid #fff; outline-offset
 .courses article .catalog-visual.pa-illustrated{aspect-ratio:12/5!important;height:auto!important;overflow:hidden!important}
 .courses article .catalog-visual.pa-illustrated img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
 
-/* B35: banner institucional fotográfico, conserva los controles B34 */
-.hero{position:relative;isolation:isolate;overflow:hidden;background-image:linear-gradient(90deg,rgba(5,13,35,.97) 0%,rgba(5,13,35,.89) 42%,rgba(5,13,35,.35) 100%),url("assets/b35-banner-aprobado.png")!important;background-size:cover!important;background-position:center!important}
-.hero .hero-copy{position:relative;z-index:2}.hero .pa-hero-orb{opacity:.18;pointer-events:none}
-@media(max-width:700px){.hero{background-position:58% center!important}.hero .pa-hero-orb{display:none}.hero .hero-copy{background:rgba(5,13,35,.40);border-radius:16px;padding:12px}}
-
-/* B36: explicit approved hero banner; CSS background remains fallback. */
-.hero{position:relative;isolation:isolate;overflow:hidden;background-color:#071328}
-.hero .pa-b36-hero-banner{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;z-index:-2;pointer-events:none}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(5,13,35,.95),rgba(5,13,35,.78) 46%,rgba(5,13,35,.12))}
-.hero .pa-hero-orb{display:none!important}
-.hero .stars{pointer-events:none}
-@media(max-width:700px){.hero .pa-b36-hero-banner{object-position:60% center}.hero::before{background:linear-gradient(90deg,rgba(5,13,35,.91),rgba(5,13,35,.60))}}
-
-/* B36: explicit approved hero banner; CSS background remains fallback. */
-.hero{position:relative;isolation:isolate;overflow:hidden;background-color:#071328}
-.hero .pa-b36-hero-banner{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;z-index:-2;pointer-events:none}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(5,13,35,.95),rgba(5,13,35,.78) 46%,rgba(5,13,35,.12))}
-.hero .pa-hero-orb{display:none!important}
-.hero .stars{pointer-events:none}
-@media(max-width:700px){.hero .pa-b36-hero-banner{object-position:60% center}.hero::before{background:linear-gradient(90deg,rgba(5,13,35,.91),rgba(5,13,35,.60))}}
+/* B37: approved original image is an independent visible element, not a background or negative z-index. */
+.pa-b37-banner{display:block;width:100%;margin:0;background:#071328;line-height:0;overflow:hidden}
+.pa-b37-banner-image{display:block;width:100%;height:auto;max-width:none;object-fit:contain;position:static;opacity:1;visibility:visible;filter:none;transform:none}
+.hero.pa-b37-hero-actions{display:block;min-height:0;padding:32px max(25px,calc((100vw - 1160px)/2)) 42px;background:#0b1930!important;isolation:auto;overflow:visible}
+.hero.pa-b37-hero-actions .hero-copy{position:static;max-width:920px;background:transparent}
+.hero.pa-b37-hero-actions h1{font-size:clamp(1.7rem,3vw,2.6rem)}
+.hero.pa-b37-hero-actions:before,.hero.pa-b37-hero-actions:after{display:none!important}
+@media(max-width:700px){.hero.pa-b37-hero-actions{padding:25px 20px 35px}.hero.pa-b37-hero-actions .hero-copy{padding:0;background:transparent}}
