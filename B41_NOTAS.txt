@@ -1,0 +1,1 @@
+B41: Base B40 intacta salvo index.html, language.js y dos banners nuevos. Banner ES/EN con la misma fotografia; botones reales debajo. El selector existente cambia imagen.
