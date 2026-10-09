@@ -41,3 +41,12 @@ V13 — REVISIÓN DE TRADUCCIÓN Y COMUNIDAD (08 OCT 2026)
 
 V14 — BUSCADOR UNIVERSAL
 Lupa en portada, lecciones y panel. Busca secciones, cursos y lecciones ES/EN; clic lleva a la ubicación. Ctrl+K abre y Escape cierra. Usa catalog.json existente; si falla la carga, sigue buscando secciones. No requiere claves ni servicios externos. Se incluyen los archivos de Cloudflare en su estructura original (no mover manualmente).
+
+
+B15 — BUSCADOR Y NAVEGACIÓN ACCESIBLE (08 OCT 2026)
+- Resultados de búsqueda ampliados de 30 a 80 para encontrar más cursos y lecciones.
+- Al cerrar el buscador, el foco vuelve al control desde el que se abrió.
+- Navegación con Tab y Shift+Tab contenida dentro del diálogo mientras está abierto.
+- Se actualiza versión del script en las tres páginas para evitar caché.
+- No se modifican autenticación, membresías, progreso, notas, catálogo ni Cloudflare Functions.
+- Desplegar todos los archivos en la raíz, respetando functions/api/news.js.
