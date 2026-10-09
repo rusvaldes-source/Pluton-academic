@@ -72,3 +72,10 @@ B18 — CONTINUAR DONDE LO DEJASTE
 - Sin cambios en autenticación, Supabase, progreso, notas, certificados, noticias o favoritos.
 - No se muestra hasta abrir una lección; datos guardados solo en el mismo dispositivo.
 - Conservar functions/api/news.js dentro de su carpeta al desplegar.
+
+
+B19 — CORRECCIÓN VISUAL DE FAVORITOS Y CACHÉ
+- Las tres páginas usan styles.css?v=20261008-b19 para obtener estilos actualizados.
+- El botón Guardar curso usa azul oscuro y dorado en móviles y navegadores.
+- Sin cambios en JavaScript, catálogo, Supabase, membresías, notas o progreso.
+- Mantener functions/api/news.js dentro de su carpeta original al desplegar.
