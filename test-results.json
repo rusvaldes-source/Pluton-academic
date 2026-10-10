@@ -1,0 +1,131 @@
+{
+  "results": [
+    {
+      "name": "Portada: 26 cursos, 9 filtros y recursos íntegros",
+      "status": "passed"
+    },
+    {
+      "name": "Navegación móvil, filtros y búsquedas ES/EN",
+      "status": "passed"
+    },
+    {
+      "name": "Participación: guardar, restaurar, borrar y traducir",
+      "status": "passed"
+    },
+    {
+      "name": "Noticias: idioma, pestañas y caída del servicio",
+      "status": "passed"
+    },
+    {
+      "name": "Membresías y ventanas dinámicas reversibles ES/EN",
+      "status": "passed"
+    },
+    {
+      "name": "Login: validación, error, registro y recuperación simulados",
+      "status": "passed"
+    },
+    {
+      "name": "Login → perfil → membresía, con SDK real y respuestas simuladas",
+      "status": "passed"
+    },
+    {
+      "name": "Cuaderno del panel, idioma y cierre de sesión",
+      "status": "passed"
+    },
+    {
+      "name": "Lecciones: buscador reparado y navegación al curso exacto",
+      "status": "passed"
+    },
+    {
+      "name": "Notas, favoritos, tarjetas y audio conservados",
+      "status": "passed"
+    },
+    {
+      "name": "Cuestionarios: respuesta vacía, incorrecta y 70 correctas",
+      "status": "passed"
+    },
+    {
+      "name": "Progreso del panel y portada: 70/70 sin duplicados",
+      "status": "passed"
+    },
+    {
+      "name": "Impresión y contenido bilingüe sin cambiar las lecciones",
+      "status": "passed"
+    },
+    {
+      "name": "Traducción de todas las secciones y títulos, incluso tras cambios dinámicos",
+      "status": "passed"
+    },
+    {
+      "name": "Responsive: tres páginas en 320, 390, 768 y 1440 px",
+      "status": "passed"
+    },
+    {
+      "name": "Ningún error JavaScript y ninguna solicitud real a Supabase",
+      "status": "passed"
+    }
+  ],
+  "requests": [
+    {
+      "path": "/auth/v1/token",
+      "method": "POST"
+    },
+    {
+      "path": "/auth/v1/signup",
+      "method": "POST"
+    },
+    {
+      "path": "/auth/v1/recover",
+      "method": "POST"
+    },
+    {
+      "path": "/auth/v1/token",
+      "method": "POST"
+    },
+    {
+      "path": "/auth/v1/user",
+      "method": "GET"
+    },
+    {
+      "path": "/rest/v1/profiles",
+      "method": "GET"
+    },
+    {
+      "path": "/rest/v1/profiles",
+      "method": "GET"
+    },
+    {
+      "path": "/rest/v1/profiles",
+      "method": "GET"
+    },
+    {
+      "path": "/rest/v1/profiles",
+      "method": "GET"
+    },
+    {
+      "path": "/rest/v1/profiles",
+      "method": "GET"
+    },
+    {
+      "path": "/rest/v1/profiles",
+      "method": "GET"
+    },
+    {
+      "path": "/auth/v1/user",
+      "method": "GET"
+    },
+    {
+      "path": "/auth/v1/user",
+      "method": "GET"
+    },
+    {
+      "path": "/rest/v1/profiles",
+      "method": "GET"
+    },
+    {
+      "path": "/auth/v1/logout",
+      "method": "POST"
+    }
+  ],
+  "pageErrors": []
+}

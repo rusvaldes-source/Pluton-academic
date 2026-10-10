@@ -28,7 +28,21 @@ function closeModal() {
 
 function authMessage(message) {
   const element = document.getElementById('authMessage');
-  if (element) element.textContent = message;
+  if (element) element.textContent = window.plutonLanguage?.text(message) || message;
+}
+
+function authError(error) {
+  const messages = {
+    invalid_credentials: 'Credenciales incorrectas. Revisa tu correo y contraseña.',
+    email_not_confirmed: 'Confirma tu correo antes de iniciar sesión.',
+    over_email_send_rate_limit: 'Espera unos minutos antes de intentarlo de nuevo.',
+    over_request_rate_limit: 'Espera unos minutos antes de intentarlo de nuevo.',
+    user_already_exists: 'Cuenta ya registrada. Inicia sesión o recupera tu contraseña.',
+    signup_disabled: 'El registro de cuentas no está disponible.',
+    weak_password: 'Escribe un correo válido y una contraseña de al menos 6 caracteres.'
+  };
+  console.warn('Authentication request:', error?.code || error?.name || 'unavailable');
+  authMessage(messages[error?.code] || 'No se pudo completar la solicitud. Inténtalo de nuevo.');
 }
 
 // LOGIN
@@ -95,12 +109,12 @@ async function signUp() {
   });
 
   if (error) {
-    authMessage(error.message);
+    authError(error);
     return;
   }
 
   authMessage('Revisa tu correo para confirmar tu cuenta.');
-  } catch(e) { authMessage(e.message || 'Error de conexión'); }
+  } catch(e) { authError(e); }
 }
 
 // INICIAR SESIÓN
@@ -122,12 +136,12 @@ async function signIn() {
   });
 
   if (error) {
-    authMessage(error.message);
+    authError(error);
     return;
   }
 
   window.location.href = 'dashboard.html';
-  } catch(e) { authMessage(e.message || 'Error de conexión'); }
+  } catch(e) { authError(e); }
 }
 
 // RECUPERAR CONTRASEÑA
@@ -147,12 +161,12 @@ async function resetPassword() {
   });
 
   if (error) {
-    authMessage(error.message);
+    authError(error);
     return;
   }
 
   authMessage('Revisa tu correo para restablecer la contraseña.');
-  } catch(e) { authMessage(e.message || 'Error de conexión'); }
+  } catch(e) { authError(e); }
 }
 
 // CURSOS
