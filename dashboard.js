@@ -2,6 +2,17 @@ const SUPABASE_URL = 'https://paifjzznyiehwidoqjqb.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_-Ip2JRpDGn-Ehx2C94Tk3Q_jg7p7VLz';
 const sb = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY) : null;
 
+function studentStatus(element, value) {
+  if (!element) return;
+  element.dataset.studentStatus = value;
+  element.textContent = window.plutonLanguage?.text(value) || value;
+}
+function studentValue(element, value) {
+  if (!element) return;
+  delete element.dataset.studentStatus;
+  element.textContent = value;
+}
+
 async function loadStudent() {
   const emailEl = document.getElementById('student-email');
   const membershipEl = document.getElementById('membership');
@@ -11,25 +22,26 @@ async function loadStudent() {
     if (error) throw error;
     const user = data?.session?.user;
     if (!user) {
-      if (emailEl) emailEl.textContent = 'Sesión no iniciada';
-      if (membershipEl) membershipEl.textContent = '—';
+      studentStatus(emailEl, 'Sesión no iniciada');
+      studentValue(membershipEl, '—');
       return;
     }
-    if (emailEl) emailEl.textContent = user.email || 'Usuario';
-    if (membershipEl) membershipEl.textContent = 'Comprobando...';
+    studentValue(emailEl, user.email || window.plutonLanguage?.text('Usuario') || 'Usuario');
+    studentStatus(membershipEl, 'Comprobando...');
     const { data: profile, error: profileError } = await sb.from('profiles')
       .select('membership').eq('email', user.email).maybeSingle();
     if (profileError) {
       console.error('Profile lookup:', profileError);
-      if (membershipEl) membershipEl.textContent = 'Sin membresía';
+      studentStatus(membershipEl, 'No disponible');
       return;
     }
-    if (membershipEl) membershipEl.textContent = profile?.membership || 'Sin membresía';
+    if (profile?.membership) studentValue(membershipEl, profile.membership);
+    else studentStatus(membershipEl, 'Sin membresía');
     translateDashboard();
   } catch (error) {
     console.error('Dashboard:', error);
-    if (emailEl) emailEl.textContent = 'Error al cargar tu cuenta';
-    if (membershipEl) membershipEl.textContent = 'No disponible';
+    studentStatus(emailEl, 'Error al cargar tu cuenta');
+    studentStatus(membershipEl, 'No disponible');
   }
 }
 
@@ -52,7 +64,8 @@ function translateDashboard(){
  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
  while(n=walker.nextNode()){if(n.parentElement?.closest('[data-i18n],#student-email,#membership,#overallProgress,script'))continue;const v=n.nodeValue.trim(),es=reverse[v]||v;if(dashboardLabels[es])n.nodeValue=n.nodeValue.replace(v,lang==='en'?dashboardLabels[es]:es);}
  document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=dashboardStrings[lang][el.dataset.i18n]||el.textContent;});
- const b=document.getElementById('languageToggle');if(b)b.textContent=lang==='en'?'ES':'EN';document.documentElement.lang=lang;refreshProgress();
+ document.querySelectorAll('[data-student-status]').forEach(el=>{el.textContent=window.plutonLanguage?.text(el.dataset.studentStatus)||el.dataset.studentStatus;});
+ const b=document.getElementById('languageToggle');if(b)b.textContent=lang==='en'?'EN':'ES';document.documentElement.lang=lang;refreshProgress();
 }
 function changeDashboardLanguage(){window.plutonLanguage?.toggle();}
 let allCourseCodes=[];

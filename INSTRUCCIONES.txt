@@ -1,13 +1,9 @@
-PLUTÓN ACADEMIC B42 - PARCHE DE FOTOGRAFÍAS
+PLUTÓN ACADEMIC B56 — PAQUETE COMPLETO PARA REVISIÓN
 
-Este ZIP contiene un parche CSS aislado. NO es el sitio completo.
-
-1. Conservar todos los archivos originales de B42.
-2. Añadir photo-fix-b42.css a la raíz del proyecto.
-3. En index.html y courses.html, incluir la siguiente línea DESPUÉS del enlace a styles.css:
-   <link rel="stylesheet" href="photo-fix-b42.css">
-4. Desplegar todos los archivos juntos y comprobar en móvil y escritorio.
-
-Alcance: corrige encuadre/recorte de las imágenes de tarjetas.
-No resuelve asignación de fotos repetidas a cursos ni verifica navegación o autenticación.
-No modificar el sitio publicado sin respaldo previo.
+Este ZIP contiene el sitio completo, basado en B55 de GitHub y comparado con B42.
+Consultar B56_REVISION.md para los cambios comprobados, pruebas y límites.
+No editar líneas ni mezclar archivos con otros paquetes.
+Revisar primero la vista privada. No actualizar GitHub, Cloudflare ni Supabase sin aprobación.
+Tras aprobar una futura publicación, conservar la carpeta functions/api/ con news.js.
+Las notas y favoritos se conservan por navegador y origen: la vista privada usa un origen distinto del sitio público.
+Las claves, imágenes, cursos, precios y estilos originales se conservan.

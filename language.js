@@ -1,6 +1,45 @@
 (function(){
 'use strict';
 const dictionary={
+'Recursos':'Resources',
+'Conocimiento que se convierte en oportunidades':'Knowledge that turns into opportunities',
+'Aprende, practica y demuestra lo que sabes, desde cualquier dispositivo.':'Learn, practice and show what you know, from any device.',
+'Explora cursos prácticos en distintas áreas.':'Explore practical courses in different fields.',
+'Responde actividades y guarda tus apuntes.':'Complete activities and save your notes.',
+'Sigue tu progreso y celebra cada logro.':'Track your progress and celebrate every achievement.',
+'PLUTÓN ACADEMIC | Tu futuro comienza con conocimiento':'PLUTÓN ACADEMIC | Your future begins with knowledge',
+'Cursos | PLUTÓN ACADEMIC':'Courses | PLUTÓN ACADEMIC',
+'Panel del Estudiante | PLUTÓN ACADEMIC':'Student Dashboard | PLUTÓN ACADEMIC',
+'Membresía START':'Membership START',
+'Membresía PLUS':'Membership PLUS',
+'Membresía PREMIUM':'Membership PREMIUM',
+'Guardado en este dispositivo.':'Saved on this device.',
+'Notas borradas.':'Notes cleared.',
+'No se pudo guardar en este dispositivo.':'Unable to save on this device.',
+'No se puede guardar en este dispositivo.':'Storage is unavailable.',
+'Almacenamiento no disponible':'Storage unavailable',
+'Buscando tu próxima lección…':'Finding your next lesson…',
+'Buscar / Search':'Search',
+'Buscar cursos por nombre o código / Search courses':'Search courses by name or code',
+'Lecciones introductorias de demostración. El progreso se guarda en este dispositivo y se sincroniza al iniciar sesión, cuando hay conexión.':'Introductory demo lessons. Progress is saved on this device and synced when you sign in and have a connection.',
+'Revisa tu correo para confirmar tu cuenta.':'Check your email to confirm your account.',
+'Revisa tu correo para restablecer la contraseña.':'Check your email to reset your password.',
+'Credenciales incorrectas. Revisa tu correo y contraseña.':'Invalid credentials. Check your email and password.',
+'Confirma tu correo antes de iniciar sesión.':'Confirm your email before signing in.',
+'Espera unos minutos antes de intentarlo de nuevo.':'Wait a few minutes before trying again.',
+'No se pudo completar la solicitud. Inténtalo de nuevo.':'Could not complete the request. Please try again.',
+'No se pudo cerrar la sesión. Inténtalo de nuevo.':'Could not sign out. Please try again.',
+'Cuenta ya registrada. Inicia sesión o recupera tu contraseña.':'Account already registered. Sign in or reset your password.',
+'El registro de cuentas no está disponible.':'Account registration is unavailable.',
+'Usuario':'User',
+'Menú':'Menu',
+'PLUTÓN ACADEMIC — educación digital':'PLUTÓN ACADEMIC — digital education',
+'Accesos de PLUTÓN ACADEMIC':'PLUTÓN ACADEMIC shortcuts',
+'Progreso de lecciones':'Lesson progress',
+'Resumen visual de progreso':'Visual progress summary',
+'Estudiante con computadora y planeta Plutón':'Student with a computer and planet Pluto',
+'Mis apuntes':'My notes',
+'Cursos favoritos':'Favorite courses',
 'Educación real para un futuro brillante':'Real education for a brighter future',
 'Cursos prácticos de salud, bienes raíces, negocios y más.':'Practical courses in health, real estate, business and more.',
 'Comenzar a aprender →':'Start learning →',
@@ -79,33 +118,38 @@ const dictionary={
 "Curso PA-101":"Course PA-101",
 "Tu futuro comienza con conocimiento":"Your future begins with knowledge"
 };
-const originals=new WeakMap();
-const reverse=Object.fromEntries(Object.entries(dictionary).map(([es,en])=>[en,es]));
+const reverse={};
+for(const [es,en] of Object.entries(dictionary)){
+ const score=s=>s.length+(s.includes(' / ')?10000:0);
+ if(!reverse[en]||score(es)<score(reverse[en]))reverse[en]=es;
+}
 function current(){try{return localStorage.getItem('pluton-lang')==='en'?'en':'es'}catch(e){return 'es'}}
+function text(value){const spanish=reverse[value]||value;return current()==='en'?(dictionary[spanish]||value):spanish;}
 function apply(root=document.body){
  if(!root)return;
  if(observer)observer.disconnect();
  const language=current();document.documentElement.lang=language;
+ document.title=text(document.title);
  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let node;
  while((node=walker.nextNode())){
   if(node.parentElement?.closest('script,style,textarea,input,#student-email,#membership,#overallProgress,[data-no-translate]'))continue;
   const raw=node.nodeValue,trimmed=raw.trim();if(!trimmed)continue;
-  if(!originals.has(node))originals.set(node,raw);
-  const base=originals.get(node),key=base.trim();
-  const spanish=reverse[key]||key;
-  if(dictionary[spanish])node.nodeValue=base.replace(key,language==='en'?dictionary[spanish]:spanish);
+  const translated=text(trimmed);
+  if(translated!==trimmed)node.nodeValue=raw.replace(trimmed,translated);
  }
  document.querySelectorAll('input[placeholder],textarea[placeholder]').forEach(el=>{
-  if(!el.dataset.originalPlaceholder)el.dataset.originalPlaceholder=el.getAttribute('placeholder');
-  const es=el.dataset.originalPlaceholder;
-  el.setAttribute('placeholder',language==='en'?(dictionary[es]||es):es);
+  el.setAttribute('placeholder',text(el.getAttribute('placeholder')));
+ });
+ document.querySelectorAll('[aria-label],[alt]').forEach(el=>{
+  if(el.closest('[data-no-translate]'))return;
+  for(const attr of ['aria-label','alt'])if(el.hasAttribute(attr))el.setAttribute(attr,text(el.getAttribute(attr)));
  });
  const bannerEs=document.getElementById('pa-banner-es'),bannerEn=document.getElementById('pa-banner-en');if(bannerEs&&bannerEn){bannerEs.style.display=language==='es'?'block':'none';bannerEn.style.display=language==='en'?'block':'none';}
  document.querySelectorAll('#languageToggle').forEach(b=>{if(b.textContent!==(language==='en'?'EN':'ES'))b.textContent=language==='en'?'EN':'ES';b.setAttribute('aria-label',language==='en'?'Switch to Spanish':'Cambiar a inglés')});
- if(observer)observer.observe(document.body,{childList:true,subtree:true});
+ if(observer)observer.observe(document.body,{childList:true,characterData:true,subtree:true});
 }
 function toggle(){try{localStorage.setItem('pluton-lang',current()==='en'?'es':'en')}catch(e){}apply();if(typeof window.translateDashboard==='function')window.translateDashboard();if(typeof window.renderCourses==='function')window.renderCourses();}
-window.plutonLanguage={current,apply,toggle};window.changeLanguage=toggle;window.changeDashboardLanguage=toggle;window.toggleLang=toggle;
-const observer=new MutationObserver(mutations=>{if(mutations.some(m=>Array.from(m.addedNodes).some(n=>n.nodeType===1))){apply();}});
+window.plutonLanguage={current,apply,toggle,text};window.changeLanguage=toggle;window.changeDashboardLanguage=toggle;window.toggleLang=toggle;
+const observer=new MutationObserver(()=>apply());
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>apply());else apply();
 })();
