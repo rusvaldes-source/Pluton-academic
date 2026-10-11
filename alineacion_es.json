@@ -6,284 +6,220 @@
   "instructions": "Después de grabar cada WAV, ajustar start/end al habla real. Los tiempos son absolutos en segundos desde el inicio del montaje. Marcar las dos banderas únicamente tras revisar audio y autorización.",
   "cues": [
     {
-      "id": "I01_C01",
-      "scene": "I01",
+      "id": "W01_C01",
+      "scene": "W01",
       "start": 0.65,
-      "end": 4.107,
-      "es": "Cada nuevo camino comienza con una decisión:",
-      "en": "Every new path begins with a decision:"
+      "end": 2.873,
+      "es": "Bienvenido a PLUTÓN ACADEMIC.",
+      "en": "Welcome to PLUTÓN ACADEMIC."
     },
     {
-      "id": "I01_C02",
-      "scene": "I01",
-      "start": 4.207,
-      "end": 7.35,
-      "es": "aprender, crecer y mirar hacia adelante.",
-      "en": "to learn, to grow, and to look ahead."
+      "id": "W01_C02",
+      "scene": "W01",
+      "start": 2.973,
+      "end": 5.35,
+      "es": "Así puedes comenzar a aprender.",
+      "en": "Here is how to start learning."
     },
     {
-      "id": "I02_C01",
-      "scene": "I02",
-      "start": 8.65,
-      "end": 11.724,
-      "es": "En PLUTÓN ACADEMIC creemos en una educación útil,",
-      "en": "At PLUTÓN ACADEMIC, we believe in useful education:"
+      "id": "W02_C01",
+      "scene": "W02",
+      "start": 6.65,
+      "end": 9.489,
+      "es": "En Inicio, selecciona Iniciar sesión",
+      "en": "On the home page, select Sign in"
     },
     {
-      "id": "I02_C02",
-      "scene": "I02",
-      "start": 11.824,
-      "end": 14.778,
-      "es": "clara y accesible, que transforme el conocimiento",
-      "en": "clear, accessible learning that turns knowledge"
+      "id": "W02_C02",
+      "scene": "W02",
+      "start": 9.589,
+      "end": 12.35,
+      "es": "e introduce tu correo y contraseña.",
+      "en": "and enter your email and password."
     },
     {
-      "id": "I02_C03",
-      "scene": "I02",
-      "start": 14.878,
-      "end": 17.35,
-      "es": "en habilidades para tu vida y tu trabajo.",
-      "en": "into skills for your life and your work."
+      "id": "W03_C01",
+      "scene": "W03",
+      "start": 13.65,
+      "end": 16.591,
+      "es": "En Mi plataforma puedes ver tu cuenta,",
+      "en": "In My platform, you can see your account,"
     },
     {
-      "id": "I03_C01",
-      "scene": "I03",
-      "start": 18.65,
-      "end": 21.701,
-      "es": "Nuestra academia digital te permite estudiar a tu ritmo,",
-      "en": "Our digital academy lets you learn at your own pace,"
+      "id": "W03_C02",
+      "scene": "W03",
+      "start": 16.691,
+      "end": 20.35,
+      "es": "la membresía registrada y tu progreso general.",
+      "en": "your recorded membership and your overall progress."
     },
     {
-      "id": "I03_C02",
-      "scene": "I03",
-      "start": 21.801,
-      "end": 24.471,
-      "es": "organizar tu aprendizaje y volver a las lecciones",
-      "en": "organize your learning and revisit lessons"
+      "id": "W04_C01",
+      "scene": "W04",
+      "start": 21.65,
+      "end": 23.351,
+      "es": "Abre Mis cursos o Lecciones.",
+      "en": "Open My courses or Lessons."
     },
     {
-      "id": "I03_C03",
-      "scene": "I03",
-      "start": 24.571,
-      "end": 27.35,
-      "es": "cuando necesites reforzar una idea.",
-      "en": "whenever you need to strengthen your understanding."
+      "id": "W04_C02",
+      "scene": "W04",
+      "start": 23.451,
+      "end": 25.577,
+      "es": "Busca un curso por nombre o código",
+      "en": "Search for a course by name or code"
     },
     {
-      "id": "I04_C01",
-      "scene": "I04",
-      "start": 28.65,
-      "end": 31.112,
-      "es": "En salud, explora fundamentos del cuidado,",
-      "en": "In health, explore the foundations of care,"
+      "id": "W04_C03",
+      "scene": "W04",
+      "start": 25.677,
+      "end": 28.35,
+      "es": "y despliega la lección que quieras estudiar.",
+      "en": "and expand the lesson you want to study."
     },
     {
-      "id": "I04_C02",
-      "scene": "I04",
-      "start": 31.212,
-      "end": 32.987,
-      "es": "la seguridad y la comunicación,",
-      "en": "safety and communication,"
+      "id": "W05_C01",
+      "scene": "W05",
+      "start": 29.65,
+      "end": 31.898,
+      "es": "Lee el contenido y guarda tus notas.",
+      "en": "Read the content and save your notes."
     },
     {
-      "id": "I04_C03",
-      "scene": "I04",
-      "start": 33.087,
+      "id": "W05_C02",
+      "scene": "W05",
+      "start": 31.998,
+      "end": 34.367,
+      "es": "También puedes usar tarjetas de estudio",
+      "en": "You can also use study cards"
+    },
+    {
+      "id": "W05_C03",
+      "scene": "W05",
+      "start": 34.467,
       "end": 36.35,
-      "es": "con contenidos introductorios para seguir aprendiendo.",
-      "en": "with introductory content that supports further learning."
+      "es": "o imprimir la lección como PDF.",
+      "en": "or print the lesson as a PDF."
     },
     {
-      "id": "I05_C01",
-      "scene": "I05",
+      "id": "W06_C01",
+      "scene": "W06",
       "start": 37.65,
-      "end": 40.244,
-      "es": "En bienes raíces, conoce conceptos del sector",
-      "en": "In real estate, discover key industry concepts"
+      "end": 40.443,
+      "es": "Responde la pregunta y selecciona Comprobar respuesta.",
+      "en": "Answer the question and select Check answer."
     },
     {
-      "id": "I05_C02",
-      "scene": "I05",
-      "start": 40.344,
-      "end": 42.938,
-      "es": "y las etapas de una compraventa,",
-      "en": "and the stages of buying and selling property,"
+      "id": "W06_C02",
+      "scene": "W06",
+      "start": 40.543,
+      "end": 43.44,
+      "es": "Una respuesta correcta marca la lección como completada.",
+      "en": "A correct answer marks the lesson as complete."
     },
     {
-      "id": "I05_C03",
-      "scene": "I05",
-      "start": 43.038,
+      "id": "W06_C03",
+      "scene": "W06",
+      "start": 43.54,
       "end": 45.35,
-      "es": "para comprender mejor sus procesos.",
-      "en": "so you can better understand the process."
+      "es": "Revisa tu avance en Mi progreso.",
+      "en": "Check your progress in My progress."
     },
     {
-      "id": "I06_C01",
-      "scene": "I06",
+      "id": "W07_C01",
+      "scene": "W07",
       "start": 46.65,
-      "end": 48.607,
-      "es": "Fortalece tu inglés profesional",
-      "en": "Strengthen your professional English"
+      "end": 48.681,
+      "es": "El avance se guarda en este dispositivo",
+      "en": "Progress is saved on this device"
     },
     {
-      "id": "I06_C02",
-      "scene": "I06",
-      "start": 48.707,
-      "end": 51.804,
-      "es": "con vocabulario y expresiones para situaciones laborales.",
-      "en": "with vocabulary and expressions for the workplace."
+      "id": "W07_C02",
+      "scene": "W07",
+      "start": 48.781,
+      "end": 51.542,
+      "es": "y puede sincronizarse al iniciar sesión con conexión.",
+      "en": "and can sync when you sign in with a connection."
     },
     {
-      "id": "I06_C03",
-      "scene": "I06",
-      "start": 51.904,
+      "id": "W07_C03",
+      "scene": "W07",
+      "start": 51.642,
       "end": 54.35,
-      "es": "Comunicarte mejor también abre oportunidades.",
-      "en": "Better communication opens new possibilities."
+      "es": "Tus apuntes personales permanecen en este navegador.",
+      "en": "Your personal notes stay in this browser."
     },
     {
-      "id": "I07_C01",
-      "scene": "I07",
+      "id": "W08_C01",
+      "scene": "W08",
       "start": 55.65,
-      "end": 57.87,
-      "es": "En emprendimiento, convierte una idea",
-      "en": "In entrepreneurship, turn an idea"
+      "end": 58.727,
+      "es": "En Membresías, consulta START, PLUS y PREMIUM.",
+      "en": "In Memberships, explore START, PLUS and PREMIUM."
     },
     {
-      "id": "I07_C02",
-      "scene": "I07",
-      "start": 57.97,
-      "end": 59.89,
-      "es": "en un proyecto mejor organizado.",
-      "en": "into a more organized project."
+      "id": "W08_C02",
+      "scene": "W08",
+      "start": 58.827,
+      "end": 61.391,
+      "es": "La contratación y los pagos desde la web",
+      "en": "Online enrollment and payments"
     },
     {
-      "id": "I07_C03",
-      "scene": "I07",
-      "start": 59.99,
+      "id": "W08_C03",
+      "scene": "W08",
+      "start": 61.491,
       "end": 63.35,
-      "es": "Explora planificación, clientes y decisiones de negocio.",
-      "en": "Explore planning, customers and business decisions."
+      "es": "todavía no están habilitados.",
+      "en": "are not enabled yet."
     },
     {
-      "id": "I08_C01",
-      "scene": "I08",
+      "id": "W09_C01",
+      "scene": "W09",
       "start": 64.65,
-      "end": 67.034,
-      "es": "Aprende a utilizar herramientas digitales",
-      "en": "Learn to use digital tools"
+      "end": 67.919,
+      "es": "En Certificados encontrarás el modelo informativo.",
+      "en": "In Certificates, you will find the sample design."
     },
     {
-      "id": "I08_C02",
-      "scene": "I08",
-      "start": 67.134,
-      "end": 69.401,
-      "es": "para organizar tareas, crear documentos",
-      "en": "to organize tasks, create documents"
+      "id": "W09_C02",
+      "scene": "W09",
+      "start": 68.019,
+      "end": 70.438,
+      "es": "La emisión automática de certificados",
+      "en": "Automatic certificate issuance"
     },
     {
-      "id": "I08_C03",
-      "scene": "I08",
-      "start": 69.501,
-      "end": 72.35,
-      "es": "y trabajar con mayor claridad y responsabilidad.",
-      "en": "and work with greater clarity and responsibility."
+      "id": "W09_C03",
+      "scene": "W09",
+      "start": 70.538,
+      "end": 73.35,
+      "es": "y su verificación aún no están habilitadas.",
+      "en": "and verification are not enabled yet."
     },
     {
-      "id": "I09_C01",
-      "scene": "I09",
-      "start": 73.65,
-      "end": 76.504,
-      "es": "Lee, practica y comprueba lo que aprendiste.",
-      "en": "Read, practice and check what you have learned."
+      "id": "W10_C01",
+      "scene": "W10",
+      "start": 74.65,
+      "end": 77.298,
+      "es": "Elige español o inglés con el selector.",
+      "en": "Choose Spanish or English with the selector."
     },
     {
-      "id": "I09_C02",
-      "scene": "I09",
-      "start": 76.604,
-      "end": 78.971,
-      "es": "Usa las actividades, tus apuntes",
-      "en": "Use the activities, your personal notes"
+      "id": "W10_C02",
+      "scene": "W10",
+      "start": 77.398,
+      "end": 79.083,
+      "es": "Comienza tu próxima lección.",
+      "en": "Start your next lesson."
     },
     {
-      "id": "I09_C03",
-      "scene": "I09",
-      "start": 79.071,
-      "end": 82.35,
-      "es": "y el registro de progreso para avanzar paso a paso.",
-      "en": "and your progress record to move forward step by step."
-    },
-    {
-      "id": "I10_C01",
-      "scene": "I10",
-      "start": 83.65,
-      "end": 86.256,
-      "es": "Con una experiencia en español e inglés,",
-      "en": "With an experience in Spanish and English,"
-    },
-    {
-      "id": "I10_C02",
-      "scene": "I10",
-      "start": 86.356,
-      "end": 89.086,
-      "es": "puedes explorar la plataforma en el idioma",
-      "en": "you can explore the platform in the language"
-    },
-    {
-      "id": "I10_C03",
-      "scene": "I10",
-      "start": 89.186,
-      "end": 92.35,
-      "es": "que prefieras y mantener tu aprendizaje organizado.",
-      "en": "you prefer and keep your learning organized."
-    },
-    {
-      "id": "I11_C01",
-      "scene": "I11",
-      "start": 93.65,
-      "end": 96.255,
-      "es": "El avance se construye con constancia:",
-      "en": "Progress is built through consistency:"
-    },
-    {
-      "id": "I11_C02",
-      "scene": "I11",
-      "start": 96.355,
-      "end": 99.44,
-      "es": "una lección, una pregunta, un nuevo objetivo.",
-      "en": "one lesson, one question, one new goal."
-    },
-    {
-      "id": "I11_C03",
-      "scene": "I11",
-      "start": 99.54,
-      "end": 102.35,
-      "es": "PLUTÓN ACADEMIC acompaña ese primer paso.",
-      "en": "PLUTÓN ACADEMIC supports that first step."
-    },
-    {
-      "id": "I12_C01",
-      "scene": "I12",
-      "start": 103.65,
-      "end": 104.969,
-      "es": "PLUTÓN ACADEMIC.",
-      "en": "PLUTÓN ACADEMIC."
-    },
-    {
-      "id": "I12_C02",
-      "scene": "I12",
-      "start": 105.069,
-      "end": 108.036,
+      "id": "W10_C03",
+      "scene": "W10",
+      "start": 79.183,
+      "end": 81.35,
       "es": "Tu futuro comienza con conocimiento.",
       "en": "Your future begins with knowledge."
-    },
-    {
-      "id": "I12_C03",
-      "scene": "I12",
-      "start": 108.136,
-      "end": 111.35,
-      "es": "Explora nuestros cursos y comienza hoy.",
-      "en": "Explore our courses and start today."
     }
   ]
 }

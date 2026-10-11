@@ -1,35 +1,35 @@
 {
   "status": "production_project_ready_for_voice_recording_not_final_video",
   "summary": {
-    "package": "PLUTON_VIDEO_01_INSTITUCIONAL",
-    "duration": 112,
-    "scenes": 12,
-    "frames_full_hd": 24,
-    "subtitle_pairs": 35,
-    "subtitle_maximum_characters_per_second": 18.4,
-    "storyboard_pdf_pages": 13,
+    "package": "PLUTON_VIDEO_02_BIENVENIDA",
+    "duration": 82,
+    "scenes": 10,
+    "frames_full_hd": 20,
+    "subtitle_pairs": 27,
+    "subtitle_maximum_characters_per_second": 19.34,
+    "storyboard_pdf_pages": 11,
     "music": {
       "format": "WAV PCM 24-bit stereo 48000 Hz",
-      "duration": 112,
-      "integrated_lufs": -17.9,
+      "duration": 82,
+      "integrated_lufs": -17.91,
       "true_peak_db": -8.4,
       "no_third_party_samples": true
     },
-    "voices_missing": 24,
+    "voices_missing": 20,
     "final_mp4_available": false,
     "narration_words": {
-      "es": 218,
-      "en": 225
+      "es": 168,
+      "en": 171
     }
   },
   "image_integrity": "passed",
   "asset_hashes": "passed",
   "timeline_and_planned_subtitles": "passed",
   "browser_review": {
-    "package": "PLUTON_VIDEO_01_INSTITUCIONAL",
-    "scenes_checked_both_languages": 24,
+    "package": "PLUTON_VIDEO_02_BIENVENIDA",
+    "scenes_checked_both_languages": 20,
     "playback_controls": "passed",
-    "music_duration": 112,
+    "music_duration": 82,
     "mobile_no_overflow": true
   },
   "renderer_end_to_end": {

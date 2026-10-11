@@ -1,72 +1,242 @@
 [
   {
-    "file": "assets/b54-hero-photo.jpg",
-    "sha256": "d0d63749340b8082b01a85c12633381fe53506d94b1d6c2e752f81e6ce0629d4",
-    "type": "approved_B56_image",
-    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "file": "assets/inicio_es.png",
+    "sha256": "0d992ee44d21f70014193ca54fc1193014b05b1b6faf6e40ad45266443b3180e",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
     "dimensions": [
-      796,
-      708
+      1440,
+      641
     ]
   },
   {
-    "file": "assets/foto-profesional.jpg",
-    "sha256": "a48441234981a38687bfd8c2bf01577eaae2f237fe5d7c38cc5acde770e6e640",
-    "type": "approved_B56_image",
-    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "file": "assets/inicio_en.png",
+    "sha256": "98506687b8a238740bb005cdd06bf38dfd52540c885ca8aa8f92caa1ce3dc080",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1440,
+      641
+    ]
+  },
+  {
+    "file": "assets/login_es.png",
+    "sha256": "7a38cd674cf8d83d4f41ccc1889e7fbb1175f43768308797001d4d2c24372a18",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      480,
+      570
+    ]
+  },
+  {
+    "file": "assets/login_en.png",
+    "sha256": "05c2e21d2be8e7a0a1cd02be638085f2f1b1ebfa8cfb63e6aa350836183cbc03",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      480,
+      570
+    ]
+  },
+  {
+    "file": "assets/perfil_es.png",
+    "sha256": "61bb5467410cf24440f1b8a8a2310bc5347445c08b93c66356506d85a94ccef7",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
     "dimensions": [
       760,
-      370
+      341
     ]
   },
   {
-    "file": "assets/course-photo-PA-101.jpg",
-    "sha256": "38f37769eb0983ae5914c964aa8fc3d463b6ab2509a92ee62d6059d422549027",
-    "type": "approved_B56_image",
-    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "file": "assets/perfil_en.png",
+    "sha256": "173009de2567dd1f49156ff7d2701182cdc21666c40e1be3dafd124c15763c9f",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
     "dimensions": [
-      960,
-      540
+      760,
+      341
     ]
   },
   {
-    "file": "assets/course-photo-RE-101.jpg",
-    "sha256": "1439b27b218e3438358b6d1ae0b8a5dbd3566024ed202f1b608620fbf828e16a",
-    "type": "approved_B56_image",
-    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "file": "assets/curso_es.png",
+    "sha256": "52c8a38ca0f4ddfc9e48da1e0fd97da1c482e59ffe80031e224325c7ec254a40",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
     "dimensions": [
-      960,
-      540
+      1106,
+      653
     ]
   },
   {
-    "file": "assets/course-photo-ID-101.jpg",
-    "sha256": "0c19a4a3b6229b245c5e4387add8cff9cecc83a5d0ce7b36b794e6505c1de828",
-    "type": "approved_B56_image",
-    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "file": "assets/curso_en.png",
+    "sha256": "f18adb5ed8ae0428276588c1069dd65e795c05638db20eb7e77989ca968421ff",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
     "dimensions": [
-      960,
-      540
+      1106,
+      652
     ]
   },
   {
-    "file": "assets/course-photo-NE-101.jpg",
-    "sha256": "61a97d6f88d40f632ff6942c1c57c6039e9505dc52e8de63bd9df873dca9c8d1",
-    "type": "approved_B56_image",
-    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "file": "assets/leccion_es.png",
+    "sha256": "dcb0766e630b45c46955309bd006bb98750775151fd82a5bc2e39f5162ea82d1",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
     "dimensions": [
-      960,
-      540
+      1030,
+      407
     ]
   },
   {
-    "file": "assets/course-photo-PA-203.jpg",
-    "sha256": "3054191d43eb960c8ec0cc23d3651e2005bd5aacde03bd94901fbc5f67a784a7",
-    "type": "approved_B56_image",
-    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "file": "assets/leccion_en.png",
+    "sha256": "4fef18aa938d6ad99c3384c5c59c6fc1938f57484209c05717f8e291d8bc6a58",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
     "dimensions": [
-      960,
-      540
+      1030,
+      407
+    ]
+  },
+  {
+    "file": "assets/evaluacion_es.png",
+    "sha256": "5ce63d599b529a2e207f43e4e181f67d005f922bc4677c4e7219d772a2bf7d75",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1030,
+      318
+    ]
+  },
+  {
+    "file": "assets/evaluacion_en.png",
+    "sha256": "26d2f8a2655de36d2456969e2da4f4fe2bf7e4ddd5b1e513517ad3c7ea48d275",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1030,
+      318
+    ]
+  },
+  {
+    "file": "assets/progreso_es.png",
+    "sha256": "13536029911b788b11f9d5ca04e1c4c907278711a3735b363eabca0f0701a612",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      760,
+      404
+    ]
+  },
+  {
+    "file": "assets/progreso_en.png",
+    "sha256": "13ba078a83361ddea28879990f0dc63dcc3c56b0f401d8c17b87ca6d9a998a4b",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      760,
+      404
+    ]
+  },
+  {
+    "file": "assets/membresias_es.png",
+    "sha256": "1cfc12bee2f869083d02dc8e050433dad4721f8dd27a4244df805c9e5a2fc3dc",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1600,
+      721
+    ]
+  },
+  {
+    "file": "assets/membresias_en.png",
+    "sha256": "3a74335fec7828f30327b783413e509b36f56ae62c99199f8795fd08d847849a",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1600,
+      721
+    ]
+  },
+  {
+    "file": "assets/certificados_es.png",
+    "sha256": "1eb57747b70f119b119495fd0eed8b1c53032168ba11c53e40d3c6c5b5aecc9b",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1600,
+      617
+    ]
+  },
+  {
+    "file": "assets/certificados_en.png",
+    "sha256": "a97eee7f32a3118f6b585dec3f186bce93537c0d162c162216c64a81c4e22f2e",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1600,
+      617
+    ]
+  },
+  {
+    "file": "assets/idioma_es.png",
+    "sha256": "bd422b3d78dd044ba953e0ac419dcc10301dd8000acd887f3db7d141b675234f",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1600,
+      1000
+    ]
+  },
+  {
+    "file": "assets/idioma_en.png",
+    "sha256": "d6edfe0cd3f1f0f5b7cb93d6f1f59242ae215069bcf188d747726f0db3196d61",
+    "type": "actual_B56_UI_offline_capture",
+    "source": "B56 without code changes; local test fixture; no external requests forwarded",
+    "dimensions": [
+      1600,
+      1000
+    ]
+  },
+  {
+    "file": "assets/catalogo_es.png",
+    "sha256": "81e8a4275ca03726d051e320236ef82916980b3484afc585720b5e0af82c6f30",
+    "type": "B56_UI_auxiliary_offline_capture",
+    "source": "B56 local, offline fixtures",
+    "dimensions": [
+      1600,
+      3661
+    ]
+  },
+  {
+    "file": "assets/catalogo_en.png",
+    "sha256": "e54f0886920ed67a505d6760da81b89f6b2370e1309c6ac680e7837bcd27f953",
+    "type": "B56_UI_auxiliary_offline_capture",
+    "source": "B56 local, offline fixtures",
+    "dimensions": [
+      1600,
+      3549
+    ]
+  },
+  {
+    "file": "assets/plan_es.png",
+    "sha256": "bb89bfc32cd0f5a26b18cb9d3f6dc65c405ee8ede5c0b2d2f5bde883db0bc0f0",
+    "type": "B56_UI_auxiliary_offline_capture",
+    "source": "B56 local, offline fixtures",
+    "dimensions": [
+      480,
+      286
+    ]
+  },
+  {
+    "file": "assets/plan_en.png",
+    "sha256": "dc364a358f24435072e7ae180cd161292d8d4ded0b533927c3486fb3f32b0803",
+    "type": "B56_UI_auxiliary_offline_capture",
+    "source": "B56 local, offline fixtures",
+    "dimensions": [
+      480,
+      286
     ]
   }
 ]
