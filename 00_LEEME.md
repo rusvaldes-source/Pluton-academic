@@ -1,11 +1,11 @@
-# PLUTÓN ACADEMIC · Video 1 · Proyecto audiovisual AV1
+# PLUTÓN ACADEMIC · Video 2 · Proyecto audiovisual AV1
 
-**Estado: proyecto completo para producción; no es un video terminado.** El montaje objetivo dura 112 segundos. Guion, escenas, composiciones 1080p, música original y subtítulos temporizados ES/EN están preparados. Faltan las grabaciones naturales ES/EN, la alineación final con esas voces y la verificación de los MP4 resultantes. No se entrega un video mudo como producto final.
+**Estado: proyecto completo para producción; no es un video terminado.** El montaje objetivo dura 82 segundos. Guion, escenas, composiciones 1080p, música original y subtítulos temporizados ES/EN están preparados. Faltan las grabaciones naturales ES/EN, la alineación final con esas voces y la verificación de los MP4 resultantes. No se entrega un video mudo como producto final.
 
 Para revisar, abre `revision/index.html`. Permite cambiar idioma, recorrer todas las escenas, consultar la narración y escuchar la música. La reproducción es un storyboard temporizado con música opcional, sin voz; está rotulada como tal. No se aloja en Sites ni se publica en ningún sistema.
 
 1. Revisa guiones y escenas antes de integración; `01_GUION_ES.md`, `02_SCRIPT_EN.md` y `03_PLAN_DE_MONTAJE.md`.
-2. Graba los 12 WAV ES y 12 WAV EN según `04_DIRECCION_DE_VOZ.md`. Colócalos en las carpetas de idioma con los nombres de escena exactos.
+2. Graba los 10 WAV ES y 10 WAV EN según `04_DIRECCION_DE_VOZ.md`. Colócalos en las carpetas de idioma con los nombres de escena exactos.
 3. Ajusta ambas alineaciones a la voz real y confirma permiso de uso. Los archivos SRT `PLAN_NO_FINAL` no están sincronizados con una voz todavía inexistente.
 4. Con Python 3.10+, FFmpeg y FFprobe instalados: `python montar.py validar --idioma es` y `python montar.py validar --idioma en`.
 5. Exporta `python montar.py render --idioma es` y `python montar.py render --idioma en`. Para copias con subtítulos fijos, añade `--quemar`.

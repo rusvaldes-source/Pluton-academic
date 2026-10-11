@@ -1,39 +1,33 @@
-# PLUTÓN ACADEMIC · Presentación institucional
+# PLUTÓN ACADEMIC · Bienvenida al estudiante
 
-Guion ES para grabación. 112 segundos de montaje; 218 palabras. Voz aún no grabada.
+Guion ES para grabación. 82 segundos de montaje; 168 palabras. Voz aún no grabada.
 
-[I01 | 000–008 s]
-Cada nuevo camino comienza con una decisión: aprender, crecer y mirar hacia adelante.
+[W01 | 000–006 s]
+Bienvenido a PLUTÓN ACADEMIC. Así puedes comenzar a aprender.
 
-[I02 | 008–018 s]
-En PLUTÓN ACADEMIC creemos en una educación útil, clara y accesible, que transforme el conocimiento en habilidades para tu vida y tu trabajo.
+[W02 | 006–013 s]
+En Inicio, selecciona Iniciar sesión e introduce tu correo y contraseña.
 
-[I03 | 018–028 s]
-Nuestra academia digital te permite estudiar a tu ritmo, organizar tu aprendizaje y volver a las lecciones cuando necesites reforzar una idea.
+[W03 | 013–021 s]
+En Mi plataforma puedes ver tu cuenta, la membresía registrada y tu progreso general.
 
-[I04 | 028–037 s]
-En salud, explora fundamentos del cuidado, la seguridad y la comunicación, con contenidos introductorios para seguir aprendiendo.
+[W04 | 021–029 s]
+Abre Mis cursos o Lecciones. Busca un curso por nombre o código y despliega la lección que quieras estudiar.
 
-[I05 | 037–046 s]
-En bienes raíces, conoce conceptos del sector y las etapas de una compraventa, para comprender mejor sus procesos.
+[W05 | 029–037 s]
+Lee el contenido y guarda tus notas. También puedes usar tarjetas de estudio o imprimir la lección como PDF.
 
-[I06 | 046–055 s]
-Fortalece tu inglés profesional con vocabulario y expresiones para situaciones laborales. Comunicarte mejor también abre oportunidades.
+[W06 | 037–046 s]
+Responde la pregunta y selecciona Comprobar respuesta. Una respuesta correcta marca la lección como completada. Revisa tu avance en Mi progreso.
 
-[I07 | 055–064 s]
-En emprendimiento, convierte una idea en un proyecto mejor organizado. Explora planificación, clientes y decisiones de negocio.
+[W07 | 046–055 s]
+El avance se guarda en este dispositivo y puede sincronizarse al iniciar sesión con conexión. Tus apuntes personales permanecen en este navegador.
 
-[I08 | 064–073 s]
-Aprende a utilizar herramientas digitales para organizar tareas, crear documentos y trabajar con mayor claridad y responsabilidad.
+[W08 | 055–064 s]
+En Membresías, consulta START, PLUS y PREMIUM. La contratación y los pagos desde la web todavía no están habilitados.
 
-[I09 | 073–083 s]
-Lee, practica y comprueba lo que aprendiste. Usa las actividades, tus apuntes y el registro de progreso para avanzar paso a paso.
+[W09 | 064–074 s]
+En Certificados encontrarás el modelo informativo. La emisión automática de certificados y su verificación aún no están habilitadas.
 
-[I10 | 083–093 s]
-Con una experiencia en español e inglés, puedes explorar la plataforma en el idioma que prefieras y mantener tu aprendizaje organizado.
-
-[I11 | 093–103 s]
-El avance se construye con constancia: una lección, una pregunta, un nuevo objetivo. PLUTÓN ACADEMIC acompaña ese primer paso.
-
-[I12 | 103–112 s]
-PLUTÓN ACADEMIC. Tu futuro comienza con conocimiento. Explora nuestros cursos y comienza hoy.
+[W10 | 074–082 s]
+Elige español o inglés con el selector. Comienza tu próxima lección. Tu futuro comienza con conocimiento.

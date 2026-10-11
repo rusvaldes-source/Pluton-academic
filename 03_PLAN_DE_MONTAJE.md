@@ -1,21 +1,19 @@
-# Plan de montaje · video 1
+# Plan de montaje · video 2
 
-Duración fija: 112 s. Dos versiones narradas independientes: ES y EN. Cada versión tendrá subtítulos ES y EN. No se mezclan ambos idiomas en una misma narración.
+Duración fija: 82 s. Dos versiones narradas independientes: ES y EN. Cada versión tendrá subtítulos ES y EN. No se mezclan ambos idiomas en una misma narración.
 
 | Escena | Tiempo | Recurso | Texto en pantalla ES | Voz máxima por WAV | Dirección / fidelidad |
 |---|---|---|---|---|---|
-| I01 | 000–008 s | b54-hero-photo.jpg | El conocimiento abre caminos. | 6.90 s | Apertura: revelar la imagen aprobada con fundido de 0,3 s. Pausa cálida antes de aprender. |
-| I02 | 008–018 s | foto-profesional.jpg | Educación útil. / Nuevas posibilidades. | 8.90 s | Plano de conversación profesional; no atribuir una persona al fundador. |
-| I03 | 018–028 s | b54-hero-photo.jpg | Aprende a tu ritmo. | 8.90 s | Composición aprobada y transición suave. |
-| I04 | 028–037 s | course-photo-PA-101.jpg | Salud | 7.90 s | Contenido educativo introductorio; no sugerir licencia sanitaria o práctica acreditada. |
-| I05 | 037–046 s | course-photo-RE-101.jpg | Bienes raíces | 7.90 s | Composición aprobada y transición suave. |
-| I06 | 046–055 s | course-photo-ID-101.jpg | Inglés profesional | 7.90 s | Composición aprobada y transición suave. |
-| I07 | 055–064 s | course-photo-NE-101.jpg | Emprendimiento | 7.90 s | Composición aprobada y transición suave. |
-| I08 | 064–073 s | course-photo-PA-203.jpg | Herramientas digitales | 7.90 s | Composición aprobada y transición suave. |
-| I09 | 073–083 s | course-photo-PA-203.jpg | Lee. Practica. Revisa. | 8.90 s | Composición aprobada y transición suave. |
-| I10 | 083–093 s | course-photo-ID-101.jpg | Español e inglés | 8.90 s | Composición aprobada y transición suave. |
-| I11 | 093–103 s | foto-profesional.jpg | Pequeños pasos. / Avances reales. | 8.90 s | Composición aprobada y transición suave. |
-| I12 | 103–112 s | b54-hero-photo.jpg | Tu futuro comienza / con conocimiento. | 7.90 s | Cerrar sobre lema durante 3 s; pronunciar el nombre sin imitar la voz del fundador. |
+| W01 | 000–006 s | inicio | Bienvenido a / PLUTÓN ACADEMIC. | 4.90 s | Composición aprobada y transición suave. |
+| W02 | 006–013 s | login | 1. Inicia sesión | 5.90 s | Mostrar el modal real vacío. No rellenar ni revelar credenciales. |
+| W03 | 013–021 s | perfil | 2. Abre Mi plataforma | 6.90 s | Captura del panel real con sesión y PLUS simulados sin conexión; rotular cuenta de demostración. |
+| W04 | 021–029 s | curso | 3. Encuentra tu curso | 6.90 s | Composición aprobada y transición suave. |
+| W05 | 029–037 s | leccion | 4. Estudia y toma notas | 6.90 s | Botones reales. PDF mediante el diálogo de impresión del navegador; no descarga de manual completo. |
+| W06 | 037–046 s | evaluacion | 5. Comprueba y avanza | 7.90 s | Primer quiz RE-201 resuelto solo en navegador de rodaje. Progreso del curso 33%; general 1%, datos de demostración. |
+| W07 | 046–055 s | progreso | Tu progreso, organizado | 7.90 s | No prometer sincronía de apuntes. Mostrar panel real sin nuevos controles inventados. |
+| W08 | 055–064 s | membresias | Membresías: consulta los planes | 7.90 s | Mostrar tarjetas B56, sin precios añadidos. Corte al modal informativo del plan PLUS en el storyboard complementario. |
+| W09 | 064–074 s | certificados | Certificados: información | 8.90 s | Rotular MODELO INFORMATIVO / INFORMATIONAL SAMPLE. No animar generación, descarga ni verificación. |
+| W10 | 074–082 s | idioma | Elige tu idioma. / Comienza tu próxima lección. | 6.90 s | Cierre; el selector ES/EN de B56 no aparece en el recorte del héroe: usar captura de portada con cabecera. |
 
 Los textos EN y las frases emparejadas están en `timeline.json` y en el storyboard. Los fotogramas son composiciones terminadas para montaje, no fotogramas de un MP4 final. Preservan la proporción de las imágenes de B56. Las fuentes de 960×540 o menores se integran en una composición de 1920×1080; no son rodaje nativo 1080p.
 
