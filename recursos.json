@@ -1,0 +1,72 @@
+[
+  {
+    "file": "assets/b54-hero-photo.jpg",
+    "sha256": "d0d63749340b8082b01a85c12633381fe53506d94b1d6c2e752f81e6ce0629d4",
+    "type": "approved_B56_image",
+    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "dimensions": [
+      796,
+      708
+    ]
+  },
+  {
+    "file": "assets/foto-profesional.jpg",
+    "sha256": "a48441234981a38687bfd8c2bf01577eaae2f237fe5d7c38cc5acde770e6e640",
+    "type": "approved_B56_image",
+    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "dimensions": [
+      760,
+      370
+    ]
+  },
+  {
+    "file": "assets/course-photo-PA-101.jpg",
+    "sha256": "38f37769eb0983ae5914c964aa8fc3d463b6ab2509a92ee62d6059d422549027",
+    "type": "approved_B56_image",
+    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "dimensions": [
+      960,
+      540
+    ]
+  },
+  {
+    "file": "assets/course-photo-RE-101.jpg",
+    "sha256": "1439b27b218e3438358b6d1ae0b8a5dbd3566024ed202f1b608620fbf828e16a",
+    "type": "approved_B56_image",
+    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "dimensions": [
+      960,
+      540
+    ]
+  },
+  {
+    "file": "assets/course-photo-ID-101.jpg",
+    "sha256": "0c19a4a3b6229b245c5e4387add8cff9cecc83a5d0ce7b36b794e6505c1de828",
+    "type": "approved_B56_image",
+    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "dimensions": [
+      960,
+      540
+    ]
+  },
+  {
+    "file": "assets/course-photo-NE-101.jpg",
+    "sha256": "61a97d6f88d40f632ff6942c1c57c6039e9505dc52e8de63bd9df873dca9c8d1",
+    "type": "approved_B56_image",
+    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "dimensions": [
+      960,
+      540
+    ]
+  },
+  {
+    "file": "assets/course-photo-PA-203.jpg",
+    "sha256": "3054191d43eb960c8ec0cc23d3651e2005bd5aacde03bd94901fbc5f67a784a7",
+    "type": "approved_B56_image",
+    "source": "GitHub B56 f679b5d15435fb98e95bb85ab25645ae609c8c73",
+    "dimensions": [
+      960,
+      540
+    ]
+  }
+]

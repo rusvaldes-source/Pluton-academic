@@ -1,0 +1,25 @@
+{
+  "errors": [],
+  "pending": [
+    "Sincronía final no revisada contra la voz",
+    "Falta autorización de uso de la voz grabada",
+    "Falta grabación: locucion/en/I01.wav",
+    "Falta grabación: locucion/en/I02.wav",
+    "Falta grabación: locucion/en/I03.wav",
+    "Falta grabación: locucion/en/I04.wav",
+    "Falta grabación: locucion/en/I05.wav",
+    "Falta grabación: locucion/en/I06.wav",
+    "Falta grabación: locucion/en/I07.wav",
+    "Falta grabación: locucion/en/I08.wav",
+    "Falta grabación: locucion/en/I09.wav",
+    "Falta grabación: locucion/en/I10.wav",
+    "Falta grabación: locucion/en/I11.wav",
+    "Falta grabación: locucion/en/I12.wav"
+  ],
+  "voices_checked": [],
+  "ready_for_mp4": false,
+  "duration": 112,
+  "scenes": 12,
+  "cues": 35,
+  "language": "en"
+}

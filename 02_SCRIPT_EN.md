@@ -1,0 +1,39 @@
+# PLUTÓN ACADEMIC · Presentación institucional
+
+Guion EN para grabación. 112 segundos de montaje; 225 palabras. Voz aún no grabada.
+
+[I01 | 000–008 s]
+Every new path begins with a decision: to learn, to grow, and to look ahead.
+
+[I02 | 008–018 s]
+At PLUTÓN ACADEMIC, we believe in useful education: clear, accessible learning that turns knowledge into skills for your life and your work.
+
+[I03 | 018–028 s]
+Our digital academy lets you learn at your own pace, organize your learning and revisit lessons whenever you need to strengthen your understanding.
+
+[I04 | 028–037 s]
+In health, explore the foundations of care, safety and communication, with introductory content that supports further learning.
+
+[I05 | 037–046 s]
+In real estate, discover key industry concepts and the stages of buying and selling property, so you can better understand the process.
+
+[I06 | 046–055 s]
+Strengthen your professional English with vocabulary and expressions for the workplace. Better communication opens new possibilities.
+
+[I07 | 055–064 s]
+In entrepreneurship, turn an idea into a more organized project. Explore planning, customers and business decisions.
+
+[I08 | 064–073 s]
+Learn to use digital tools to organize tasks, create documents and work with greater clarity and responsibility.
+
+[I09 | 073–083 s]
+Read, practice and check what you have learned. Use the activities, your personal notes and your progress record to move forward step by step.
+
+[I10 | 083–093 s]
+With an experience in Spanish and English, you can explore the platform in the language you prefer and keep your learning organized.
+
+[I11 | 093–103 s]
+Progress is built through consistency: one lesson, one question, one new goal. PLUTÓN ACADEMIC supports that first step.
+
+[I12 | 103–112 s]
+PLUTÓN ACADEMIC. Your future begins with knowledge. Explore our courses and start today.
