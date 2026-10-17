@@ -1,1 +1,9 @@
-B59 INTEGRACION LOCAL: No es sitio completo ni ZIP listo para subir directamente a GitHub. Extrae, ejecuta python integrar.py RUTA_COPIA_COMPLETA_B57. Se integra foto aprobada, zona estudiantes, iconos de redes (sin enlaces inventados) y panel admin preliminar. Requiere validar en navegador, configurar URLs oficiales y Supabase. NO subir a main. No cambia la web publica.
+B59 CORRECCION DIRECTA - 17 OCT 2026
+
+1. Extrae ZIP.
+2. Doble clic EJECUTAR.bat (Windows, requiere internet).
+3. Abre SUBIR_A_B57_PRUEBA. Sube index.html y assets/b59 a la rama B57-Prueba, manteniendo rutas.
+4. NO subir a main.
+5. La foto queda conectada al hero y los cuatro iconos visibles. Los perfiles no enlazan hasta aportar URLs verificadas.
+6. El acceso admin/ apunta al prototipo existente; requiere configuración de Supabase, RLS y pruebas antes de habilitar funciones reales.
+7. Esto NO publica automáticamente en Cloudflare.
