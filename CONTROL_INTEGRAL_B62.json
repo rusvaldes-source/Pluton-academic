@@ -1,0 +1,14 @@
+{
+  "base": "B61 + documentation B58 16 octubre",
+  "total_files": 235,
+  "html_files": 4,
+  "image_files": 118,
+  "invalid_images": [],
+  "unresolved_static_links_sample": [],
+  "unresolved_static_links_count": 0,
+  "deployment_browser_B61": "NOT TESTED",
+  "supabase_admin": "NOT TESTED",
+  "payments": "NOT INTEGRATED",
+  "course_source_media": "NOT FULLY VERIFIED",
+  "release_ready": false
+}

@@ -1,0 +1,46 @@
+/* B58 visual proposal: scoped, non-destructive, not yet integrated into B57. */
+.b58-preview { --navy:#08172b; --navy2:#102b4d; --gold:#d8b568; --ink:#eef4fc; --muted:#b6c6d8; color:var(--ink); background:linear-gradient(145deg,#071427,#102744); font:400 16px/1.5 system-ui,sans-serif; min-height:100vh; }
+.b58-preview *, .b58-preview *::before, .b58-preview *::after {box-sizing:border-box}
+.b58-preview .b58-container {width:min(1160px,calc(100% - 36px));margin:auto}
+.b58-preview .b58-header {display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid #ffffff25}
+.b58-preview .b58-logo {font-weight:800;letter-spacing:.07em;color:#fff}
+.b58-preview .b58-logo span {color:var(--gold)}
+.b58-preview .b58-nav {display:flex;gap:20px;flex-wrap:wrap}
+.b58-preview a {color:inherit;text-decoration:none}
+.b58-preview a:focus-visible,.b58-preview button:focus-visible {outline:3px solid var(--gold);outline-offset:3px}
+.b58-preview .b58-hero {padding:clamp(42px,7vw,90px) 0;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,56px);align-items:center}
+.b58-preview .b58-eyebrow {text-transform:uppercase;letter-spacing:.13em;color:var(--gold);font-size:.78rem;font-weight:750}
+.b58-preview h1 {font-size:clamp(2rem,4.8vw,4.25rem);line-height:1.1;margin:12px 0 18px;max-width:14ch}
+.b58-preview p {color:var(--muted);max-width:58ch}
+.b58-preview .b58-cta {display:inline-block;padding:12px 21px;background:var(--gold);color:#0c1a2d;border-radius:9px;font-weight:750;margin-top:14px}
+.b58-preview .b58-photo {aspect-ratio:4/3;border:1px solid #d8b56865;border-radius:20px;background:radial-gradient(circle at 75% 25%,#32547a,#10233d 65%);display:grid;place-items:center;overflow:hidden}
+.b58-preview .b58-photo img {width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.b58-preview .b58-photo-placeholder {padding:30px;text-align:center;color:#c8d5e6}
+.b58-preview .b58-section-title {font-size:clamp(1.4rem,2.5vw,2rem);margin:0 0 20px}
+.b58-preview .b58-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:64px}
+.b58-preview .b58-card {background:#132e4a;border:1px solid #ffffff20;border-radius:15px;overflow:hidden;min-width:0}
+.b58-preview .b58-card-media {aspect-ratio:16/10;background:linear-gradient(135deg,#26486b,#0c1c31);display:grid;place-items:center;color:#c7d7e7}
+.b58-preview .b58-card-media img {width:100%;height:100%;object-fit:cover}
+.b58-preview .b58-card-body {padding:18px}
+.b58-preview .b58-card h3 {font-size:1.08rem;line-height:1.35;margin:0 0 8px}
+.b58-preview .b58-card p {font-size:.91rem;margin:0}
+@media(max-width:800px){.b58-preview .b58-hero{grid-template-columns:1fr}.b58-preview .b58-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.b58-preview .b58-nav{gap:12px}}
+@media(max-width:560px){.b58-preview .b58-header{align-items:flex-start;flex-direction:column}.b58-preview .b58-grid{grid-template-columns:1fr}.b58-preview .b58-container{width:min(100% - 28px,1160px)}.b58-preview .b58-hero{padding:34px 0}.b58-preview .b58-photo{aspect-ratio:16/11}}
+@media(prefers-reduced-motion:reduce){.b58-preview *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* B58 preview controls and mobile nav: all rules remain scoped. */
+.b58-preview .b58-language{display:flex;gap:4px;padding:4px;border:1px solid #ffffff40;border-radius:10px}
+.b58-preview .b58-language button{min-width:42px;min-height:38px;border:0;border-radius:7px;background:transparent;color:var(--ink);font-weight:750;cursor:pointer}
+.b58-preview .b58-language button[aria-pressed="true"]{background:var(--gold);color:var(--navy)}
+.b58-preview .b58-notice{border-top:1px solid #ffffff25;padding:14px 0 32px}
+@media(max-width:560px){.b58-preview .b58-nav{width:100%;justify-content:flex-start}.b58-preview .b58-language{align-self:flex-start}}
+
+/* B58 approved launch membership pricing */
+.b58-preview .b58-memberships{padding:24px 0 54px;border-top:1px solid #ffffff25}
+.b58-preview .b58-membership-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0}
+.b58-preview .b58-plan{padding:22px;border:1px solid #ffffff35;border-radius:14px;background:#132e4a}
+.b58-preview .b58-plan-featured{border:2px solid #d8b568}
+.b58-preview .b58-plan h3{margin:0 0 14px}.b58-preview .b58-plan h3 span{font-size:.7rem;color:#eac780;margin-left:6px}
+.b58-preview .b58-plan .b58-price{font-size:2rem;font-weight:800;color:#f2d18e;margin:0 0 8px}.b58-preview .b58-plan .b58-price small{font-size:.85rem}
+.b58-preview .b58-pricing-note{font-size:.85rem}
+@media(max-width:650px){.b58-preview .b58-membership-grid{grid-template-columns:1fr}}

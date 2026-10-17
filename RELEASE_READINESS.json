@@ -1,0 +1,21 @@
+{
+  "release_ready": false,
+  "activities_in_inventory": 58,
+  "blocking_issues": [
+    "PA-203: archivos fuente no verificados",
+    "ID-101: archivos fuente no verificados",
+    "MKT-201: archivos fuente no verificados",
+    "TEC-101: sin verificación de materiales fuente",
+    "PA-101: sin verificación de materiales fuente",
+    "Sitio B57 integrado: falta index.html",
+    "Sitio B57 integrado: falta styles.css",
+    "Sitio B57 integrado: falta courses.html",
+    "Sitio B57 integrado: falta dashboard.html",
+    "Sin prueba visual aprobada de escritorio/tableta/móvil",
+    "Sin prueba end-to-end de login, navegación, traducción, progreso y certificados",
+    "Fotografía original de estudiante sin cotejo confirmado",
+    "Panel admin: SQL no aplicado ni reconciliado con Supabase existente",
+    "Panel admin: falta configurar MFA y probar acceso autorizado/no autorizado",
+    "Panel admin: módulos CRUD son marcadores, aún no operativos"
+  ]
+}

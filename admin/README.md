@@ -1,0 +1,5 @@
+# B58 Admin (technical scaffold, not deployed)
+
+The admin route is separate from public navigation. Hiding a route or `noindex` is NOT security: real authorization is Supabase Auth plus server-enforced RLS. The panel currently contains six navigation/feature placeholders, not functioning management CRUD. Only the authorized user can see the private shell after the `is_pluton_admin` RPC returns true. The server MUST enforce RLS on every future management table; never rely on UI checks.
+
+Before deploying: (1) reconcile SQL with live schema and policies, then apply `database/admin_security.sql` from a trusted SQL editor; (2) add the first admin UUID from `auth.users` manually (never from the public site); (3) configure public Supabase URL and publishable key in admin-config.js (do NOT commit secrets); (4) configure strong MFA enforcement for admins, rate limits, audit logs, and recovery; (5) test unauthorized/authorized accounts and mobile/desktop; (6) integrate into B57/B58 and recheck production routes. Never expose service_role keys. Do not ship as a working secure production admin before these steps.

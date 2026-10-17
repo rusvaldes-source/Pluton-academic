@@ -1,0 +1,49 @@
+{
+  "version": "B58B",
+  "networks": [
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "url": null,
+      "priority": 1,
+      "verified": false
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "url": null,
+      "priority": 2,
+      "verified": false
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "url": null,
+      "priority": 3,
+      "verified": false
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": null,
+      "priority": 4,
+      "verified": false
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "url": null,
+      "priority": 5,
+      "verified": false
+    },
+    {
+      "id": "whatsapp",
+      "label": "WhatsApp Business",
+      "url": null,
+      "priority": 6,
+      "optional": true,
+      "verified": false
+    }
+  ],
+  "policy": "Do not display an icon unless its official account URL is verified. Do not fabricate profiles. Use platform-approved logo assets."
+}

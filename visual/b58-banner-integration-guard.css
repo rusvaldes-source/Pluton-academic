@@ -1,0 +1,12 @@
+/* B58 - safety contract: use with B57's EXISTING live header and navigation.
+   The approved art includes rasterized menu/button/text. Treat as an image only.
+   Do not overlay the image's fake controls with active navigation. */
+.b58-hero-slot { position:relative; isolation:isolate; width:100%; min-width:0; overflow:hidden; background:#061329; }
+.b58-hero-slot__image { display:block; width:100%; height:auto; max-width:100%; object-fit:contain; }
+/* Keep the real header in normal document flow, above the hero. */
+.b58-hero-slot, .b58-hero-slot * { box-sizing:border-box; }
+@media (max-width: 700px) {
+  .b58-hero-slot { overflow-x:hidden; }
+  .b58-hero-slot__image { height:auto; object-position:center; }
+}
+/* Do not style nav, header, body or generic .button selectors: no global regressions. */

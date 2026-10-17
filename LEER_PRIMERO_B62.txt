@@ -1,0 +1,8 @@
+PLUTÓN ACADEMIC B62 - CONSOLIDACIÓN INTEGRAL PARA AUDITORÍA
+
+Contiene los 229 archivos del sitio B61 y documentación recuperada de los acuerdos del 16 de octubre.
+NO SE CERTIFICA COMO VERSIÓN LISTA PARA PRODUCCIÓN.
+El panel administrativo, la facturación y la migración real de contenidos siguen sin validación end-to-end.
+No subir a main ni reemplazar producción. El contenido documentation/ es de referencia.
+No se ha modificado GitHub, Cloudflare ni Supabase.
+Consultar CONTROL_INTEGRAL_B62.json para las pruebas estáticas.

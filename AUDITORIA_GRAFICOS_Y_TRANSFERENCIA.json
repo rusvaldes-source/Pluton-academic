@@ -1,0 +1,74 @@
+{
+  "generated": "2026-10-16",
+  "graphics": [
+    {
+      "file": "integration/b58-fundadores-foto.webp",
+      "width": 972,
+      "height": 531,
+      "ratio": 1.831,
+      "bytes": 91266,
+      "warning": ""
+    },
+    {
+      "file": "assets/b58/portada-fundadores-aprobada.png",
+      "width": 1983,
+      "height": 793,
+      "ratio": 2.501,
+      "bytes": 2035910,
+      "warning": "flattened text/navigation; do not use as clickable UI"
+    },
+    {
+      "file": "assets/b58/portada-fundadores-aprobada.webp",
+      "width": 1983,
+      "height": 793,
+      "ratio": 2.501,
+      "bytes": 216718,
+      "warning": "flattened text/navigation; do not use as clickable UI"
+    }
+  ],
+  "course_inventory": {
+    "ID-101": {
+      "activities": 19,
+      "types": {
+        "Lección escrita": 12,
+        "Cuaderno": 6,
+        "Evaluación o repaso": 1
+      },
+      "source_assets_verified": false,
+      "integrated_count": 0
+    },
+    "MKT-201": {
+      "activities": 14,
+      "types": {
+        "Lección escrita": 8,
+        "Evaluación o repaso": 2,
+        "Cuaderno": 4
+      },
+      "source_assets_verified": false,
+      "integrated_count": 0
+    },
+    "PA-203": {
+      "activities": 25,
+      "types": {
+        "Lección escrita": 8,
+        "Evaluación o repaso": 6,
+        "Cuaderno": 5,
+        "Video": 4,
+        "Resumen / recurso HTML": 2
+      },
+      "source_assets_verified": false,
+      "integrated_count": 0
+    }
+  },
+  "launch_course_missing_in_inventory": [
+    "Computación",
+    "Nurse Assistant"
+  ],
+  "blockers": [
+    "Original LearnWorlds media, lesson bodies, evaluations and downloadable files are not included/verified in this ZIP",
+    "Full B57 source tree and real browser responsive checks are not in this ZIP",
+    "New hero has text and UI baked into pixels; use photo-only asset and live HTML controls",
+    "Student original image is not present in B58 assets; must locate correct B57 asset and check license/identity"
+  ],
+  "recommendation": "Do not deploy until original assets and full B57 integration are verified"
+}

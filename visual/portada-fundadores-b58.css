@@ -1,0 +1,3 @@
+/* The approved artwork includes drawn navigation/CTA: do NOT use it as a replacement for live buttons. */
+.b58-founder-art{display:block;width:100%;height:auto;aspect-ratio:1920/767;object-fit:contain;background:#061329}
+@media(max-width:700px){.b58-founder-art{aspect-ratio:auto;min-height:180px}}

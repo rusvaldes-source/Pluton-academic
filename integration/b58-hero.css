@@ -1,0 +1,7 @@
+/* B58: scoped hero, never styles header/nav or global elements */
+.pa-b54-banner.b58-founders-hero{overflow:hidden;isolation:isolate;background:linear-gradient(115deg,#061124,#122847);}
+.b58-founders-hero .pa-b54-hero-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);align-items:center;gap:clamp(12px,3vw,40px);max-width:1280px;margin-inline:auto;padding:clamp(22px,4vw,58px);min-width:0;}
+.b58-founders-hero .pa-b54-hero-text{min-width:0;position:relative;z-index:1;}
+.b58-founders-hero .pa-b54-hero-photo{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1.46;object-fit:cover;object-position:center;border-radius:18px;box-shadow:0 20px 50px #0006;min-width:0;}
+.b58-founders-hero .pa-b54-hero-links{display:flex;flex-wrap:wrap;gap:12px;}
+@media(max-width:760px){.b58-founders-hero .pa-b54-hero-content{grid-template-columns:minmax(0,1fr);padding:22px 18px;}.b58-founders-hero .pa-b54-hero-photo{aspect-ratio:1.46;max-height:420px;}.b58-founders-hero .pa-b54-hero-text h2{font-size:clamp(1.65rem,7vw,2.5rem);}}

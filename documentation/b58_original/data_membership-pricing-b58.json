@@ -1,0 +1,26 @@
+{
+  "currency": "USD",
+  "audience": "first_100_eligible_students",
+  "promotion_months": 3,
+  "discount_percent": 30,
+  "plans": [
+    {
+      "id": "START",
+      "regular_monthly_usd": 14.99,
+      "intro_monthly_usd": 10.49
+    },
+    {
+      "id": "PLUS",
+      "regular_monthly_usd": 24.99,
+      "intro_monthly_usd": 17.49
+    },
+    {
+      "id": "PREMIUM",
+      "regular_monthly_usd": 39.99,
+      "intro_monthly_usd": 27.99,
+      "availability": "pending_benefit_validation"
+    }
+  ],
+  "billing_status": "not_connected",
+  "note": "Display only. Eligibility and introductory billing must be enforced server-side before launch."
+}

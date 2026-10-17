@@ -1,0 +1,16 @@
+/* Standalone B58 design preview only: does not modify the production language selector. */
+(function(){'use strict';
+const strings={
+ es:{nav:'Navegación de demostración',courses:'Cursos',memberships:'Membresías',eyebrow:'Aprendizaje profesional',tagline:'Tu futuro comienza con conocimiento.',intro:'Una academia digital práctica, moderna y accesible. Vista previa de diseño: todavía no es el sitio B58 integrado.',explore:'Explorar cursos',photo:'Fotografía original pendiente de integración',areas:'Áreas de aprendizaje',pending:'Fotografía pendiente',course1:'Comunicación profesional',desc1:'Tarjetas compactas y legibles.',course2:'Herramientas digitales',desc2:'Proporciones uniformes.',course3:'Marketing y negocios',desc3:'Diseño adaptable a móvil.',notice:'Las membresías reales se conectarán con el sistema existente al integrar B57.',promo:'Promoción de lanzamiento para los primeros 100 estudiantes: 30% de descuento durante los primeros 3 meses.',perMonth:'/mes',then:'Después:',recommended:'Recomendado',premiumPending:'Activación pendiente de validar beneficios exclusivos.',terms:'Precios en USD. Promoción sujeta a disponibilidad para los primeros 100 estudiantes elegibles. Se aplican precios normales desde el cuarto mes. Vista previa: los pagos aún no están conectados.'},
+ en:{nav:'Demo navigation',courses:'Courses',memberships:'Memberships',eyebrow:'Professional learning',tagline:'Your future begins with knowledge.',intro:'A practical, modern and accessible digital academy. Design preview only: this is not the integrated B58 website.',explore:'Explore courses',photo:'Original approved photograph pending integration',areas:'Learning areas',pending:'Photograph pending',course1:'Professional communication',desc1:'Compact, readable cards.',course2:'Digital tools',desc2:'Consistent proportions.',course3:'Marketing and business',desc3:'Responsive mobile layout.',notice:'Actual memberships will be connected to the existing system during B57 integration.',promo:'Launch offer for the first 100 students: 30% off for the first 3 months.',perMonth:'/month',then:'Afterwards:',recommended:'Recommended',premiumPending:'Activation pending validation of exclusive benefits.',terms:'Prices in USD. Promotion subject to availability for the first 100 eligible students. Regular prices apply starting in month four. Preview only: payments are not yet connected.'}
+};
+function setLanguage(lang){if(!Object.prototype.hasOwnProperty.call(strings,lang))return false;
+ document.documentElement.lang=lang;
+ document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.getAttribute('data-i18n');if(strings[lang][key])el.textContent=strings[lang][key]});
+ document.querySelectorAll('[data-i18n-aria]').forEach(el=>{const key=el.getAttribute('data-i18n-aria');if(strings[lang][key])el.setAttribute('aria-label',strings[lang][key])});
+ document.querySelectorAll('[data-lang]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.lang===lang)));
+ return true;
+}
+document.querySelectorAll('[data-lang]').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
+setLanguage('es');
+})();

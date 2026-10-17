@@ -1,0 +1,9 @@
+B59 - PAQUETE DE INTEGRACION WINDOWS
+1. Extrae el ZIP entero en tu computadora.
+2. Haz doble clic en EJECUTAR_EN_WINDOWS.bat.
+3. Se descarga la rama B57-Prueba y se incorporan foto de fundadores, iconos sociales, zona de estudiantes y acceso admin.
+4. Apareceran carpetas PAQUETES_PARA_GITHUB/B59_PARTE_01, 02, etc. con maximo 90 archivos por carpeta.
+5. Sube el contenido de cada carpeta a la rama B57-Prueba de GitHub, conservando rutas y SIN tocar main.
+ATENCION: No se ha probado esta automatizacion en Windows real. Si da error, NO subas paquetes parciales.
+La foto se enlaza, pero el panel admin requiere configuracion de Supabase y los iconos sociales necesitan URLs verificadas.
+La web publica no cambia hasta que se publique la rama de pruebas.

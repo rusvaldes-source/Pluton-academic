@@ -1,0 +1,12 @@
+const fs=require('node:fs');const assert=require('node:assert/strict');const path=require('node:path');
+const base=path.resolve(__dirname,'..');
+const css=fs.readFileSync(path.join(base,'visual/b58-banner-integration-guard.css'),'utf8');
+const html=fs.readFileSync(path.join(base,'visual/zona-estudiantes-b58.html'),'utf8');
+const img=path.join(base,'assets/b58/portada-fundadores-aprobada.webp');
+assert.ok(fs.statSync(img).size>10000,'approved hero exists');
+assert.ok(css.includes('max-width:100%'),'image cannot overflow container');
+assert.ok(css.includes('height:auto'),'aspect ratio is retained');
+assert.ok(css.includes('@media (max-width: 700px)'),'mobile guard exists');
+assert.ok(!/(^|\n)\s*(nav|header|body|\.button)\s*\{/m.test(css),'no generic site selectors');
+assert.ok(html.includes('href="dashboard.html"')&&html.includes('href="courses.html"'),'student links are real');
+console.log('PASS banner guard: 6 static checks (NOT a browser integration test)');

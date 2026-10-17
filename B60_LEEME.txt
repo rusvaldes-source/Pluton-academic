@@ -1,0 +1,7 @@
+PLUTÓN ACADEMIC B60 — PAQUETE INTEGRAL PARA B57-Prueba
+
+Subir el CONTENIDO de las partes 01, 02 y 03 a la RAÍZ de la rama B57-Prueba en GitHub, respetando las carpetas. No subir los ZIP como archivos. No ejecutar scripts. No modificar main.
+
+Incluye sitio B57 completo, imagen de fundadores en portada, zona estudiantes, iconos sociales y acceso al prototipo admin.
+PENDIENTE: enlaces oficiales de redes sociales (se muestran como próximamente hasta verificar URLs). El panel admin NO está operativo hasta configurar URL y clave pública de Supabase y aplicar/verificar políticas SQL. No incluir nunca claves secretas en el navegador.
+El contenido se ha revisado estáticamente y los ZIP se han comprobado; no es prueba de funcionamiento real en Cloudflare ni de autorización en Supabase.

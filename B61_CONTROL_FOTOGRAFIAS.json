@@ -1,0 +1,11 @@
+{
+  "course_images": 26,
+  "duplicate_course_images": [],
+  "missing_homepage_image_paths": [],
+  "founders_connected": true,
+  "social_connected": true,
+  "admin_link_connected": true,
+  "course_image_cache_updated": true,
+  "runtime_browser_test": "pending",
+  "supabase_admin_test": "pending"
+}

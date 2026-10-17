@@ -1,0 +1,5 @@
+B57: diseño visual integrado sobre copia del repositorio, sin tocar B56 publicado.
+Incluye 10 imágenes optimizadas, portada renovada, 5 rutas prioritarias (TEC-101 en preparación), tarjetas compactas y CSS responsive.
+El catálogo original de 26 cursos y sus lecciones se conserva sin cambios.
+ATENCIÓN: no se ha verificado autenticación real, servicios externos, pagos ni despliegue Cloudflare. Validar en entorno de prueba antes de publicar.
+No se declara que PA-101 ni TEC-101 estén certificados o finalizados.
