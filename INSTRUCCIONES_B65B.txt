@@ -1,0 +1,11 @@
+B65B — Reparación de videos (PREPUBLICACIÓN, NO SUBIR A MAIN)
+
+Este ZIP contiene archivos de código completos que deben mantenerse junto con los seis MP4 ya incluidos en B65. No borres b64/videos.
+
+Incluye b64/aula.js, que faltaba en la última revisión de correcciones. Se mantiene el video de la lección 4 y los otros tres, con aviso si el MP4 falla.
+
+Los seis videos se entregan por separado, uno por ZIP, para evitar descargar varios archivos pesados de golpe.
+
+Importante: NO se ha comprobado el funcionamiento en producción ni que GitHub/Cloudflare tenga publicados los seis MP4. Las versiones en inglés de las lecciones 1-4 no están acreditadas como MP4 distintos; el selector ES/EN del Aula aplica a bienvenida.
+
+No subir a main sin probar en una rama.

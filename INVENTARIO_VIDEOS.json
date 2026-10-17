@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4",
+    "bytes": 24611341,
+    "destination": "b64/videos/PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4"
+  },
+  {
+    "filename": "PA-203_Leccion_02_2af2c139ccb79853b26a3096cee38e7b.mp4",
+    "bytes": 32988762,
+    "destination": "b64/videos/PA-203_Leccion_02_2af2c139ccb79853b26a3096cee38e7b.mp4"
+  },
+  {
+    "filename": "PA-203_Leccion_03_b51d75a3472e644708f8c5862407214f.mp4",
+    "bytes": 24404317,
+    "destination": "b64/videos/PA-203_Leccion_03_b51d75a3472e644708f8c5862407214f.mp4"
+  },
+  {
+    "filename": "PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4",
+    "bytes": 29424948,
+    "destination": "b64/videos/PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4"
+  },
+  {
+    "filename": "PLUTON_BIENVENIDA_EN.mp4",
+    "bytes": 19336960,
+    "destination": "b64/videos/PLUTON_BIENVENIDA_EN.mp4"
+  },
+  {
+    "filename": "PLUTON_BIENVENIDA_ES.mp4",
+    "bytes": 2899105,
+    "destination": "b64/videos/PLUTON_BIENVENIDA_ES.mp4"
+  }
+]
