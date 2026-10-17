@@ -1,0 +1,6 @@
+B64 PLUTON ACADEMIC - PARTE 3 DE 3
+Cada ZIP contiene archivos y carpetas del sitio, NO es un volumen binario.
+Para GitHub: subir el contenido extraido de las tres partes a la misma raiz de main.
+No subir los ZIP como archivos al repositorio.
+Conservar la estructura de carpetas. No eliminar archivos existentes de main automaticamente.
+ESTADO: PENDIENTE DE PRUEBAS FUNCIONALES; NO CERTIFICADO PARA PRODUCCION.
