@@ -36,3 +36,9 @@
 @media(max-width:740px){.b58-students{grid-template-columns:1fr;padding:1.5rem}.b58-students__photo{min-height:240px}.b58-students__photo img{max-height:360px}}
 
 .b60-social{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:16px auto}.b60-social a,.b60-social span{display:inline-flex;align-items:center;gap:5px;padding:7px 11px;border:1px solid #bca26a;border-radius:999px;color:#f5d58c;background:#09172a;text-decoration:none;font-size:14px}.b60-social span{opacity:.65;cursor:default}.b60-admin{display:inline-block;margin:10px;color:#e8bb5d;text-decoration:underline}.b58-students{margin:18px auto;max-width:1280px}.b60-social-label{font-size:14px;color:#e8bb5d;text-align:center}
+
+/* B61: preserve faces and photo proportions */
+.b59-founders .pa-b54-hero-photo{object-fit:contain!important;object-position:center!important;aspect-ratio:auto!important;max-height:560px;background:#061124}
+.catalog-visual img,.pa-illustrated img{width:100%;height:100%;object-fit:cover;object-position:center}
+.b57-priority-grid img{object-fit:cover;object-position:center}
+@media(max-width:760px){.b59-founders .pa-b54-hero-photo{max-height:none!important}}

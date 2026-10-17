@@ -1,0 +1,1 @@
+B61: sitio completo en 3 ZIP. Extraer y subir contenidos respetando carpetas a B57-Prueba. NO ejecutar programas. NO modificar main. 7 fotografías de cursos sustituidas por fotos pertinentes de biblioteca existente; foto fundadores sin recorte. Pruebas de integridad y referencias OK. Cloudflare y Supabase pendientes de pruebas reales.
