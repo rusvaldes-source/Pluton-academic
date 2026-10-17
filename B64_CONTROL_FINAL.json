@@ -1,0 +1,32 @@
+{
+  "version": "B64",
+  "base": "B63",
+  "recovered_lessons": 28,
+  "recovered_notebooks": 15,
+  "recovered_assessments": 9,
+  "original_new_introductory_lessons": 16,
+  "included_mp4": 4,
+  "courses": [
+    {
+      "code": "PA-203",
+      "lessons": 8
+    },
+    {
+      "code": "ID-101",
+      "lessons": 12
+    },
+    {
+      "code": "MKT-201",
+      "lessons": 8
+    },
+    {
+      "code": "PA-101",
+      "lessons": 8
+    },
+    {
+      "code": "COMP-101",
+      "lessons": 8
+    }
+  ],
+  "publication_status": "PENDIENTE DE VALIDACION FUNCIONAL EN ENTORNO REAL"
+}
