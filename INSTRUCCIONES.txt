@@ -1,9 +1,10 @@
-PLUTÓN ACADEMIC B56 — PAQUETE COMPLETO PARA REVISIÓN
+B65D — REPARACIÓN VIDEO ADAYS — NO PUBLICADO
 
-Este ZIP contiene el sitio completo, basado en B55 de GitHub y comparado con B42.
-Consultar B56_REVISION.md para los cambios comprobados, pruebas y límites.
-No editar líneas ni mezclar archivos con otros paquetes.
-Revisar primero la vista privada. No actualizar GitHub, Cloudflare ni Supabase sin aprobación.
-Tras aprobar una futura publicación, conservar la carpeta functions/api/ con news.js.
-Las notas y favoritos se conservan por navegador y origen: la vista privada usa un origen distinto del sitio público.
-Las claves, imágenes, cursos, precios y estilos originales se conservan.
+Archivo listo para la ruta b64/videos/PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4
+
+El MP4 original dura 56.492 s, H.264/AAC, 29.4 MB.
+Esta copia optimizada conserva duración y contenido y ocupa 8.99 MB.
+
+Para corregir el reproductor negro es necesario que el archivo esté realmente publicado en esa ruta en Cloudflare Pages. No se ha comprobado la ruta pública.
+
+Mantener B63 restauración y fotografías intactas. Primero desplegar en rama de prueba y comprobar reproducción.
