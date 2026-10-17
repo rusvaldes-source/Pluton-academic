@@ -1,0 +1,3 @@
+
+/* B64: exactamente tres plantillas futuras, sin enlace a cursos vacíos */
+.b64-future{padding:2rem 1.25rem;max-width:1150px;margin:auto}.b64-future h2{text-align:center}.b64-future-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.b64-future-card{background:#0b2343;color:#f5f6fa;border:1px solid #c9a44c;border-radius:14px;padding:1.6rem;text-align:center}.b64-future-card span{font-size:2rem;color:#c9a44c}.b64-future-card p{color:#e0ca8d}@media(max-width:650px){.b64-future-grid{grid-template-columns:1fr}}
