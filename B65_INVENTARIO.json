@@ -1,0 +1,56 @@
+{
+  "base": "B63 Restauración",
+  "video_files": [
+    {
+      "file": "b64/videos/PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4",
+      "bytes": 24611341
+    },
+    {
+      "file": "b64/videos/PLUTON_BIENVENIDA_EN.mp4",
+      "bytes": 19336960
+    },
+    {
+      "file": "b64/videos/PA-203_Leccion_03_b51d75a3472e644708f8c5862407214f.mp4",
+      "bytes": 24404317
+    },
+    {
+      "file": "b64/videos/PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4",
+      "bytes": 29424948
+    },
+    {
+      "file": "b64/videos/PA-203_Leccion_02_2af2c139ccb79853b26a3096cee38e7b.mp4",
+      "bytes": 32988762
+    },
+    {
+      "file": "b64/videos/PLUTON_BIENVENIDA_ES.mp4",
+      "bytes": 2899105
+    }
+  ],
+  "courses": {
+    "PA-203": {
+      "lessons": 8,
+      "notebooks": 5,
+      "assessments": 6
+    },
+    "ID-101": {
+      "lessons": 12,
+      "notebooks": 6,
+      "assessments": 1
+    },
+    "MKT-201": {
+      "lessons": 8,
+      "notebooks": 4,
+      "assessments": 2
+    },
+    "PA-101": {
+      "lessons": 8,
+      "notebooks": 0,
+      "assessments": 0
+    },
+    "COMP-101": {
+      "lessons": 8,
+      "notebooks": 0,
+      "assessments": 0
+    }
+  }
+}

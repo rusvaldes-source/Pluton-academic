@@ -1,0 +1,8 @@
+B65 - Integración local basada en B63 Restauración
+
+NO publicado. Conservar la versión B63 actual hasta validar B65 en una rama de prueba.
+Incluye 6 MP4 locales: 4 lecciones PA-203 y 2 bienvenidas ES/EN.
+Se preservan los archivos de B63 salvo index.html, que solo añade un acceso al aula y la sección de bienvenida.
+Aula recuperada: aula-b64.html, b64/aula.js y b64/materiales.json.
+No se declara que los cursos estén pedagógicamente completos ni que Supabase funcione sin pruebas.
+Para subir: descomprimir TODAS las partes en una sola carpeta, sin subir los ZIP tal cual al repositorio; subir a rama de prueba respetando rutas.
