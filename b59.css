@@ -42,3 +42,5 @@
 .catalog-visual img,.pa-illustrated img{width:100%;height:100%;object-fit:cover;object-position:center}
 .b57-priority-grid img{object-fit:cover;object-position:center}
 @media(max-width:760px){.b59-founders .pa-b54-hero-photo{max-height:none!important}}
+
+.b60-social{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.b60-social a,.b60-social span{display:inline-flex;align-items:center;gap:7px;padding:10px 12px;border:1px solid #bb994d;border-radius:10px;color:#f5dca2;text-decoration:none}.b60-social strong{font-size:22px;min-width:24px;text-align:center}.b60-social span[title]{opacity:.7}.b60-social a:hover{background:#b18b3d;color:#081b30}
