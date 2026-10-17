@@ -1,0 +1,15 @@
+const fs = require('node:fs'), assert = require('node:assert/strict');
+const base = __dirname + '/../';
+const html = fs.readFileSync(base+'admin/index.html','utf8');
+const js = fs.readFileSync(base+'admin/admin.js','utf8');
+const sql = fs.readFileSync(base+'database/admin_security.sql','utf8');
+assert.match(html,/name="robots" content="noindex,nofollow"/);
+assert.match(html,/id="private" hidden/);
+assert.match(js,/sb\.auth\.getUser\(\)/);
+assert.match(js,/sb\.rpc\('is_pluton_admin'\)/);
+assert.match(js,/allowed !== true/);
+assert.match(sql,/enable row level security/);
+assert.match(sql,/security definer/i);
+assert.match(sql,/to authenticated/);
+assert.doesNotMatch(js,/eyJhbGci[A-Za-z0-9_-]{30,}/);
+console.log('Admin scaffold static checks passed');

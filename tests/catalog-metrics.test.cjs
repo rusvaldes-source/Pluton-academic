@@ -1,0 +1,12 @@
+const assert = require('node:assert/strict');
+const {summarize,labels} = require('../src/b58-catalog-metrics');
+const a = summarize({courses:[{code:'PA-203',lessons:[{},{}]},{code:'ID-101',lessons:[{}]}]});
+assert.equal(a.courses,2);
+assert.equal(a.lessons,3);
+assert.equal(labels(a,'es'),'2 cursos en el catálogo');
+assert.equal(labels(a,'en'),'2 courses in the catalog');
+assert.deepEqual(summarize([]).courseCodes,[]);
+assert.throws(()=>summarize({courses:null}));
+assert.throws(()=>summarize([{code:'A'},{code:'A'}]));
+assert.throws(()=>summarize([{code:'A',lessons:'not-array'}]));
+console.log('PASS catalog-metrics: 8 aserciones');
