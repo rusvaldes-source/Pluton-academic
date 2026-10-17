@@ -1,0 +1,9 @@
+B65 — REVISION FINAL PREPUBLICACION — NO PUBLICAR EN MAIN SIN PRUEBAS
+Base: B63/B65 recuperada. Este ZIP es un PARCHE: conservar todos los demás archivos, fotos y MP4 originales.
+1. Precios individuales START $10.49, PLUS $17.49, PREMIUM $27.99 por mes. Las tarifas empresariales no se modificaron. No se modificó el sistema de cobros ni suscripciones: validar configuración de pagos por separado.
+2. Video de bienvenida en la portada: poster con foto ya existente b54-hero-photo.jpg, selector ES/EN y persistencia de idioma para entrar al aula.
+3. Aula Digital: selector ES/EN propio, videos de bienvenida originales separados y cambio de idioma sin salir del aula. Los videos de lecciones PA-203 permanecen en español; NO existen versiones inglesas confirmadas para esas lecciones.
+4. Catálogo reducido y redes sociales: se preservan las correcciones previas; no se inventan perfiles oficiales.
+5. Fotografías: se mantienen las imágenes existentes sin recortar, recomprimir ni reemplazar. Se usa una foto existente como portada visual del video para evitar cuadro negro antes de reproducir. Revisar visualmente las demás ilustraciones en móvil y escritorio antes de publicar.
+6. Este ZIP NO incluye MP4, imágenes ni archivos de base completos. Debe aplicarse sobre la versión B65 integral, nunca como sustituto total.
+7. Verificaciones pendientes: reproducción ES/EN real en hosting, integridad de rutas, responsive, acceso, y precios reales de pago.
