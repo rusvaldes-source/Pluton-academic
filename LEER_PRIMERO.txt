@@ -1,0 +1,9 @@
+B65 — CORRECCIONES FINALES, PAQUETE DE ARCHIVOS MODIFICADOS
+NO PUBLICAR EN MAIN SIN PRUEBA PREVIA. NO REEMPLAZA LOS ZIP B65 INTEGRALES.
+
+1. Catalogo: catalog.json presenta cuatro cursos con lecciones existentes (PA-203, ID-101, MKT-201, PA-101). COMP-101 aparece como PROXIMAMENTE en la portada; no se inventaron lecciones. Respaldo completo en catalog-archivo-26-cursos.json (no publicar como catalog.json).
+2. Video: courses.js agrega reproductores en las primeras cuatro lecciones de PA-203, antes del texto, usando las rutas originales b64/videos/*.mp4 del B65 integral. No se incluyen MP4 en este paquete pequeño para evitar descargas duplicadas. Requiere los seis MP4 de B65 previamente cargados.
+3. Redes: b59-social.js usa enlaces reales solo si se configuran URLs oficiales en social/social-links.json con verified:true. Mientras falten, no se inventan enlaces y aparecen como no disponibles.
+4. Los archivos de este ZIP conservan rutas relativas desde la raiz.
+
+VERIFICACION: integridad ZIP, JSON y estructura de codigo comprobadas; NO se ha comprobado el funcionamiento en navegador ni despliegue. La web publica no ha sido modificada.

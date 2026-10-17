@@ -1,0 +1,1960 @@
+[
+  {
+    "code": "PA-101",
+    "es": "Asistente de Enfermería: Fundamentos",
+    "en": "Nursing Assistant: Foundations",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Seguridad del paciente",
+        "en": "Patient safety",
+        "content": {
+          "es": "Identifica riesgos de caídas, verifica la identidad antes de asistir y comunica cambios al profesional responsable.",
+          "en": "Identify fall risks, verify identity before care, and report changes to the responsible clinician."
+        },
+        "question": {
+          "es": "¿Qué debes verificar antes de ayudar a un paciente?",
+          "en": "What should you verify before assisting a patient?"
+        },
+        "options": {
+          "es": [
+            "Su identidad",
+            "Su color favorito",
+            "La hora del almuerzo"
+          ],
+          "en": [
+            "Their identity",
+            "Their favorite color",
+            "Lunch time"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Higiene de manos y comunicación",
+        "en": "Hand hygiene and communication",
+        "content": {
+          "es": "Realiza higiene de manos antes y después del contacto y utiliza comunicación respetuosa y clara.",
+          "en": "Clean hands before and after contact and use clear, respectful communication."
+        },
+        "question": {
+          "es": "¿Cuándo debes higienizar tus manos?",
+          "en": "When should you clean your hands?"
+        },
+        "options": {
+          "es": [
+            "Solo al terminar el turno",
+            "Antes y después del contacto",
+            "Una vez al día"
+          ],
+          "en": [
+            "Only after the shift",
+            "Before and after contact",
+            "Once daily"
+          ]
+        },
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "code": "PA-102",
+    "es": "Signos Vitales y Cuidado Básico",
+    "en": "Vital Signs and Basic Care",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Registro de signos vitales",
+        "en": "Recording vital signs",
+        "content": {
+          "es": "Registra temperatura, pulso, frecuencia respiratoria y presión arterial según el protocolo de tu centro.",
+          "en": "Record temperature, pulse, respiratory rate and blood pressure following your facility protocol."
+        },
+        "question": {
+          "es": "¿Qué dato debe acompañar una medición?",
+          "en": "What should accompany a measurement?"
+        },
+        "options": {
+          "es": [
+            "Fecha y hora",
+            "Color de uniforme",
+            "Nombre del edificio"
+          ],
+          "en": [
+            "Date and time",
+            "Uniform color",
+            "Building name"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Observación y comunicación",
+        "en": "Observation and reporting",
+        "content": {
+          "es": "Informa oportunamente lecturas inusuales y síntomas observados sin intentar diagnosticar.",
+          "en": "Promptly report unusual readings and observed symptoms without attempting to diagnose."
+        },
+        "question": {
+          "es": "¿Qué haces ante una lectura inusual?",
+          "en": "What should you do with an unusual reading?"
+        },
+        "options": {
+          "es": [
+            "Ignorarla",
+            "Informar al profesional responsable",
+            "Publicarla en redes"
+          ],
+          "en": [
+            "Ignore it",
+            "Report to the responsible clinician",
+            "Post it online"
+          ]
+        },
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "code": "PA-105",
+    "es": "Introducción a Flebotomía",
+    "en": "Introduction to Phlebotomy",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Preparación y seguridad",
+        "en": "Preparation and safety",
+        "content": {
+          "es": "Revisa las normas de bioseguridad, los equipos y el consentimiento según las reglas del centro.",
+          "en": "Review biosafety rules, equipment and consent under facility policies."
+        },
+        "question": {
+          "es": "¿Qué es prioritario antes del procedimiento?",
+          "en": "What is a priority before the procedure?"
+        },
+        "options": {
+          "es": [
+            "La seguridad del paciente",
+            "La velocidad",
+            "La decoración"
+          ],
+          "en": [
+            "Patient safety",
+            "Speed",
+            "Decoration"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Identificación y orden de extracción",
+        "en": "Identification and order of draw",
+        "content": {
+          "es": "La identificación correcta y el orden de extracción reducen errores preanalíticos; practica solo bajo supervisión autorizada.",
+          "en": "Correct identification and order of draw reduce preanalytical errors; practice only under authorized supervision."
+        },
+        "question": {
+          "es": "¿Por qué se verifica la identidad?",
+          "en": "Why verify identity?"
+        },
+        "options": {
+          "es": [
+            "Para evitar errores de muestra",
+            "Para ahorrar papel",
+            "Para decorar etiquetas"
+          ],
+          "en": [
+            "To avoid specimen errors",
+            "To save paper",
+            "To decorate labels"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "PA-106",
+    "es": "Fundamentos de ECG",
+    "en": "ECG Fundamentals",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Derivaciones y preparación",
+        "en": "Leads and preparation",
+        "content": {
+          "es": "Reconoce las 12 derivaciones del ECG y prepara la piel y los electrodos según el protocolo clínico.",
+          "en": "Recognize the 12 ECG leads and prepare skin and electrodes according to clinical protocol."
+        },
+        "question": {
+          "es": "¿Cuántas derivaciones tiene el ECG estándar?",
+          "en": "How many leads are in a standard ECG?"
+        },
+        "options": {
+          "es": [
+            "6",
+            "12",
+            "18"
+          ],
+          "en": [
+            "6",
+            "12",
+            "18"
+          ]
+        },
+        "answer": 1
+      },
+      {
+        "es": "Calidad del registro",
+        "en": "Recording quality",
+        "content": {
+          "es": "Reduce artefactos por movimiento y confirma que el registro sea legible antes de entregarlo.",
+          "en": "Reduce motion artifacts and confirm the tracing is legible before handing it off."
+        },
+        "question": {
+          "es": "¿Qué puede producir artefactos?",
+          "en": "What can cause artifacts?"
+        },
+        "options": {
+          "es": [
+            "Movimiento",
+            "Fecha correcta",
+            "Identificación correcta"
+          ],
+          "en": [
+            "Movement",
+            "Correct date",
+            "Correct identification"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "PA-201",
+    "es": "Servicio al Cliente Profesional",
+    "en": "Professional Customer Service",
+    "category": "profesional",
+    "lessons": [
+      {
+        "es": "Escucha activa",
+        "en": "Active listening",
+        "content": {
+          "es": "Escucha sin interrumpir, confirma lo entendido y responde con respeto.",
+          "en": "Listen without interrupting, confirm understanding, and respond respectfully."
+        },
+        "question": {
+          "es": "¿Qué demuestra escucha activa?",
+          "en": "What shows active listening?"
+        },
+        "options": {
+          "es": [
+            "Interrumpir",
+            "Resumir lo escuchado",
+            "Ignorar preguntas"
+          ],
+          "en": [
+            "Interrupting",
+            "Summarizing what you heard",
+            "Ignoring questions"
+          ]
+        },
+        "answer": 1
+      },
+      {
+        "es": "Resolución de problemas",
+        "en": "Problem solving",
+        "content": {
+          "es": "Define el problema, ofrece opciones realistas y verifica la satisfacción del cliente.",
+          "en": "Define the problem, offer realistic options and check customer satisfaction."
+        },
+        "question": {
+          "es": "¿Cuál es el primer paso?",
+          "en": "What is the first step?"
+        },
+        "options": {
+          "es": [
+            "Entender el problema",
+            "Culpar al cliente",
+            "Cerrar la conversación"
+          ],
+          "en": [
+            "Understand the problem",
+            "Blame the customer",
+            "End the conversation"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "PA-203",
+    "es": "Herramientas Digitales e IA",
+    "en": "Digital Tools and AI",
+    "category": "profesional",
+    "lessons": [
+      {
+        "es": "Organización digital",
+        "en": "Digital organization",
+        "content": {
+          "es": "Usa carpetas con nombres claros, copias de seguridad y permisos adecuados para organizar documentos.",
+          "en": "Use clear folder names, backups and appropriate permissions to organize documents."
+        },
+        "question": {
+          "es": "¿Qué ayuda a proteger documentos?",
+          "en": "What helps protect documents?"
+        },
+        "options": {
+          "es": [
+            "Copias de seguridad",
+            "Compartir contraseñas",
+            "Eliminar respaldos"
+          ],
+          "en": [
+            "Backups",
+            "Sharing passwords",
+            "Deleting backups"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Uso responsable de IA",
+        "en": "Responsible AI use",
+        "content": {
+          "es": "Verifica las respuestas de la IA y evita introducir datos privados o sensibles en servicios no autorizados.",
+          "en": "Verify AI outputs and avoid entering private or sensitive data into unauthorized services."
+        },
+        "question": {
+          "es": "¿Qué debes hacer con respuestas de IA?",
+          "en": "What should you do with AI answers?"
+        },
+        "options": {
+          "es": [
+            "Verificarlas",
+            "Aceptarlas siempre",
+            "Compartir datos privados"
+          ],
+          "en": [
+            "Verify them",
+            "Always accept them",
+            "Share private data"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "RE-101",
+    "es": "Bienes raíces: fundamentos",
+    "en": "Real Estate Foundations",
+    "category": "real-estate",
+    "lessons": [
+      {
+        "es": "Propiedades y participantes",
+        "en": "Properties and participants",
+        "content": {
+          "es": "Identifica compradores, vendedores, agentes y tipos de propiedades.",
+          "en": "Identify buyers, sellers, agents, and property types."
+        },
+        "question": {
+          "es": "¿Quién compra una propiedad?",
+          "en": "Who purchases a property?"
+        },
+        "options": {
+          "es": [
+            "El comprador",
+            "El vendedor",
+            "El inspector"
+          ],
+          "en": [
+            "The buyer",
+            "The seller",
+            "The inspector"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Proceso de compraventa",
+        "en": "Purchase process",
+        "content": {
+          "es": "Reconoce oferta, contrato, inspección y cierre como etapas habituales; los requisitos varían por jurisdicción.",
+          "en": "Recognize offers, contracts, inspections and closing as common stages; rules vary by jurisdiction."
+        },
+        "question": {
+          "es": "¿Qué documento suele establecer condiciones de compra?",
+          "en": "Which document commonly sets purchase terms?"
+        },
+        "options": {
+          "es": [
+            "Un contrato",
+            "Un folleto",
+            "Un anuncio"
+          ],
+          "en": [
+            "A contract",
+            "A brochure",
+            "An advertisement"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "RE-102",
+    "es": "Inversión inmobiliaria inicial",
+    "en": "Introduction to Property Investing",
+    "category": "real-estate",
+    "lessons": [
+      {
+        "es": "Ingresos y gastos",
+        "en": "Income and expenses",
+        "content": {
+          "es": "Estima renta, mantenimiento, seguros, impuestos y vacancia antes de evaluar una propiedad.",
+          "en": "Estimate rent, maintenance, insurance, taxes and vacancy before evaluating a property."
+        },
+        "question": {
+          "es": "¿Qué reduce el rendimiento neto?",
+          "en": "What reduces net returns?"
+        },
+        "options": {
+          "es": [
+            "Los gastos",
+            "La dirección",
+            "El color"
+          ],
+          "en": [
+            "Expenses",
+            "The address",
+            "The color"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Riesgo y diligencia debida",
+        "en": "Risk and due diligence",
+        "content": {
+          "es": "Revisa documentos, condición del inmueble y riesgos; evita promesas de rentabilidad.",
+          "en": "Review documents, property condition and risks; avoid guaranteed-return claims."
+        },
+        "question": {
+          "es": "¿Qué conviene hacer antes de invertir?",
+          "en": "What should you do before investing?"
+        },
+        "options": {
+          "es": [
+            "Investigar riesgos",
+            "Ignorar costos",
+            "Asumir ganancias"
+          ],
+          "en": [
+            "Research risks",
+            "Ignore costs",
+            "Assume profits"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "NE-101",
+    "es": "Cómo iniciar un negocio",
+    "en": "Starting a Business",
+    "category": "negocios",
+    "lessons": [
+      {
+        "es": "Propuesta de valor",
+        "en": "Value proposition",
+        "content": {
+          "es": "Define a quién ayudas, qué problema resuelves y cómo ofreces tu servicio.",
+          "en": "Define whom you help, what problem you solve and how you deliver your service."
+        },
+        "question": {
+          "es": "¿Qué describe una propuesta de valor?",
+          "en": "What does a value proposition describe?"
+        },
+        "options": {
+          "es": [
+            "El beneficio al cliente",
+            "Solo el logotipo",
+            "Solo el local"
+          ],
+          "en": [
+            "Customer benefit",
+            "Only the logo",
+            "Only the location"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Costos y precios",
+        "en": "Costs and pricing",
+        "content": {
+          "es": "Distingue costos fijos y variables antes de establecer precios.",
+          "en": "Distinguish fixed and variable costs before setting prices."
+        },
+        "question": {
+          "es": "¿Qué debes considerar al fijar precios?",
+          "en": "What matters when setting prices?"
+        },
+        "options": {
+          "es": [
+            "Costos y margen",
+            "Solo competencia",
+            "Solo colores"
+          ],
+          "en": [
+            "Costs and margin",
+            "Only competitors",
+            "Only colors"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "FI-101",
+    "es": "Finanzas personales",
+    "en": "Personal Finance Basics",
+    "category": "finanzas",
+    "lessons": [
+      {
+        "es": "Presupuesto mensual",
+        "en": "Monthly budget",
+        "content": {
+          "es": "Clasifica ingresos, gastos esenciales y metas de ahorro.",
+          "en": "Classify income, essential expenses and savings goals."
+        },
+        "question": {
+          "es": "¿Qué compara un presupuesto?",
+          "en": "What does a budget compare?"
+        },
+        "options": {
+          "es": [
+            "Ingresos y gastos",
+            "Marcas y colores",
+            "Fechas y nombres"
+          ],
+          "en": [
+            "Income and expenses",
+            "Brands and colors",
+            "Dates and names"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Crédito responsable",
+        "en": "Responsible credit",
+        "content": {
+          "es": "Comprende pagos puntuales, intereses y utilización de crédito.",
+          "en": "Understand on-time payments, interest and credit utilization."
+        },
+        "question": {
+          "es": "¿Qué suele ayudar al historial crediticio?",
+          "en": "What often helps credit history?"
+        },
+        "options": {
+          "es": [
+            "Pagar a tiempo",
+            "Ignorar pagos",
+            "Exceder límites"
+          ],
+          "en": [
+            "Paying on time",
+            "Ignoring payments",
+            "Exceeding limits"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "TE-101",
+    "es": "Inteligencia artificial práctica",
+    "en": "Practical Artificial Intelligence",
+    "category": "tecnologia",
+    "lessons": [
+      {
+        "es": "Instrucciones claras",
+        "en": "Clear prompts",
+        "content": {
+          "es": "Formula solicitudes con contexto, objetivo y formato de respuesta.",
+          "en": "Write requests with context, goals and output format."
+        },
+        "question": {
+          "es": "¿Qué mejora una instrucción?",
+          "en": "What improves a prompt?"
+        },
+        "options": {
+          "es": [
+            "Contexto claro",
+            "Ambigüedad",
+            "Sin objetivo"
+          ],
+          "en": [
+            "Clear context",
+            "Ambiguity",
+            "No goal"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Verificación de resultados",
+        "en": "Checking outputs",
+        "content": {
+          "es": "Comprueba hechos y evita compartir datos confidenciales sin autorización.",
+          "en": "Check facts and avoid sharing confidential data without permission."
+        },
+        "question": {
+          "es": "¿Qué hacer con datos importantes generados por IA?",
+          "en": "What should you do with important AI-generated facts?"
+        },
+        "options": {
+          "es": [
+            "Verificarlos",
+            "Asumir exactitud",
+            "Publicar sin revisar"
+          ],
+          "en": [
+            "Verify them",
+            "Assume accuracy",
+            "Publish unchecked"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "CO-101",
+    "es": "Mantenimiento y handyman",
+    "en": "Maintenance and Handyman Basics",
+    "category": "construccion",
+    "lessons": [
+      {
+        "es": "Planificación segura",
+        "en": "Safe planning",
+        "content": {
+          "es": "Evalúa riesgos, herramientas y límites de trabajo que requieren profesionales autorizados.",
+          "en": "Assess risks, tools and work requiring licensed professionals."
+        },
+        "question": {
+          "es": "¿Qué se hace antes de una reparación?",
+          "en": "What comes before a repair?"
+        },
+        "options": {
+          "es": [
+            "Evaluar riesgos",
+            "Improvisar",
+            "Omitir protección"
+          ],
+          "en": [
+            "Assess risks",
+            "Improvise",
+            "Skip protection"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Presupuesto de materiales",
+        "en": "Materials estimate",
+        "content": {
+          "es": "Calcula cantidades, desperdicio y tiempo estimado para tareas sencillas.",
+          "en": "Calculate quantities, waste and estimated time for simple jobs."
+        },
+        "question": {
+          "es": "¿Qué se incluye en un estimado?",
+          "en": "What belongs in an estimate?"
+        },
+        "options": {
+          "es": [
+            "Materiales y mano de obra",
+            "Solo pintura",
+            "Solo fotos"
+          ],
+          "en": [
+            "Materials and labor",
+            "Only paint",
+            "Only photos"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "MA-101",
+    "es": "Marketing digital inicial",
+    "en": "Digital Marketing Foundations",
+    "category": "marketing",
+    "lessons": [
+      {
+        "es": "Público objetivo",
+        "en": "Target audience",
+        "content": {
+          "es": "Identifica necesidades y canales preferidos de tus clientes.",
+          "en": "Identify customer needs and preferred channels."
+        },
+        "question": {
+          "es": "¿Qué define un público objetivo?",
+          "en": "What defines a target audience?"
+        },
+        "options": {
+          "es": [
+            "Clientes potenciales",
+            "Cualquier persona",
+            "Solo empleados"
+          ],
+          "en": [
+            "Potential customers",
+            "Everyone",
+            "Only employees"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Medición de campañas",
+        "en": "Campaign measurement",
+        "content": {
+          "es": "Compara visitas, consultas y conversiones para mejorar mensajes.",
+          "en": "Compare visits, inquiries and conversions to improve messaging."
+        },
+        "question": {
+          "es": "¿Qué indica una conversión?",
+          "en": "What indicates a conversion?"
+        },
+        "options": {
+          "es": [
+            "Una acción deseada",
+            "Un color",
+            "Un horario"
+          ],
+          "en": [
+            "A desired action",
+            "A color",
+            "A schedule"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "ID-101",
+    "es": "Inglés para el trabajo",
+    "en": "Workplace English",
+    "category": "idiomas",
+    "lessons": [
+      {
+        "es": "Presentaciones profesionales",
+        "en": "Professional introductions",
+        "content": {
+          "es": "Practica saludos, nombre, cargo y preguntas básicas en inglés.",
+          "en": "Practice greetings, names, roles and basic questions in English."
+        },
+        "question": {
+          "es": "¿Cómo se dice «Mucho gusto»?",
+          "en": "How do you say «Mucho gusto»?"
+        },
+        "options": {
+          "es": [
+            "Nice to meet you",
+            "Good night",
+            "See you later"
+          ],
+          "en": [
+            "Nice to meet you",
+            "Good night",
+            "See you later"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Atención al cliente",
+        "en": "Customer conversations",
+        "content": {
+          "es": "Practica preguntas amables y confirmación de solicitudes.",
+          "en": "Practice polite questions and confirming requests."
+        },
+        "question": {
+          "es": "¿Cuál frase ofrece ayuda?",
+          "en": "Which phrase offers help?"
+        },
+        "options": {
+          "es": [
+            "¿Cómo puedo ayudarte?",
+            "Vete de aquí",
+            "No, gracias"
+          ],
+          "en": [
+            "How can I help you?",
+            "Go away",
+            "No thanks"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "AI-101",
+    "es": "IA práctica para principiantes",
+    "en": "Practical AI for Beginners",
+    "category": "tecnologia",
+    "lessons": [
+      {
+        "es": "Qué es la inteligencia artificial",
+        "en": "What artificial intelligence is",
+        "content": {
+          "es": "La IA reconoce patrones en datos y ayuda a generar predicciones o contenido. Sus respuestas pueden contener errores; comprueba los datos importantes.",
+          "en": "AI identifies patterns in data and helps produce predictions or content. Outputs can be wrong; verify important facts."
+        },
+        "question": {
+          "es": "¿Qué conviene hacer con un dato importante generado por IA?",
+          "en": "What should you do with an important AI-generated fact?"
+        },
+        "options": {
+          "es": [
+            "Verificarlo con una fuente confiable",
+            "Publicarlo sin leerlo",
+            "Suponer que siempre es correcto"
+          ],
+          "en": [
+            "Verify it using a reliable source",
+            "Publish it without reading",
+            "Assume it is always correct"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Instrucciones claras para IA",
+        "en": "Writing clear AI prompts",
+        "content": {
+          "es": "Describe objetivo, contexto, formato esperado y límites. Revisa la respuesta y pide correcciones concretas.",
+          "en": "Describe your goal, context, expected format, and constraints. Review the response and request specific revisions."
+        },
+        "question": {
+          "es": "¿Qué mejora una instrucción para IA?",
+          "en": "What improves an AI prompt?"
+        },
+        "options": {
+          "es": [
+            "Una petición sin contexto",
+            "Un objetivo y formato claros",
+            "Pedir que adivine todo"
+          ],
+          "en": [
+            "A request without context",
+            "A clear goal and format",
+            "Asking it to guess everything"
+          ]
+        },
+        "answer": 1
+      },
+      {
+        "es": "Privacidad y uso responsable",
+        "en": "Privacy and responsible use",
+        "content": {
+          "es": "No introduzcas contraseñas, expedientes privados ni datos sensibles de terceros en herramientas sin autorización. Usa revisión humana para decisiones importantes.",
+          "en": "Do not enter passwords, private records, or other people’s sensitive data into tools without authorization. Use human review for important decisions."
+        },
+        "question": {
+          "es": "¿Qué información no debes compartir sin autorización?",
+          "en": "What should you avoid sharing without authorization?"
+        },
+        "options": {
+          "es": [
+            "Un título público",
+            "Una pregunta general",
+            "Datos privados de otra persona"
+          ],
+          "en": [
+            "A public title",
+            "A general question",
+            "Someone else’s private data"
+          ]
+        },
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "code": "RE-201",
+    "es": "Bienes raíces: proceso de compraventa",
+    "en": "Real Estate: Buying and Selling Process",
+    "category": "real-estate",
+    "lessons": [
+      {
+        "es": "Preparación financiera",
+        "en": "Financial preparation",
+        "content": {
+          "es": "Antes de buscar una propiedad, calcula presupuesto, costos de cierre, impuestos, seguros y una reserva para mantenimiento. Las reglas varían según la jurisdicción.",
+          "en": "Before shopping for property, estimate your budget, closing costs, taxes, insurance, and maintenance reserve. Rules vary by jurisdiction."
+        },
+        "question": {
+          "es": "¿Qué debe incluir un presupuesto de compra?",
+          "en": "What belongs in a home-buying budget?"
+        },
+        "options": {
+          "es": [
+            "Solo el precio anunciado",
+            "Precio y costos adicionales",
+            "Solo la decoración"
+          ],
+          "en": [
+            "Only the asking price",
+            "Price plus additional costs",
+            "Only decorations"
+          ]
+        },
+        "answer": 1
+      },
+      {
+        "es": "Oferta y contingencias",
+        "en": "Offers and contingencies",
+        "content": {
+          "es": "Una oferta puede incluir precio, depósito, plazos y contingencias de financiamiento o inspección. Consulta a profesionales autorizados antes de firmar.",
+          "en": "An offer may include price, deposit, deadlines, and financing or inspection contingencies. Consult licensed professionals before signing."
+        },
+        "question": {
+          "es": "¿Para qué sirve una contingencia de inspección?",
+          "en": "What is an inspection contingency for?"
+        },
+        "options": {
+          "es": [
+            "Evaluar condiciones antes de cerrar",
+            "Garantizar ganancias",
+            "Evitar leer el contrato"
+          ],
+          "en": [
+            "Evaluate conditions before closing",
+            "Guarantee profits",
+            "Avoid reading the contract"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Cierre y documentos",
+        "en": "Closing and documents",
+        "content": {
+          "es": "Revisa título, divulgaciones, estado de la propiedad y desglose de costos antes del cierre. Conserva copias de todos los documentos firmados.",
+          "en": "Review title, disclosures, property condition, and itemized costs before closing. Keep copies of signed documents."
+        },
+        "question": {
+          "es": "¿Qué debes hacer antes de cerrar?",
+          "en": "What should you do before closing?"
+        },
+        "options": {
+          "es": [
+            "Firmar sin revisar",
+            "Ignorar los costos",
+            "Revisar documentos y costos"
+          ],
+          "en": [
+            "Sign without reviewing",
+            "Ignore costs",
+            "Review documents and costs"
+          ]
+        },
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "code": "BUS-201",
+    "es": "Emprendimiento: del plan a la acción",
+    "en": "Entrepreneurship: From Plan to Action",
+    "category": "negocios",
+    "lessons": [
+      {
+        "es": "Cliente y propuesta de valor",
+        "en": "Customer and value proposition",
+        "content": {
+          "es": "Identifica un problema concreto, a quién afecta y por qué tu solución es útil. Entrevista clientes potenciales antes de invertir demasiado.",
+          "en": "Identify a specific problem, who faces it, and why your solution helps. Interview potential customers before investing heavily."
+        },
+        "question": {
+          "es": "¿Qué conviene validar primero?",
+          "en": "What should you validate first?"
+        },
+        "options": {
+          "es": [
+            "Una necesidad real del cliente",
+            "El color del uniforme",
+            "El tamaño del logo"
+          ],
+          "en": [
+            "A real customer need",
+            "Uniform color",
+            "Logo size"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Costos y precio",
+        "en": "Costs and pricing",
+        "content": {
+          "es": "Separa costos fijos y variables. Estima margen, punto de equilibrio y posibles cambios en la demanda antes de fijar precios.",
+          "en": "Separate fixed and variable costs. Estimate margin, break-even point, and possible demand changes before setting prices."
+        },
+        "question": {
+          "es": "¿Qué afecta el punto de equilibrio?",
+          "en": "What affects the break-even point?"
+        },
+        "options": {
+          "es": [
+            "Solo el nombre",
+            "Costos y precio de venta",
+            "Solo la publicidad"
+          ],
+          "en": [
+            "Only the name",
+            "Costs and selling price",
+            "Only advertising"
+          ]
+        },
+        "answer": 1
+      },
+      {
+        "es": "Prueba piloto",
+        "en": "Pilot test",
+        "content": {
+          "es": "Empieza con una oferta pequeña, mide satisfacción, ingresos y gastos, y mejora según resultados reales.",
+          "en": "Start with a small offering, measure satisfaction, revenue, and expenses, and improve based on actual results."
+        },
+        "question": {
+          "es": "¿Para qué sirve una prueba piloto?",
+          "en": "What is a pilot test for?"
+        },
+        "options": {
+          "es": [
+            "Evitar comentarios",
+            "Asegurar éxito inmediato",
+            "Aprender antes de expandirse"
+          ],
+          "en": [
+            "Avoid feedback",
+            "Guarantee instant success",
+            "Learn before expanding"
+          ]
+        },
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "code": "FIN-201",
+    "es": "Finanzas personales: presupuesto y ahorro",
+    "en": "Personal Finance: Budgeting and Saving",
+    "category": "finanzas",
+    "lessons": [
+      {
+        "es": "Ingresos y gastos",
+        "en": "Income and expenses",
+        "content": {
+          "es": "Registra ingresos netos y gastos durante un mes. Distingue necesidades, compromisos y gastos opcionales para encontrar ajustes posibles.",
+          "en": "Track net income and expenses for a month. Separate needs, commitments, and optional spending to identify possible adjustments."
+        },
+        "question": {
+          "es": "¿Qué es el primer paso para hacer un presupuesto?",
+          "en": "What is the first budgeting step?"
+        },
+        "options": {
+          "es": [
+            "Registrar ingresos y gastos",
+            "Pedir otro préstamo",
+            "Ignorar gastos pequeños"
+          ],
+          "en": [
+            "Track income and expenses",
+            "Take another loan",
+            "Ignore small expenses"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Fondo de emergencia",
+        "en": "Emergency fund",
+        "content": {
+          "es": "Reserva dinero accesible para imprevistos. Define una meta según tus gastos esenciales y capacidad de ahorro; evita asumir que existe una cifra universal.",
+          "en": "Set aside accessible money for emergencies. Choose a goal based on essential expenses and saving capacity; there is no universal amount."
+        },
+        "question": {
+          "es": "¿Cuál es el propósito de un fondo de emergencia?",
+          "en": "What is an emergency fund for?"
+        },
+        "options": {
+          "es": [
+            "Comprar por impulso",
+            "Cubrir gastos inesperados",
+            "Invertir todo en alto riesgo"
+          ],
+          "en": [
+            "Impulse purchases",
+            "Cover unexpected expenses",
+            "Invest everything at high risk"
+          ]
+        },
+        "answer": 1
+      },
+      {
+        "es": "Interés y deuda",
+        "en": "Interest and debt",
+        "content": {
+          "es": "Compara tasa, plazo, comisiones y pago total. Pagar solo el mínimo puede prolongar una deuda y aumentar su costo.",
+          "en": "Compare rate, term, fees, and total repayment. Paying only the minimum may prolong debt and increase cost."
+        },
+        "question": {
+          "es": "¿Qué debes comparar entre préstamos?",
+          "en": "What should you compare across loans?"
+        },
+        "options": {
+          "es": [
+            "Solo el nombre del banco",
+            "Solo el anuncio",
+            "Tasa, comisiones y costo total"
+          ],
+          "en": [
+            "Only the bank name",
+            "Only the advertisement",
+            "Rate, fees, and total cost"
+          ]
+        },
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "code": "MKT-201",
+    "es": "Marketing digital: primeros pasos",
+    "en": "Digital Marketing: First Steps",
+    "category": "marketing",
+    "lessons": [
+      {
+        "es": "Público objetivo",
+        "en": "Target audience",
+        "content": {
+          "es": "Describe a quién ayudas, qué problema resuelves y dónde busca información. Un mensaje específico suele ser más útil que uno genérico.",
+          "en": "Describe whom you help, what problem you solve, and where your audience looks for information. Specific messaging is often more useful than generic messaging."
+        },
+        "question": {
+          "es": "¿Qué define mejor un público objetivo?",
+          "en": "What best defines a target audience?"
+        },
+        "options": {
+          "es": [
+            "Necesidades y características relevantes",
+            "Todo el mundo por igual",
+            "Solo el color favorito"
+          ],
+          "en": [
+            "Relevant needs and characteristics",
+            "Everyone equally",
+            "Only favorite color"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Contenido con propósito",
+        "en": "Purposeful content",
+        "content": {
+          "es": "Planifica publicaciones educativas, demostraciones y preguntas frecuentes. Usa imágenes con permisos adecuados y mensajes verificables.",
+          "en": "Plan educational posts, demonstrations, and FAQs. Use properly licensed images and verifiable claims."
+        },
+        "question": {
+          "es": "¿Qué contenido aporta valor?",
+          "en": "Which content provides value?"
+        },
+        "options": {
+          "es": [
+            "Promesas imposibles",
+            "Respuestas a dudas frecuentes",
+            "Información engañosa"
+          ],
+          "en": [
+            "Impossible promises",
+            "Answers to common questions",
+            "Misleading information"
+          ]
+        },
+        "answer": 1
+      },
+      {
+        "es": "Métricas esenciales",
+        "en": "Essential metrics",
+        "content": {
+          "es": "Observa alcance, clics, consultas y conversiones. Compara resultados con objetivos y cambia una variable a la vez cuando sea posible.",
+          "en": "Track reach, clicks, inquiries, and conversions. Compare results against goals and change one variable at a time when possible."
+        },
+        "question": {
+          "es": "¿Para qué sirven las métricas?",
+          "en": "What are metrics for?"
+        },
+        "options": {
+          "es": [
+            "Decorar reportes",
+            "Evitar aprender",
+            "Evaluar qué funciona"
+          ],
+          "en": [
+            "Decorate reports",
+            "Avoid learning",
+            "Evaluate what works"
+          ]
+        },
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "code": "HLT-201",
+    "es": "Salud: comunicación y prevención",
+    "en": "Health: Communication and Prevention",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Comunicación respetuosa",
+        "en": "Respectful communication",
+        "content": {
+          "es": "Escucha activamente, usa lenguaje claro y confirma que la persona comprendió. Respeta la privacidad y los límites de tu función.",
+          "en": "Listen actively, use clear language, and confirm understanding. Respect privacy and your professional scope."
+        },
+        "question": {
+          "es": "¿Qué demuestra una comunicación efectiva?",
+          "en": "What shows effective communication?"
+        },
+        "options": {
+          "es": [
+            "Confirmar comprensión",
+            "Interrumpir siempre",
+            "Compartir datos privados"
+          ],
+          "en": [
+            "Confirm understanding",
+            "Always interrupt",
+            "Share private information"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Prevención de infecciones",
+        "en": "Infection prevention",
+        "content": {
+          "es": "La higiene de manos y el uso adecuado de equipos de protección reducen riesgos. Sigue los protocolos de tu centro y las indicaciones de profesionales capacitados.",
+          "en": "Hand hygiene and appropriate protective equipment reduce risks. Follow your facility protocols and trained professionals’ guidance."
+        },
+        "question": {
+          "es": "¿Qué práctica ayuda a prevenir infecciones?",
+          "en": "What practice helps prevent infections?"
+        },
+        "options": {
+          "es": [
+            "Omitir la higiene",
+            "Higiene de manos",
+            "Reutilizar material desechable"
+          ],
+          "en": [
+            "Skip hygiene",
+            "Hand hygiene",
+            "Reuse disposable supplies"
+          ]
+        },
+        "answer": 1
+      },
+      {
+        "es": "Reconocer y comunicar cambios",
+        "en": "Recognizing and reporting changes",
+        "content": {
+          "es": "Observa cambios importantes y comunícalos rápidamente al personal responsable. No diagnostiques ni modifiques tratamientos fuera de tu capacitación.",
+          "en": "Notice important changes and report them promptly to responsible staff. Do not diagnose or change treatment outside your training."
+        },
+        "question": {
+          "es": "¿Qué debes hacer ante un cambio preocupante?",
+          "en": "What should you do about a concerning change?"
+        },
+        "options": {
+          "es": [
+            "Ignorarlo",
+            "Diagnosticar sin autorización",
+            "Avisar al profesional responsable"
+          ],
+          "en": [
+            "Ignore it",
+            "Diagnose without authorization",
+            "Notify the responsible professional"
+          ]
+        },
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "code": "HLT-301",
+    "es": "Signos vitales y observación clínica",
+    "en": "Vital Signs and Clinical Observation",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Medición responsable",
+        "en": "Responsible measurement",
+        "content": {
+          "es": "Prepara el equipo, explica el procedimiento, identifica al paciente y registra fecha, hora y condiciones de la medición.",
+          "en": "Prepare equipment, explain the procedure, identify the patient, and document date, time, and measurement conditions."
+        },
+        "question": {
+          "es": "¿Qué se registra junto al resultado?",
+          "en": "What belongs with a reading?"
+        },
+        "options": {
+          "es": [
+            "Fecha, hora y condiciones",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Date, time, and conditions",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Presión arterial",
+        "en": "Blood pressure",
+        "content": {
+          "es": "Utiliza un manguito del tamaño adecuado, apoya el brazo a nivel del corazón y permite reposo previo. Una cifra aislada no sustituye una evaluación clínica.",
+          "en": "Use an appropriately sized cuff, support the arm at heart level, and allow rest beforehand. One reading does not replace clinical assessment."
+        },
+        "question": {
+          "es": "¿Qué afecta la precisión?",
+          "en": "What affects accuracy?"
+        },
+        "options": {
+          "es": [
+            "Tamaño del manguito",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Cuff size",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Pulso y respiración",
+        "en": "Pulse and respiration",
+        "content": {
+          "es": "Observa frecuencia y regularidad del pulso y cuenta respiraciones sin modificar deliberadamente el ritmo de la persona. Comunica cambios importantes al profesional.",
+          "en": "Observe pulse rate and rhythm and count breaths without deliberately changing the person’s breathing. Report important changes to a clinician."
+        },
+        "question": {
+          "es": "¿Qué debe comunicarse?",
+          "en": "What should be reported?"
+        },
+        "options": {
+          "es": [
+            "Cambios significativos",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Significant changes",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Documentación y escalamiento",
+        "en": "Documentation and escalation",
+        "content": {
+          "es": "Registra hechos observados, no suposiciones. Ante síntomas graves o deterioro agudo activa los protocolos locales de emergencia.",
+          "en": "Record observed facts, not assumptions. For severe symptoms or acute deterioration, activate local emergency protocols."
+        },
+        "question": {
+          "es": "¿Qué se debe documentar?",
+          "en": "What should be documented?"
+        },
+        "options": {
+          "es": [
+            "Observaciones objetivas",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Objective observations",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "HLT-302",
+    "es": "Prevención de infecciones",
+    "en": "Infection Prevention",
+    "category": "salud",
+    "lessons": [
+      {
+        "es": "Higiene de manos",
+        "en": "Hand hygiene",
+        "content": {
+          "es": "La higiene de manos se realiza en momentos clave antes y después de atender a una persona; sigue los protocolos del centro y utiliza agua y jabón cuando corresponda.",
+          "en": "Perform hand hygiene at key moments before and after care; follow facility protocols and use soap and water when appropriate."
+        },
+        "question": {
+          "es": "¿Cuándo se higienizan las manos?",
+          "en": "When should hands be cleaned?"
+        },
+        "options": {
+          "es": [
+            "Antes y después de la atención",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Before and after care",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Equipo de protección",
+        "en": "Protective equipment",
+        "content": {
+          "es": "Selecciona guantes, mascarilla y protección ocular según el riesgo y las indicaciones institucionales. Los guantes no reemplazan la higiene de manos.",
+          "en": "Select gloves, masks and eye protection according to risk and facility guidance. Gloves do not replace hand hygiene."
+        },
+        "question": {
+          "es": "¿Los guantes reemplazan el lavado?",
+          "en": "Do gloves replace hand hygiene?"
+        },
+        "options": {
+          "es": [
+            "No",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "No",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Superficies y materiales",
+        "en": "Surfaces and supplies",
+        "content": {
+          "es": "Distingue limpieza de desinfección y respeta las instrucciones de uso, dilución y tiempo de contacto de cada producto autorizado.",
+          "en": "Distinguish cleaning from disinfection and follow the authorized product’s use, dilution and contact-time instructions."
+        },
+        "question": {
+          "es": "¿Qué instrucción importa?",
+          "en": "Which instruction matters?"
+        },
+        "options": {
+          "es": [
+            "Tiempo de contacto",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Contact time",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Comunicación de riesgos",
+        "en": "Risk communication",
+        "content": {
+          "es": "Notifica exposiciones y posibles incidentes de manera oportuna, sin atribuir diagnósticos, y respeta la confidencialidad.",
+          "en": "Report exposures and possible incidents promptly without making diagnoses, and respect confidentiality."
+        },
+        "question": {
+          "es": "¿Cómo se comunica una exposición?",
+          "en": "How should an exposure be reported?"
+        },
+        "options": {
+          "es": [
+            "Según protocolo y a tiempo",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Promptly under protocol",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "RE-301",
+    "es": "Análisis de propiedades residenciales",
+    "en": "Residential Property Analysis",
+    "category": "real-estate",
+    "lessons": [
+      {
+        "es": "Comparables",
+        "en": "Comparable properties",
+        "content": {
+          "es": "Compara ventas cerradas recientes con ubicación, superficie, estado y características similares; los precios de anuncio no equivalen a precios de cierre.",
+          "en": "Compare recent closed sales with similar location, size, condition and features; listing prices are not closed-sale prices."
+        },
+        "question": {
+          "es": "¿Qué dato es más útil?",
+          "en": "Which data is more useful?"
+        },
+        "options": {
+          "es": [
+            "Ventas cerradas comparables",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Comparable closed sales",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Costos de adquisición",
+        "en": "Acquisition costs",
+        "content": {
+          "es": "Estima precio, inspección, título, impuestos aplicables, seguros y posibles reparaciones. Las partidas dependen del mercado y la operación.",
+          "en": "Estimate price, inspection, title, applicable taxes, insurance and possible repairs. Items vary by market and transaction."
+        },
+        "question": {
+          "es": "¿Qué se incluye en el presupuesto?",
+          "en": "What belongs in the budget?"
+        },
+        "options": {
+          "es": [
+            "Costos de cierre y reparación",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Closing and repair costs",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Rendimiento del alquiler",
+        "en": "Rental yield",
+        "content": {
+          "es": "Estima ingreso anual potencial y resta vacancia, mantenimiento, administración, seguros e impuestos antes de comparar alternativas.",
+          "en": "Estimate potential annual income and deduct vacancy, maintenance, management, insurance and taxes before comparing options."
+        },
+        "question": {
+          "es": "¿Qué reduce el ingreso neto?",
+          "en": "What reduces net income?"
+        },
+        "options": {
+          "es": [
+            "Vacancia y gastos",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Vacancy and expenses",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Debida diligencia",
+        "en": "Due diligence",
+        "content": {
+          "es": "Revisa condición física, documentación, restricciones y contingencias contractuales con profesionales autorizados antes de comprometer fondos.",
+          "en": "Review physical condition, documentation, restrictions and contractual contingencies with licensed professionals before committing funds."
+        },
+        "question": {
+          "es": "¿Qué debe revisarse antes de comprar?",
+          "en": "What should be checked before buying?"
+        },
+        "options": {
+          "es": [
+            "Documentos y condición",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Documents and condition",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "BUS-301",
+    "es": "Emprendimiento y atención al cliente",
+    "en": "Entrepreneurship and Customer Service",
+    "category": "negocios",
+    "lessons": [
+      {
+        "es": "Propuesta de valor",
+        "en": "Value proposition",
+        "content": {
+          "es": "Describe a quién sirves, qué problema resuelves y por qué tu solución es diferente. Valida la propuesta con conversaciones reales.",
+          "en": "Describe whom you serve, what problem you solve and how your solution differs. Validate it through real conversations."
+        },
+        "question": {
+          "es": "¿Qué define una propuesta de valor?",
+          "en": "What defines a value proposition?"
+        },
+        "options": {
+          "es": [
+            "Cliente y problema",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Customer and problem",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Costos y precios",
+        "en": "Costs and pricing",
+        "content": {
+          "es": "Separa costos fijos y variables, calcula margen bruto y considera impuestos y capacidad operativa antes de establecer precios.",
+          "en": "Separate fixed and variable costs, calculate gross margin and consider taxes and operating capacity before pricing."
+        },
+        "question": {
+          "es": "¿Qué afecta el margen?",
+          "en": "What affects margin?"
+        },
+        "options": {
+          "es": [
+            "Precio y costo variable",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Price and variable cost",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Proceso de servicio",
+        "en": "Service workflow",
+        "content": {
+          "es": "Documenta solicitud, presupuesto, confirmación, ejecución y seguimiento para evitar omisiones y establecer expectativas claras.",
+          "en": "Document inquiry, quote, confirmation, delivery and follow-up to avoid omissions and set clear expectations."
+        },
+        "question": {
+          "es": "¿Qué viene después del servicio?",
+          "en": "What follows service delivery?"
+        },
+        "options": {
+          "es": [
+            "Seguimiento",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Follow-up",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Reclamaciones",
+        "en": "Handling complaints",
+        "content": {
+          "es": "Escucha, verifica hechos, ofrece soluciones proporcionales y registra acuerdos sin prometer resultados que no puedes cumplir.",
+          "en": "Listen, verify facts, offer proportionate solutions and record agreements without promising outcomes you cannot deliver."
+        },
+        "question": {
+          "es": "¿Qué es clave ante una queja?",
+          "en": "What matters in a complaint?"
+        },
+        "options": {
+          "es": [
+            "Escuchar y verificar",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Listen and verify",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "TE-301",
+    "es": "Seguridad digital para principiantes",
+    "en": "Digital Safety for Beginners",
+    "category": "tecnologia",
+    "lessons": [
+      {
+        "es": "Contraseñas",
+        "en": "Passwords",
+        "content": {
+          "es": "Utiliza contraseñas únicas y largas, preferiblemente con un gestor, y evita reutilizarlas entre cuentas.",
+          "en": "Use long, unique passwords, preferably with a password manager, and avoid reuse across accounts."
+        },
+        "question": {
+          "es": "¿Qué contraseña es más segura?",
+          "en": "Which password is safer?"
+        },
+        "options": {
+          "es": [
+            "Única y larga",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Unique and long",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Autenticación multifactor",
+        "en": "Multifactor authentication",
+        "content": {
+          "es": "Activa un segundo factor cuando esté disponible y guarda códigos de recuperación en un lugar seguro.",
+          "en": "Enable a second factor where available and store recovery codes securely."
+        },
+        "question": {
+          "es": "¿Qué agrega MFA?",
+          "en": "What does MFA add?"
+        },
+        "options": {
+          "es": [
+            "Una verificación adicional",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "An extra verification",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Fraudes por mensajes",
+        "en": "Message scams",
+        "content": {
+          "es": "Verifica remitentes y direcciones web sin abrir enlaces sospechosos. Ningún mensaje urgente debe sustituir la verificación independiente.",
+          "en": "Verify senders and web addresses without opening suspicious links. Urgent messages should not replace independent verification."
+        },
+        "question": {
+          "es": "¿Qué haces con un enlace sospechoso?",
+          "en": "What do you do with a suspicious link?"
+        },
+        "options": {
+          "es": [
+            "Verificar por otro canal",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Verify through another channel",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Copias de seguridad",
+        "en": "Backups",
+        "content": {
+          "es": "Mantén copias periódicas de información importante y comprueba que puedes restaurarlas.",
+          "en": "Keep regular backups of important information and test restoration."
+        },
+        "question": {
+          "es": "¿Qué valida una copia?",
+          "en": "What validates a backup?"
+        },
+        "options": {
+          "es": [
+            "Probar la restauración",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Test restoration",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "code": "FIN-301",
+    "es": "Presupuesto personal y flujo de caja",
+    "en": "Personal Budgeting and Cash Flow",
+    "category": "finanzas",
+    "lessons": [
+      {
+        "es": "Ingresos y gastos",
+        "en": "Income and expenses",
+        "content": {
+          "es": "Clasifica ingresos netos, gastos esenciales, discrecionales y obligaciones para conocer el flujo disponible.",
+          "en": "Categorize net income, essential and discretionary expenses, and obligations to understand available cash flow."
+        },
+        "question": {
+          "es": "¿Qué ingreso se usa?",
+          "en": "Which income should be used?"
+        },
+        "options": {
+          "es": [
+            "Ingreso neto",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Net income",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Fondo de emergencia",
+        "en": "Emergency savings",
+        "content": {
+          "es": "Define una meta de ahorro acorde con la estabilidad de ingresos y los gastos básicos; automatiza aportes pequeños si es posible.",
+          "en": "Set a savings target appropriate to income stability and essential expenses; automate small contributions if possible."
+        },
+        "question": {
+          "es": "¿Qué cubre el fondo?",
+          "en": "What does the fund cover?"
+        },
+        "options": {
+          "es": [
+            "Imprevistos",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Unexpected expenses",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Deuda e intereses",
+        "en": "Debt and interest",
+        "content": {
+          "es": "Compara tasa anual, saldo, cuota y comisiones; pagar más del mínimo puede reducir intereses, según el contrato.",
+          "en": "Compare annual rate, balance, payment and fees; paying above the minimum may reduce interest depending on the agreement."
+        },
+        "question": {
+          "es": "¿Qué influye en el costo de deuda?",
+          "en": "What affects debt cost?"
+        },
+        "options": {
+          "es": [
+            "Tasa y comisiones",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Rate and fees",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      },
+      {
+        "es": "Revisión mensual",
+        "en": "Monthly review",
+        "content": {
+          "es": "Compara presupuesto con gastos reales y ajusta categorías sin ocultar costos irregulares o anuales.",
+          "en": "Compare budget with actual spending and adjust categories without overlooking irregular or annual costs."
+        },
+        "question": {
+          "es": "¿Para qué sirve revisar?",
+          "en": "Why review monthly?"
+        },
+        "options": {
+          "es": [
+            "Ajustar el presupuesto",
+            "No es necesario revisar",
+            "Elegir al azar"
+          ],
+          "en": [
+            "Adjust the budget",
+            "No review is necessary",
+            "Choose at random"
+          ]
+        },
+        "answer": 0
+      }
+    ]
+  }
+]
