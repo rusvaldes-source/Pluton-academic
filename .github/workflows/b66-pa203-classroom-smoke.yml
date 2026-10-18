@@ -26,7 +26,7 @@ jobs:
             const page=await browser.newPage();
             const failures=[];
             await page.goto('https://www.plutonacademic.com/b66/pa203/pa203-prueba.html',{waitUntil:'domcontentloaded',timeout:30000});
-            await page.waitForSelector('#lesson option',{timeout:15000});
+            await page.waitForFunction(()=>document.querySelectorAll('#lesson option').length===8,{timeout:15000});
             for(let i=0;i<8;i++){
               await page.locator('#lesson').selectOption(String(i));
               const es=await page.locator('#content').innerText();
@@ -54,6 +54,6 @@ jobs:
             console.log('FAILURES',JSON.stringify(failures));
             await browser.close();
             if(failures.length)process.exitCode=1;
-          })().catch(e=>{console.error(e);process.exitCode=1});
+          })().catch(e=>{console.error(e);process.exit(1)});
           EOF
           timeout 130s node /tmp/smoke.cjs
