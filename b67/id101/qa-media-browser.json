@@ -1,0 +1,242 @@
+[
+  {
+    "lesson": 1,
+    "viewport": 1440,
+    "time": 0.518649,
+    "duration": 46.008,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 2,
+    "viewport": 1440,
+    "time": 0.515633,
+    "duration": 49.452,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 3,
+    "viewport": 1440,
+    "time": 0.517482,
+    "duration": 47,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 4,
+    "viewport": 1440,
+    "time": 0.513462,
+    "duration": 44.32,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 5,
+    "viewport": 1440,
+    "time": 0.519188,
+    "duration": 45.408,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 6,
+    "viewport": 1440,
+    "time": 0.516935,
+    "duration": 48.6,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 7,
+    "viewport": 1440,
+    "time": 0.519481,
+    "duration": 45.143,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 8,
+    "viewport": 1440,
+    "time": 0.510736,
+    "duration": 48.407,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 9,
+    "viewport": 1440,
+    "time": 0.508322,
+    "duration": 48.52,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 10,
+    "viewport": 1440,
+    "time": 0.515085,
+    "duration": 46.7,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 11,
+    "viewport": 1440,
+    "time": 0.512247,
+    "duration": 46.248,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 12,
+    "viewport": 1440,
+    "time": 0.509493,
+    "duration": 49.218,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 1,
+    "viewport": 390,
+    "time": 0.522449,
+    "duration": 46.008,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 2,
+    "viewport": 390,
+    "time": 0.509405,
+    "duration": 49.452,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 3,
+    "viewport": 390,
+    "time": 0.522257,
+    "duration": 47,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 4,
+    "viewport": 390,
+    "time": 0.520172,
+    "duration": 44.32,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 5,
+    "viewport": 390,
+    "time": 0.514639,
+    "duration": 45.408,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 6,
+    "viewport": 390,
+    "time": 0.509503,
+    "duration": 48.6,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 7,
+    "viewport": 390,
+    "time": 0.515132,
+    "duration": 45.143,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 8,
+    "viewport": 390,
+    "time": 0.521452,
+    "duration": 48.407,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 9,
+    "viewport": 390,
+    "time": 0.510492,
+    "duration": 48.52,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 10,
+    "viewport": 390,
+    "time": 0.511373,
+    "duration": 46.7,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 11,
+    "viewport": 390,
+    "time": 0.541528,
+    "duration": 46.248,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  },
+  {
+    "lesson": 12,
+    "viewport": 390,
+    "time": 0.520458,
+    "duration": 49.218,
+    "width": 1280,
+    "height": 720,
+    "muted": false,
+    "paused": false
+  }
+]

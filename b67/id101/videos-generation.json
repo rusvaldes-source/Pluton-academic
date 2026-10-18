@@ -6,73 +6,98 @@
   "videos": [
     {
       "lesson": 1,
-      "id": "364eadf048b173cdc8f1594821621e59"
+      "id": "364eadf048b173cdc8f1594821621e59",
+      "status": "completed",
+      "duration": 46.008,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_01_364eadf048b173cdc8f1594821621e59.mp4"
     },
     {
       "lesson": 2,
       "video_id": "5de535132127f232aeb8ae55b3fb9b17",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 49.452,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_02_5de535132127f232aeb8ae55b3fb9b17.mp4"
     },
     {
       "lesson": 3,
       "video_id": "03462ec6506efc54df6ae40b9780ad82",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 47.0,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_03_03462ec6506efc54df6ae40b9780ad82.mp4"
     },
     {
       "lesson": 4,
       "video_id": "a04e89dd967105fa6c9f4b48345edca1",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 44.32,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_04_a04e89dd967105fa6c9f4b48345edca1.mp4"
     },
     {
       "lesson": 5,
       "video_id": "f52e2b7ef3e9dfb6fb9d31bc30b9e322",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 45.408,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_05_f52e2b7ef3e9dfb6fb9d31bc30b9e322.mp4"
     },
     {
       "lesson": 6,
       "video_id": "0b6561f0dbe68389d0b78b24c1a10cc6",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 48.6,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_06_0b6561f0dbe68389d0b78b24c1a10cc6.mp4"
     },
     {
       "lesson": 7,
       "video_id": "d9b5120acfa059fe697b6789a8df9707",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 45.143,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_07_d9b5120acfa059fe697b6789a8df9707.mp4"
     },
     {
       "lesson": 8,
       "video_id": "36f0dc3836d955adae2b7cc213a99dd0",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 48.407,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_08_36f0dc3836d955adae2b7cc213a99dd0.mp4"
     },
     {
       "lesson": 9,
       "video_id": "575d66c0f2f364e28f1842bc4947bc69",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 48.52,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_09_575d66c0f2f364e28f1842bc4947bc69.mp4"
     },
     {
       "lesson": 10,
       "video_id": "7980fee93b799ab037a9e8ffa243832a",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 46.7,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_10_7980fee93b799ab037a9e8ffa243832a.mp4"
     },
     {
       "lesson": 11,
       "video_id": "623616e99d880a219d4dc52775cf03ee",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 46.248,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_11_623616e99d880a219d4dc52775cf03ee.mp4"
     },
     {
       "lesson": 12,
       "video_id": "95dfb4ed3cdbf72f1d9c29e07eb4af50",
-      "status": "waiting",
-      "output_format": "mp4"
+      "status": "completed",
+      "output_format": "mp4",
+      "duration": 49.218,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_12_95dfb4ed3cdbf72f1d9c29e07eb4af50.mp4"
     }
   ],
   "scripts": [
