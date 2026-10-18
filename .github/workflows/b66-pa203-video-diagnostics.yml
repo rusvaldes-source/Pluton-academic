@@ -56,13 +56,13 @@ jobs:
             page.on('response',r=>{if(r.url().includes('pa203-videos')) console.log('MEDIA_HTTP',r.status(),r.headers()['content-type'],r.url());});
             await page.goto('https://www.plutonacademic.com/b66/pa203/pa203-prueba.html',{waitUntil:'domcontentloaded',timeout:45000});
             await page.waitForSelector('video',{timeout:30000});
-            for(const n of [1,2]){
-              if(n===2){const opts=await page.locator('#lesson option').evaluateAll(xs=>xs.map(x=>({value:x.value,text:x.textContent})));console.log('LESSON_OPTIONS',JSON.stringify(opts));if(opts.length>1)await page.locator('#lesson').selectOption({index:1});}
+            for(const n of [1,2,3,4,5,6,7,8]){
+              if(n>1){const opts=await page.locator('#lesson option').evaluateAll(xs=>xs.map(x=>({value:x.value,text:x.textContent})));console.log('LESSON_OPTIONS',JSON.stringify(opts));if(opts.length>=n)await page.locator('#lesson').selectOption({index:n-1});}
               const result=await page.locator('video').evaluate(async v=>{
                 try{await Promise.race([v.play(),new Promise((_,reject)=>setTimeout(()=>reject(new Error('play timeout')),12000))]);}catch(e){return {playError:String(e),code:v.error?.code,message:v.error?.message,src:v.currentSrc,readyState:v.readyState,networkState:v.networkState,duration:v.duration};}
                 await new Promise(resolve=>setTimeout(resolve,2500));return {code:v.error?.code,message:v.error?.message,src:v.currentSrc,readyState:v.readyState,networkState:v.networkState,duration:v.duration,currentTime:v.currentTime,paused:v.paused};
               });
-              console.log('LESSON_BROWSER_RESULT',n,JSON.stringify(result));
+              console.log('LESSON_BROWSER_RESULT',n,JSON.stringify(result));if(result.playError||result.code||!(result.currentTime>0))throw Error('Lesson '+n+' failed browser playback: '+JSON.stringify(result));
             }
             await browser.close();
           })().catch(e=>{console.error('BROWSER_TEST_ERROR',e);process.exitCode=1});
