@@ -46,3 +46,14 @@ No cambiar main, B63 ni Cloudflare durante las pruebas de B66.
 - [ ] Confirmar experiencia móvil (navegación, video, evaluación, cuaderno y proyecto) antes de habilitar el lanzamiento.
 
 **Importante:** tests simulados de función/cliente no equivalen a pruebas de extremo a extremo. No publicar ni declarar listo hasta completar las casillas pendientes.
+
+## Auditoría de navegador — 18 octubre 2026
+
+- [x] Navegación de la web pública inspeccionada, sin publicar cambios.
+- [ ] **Bloqueo crítico:** el video de lección 1 en la web pública muestra error de archivo no disponible: `b64/videos/PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4`.
+- [ ] Verificar en reproducción real cada video (tiempo, imagen, audio), sin extrapolar resultados de otros archivos.
+- [ ] Probar B66 directamente en entorno de prueba; la web pública no equivale al prototipo `b66/pa203/pa203-prueba.html`.
+- [ ] Probar móvil real y envíos autenticados de proyecto/examen; la inspección de formularios no verifica persistencia.
+- [ ] Revisar catálogo público: se observaron cuatro cursos, frente al plan de lanzamiento de tres.
+
+No se declaró reproducción aprobada ni se modificó la web pública.
