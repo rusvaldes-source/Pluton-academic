@@ -72,6 +72,7 @@ Deno.serve(async (request) => {
     const correct = officialQuestions.map(q => q.correctIndex);
     if (!Array.isArray(correct) || !correct.length || correct.length > 100 || !correct.every(x => Number.isInteger(x) && x >= 0 && x <= 9)) return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
     if (!Array.isArray(answers) || answers.length !== correct.length || !answers.every(x => Number.isInteger(x) && x >= 0 && x <= 9)) return new Response(JSON.stringify({ error: 'invalid_answers' }), { status: 400, headers });
+    if (!answers.every((answer, i) => answer < officialQuestions[i].optionsEs.length)) return new Response(JSON.stringify({ error: 'invalid_answers' }), { status: 400, headers });
     const score = answers.reduce((total, answer, i) => total + Number(answer === correct[i]), 0);
     const admin = createClient(url, service, { auth: { persistSession: false } });
     const { data, error } = await admin.from('pa203_assessment_attempts').insert({
