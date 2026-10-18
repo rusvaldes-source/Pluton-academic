@@ -28,7 +28,11 @@ Deno.serve(async (request) => {
     const authClient = createClient(url, anon, { global: { headers: { Authorization: auth } }, auth: { persistSession: false } });
     const { data: { user }, error: userError } = await authClient.auth.getUser(auth.replace(/^Bearer\s+/i, ''));
     if (userError || !user) return new Response(JSON.stringify({ error: 'unauthorized' }), { status: 401, headers });
-    const body = await request.json();
+    const declaredSize = Number(request.headers.get('content-length'));
+    if (Number.isFinite(declaredSize) && declaredSize > 8192) return new Response(JSON.stringify({ error: 'payload_too_large' }), { status: 413, headers });
+    const rawBody = await request.text();
+    if (rawBody.length > 8192) return new Response(JSON.stringify({ error: 'payload_too_large' }), { status: 413, headers });
+    const body = JSON.parse(rawBody);
     if (!body || typeof body !== 'object' || Array.isArray(body)) return new Response(JSON.stringify({ error: 'invalid_body' }), { status: 400, headers });
     const { assessmentKey, answers } = body;
     if (typeof assessmentKey !== 'string' || !/^pa203-(module-1|final|lesson-0[1-8])$/.test(assessmentKey)) return new Response(JSON.stringify({ error: 'invalid_assessment' }), { status: 400, headers });
