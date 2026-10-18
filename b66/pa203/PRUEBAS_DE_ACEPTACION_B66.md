@@ -30,3 +30,19 @@ Estado: **NO APROBADO PARA PUBLICACIÓN**. Esta lista separa la verificación de
 3. La calificación oficial y la revisión final del proyecto siguen pendientes.
 
 No cambiar main, B63 ni Cloudflare durante las pruebas de B66.
+
+## Estado técnico verificado — 18 octubre 2026
+
+- [x] Tabla `public.pa203_assessment_attempts` instalada en Supabase con RLS; el rol `authenticated` tiene SELECT y no INSERT/UPDATE.
+- [x] Edge Function `b66-pa203-grade` desplegada con verificación JWT; calificación permanece desactivada hasta cargar secreto y habilitar el interruptor.
+- [x] Cliente B66 llama a `b66-pa203-grade` (commit 24baef97).
+- [x] Banco privado local `pa203-final`: 12 preguntas, IDs únicos y claves dentro de las opciones; **no subirlo a archivos públicos**.
+- [x] Cinco MP4 en bucket `pa203-videos` (lecciones 2, 5, 6, 7 y 8), tamaños mayores que cero, MIME video/mp4.
+- [ ] Configurar `PA203_OFFICIAL_QUESTION_BANK_JSON` en secretos de Supabase (requiere acceso al panel).
+- [ ] Configurar `PA203_GRADING_ENABLED=true` solo durante pruebas controladas.
+- [ ] Probar lectura y entrega de examen con usuario autenticado y verificar fila propia; comprobar rechazo de acceso cruzado.
+- [ ] Verificar reproducción/audio de los 8 videos en navegador real, incluyendo móvil.
+- [ ] Probar envío e historial del proyecto final con cuenta de prueba en ES/EN.
+- [ ] Confirmar experiencia móvil (navegación, video, evaluación, cuaderno y proyecto) antes de habilitar el lanzamiento.
+
+**Importante:** tests simulados de función/cliente no equivalen a pruebas de extremo a extremo. No publicar ni declarar listo hasta completar las casillas pendientes.
