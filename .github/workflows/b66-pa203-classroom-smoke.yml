@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: '22'
       - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
       - name: Check bilingual lesson content and practice answers
         timeout-minutes: 3
         run: |
