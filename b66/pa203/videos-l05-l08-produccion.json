@@ -1,46 +1,63 @@
 {
   "course": "PA-203",
   "branch": "B66-PA203-preparacion",
-  "status": "generation_requested_not_yet_integrated",
+  "status": "approved_by_user_completed_in_heygen_pending_permanent_mp4_storage",
   "video_jobs": [
     {
       "lesson": 5,
       "video_id": "05423b95514bd66e8608b753dfd44a00",
       "presenter": "Adays",
       "title": "Correos profesionales",
-      "status": "waiting",
-      "target_path": "b64/videos/PA-203_Leccion_05_05423b95514bd66e8608b753dfd44a00.mp4"
+      "status": "completed_approved",
+      "target_path": "b64/videos/PA-203_Leccion_05_05423b95514bd66e8608b753dfd44a00.mp4",
+      "duration_seconds": 57.3127,
+      "heygen_video_page": "https://app.heygen.com/videos/05423b95514bd66e8608b753dfd44a00",
+      "integrated": false,
+      "note": "MP4 permanente pendiente de guardar y verificar en GitHub B66; no usar URL temporal firmada"
     },
     {
       "lesson": 6,
       "video_id": "2e07f54d434467a07494e38951d85a17",
       "presenter": "Adays",
       "title": "Resúmenes y acciones",
-      "status": "waiting",
-      "target_path": "b64/videos/PA-203_Leccion_06_2e07f54d434467a07494e38951d85a17.mp4"
+      "status": "completed_approved",
+      "target_path": "b64/videos/PA-203_Leccion_06_2e07f54d434467a07494e38951d85a17.mp4",
+      "duration_seconds": 55.0139,
+      "heygen_video_page": "https://app.heygen.com/videos/2e07f54d434467a07494e38951d85a17",
+      "integrated": false,
+      "note": "MP4 permanente pendiente de guardar y verificar en GitHub B66; no usar URL temporal firmada"
     },
     {
       "lesson": 7,
       "video_id": "6c90166c69872a754564584be5aaaa8d",
       "presenter": "Fundador blazer blanco",
       "title": "Verificación y privacidad",
-      "status": "waiting",
-      "target_path": "b64/videos/PA-203_Leccion_07_6c90166c69872a754564584be5aaaa8d.mp4"
+      "status": "completed_approved",
+      "target_path": "b64/videos/PA-203_Leccion_07_6c90166c69872a754564584be5aaaa8d.mp4",
+      "duration_seconds": 60.7086,
+      "heygen_video_page": "https://app.heygen.com/videos/6c90166c69872a754564584be5aaaa8d",
+      "integrated": false,
+      "note": "MP4 permanente pendiente de guardar y verificar en GitHub B66; no usar URL temporal firmada"
     },
     {
       "lesson": 8,
       "video_id": "95b0d1b0e3f5d46cd3c5f36dcb3ae5c6",
       "presenter": "Fundador blazer blanco",
       "title": "Proyecto práctico final",
-      "status": "waiting",
-      "target_path": "b64/videos/PA-203_Leccion_08_95b0d1b0e3f5d46cd3c5f36dcb3ae5c6.mp4"
+      "status": "completed_approved",
+      "target_path": "b64/videos/PA-203_Leccion_08_95b0d1b0e3f5d46cd3c5f36dcb3ae5c6.mp4",
+      "duration_seconds": 64,
+      "heygen_video_page": "https://app.heygen.com/videos/95b0d1b0e3f5d46cd3c5f36dcb3ae5c6",
+      "integrated": false,
+      "note": "MP4 permanente pendiente de guardar y verificar en GitHub B66; no usar URL temporal firmada"
     }
   ],
   "next_steps": [
-    "Confirmar generación completada y duración de cada video",
-    "Descargar MP4 y verificar imagen y sonido",
-    "Subir archivos a rama B66 sin tocar main",
-    "Asignar rutas solo cuando los MP4 existan en GitHub",
-    "Probar reproducción real en aula"
-  ]
+    "Descargar y guardar MP4 originales en almacenamiento permanente",
+    "Comprobar metadatos, audio y reproducción de cada MP4",
+    "Integrar solo después de verificar existencia real de archivos",
+    "Recuperar MP4 original aprobado de lección 2",
+    "Pruebas de navegador y móvil antes de entrega"
+  ],
+  "approval": "Usuario aprobó expresamente los cuatro videos el 2026-10-18; no regenerar ni sustituir"
 }
