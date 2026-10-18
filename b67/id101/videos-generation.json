@@ -1,0 +1,124 @@
+{
+  "version": "B67",
+  "course": "ID-101",
+  "avatar_id": "8d2631084dae0d28f5b3d6076533736f",
+  "voice_id": "9dcc4188924741c18bd74292330208e2",
+  "videos": [
+    {
+      "lesson": 1,
+      "id": "364eadf048b173cdc8f1594821621e59"
+    },
+    {
+      "lesson": 2,
+      "video_id": "5de535132127f232aeb8ae55b3fb9b17",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 3,
+      "video_id": "03462ec6506efc54df6ae40b9780ad82",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 4,
+      "video_id": "a04e89dd967105fa6c9f4b48345edca1",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 5,
+      "video_id": "f52e2b7ef3e9dfb6fb9d31bc30b9e322",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 6,
+      "video_id": "0b6561f0dbe68389d0b78b24c1a10cc6",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 7,
+      "video_id": "d9b5120acfa059fe697b6789a8df9707",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 8,
+      "video_id": "36f0dc3836d955adae2b7cc213a99dd0",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 9,
+      "video_id": "575d66c0f2f364e28f1842bc4947bc69",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 10,
+      "video_id": "7980fee93b799ab037a9e8ffa243832a",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 11,
+      "video_id": "623616e99d880a219d4dc52775cf03ee",
+      "status": "waiting",
+      "output_format": "mp4"
+    },
+    {
+      "lesson": 12,
+      "video_id": "95dfb4ed3cdbf72f1d9c29e07eb4af50",
+      "status": "waiting",
+      "output_format": "mp4"
+    }
+  ],
+  "scripts": [
+    [
+      "Cargo y responsabilidades",
+      "Hoy describiremos nuestro cargo y nuestras tareas. Escucha: I'm an assistant. I help customers. I answer calls. Soy asistente, ayudo a los clientes y contesto llamadas. Para un cargo singular usamos a o an: a receptionist, an assistant. I work in customer service indica el área; I work for a cleaning company indica la empresa. No es lo mismo una responsabilidad que un horario. Si preguntan What do you do?, explica tu trabajo con dos frases claras. Practica con este caso ficticio: Ana recibe llamadas y organiza citas. Di: Ana answers calls and schedules appointments. Ahora escribe tu cargo de práctica y dos tareas. Puedes pedir a la inteligencia artificial que revise la gramática sin inventar experiencia."
+    ],
+    [
+      "Preguntas básicas",
+      "En esta lección aprenderás a pedir información concreta. What significa qué; where, dónde; when, cuándo; who, quién; y how, cómo. Escucha: What do you need? ¿Qué necesita? Where is the office? ¿Dónde está la oficina? When is the meeting? ¿Cuándo es la reunión? Usa una pregunta para cada dato pendiente. No adivines la dirección o el horario. Para preguntar con cortesía: Could you tell me the time, please? En nuestro caso ficticio, un cliente pide una cita sin indicar día. Pregunta: What day works for you? Ahora escribe tres preguntas: una sobre el servicio, otra sobre el lugar y otra sobre la fecha. Revisa que cada respuesta realmente conteste la pregunta."
+    ],
+    [
+      "Pedir repetición y confirmar",
+      "No entender una frase a la primera es normal. Puedes decir: Could you repeat that, please? ¿Podría repetirlo? Could you speak more slowly, please? ¿Podría hablar más despacio? Para confirmar: Did you say Tuesday? ¿Dijo martes? Evita fingir que entendiste. En nuestro diálogo ficticio, alguien menciona una reunión y no escuchas la hora. Pregunta: Could you repeat the time, please? Después confirma el dato completo: Tuesday at three p.m., correct? Revisa día y hora, y la zona horaria cuando sea necesaria. Ahora practica dos turnos: pide repetición y confirma con tus propias palabras. La inteligencia artificial puede ayudarte a ensayar, pero no convierte una suposición en un acuerdo real."
+    ],
+    [
+      "Ofrecer ayuda",
+      "Hoy ofreceremos ayuda de manera cordial. Escucha: How can I help you? ¿Cómo puedo ayudarle? Can I help you with the form? ¿Puedo ayudarle con el formulario? Después de can usamos el verbo base: can help. No prometas resolver algo fuera de tu autoridad. Si no conoces la respuesta, di: Let me check with my supervisor. Déjeme consultarlo con mi supervisor. En el caso ficticio, un cliente no encuentra un documento. Pregunta qué necesita, ofrece una acción concreta y explica lo que revisarás. Ahora escribe un diálogo de cuatro turnos que incluya una oferta de ayuda, una pregunta y un siguiente paso. Comprueba que no promete un precio, un reembolso o una disponibilidad que no están confirmados."
+    ],
+    [
+      "Atender dificultades con respeto",
+      "Cuando aparece un problema, escucha y pide los datos que necesitas. Puedes decir: I'm sorry about the inconvenience. Lamento el inconveniente. Could you explain the problem, please? ¿Podría explicar el problema? Reconocer una dificultad no significa prometer una solución inmediata. Si necesitas consultar, di: I'll check and get back to you. Lo revisaré y volveré a comunicarme. Añade un plazo solo cuando esté autorizado. En el ejemplo ficticio, un cliente informa que recibió el archivo equivocado. Confirma cuál esperaba y consulta el procedimiento, sin culpar a otra persona ni divulgar datos privados. Tu práctica: redacta una respuesta breve con reconocimiento, aclaración y siguiente paso. Evalúa respeto, claridad y ausencia de promesas inventadas."
+    ],
+    [
+      "Fechas, horas y citas",
+      "Para organizar una cita debemos confirmar la fecha, la hora y, cuando corresponda, la zona horaria. Escucha: The meeting is on November fifth at two thirty p.m., Miami time. La reunión es el cinco de noviembre a las dos y media de la tarde, hora de Miami. Usamos on con el día y at con la hora. Un número como eleven five puede resultar ambiguo; escribe el mes con letras. Si el cliente dice two fifteen, corrige con cortesía: The appointment is at two thirty, not two fifteen. Could you confirm? Ahora escribe una confirmación y una corrección usando datos ficticios. No cambies una propuesta por una reserva confirmada y no supongas que todas las ciudades tienen la misma hora."
+    ],
+    [
+      "Instrucciones sencillas",
+      "Para explicar un proceso, divide el trabajo en pasos breves. First, open the file. Then, check the information. Finally, send the report. Primero abre el archivo, después comprueba la información y finalmente envía el informe. La instrucción empieza con el verbo base. Para prohibir: Don't share the password. No compartas la contraseña. Si falta un dato, pregunta: Which file should I open? ¿Qué archivo debo abrir? No interpretes el nombre de un archivo como permiso para compartirlo. Ahora redacta cuatro pasos ficticios para revisar un documento e incluye una advertencia de privacidad. Antes de actuar, confirma destinatario y autorización. La práctica consiste en explicar y comprobar, sin enviar documentos reales."
+    ],
+    [
+      "Experiencia y habilidades",
+      "Hoy distinguiremos habilidades, experiencia y práctica. I can use a spreadsheet significa que puedo usar una hoja de cálculo. Después de can va el verbo base: can use, no can using. I worked as a receptionist describe un cargo anterior. I have experience in customer service describe un área de experiencia. Si solo has practicado en un curso, dilo claramente: I practised this skill in a course project. Un proyecto educativo no equivale a un empleo. En nuestro caso ficticio, Ana organiza citas en una simulación. Ahora escribe dos habilidades, un ejemplo que las respalde y una meta de aprendizaje. Usa información verdadera o identifica el perfil como ficticio. No inventes certificados ni años de experiencia."
+    ],
+    [
+      "Entrevista inicial",
+      "Una entrevista inicial requiere respuestas claras y honestas. A Tell me about yourself puedes responder con una presentación, dos habilidades y un ejemplo breve. Escucha: I'm Ana. I can help customers and organize appointments. I practised these skills in a course project. No presentes esa práctica como experiencia profesional. Si no entiendes, di: Could you repeat the question, please? También puedes preguntar: What are the main responsibilities? ¿Cuáles son las responsabilidades principales? Ahora prepara respuestas de dos frases a tres preguntas: quién eres, qué sabes hacer y por qué te interesa el puesto. Practica una pregunta por turno y revisa la gramática. Esta actividad educativa no determina si una persona es elegible para un empleo."
+    ],
+    [
+      "Correo y chat profesional",
+      "Un correo profesional tiene asunto, saludo, propósito, petición y cierre. Escucha: Hello, I'm writing to confirm the meeting. Could you confirm the date and time, please? Thank you for your help. Estoy escribiendo para confirmar la reunión; por favor confirme fecha y hora. En un chat puedes ser más breve, conservando el contexto y la cortesía. No inventes una fecha límite. Usa I've attached the report solamente si el informe correcto está adjunto. Antes de enviar, revisa destinatario, fecha, hora y archivos. Ahora redacta un correo y un chat sobre una cita ficticia. Puedes pedir a la inteligencia artificial dos correcciones explicadas, pero revisa el resultado y no envíes información real durante la práctica."
+    ],
+    [
+      "Proyecto práctico final",
+      "Llegamos al proyecto final de Inglés práctico para el trabajo. Usaremos el caso ficticio de Ana, una asistente con práctica en un proyecto educativo. Prepara una presentación de cinco o seis frases, un diálogo de atención al cliente de ocho a doce turnos y una conversación para corregir una cita. La fecha del caso es el cinco de noviembre a las dos y media de la tarde, hora de Miami; el cliente dice dos y quince y debes confirmar dos y media. Añade un correo, un chat y una lista de revisión. No inventes experiencia, precios ni direcciones. Guarda el trabajo y explica dos mejoras. Revisa comprensión, claridad, vocabulario y cortesía. La autoevaluación sirve para practicar; no es una calificación oficial ni un certificado."
+    ]
+  ]
+}
