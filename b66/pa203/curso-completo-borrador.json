@@ -728,6 +728,486 @@
         }
       ],
       "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/PA-203_Lección_03_Repaso_interactivo_Interactive_review/preguntas_estructuradas.json"
+    },
+    {
+      "title": "PA-203 Lección 04 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué corrección es más verificable? / Which revision request is more testable?",
+          "opciones": [
+            {
+              "texto": "Hazlo mejor / Make it better",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Añade una pregunta sobre ubicación y mantén 90 palabras / Add a location question and keep 90 words",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Inventa los datos faltantes / Invent missing details",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Para qué sirve un ejemplo de estilo? / What is a style example for?",
+          "opciones": [
+            {
+              "texto": "Copiar los datos del ejemplo / Copy example facts",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Sustituir la fuente / Replace the source",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Mostrar tono o estructura sin añadir hechos / Show tone or structure without adding facts",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué conviene guardar al revisar? / What should you retain during revision?",
+          "opciones": [
+            {
+              "texto": "La versión anterior para comparar / The prior version for comparison",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Solo la última respuesta / Only the last answer",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Datos privados reales / Real private data",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué se comprueba después de revisar? / What should you check after a revision?",
+          "opciones": [
+            {
+              "texto": "Que sea más largo / That it is longer",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Que conserve los hechos originales / That it preserves original facts",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Que prometa un precio / That it promises a price",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Cuál es una buena secuencia de mejora? / What is a good revision sequence?",
+          "opciones": [
+            {
+              "texto": "Cambiar todo sin revisar / Change everything without review",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Aceptar siempre el primer borrador / Always accept the first draft",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Comparar, identificar diferencia, corregir y verificar / Compare, identify gap, revise and verify",
+              "correcta_segun_editor": true
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    },
+    {
+      "title": "PA-203 Lección 05 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Cuál es el propósito principal de un correo? / What should a professional email focus on?",
+          "opciones": [
+            {
+              "texto": "Una acción clara / One clear action",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Muchas solicitudes sin relación / Many unrelated requests",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Prometer una fecha no aprobada / Promise an unapproved date",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué debe contener el asunto? / What should the subject line convey?",
+          "opciones": [
+            {
+              "texto": "Una garantía de precio / A price guarantee",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La acción o tema principal / The main action or topic",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Información privada innecesaria / Unnecessary private data",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué parte pide datos concretos? / Which part requests specific details?",
+          "opciones": [
+            {
+              "texto": "El saludo / Greeting",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La firma / Signature",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La solicitud / Request",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué debe evitarse en el cierre? / What should the closing avoid?",
+          "opciones": [
+            {
+              "texto": "Agradecer / Thanking",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Compromisos no autorizados / Unauthorized commitments",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Indicar siguiente paso / Indicating next step",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué hacer antes de enviar un borrador generado por IA? / What should you do before sending an AI draft?",
+          "opciones": [
+            {
+              "texto": "Revisar hechos y destinatario / Check facts and recipient",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Enviarlo sin leer / Send without reading",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Inventar disponibilidad / Invent availability",
+              "correcta_segun_editor": false
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    },
+    {
+      "title": "PA-203 Lección 06 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Cómo resumir una propuesta pendiente de revisión? / How should you summarize a proposal pending review?",
+          "opciones": [
+            {
+              "texto": "Propuesta aprobada / Proposal approved",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Propuesta pendiente de revisión / Proposal pending review",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Propuesta enviada / Proposal sent",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "Si no se conoce el responsable, ¿qué se indica? / If the owner is unknown, what should you state?",
+          "opciones": [
+            {
+              "texto": "Asignar uno al azar / Assign one at random",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Omitir la tarea / Omit the task",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Responsable pendiente / Owner pending",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué son las decisiones? / What are decisions?",
+          "opciones": [
+            {
+              "texto": "Acuerdos explícitos / Explicit agreements",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Ideas no aprobadas / Unapproved ideas",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Suposiciones / Assumptions",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué distingue una propuesta de una acción acordada? / What distinguishes a proposal from an agreed action?",
+          "opciones": [
+            {
+              "texto": "No existe diferencia / There is no difference",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La propuesta aún no está aprobada / A proposal is not yet approved",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Toda propuesta tiene fecha / Every proposal has a deadline",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué debe conservar un resumen? / What must a summary preserve?",
+          "opciones": [
+            {
+              "texto": "Solo las palabras más llamativas / Only striking words",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Plazos inventados / Invented deadlines",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Significado y condiciones de la fuente / Meaning and conditions from the source",
+              "correcta_segun_editor": true
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    },
+    {
+      "title": "PA-203 Lección 07 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué prueba una afirmación convincente? / What does a convincing claim prove?",
+          "opciones": [
+            {
+              "texto": "Que necesariamente es correcta / That it is necessarily correct",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Nada por sí sola: requiere fuente / Nothing by itself: it needs a source",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Que ya fue aprobada / That it was approved",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué hacer con un dato no comprobable? / What should you do with an unverifiable detail?",
+          "opciones": [
+            {
+              "texto": "Marcar incertidumbre, eliminarlo o pedir aclaración / Mark uncertainty, remove it or ask",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Presentarlo como confirmado / Present it as confirmed",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Compartirlo sin revisar / Share without review",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué revisar en información externa cambiante? / What should you check for changing external information?",
+          "opciones": [
+            {
+              "texto": "Solo el estilo / Only the style",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Solo el título / Only the title",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La fuente y la fecha / The source and date",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué permite una fuente que describe opciones? / What does a source describing options allow?",
+          "opciones": [
+            {
+              "texto": "Gastar dinero sin permiso / Spend without permission",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Informar opciones, no autorizar decisiones / Describe options, not authorize decisions",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Confirmar una reserva / Confirm a booking",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué principio protege la privacidad? / Which principle protects privacy?",
+          "opciones": [
+            {
+              "texto": "Compartir solo los datos necesarios / Share only necessary data",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Publicar todos los datos / Publish all data",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Usar datos reales en prácticas / Use real data in practice",
+              "correcta_segun_editor": false
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    },
+    {
+      "title": "PA-203 Lección 08 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué significa «viernes» en el caso ficticio? / What does 'Friday' mean in the fictional case?",
+          "opciones": [
+            {
+              "texto": "Reserva confirmada / Confirmed booking",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Día solicitado, no reserva confirmada / Requested day, not confirmed booking",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Fecha de pago / Payment date",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué datos faltan en la solicitud? / What details are missing from the request?",
+          "opciones": [
+            {
+              "texto": "Dirección, tamaño, horario y tareas / Address, size, time and tasks",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Nombre de la empresa / Company name",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "El día solicitado / Requested day",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Cuál es el estado de la visita sugerida por Luis? / What is the status of Luis's suggested visit?",
+          "opciones": [
+            {
+              "texto": "Aprobada y asignada / Approved and assigned",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Completada / Completed",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Propuesta sin aprobación / Proposal not approved",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué aceptó hacer Ana? / What did Ana agree to do?",
+          "opciones": [
+            {
+              "texto": "Confirmar precio / Confirm price",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Preparar borrador de preguntas / Draft questions",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Reservar el servicio / Book service",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué debe evitar el expediente final? / What must the final project avoid?",
+          "opciones": [
+            {
+              "texto": "Precios y decisiones inventados / Invented prices and decisions",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "La fuente original / The original source",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Separar documentos / Separating documents",
+              "correcta_segun_editor": false
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
     }
   ],
   "existing_catalog_lessons": 2,
