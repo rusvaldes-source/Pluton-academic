@@ -23,8 +23,7 @@ Deno.serve(async (request) => {
     const url = Deno.env.get('SUPABASE_URL');
     const anon = Deno.env.get('SUPABASE_ANON_KEY');
     const service = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-    const secret = Deno.env.get('PA203_GRADING_KEY_JSON');
-    if (!url || !anon || !service || !secret) return new Response(JSON.stringify({ error: 'not_configured' }), { status: 503, headers });
+    if (!url || !anon || !service ) return new Response(JSON.stringify({ error: 'not_configured' }), { status: 503, headers });
     const authClient = createClient(url, anon, { global: { headers: { Authorization: auth } }, auth: { persistSession: false } });
     const { data: { user }, error: userError } = await authClient.auth.getUser(auth.replace(/^Bearer\s+/i, ''));
     if (userError || !user) return new Response(JSON.stringify({ error: 'unauthorized' }), { status: 401, headers });
@@ -36,10 +35,37 @@ Deno.serve(async (request) => {
     if (rawBody.length > 8192) return new Response(JSON.stringify({ error: 'payload_too_large' }), { status: 413, headers });
     const body = JSON.parse(rawBody);
     if (!body || typeof body !== 'object' || Array.isArray(body)) return new Response(JSON.stringify({ error: 'invalid_body' }), { status: 400, headers });
-    const { assessmentKey, answers } = body;
+    const { assessmentKey, answers, action } = body;
     if (typeof assessmentKey !== 'string' || !/^pa203-(module-1|final|lesson-0[1-8])$/.test(assessmentKey)) return new Response(JSON.stringify({ error: 'invalid_assessment' }), { status: 400, headers });
-    const keys = JSON.parse(secret);
-    const correct = keys[assessmentKey];
+    // Official questions must come from a server-only secret, never from public practice JSON.
+    // Secret format: { "pa203-final": [{ "id":"q1", "es":"...", "en":"...", "optionsEs":["..."], "optionsEn":["..."], "correctIndex":0 }] }
+    if (action === 'questions') {
+      const bankRaw = Deno.env.get('PA203_OFFICIAL_QUESTION_BANK_JSON');
+      if (!bankRaw) return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
+      const bank = JSON.parse(bankRaw);
+      const questions = bank[assessmentKey];
+      if (!Array.isArray(questions) || !questions.length || questions.length > 100 ||
+          !questions.every(q => q && typeof q.id === 'string' && typeof q.es === 'string' &&
+            typeof q.en === 'string' && Array.isArray(q.optionsEs) && Array.isArray(q.optionsEn) &&
+            q.optionsEs.length >= 2 && q.optionsEs.length <= 10 &&
+            q.optionsEs.length === q.optionsEn.length &&
+            q.optionsEs.every(x => typeof x === 'string') &&
+            q.optionsEn.every(x => typeof x === 'string') &&
+            Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex < q.optionsEs.length)) {
+        return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
+      }
+      return new Response(JSON.stringify({ assessmentKey, questions: questions.map(q => ({
+        id:q.id, es:q.es, en:q.en, optionsEs:q.optionsEs, optionsEn:q.optionsEn
+      })) }), { status: 200, headers });
+    }
+    if (action !== 'submit') return new Response(JSON.stringify({ error: 'invalid_action' }), { status: 400, headers });
+    const bankRaw = Deno.env.get('PA203_OFFICIAL_QUESTION_BANK_JSON');
+    if (!bankRaw) return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
+    const officialQuestions = JSON.parse(bankRaw)[assessmentKey];
+    if (!Array.isArray(officialQuestions) || !officialQuestions.length || !officialQuestions.every(q =>
+      q && Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex <= 9))
+      return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
+    const correct = officialQuestions.map(q => q.correctIndex);
     if (!Array.isArray(correct) || !correct.length || correct.length > 100 || !correct.every(x => Number.isInteger(x) && x >= 0 && x <= 9)) return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
     if (!Array.isArray(answers) || answers.length !== correct.length || !answers.every(x => Number.isInteger(x) && x >= 0 && x <= 9)) return new Response(JSON.stringify({ error: 'invalid_answers' }), { status: 400, headers });
     const score = answers.reduce((total, answer, i) => total + Number(answer === correct[i]), 0);
