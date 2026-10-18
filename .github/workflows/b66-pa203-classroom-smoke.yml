@@ -1,0 +1,58 @@
+name: B66 PA203 classroom smoke test
+on:
+  push:
+    branches: [B66-PA203-preparacion]
+    paths:
+      - 'b66/pa203/pa203-aula.js'
+      - '.github/workflows/b66-pa203-classroom-smoke.yml'
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - name: Check bilingual lesson content and practice answers
+        timeout-minutes: 3
+        run: |
+          cat > /tmp/smoke.cjs <<'EOF'
+          const {chromium}=require(process.env.GITHUB_WORKSPACE+'/node_modules/playwright');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const page=await browser.newPage();
+            const failures=[];
+            await page.goto('https://www.plutonacademic.com/b66/pa203/pa203-prueba.html',{waitUntil:'domcontentloaded',timeout:30000});
+            await page.waitForSelector('#lesson option',{timeout:15000});
+            for(let i=0;i<8;i++){
+              await page.locator('#lesson').selectOption(String(i));
+              const es=await page.locator('#content').innerText();
+              await page.locator('#switchLanguage').click();
+              const en=await page.locator('#content').innerText();
+              await page.locator('#switchLanguage').click();
+              if(es.length<400||en.length<400||es===en)failures.push('Lesson '+(i+1)+' bilingual content');
+              console.log('LESSON',i+1,'ES',es.length,'EN',en.length);
+            }
+            const count=await page.locator('#assessment option').count();
+            if(count!==11)failures.push('Expected 11 assessments, got '+count);
+            for(let i=0;i<count;i++){
+              await page.locator('#assessment').selectOption(String(i));
+              const n=await page.locator('#quiz section').count();
+              if(n<1)failures.push('Assessment '+i+' missing questions');
+              console.log('ASSESSMENT',i,'QUESTIONS',n);
+            }
+            await page.locator('#assessment').selectOption('3');
+            await page.locator('#quiz section').first().locator('input[type=radio]').last().check();
+            await page.locator('#quiz section').first().locator('button').click();
+            const feedback=await page.locator('#quiz section').first().innerText();
+            console.log('FIRST_QUESTION_FEEDBACK',feedback.slice(-220));
+            if(!feedback.includes('Respuesta correcta:')&&!feedback.includes('Correcto.'))failures.push('Missing corrective feedback');
+            console.log('OFFICIAL_GRADING_DISABLED',await page.locator('#officialSubmit').isDisabled());
+            console.log('FAILURES',JSON.stringify(failures));
+            await browser.close();
+            if(failures.length)process.exitCode=1;
+          })().catch(e=>{console.error(e);process.exitCode=1});
+          EOF
+          timeout 130s node /tmp/smoke.cjs
