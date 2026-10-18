@@ -18,7 +18,11 @@ window.PA203Grading = {
       if (error) return {ok:false,reason:'grading_unavailable'};
       if (!data || !data.attempt || data.attempt.assessment_key !== assessmentKey ||
           !Number.isInteger(data.attempt.correct_answers) ||
-          !Number.isInteger(data.attempt.total_questions)) {
+          !Number.isInteger(data.attempt.total_questions) ||
+          data.attempt.total_questions !== answers.length ||
+          data.attempt.correct_answers < 0 ||
+          data.attempt.correct_answers > data.attempt.total_questions ||
+          data.attempt.status !== 'graded') {
         return {ok:false,reason:'invalid_server_response'};
       }
       const {data:{user:afterUser},error:afterError} = await client.auth.getUser();
