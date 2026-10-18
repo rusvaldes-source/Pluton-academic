@@ -18,14 +18,14 @@ Deno.serve(async (request) => {
   if (request.method !== 'POST') return new Response(JSON.stringify({ error: 'method_not_allowed' }), { status: 405, headers });
   try {
     const auth = request.headers.get('authorization') ?? '';
-    if (!/^Bearer\\s+\\S+$/i.test(auth)) return new Response(JSON.stringify({ error: 'unauthorized' }), { status: 401, headers });
+    if (!/^Bearer\s+\S+$/i.test(auth)) return new Response(JSON.stringify({ error: 'unauthorized' }), { status: 401, headers });
     const url = Deno.env.get('SUPABASE_URL');
     const anon = Deno.env.get('SUPABASE_ANON_KEY');
     const service = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
     const secret = Deno.env.get('PA203_GRADING_KEY_JSON');
     if (!url || !anon || !service || !secret) return new Response(JSON.stringify({ error: 'not_configured' }), { status: 503, headers });
     const authClient = createClient(url, anon, { global: { headers: { Authorization: auth } }, auth: { persistSession: false } });
-    const { data: { user }, error: userError } = await authClient.auth.getUser(auth.replace(/^Bearer\\s+/i, ''));
+    const { data: { user }, error: userError } = await authClient.auth.getUser(auth.replace(/^Bearer\s+/i, ''));
     if (userError || !user) return new Response(JSON.stringify({ error: 'unauthorized' }), { status: 401, headers });
     const body = await request.json();
     if (!body || typeof body !== 'object' || Array.isArray(body)) return new Response(JSON.stringify({ error: 'invalid_body' }), { status: 400, headers });
