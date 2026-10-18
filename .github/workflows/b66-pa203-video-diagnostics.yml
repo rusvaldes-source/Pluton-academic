@@ -1,0 +1,41 @@
+name: B66 PA203 Video Diagnostics
+on:
+  push:
+    branches: [B66-PA203-preparacion]
+    paths:
+      - '.github/workflows/b66-pa203-video-diagnostics.yml'
+      - 'b66/pa203/**'
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Install FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Check all eight original video objects
+        shell: bash
+        run: |
+          set -uo pipefail
+          base='https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos'
+          files=(
+            PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4
+            PA-203_Leccion_02_2af2c139ccb79853b26a3096cee38e7b.mp4
+            PA-203_Leccion_03_b51d75a3472e644708f8c5862407214f.mp4
+            PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4
+            PA-203_Leccion_05_05423b95514bd66e8608b753dfd44a00.mp4
+            PA-203_Leccion_06_2e07f54d434467a07494e38951d85a17.mp4
+            PA-203_Leccion_07_6c90166c69872a754564584be5aaaa8d.mp4
+            PA-203_Leccion_08_95b0d1b0e3f5d46cd3c5f36dcb3ae5c6.mp4
+          )
+          failures=0
+          for file in "${files[@]}"; do
+            echo "::group::$file"
+            curl --fail --location --silent --show-error --max-time 80 "$base/$file" -o /tmp/pa203.mp4 || { echo 'DOWNLOAD_FAILED'; failures=$((failures+1)); echo '::endgroup::'; continue; }
+            echo "DOWNLOADED_BYTES=$(stat -c%s /tmp/pa203.mp4)"
+            ffprobe -v error -show_entries format=duration,size:stream=codec_name,codec_type,width,height -of json /tmp/pa203.mp4 || { echo 'FFPROBE_FAILED'; failures=$((failures+1)); }
+            ffmpeg -hide_banner -loglevel error -i /tmp/pa203.mp4 -t 2 -f null - || { echo 'DECODE_FAILED'; failures=$((failures+1)); }
+            echo '::endgroup::'
+          done
+          echo "FAILURES=$failures"
+          test "$failures" -eq 0
