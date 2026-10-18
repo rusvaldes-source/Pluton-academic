@@ -1,0 +1,21 @@
+{
+  "course": "PA-203",
+  "finding": "Catalog has only two lessons while recovered source has eight; source mismatch, not loss",
+  "verified": {
+    "catalog_json_lessons": 2,
+    "b64_materiales_lessons": 8,
+    "b64_materiales_notebooks": 5,
+    "b64_materiales_assessments": 6,
+    "b66_draft_lessons": 8,
+    "b66_draft_notebooks": 5,
+    "b66_draft_assessments": 6
+  },
+  "actions": [
+    "Keep catalog.json and main untouched",
+    "Use eight lesson source in B66 isolated aula",
+    "Map five notebooks to applicable lessons; do not claim eight",
+    "Verify six assessments and video playback separately",
+    "Only integrate into production after browser acceptance tests"
+  ],
+  "publication_authorized": false
+}
