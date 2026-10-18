@@ -1,7 +1,7 @@
 {
   "version": "B66",
   "code": "PA-203",
-  "state": "draft-not-published",
+  "state": "draft-corrected-not-published",
   "source": {
     "materiales_sha": "c0b940c28328e0f877101311b819a6534a82d821",
     "catalog_sha": "35c6cfdb7c077009b4d834256f0a4936757905a4"
@@ -399,15 +399,15 @@
           "opciones": [
             {
               "texto": "Trabajo / Work",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Entrada / Input",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             },
             {
               "texto": "Entrega / Delivery",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             }
           ],
           "texto_original_renderizado": "¿Dónde conservarías la solicitud original? / Where would you keep the original request?\n \n \n\nTrabajo / Work\n\n \n \n\nEntrada / Input\n\n \n \n\nEntrega / Delivery\n\nAdd option"
@@ -418,15 +418,15 @@
           "opciones": [
             {
               "texto": "final_final",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Documento / Document",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "2026-10-14_Propuesta_v02 / 2026-10-14_Proposal_v02",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             }
           ],
           "texto_original_renderizado": "¿Qué nombre facilita reconocer fecha y versión? / Which name makes the date and version clear?\n \n \n\nfinal_final\n\n \n \n\nDocumento / Document\n\n \n \n\n2026-10-14_Propuesta_v02 / 2026-10-14_Proposal_v02\n\nAdd option"
@@ -437,15 +437,15 @@
           "opciones": [
             {
               "texto": "Lectura / Viewing",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             },
             {
               "texto": "Edición para todos / Editing for everyone",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Tu contraseña / Your password",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             }
           ],
           "texto_original_renderizado": "Un colaborador solo debe revisar. ¿Qué acceso corresponde? / A colleague only needs to review. Which access is appropriate?\n \n \n\nLectura / Viewing\n\n \n \n\nEdición para todos / Editing for everyone\n\n \n \n\nTu contraseña / Your password\n\nAdd option"
@@ -456,15 +456,15 @@
           "opciones": [
             {
               "texto": "Tener dos archivos juntos / Keeping two files together",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Recuperar y abrir una copia independiente / Recovering and opening an independent copy",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             },
             {
               "texto": "Cambiar el nombre a backup / Renaming a file backup",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             }
           ],
           "texto_original_renderizado": "¿Qué demuestra mejor que un respaldo sirve? / What best shows that a backup works?\n \n \n\nTener dos archivos juntos / Keeping two files together\n\n \n \n\nRecuperar y abrir una copia independiente / Recovering and opening an independent copy\n\n \n \n\nCambiar el nombre a backup / Renaming a file backup\n\nAdd option"
@@ -475,15 +475,15 @@
           "opciones": [
             {
               "texto": "Sobrescribirla sin revisión / Overwrite it without review",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Eliminar versiones previas / Delete prior versions",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Usarla como referencia y guardar su salida como borrador / Use it as a reference and save output as a draft",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             }
           ],
           "texto_original_renderizado": "¿Qué debe hacer la IA con la fuente original? / What should AI do with the original source?\n \n \n\nSobrescribirla sin revisión / Overwrite it without review\n\n \n \n\nEliminar versiones previas / Delete prior versions\n\n \n \n\nUsarla como referencia y guardar su salida como borrador / Use it as a reference and save output as a draft\n\nAdd option"
@@ -500,15 +500,15 @@
           "opciones": [
             {
               "texto": "Solo corregir colores / Only adjust colors",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Comparar hechos, utilidad y privacidad con la fuente / Check facts, usefulness and privacy against the source",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             },
             {
               "texto": "Enviar si suena profesional / Send if it sounds professional",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             }
           ],
           "texto_original_renderizado": "¿Qué revisión precede a enviar un mensaje? / Which review comes before sending a message?\n \n \n\nSolo corregir colores / Only adjust colors\n\n \n \n\nComparar hechos, utilidad y privacidad con la fuente / Check facts, usefulness and privacy against the source\n\n \n \n\nEnviar si suena profesional / Send if it sounds professional\n\nAdd option"
@@ -519,15 +519,15 @@
           "opciones": [
             {
               "texto": "Como un borrador que necesita revisión / As a draft requiring review",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             },
             {
               "texto": "Como verdad garantizada / As guaranteed truth",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Como un compromiso aprobado / As an approved commitment",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             }
           ],
           "texto_original_renderizado": "¿Cómo debe tratarse una respuesta de IA? / How should AI output be treated?\n \n \n\nComo un borrador que necesita revisión / As a draft requiring review\n\n \n \n\nComo verdad garantizada / As guaranteed truth\n\n \n \n\nComo un compromiso aprobado / As an approved commitment\n\nAdd option"
@@ -538,15 +538,15 @@
           "opciones": [
             {
               "texto": "Lo confirmas por su tono / Confirm it because it sounds confident",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Lo eliminas y marcas el precio pendiente / Remove it and mark price as pending",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             },
             {
               "texto": "Lo copias si parece razonable / Copy it if it seems reasonable",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             }
           ],
           "texto_original_renderizado": "La fuente no incluye precio. ¿Qué haces con $150 añadido por IA? / The source has no price. What do you do with $150 added by AI?\n \n \n\nLo confirmas por su tono / Confirm it because it sounds confident\n\n \n \n\nLo eliminas y marcas el precio pendiente / Remove it and mark price as pending\n\n \n \n\nLo copias si parece razonable / Copy it if it seems reasonable\n\nAdd option"
@@ -557,15 +557,15 @@
           "opciones": [
             {
               "texto": "Expediente identificable / Identifiable records",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Contraseña y datos de pago / Password and payment information",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Nombres y situación ficticios / Fictional names and situation",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             }
           ],
           "texto_original_renderizado": "¿Qué conjunto sirve para esta práctica? / Which information is suitable for this practice?\n \n \n\nExpediente identificable / Identifiable records\n\n \n \n\nContraseña y datos de pago / Password and payment information\n\n \n \n\nNombres y situación ficticios / Fictional names and situation\n\nAdd option"
@@ -576,15 +576,15 @@
           "opciones": [
             {
               "texto": "Abrirla y comprobar que sostiene la afirmación / Open it and check that it supports the claim",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": true
             },
             {
               "texto": "Que tenga apariencia de enlace / That it looks like a link",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             },
             {
               "texto": "Preguntar solo al mismo modelo / Only ask the same model",
-              "correcta_segun_editor": null
+              "correcta_segun_editor": false
             }
           ],
           "texto_original_renderizado": "¿Qué verifica una referencia propuesta por IA? / What verifies a reference proposed by AI?\n \n \n\nAbrirla y comprobar que sostiene la afirmación / Open it and check that it supports the claim\n\n \n \n\nQue tenga apariencia de enlace / That it looks like a link\n\n \n \n\nPreguntar solo al mismo modelo / Only ask the same model\n\nAdd option"
@@ -699,6 +699,7 @@
     "Copia de preparación sin alterar archivos existentes",
     "Revisar la asignación de video de Adays antes de publicar",
     "Las claves de repaso L01 y L02 corregidas están en archivo separado y deben aplicarse al integrar",
-    "Entrega final manual, no autocertificar"
+    "Entrega final manual, no autocertificar",
+    "Claves L01/L02 integradas en copia B66, originales de main intactos"
   ]
 }
