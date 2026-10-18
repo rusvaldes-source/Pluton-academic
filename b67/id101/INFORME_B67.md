@@ -1,5 +1,5 @@
 # ID-101 — B67 — 18 octubre 2026
-Estado: integración lista para QA en alojamiento; no declarar finalizado hasta comprobar producción.
+Estado: publicado en producción con commit 1707f405a14f60de9ec7d09765041d21009324a2. URL: https://www.plutonacademic.com/b67/id101/
 - Recuperados del repositorio: 12 lecciones, 6 cuadernos bilingües, examen de 12 preguntas. Fuente intacta: b64/materiales.json. LearnWorlds no modificado.
 - Videos recuperados: 0. Nuevos: 12. Supabase: bucket público id101-videos, 12 MP4 de 1280×720, H.264/AAC, 44,32–49,45 s. Fundador con avatar y voz clonada comprobados en PA-203. Narración ES con frases modelo EN; no se ofrece una segunda pista EN.
 - Aula nueva: b67/id101/index.html. 12 ejercicios interactivos, 60 preguntas bilingües con explicación, seis cuadernos descargables, respuestas prácticas guardables y exportables. Examen recuperado conservado como práctica. Ninguna calificación oficial ni certificado automático.
@@ -12,4 +12,4 @@ Estado: integración lista para QA en alojamiento; no declarar finalizado hasta 
 ## Limitación de pruebas históricas
 npm test contiene un supuesto antiguo de 26 tarjetas en portada; la base actual tiene cuatro entradas en catalog.json. Esa prueba se agota esperando 26 antes de llegar a las pruebas del curso. Inicialmente también faltaba su fixture; se descargó temporalmente para diagnosticar. No se cambió la prueba histórica ni se declara aprobada. La batería actual de 14 pruebas estáticas y las pruebas específicas de ID-101 sí pasan.
 ## Respaldo
-Base protegida en commit 6ba26bccf714d0c9bf3efc3053ca98fd4a4dd548; rama independiente B67-ID101-integracion. La publicación requiere comprobar el alojamiento final antes del cierre.
+Base protegida en commit 6ba26bccf714d0c9bf3efc3053ca98fd4a4dd548; rama independiente B67-ID101-integracion. Cloudflare confirmó despliegue correcto. Se comprobaron seis recursos de producción (página de cursos, catálogo, aula, contenido, reproductor y módulo de progreso): todos responden y coinciden byte a byte con main; evidencia en qa-production-http.json. En la vista alojada se observó el video del fundador con duración de 46,008 s y avance a 11,5 s, sin mute. La comprobación final con el navegador remoto se agotó por tiempo; no se afirma una prueba con dos dispositivos físicos ni con dos sesiones reales simultáneas. La persistencia remota y RLS se probaron mediante transacción revertida.

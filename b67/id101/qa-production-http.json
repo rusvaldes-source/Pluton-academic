@@ -1,0 +1,44 @@
+[
+  {
+    "path": "courses",
+    "success": true,
+    "bytes": 2081,
+    "matches_main": true,
+    "error": null
+  },
+  {
+    "path": "catalog.json",
+    "success": true,
+    "bytes": 162820,
+    "matches_main": true,
+    "error": null
+  },
+  {
+    "path": "b67/id101/",
+    "success": true,
+    "bytes": 1449,
+    "matches_main": true,
+    "error": null
+  },
+  {
+    "path": "b67/id101/course.json",
+    "success": true,
+    "bytes": 256119,
+    "matches_main": true,
+    "error": null
+  },
+  {
+    "path": "b67/aula.js",
+    "success": true,
+    "bytes": 11247,
+    "matches_main": true,
+    "error": null
+  },
+  {
+    "path": "b67/progress.js",
+    "success": true,
+    "bytes": 1470,
+    "matches_main": true,
+    "error": null
+  }
+]
