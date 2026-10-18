@@ -9,7 +9,7 @@ window.PA203Grading = {
       if (!user || user.id!==expectedUserId) return {ok:false,reason:'account_changed'};
       const {data,error}=await client.functions.invoke('grade-pa203',{body:{action:'questions',assessmentKey}});
       if (error || !data || data.assessmentKey!==assessmentKey || !Array.isArray(data.questions)) return {ok:false,reason:'grading_unavailable'};
-      if (!data.questions.length || data.questions.length>100 || data.questions.some(q=>!q || !Array.isArray(q.optionsEs) || !Array.isArray(q.optionsEn) || 'correctIndex' in q)) return {ok:false,reason:'invalid_server_response'};
+      if (!data.questions.length || data.questions.length>100 || data.questions.some(q=>!q || typeof q.id!=='string' || typeof q.es!=='string' || typeof q.en!=='string' || !Array.isArray(q.optionsEs) || !Array.isArray(q.optionsEn) || q.optionsEs.length<2 || q.optionsEs.length>10 || q.optionsEs.length!==q.optionsEn.length || q.optionsEs.some(x=>typeof x!=='string') || q.optionsEn.some(x=>typeof x!=='string') || Object.keys(q).some(k=>!['id','es','en','optionsEs','optionsEn'].includes(k)))) return {ok:false,reason:'invalid_server_response'};
       const {data:{user:after}}=await client.auth.getUser();
       if (!after || after.id!==expectedUserId) return {ok:false,reason:'account_changed'};
       return {ok:true,questions:data.questions};
