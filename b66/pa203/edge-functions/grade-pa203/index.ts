@@ -17,6 +17,7 @@ Deno.serve(async (request) => {
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers });
   if (request.method !== 'POST') return new Response(JSON.stringify({ error: 'method_not_allowed' }), { status: 405, headers });
   try {
+    if (Deno.env.get('PA203_GRADING_ENABLED') !== 'true') return new Response(JSON.stringify({ error: 'grading_disabled' }), { status: 503, headers });
     const auth = request.headers.get('authorization') ?? '';
     if (!/^Bearer\s+\S+$/i.test(auth)) return new Response(JSON.stringify({ error: 'unauthorized' }), { status: 401, headers });
     const url = Deno.env.get('SUPABASE_URL');
