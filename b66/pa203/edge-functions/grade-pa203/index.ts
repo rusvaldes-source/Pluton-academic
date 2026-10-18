@@ -1,7 +1,6 @@
 // B66 PA-203 — Edge Function (BORRADOR NO DESPLEGADO).
-// Deploy only after provisioning PA203_GRADING_KEY_JSON in Supabase secrets.
-// Expected secret: {"pa203-final":[0,1,...],"pa203-module-1":[0,0],...}
-// Each array contains the zero-based correct option for each question.
+// Deploy only after provisioning PA203_OFFICIAL_QUESTION_BANK_JSON in Supabase secrets.
+// The secret stores bilingual questions and correctIndex values, never exposed to students.
 // Do not use the public course JSON as an authoritative grading key.
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
@@ -62,8 +61,13 @@ Deno.serve(async (request) => {
     const bankRaw = Deno.env.get('PA203_OFFICIAL_QUESTION_BANK_JSON');
     if (!bankRaw) return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
     const officialQuestions = JSON.parse(bankRaw)[assessmentKey];
-    if (!Array.isArray(officialQuestions) || !officialQuestions.length || !officialQuestions.every(q =>
-      q && Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex <= 9))
+    if (!Array.isArray(officialQuestions) || !officialQuestions.length || officialQuestions.length > 100 ||
+        !officialQuestions.every(q => q && typeof q.id === 'string' &&
+          Array.isArray(q.optionsEs) && Array.isArray(q.optionsEn) &&
+          q.optionsEs.length >= 2 && q.optionsEs.length <= 10 &&
+          q.optionsEs.length === q.optionsEn.length &&
+          Number.isInteger(q.correctIndex) && q.correctIndex >= 0 &&
+          q.correctIndex < q.optionsEs.length))
       return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
     const correct = officialQuestions.map(q => q.correctIndex);
     if (!Array.isArray(correct) || !correct.length || correct.length > 100 || !correct.every(x => Number.isInteger(x) && x >= 0 && x <= 9)) return new Response(JSON.stringify({ error: 'assessment_not_configured' }), { status: 503, headers });
