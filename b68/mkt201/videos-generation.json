@@ -1,0 +1,99 @@
+{
+  "version": "B68",
+  "course": "MKT-201",
+  "avatar_id": "b948b54736ad2c36faa0ac7c3330a219",
+  "voice_id": "386c635ce50f4b2ba7fb4de82a284e5e",
+  "videos": [
+    {
+      "lesson": 1,
+      "id": "d50ceac7f0b5568c32fabcc7731136d4",
+      "status": "completed",
+      "duration": 50.129,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_01_d50ceac7f0b5568c32fabcc7731136d4.mp4"
+    },
+    {
+      "lesson": 2,
+      "id": "d177878a58589c0b8787c0572516c0d6",
+      "status": "completed",
+      "duration": 50.0245,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_02_d177878a58589c0b8787c0572516c0d6.mp4"
+    },
+    {
+      "lesson": 3,
+      "id": "19ff97f87fd9949ed252c215448f0a22",
+      "status": "completed",
+      "duration": 49.6065,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_03_19ff97f87fd9949ed252c215448f0a22.mp4"
+    },
+    {
+      "lesson": 4,
+      "id": "808725bb6126138b823ea58a454fb459",
+      "status": "completed",
+      "duration": 48.2743,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_04_808725bb6126138b823ea58a454fb459.mp4"
+    },
+    {
+      "lesson": 5,
+      "id": "b5e589293a733d564ae572ac9a134e8d",
+      "status": "completed",
+      "duration": 49.4498,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_05_b5e589293a733d564ae572ac9a134e8d.mp4"
+    },
+    {
+      "lesson": 6,
+      "id": "728ead1afd1cca067028a3c82d227d74",
+      "status": "completed",
+      "duration": 52.271,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_06_728ead1afd1cca067028a3c82d227d74.mp4"
+    },
+    {
+      "lesson": 7,
+      "id": "547bbc75be85c9445237eb683a2ae41f",
+      "status": "failed",
+      "failureCode": "AVATAR_IV_VIDEO_GENERATION_OUT_OF_CREDIT",
+      "failureMessage": "Insufficient credits. Upgrade to continue.",
+      "storage_url": null
+    },
+    {
+      "lesson": 8,
+      "id": "d1f8544fe893cd91d858c27c6265c9e8",
+      "status": "completed",
+      "duration": 52.1927,
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_08_d1f8544fe893cd91d858c27c6265c9e8.mp4"
+    }
+  ],
+  "scripts": [
+    [
+      "Público objetivo",
+      "Bienvenidos a Marketing digital: primeros pasos, de Plutón Academic. Para comunicar una oferta, empieza por una necesidad concreta. Nuestro caso es Brisa, un negocio ficticio de limpieza de oficinas. No digas que tu público es todo el mundo. Un grupo más útil sería responsables de oficinas que buscan limpieza fuera del horario laboral. Separa evidencia y suposición: si tres de cinco consultas de práctica mencionan el horario, eso describe esas consultas, no todos los negocios de Miami. Pregunta qué tareas necesitan y qué horario les conviene, sin dirigir la respuesta. Tu ejercicio consiste en preparar un perfil con necesidad, situación, evidencia y dos datos pendientes. No necesitas contactar clientes reales."
+    ],
+    [
+      "Oferta y mensaje",
+      "Una oferta explica qué servicio se propone, para quién y con qué alcance. Un mensaje comunica esa oferta; una llamada a la acción indica el siguiente paso. En Brisa, nuestro negocio ficticio, podemos escribir: limpieza de oficinas con tareas y horario por acordar; cuéntanos qué necesitas para revisar el alcance. No inventes precios, premios, reseñas ni resultados garantizados. Una consulta tampoco confirma una reserva. Ahora escribe una oferta de tres frases y dos mensajes dirigidos al público que definiste. Incluye una sola acción principal, por ejemplo solicitar información para una cotización. Compara los mensajes por claridad y correspondencia con el servicio, sin afirmar que uno venderá más antes de probarlo."
+    ],
+    [
+      "Elegir canales",
+      "No elijas un canal únicamente porque sea popular. Compara dónde busca información tu público, qué formatos puedes preparar, cuánto tiempo requiere responder y cómo registrarás las consultas. Un canal tiene costos de producción y atención, aunque no compres anuncios. Para Brisa, plantea una prueba pequeña: dos piezas educativas durante una semana, una oferta clara y un registro de consultas relevantes. Define quién responde y qué acción puede realizar la persona interesada. Una publicación sin resultados no demuestra que el canal nunca funcionará; con pocos datos puede no haber una conclusión. Tu actividad consiste en comparar tres opciones y justificar una prueba. No requiere abrir cuentas, publicar ni gastar dinero."
+    ],
+    [
+      "Perfil y llamada a la acción",
+      "Un perfil comercial debe explicar el servicio, a quién ayuda y cuál es el siguiente paso. Un logotipo por sí solo no describe una oferta. Para Brisa, usa una descripción clara de limpieza de oficinas, con tareas y horario sujetos a revisión. Pide solo la información necesaria: zona, tamaño aproximado y tareas requeridas. Explica que después se revisará el alcance; no prometas respuesta inmediata si no puedes cumplirla. Revisa el recorrido desde el contenido hasta el perfil y la solicitud: nombre coherente, destino correcto y lectura cómoda en móvil. Ahora prepara un perfil ficticio con una sola llamada a la acción y comprueba sus enlaces sin enviar mensajes reales."
+    ],
+    [
+      "Contenido educativo y demostraciones",
+      "El contenido educativo ayuda a comprender una pregunta. Una demostración explica un proceso y una oferta presenta un servicio. Para Brisa, puedes enseñar qué datos hacen falta para revisar una limpieza de oficina: zona, tareas y horario preferido. Organiza un guion con pregunta, tres ideas, ejemplo ficticio y siguiente paso relacionado. Una escena generada no prueba que realizaste un trabajo real; un guion tampoco es un video terminado. No inventes testimonios, resultados antes y después o porcentajes de mejora. Tu actividad consiste en preparar tres piezas: educación, proceso y oferta. Identifica qué evidencia o permiso falta antes de usarlas y desarrolla una en cuatro escenas."
+    ],
+    [
+      "Calendario y uso de imágenes",
+      "Un calendario organiza borradores; siete filas no obligan a publicar todos los días. Anota tema, objetivo, formato, acción y responsable de revisión. Para cada imagen registra archivo, fuente, creador, permiso o licencia, uso previsto, cambios y atribución requerida. Encontrar una foto en internet no demuestra que puedas utilizarla. Las licencias tienen condiciones distintas: algunas limitan usos comerciales o adaptaciones. Dar crédito no elimina esas restricciones. Si el permiso no está claro, deja el recurso pendiente y utiliza texto o un diagrama original. Tu práctica es preparar siete borradores y revisar los recursos de tres piezas. No inventes descuentos, urgencias ni trabajos realizados para llenar el calendario."
+    ],
+    [
+      "Métricas esenciales",
+      "Las métricas necesitan definiciones, un periodo y denominadores claros. En el ejemplo ficticio tenemos cien visitas, ocho consultas nuevas relevantes procedentes de esas visitas y dos solicitudes aceptadas entre esas consultas. Ocho dividido entre cien es ocho por ciento. Dos dividido entre ocho es veinticinco por ciento. Dos dividido entre cien es dos por ciento. Cada cálculo responde una pregunta distinta. Una aceptación no demuestra pago ni que una publicación haya causado el resultado. Con cero visitas, la tasa de consultas por visita no se puede calcular; un dato desconocido tampoco equivale a cero. Tu ejercicio es preparar un tablero con cantidades, tasas y una limitación, y proponer una mejora sin prometer ventas."
+    ],
+    [
+      "Proyecto práctico final",
+      "El proyecto final combina el trabajo del curso para Brisa, un negocio ficticio de limpieza de oficinas. Entrega un perfil de público con evidencia y supuestos, una oferta clara, una comparación de canales y un perfil con llamada a la acción. Añade siete borradores de contenido, dos piezas desarrolladas y un registro de permisos de los recursos. Incluye el tablero del caso: cien visitas, ocho consultas y dos aceptaciones. Las tasas son ocho, veinticinco y dos por ciento, según el denominador. Explica una limitación y una prueba sin gasto. Revisa enlaces, lectura móvil, privacidad y afirmaciones; documenta dos mejoras. Guarda y descarga el proyecto. La autoevaluación sirve para aprender; no equivale a una calificación oficial."
+    ]
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "file": "MKT-201_Leccion_01_d50ceac7f0b5568c32fabcc7731136d4.mp4",
+    "duration": 50.135,
+    "width": 1280,
+    "height": 720,
+    "audio_codec": "aac",
+    "audio_mean_db": "-17.5"
+  },
+  {
+    "file": "MKT-201_Leccion_02_d177878a58589c0b8787c0572516c0d6.mp4",
+    "duration": 50.04,
+    "width": 1280,
+    "height": 720,
+    "audio_codec": "aac",
+    "audio_mean_db": "-17.6"
+  },
+  {
+    "file": "MKT-201_Leccion_03_19ff97f87fd9949ed252c215448f0a22.mp4",
+    "duration": 49.608,
+    "width": 1280,
+    "height": 720,
+    "audio_codec": "aac",
+    "audio_mean_db": "-17.1"
+  },
+  {
+    "file": "MKT-201_Leccion_04_808725bb6126138b823ea58a454fb459.mp4",
+    "duration": 48.28,
+    "width": 1280,
+    "height": 720,
+    "audio_codec": "aac",
+    "audio_mean_db": "-17.3"
+  },
+  {
+    "file": "MKT-201_Leccion_05_b5e589293a733d564ae572ac9a134e8d.mp4",
+    "duration": 49.452,
+    "width": 1280,
+    "height": 720,
+    "audio_codec": "aac",
+    "audio_mean_db": "-17.5"
+  },
+  {
+    "file": "MKT-201_Leccion_06_728ead1afd1cca067028a3c82d227d74.mp4",
+    "duration": 52.28,
+    "width": 1280,
+    "height": 720,
+    "audio_codec": "aac",
+    "audio_mean_db": "-17.2"
+  },
+  {
+    "file": "MKT-201_Leccion_08_d1f8544fe893cd91d858c27c6265c9e8.mp4",
+    "duration": 52.2,
+    "width": 1280,
+    "height": 720,
+    "audio_codec": "aac",
+    "audio_mean_db": "-16.4"
+  }
+]
