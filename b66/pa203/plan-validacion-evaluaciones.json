@@ -1,0 +1,87 @@
+{
+  "version": "B66",
+  "course": "PA-203",
+  "source_sha": "c0b940c28328e0f877101311b819a6534a82d821",
+  "status": "pendiente de integración y pruebas de navegador",
+  "assessment_rules": {
+    "automatic": "solo preguntas con una respuesta correcta",
+    "manual": "Entrega del proyecto: rúbrica de 100 puntos, aprobación por instructor a partir de 80; no emitir certificado automáticamente"
+  },
+  "corrections": [
+    {
+      "title": "PA-203 Lección 01 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "number": 1,
+          "question": "¿Dónde conservarías la solicitud original? / Where would you keep the original request?",
+          "correct_option_index": 1,
+          "correct_option": "Entrada / Input"
+        },
+        {
+          "number": 2,
+          "question": "¿Qué nombre facilita reconocer fecha y versión? / Which name makes the date and version clear?",
+          "correct_option_index": 2,
+          "correct_option": "2026-10-14_Propuesta_v02 / 2026-10-14_Proposal_v02"
+        },
+        {
+          "number": 3,
+          "question": "Un colaborador solo debe revisar. ¿Qué acceso corresponde? / A colleague only needs to review. Which access is appropriate?",
+          "correct_option_index": 0,
+          "correct_option": "Lectura / Viewing"
+        },
+        {
+          "number": 4,
+          "question": "¿Qué demuestra mejor que un respaldo sirve? / What best shows that a backup works?",
+          "correct_option_index": 1,
+          "correct_option": "Recuperar y abrir una copia independiente / Recovering and opening an independent copy"
+        },
+        {
+          "number": 5,
+          "question": "¿Qué debe hacer la IA con la fuente original? / What should AI do with the original source?",
+          "correct_option_index": 2,
+          "correct_option": "Usarla como referencia y guardar su salida como borrador / Use it as a reference and save output as a draft"
+        }
+      ]
+    },
+    {
+      "title": "PA-203 Lección 02 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "number": 1,
+          "question": "¿Qué revisión precede a enviar un mensaje? / Which review comes before sending a message?",
+          "correct_option_index": 1,
+          "correct_option": "Comparar hechos, utilidad y privacidad con la fuente / Check facts, usefulness and privacy against the source"
+        },
+        {
+          "number": 2,
+          "question": "¿Cómo debe tratarse una respuesta de IA? / How should AI output be treated?",
+          "correct_option_index": 0,
+          "correct_option": "Como un borrador que necesita revisión / As a draft requiring review"
+        },
+        {
+          "number": 3,
+          "question": "La fuente no incluye precio. ¿Qué haces con $150 añadido por IA? / The source has no price. What do you do with $150 added by AI?",
+          "correct_option_index": 1,
+          "correct_option": "Lo eliminas y marcas el precio pendiente / Remove it and mark price as pending"
+        },
+        {
+          "number": 4,
+          "question": "¿Qué conjunto sirve para esta práctica? / Which information is suitable for this practice?",
+          "correct_option_index": 2,
+          "correct_option": "Nombres y situación ficticios / Fictional names and situation"
+        },
+        {
+          "number": 5,
+          "question": "¿Qué verifica una referencia propuesta por IA? / What verifies a reference proposed by AI?",
+          "correct_option_index": 0,
+          "correct_option": "Abrirla y comprobar que sostiene la afirmación / Open it and check that it supports the claim"
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "corrected_count": 10,
+    "unique_keys": true
+  },
+  "deployment": "NO PUBLICAR"
+}
