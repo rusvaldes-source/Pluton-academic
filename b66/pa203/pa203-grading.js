@@ -1,5 +1,5 @@
 'use strict';
-// B66 PA-203: cliente de calificaciones oficiales (función aún NO desplegada).
+// B66 PA-203: cliente de calificaciones oficiales (función desplegada en modo protegido; calificación aún desactivada).
 // La puntuación nunca se envía: el servidor debe calcularla desde respuestas.
 window.PA203Grading = {
   async questions(client, assessmentKey, expectedUserId) {
@@ -7,7 +7,7 @@ window.PA203Grading = {
     try {
       const {data:{user}}=await client.auth.getUser();
       if (!user || user.id!==expectedUserId) return {ok:false,reason:'account_changed'};
-      const {data,error}=await client.functions.invoke('grade-pa203',{body:{action:'questions',assessmentKey}});
+      const {data,error}=await client.functions.invoke('b66-pa203-grade',{body:{action:'questions',assessmentKey}});
       if (error || !data || data.assessmentKey!==assessmentKey || !Array.isArray(data.questions)) return {ok:false,reason:'grading_unavailable'};
       if (!data.questions.length || data.questions.length>100 || data.questions.some(q=>!q || typeof q.id!=='string' || typeof q.es!=='string' || typeof q.en!=='string' || !Array.isArray(q.optionsEs) || !Array.isArray(q.optionsEn) || q.optionsEs.length<2 || q.optionsEs.length>10 || q.optionsEs.length!==q.optionsEn.length || q.optionsEs.some(x=>typeof x!=='string') || q.optionsEn.some(x=>typeof x!=='string') || Object.keys(q).some(k=>!['id','es','en','optionsEs','optionsEn'].includes(k)))) return {ok:false,reason:'invalid_server_response'};
       const {data:{user:after}}=await client.auth.getUser();
@@ -25,7 +25,7 @@ window.PA203Grading = {
     try {
       const {data:{user},error:userError} = await client.auth.getUser();
       if (userError || !user || user.id !== expectedUserId) return {ok:false,reason:'account_changed'};
-      const {data,error} = await client.functions.invoke('grade-pa203',{
+      const {data,error} = await client.functions.invoke('b66-pa203-grade',{
         body:{action:'submit',assessmentKey,answers}
       });
       if (error) return {ok:false,reason:'grading_unavailable'};
