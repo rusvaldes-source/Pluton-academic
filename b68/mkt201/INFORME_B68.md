@@ -1,3 +1,5 @@
+> Actualización B69: el video de la lección 7 ya fue generado e integrado. Ver b69/mkt201/INFORME_B69.md. El contenido siguiente conserva el historial de la entrega B68.
+
 # MKT-201 — B68 — 18 octubre 2026
 Estado: publicación autorizada por Ruslan el 18 octubre 2026, dejando pendiente el video de la lección 7. Se publica con siete videos; no se considera completada la parte audiovisual.
 ## Inventario y trabajo

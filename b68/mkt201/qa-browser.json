@@ -8,7 +8,7 @@
     "code": "MKT-201",
     "lesson": 1,
     "video": {
-      "time": 0.514355,
+      "time": 0.508766,
       "duration": 50.135,
       "width": 1280,
       "height": 720,
@@ -19,7 +19,7 @@
     "code": "MKT-201",
     "lesson": 2,
     "video": {
-      "time": 0.513423,
+      "time": 0.520244,
       "duration": 50.04,
       "width": 1280,
       "height": 720,
@@ -30,7 +30,7 @@
     "code": "MKT-201",
     "lesson": 3,
     "video": {
-      "time": 0.509686,
+      "time": 0.507758,
       "duration": 49.608,
       "width": 1280,
       "height": 720,
@@ -41,7 +41,7 @@
     "code": "MKT-201",
     "lesson": 4,
     "video": {
-      "time": 0.515737,
+      "time": 0.514562,
       "duration": 48.28,
       "width": 1280,
       "height": 720,
@@ -52,7 +52,7 @@
     "code": "MKT-201",
     "lesson": 5,
     "video": {
-      "time": 0.506184,
+      "time": 0.51632,
       "duration": 49.452,
       "width": 1280,
       "height": 720,
@@ -63,8 +63,19 @@
     "code": "MKT-201",
     "lesson": 6,
     "video": {
-      "time": 0.516776,
+      "time": 0.512965,
       "duration": 52.28,
+      "width": 1280,
+      "height": 720,
+      "muted": false
+    }
+  },
+  {
+    "code": "MKT-201",
+    "lesson": 7,
+    "video": {
+      "time": 0.518547,
+      "duration": 26.412,
       "width": 1280,
       "height": 720,
       "muted": false
@@ -74,7 +85,7 @@
     "code": "MKT-201",
     "lesson": 8,
     "video": {
-      "time": 0.510352,
+      "time": 0.51164,
       "duration": 52.2,
       "width": 1280,
       "height": 720,

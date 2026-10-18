@@ -48,11 +48,13 @@
     },
     {
       "lesson": 7,
-      "id": "547bbc75be85c9445237eb683a2ae41f",
-      "status": "failed",
-      "failureCode": "AVATAR_IV_VIDEO_GENERATION_OUT_OF_CREDIT",
-      "failureMessage": "Insufficient credits. Upgrade to continue.",
-      "storage_url": null
+      "id": "8e35afae9cc7cf4673a3dff7a3eb0687",
+      "status": "completed",
+      "storage_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_07_8e35afae9cc7cf4673a3dff7a3eb0687.mp4",
+      "previous_failed_id": "547bbc75be85c9445237eb683a2ae41f",
+      "duration": 26.4098,
+      "type": "educational_summary",
+      "original_script": "Las métricas necesitan definiciones, un periodo y denominadores claros. En el ejemplo ficticio tenemos cien visitas, ocho consultas nuevas relevantes procedentes de esas visitas y dos solicitudes aceptadas entre esas consultas. Ocho dividido entre cien es ocho por ciento. Dos dividido entre ocho es veinticinco por ciento. Dos dividido entre cien es dos por ciento. Cada cálculo responde una pregunta distinta. Una aceptación no demuestra pago ni que una publicación haya causado el resultado. Con cero visitas, la tasa de consultas por visita no se puede calcular; un dato desconocido tampoco equivale a cero. Tu ejercicio es preparar un tablero con cantidades, tasas y una limitación, y proponer una mejora sin prometer ventas."
     },
     {
       "lesson": 8,
@@ -89,7 +91,7 @@
     ],
     [
       "Métricas esenciales",
-      "Las métricas necesitan definiciones, un periodo y denominadores claros. En el ejemplo ficticio tenemos cien visitas, ocho consultas nuevas relevantes procedentes de esas visitas y dos solicitudes aceptadas entre esas consultas. Ocho dividido entre cien es ocho por ciento. Dos dividido entre ocho es veinticinco por ciento. Dos dividido entre cien es dos por ciento. Cada cálculo responde una pregunta distinta. Una aceptación no demuestra pago ni que una publicación haya causado el resultado. Con cero visitas, la tasa de consultas por visita no se puede calcular; un dato desconocido tampoco equivale a cero. Tu ejercicio es preparar un tablero con cantidades, tasas y una limitación, y proponer una mejora sin prometer ventas."
+      "En el ejemplo ficticio de Brisa hay cien visitas, ocho consultas y dos solicitudes aceptadas. La tasa de consultas es ocho por ciento. Las aceptaciones entre consultas son veinticinco por ciento; entre visitas, dos por ciento. Revisa siempre el denominador. Una aceptación no demuestra pago. Con cero visitas, la tasa por visita no está definida."
     ],
     [
       "Proyecto práctico final",
