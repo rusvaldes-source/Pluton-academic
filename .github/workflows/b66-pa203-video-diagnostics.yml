@@ -68,3 +68,42 @@ jobs:
           })().catch(e=>{console.error('BROWSER_TEST_ERROR',e);process.exitCode=1});
           EOF
           node check.cjs
+
+      - name: Audit all lesson text, bilingual mode, quizzes and local progress
+        shell: bash
+        run: |
+          cd /tmp/pa203-browser
+          cat > audit.cjs <<'EOF'
+          const {chromium}=require('playwright');
+          (async()=>{const browser=await chromium.launch({channel:'chrome',headless:true,args:['--no-sandbox']});const page=await browser.newPage();
+            await page.goto('https://www.plutonacademic.com/b66/pa203/pa203-prueba.html',{waitUntil:'domcontentloaded',timeout:45000});
+            await page.waitForSelector('#lesson option',{timeout:30000});
+            let errors=[];
+            for(let i=0;i<8;i++){
+              await page.locator('#lesson').selectOption(String(i));
+              const es=await page.locator('#content').innerText();
+              if(es.length<400)errors.push('lesson '+(i+1)+' ES text too short '+es.length);
+              await page.locator('#switchLanguage').click();
+              const en=await page.locator('#content').innerText();
+              if(en.length<400||en===es)errors.push('lesson '+(i+1)+' EN text missing or unchanged');
+              console.log('CONTENT_CHECK',i+1,'ES',es.length,'EN',en.length,'distinct',es!==en);
+              await page.locator('#switchLanguage').click();
+            }
+            const quizzes=await page.locator('#assessment option').count();console.log('ASSESSMENTS',quizzes);
+            for(let i=0;i<quizzes;i++){
+              await page.locator('#assessment').selectOption(String(i));
+              const questions=await page.locator('#quiz section').count();
+              if(questions<1)errors.push('assessment '+i+' has no questions');
+              console.log('QUIZ_CHECK',i,'questions',questions);
+            }
+            await page.locator('#lesson').selectOption('0');
+            await page.locator('#markComplete').click();
+            const progress=await page.locator('#progress').innerText();
+            console.log('PROGRESS_CHECK',progress);
+            if(!progress.includes('1/8'))errors.push('local progress did not update');
+            console.log('OFFICIAL_GRADING_DISABLED',await page.locator('#officialSubmit').isDisabled());
+            console.log('AUDIT_ERRORS',JSON.stringify(errors));
+            await browser.close();if(errors.length)process.exitCode=1;
+          })().catch(e=>{console.error('AUDIT_ERROR',e);process.exitCode=1});
+          EOF
+          node audit.cjs
