@@ -97,7 +97,7 @@ jobs:
               console.log('QUIZ_CHECK',i,'questions',questions);
             }
             await page.locator('#lesson').selectOption('0');
-            await page.locator('#markComplete').click();
+            await page.locator('#markComplete').click({timeout:10000,noWaitAfter:true});
             const progress=await page.locator('#progress').innerText();
             console.log('PROGRESS_CHECK',progress);
             if(!progress.includes('1/8'))errors.push('local progress did not update');
@@ -106,4 +106,4 @@ jobs:
             await browser.close();if(errors.length)process.exitCode=1;
           })().catch(e=>{console.error('AUDIT_ERROR',e);process.exitCode=1});
           EOF
-          node audit.cjs
+          timeout 120s node audit.cjs
