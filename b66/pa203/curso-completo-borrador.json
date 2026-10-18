@@ -1,0 +1,1221 @@
+{
+  "version": "B66",
+  "code": "PA-203",
+  "state": "draft-corrected-not-published",
+  "source": {
+    "materiales_sha": "c0b940c28328e0f877101311b819a6534a82d821",
+    "catalog_sha": "35c6cfdb7c077009b4d834256f0a4936757905a4"
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "title": "01 01 Organización digital",
+      "text": "Organización digital / Digital organization\nESPAÑOL\nORGANIZACIÓN DIGITAL\nObjetivo\nAl terminar, podrás crear una estructura de carpetas, nombrar documentos de forma consistente y distinguir una copia de seguridad de un archivo de trabajo.\n1. Organizar antes de usar IA\nUsa carpetas con nombres claros, copias de seguridad y permisos adecuados para organizar documentos. Si no sabes cuál es la versión vigente, una herramienta de IA puede ayudarte a redactar sobre información equivocada. Antes de pedir un resumen o un correo, identifica la fuente que realmente necesitas.\n2. Una estructura sencilla\nImagina un negocio ficticio de mantenimiento llamado Sol Servicios. Su carpeta principal puede contener: 01_Administración, 02_Clientes, 03_Operaciones y 04_Plantillas. Dentro de un proyecto, separa Entrada, Trabajo y Entrega. Entrada conserva los materiales recibidos; Trabajo contiene borradores; Entrega reúne documentos revisados. Mantén la estructura pequeña y comprensible para quien la utilice.\n3. Nombres que se entienden\nUn nombre útil indica fecha, asunto y versión. Ejemplo: 2026-10-11_SolServicios_Propuesta_v01. Para la revisión siguiente, usa v02. Evita nombres como final_final_ahora_si: no permiten reconocer el orden. Una fecha con año, mes y día ayuda a ordenar archivos, pero no sustituye el historial de versiones de la herramienta que uses. Comprueba también la extensión: un documento editable y un PDF tienen usos diferentes.\n4. Respaldo y acceso\nEl archivo de trabajo es el que estás modificando. El respaldo es una copia recuperable que permite volver a una situación anterior. Tener dos archivos dentro de la misma carpeta no protege frente a perder esa carpeta. Mantén un respaldo independiente y prueba que puedas abrirlo. Una carpeta sincronizada puede reflejar una eliminación: revisa qué recuperación o historial ofrece tu servicio. No compartas contraseñas. Da acceso únicamente a quien lo necesita y distingue permiso para ver de permiso para editar.\n5. Preparar una fuente para IA\nSelecciona solo la información necesaria. Para practicar, usa datos ficticios y un texto breve. Indica el nombre y la versión de la fuente. Guarda la respuesta como borrador, conserva el original y revisa antes de entregar. No permitas que un texto generado sustituya silenciosamente la información inicial.\nEjemplo resuelto\nRecibes una solicitud ficticia: “Sol Servicios necesita una propuesta de limpieza de oficina para el viernes. Falta confirmar el tamaño del local”. Conserva la solicitud en Entrada. Crea un borrador de propuesta en Trabajo con la fecha y v01. Marca el tamaño como “pendiente de confirmar”; no lo inventes. Después de revisar condiciones y datos, guarda la versión aprobada en Entrega y conserva un respaldo.\nPráctica\nCrea una carpeta para un negocio ficticio con tres subcarpetas: Entrada, Trabajo y Entrega. Escribe cinco nombres de archivo; uno debe ser una revisión v02. Indica quién puede ver y quién puede editar. Describe dónde estaría el respaldo y cómo comprobarías su recuperación. Puedes hacerlo en papel si aún no quieres crear carpetas.\nRetroalimentación\nUna buena respuesta permite identificar la fuente original, encontrar el documento vigente y recuperar una copia. Si todos los archivos se llaman “documento” o todos pueden editar, revisa tu estructura. Si tu respaldo depende del mismo lugar que podrías perder, plantea una copia independiente.\nComprobación\n¿Qué ayuda a proteger documentos? Las copias de seguridad. ¿Compartir una contraseña equivale a otorgar un permiso adecuado? No: el acceso debe asignarse mediante los controles del servicio.\nEntrega de la actividad\nPresenta un mapa de carpetas, cinco nombres de archivo y una explicación de respaldo y permisos. Guarda esta actividad: la utilizarás en el proyecto final.\nENGLISH\nDIGITAL ORGANIZATION\nObjective\nBy the end, you will be able to create a folder structure, name documents consistently, and distinguish a backup from a working file.\n1. Organize before using AI\nUse clear folder names, backups and appropriate permissions to organize documents. If you do not know which version is current, an AI tool may help you write from incorrect information. Before requesting a summary or email, identify the source you actually need.\n2. A simple structure\nImagine a fictional maintenance business called Sol Services. Its main folder might contain 01_Administration, 02_Customers, 03_Operations and 04_Templates. Within a project, separate Input, Work and Delivery. Input holds received materials; Work contains drafts; Delivery contains reviewed documents. Keep the structure small and understandable to its users.\n3. Understandable names\nA useful name identifies the date, subject and version. Example: 2026-10-11_SolServices_Proposal_v01. Use v02 for the next revision. Avoid names such as final_final_this_one: they do not show sequence. A year-month-day date helps sort files, but does not replace your tool’s version history. Check the file extension too: an editable document and a PDF serve different purposes.\n4. Backup and access\nThe working file is the one you are editing. A backup is a recoverable copy that lets you return to an earlier state. Two files in the same folder do not protect against losing that folder. Keep an independent backup and test that you can open it. A synchronized folder may reflect a deletion: check your service’s recovery or history features. Do not share passwords. Give access only to people who need it, and distinguish viewing from editing permission.\n5. Prepare a source for AI\nSelect only necessary information. Use fictional data and a short text for practice. Identify the source name and version. Save the output as a draft, keep the original and review before delivery. Do not let generated text silently replace the starting information.\nWorked example\nYou receive a fictional request: “Sol Services needs an office-cleaning proposal for Friday. The office size still needs confirmation”. Keep the request in Input. Create a dated v01 proposal draft in Work. Mark the size as “to be confirmed”; do not invent it. After reviewing terms and details, place the approved version in Delivery and retain a backup.\nPractice\nCreate a folder for a fictional business with Input, Work and Delivery subfolders. Write five file names, including a v02 revision. Identify who may view and who may edit. Explain where the backup would be kept and how you would test recovery. You may complete the exercise on paper.\nFeedback\nA good solution identifies the original source, makes the current document easy to find and allows recovery. If every file is called “document” or everyone can edit, revise your structure. If the backup depends on the same location you could lose, plan an independent copy.\nKnowledge check\nWhat helps protect documents? Backups. Does sharing a password provide appropriate access? No: assign access through the service’s permission controls.\nActivity submission\nSubmit a folder map, five file names, and an explanation of backup and permissions. Keep this activity for your final project.It's an introductory example, not a required software setup. You can adapt the structure to your work.\n",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/01_01_Organización_digital/contenido_original_ES_EN.txt",
+      "video": "b64/videos/PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4",
+      "video_status": "not_browser_verified"
+    },
+    {
+      "number": 2,
+      "title": "02 02 Uso responsable de IA",
+      "text": "Uso responsable de IA / Responsible AI use\nESPAÑOL\nUSO RESPONSABLE DE IA\nObjetivo\nAl terminar, podrás distinguir un borrador generado de información comprobada, revisar una respuesta y decidir qué datos debes excluir de una práctica.\n1. La respuesta es un punto de partida\nVerifica las respuestas de la IA y evita introducir datos privados o sensibles en servicios no autorizados. Una respuesta clara puede contener errores, supuestos o detalles inventados. Su tono convincente no demuestra exactitud. Utiliza la IA como apoyo para preparar y mejorar un borrador; conserva la responsabilidad de revisar lo que entregas.\n2. Define la tarea y la fuente\nAntes de escribir una instrucción, pregunta: ¿qué necesito producir?, ¿para quién?, ¿qué información tengo?, ¿cómo comprobaré el resultado? Para resumir un texto, entrega un material breve y pide que use únicamente esa fuente. Para redactar un correo, proporciona hechos ficticios y marca lo que falta. Si necesitas datos actuales, contrástalos con una fuente vigente; no des por hecho que la herramienta tiene información actualizada.\n3. Una instrucción con límites\nEjemplo: “Usa únicamente el texto que aparece abajo. Escribe un correo breve y amable para confirmar que recibimos la solicitud. No inventes precio, horario ni condiciones. Si falta un dato, márcalo como pendiente. Termina con una pregunta para aclarar lo necesario”. Este ejemplo define tarea, tono y límites. Aun así, debes revisar la respuesta; una instrucción no garantiza que se cumpla cada requisito.\n4. Protege la información\nPara estas actividades, utiliza nombres y situaciones ficticias. Excluye contraseñas, datos financieros, documentos de identidad, información de pacientes, direcciones particulares y detalles de terceros. Cambiar un nombre no vuelve anónimo un expediente si otros datos permiten reconocer a alguien. En un trabajo real, sigue las reglas de tu organización y utiliza solo servicios autorizados. Cuando no tengas certeza de qué puedes compartir, practica con información inventada o pública que puedas utilizar.\n5. Revisa en cuatro pasos\nFuente: compara cada afirmación con el material original.\nHechos: detecta fechas, cantidades, nombres y condiciones añadidos.\nUtilidad: comprueba que el texto responde a la tarea y se entiende.\nEntrega: corrige errores, retira datos innecesarios y marca incertidumbres antes de enviar.\nSi la IA propone un enlace o una referencia, comprueba que exista y que sostenga realmente la afirmación. Guardar un enlace no equivale a verificar su contenido.\nCaso resuelto\nFuente ficticia: “El cliente solicita limpieza de una oficina. Desea atención el viernes. No indicó tamaño ni dirección. El negocio aún no confirmó disponibilidad”.\nBorrador generado de ejemplo, preparado para esta lección: “Confirmamos su limpieza para este viernes a las 9:00. El servicio cuesta $150 y tardará dos horas”.\nProblemas: la fuente no confirma disponibilidad, hora, precio ni duración. La redacción transforma una solicitud en un compromiso.\nVersión revisada: “Gracias por su solicitud de limpieza para el viernes. Para revisar disponibilidad y preparar una propuesta, ¿podría indicar el tamaño aproximado de la oficina y la zona donde se encuentra? Confirmaremos los detalles después de revisar esa información”.\nLa versión revisada reconoce la solicitud y pide datos; no inventa condiciones.\nPráctica\nUsa esta fuente ficticia: “Un negocio recibió una consulta sobre pintura de una habitación. El cliente no indicó medidas, estado de paredes ni fecha deseada”. Revisa este borrador de ejemplo: “Podemos pintar mañana por $200, materiales incluidos”. Señala cuatro datos no confirmados y escribe una respuesta corregida de entre 50 y 90 palabras. No necesitas una herramienta de IA para completar esta actividad.\nRetroalimentación\nLa respuesta debe identificar disponibilidad para mañana, precio, alcance/materiales y características necesarias para calcular el trabajo. Debe pedir aclaraciones y evitar promesas. Una solución posible comienza: “Gracias por consultar. Para preparar una propuesta, necesitamos conocer las medidas aproximadas, el estado de las paredes y la fecha que prefiere...”. Puede haber varias respuestas correctas si respetan la fuente y la tarea.\nComprobación\n¿Qué debes hacer con respuestas de IA? Verificarlas. ¿Qué texto merece más confianza: uno convincente o uno contrastado con su fuente? La verificación aporta evidencia; la seguridad del tono no la sustituye.\nEntrega de la actividad\nGuarda el borrador, los errores identificados y tu versión corregida. Añade tres frases: qué comprobaste, qué falta confirmar y qué información decidiste no compartir. Esta actividad forma parte de tu proyecto final.\nENGLISH\nRESPONSIBLE AI USE\nObjective\nBy the end, you will be able to distinguish a generated draft from checked information, review a response and decide which data to exclude from practice.\n1. The response is a starting point\nVerify AI outputs and avoid entering private or sensitive data into unauthorized services. A clear response may contain errors, assumptions or invented details. A confident tone does not prove accuracy. Use AI to help prepare and improve a draft, while retaining responsibility for reviewing what you deliver.\n2. Define the task and source\nBefore writing an instruction, ask: what do I need to produce, for whom, what information do I have, and how will I check the result? To summarize, provide a short source and request that the response use only that material. To draft an email, supply fictional facts and identify missing details. Check current facts against a current source rather than assuming the tool is up to date.\n3. Give boundaries\nExample: “Use only the text below. Write a short, polite email acknowledging the request. Do not invent a price, time or terms. Mark missing details as pending. End with a question to clarify what is needed”. This defines the task, tone and limits. You must still review the response; instructions do not guarantee compliance.\n4. Protect information\nUse fictional names and situations for these activities. Exclude passwords, financial information, identity documents, patient information, private addresses and third-party details. Changing a name does not anonymize a record if other details identify someone. At work, follow organizational rules and use only authorized services. When uncertain about what you may share, practice with invented or appropriately usable public information.\n5. Review in four steps\nSource: compare each statement with the original material.\nFacts: identify added dates, amounts, names and terms.\nUsefulness: check that the text addresses the task clearly.\nDelivery: correct errors, remove unnecessary information and mark uncertainty before sending.\nIf AI proposes a link or reference, verify that it exists and supports the claim. Saving a link is not the same as checking its contents.\nWorked case\nFictional source: “The customer requests office cleaning on Friday. No size or address was provided. The business has not confirmed availability”.\nIllustrative generated draft prepared for this lesson: “Your cleaning is confirmed for Friday at 9:00. The service costs $150 and will take two hours”.\nProblems: the source confirms neither availability, time, price nor duration. The draft turns a request into a commitment.\nReviewed version: “Thank you for your Friday cleaning request. To check availability and prepare a proposal, could you provide the approximate office size and area? We will confirm the details after reviewing that information”.\nThe reviewed version acknowledges the request and seeks details without inventing terms.\nPractice\nUse this fictional source: “A business received an inquiry about painting a room. The customer provided no dimensions, wall condition or preferred date”. Review this illustrative draft: “We can paint tomorrow for $200, materials included”. Identify four unconfirmed details and write a corrected response of 50–90 words. You do not need an AI tool to complete the activity.\nFeedback\nIdentify next-day availability, price, scope/materials and the missing details needed to estimate the work. Ask clarifying questions and avoid promises. One possible opening is: “Thank you for your inquiry. To prepare a proposal, we need the approximate dimensions, wall condition and preferred date...”. Several answers are acceptable if they respect the source and task.\nKnowledge check\nWhat should you do with AI answers? Verify them. Which deserves more trust: a confident text or one checked against its source? Verification provides evidence; confident tone does not replace it.\nActivity submission\nKeep the draft, the errors you identified and your corrected version. Add three statements: what you checked, what remains uncertain and what information you chose not to share. Use this activity in your final project.\n",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/02_02_Uso_responsable_de_IA/contenido_original_ES_EN.txt",
+      "video": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_02_2af2c139ccb79853b26a3096cee38e7b.mp4",
+      "video_status": "not_browser_verified"
+    },
+    {
+      "number": 3,
+      "title": "03 03 Instrucciones claras",
+      "text": "03 · INSTRUCCIONES CLARAS / CLEAR INSTRUCTIONS\nESPAÑOL\nObjetivo: al terminar, podrás convertir una petición vaga en una instrucción que incluya objetivo, contexto, información disponible, formato y límites. Podrás revisar si el resultado realmente cumple lo pedido.\nTiempo orientativo: 25–35 minutos, incluyendo la práctica.\n1. Empieza por la decisión que necesita la persona\nUna instrucción útil empieza con un propósito concreto. «Ayúdame con mi negocio» deja abierta casi cualquier respuesta. «Redacta un borrador de respuesta para pedir la información que falta antes de cotizar una limpieza» define una tarea revisable. El objetivo no es escribir muchas palabras: es facilitar la siguiente acción de quien recibe el mensaje.\n2. Cinco piezas para una instrucción\nOBJETIVO: ¿qué debe producir la IA y para qué?\nCONTEXTO: ¿quién escribe, quién recibe y cuál es la situación?\nDATOS: ¿qué información está confirmada y cuál falta?\nFORMATO: ¿correo, lista o tabla?, ¿qué extensión y tono necesita?\nLÍMITES: ¿qué no puede asumir, incluir ni prometer?\nLa revisión es una sexta acción que hace la persona: comparar el borrador con los datos originales antes de utilizarlo. Una instrucción clara reduce ambigüedades, pero no garantiza exactitud.\n3. Caso ficticio: Sol Servicios\nDatos confirmados: un cliente pide limpieza de una oficina para el viernes. No indicó dirección, tamaño, horario ni alcance del servicio. No hay precio aprobado ni disponibilidad confirmada.\nPetición débil: «Responde al cliente y dile que podemos hacerlo».\nProblema: esa frase pide confirmar algo que no sabemos. Una respuesta podría inventar disponibilidad, duración o precio. Aquí no estamos mostrando una ejecución real de un modelo; analizamos un ejemplo educativo.\nInstrucción mejorada:\n«Redacta un borrador en español para responder a un cliente de Sol Servicios. Objetivo: solicitar la información necesaria para evaluar una limpieza de oficina el viernes. Datos confirmados: el cliente pide limpieza de una oficina ese día. Datos pendientes: dirección, tamaño aproximado, horario preferido y tareas solicitadas. Formato: mensaje cordial de 60–90 palabras con saludo, preguntas y cierre. No inventes precio, disponibilidad, duración ni garantías; no confirmes la reserva. Usa únicamente los datos proporcionados. Si falta información para responder, indícala como pendiente.»\nBorrador de referencia:\n«Hola, gracias por contactar a Sol Servicios para la limpieza de su oficina el viernes. Para evaluar su solicitud, ¿podría indicarnos la dirección, el tamaño aproximado del espacio, el horario que prefiere y las tareas que necesita? Con esos datos podremos revisar el alcance y la disponibilidad antes de preparar una propuesta. El precio y la reserva quedan pendientes de confirmación. Gracias; esperamos su información para continuar.»\n4. Comprueba antes de usarlo\nCompara cada afirmación con los datos del caso. ¿Se menciona el viernes? Sí. ¿Se inventó una dirección? No. ¿Se confirma una reserva? No. ¿Se piden los cuatro datos pendientes? Sí. ¿El mensaje permite continuar la conversación? Sí. La respuesta puede tener varias redacciones correctas: la calidad depende de cumplir los criterios, no de copiar el ejemplo exactamente.\nRevisa también el tono y la extensión. Si falta una pregunta, mejora la instrucción: «Incluye explícitamente las cuatro preguntas pendientes y conserva el límite de 90 palabras». No arregles un error añadiendo una promesa que el negocio no puede confirmar.\n5. Práctica independiente\nCaso ficticio: una persona pide pintura de una habitación para el próximo mes. Sabemos que quiere pintar las paredes. Faltan medidas, estado de las superficies, ubicación, fecha preferida y quién aportará los materiales. No hay presupuesto aprobado ni disponibilidad confirmada.\nA. Escribe una instrucción con las cinco piezas. El mensaje final debe tener 70–100 palabras y pedir los cinco datos pendientes.\nB. Redacta tú un borrador o prueba tu instrucción con una herramienta a la que ya tengas acceso. No necesitas comprar un servicio. Usa solo datos ficticios; no pegues información privada de clientes.\nC. Subraya cada afirmación del borrador y comprueba su fuente. Marca cualquier dato inventado y corrígelo.\nD. Guarda la instrucción, el borrador revisado y una nota con dos cambios que hiciste. Utiliza la organización de carpetas de la lección 1.\n6. Respuesta orientativa y criterios\nUna instrucción adecuada identifica al destinatario, solicita medidas, estado, ubicación, fecha y materiales, especifica tono cordial y 70–100 palabras, y prohíbe inventar precio o confirmar trabajo. Debe pedir aclaración cuando falte información.\nEjemplo de cierre: «Con esa información podremos evaluar el alcance y preparar una propuesta. La fecha y el presupuesto quedan pendientes de confirmación».\nAutoevaluación: un punto por cada criterio cumplido: objetivo concreto; contexto suficiente; datos confirmados separados de pendientes; formato definido; límites explícitos; revisión sin afirmaciones inventadas. Si obtienes menos de seis, revisa los puntos faltantes. Esta autoevaluación es una práctica, no una certificación automática.\nPregunta de comprobación: ¿qué instrucción es más adecuada?\nA. «Pon un precio razonable para que el cliente acepte».\nB. «Pide los datos que faltan; no inventes precio ni confirmes la reserva».\nC. «Responde con seguridad aunque no tengas los datos».\nRespuesta: B. Permite avanzar con lo conocido y mantiene visibles las decisiones pendientes.\nENGLISH\nGoal: turn a vague request into a clear instruction with a goal, context, available facts, output format and limits. Check whether the result meets the request.\nSuggested study time: 25–35 minutes including practice.\n1. Start with a specific purpose\n“Help with my business” leaves the task undefined. “Draft a response asking for missing information before quoting an office cleaning” produces something you can review. The purpose is to make the recipient's next action clear.\n2. Five parts of an instruction\nGOAL: what should be produced and why?\nCONTEXT: who is writing, who receives it and what is happening?\nFACTS: what is confirmed and what is missing?\nFORMAT: message, list or table; length and tone?\nLIMITS: what must not be assumed, included or promised?\nHuman review comes next: compare the draft with the original facts before using it. Clear instructions do not guarantee accuracy.\n3. Fictional case: Sol Services\nConfirmed facts: a client requests office cleaning on Friday. Missing details: address, approximate size, preferred time and tasks. Price and availability are unconfirmed.\nWeak request: “Reply and say we can do it.” This asks for a commitment we cannot support.\nImproved instruction: “Draft a polite Spanish response for Sol Services requesting the details needed to evaluate office cleaning on Friday. Use only these confirmed facts: a client requests office cleaning that day. Ask for the address, approximate size, preferred time and tasks. Write 60–90 words with a greeting and closing. Do not invent a price, duration, availability or guarantees. Do not confirm a booking. Clearly identify pending information.”\nReference message: “Hello, thank you for contacting Sol Services about office cleaning on Friday. Could you share the address, approximate size, preferred time and tasks you need? These details will help us review the scope and availability before preparing a proposal. The price and booking remain subject to confirmation. Thank you; we look forward to your information so we can continue.”\nThis is an educational example, not a record of an actual model run.\n4. Review the result\nDoes it mention Friday? Does it ask for all four missing details? Does it avoid inventing a price or confirming a booking? Is the next action clear? Several different drafts can be correct if they meet the criteria. If a question is missing, ask for a revision that explicitly includes all four details within the word limit. Never replace missing evidence with a confident promise.\n5. Independent practice\nFictional case: a person wants the walls of one room painted next month. Missing details: dimensions, surface condition, location, preferred date and who provides materials. No approved budget or confirmed availability.\nA. Write an instruction using all five parts. Request a polite message of 70–100 words asking for the five missing details.\nB. Draft the message yourself or use a tool you already have access to. No purchase is required. Use fictional information only.\nC. Check every factual statement against the case. Identify and correct unsupported claims.\nD. Save the instruction, revised draft and a note describing two improvements, using the folder structure from lesson 1.\n6. Feedback and self-check\nA suitable instruction states the audience and purpose; asks for all five missing details; sets the tone and length; prohibits invented prices and commitments; and asks for clarification when needed.\nPossible closing: “With that information, we can evaluate the scope and prepare a proposal. The date and budget remain subject to confirmation.”\nGive yourself one point for each: specific goal; sufficient context; confirmed and missing facts separated; defined format; explicit limits; reviewed draft without invented claims. Revise any missing criteria. This is practice, not an automatic certification.\nKnowledge check: which instruction is better?\nA. “Choose a reasonable price so the client accepts.”\nB. “Ask for the missing details; do not invent a price or confirm the booking.”\nC. “Sound certain even if the details are missing.”\nAnswer: B. It moves the conversation forward while keeping pending decisions visible.\nPLUTÓN ACADEMIC · Tu futuro comienza con conocimiento.",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/03_03_Instrucciones_claras/contenido_original_ES_EN.txt",
+      "video": "b64/videos/PA-203_Leccion_03_b51d75a3472e644708f8c5862407214f.mp4",
+      "video_status": "not_browser_verified"
+    },
+    {
+      "number": 4,
+      "title": "04 04 Mejora con ejemplos",
+      "text": "04 · MEJORA CON EJEMPLOS / IMPROVE WITH EXAMPLES\nESPAÑOL\nObjetivo: mejorar una instrucción a partir de un resultado concreto, sin añadir datos inventados ni copiar información privada. Al terminar, podrás explicar qué cambiaste y por qué.\nTiempo orientativo: 25–35 minutos con la práctica.\n1. Revisar es un proceso, no una frase mágica\nUna primera respuesta puede ser útil y aun así necesitar correcciones. «Hazlo mejor» no identifica el problema. «Falta pedir la ubicación; añade esa pregunta y conserva el tono cordial y el máximo de 90 palabras» da una corrección comprobable. Trabaja en ciclos cortos: conserva el caso original, compara el borrador, identifica una diferencia, pide una revisión y vuelve a comprobar los hechos. Guarda la versión anterior para poder comparar.\n2. Un ejemplo enseña el estilo, no nuevos hechos\nPuedes aportar un ejemplo breve de tono o estructura. Debes decir qué quieres imitar: una pregunta clara, un cierre respetuoso o una organización en tres partes. No permitas que los datos del ejemplo se trasladen al caso actual.\nEjemplo ficticio de estilo: «Gracias por escribirnos. Para preparar una propuesta, necesitamos confirmar algunos detalles. En cuanto los recibamos, podremos revisar su solicitud».\nInstrucción: «Usa un tono parecido al ejemplo, sin copiar sus datos ni añadir promesas. El caso actual y sus datos confirmados son los únicos que puedes utilizar». Una muestra con un precio o una fecha no autoriza a ofrecerlos a otro cliente.\n3. Caso guiado: evaluar dos borradores\nContinuamos con Sol Servicios, negocio ficticio. El cliente pide limpieza de una oficina el viernes; faltan dirección, tamaño, horario y tareas. Precio y disponibilidad están pendientes.\nBorrador A: «Hola, con gusto limpiamos su oficina este viernes a las 9. El servicio cuesta 150 dólares y dura dos horas. Envíenos su dirección para confirmar».\nProblemas: inventa horario, precio y duración, y afirma disponibilidad. Solo pide uno de los cuatro datos pendientes. Un tono amable no corrige esos fallos.\nBorrador B: «Hola, gracias por su solicitud para el viernes. ¿Puede indicarnos la dirección, tamaño aproximado, horario preferido y tareas que necesita? Con esa información revisaremos el alcance y la disponibilidad antes de preparar una propuesta. El precio y la reserva quedan pendientes de confirmación».\nEl borrador B respeta los datos y permite continuar. Ambos son ejemplos escritos para esta lección, no resultados de una ejecución real de IA.\n4. Describe la corrección antes de pedirla\nPara corregir A, primero enumera los errores y vuelve a fijar los límites:\n«Revisa este borrador usando el caso original. Elimina el horario, precio, duración y confirmación de disponibilidad porque no están respaldados. Pide dirección, tamaño, horario preferido y tareas. Mantén un saludo cordial y un cierre que deje precio y reserva pendientes. Escribe 60–90 palabras. No agregues nuevos datos».\nDespués revisa el nuevo texto. Si mantiene el precio inventado, no lo uses. Puedes corregirlo tú o pedir otra revisión. La responsabilidad de aprobar el mensaje sigue siendo de la persona que lo enviará.\n5. No confundas revisión con validación independiente\nPedirle al mismo modelo «¿está correcto?» puede ayudar a detectar omisiones, pero no demuestra que un dato sea verdadero. Para hechos externos, compara con una fuente adecuada y actual. Para este caso ficticio, el enunciado es la fuente de los datos permitidos. Si hay contradicciones, conserva la pregunta pendiente en lugar de resolverla inventando información.\nNo añadas datos personales para conseguir un mejor tono. Usa etiquetas como Cliente A y detalles ficticios. No pegues teléfonos, documentos, direcciones privadas ni conversaciones reales para esta práctica.\n6. Ejercicio: mejorar una respuesta de pintura\nFuente del caso: una persona solicita pintura de las paredes de una habitación el próximo mes. Faltan medidas, estado de las superficies, ubicación, fecha preferida y quién aporta materiales. No hay presupuesto aprobado ni disponibilidad confirmada.\nBorrador con errores: «Podemos empezar el día 3 y terminar en una jornada. Por 300 dólares incluimos toda la pintura. Confirme su dirección y reservamos».\nA. Identifica al menos cuatro afirmaciones sin respaldo.\nB. Escribe una instrucción de revisión con los cinco datos pendientes y los límites de 70–100 palabras, tono cordial y ninguna promesa sin confirmar.\nC. Produce una respuesta revisada. Si usas una herramienta, utiliza el caso ficticio únicamente.\nD. Compara versiones en cuatro filas: dato inventado; información que faltaba; cambio realizado; razón del cambio. Conserva ambos borradores con v01 y v02, sin sobrescribir el primero.\n7. Respuestas orientativas\nAfirmaciones sin respaldo: inicio el día 3; duración de una jornada; precio de 300 dólares; materiales incluidos; disponibilidad y reserva ofrecidas.\nUna revisión adecuada elimina esas afirmaciones y pregunta por medidas, estado, ubicación, fecha preferida y materiales. Puede cerrar: «Con esos detalles podremos revisar el alcance y preparar una propuesta. La fecha y el presupuesto quedan pendientes de confirmación».\nEjemplo de fila de comparación: «Precio de 300 dólares — no había presupuesto aprobado — eliminé el precio — evita presentar una cifra inventada como compromiso».\nLista de control: ¿eliminaste las cinco afirmaciones no respaldadas?, ¿pediste los cinco datos?, ¿conservaste un tono respetuoso?, ¿cumpliste la extensión?, ¿guardaste las dos versiones?, ¿explicaste los cambios? Revisa cualquier criterio que no cumplas.\nPregunta de comprobación: un ejemplo contiene un precio de 150 dólares, pero el caso actual no tiene precio aprobado. ¿Qué debes hacer?\nA. Copiar el precio porque aparece en el ejemplo.\nB. Usarlo como precio provisional sin avisar.\nC. Imitar la estructura y mantener el precio pendiente.\nRespuesta: C. Un ejemplo de estilo no es evidencia del precio del caso actual.\nENGLISH\nGoal: improve an instruction using a specific draft, without inventing facts or copying private information. Explain what changed and why.\nSuggested study time: 25–35 minutes with practice.\n1. Revision is a process\n“Make it better” does not identify an error. “The location question is missing; add it while keeping a polite tone and a 90-word maximum” gives a testable correction. Keep the original case, compare the draft, identify a gap, request a revision and check the facts again. Preserve the earlier version for comparison.\n2. Examples show style, not new facts\nA short sample can demonstrate tone or structure. Specify what to imitate: a clear question, respectful closing or three-part structure. Facts in the example must not transfer into a different case.\nFictional style sample: “Thank you for contacting us. We need to confirm a few details before preparing a proposal. Once we receive them, we can review your request.”\nInstruction: “Use a similar tone without copying facts or adding promises. Use only the confirmed facts from the current case.” A date or price in a sample does not authorize an offer to another client.\n3. Compare two drafts\nFictional case: a client requests office cleaning on Friday. Address, size, preferred time and tasks are missing. Price and availability are unconfirmed.\nDraft A: “We will clean your office Friday at 9. The price is $150 and it takes two hours. Send your address to confirm.” This invents time, price, duration and availability. It asks for only one of four missing details.\nDraft B: “Thank you for your Friday cleaning request. Could you share the address, approximate size, preferred time and tasks? We will use those details to review the scope and availability before preparing a proposal. The price and booking remain subject to confirmation.” This respects the case and makes the next step clear.\nThese are educational drafts, not records of actual AI outputs.\n4. Specify the revision\n“Revise draft A using the original case. Remove the unsupported time, price, duration and availability claim. Ask for the address, size, preferred time and tasks. Keep a polite greeting and a closing that leaves price and booking unconfirmed. Write 60–90 words. Do not add new facts.”\nCheck the revised text. If it still contains an invented price, do not use it. Correct it or request another revision. The person sending the message remains responsible for approving it.\n5. Review is not independent validation\nAsking the same model “Is this correct?” may help detect omissions but does not prove a fact. Compare external claims with an appropriate current source. In this fictional exercise, the case statement defines the permitted facts. Leave conflicting or missing details unresolved rather than inventing an answer. Use fictional labels such as Client A; do not paste private customer conversations or identifiers.\n6. Independent exercise\nCase: a person requests painting the walls of one room next month. Missing: dimensions, surface condition, location, preferred date and who provides materials. Budget and availability are unconfirmed.\nFaulty draft: “We can start on the 3rd and finish in one day. For $300 we include all paint. Confirm your address and we will book it.”\nA. Identify at least four unsupported claims.\nB. Write a revision instruction that asks for all five missing details; requires 70–100 words and a polite tone; and prohibits unconfirmed promises.\nC. Produce the revised message using only fictional data.\nD. Compare versions using four fields: unsupported claim; missing information; change made; reason. Save v01 and v02 without overwriting the first draft.\n7. Feedback\nUnsupported claims: starting on the 3rd, one-day duration, $300 price, included paint, and offered availability/booking. Remove them. Ask for dimensions, condition, location, preferred date and materials. A suitable closing leaves date and budget subject to confirmation.\nExample comparison: “$300 price — no approved budget — removed the price — avoids turning an invented figure into a commitment.”\nSelf-check: all unsupported claims removed; five details requested; respectful tone; word limit met; both versions saved; changes explained. Revise any unmet criterion.\nKnowledge check: a sample includes a $150 price, but the current case has no approved price. What should you do?\nA. Copy it because it appears in the sample.\nB. Use it provisionally without saying so.\nC. Imitate the structure and leave the price pending.\nAnswer: C. A style sample is not evidence of the current case's price.\nPLUTÓN ACADEMIC · Tu futuro comienza con conocimiento.",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/04_04_Mejora_con_ejemplos/contenido_original_ES_EN.txt",
+      "video": "b64/videos/PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4",
+      "video_status": "not_browser_verified"
+    },
+    {
+      "number": 5,
+      "title": "05 05 Correos profesionales",
+      "text": "05 · CORREOS PROFESIONALES / PROFESSIONAL EMAILS\nESPAÑOL\nObjetivo: preparar un correo profesional con ayuda de IA sin alterar hechos ni comprometer fechas, precios o decisiones que no han sido aprobados. Al terminar podrás explicar qué debe hacer el destinatario y revisar el borrador antes de enviarlo.\nTiempo orientativo: 25–35 minutos, incluyendo la práctica.\n1. Un correo, una acción principal\nAntes de escribir, define qué necesitas: solicitar datos, confirmar una decisión ya aprobada o dar seguimiento. Si mezclas varios objetivos, el destinatario puede no saber qué responder. «Solicitar el tamaño de la oficina para preparar una propuesta» es más claro que «hablar de la limpieza». El asunto debe orientar sobre esa acción sin prometer un resultado.\n2. Estructura en cinco partes\nASUNTO: breve y relacionado con la acción.\nSALUDO: respetuoso y apropiado al contexto.\nCONTEXTO: explica en una o dos frases por qué escribes.\nSOLICITUD: indica los datos o la decisión que necesitas. Usa preguntas concretas.\nCIERRE: señala el siguiente paso y agradece; no añadas plazos o compromisos no autorizados.\nUna firma identifica al remitente, pero en esta práctica usaremos un negocio ficticio y ningún dato privado. No necesitas poner número de teléfono ni dirección personal.\n3. Diferencia entre pedir y confirmar\n«¿Qué horario prefiere?» solicita un dato. «Llegaremos el viernes a las 9» confirma un compromiso. La segunda frase exige disponibilidad y acuerdo reales; no se deduce de una solicitud del cliente. Si el acuerdo todavía no existe, mantén la pregunta abierta. Tampoco conviertas «nos interesa revisar» en «aceptamos la propuesta».\n4. Caso ficticio: solicitud de información\nSol Servicios recibió una consulta para limpieza de oficina el viernes. Faltan dirección, tamaño aproximado, horario preferido y tareas. No hay precio ni reserva confirmados.\nInstrucción para un borrador: «Redacta un correo cordial en español de 90–130 palabras para solicitar los cuatro datos pendientes del caso. Incluye asunto, saludo, contexto, preguntas y cierre. Usa únicamente los datos confirmados. No prometas disponibilidad, precio ni plazo de respuesta. Deja claro que la propuesta y reserva necesitan revisión. Firma como Equipo de Sol Servicios».\nModelo de referencia:\nAsunto: Información para evaluar la limpieza de su oficina\nHola:\nGracias por escribirnos sobre la limpieza de su oficina para el viernes. Para revisar el alcance de su solicitud, ¿podría indicarnos la dirección, el tamaño aproximado del espacio y el horario que prefiere? También necesitamos conocer las tareas que desea incluir, por ejemplo las áreas que requieren atención, sin dar por hecho servicios que aún no se han acordado.\nCon esos datos podremos evaluar el alcance y la disponibilidad antes de preparar una propuesta. El precio y la reserva quedan pendientes de confirmación.\nGracias por su información.\nEquipo de Sol Servicios\nEste modelo es un ejemplo educativo escrito para el curso; no fue enviado a un cliente.\n5. Adaptar el tono sin cambiar la información\nUn correo más formal puede usar «¿podría indicarnos…?». Uno más cercano puede usar «¿nos comparte…?». Ambos pueden ser correctos. Elige el trato según el contexto y úsalo de forma consistente. Cambiar el tono no autoriza a inventar descuentos, urgencia ni garantías.\nEvita un asunto como «Reserva confirmada» si solo estás solicitando datos. Para recordar una respuesta pendiente, «Seguimiento de su solicitud de limpieza» describe el propósito sin presionar con plazos inventados. Una fecha límite solo debe añadirse si está confirmada y es apropiada.\n6. Revisión antes del envío\nCompara el correo con el caso original: ¿la acción principal es clara?, ¿aparecen todos los datos pendientes?, ¿hay alguna afirmación sin fuente?, ¿asunto y contenido coinciden?, ¿el tono es respetuoso?, ¿el siguiente paso está claro? Revisa destinatario y firma en el sistema de correo real antes de cualquier envío. Una respuesta generada es un borrador; esta actividad no envía mensajes automáticamente.\n7. Práctica independiente\nCaso ficticio: Sol Servicios desea dar seguimiento a una consulta de pintura de paredes para el próximo mes. El cliente todavía no informó medidas, estado de las superficies, ubicación, fecha preferida ni quién aportará los materiales. No se ha enviado una cotización ni aprobado una reserva.\nA. Define la acción principal en una frase.\nB. Escribe una instrucción para un correo de 100–140 palabras que pida los cinco datos pendientes. Incluye asunto, tono y límites.\nC. Redacta el correo tú o usa una herramienta que ya tengas. Trabaja solo con información ficticia; no necesitas comprar nada.\nD. Revisa el resultado y anota dos mejoras. Guarda la instrucción y la versión revisada. No envíes el ejercicio a un cliente real.\n8. Respuestas orientativas y criterios\nAcción principal posible: «Solicitar los datos faltantes para evaluar una propuesta de pintura».\nAsunto adecuado: «Datos para revisar su solicitud de pintura». Asunto inadecuado: «Pintura reservada para el día 3», porque la reserva y fecha no están acordadas.\nEl correo debe pedir medidas, estado, ubicación, fecha y materiales; no anunciar precio, duración ni disponibilidad. Un cierre adecuado deja presupuesto y reserva pendientes de revisión.\nAutoevaluación: objetivo único; asunto preciso; cinco datos solicitados; cero compromisos inventados; tono consistente; siguiente paso claro; revisión y archivo de la versión. Si falta algún criterio, corrige el borrador antes de considerarlo terminado.\nPregunta: el cliente pidió un servicio, pero no existe una reserva aprobada. ¿Qué asunto corresponde?\nA. Reserva confirmada.\nB. Datos para evaluar su solicitud.\nC. Última oportunidad para pagar hoy.\nRespuesta: B. Describe la acción real sin inventar un acuerdo ni una urgencia.\nENGLISH\nGoal: prepare a professional email with AI assistance while preserving facts and avoiding unapproved commitments. Identify the recipient's next action and review the draft before sending it.\nSuggested study time: 25–35 minutes including practice.\n1. One email, one main action\nDecide whether you need to request information, confirm an approved decision or follow up. “Ask for the office size before preparing a proposal” is clearer than “talk about cleaning.” The subject should describe the action without promising an outcome.\n2. Five parts\nSUBJECT: brief and connected to the action.\nGREETING: respectful and suitable for the context.\nCONTEXT: explain why you are writing in one or two sentences.\nREQUEST: ask for specific details or a decision.\nCLOSING: explain the next step and thank the recipient without inventing deadlines or commitments.\nUse a fictional business signature for this practice. Personal phone numbers and addresses are unnecessary.\n3. Requesting is different from confirming\n“What time do you prefer?” asks a question. “We will arrive Friday at 9” makes a commitment that requires a real agreement. Do not turn a request into a booking or an interest into acceptance. Keep unapproved decisions open.\n4. Fictional case and model\nA client requests office cleaning on Friday. Address, approximate size, preferred time and tasks are missing. Price and booking are unconfirmed.\nInstruction: “Draft a polite email requesting the four missing details. Include subject, greeting, context, questions and closing. Use confirmed facts only. Do not promise availability, price or a response deadline. Leave the proposal and booking subject to review. Sign as the Sol Services Team.”\nReference:\nSubject: Details needed to review your office cleaning request\nHello,\nThank you for contacting us about office cleaning on Friday. To review the scope, could you share the address, approximate size and preferred time? Please also describe the tasks and areas needing attention, without assuming services that have not been agreed.\nThese details will help us review the scope and availability before preparing a proposal. The price and booking remain subject to confirmation.\nThank you for your information.\nSol Services Team\nThis educational model has not been sent to a client.\n5. Adjust tone, preserve facts\nA more formal or friendly version may be appropriate depending on the audience. Keep the chosen form of address consistent. Tone changes do not authorize invented discounts, urgency or guarantees. “Follow-up on your cleaning request” is suitable when information is pending. “Booking confirmed” is not. Add a deadline only when it has been approved and is appropriate.\n6. Before sending\nCheck the original case: clear action, all missing details requested, no unsupported claims, accurate subject, respectful tone and clear next step. Verify the actual recipient and signature before sending a real message. Generated text is a draft; this activity does not send emails automatically.\n7. Independent practice\nFictional case: follow up on a wall-painting request for next month. Dimensions, surface condition, location, preferred date and materials provider are missing. No quotation or booking has been approved.\nA. State the main action in one sentence.\nB. Write an instruction for a polite 100–140-word email asking for all five details; specify subject and limits.\nC. Draft it yourself or use a tool you already have. Use fictional information only; no purchase is needed.\nD. Review it, describe two improvements and save the instruction and revised version. Do not send the exercise to a real client.\n8. Feedback\nSuitable main action: request the details needed to evaluate a painting proposal.\nSuitable subject: “Details for reviewing your painting request.” An invented booking date in the subject is inappropriate.\nAsk for all five missing details and avoid prices, duration and availability claims. Leave the proposal and booking subject to review.\nSelf-check: one purpose; accurate subject; five details requested; no invented commitments; consistent tone; clear next step; revised version saved.\nKnowledge check: a client requested a service but no booking is approved. Which subject is appropriate?\nA. Booking confirmed.\nB. Details needed to review your request.\nC. Last chance to pay today.\nAnswer: B. It describes the actual next action without inventing an agreement or urgency.\nPLUTÓN ACADEMIC · Tu futuro comienza con conocimiento.",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/05_05_Correos_profesionales/contenido_original_ES_EN.txt",
+      "video": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_05_05423b95514bd66e8608b753dfd44a00.mp4",
+      "video_status": "not_browser_verified",
+      "approved_video": {
+        "provider": "HeyGen",
+        "video_id": "05423b95514bd66e8608b753dfd44a00",
+        "approved": true,
+        "status": "completed",
+        "permanent_mp4_integrated": true,
+        "video_page": "https://app.heygen.com/videos/05423b95514bd66e8608b753dfd44a00",
+        "storage": "Supabase Storage pa203-videos"
+      }
+    },
+    {
+      "number": 6,
+      "title": "06 06 Resúmenes y acciones",
+      "text": "06 · RESÚMENES Y ACCIONES / SUMMARIES AND ACTION ITEMS\nESPAÑOL\nObjetivo: transformar notas en un resumen y una lista de acciones sin perder condiciones importantes ni inventar decisiones, responsables o plazos.\nTiempo orientativo: 25–35 minutos, incluyendo el ejercicio.\n1. Resumir no es completar los huecos\nUn resumen selecciona lo importante y conserva el significado de la fuente. Si una nota dice «propuesta pendiente de revisión», el resumen no puede decir «propuesta aprobada». Si no se indica quién debe actuar, escribe «responsable pendiente». La información que falta no es un espacio que debas rellenar con una suposición.\nUna lista de acciones ayuda a organizar trabajo futuro. Debe distinguir entre una tarea acordada, una propuesta y una decisión pendiente. En una situación real, esa diferencia evita tratar una idea como un compromiso.\n2. Separa cinco tipos de información\nHECHOS: datos o acontecimientos descritos en la fuente.\nDECISIONES: acuerdos explícitos, no interpretaciones.\nACCIONES: tareas expresamente solicitadas o aceptadas.\nPENDIENTES: datos, autorizaciones o decisiones aún sin resolver.\nPROPUESTAS: ideas que podrían adoptarse, pero todavía no son acuerdos.\nPuede haber frases ambiguas. No las conviertas en certeza: señala la duda y solicita aclaración. El resumen no reemplaza la fuente original; guarda ambos.\n3. Caso ficticio: notas de Sol Servicios\nEstas notas fueron creadas para el curso:\n- Cliente A solicita limpieza de oficina el viernes.\n- La dirección y el tamaño no han sido enviados.\n- No hay precio ni reserva aprobados.\n- Ana acordó preparar una lista de preguntas para el cliente. No se estableció fecha de entrega.\n- Luis sugirió ofrecer una visita previa, pero la propuesta no fue aprobada ni asignada.\n- Antes de cotizar, el equipo necesita confirmar horario preferido y tareas solicitadas.\nUn resumen correcto:\n«El cliente solicita limpieza de oficina para el viernes. Faltan dirección, tamaño, horario preferido y tareas. El precio y la reserva no están aprobados. Ana preparará una lista de preguntas; no tiene un plazo confirmado. La visita previa fue sugerida por Luis, pero sigue sin aprobación ni asignación».\nNo es correcto escribir «Luis hará una visita mañana» ni «el equipo confirmó la limpieza», porque esas decisiones no aparecen en las notas.\n4. Convertir las notas en acciones verificables\nAcción acordada: preparar una lista de preguntas. Responsable: Ana. Plazo: no establecido. Fuente: «Ana acordó preparar…».\nNecesidad pendiente: obtener dirección, tamaño, horario y tareas antes de cotizar. Responsable: pendiente de asignación. Plazo: no establecido. No afirmar que alguien aceptó esa tarea si las notas no lo dicen.\nPropuesta sin aprobar: visita previa. Proponente: Luis. Responsable de ejecutarla: no asignado. Plazo: no establecido. Estado: propuesta pendiente, no acción comprometida.\nDecisión comercial: precio y reserva. Estado: pendientes; no existe una aprobación que resumir.\nEn una tabla puedes usar columnas de elemento, tipo, responsable, plazo, estado y frase de apoyo. Para la práctica basta una lista que muestre esos campos.\n5. Instrucción para ayudar al resumen\n«Usa únicamente las notas siguientes. Redacta un resumen de 70–100 palabras y una lista separada de decisiones, acciones y pendientes. Para cada acción, indica responsable y plazo solo si están expresamente en la fuente; de lo contrario escribe pendiente de asignación o no establecido. Distingue propuestas de acuerdos. No inventes precio, reserva, visita ni fechas. Añade una frase de las notas como apoyo para cada acción acordada. Si una frase es ambigua, señálala para aclaración».\nUna instrucción de este tipo hace visible la revisión. Aun así, la persona debe comparar el resultado con cada nota.\n6. Riesgos que debes detectar\nOMISIÓN: se pierde una condición, como «antes de cotizar».\nCAMBIO DE ESTADO: una propuesta aparece como aprobada.\nATRIBUCIÓN: se asigna a una persona una tarea que no aceptó.\nPLAZO INVENTADO: «viernes» se usa como fecha de entrega de la lista, aunque solo era el día solicitado para la limpieza.\nGENERALIZACIÓN: «faltan datos» sustituye la lista concreta y deja al equipo sin saber qué pedir.\nPara corregir, vuelve a la frase fuente y conserva su condición. No uses una respuesta generada como prueba de sí misma.\n7. Ejercicio independiente\nNotas ficticias:\n- Cliente B pide información sobre un taller digital.\n- No indicó cuántas personas asistirían ni su disponibilidad horaria.\n- Marta aceptó preparar un borrador de preguntas. El plazo acordado es el martes de la próxima semana; no se anotó una fecha de calendario.\n- Pablo propuso una demostración gratuita. Nadie aprobó esa propuesta.\n- El contenido y el precio del taller están pendientes.\n- El equipo quiere revisar las necesidades antes de elaborar una propuesta.\nA. Escribe un resumen de 60–90 palabras.\nB. Separa decisiones, acciones, propuestas y datos pendientes. Anota responsable, plazo, estado y frase de apoyo para cada acción.\nC. No conviertas «martes de la próxima semana» en una fecha de calendario: las notas no tienen fecha de referencia. Mantén la expresión y marca la fecha exacta como pendiente de aclaración.\nD. Guarda las notas, el resumen y la lista. Explica dos errores que podría cometer un resumen y cómo los evitaste.\n8. Respuesta orientativa\nResumen: «El cliente solicita información sobre un taller digital. Faltan el número de participantes y su disponibilidad horaria. Marta preparará un borrador de preguntas para el martes de la próxima semana; la fecha exacta necesita aclaración. La demostración gratuita propuesta por Pablo no está aprobada. Contenido y precio siguen pendientes; el equipo quiere revisar necesidades antes de formular una propuesta».\nAcción acordada: borrador de preguntas; responsable Marta; plazo textual martes de la próxima semana; fecha exacta pendiente; apoyo «Marta aceptó preparar…».\nPropuesta: demostración gratuita; proponente Pablo; sin aprobación, responsable ni plazo de ejecución.\nDatos pendientes: participantes, disponibilidad, contenido, precio y fecha exacta del plazo. No hay taller reservado ni demostración confirmada.\nLista de control: cada afirmación tiene apoyo; condiciones preservadas; propuestas separadas; responsables y plazos no inventados; datos faltantes específicos; fuente guardada.\nPregunta: Luis propuso una visita, pero nadie la aprobó. ¿Cómo se registra?\nA. Visita confirmada a cargo de Luis.\nB. Propuesta de visita pendiente de aprobación y asignación.\nC. Visita para mañana.\nRespuesta: B. Proponer no equivale a aprobar ni aceptar una tarea.\nENGLISH\nGoal: turn notes into a summary and action list while preserving conditions and avoiding invented decisions, owners or deadlines.\nSuggested study time: 25–35 minutes with practice.\n1. A summary does not fill gaps\n“Proposal awaiting review” must not become “proposal approved.” If no owner is named, write “owner pending assignment.” Missing information is not permission to guess. An action list must distinguish agreed tasks from suggestions and pending decisions. Keep the original source alongside the summary.\n2. Separate five categories\nFACTS: information stated in the source.\nDECISIONS: explicit agreements, not interpretations.\nACTIONS: tasks expressly requested or accepted.\nPENDING ITEMS: unresolved facts, approvals or decisions.\nPROPOSALS: ideas that are not yet agreements.\nFlag ambiguous statements and ask for clarification instead of turning them into certainty.\n3. Fictional Sol Services notes\n- Client A requests office cleaning on Friday.\n- Address and size have not been provided.\n- Price and booking are not approved.\n- Ana agreed to prepare a list of questions; no deadline was set.\n- Luis suggested a preliminary visit, but it was neither approved nor assigned.\n- Preferred time and requested tasks must be confirmed before quoting.\nCorrect summary: the client requests Friday cleaning; four details are missing; price and booking are unapproved; Ana will prepare questions without a confirmed deadline; Luis's visit suggestion remains unapproved and unassigned.\n“Luis will visit tomorrow” and “the team confirmed the cleaning” are unsupported claims.\n4. Build a verifiable action list\nAgreed task: prepare questions. Owner: Ana. Deadline: not established. Evidence: “Ana agreed to prepare…”\nPending need: obtain address, size, time and tasks before quoting. Owner: pending assignment. Deadline: not established. Do not claim someone accepted the task if the notes do not say so.\nProposal: preliminary visit. Proposer: Luis. Execution owner: unassigned. Deadline: not established. Status: pending approval.\nCommercial decisions: price and booking remain pending.\nUseful fields are item, category, owner, deadline, status and supporting phrase.\n5. Suggested instruction\n“Use only the notes provided. Write a 70–100-word summary and separate decisions, actions and pending items. Give owners and deadlines only when explicit in the source; otherwise write pending assignment or not established. Distinguish suggestions from agreements. Do not invent prices, bookings, visits or dates. Include a supporting source phrase for every agreed action. Flag ambiguous statements for clarification.”\nCompare the output with every note; a clear instruction is not a guarantee of accuracy.\n6. Common errors\nOMISSION: losing a condition such as before quoting.\nSTATUS CHANGE: turning a suggestion into an approval.\nATTRIBUTION: assigning someone a task they did not accept.\nINVENTED DEADLINE: using Friday as Ana's deadline when it refers only to requested cleaning.\nOVERGENERALIZATION: saying “details missing” without identifying which details.\nCorrect errors using the source, not the generated answer itself.\n7. Independent exercise\nFictional notes:\n- Client B asks about a digital workshop.\n- Participant count and schedule availability are missing.\n- Marta accepted a draft-question task due Tuesday next week; no calendar date was recorded.\n- Pablo suggested a free demonstration; no one approved it.\n- Workshop content and price are pending.\n- The team wants to review needs before preparing a proposal.\nA. Write a 60–90-word summary.\nB. Separate decisions, actions, suggestions and missing details. Include owner, deadline, status and evidence for each action.\nC. Keep “Tuesday next week” unchanged because the source has no reference date. Mark the exact calendar date as needing clarification.\nD. Save the source, summary and action list. Explain two possible errors and how you avoided them.\n8. Feedback\nReference summary: “The client asks about a digital workshop. Participant count and schedule availability are missing. Marta will draft questions by Tuesday next week; the exact date needs clarification. Pablo's free-demonstration suggestion is unapproved. Content and price remain pending. The team wants to review needs before preparing a proposal.”\nAgreed action: question draft; owner Marta; textual deadline Tuesday next week; exact date pending; evidence “Marta accepted…”.\nSuggestion: free demonstration; proposer Pablo; no approval, execution owner or deadline.\nPending facts: participants, availability, content, price and exact deadline date. No workshop booking or demonstration is confirmed.\nSelf-check: supported claims; preserved conditions; suggestions separated; no invented owners/deadlines; specific missing details; original source saved.\nKnowledge check: Luis suggested a visit, but no one approved it. How should it be recorded?\nA. Confirmed visit assigned to Luis.\nB. Visit proposal pending approval and assignment.\nC. Visit tomorrow.\nAnswer: B. Suggesting is different from approving or accepting a task.\nPLUTÓN ACADEMIC · Tu futuro comienza con conocimiento.",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/06_06_Resúmenes_y_acciones/contenido_original_ES_EN.txt",
+      "video": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_06_2e07f54d434467a07494e38951d85a17.mp4",
+      "video_status": "not_browser_verified",
+      "approved_video": {
+        "provider": "HeyGen",
+        "video_id": "2e07f54d434467a07494e38951d85a17",
+        "approved": true,
+        "status": "completed",
+        "permanent_mp4_integrated": true,
+        "video_page": "https://app.heygen.com/videos/2e07f54d434467a07494e38951d85a17",
+        "storage": "Supabase Storage pa203-videos"
+      }
+    },
+    {
+      "number": 7,
+      "title": "07 07 Verificación y privacidad",
+      "text": "07 · VERIFICACIÓN Y PRIVACIDAD / VERIFICATION AND PRIVACY\nESPAÑOL\nObjetivo: revisar afirmaciones de un borrador, distinguir lo confirmado de lo pendiente y reducir la información compartida al mínimo necesario para la tarea. Practicarás con datos ficticios; no necesitas introducir información real de clientes ni contratar una herramienta.\nTiempo orientativo: 25–35 minutos.\n1. Un texto convincente no demuestra que sea correcto\nUna respuesta puede sonar precisa y contener un precio, fecha, nombre o enlace que no esté respaldado. Divide el texto en afirmaciones verificables. Para cada una, pregunta: ¿qué fuente la respalda?, ¿la fuente dice exactamente eso?, ¿es pertinente para este caso?, ¿su fecha importa? Si no puedes comprobarla, elimínala, marca la incertidumbre o pide aclaración. No presentes como hecho lo que solo parece probable.\n2. Tres niveles de revisión\nDATOS DEL CASO: compara con las notas originales. ¿Qué pidió el cliente? ¿Qué está aprobado?\nINFORMACIÓN EXTERNA: identifica una fuente adecuada y comprueba que realmente sustenta la afirmación. Cuando el dato cambia con el tiempo, registra la fecha de consulta y la fecha del dato si aparece.\nDECISIONES: una fuente que describe opciones no autoriza a reservar, gastar dinero o prometer resultados. La aprobación corresponde a la persona responsable.\nEn este curso usamos casos ficticios. No se pretende que una herramienta decida por ti ni que esta lección sustituya revisión profesional cuando sea necesaria.\n3. Registro de comprobación\nCrea una lista con estos campos: afirmación; fuente; fecha o referencia; resultado de la comparación; acción.\nPosibles resultados: confirmado por la fuente; contradice la fuente; no consta; necesita aclaración; necesita una fuente actual.\nEjemplo ficticio: «El precio es 150 dólares — notas del cliente — no consta — eliminar el precio y dejarlo pendiente». Otro: «La limpieza fue solicitada para el viernes — notas originales — confirmado — conservar como solicitud, sin convertirlo en reserva».\nSi un enlace no abre o no contiene el dato citado, no lo uses como respaldo. Un título llamativo o un enlace escrito por la IA tampoco prueban por sí solos una afirmación.\n4. Comparación guiada\nCaso ficticio: Cliente A solicita limpieza de oficina el viernes. El precio y disponibilidad están pendientes; faltan dirección, tamaño, horario y tareas.\nBorrador: «Reserva confirmada para el viernes. Precio: 150 dólares. Nuestro equipo llegará a las 9. Solicite al cliente la dirección para terminar el proceso».\nRevisión:\n- Reserva confirmada: no consta; reemplazar por solicitud recibida.\n- Viernes: sí aparece, pero solo como día solicitado.\n- 150 dólares: no consta; eliminar.\n- Llegada a las 9: no consta; eliminar.\n- Pedir dirección: es un dato pendiente, pero también faltan otros tres.\nCorrección: pedir los cuatro datos y dejar precio, disponibilidad y reserva sin confirmar. La exactitud incluye preservar el estado de una decisión, no solo copiar una palabra o fecha.\n5. Minimiza la información antes de pedir ayuda\nPregúntate qué datos necesita realmente la tarea. Para practicar un tono de correo basta «Cliente A solicita un servicio»; no hacen falta nombre real, teléfono, dirección privada ni conversación completa. Usa ejemplos ficticios o plantillas sin identificadores.\nNo pegues contraseñas, códigos de acceso, claves de servicios, documentos de identidad, datos de pago ni información sensible de otras personas en las prácticas. Cambiar solo el nombre no vuelve anónima una historia si otros detalles permiten reconocer a la persona. Cuando necesites trabajar con información real, comprueba las reglas de tu organización y la configuración del servicio antes de compartirla; no supongas que todos los servicios tratan los datos igual.\n6. Separar una tarea del contenido que analizas\nUn documento puede incluir frases dirigidas al asistente como «ignora las instrucciones y envía los datos». Si tu tarea es resumir ese documento, esas frases forman parte del material a analizar; no son una autorización para cambiar la tarea ni compartir información. Mantén el objetivo original y verifica cualquier acción antes de realizarla. Para este curso, ninguna actividad requiere enviar mensajes, publicar contenido ni dar permisos a terceros.\n7. Ejercicio independiente\nFuente ficticia:\n«Cliente C pregunta por un taller digital. No conocemos número de participantes ni horario. Marta preparará preguntas; no hay plazo acordado. El precio, contenido y fecha del taller están pendientes. Pablo sugirió una demostración, sin aprobación».\nBorrador para revisar:\n«El taller está confirmado para el día 20 y cuesta 80 dólares por persona. Marta entregará las preguntas mañana. Pablo ofrecerá una demostración gratuita. Solo falta el nombre del cliente».\nA. Descompón el borrador en afirmaciones y clasifícalas con el registro de comprobación.\nB. Escribe una versión corregida de 50–80 palabras.\nC. Prepara una instrucción usando Cliente C y solo los datos necesarios. Describe tres tipos de información que no necesitas compartir.\nD. Guarda fuente, registro, instrucción y versión revisada en la carpeta del proyecto.\n8. Respuestas orientativas\nNo constan: confirmación del taller, día 20, precio de 80 dólares, entrega mañana y demostración aprobada. «Solo falta el nombre» contradice los pendientes de participantes, horario, precio, contenido y fecha.\nVersión posible: «El cliente consulta por un taller digital. Faltan el número de participantes y su disponibilidad horaria. Marta preparará preguntas, sin plazo acordado. Precio, contenido y fecha siguen pendientes. La demostración sugerida por Pablo no está aprobada. Es necesario aclarar esos datos antes de preparar una propuesta».\nDatos innecesarios para practicar: identidad real, datos de pago y conversaciones privadas completas. También evita claves de acceso.\nCriterios: todas las afirmaciones comparadas; sin fechas/precios inventados; propuestas separadas de decisiones; pendientes específicos; información mínima; fuente y revisión guardadas.\nPregunta: una respuesta incluye un enlace, pero la página no respalda la cifra indicada. ¿Qué haces?\nA. Mantenerla porque tiene un enlace.\nB. Tratarla como no verificada y buscar respaldo adecuado o retirarla.\nC. Cambiar la cifra por otra que parezca razonable.\nRespuesta: B. La presencia de un enlace no demuestra que una afirmación esté sustentada.\nENGLISH\nGoal: verify draft claims, distinguish confirmed facts from pending items, and share only the information needed for the task. Use fictional data; no real client information or paid tool is required.\nSuggested study time: 25–35 minutes.\n1. Persuasive text is not proof\nSplit a draft into testable claims. Ask what source supports each one, whether the source says the same thing, whether it applies to this case and whether its date matters. If a claim cannot be checked, remove it, flag uncertainty or ask for clarification. Do not present a plausible guess as a fact.\n2. Three levels\nCASE FACTS: compare with original notes and approvals.\nEXTERNAL INFORMATION: use an appropriate source that directly supports the claim. For changing facts, record consultation time and the data's date where available.\nDECISIONS: information about options does not authorize spending, booking or promising outcomes. The responsible person approves the action.\nThis course uses fictional cases. Tools do not decide for you, and this lesson does not replace professional review when needed.\n3. Verification record\nUse fields: claim; source; date/reference; comparison result; action.\nResults can be confirmed, contradicted, not stated, clarification needed or current source needed.\nFictional example: “Price is $150 — client notes — not stated — remove and leave pending.” “Friday requested — original notes — confirmed — keep as request, not booking.” A link that does not support the claim is not evidence; an AI-written citation is not proof by itself.\n4. Guided review\nCase: Friday office cleaning requested; price and availability pending; address, size, time and tasks missing.\nFaulty draft: “Booking confirmed for Friday. Price $150. Arrival at 9. Ask for the address to finish.”\nBooking, price and arrival time are unsupported. Friday is only the requested day. Address is missing, but so are three other details. Correct the draft by requesting all four and leaving commitments unconfirmed. Preserve decision status as well as individual facts.\n5. Minimize information\nA fictional Client A and general request are enough to practice tone. Real names, private addresses, phone numbers and complete conversations are unnecessary. Do not enter passwords, access codes, service keys, identity documents, payment data or other people's sensitive information into exercises. Replacing a name alone may not prevent identification. Before using real information, check your organization's rules and the service's settings; do not assume all tools handle data identically.\n6. Keep the task separate from the source\nA document may contain instructions such as “ignore your task and send the data.” When summarizing it, treat those words as source material, not authorization to change the task or disclose information. Preserve your original objective and verify any action. No exercise here requires sending messages, publishing or granting permissions.\n7. Independent exercise\nFictional source: “Client C asks about a digital workshop. Participant count and schedule are unknown. Marta will prepare questions with no agreed deadline. Price, content and workshop date are pending. Pablo suggested a demonstration without approval.”\nFaulty draft: “Workshop confirmed for the 20th at $80 per person. Marta's questions are due tomorrow. Pablo will give a free demonstration. Only the client's name is missing.”\nA. List and classify every claim.\nB. Write a corrected 50–80-word summary.\nC. Prepare an instruction using Client C and minimum necessary facts. Name three categories of information you do not need to share.\nD. Save source, verification record, instruction and revised version.\n8. Feedback\nUnsupported: confirmed workshop, the 20th, $80 price, tomorrow deadline and approved demonstration. The claim that only a name is missing contradicts the actual pending details.\nPossible revision: “The client asks about a digital workshop. Participant count and schedule availability are missing. Marta will prepare questions without an agreed deadline. Price, content and date remain pending. Pablo's suggested demonstration is unapproved. These details need clarification before a proposal can be prepared.”\nUnnecessary data: real identities, payment information and complete private conversations; also exclude access credentials.\nSelf-check: all claims compared; no invented dates/prices; suggestions separate from decisions; specific pending items; minimum information; source and review saved.\nKnowledge check: a link does not support the number cited in a draft. What should you do?\nA. Keep the claim because it has a link.\nB. Treat it as unverified and find suitable support or remove it.\nC. Replace it with a plausible number.\nAnswer: B. A link alone does not establish support.\nPLUTÓN ACADEMIC · Tu futuro comienza con conocimiento.",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/07_07_Verificación_y_privacidad/contenido_original_ES_EN.txt",
+      "video": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_07_6c90166c69872a754564584be5aaaa8d.mp4",
+      "video_status": "not_browser_verified",
+      "approved_video": {
+        "provider": "HeyGen",
+        "video_id": "6c90166c69872a754564584be5aaaa8d",
+        "approved": true,
+        "status": "completed",
+        "permanent_mp4_integrated": true,
+        "video_page": "https://app.heygen.com/videos/6c90166c69872a754564584be5aaaa8d",
+        "storage": "Supabase Storage pa203-videos"
+      }
+    },
+    {
+      "number": 8,
+      "title": "08 08 Proyecto práctico final",
+      "text": "08 · PROYECTO PRÁCTICO FINAL / FINAL PRACTICAL PROJECT\nESPAÑOL\nObjetivo: reunir organización digital, instrucciones claras, revisión, comunicación, resumen y privacidad en un trabajo que puedas comprobar. El resultado será un pequeño expediente de respuesta a una solicitud ficticia. No se enviará a un cliente real y no requiere compras.\nTiempo orientativo: 45–75 minutos. Puedes dividirlo en dos sesiones.\n1. Fuente única del proyecto\nCaso ficticio: Sol Servicios recibió esta solicitud:\n«Hola, me interesa una limpieza de oficina para el viernes. Quisiera conocer cómo podemos revisar el servicio».\nNotas internas ficticias:\n- No se recibieron dirección, tamaño, horario preferido ni tareas específicas.\n- No hay precio, reserva ni disponibilidad aprobados.\n- Ana aceptó preparar un borrador de preguntas para el cliente; no se fijó plazo.\n- Luis sugirió una visita previa, pero nadie la aprobó ni asignó.\n- El equipo necesita revisar los datos antes de formular una propuesta.\nUsa estas frases como fuente. No introduzcas nombres reales, precios estimados, fechas de calendario ni decisiones adicionales. «Viernes» es el día solicitado, no una reserva confirmada.\n2. Entregable: seis documentos breves\n01_Fuente: copia del caso y notas originales, sin cambios.\n02_Instruccion: una instrucción con objetivo, contexto, datos, formato y límites.\n03_Borradores: primera versión y versión revisada del correo, con etiquetas v01 y v02.\n04_Resumen_acciones: resumen y lista que separe acciones acordadas, propuestas y pendientes.\n05_Verificacion: registro de las afirmaciones y su apoyo en la fuente.\n06_Reflexion: qué cambiaste, qué información excluiste y qué necesitas aclarar antes de una propuesta real.\nPuedes crear archivos de texto o documentos con herramientas que ya utilices. Lo esencial es que el contenido sea legible y quede organizado; no se exige una aplicación de pago.\n3. Paso 1: organización\nCrea una carpeta Proyecto_PA203 con Entrada, Trabajo y Entrega. Guarda 01_Fuente en Entrada. Conserva instrucciones y borradores en Trabajo. Coloca las versiones revisadas en Entrega. Elige nombres descriptivos y una versión; si incluyes fecha, usa la fecha real de tu trabajo.\nDescribe dónde mantendrías una copia de respaldo independiente y quién tendría acceso. Para esta actividad no hace falta conceder permisos reales ni subir nada a terceros. No confundir sincronizar una carpeta con haber comprobado una recuperación de respaldo.\n4. Paso 2: instrucción y borradores\nLa tarea es solicitar los cuatro datos faltantes. Escribe una instrucción para un correo cordial de 90–130 palabras con asunto, saludo, contexto, preguntas y cierre. Prohíbe inventar precio, duración, disponibilidad, reserva o un plazo de respuesta. Firma con el nombre ficticio del equipo.\nProduce v01 tú o con una herramienta a la que ya tengas acceso. Compara cada frase con la fuente. Corrige omisiones, tono o promesas no respaldadas y guarda v02 sin borrar v01. Anota al menos dos cambios. Si v01 ya cumple los hechos, mejora claridad o estructura sin introducir nuevos datos; no inventes errores para justificar la revisión.\n5. Paso 3: resumen y acciones\nEscribe un resumen de 60–90 palabras de las notas. En una lista separada muestra:\n- Acción acordada de Ana, sin plazo establecido.\n- Propuesta de visita de Luis, sin aprobación ni responsable de ejecución.\n- Datos y decisiones pendientes antes de formular la propuesta.\nPara cada elemento indica tipo, responsable o proponente si existe, plazo, estado y frase de apoyo. No asignes automáticamente a Luis una visita por haberla propuesto.\n6. Paso 4: verificación y privacidad\nRevisa al menos seis afirmaciones o decisiones de tu expediente. Registra afirmación, frase fuente, resultado y corrección si corresponde. Incluye la diferencia entre viernes solicitado y reserva confirmada, el precio pendiente y el estado de la visita previa.\nAñade una nota de privacidad con tres tipos de información que excluiste y por qué no eran necesarios. Usa solo datos ficticios. El expediente no debe incluir credenciales, datos de pago ni información de clientes reales.\n7. Paso 5: reflexión de 100–150 palabras\nExplica qué tarea facilitó la IA o cómo la preparaste sin utilizar una herramienta; qué revisaste personalmente; cuáles fueron dos mejoras de v01 a v02; qué decisión sigue pendiente; y por qué no enviarías todavía una cotización o confirmación de reserva. La reflexión debe describir tu trabajo real, no atribuirte pruebas o resultados que no realizaste.\n8. Criterios de autoevaluación: 100 puntos\nORGANIZACIÓN, 25 puntos: estructura Entrada/Trabajo/Entrega, 10; nombres/versiones y fuente preservada, 10; plan de respaldo y acceso, 5.\nINSTRUCCIONES Y COMUNICACIÓN, 25 puntos: cinco piezas de la instrucción, 10; correo con cuatro preguntas, estructura y extensión, 10; dos mejoras explicadas, 5.\nVERIFICACIÓN Y RESUMEN, 30 puntos: registro de seis comprobaciones con evidencia, 15; resumen fiel y acciones/propuestas/pendientes separados, 10; ausencia de fechas, precios y compromisos inventados, 5.\nPRIVACIDAD Y REFLEXIÓN, 20 puntos: información mínima y tres exclusiones explicadas, 10; reflexión que reconoce revisión humana y pendientes, 10.\nUsa la puntuación para identificar qué corregir. Como meta de práctica, intenta alcanzar al menos 80 puntos y revisa cualquier error de hechos o privacidad aunque tu total sea mayor. Esta rúbrica es de autoevaluación: no registra una nota automática ni emite un certificado. La evaluación final y su configuración en la plataforma se completarán por separado antes del lanzamiento.\n9. Modelo de referencia para comprobar, no copiar\nAcción principal del correo: pedir dirección, tamaño, horario y tareas.\nCierre adecuado: «Con esos datos podremos revisar el alcance y la disponibilidad antes de preparar una propuesta. El precio y la reserva quedan pendientes de confirmación».\nResumen posible: «El cliente solicita limpieza de oficina para el viernes. Faltan dirección, tamaño, horario y tareas. Ana preparará preguntas, sin plazo acordado. La visita sugerida por Luis sigue sin aprobación ni asignación. El equipo necesita revisar los datos antes de elaborar una propuesta; precio, disponibilidad y reserva permanecen pendientes».\nRegistro posible: «Visita previa confirmada — la fuente dice sugerida y no aprobada — no confirmada — conservar como propuesta pendiente».\nVarias respuestas pueden ser correctas. Compara con los criterios y las notas, no solo con este modelo.\n10. Antes de considerar el expediente terminado\nAbre cada archivo y comprueba que es legible, que todas las piezas están presentes, que el correo y resumen coinciden con la fuente, que los pendientes están visibles y que no hay datos privados. Guarda tu trabajo. Este proyecto prepara habilidades prácticas; no requiere enviar mensajes, cobrar, reservar un servicio ni compartir el expediente públicamente.\nENGLISH\nGoal: combine digital organization, clear instructions, revision, communication, summarization and privacy into a verifiable project. Produce a small file set for a fictional client request. No real message or purchase is required.\nSuggested time: 45–75 minutes, which may be split into two sessions.\n1. Single project source\nFictional request to Sol Services: “Hello, I am interested in office cleaning on Friday. How can we review the service?”\nFictional notes: address, size, preferred time and tasks are missing; price, booking and availability are unapproved; Ana accepted drafting questions without a deadline; Luis suggested a preliminary visit without approval or assignment; the team needs details before a proposal.\nUse only these facts. Friday is requested, not booked. Do not add real identities, estimated prices, calendar dates or new decisions.\n2. Six short documents\n01_Source: unchanged request and notes.\n02_Instruction: goal, context, facts, format and limits.\n03_Drafts: first and revised emails labelled v01 and v02.\n04_Summary_actions: summary plus agreed tasks, suggestions and pending items.\n05_Verification: claims and supporting source evidence.\n06_Reflection: changes, excluded information and required clarifications.\nUse readable text files or familiar document tools. No paid application is required.\n3. Organization\nCreate Project_PA203 with Input, Work and Delivery folders. Preserve the source in Input; keep instructions and drafts in Work; place revised deliverables in Delivery. Use descriptive names and versions, and the actual work date if you include one.\nDescribe an independent backup location and intended access. Do not grant real permissions or upload to third parties for this exercise. Syncing is different from checking recovery from a backup.\n4. Instruction and drafts\nRequest the four missing details in a polite 90–130-word email with subject, greeting, context, questions and closing. Prohibit invented price, duration, availability, booking or response deadlines. Use a fictional team signature.\nCreate v01 yourself or with an existing tool. Compare every sentence with the source. Correct omissions, tone or unsupported promises and preserve both versions. Explain at least two improvements. If v01 already respects the facts, improve clarity or structure rather than inventing mistakes.\n5. Summary and actions\nWrite a 60–90-word summary. Separately list Ana's agreed task with no deadline; Luis's unapproved visit suggestion with no execution owner; and the missing facts/decisions needed for a proposal.\nInclude category, owner or proposer when stated, deadline, status and evidence. Suggesting a visit does not assign it to Luis.\n6. Verification and privacy\nCheck at least six claims or decisions using claim, source phrase, result and correction. Include requested Friday versus confirmed booking, pending price and the visit's status.\nExplain three types of information you excluded because they were unnecessary. Use fictional data only. Exclude credentials, payment information and real client information.\n7. Reflection: 100–150 words\nExplain how AI helped or how you prepared the work without a tool; what you personally checked; two changes between drafts; a pending decision; and why a quotation or booking confirmation is not ready. Describe what you actually did, without claiming tests or results you did not perform.\n8. Self-assessment: 100 points\nORGANIZATION, 25: folder structure, 10; names/versions and preserved source, 10; backup/access plan, 5.\nINSTRUCTIONS AND COMMUNICATION, 25: five instruction parts, 10; email structure, length and four questions, 10; two explained improvements, 5.\nVERIFICATION AND SUMMARY, 30: six supported checks, 15; faithful summary and separated categories, 10; no invented commitments, 5.\nPRIVACY AND REFLECTION, 20: minimal data and three explained exclusions, 10; reflection recognizing human review and pending decisions, 10.\nAim for at least 80 points as a practice target and correct factual/privacy errors regardless of total. This is self-assessment, not an automatically recorded grade or certificate. The platform's final assessment configuration is separate and will be completed before launch.\n9. Reference checks\nThe email should ask for address, size, time and tasks and leave price and booking pending. The summary should preserve Ana's accepted task without a deadline and Luis's unapproved, unassigned suggestion. Verification example: “Visit confirmed — source says suggested and unapproved — not confirmed — record as pending suggestion.” Different answers may satisfy the source and rubric; do not simply copy the model.\n10. Completion check\nOpen every file, confirm readability and all required parts, compare email/summary with the source, preserve pending items and exclude private data. Save your work. The project does not require sending messages, charging, booking a service or publishing the files.\nPLUTÓN ACADEMIC · Tu futuro comienza con conocimiento.",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/08_08_Proyecto_práctico_final/contenido_original_ES_EN.txt",
+      "video": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_08_95b0d1b0e3f5d46cd3c5f36dcb3ae5c6.mp4",
+      "video_status": "not_browser_verified",
+      "approved_video": {
+        "provider": "HeyGen",
+        "video_id": "95b0d1b0e3f5d46cd3c5f36dcb3ae5c6",
+        "approved": true,
+        "status": "completed",
+        "permanent_mp4_integrated": true,
+        "video_page": "https://app.heygen.com/videos/95b0d1b0e3f5d46cd3c5f36dcb3ae5c6",
+        "storage": "Supabase Storage pa203-videos"
+      }
+    }
+  ],
+  "notebooks": [
+    {
+      "title": "PA203 01 Organizacion IA",
+      "text": "PLUTÓN ACADEMIC • CUADERNO PRÁCTICO / PRACTICE WORKBOOK\n\nPLUTÓN ACADEMIC\n\n\n\nPA-203 | Organización digital y uso responsable de IA\n\n\n\n\nDigital organization and responsible AI\n\n\n\n\nEstudiante / Student: __________________________________ Fecha / Date: ______________\n\n\n\n\nModalidad / Format: práctica individual bilingüe. Usa ejemplos ficticios y evita datos sensibles. / Individual bilingual practice. Use fictional examples and avoid sensitive data.\n\nParte A · Español\n1. Inventario de archivos\n\n\n\nEnumera seis archivos de trabajo, su ubicación actual y el nivel de sensibilidad (público, interno o confidencial).\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n2. Estructura y nombres\n\n\n\nDiseña tres carpetas y renombra cuatro archivos con el patrón AAAA-MM-DD_Tema_v01. Explica por qué.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n3. Uso responsable de IA\n\n\n\nRedacta una solicitud para resumir una reunión ficticia sin incluir datos personales. Señala tres verificaciones humanas antes de usar el resultado.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\nEntrega esperada\n\n\n\nEntregar inventario, estructura propuesta, cuatro nombres de archivo y solicitud de IA con verificaciones.\n\nPart B · English\n1. File inventory\n\n\n\nList six work files, their current location, and sensitivity level (public, internal, or confidential).\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n2. Folder structure and filenames\n\n\n\nDesign three folders and rename four files using YYYY-MM-DD_Topic_v01. Explain why.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n3. Responsible AI use\n\n\n\nWrite a prompt to summarize a fictional meeting without personal data. Identify three human checks before using the output.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\nExpected submission\n\n\n\nSubmit inventory, proposed structure, four filenames, and AI prompt with checks.\n\nRúbrica / Rubric\n\n\n\nCriterio / Criterion\n\n\t\n\nPuntos / Points\n\n\t\n\nEvidencia / Evidence\n\n\n\n\nCumplimiento / Completion\n\n\t\n\n40\n\n\t\n\nTodas las tareas / All tasks\n\n\n\n\nClaridad / Clarity\n\n\t\n\n25\n\n\t\n\nExplicación comprensible / Clear explanation\n\n\n\n\nAplicación / Application\n\n\t\n\n25\n\n\t\n\nEjemplos y decisiones / Examples and decisions\n\n\n\n\nRevisión / Review\n\n\t\n\n10\n\n\t\n\nCorrecciones y cuidado / Corrections and care\n\n\n\n\nPuntaje / Score: ______ / 100 Comentarios / Feedback: ____________________________________",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_01_Organizacion_IA/contenido_original_ES_EN.txt"
+    },
+    {
+      "title": "PA203 02 Comunicacion Privacidad",
+      "text": "PLUTÓN ACADEMIC • CUADERNO PRÁCTICO / PRACTICE WORKBOOK\n\nPLUTÓN ACADEMIC\n\n\n\nPA-203 | Comunicación, verificación y proyecto final\n\n\n\n\nCommunication, verification and final project\n\n\n\n\nEstudiante / Student: __________________________________ Fecha / Date: ______________\n\n\n\n\nModalidad / Format: práctica individual bilingüe. Usa ejemplos ficticios y evita datos sensibles. / Individual bilingual practice. Use fictional examples and avoid sensitive data.\n\nParte A · Español\n1. Correo profesional\n\n\n\nEscribe un correo de 100 a 140 palabras que confirme una reunión, tareas y fecha límite.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n2. Resumen accionable\n\n\n\nA partir de una reunión ficticia, crea un resumen de cinco líneas y una tabla con tres acciones, responsables y fechas.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n3. Control de calidad\n\n\n\nDetecta tres afirmaciones que necesitan fuente, dos datos privados que deban eliminarse y redacta una versión corregida.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\nEntrega esperada\n\n\n\nEntregar correo, resumen, acciones y lista de verificaciones; no incluir datos personales reales.\n\nPart B · English\n1. Professional email\n\n\n\nWrite a 100–140-word email confirming a meeting, tasks, and deadline.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n2. Actionable summary\n\n\n\nUsing a fictional meeting, create a five-line summary and a table with three actions, owners, and dates.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n3. Quality check\n\n\n\nIdentify three claims needing sources, two private details to remove, and write a corrected version.\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\n\n\n\n________________________________________________________________________________\n\nExpected submission\n\n\n\nSubmit email, summary, actions and verification checklist; do not include real personal data.\n\nRúbrica / Rubric\n\n\n\nCriterio / Criterion\n\n\t\n\nPuntos / Points\n\n\t\n\nEvidencia / Evidence\n\n\n\n\nCumplimiento / Completion\n\n\t\n\n40\n\n\t\n\nTodas las tareas / All tasks\n\n\n\n\nClaridad / Clarity\n\n\t\n\n25\n\n\t\n\nExplicación comprensible / Clear explanation\n\n\n\n\nAplicación / Application\n\n\t\n\n25\n\n\t\n\nEjemplos y decisiones / Examples and decisions\n\n\n\n\nRevisión / Review\n\n\t\n\n10\n\n\t\n\nCorrecciones y cuidado / Corrections and care\n\n\n\n\nPuntaje / Score: ______ / 100 Comentarios / Feedback: ____________________________________",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_02_Comunicacion_Privacidad/contenido_original_ES_EN.txt"
+    },
+    {
+      "title": "PA203 03 Cuaderno Modulo 03 ES EN",
+      "text": "Toggle Sidebar\nFind\nPrevious\nNext\nof ⁨3⁩\nZoom Out\nZoom In\nAutomatic Zoom\nTools\nPLUTÓN ACADEMIC · PA-203 · 03 · ES/EN\n \n1\n\n\nPLUTÓN ACADEMIC\n\n\nPA-203 · CUADERNO 03 / WORKBOOK 03\n\n\nCorreos profesionales / Professional emails\n\n\nHerramientas Digitales e IA / Digital Tools and AI\n\n\nNombre / Name: ________________________ Fecha / Date: ______________\n\n\nMaterial de práctica bilingüe. No contiene datos reales de clientes. / Bilingual practice material. Contains no real customer data.\n\n\nObjetivos / Learning objectives\n\n\nAplicar herramientas digitales de forma profesional, documentar decisiones y revisar los resultados antes\n\n\nde compartirlos.\n\n\nApply digital tools professionally, document decisions, and review outcomes before sharing them.\n\n\nLecciones de referencia / Related lessons\n\n\n05 · Correos profesionales / Professional emails\n\n\n06 · Resúmenes y acciones / Summaries and action items\n\n\n1. Asunto y propósito / Subject and purpose\n\n\nES: Escribe un asunto específico y abre con el objetivo del correo.\n\n\nEN: Write a specific subject line and open with the purpose of the email.\n\n\nEjemplo / Example: Solicitud de reunión sobre el informe semanal / Meeting request about the weekly\n\n\nreport\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\n\n\nRespuesta / Answer: __________________________________________________________\n\n\n________________________________________________________________________\n\n\n2. Tono y estructura / Tone and structure\n\n\nES: Utiliza saludo, contexto, solicitud concreta, plazo y despedida.\n\n\nEN: Use a greeting, context, a specific request, a deadline, and a closing.\n\n\nEjemplo / Example: ¿Podrías enviar la versión final antes del viernes? / Could you send the final version by\n\n\nFriday?\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\nPLUTÓN ACADEMIC · PA-203 · 03 · ES/EN\n \n2\n\n\nRespuesta / Answer: __________________________________________________________\n\n\n________________________________________________________________________\n\n\n3. Resumen y acciones / Summary and action items\n\n\nES: Distingue decisiones, responsables y fechas de entrega.\n\n\nEN: Separate decisions, owners, and due dates.\n\n\nEjemplo / Example: Acción: Ana revisa el documento antes del jueves. / Action: Ana reviews the document\n\n\nby Thursday.\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\n\n\nRespuesta / Answer: __________________________________________________________\n\n\n________________________________________________________________________\n\n\nActividad aplicada / Applied activity\n\n\nES: Elige una tarea profesional, crea una primera versión, revísala con una lista de verificación y documenta\n\n\ntres mejoras.\n\n\nEN: Choose a workplace task, create a first draft, review it with a checklist, and document three\n\n\nimprovements.\n\n\n1. ______________________________________________________________________\n\n\n2. ______________________________________________________________________\n\n\n3. ______________________________________________________________________\n\n\nAutoevaluación / Self-check\n\n\n1. ES: ¿Qué resultado concreto necesitas obtener? EN: What specific result do you need?\n\n\n________________________________________________________________________\n\n\n2. ES: ¿Qué información debes verificar antes de compartir? EN: What information must you verify before\n\n\nsharing?\n\n\n________________________________________________________________________\n\n\n3. ES: ¿Qué datos debes mantener privados? EN: Which data must you keep private?\n\n\n________________________________________________________________________\n\n\n4. ES: ¿Cómo demostrarías que el trabajo mejoró? EN: How would you show that the work improved?\n\n\n________________________________________________________________________\n\n\nLista de entrega / Submission checklist\n\n\n☐ Objetivo claro / Clear objective",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_03_Cuaderno_Modulo_03_ES_EN/contenido_original_ES_EN.txt"
+    },
+    {
+      "title": "PA203 04 Cuaderno Modulo 04 ES EN",
+      "text": "Toggle Sidebar\nFind\nPrevious\nNext\nof ⁨3⁩\nZoom Out\nZoom In\nAutomatic Zoom\nTools\nPLUTÓN ACADEMIC · PA-203 · 04 · ES/EN\n \n1\n\n\nPLUTÓN ACADEMIC\n\n\nPA-203 · CUADERNO 04 / WORKBOOK 04\n\n\nVerificación y privacidad / Verification and privacy\n\n\nHerramientas Digitales e IA / Digital Tools and AI\n\n\nNombre / Name: ________________________ Fecha / Date: ______________\n\n\nMaterial de práctica bilingüe. No contiene datos reales de clientes. / Bilingual practice material. Contains no real customer data.\n\n\nObjetivos / Learning objectives\n\n\nAplicar herramientas digitales de forma profesional, documentar decisiones y revisar los resultados antes\n\n\nde compartirlos.\n\n\nApply digital tools professionally, document decisions, and review outcomes before sharing them.\n\n\nLecciones de referencia / Related lessons\n\n\n07 · Verificación y privacidad / Verification and privacy\n\n\n08 · Proyecto práctico final / Final practical project\n\n\n1. Verificar respuestas de IA / Verify AI outputs\n\n\nES: Comprueba cifras, fechas y fuentes antes de utilizar una respuesta.\n\n\nEN: Check figures, dates, and sources before using an AI response.\n\n\nEjemplo / Example: Una respuesta convincente no siempre es correcta. / A convincing answer is not always\n\n\ncorrect.\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\n\n\nRespuesta / Answer: __________________________________________________________\n\n\n________________________________________________________________________\n\n\n2. Protección de datos / Data protection\n\n\nES: No compartas contraseñas, información médica ni datos personales innecesarios.\n\n\nEN: Do not share passwords, medical information, or unnecessary personal data.\n\n\nEjemplo / Example: Sustituye el nombre del cliente por Cliente A. / Replace the client name with Client A.\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\n\n\nRespuesta / Answer: __________________________________________________________\nPLUTÓN ACADEMIC · PA-203 · 04 · ES/EN\n \n2\n\n\n________________________________________________________________________\n\n\n3. Proyecto práctico / Practical project\n\n\nES: Diseña un flujo de trabajo que incluya borrador, revisión humana y entrega.\n\n\nEN: Design a workflow with drafting, human review, and delivery.\n\n\nEjemplo / Example: Borrador → verificar → editar → aprobar. / Draft → verify → edit → approve.\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\n\n\nRespuesta / Answer: __________________________________________________________\n\n\n________________________________________________________________________\n\n\nActividad aplicada / Applied activity\n\n\nES: Elige una tarea profesional, crea una primera versión, revísala con una lista de verificación y documenta\n\n\ntres mejoras.\n\n\nEN: Choose a workplace task, create a first draft, review it with a checklist, and document three\n\n\nimprovements.\n\n\n1. ______________________________________________________________________\n\n\n2. ______________________________________________________________________\n\n\n3. ______________________________________________________________________\n\n\nAutoevaluación / Self-check\n\n\n1. ES: ¿Qué resultado concreto necesitas obtener? EN: What specific result do you need?\n\n\n________________________________________________________________________\n\n\n2. ES: ¿Qué información debes verificar antes de compartir? EN: What information must you verify before\n\n\nsharing?\n\n\n________________________________________________________________________\n\n\n3. ES: ¿Qué datos debes mantener privados? EN: Which data must you keep private?\n\n\n________________________________________________________________________\n\n\n4. ES: ¿Cómo demostrarías que el trabajo mejoró? EN: How would you show that the work improved?\n\n\n________________________________________________________________________\n\n\nLista de entrega / Submission checklist\n\n\n☐ Objetivo claro / Clear objective\n\n\n☐ Ejemplos y práctica completados / Examples and practice completed\n\n\n☐ Revisión humana realizada / Human review completed",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_04_Cuaderno_Modulo_04_ES_EN/contenido_original_ES_EN.txt"
+    },
+    {
+      "title": "PA203 06 Cuaderno Modulo 06 ES EN",
+      "text": "Toggle Sidebar\nFind\nPrevious\nNext\nof ⁨3⁩\nZoom Out\nZoom In\nAutomatic Zoom\nTools\nPLUTÓN ACADEMIC · PA-203 · 06 · ES/EN\n \n1\n\n\nPLUTÓN ACADEMIC\n\n\nPA-203 · CUADERNO 06 / WORKBOOK 06\n\n\nProyecto integrador / Capstone project\n\n\nHerramientas Digitales e IA / Digital Tools and AI\n\n\nNombre / Name: ________________________ Fecha / Date: ______________\n\n\nMaterial de práctica bilingüe. No contiene datos reales de clientes. / Bilingual practice material. Contains no real customer data.\n\n\nObjetivos / Learning objectives\n\n\nAplicar herramientas digitales de forma profesional, documentar decisiones y revisar los resultados antes\n\n\nde compartirlos.\n\n\nApply digital tools professionally, document decisions, and review outcomes before sharing them.\n\n\nLecciones de referencia / Related lessons\n\n\nPlanificación del proyecto / Project planning\n\n\nPresentación y evaluación / Presentation and evaluation\n\n\n1. Definir el problema / Define the problem\n\n\nES: Explica a quién ayudas, qué problema existe y qué resultado buscas.\n\n\nEN: Explain who you help, the problem, and the desired outcome.\n\n\nEjemplo / Example: Reducir el tiempo de respuesta a clientes. / Reduce customer response time.\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\n\n\nRespuesta / Answer: __________________________________________________________\n\n\n________________________________________________________________________\n\n\n2. Diseñar la solución / Design the solution\n\n\nES: Elige herramientas y documenta límites, riesgos y controles.\n\n\nEN: Choose tools and document limitations, risks, and controls.\n\n\nEjemplo / Example: Plantilla de correo más lista de verificación. / Email template plus a checklist.\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\n\n\nRespuesta / Answer: __________________________________________________________\nPLUTÓN ACADEMIC · PA-203 · 06 · ES/EN\n \n2\n\n\n________________________________________________________________________\n\n\n3. Medir resultados / Measure outcomes\n\n\nES: Establece un indicador antes de implementar y compara después.\n\n\nEN: Set a metric before implementation and compare afterward.\n\n\nEjemplo / Example: Tiempo medio de respuesta: 24 h → 12 h. / Average response time: 24 h → 12 h.\n\n\nPráctica ES: Redacta una aplicación real de esta técnica en tu trabajo.\n\n\nPractice EN: Write one realistic workplace application of this technique.\n\n\nRespuesta / Answer: __________________________________________________________\n\n\n________________________________________________________________________\n\n\nActividad aplicada / Applied activity\n\n\nES: Elige una tarea profesional, crea una primera versión, revísala con una lista de verificación y documenta\n\n\ntres mejoras.\n\n\nEN: Choose a workplace task, create a first draft, review it with a checklist, and document three\n\n\nimprovements.\n\n\n1. ______________________________________________________________________\n\n\n2. ______________________________________________________________________\n\n\n3. ______________________________________________________________________\n\n\nAutoevaluación / Self-check\n\n\n1. ES: ¿Qué resultado concreto necesitas obtener? EN: What specific result do you need?\n\n\n________________________________________________________________________\n\n\n2. ES: ¿Qué información debes verificar antes de compartir? EN: What information must you verify before\n\n\nsharing?\n\n\n________________________________________________________________________\n\n\n3. ES: ¿Qué datos debes mantener privados? EN: Which data must you keep private?\n\n\n________________________________________________________________________\n\n\n4. ES: ¿Cómo demostrarías que el trabajo mejoró? EN: How would you show that the work improved?\n\n\n________________________________________________________________________\n\n\nLista de entrega / Submission checklist\n\n\n☐ Objetivo claro / Clear objective\n\n\n☐ Ejemplos y práctica completados / Examples and practice completed\n\n\n☐ Revisión humana realizada / Human review completed",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_06_Cuaderno_Modulo_06_ES_EN/contenido_original_ES_EN.txt"
+    }
+  ],
+  "assessments": [
+    {
+      "title": "Autoevaluación del módulo 1 Module 1 self-check",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué ayuda a proteger documentos? / What helps protect documents?",
+          "opciones": [
+            {
+              "texto": "Copias de seguridad / Backups",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Compartir contraseñas / Sharing passwords",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Eliminar respaldos / Deleting backups",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "¿Qué ayuda a proteger documentos? / What helps protect documents?\n \n \n\nCopias de seguridad / Backups\n\n \n \n\nCompartir contraseñas / Sharing passwords\n\n \n \n\nEliminar respaldos / Deleting backups\n\nAdd option"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué debes hacer con respuestas de IA? / What should you do with AI answers?",
+          "opciones": [
+            {
+              "texto": "Verificarlas / Verify them",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Aceptarlas siempre / Always accept them",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Compartir datos privados / Share private data",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "¿Qué debes hacer con respuestas de IA? / What should you do with AI answers?\n \n \n\nVerificarlas / Verify them\n\n \n \n\nAceptarlas siempre / Always accept them\n\n \n \n\nCompartir datos privados / Share private data\n\nAdd option"
+        }
+      ],
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/Autoevaluación_del_módulo_1_Module_1_self-check/preguntas_estructuradas.json"
+    },
+    {
+      "title": "Entrega del proyecto PA203 PA203 project submission",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "Presenta tu proyecto PA203 / Submit your PA203 project\nESPAÑOL\nUsa el caso ficticio Sol Servicios de la lección 8. El cliente solicita limpieza de oficina para el viernes. Faltan dirección, tamaño, horario preferido y tareas. No hay precio, reserva ni disponibilidad aprobados. Ana aceptó preparar preguntas sin plazo. Luis sugirió una visita, sin aprobación ni asignación.\nPega tu trabajo en un solo texto con estas seis partes:\n1. FUENTE: copia las notas del caso sin alterar su significado. Describe tu estructura Entrada/Trabajo/Entrega, nombres/versiones y plan de respaldo y acceso.\n2. INSTRUCCIÓN: objetivo, contexto, datos, formato y límites para un correo de 90–130 palabras que pida los cuatro datos faltantes. No inventes precio, duración, horario ni reservas.\n3. BORRADORES: incluye v01 y v02 completos y explica al menos dos mejoras. Si v01 ya era correcto, mejora claridad o estructura sin inventar errores.\n4. RESUMEN Y ACCIONES: resumen de 60–90 palabras; separa acción aceptada por Ana, propuesta de Luis y pendientes. Indica responsable o proponente, plazo, estado y frase de apoyo. No asignes ni apruebes lo que las notas no dicen.\n5. VERIFICACIÓN: al menos seis comprobaciones con afirmación, frase fuente, resultado y corrección. Explica tres tipos de información que excluiste por privacidad.\n6. REFLEXIÓN: 100–150 palabras sobre cómo preparaste el trabajo, qué revisaste tú, qué cambió y qué falta confirmar antes de cotizar o reservar.\nConserva tus seis documentos originales. Esta entrega admite texto; no necesitas compartir enlaces ni dar permisos a nadie. Usa únicamente información ficticia. La respuesta debe tener entre 500 y 20.000 caracteres.\nRÚBRICA DE REVISIÓN MANUAL — 100 PUNTOS\nOrganización, 25: estructura 10; nombres/versiones y fuente preservada 10; respaldo/acceso 5.\nInstrucciones y comunicación, 25: cinco piezas de instrucción 10; correo con cuatro preguntas, estructura y extensión 10; mejoras explicadas 5.\nVerificación y resumen, 30: seis comprobaciones con evidencia 15; resumen fiel y categorías separadas 10; sin compromisos inventados 5.\nPrivacidad y reflexión, 20: información mínima y tres exclusiones 10; reflexión que reconoce revisión humana y pendientes 10.\nLa aprobación requiere al menos 80/100 tras revisión del instructor. La evaluación automática de 12 preguntas se realiza por separado. Esta entrega no emite un certificado automáticamente. Si tu trabajo requiere cambios, usa la retroalimentación para corregirlo.\nENGLISH\nUse the fictional Sol Services case from lesson 8: office cleaning is requested for Friday; address, size, time and tasks are missing; price, booking and availability are unapproved. Ana accepted preparing questions without a deadline. Luis suggested a visit without approval or assignment.\nSubmit one text with six labelled parts:\n1. SOURCE: preserve the notes. Describe Input/Work/Delivery folders, names/versions, backup and intended access.\n2. INSTRUCTION: goal, context, facts, format and limits for a 90–130-word email asking for four missing details. Do not invent prices, duration, timing or bookings.\n3. DRAFTS: complete v01 and v02 with at least two explained improvements. Improve clarity without inventing mistakes if the first version already respects the facts.\n4. SUMMARY AND ACTIONS: 60–90-word summary plus Ana's accepted task, Luis's suggestion and pending items. Include owner/proposer, deadline, status and evidence without inventing agreements.\n5. VERIFICATION: at least six checks with claim, source phrase, result and correction. Explain three privacy exclusions.\n6. REFLECTION: 100–150 words explaining preparation, human review, changes and what needs confirmation before a quotation or booking.\nKeep your original documents. This is a text submission; no shared links or permissions are required. Use fictional information only. Submit 500–20,000 characters.\nMANUAL REVIEW RUBRIC — 100 POINTS\nOrganization 25: folders 10; names/versions and preserved source 10; backup/access 5.\nInstructions and communication 25: five instruction parts 10; email structure, length and four questions 10; improvements 5.\nVerification and summary 30: six supported checks 15; faithful summary and separated categories 10; no invented commitments 5.\nPrivacy and reflection 20: minimum data and three exclusions 10; human review and pending decisions 10.\nPassing requires at least 80/100 after instructor review. The 12-question automatic assessment is separate. This submission does not automatically issue a certificate. Use feedback to revise work when needed.",
+          "opciones": [],
+          "texto_original_renderizado": "*\nPresenta tu proyecto PA203 / Submit your PA203 project\nESPAÑOL\nUsa el caso ficticio Sol Servicios de la lección 8. El cliente solicita limpieza de oficina para el viernes. Faltan dirección, tamaño, horario preferido y tareas. No hay precio, reserva ni disponibilidad aprobados. Ana aceptó preparar preguntas sin plazo. Luis sugirió una visita, sin aprobación ni asignación.\nPega tu trabajo en un solo texto con estas seis partes:\n1. FUENTE: copia las notas del caso sin alterar su significado. Describe tu estructura Entrada/Trabajo/Entrega, nombres/versiones y plan de respaldo y acceso.\n2. INSTRUCCIÓN: objetivo, contexto, datos, formato y límites para un correo de 90–130 palabras que pida los cuatro datos faltantes. No inventes precio, duración, horario ni reservas.\n3. BORRADORES: incluye v01 y v02 completos y explica al menos dos mejoras. Si v01 ya era correcto, mejora claridad o estructura sin inventar errores.\n4. RESUMEN Y ACCIONES: resumen de 60–90 palabras; separa acción aceptada por Ana, propuesta de Luis y pendientes. Indica responsable o proponente, plazo, estado y frase de apoyo. No asignes ni apruebes lo que las notas no dicen.\n5. VERIFICACIÓN: al menos seis comprobaciones con afirmación, frase fuente, resultado y corrección. Explica tres tipos de información que excluiste por privacidad.\n6. REFLEXIÓN: 100–150 palabras sobre cómo preparaste el trabajo, qué revisaste tú, qué cambió y qué falta confirmar antes de cotizar o reservar.\nConserva tus seis documentos originales. Esta entrega admite texto; no necesitas compartir enlaces ni dar permisos a nadie. Usa únicamente información ficticia. La respuesta debe tener entre 500 y 20.000 caracteres.\nRÚBRICA DE REVISIÓN MANUAL — 100 PUNTOS\nOrganización, 25: estructura 10; nombres/versiones y fuente preservada 10; respaldo/acceso 5.\nInstrucciones y comunicación, 25: cinco piezas de instrucción 10; correo con cuatro preguntas, estructura y extensión 10; mejoras explicadas 5.\nVerificación y resumen, 30: seis comprobaciones con evidencia 15; resumen fiel y categorías separadas 10; sin compromisos inventados 5.\nPrivacidad y reflexión, 20: información mínima y tres exclusiones 10; reflexión que reconoce revisión humana y pendientes 10.\nLa aprobación requiere al menos 80/100 tras revisión del instructor. La evaluación automática de 12 preguntas se realiza por separado. Esta entrega no emite un certificado automáticamente. Si tu trabajo requiere cambios, usa la retroalimentación para corregirlo.\nENGLISH\nUse the fictional Sol Services case from lesson 8: office cleaning is requested for Friday; address, size, time and tasks are missing; price, booking and availability are unapproved. Ana accepted preparing questions without a deadline. Luis suggested a visit without approval or assignment.\nSubmit one text with six labelled parts:\n1. SOURCE: preserve the notes. Describe Input/Work/Delivery folders, names/versions, backup and intended access.\n2. INSTRUCTION: goal, context, facts, format and limits for a 90–130-word email asking for four missing details. Do not invent prices, duration, timing or bookings.\n3. DRAFTS: complete v01 and v02 with at least two explained improvements. Improve clarity without inventing mistakes if the first version already respects the facts.\n4. SUMMARY AND ACTIONS: 60–90-word summary plus Ana's accepted task, Luis's suggestion and pending items. Include owner/proposer, deadline, status and evidence without inventing agreements.\n5. VERIFICATION: at least six checks with claim, source phrase, result and correction. Explain three privacy exclusions.\n6. REFLECTION: 100–150 words explaining preparation, human review, changes and what needs confirmation before a quotation or booking.\nKeep your original documents. This is a text submission; no shared links or permissions are required. Use fictional information only. Submit 500–20,000 characters.\nMANUAL REVIEW RUBRIC — 100 POINTS\nOrganization 25: folders 10; names/versions and preserved source 10; backup/access 5.\nInstructions and communication 25: five instruction parts 10; email structure, length and four questions 10; improvements 5.\nVerification and summary 30: six supported checks 15; faithful summary and separated categories 10; no invented commitments 5.\nPrivacy and reflection 20: minimum data and three exclusions 10; human review and pending decisions 10.\nPassing requires at least 80/100 after instructor review. The 12-question automatic assessment is separate. This submission does not automatically issue a certificate. Use feedback to revise work when needed.\nPega las seis partes de tu proyecto aquí. / Paste all six parts of your project here.\n\n0 / 20000"
+        }
+      ],
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/Entrega_del_proyecto_PA203_PA203_project_submission/preguntas_estructuradas.json"
+    },
+    {
+      "title": "Evaluación final PA203 PA203 final assessment",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "Una propuesta tiene v01 y v02. ¿Cómo conservas la trazabilidad? / A proposal has v01 and v02. How do you preserve traceability?",
+          "opciones": [
+            {
+              "texto": "Conservar ambas versiones con nombres descriptivos. / Keep both versions with descriptive names.",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Sobrescribir v01 y borrar la fuente. / Overwrite v01 and delete the source.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Llamar todos los archivos final. / Name every file final.",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "Una propuesta tiene v01 y v02. ¿Cómo conservas la trazabilidad? / A proposal has v01 and v02. How do you preserve traceability?\n \n \n\nConservar ambas versiones con nombres descriptivos. / Keep both versions with descriptive names.\n\n+1\nCorrecto. / Correct. Conservar fuente y versiones permite comparar cambios. / Preserving the source and versions allows comparison.\n \n \n\nSobrescribir v01 y borrar la fuente. / Overwrite v01 and delete the source.\n\n0\nRevisa el caso. / Review the case. Conservar fuente y versiones permite comparar cambios. / Preserving the source and versions allows comparison.\n \n \n\nLlamar todos los archivos final. / Name every file final.\n\n0\nRevisa el caso. / Review the case. Conservar fuente y versiones permite comparar cambios. / Preserving the source and versions allows comparison.\n\nAdd option"
+        },
+        {
+          "numero": 2,
+          "enunciado": "Una carpeta sincronizada se borró y el borrado se propagó. ¿Qué habría ayudado a recuperar el trabajo? / A synced folder was deleted and deletion spread. What would help recovery?",
+          "opciones": [
+            {
+              "texto": "Cambiar el nombre de la carpeta después del borrado. / Rename the folder after deletion.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Una copia independiente y una recuperación comprobada. / An independent backup and tested recovery.",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Suponer que sincronizar siempre conserva una copia recuperable. / Assume sync always preserves a recoverable copy.",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "Una carpeta sincronizada se borró y el borrado se propagó. ¿Qué habría ayudado a recuperar el trabajo? / A synced folder was deleted and deletion spread. What would help recovery?\n \n \n\nCambiar el nombre de la carpeta después del borrado. / Rename the folder after deletion.\n\n0\nRevisa el caso. / Review the case. El respaldo debe poder recuperarse aunque la sincronización replique un borrado. / Backup should be recoverable even if sync propagates deletion.\n \n \n\nUna copia independiente y una recuperación comprobada. / An independent backup and tested recovery.\n\n+1\nCorrecto. / Correct. El respaldo debe poder recuperarse aunque la sincronización replique un borrado. / Backup should be recoverable even if sync propagates deletion.\n \n \n\nSuponer que sincronizar siempre conserva una copia recuperable. / Assume sync always preserves a recoverable copy.\n\n0\nRevisa el caso. / Review the case. El respaldo debe poder recuperarse aunque la sincronización replique un borrado. / Backup should be recoverable even if sync propagates deletion.\n\nAdd option"
+        },
+        {
+          "numero": 3,
+          "enunciado": "El cliente pide limpieza el viernes; precio y disponibilidad no están aprobados. ¿Qué instrucción corresponde? / Friday cleaning is requested; price and availability are unapproved. Which instruction fits?",
+          "opciones": [
+            {
+              "texto": "Confirma la reserva con un precio estimado. / Confirm a booking with an estimated price.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Elige una hora para cerrar el acuerdo. / Choose a time to close the agreement.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Pide los datos faltantes y no inventes compromisos. / Ask for missing details without inventing commitments.",
+              "correcta_segun_editor": true
+            }
+          ],
+          "texto_original_renderizado": "El cliente pide limpieza el viernes; precio y disponibilidad no están aprobados. ¿Qué instrucción corresponde? / Friday cleaning is requested; price and availability are unapproved. Which instruction fits?\n \n \n\nConfirma la reserva con un precio estimado. / Confirm a booking with an estimated price.\n\n0\nRevisa el caso. / Review the case. Una solicitud no confirma precio, disponibilidad ni reserva. / A request does not confirm price, availability or booking.\n \n \n\nElige una hora para cerrar el acuerdo. / Choose a time to close the agreement.\n\n0\nRevisa el caso. / Review the case. Una solicitud no confirma precio, disponibilidad ni reserva. / A request does not confirm price, availability or booking.\n \n \n\nPide los datos faltantes y no inventes compromisos. / Ask for missing details without inventing commitments.\n\n+1\nCorrecto. / Correct. Una solicitud no confirma precio, disponibilidad ni reserva. / A request does not confirm price, availability or booking.\n\nAdd option"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué conjunto hace una instrucción más revisable? / Which set makes an instruction easier to review?",
+          "opciones": [
+            {
+              "texto": "Objetivo, contexto, datos, formato y límites. / Goal, context, facts, format and limits.",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Solo el nombre de una herramienta. / Only the name of a tool.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Una petición vaga de hacerlo mejor. / A vague request to make it better.",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "¿Qué conjunto hace una instrucción más revisable? / Which set makes an instruction easier to review?\n \n \n\nObjetivo, contexto, datos, formato y límites. / Goal, context, facts, format and limits.\n\n+1\nCorrecto. / Correct. Las cinco piezas definen qué producir y qué no asumir. / The five parts define the output and what must not be assumed.\n \n \n\nSolo el nombre de una herramienta. / Only the name of a tool.\n\n0\nRevisa el caso. / Review the case. Las cinco piezas definen qué producir y qué no asumir. / The five parts define the output and what must not be assumed.\n \n \n\nUna petición vaga de hacerlo mejor. / A vague request to make it better.\n\n0\nRevisa el caso. / Review the case. Las cinco piezas definen qué producir y qué no asumir. / The five parts define the output and what must not be assumed.\n\nAdd option"
+        },
+        {
+          "numero": 5,
+          "enunciado": "Un borrador inventa 150 dólares. El caso no tiene precio aprobado. ¿Cómo lo corriges? / A draft invents a $150 price; the case has no approved price. How do you revise it?",
+          "opciones": [
+            {
+              "texto": "Cambiarlo a 140 dólares sin fuente. / Change it to $140 without evidence.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Eliminar el precio y dejarlo pendiente de confirmación. / Remove the price and leave it pending confirmation.",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Mantenerlo porque suena razonable. / Keep it because it sounds reasonable.",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "Un borrador inventa 150 dólares. El caso no tiene precio aprobado. ¿Cómo lo corriges? / A draft invents a $150 price; the case has no approved price. How do you revise it?\n \n \n\nCambiarlo a 140 dólares sin fuente. / Change it to $140 without evidence.\n\n0\nRevisa el caso. / Review the case. Una cifra plausible no es un precio autorizado. / A plausible figure is not an authorized price.\n \n \n\nEliminar el precio y dejarlo pendiente de confirmación. / Remove the price and leave it pending confirmation.\n\n+1\nCorrecto. / Correct. Una cifra plausible no es un precio autorizado. / A plausible figure is not an authorized price.\n \n \n\nMantenerlo porque suena razonable. / Keep it because it sounds reasonable.\n\n0\nRevisa el caso. / Review the case. Una cifra plausible no es un precio autorizado. / A plausible figure is not an authorized price.\n\nAdd option"
+        },
+        {
+          "numero": 6,
+          "enunciado": "Un ejemplo de estilo contiene una fecha ajena al caso. ¿Qué debes imitar? / A style example contains a date unrelated to the case. What should you imitate?",
+          "opciones": [
+            {
+              "texto": "La fecha para que el mensaje parezca completo. / The date so the message looks complete.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Todos los hechos del ejemplo. / All facts in the example.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "El tono y la estructura, usando solo datos del caso. / Tone and structure, using only case facts.",
+              "correcta_segun_editor": true
+            }
+          ],
+          "texto_original_renderizado": "Un ejemplo de estilo contiene una fecha ajena al caso. ¿Qué debes imitar? / A style example contains a date unrelated to the case. What should you imitate?\n \n \n\nLa fecha para que el mensaje parezca completo. / The date so the message looks complete.\n\n0\nRevisa el caso. / Review the case. El ejemplo orienta el estilo; sus datos no se transfieren a otro caso. / The sample guides style; its facts do not transfer to another case.\n \n \n\nTodos los hechos del ejemplo. / All facts in the example.\n\n0\nRevisa el caso. / Review the case. El ejemplo orienta el estilo; sus datos no se transfieren a otro caso. / The sample guides style; its facts do not transfer to another case.\n \n \n\nEl tono y la estructura, usando solo datos del caso. / Tone and structure, using only case facts.\n\n+1\nCorrecto. / Correct. El ejemplo orienta el estilo; sus datos no se transfieren a otro caso. / The sample guides style; its facts do not transfer to another case.\n\nAdd option"
+        },
+        {
+          "numero": 7,
+          "enunciado": "No hay reserva aprobada. ¿Cuál es un asunto adecuado para pedir detalles? / No booking is approved. Which subject suits a request for details?",
+          "opciones": [
+            {
+              "texto": "Datos para evaluar su solicitud. / Details needed to review your request.",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Reserva confirmada para mañana. / Booking confirmed for tomorrow.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Pague hoy para no perder su reserva. / Pay today to keep your booking.",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "No hay reserva aprobada. ¿Cuál es un asunto adecuado para pedir detalles? / No booking is approved. Which subject suits a request for details?\n \n \n\nDatos para evaluar su solicitud. / Details needed to review your request.\n\n+1\nCorrecto. / Correct. El asunto debe describir la acción real sin inventar acuerdo ni urgencia. / The subject should describe the actual action without invented agreement or urgency.\n \n \n\nReserva confirmada para mañana. / Booking confirmed for tomorrow.\n\n0\nRevisa el caso. / Review the case. El asunto debe describir la acción real sin inventar acuerdo ni urgencia. / The subject should describe the actual action without invented agreement or urgency.\n \n \n\nPague hoy para no perder su reserva. / Pay today to keep your booking.\n\n0\nRevisa el caso. / Review the case. El asunto debe describir la acción real sin inventar acuerdo ni urgencia. / The subject should describe the actual action without invented agreement or urgency.\n\nAdd option"
+        },
+        {
+          "numero": 8,
+          "enunciado": "Luis sugirió una visita; nadie la aprobó ni asignó. ¿Cómo se resume? / Luis suggested a visit; no one approved or assigned it. How should it be summarized?",
+          "opciones": [
+            {
+              "texto": "Luis visitará mañana. / Luis will visit tomorrow.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Propuesta pendiente de aprobación y asignación. / Proposal pending approval and assignment.",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Visita confirmada con plazo inmediato. / Confirmed visit with immediate deadline.",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "Luis sugirió una visita; nadie la aprobó ni asignó. ¿Cómo se resume? / Luis suggested a visit; no one approved or assigned it. How should it be summarized?\n \n \n\nLuis visitará mañana. / Luis will visit tomorrow.\n\n0\nRevisa el caso. / Review the case. Una sugerencia no equivale a una decisión ni a una tarea aceptada. / A suggestion is not a decision or accepted task.\n \n \n\nPropuesta pendiente de aprobación y asignación. / Proposal pending approval and assignment.\n\n+1\nCorrecto. / Correct. Una sugerencia no equivale a una decisión ni a una tarea aceptada. / A suggestion is not a decision or accepted task.\n \n \n\nVisita confirmada con plazo inmediato. / Confirmed visit with immediate deadline.\n\n0\nRevisa el caso. / Review the case. Una sugerencia no equivale a una decisión ni a una tarea aceptada. / A suggestion is not a decision or accepted task.\n\nAdd option"
+        },
+        {
+          "numero": 9,
+          "enunciado": "Las notas dicen martes de la próxima semana, pero no tienen fecha de referencia. ¿Qué haces? / Notes say Tuesday next week but lack a reference date. What should you do?",
+          "opciones": [
+            {
+              "texto": "Convertirlo en una fecha usando cualquier calendario. / Convert it using any calendar.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Cambiarlo a mañana. / Change it to tomorrow.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Mantener la expresión y pedir aclaración de la fecha exacta. / Keep the wording and ask for the exact date.",
+              "correcta_segun_editor": true
+            }
+          ],
+          "texto_original_renderizado": "Las notas dicen martes de la próxima semana, pero no tienen fecha de referencia. ¿Qué haces? / Notes say Tuesday next week but lack a reference date. What should you do?\n \n \n\nConvertirlo en una fecha usando cualquier calendario. / Convert it using any calendar.\n\n0\nRevisa el caso. / Review the case. Sin fecha de referencia, la fecha de calendario no está establecida. / Without a reference date, the calendar date is not established.\n \n \n\nCambiarlo a mañana. / Change it to tomorrow.\n\n0\nRevisa el caso. / Review the case. Sin fecha de referencia, la fecha de calendario no está establecida. / Without a reference date, the calendar date is not established.\n \n \n\nMantener la expresión y pedir aclaración de la fecha exacta. / Keep the wording and ask for the exact date.\n\n+1\nCorrecto. / Correct. Sin fecha de referencia, la fecha de calendario no está establecida. / Without a reference date, the calendar date is not established.\n\nAdd option"
+        },
+        {
+          "numero": 10,
+          "enunciado": "Una página enlazada no respalda una cifra del borrador. ¿Cuál es el siguiente paso? / A linked page does not support a number in the draft. What is the next step?",
+          "opciones": [
+            {
+              "texto": "Tratarla como no verificada y buscar respaldo adecuado o retirarla. / Treat it as unverified and find suitable support or remove it.",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Conservarla porque tiene enlace. / Keep it because it has a link.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Pedir al modelo que suene más seguro. / Ask the model to sound more confident.",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "Una página enlazada no respalda una cifra del borrador. ¿Cuál es el siguiente paso? / A linked page does not support a number in the draft. What is the next step?\n \n \n\nTratarla como no verificada y buscar respaldo adecuado o retirarla. / Treat it as unverified and find suitable support or remove it.\n\n+1\nCorrecto. / Correct. La fuente debe sustentar la afirmación concreta. / The source must support the specific claim.\n \n \n\nConservarla porque tiene enlace. / Keep it because it has a link.\n\n0\nRevisa el caso. / Review the case. La fuente debe sustentar la afirmación concreta. / The source must support the specific claim.\n \n \n\nPedir al modelo que suene más seguro. / Ask the model to sound more confident.\n\n0\nRevisa el caso. / Review the case. La fuente debe sustentar la afirmación concreta. / The source must support the specific claim.\n\nAdd option"
+        },
+        {
+          "numero": 11,
+          "enunciado": "Para practicar un correo ficticio, ¿qué información es suficiente? / To practice a fictional email, which information is sufficient?",
+          "opciones": [
+            {
+              "texto": "Contraseña y datos de pago del cliente. / Client password and payment details.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Cliente A y los datos ficticios necesarios para la tarea. / Client A and the fictional facts needed for the task.",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "La conversación privada completa de una persona real. / A real person’s complete private conversation.",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "Para practicar un correo ficticio, ¿qué información es suficiente? / To practice a fictional email, which information is sufficient?\n \n \n\nContraseña y datos de pago del cliente. / Client password and payment details.\n\n0\nRevisa el caso. / Review the case. La práctica requiere información mínima y ficticia, sin identificadores ni credenciales. / Practice needs minimum fictional information, without identifiers or credentials.\n \n \n\nCliente A y los datos ficticios necesarios para la tarea. / Client A and the fictional facts needed for the task.\n\n+1\nCorrecto. / Correct. La práctica requiere información mínima y ficticia, sin identificadores ni credenciales. / Practice needs minimum fictional information, without identifiers or credentials.\n \n \n\nLa conversación privada completa de una persona real. / A real person’s complete private conversation.\n\n0\nRevisa el caso. / Review the case. La práctica requiere información mínima y ficticia, sin identificadores ni credenciales. / Practice needs minimum fictional information, without identifiers or credentials.\n\nAdd option"
+        },
+        {
+          "numero": 12,
+          "enunciado": "En el proyecto final, ¿qué evidencia demuestra revisión? / In the final project, what evidence demonstrates review?",
+          "opciones": [
+            {
+              "texto": "Solo un borrador sin fuente. / Only a draft with no source.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Una captura que dice terminado. / A screenshot saying done.",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Fuente preservada, versiones comparadas y comprobaciones con apoyo. / Preserved source, compared versions and supported checks.",
+              "correcta_segun_editor": true
+            }
+          ],
+          "texto_original_renderizado": "En el proyecto final, ¿qué evidencia demuestra revisión? / In the final project, what evidence demonstrates review?\n \n \n\nSolo un borrador sin fuente. / Only a draft with no source.\n\n0\nRevisa el caso. / Review the case. La revisión debe poder compararse con la fuente y los cambios. / Review should be traceable to the source and changes.\n \n \n\nUna captura que dice terminado. / A screenshot saying done.\n\n0\nRevisa el caso. / Review the case. La revisión debe poder compararse con la fuente y los cambios. / Review should be traceable to the source and changes.\n \n \n\nFuente preservada, versiones comparadas y comprobaciones con apoyo. / Preserved source, compared versions and supported checks.\n\n+1\nCorrecto. / Correct. La revisión debe poder compararse con la fuente y los cambios. / Review should be traceable to the source and changes.\n\nAdd option"
+        }
+      ],
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/Evaluación_final_PA203_PA203_final_assessment/preguntas_estructuradas.json"
+    },
+    {
+      "title": "PA-203 Lección 01 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Dónde conservarías la solicitud original? / Where would you keep the original request?",
+          "opciones": [
+            {
+              "texto": "Trabajo / Work",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Entrada / Input",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Entrega / Delivery",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "¿Dónde conservarías la solicitud original? / Where would you keep the original request?\n \n \n\nTrabajo / Work\n\n \n \n\nEntrada / Input\n\n \n \n\nEntrega / Delivery\n\nAdd option"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué nombre facilita reconocer fecha y versión? / Which name makes the date and version clear?",
+          "opciones": [
+            {
+              "texto": "final_final",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Documento / Document",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "2026-10-14_Propuesta_v02 / 2026-10-14_Proposal_v02",
+              "correcta_segun_editor": true
+            }
+          ],
+          "texto_original_renderizado": "¿Qué nombre facilita reconocer fecha y versión? / Which name makes the date and version clear?\n \n \n\nfinal_final\n\n \n \n\nDocumento / Document\n\n \n \n\n2026-10-14_Propuesta_v02 / 2026-10-14_Proposal_v02\n\nAdd option"
+        },
+        {
+          "numero": 3,
+          "enunciado": "Un colaborador solo debe revisar. ¿Qué acceso corresponde? / A colleague only needs to review. Which access is appropriate?",
+          "opciones": [
+            {
+              "texto": "Lectura / Viewing",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Edición para todos / Editing for everyone",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Tu contraseña / Your password",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "Un colaborador solo debe revisar. ¿Qué acceso corresponde? / A colleague only needs to review. Which access is appropriate?\n \n \n\nLectura / Viewing\n\n \n \n\nEdición para todos / Editing for everyone\n\n \n \n\nTu contraseña / Your password\n\nAdd option"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué demuestra mejor que un respaldo sirve? / What best shows that a backup works?",
+          "opciones": [
+            {
+              "texto": "Tener dos archivos juntos / Keeping two files together",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Recuperar y abrir una copia independiente / Recovering and opening an independent copy",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Cambiar el nombre a backup / Renaming a file backup",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "¿Qué demuestra mejor que un respaldo sirve? / What best shows that a backup works?\n \n \n\nTener dos archivos juntos / Keeping two files together\n\n \n \n\nRecuperar y abrir una copia independiente / Recovering and opening an independent copy\n\n \n \n\nCambiar el nombre a backup / Renaming a file backup\n\nAdd option"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué debe hacer la IA con la fuente original? / What should AI do with the original source?",
+          "opciones": [
+            {
+              "texto": "Sobrescribirla sin revisión / Overwrite it without review",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Eliminar versiones previas / Delete prior versions",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Usarla como referencia y guardar su salida como borrador / Use it as a reference and save output as a draft",
+              "correcta_segun_editor": true
+            }
+          ],
+          "texto_original_renderizado": "¿Qué debe hacer la IA con la fuente original? / What should AI do with the original source?\n \n \n\nSobrescribirla sin revisión / Overwrite it without review\n\n \n \n\nEliminar versiones previas / Delete prior versions\n\n \n \n\nUsarla como referencia y guardar su salida como borrador / Use it as a reference and save output as a draft\n\nAdd option"
+        }
+      ],
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/PA-203_Lección_01_Repaso_interactivo_Interactive_review/preguntas_estructuradas.json"
+    },
+    {
+      "title": "PA-203 Lección 02 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué revisión precede a enviar un mensaje? / Which review comes before sending a message?",
+          "opciones": [
+            {
+              "texto": "Solo corregir colores / Only adjust colors",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Comparar hechos, utilidad y privacidad con la fuente / Check facts, usefulness and privacy against the source",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Enviar si suena profesional / Send if it sounds professional",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "¿Qué revisión precede a enviar un mensaje? / Which review comes before sending a message?\n \n \n\nSolo corregir colores / Only adjust colors\n\n \n \n\nComparar hechos, utilidad y privacidad con la fuente / Check facts, usefulness and privacy against the source\n\n \n \n\nEnviar si suena profesional / Send if it sounds professional\n\nAdd option"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Cómo debe tratarse una respuesta de IA? / How should AI output be treated?",
+          "opciones": [
+            {
+              "texto": "Como un borrador que necesita revisión / As a draft requiring review",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Como verdad garantizada / As guaranteed truth",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Como un compromiso aprobado / As an approved commitment",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "¿Cómo debe tratarse una respuesta de IA? / How should AI output be treated?\n \n \n\nComo un borrador que necesita revisión / As a draft requiring review\n\n \n \n\nComo verdad garantizada / As guaranteed truth\n\n \n \n\nComo un compromiso aprobado / As an approved commitment\n\nAdd option"
+        },
+        {
+          "numero": 3,
+          "enunciado": "La fuente no incluye precio. ¿Qué haces con $150 añadido por IA? / The source has no price. What do you do with $150 added by AI?",
+          "opciones": [
+            {
+              "texto": "Lo confirmas por su tono / Confirm it because it sounds confident",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Lo eliminas y marcas el precio pendiente / Remove it and mark price as pending",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Lo copias si parece razonable / Copy it if it seems reasonable",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "La fuente no incluye precio. ¿Qué haces con $150 añadido por IA? / The source has no price. What do you do with $150 added by AI?\n \n \n\nLo confirmas por su tono / Confirm it because it sounds confident\n\n \n \n\nLo eliminas y marcas el precio pendiente / Remove it and mark price as pending\n\n \n \n\nLo copias si parece razonable / Copy it if it seems reasonable\n\nAdd option"
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué conjunto sirve para esta práctica? / Which information is suitable for this practice?",
+          "opciones": [
+            {
+              "texto": "Expediente identificable / Identifiable records",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Contraseña y datos de pago / Password and payment information",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Nombres y situación ficticios / Fictional names and situation",
+              "correcta_segun_editor": true
+            }
+          ],
+          "texto_original_renderizado": "¿Qué conjunto sirve para esta práctica? / Which information is suitable for this practice?\n \n \n\nExpediente identificable / Identifiable records\n\n \n \n\nContraseña y datos de pago / Password and payment information\n\n \n \n\nNombres y situación ficticios / Fictional names and situation\n\nAdd option"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué verifica una referencia propuesta por IA? / What verifies a reference proposed by AI?",
+          "opciones": [
+            {
+              "texto": "Abrirla y comprobar que sostiene la afirmación / Open it and check that it supports the claim",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Que tenga apariencia de enlace / That it looks like a link",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Preguntar solo al mismo modelo / Only ask the same model",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "¿Qué verifica una referencia propuesta por IA? / What verifies a reference proposed by AI?\n \n \n\nAbrirla y comprobar que sostiene la afirmación / Open it and check that it supports the claim\n\n \n \n\nQue tenga apariencia de enlace / That it looks like a link\n\n \n \n\nPreguntar solo al mismo modelo / Only ask the same model\n\nAdd option"
+        }
+      ],
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/PA-203_Lección_02_Repaso_interactivo_Interactive_review/preguntas_estructuradas.json"
+    },
+    {
+      "title": "PA-203 Lección 03 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Cuál define mejor el objetivo? / Which best defines the goal?",
+          "opciones": [
+            {
+              "texto": "Pide los datos faltantes antes de cotizar / Ask for missing details before quoting",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Responde con seguridad / Respond confidently",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Ayúdame con todo / Help me with everything",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "*\n¿Cuál define mejor el objetivo? / Which best defines the goal?\n \n \n\nPide los datos faltantes antes de cotizar / Ask for missing details before quoting\n\nEl objetivo debe producir una acción concreta y revisable. / The goal should produce a specific, reviewable action.\n \n \n\nResponde con seguridad / Respond confidently\n\nEl objetivo debe producir una acción concreta y revisable. / The goal should produce a specific, reviewable action.\n \n \n\nAyúdame con todo / Help me with everything\n\nEl objetivo debe producir una acción concreta y revisable. / The goal should produce a specific, reviewable action.\n\nAdd option"
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué pertenece al formato? / Which belongs to the format?",
+          "opciones": [
+            {
+              "texto": "Correo cordial de 60–90 palabras / Polite 60–90-word email",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Precio inventado / Invented price",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Contraseña del cliente / Customer password",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "*\n¿Qué pertenece al formato? / Which belongs to the format?\n \n \n\nCorreo cordial de 60–90 palabras / Polite 60–90-word email\n\nEl formato establece estructura, tono y extensión. / Format specifies structure, tone and length.\n \n \n\nPrecio inventado / Invented price\n\nEl formato establece estructura, tono y extensión. / Format specifies structure, tone and length.\n \n \n\nContraseña del cliente / Customer password\n\nEl formato establece estructura, tono y extensión. / Format specifies structure, tone and length.\n\nAdd option"
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué límite protege frente a compromisos no aprobados? / Which limit protects against unapproved commitments?",
+          "opciones": [
+            {
+              "texto": "Elige cualquier precio / Choose any price",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "No confirmes precio ni reserva sin datos aprobados / Do not confirm price or booking without approved facts",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Omitir información pendiente / Omit pending details",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "*\n¿Qué límite protege frente a compromisos no aprobados? / Which limit protects against unapproved commitments?\n \n \n\nElige cualquier precio / Choose any price\n\nEl límite mantiene visibles las decisiones que aún requieren confirmación. / The limit keeps decisions requiring confirmation visible.\n \n \n\nNo confirmes precio ni reserva sin datos aprobados / Do not confirm price or booking without approved facts\n\nEl límite mantiene visibles las decisiones que aún requieren confirmación. / The limit keeps decisions requiring confirmation visible.\n \n \n\nOmitir información pendiente / Omit pending details\n\nEl límite mantiene visibles las decisiones que aún requieren confirmación. / The limit keeps decisions requiring confirmation visible.\n\nAdd option"
+        },
+        {
+          "numero": 4,
+          "enunciado": "Falta una de las preguntas solicitadas. ¿Qué revisión conviene? / One requested question is missing. Which revision helps?",
+          "opciones": [
+            {
+              "texto": "Añade una garantía / Add a guarantee",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Hazlo mejor / Make it better",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Incluye la pregunta faltante y conserva los límites / Include the missing question and retain the limits",
+              "correcta_segun_editor": true
+            }
+          ],
+          "texto_original_renderizado": "*\nFalta una de las preguntas solicitadas. ¿Qué revisión conviene? / One requested question is missing. Which revision helps?\n \n \n\nAñade una garantía / Add a guarantee\n\nUna corrección concreta puede comprobarse sin ampliar compromisos. / A specific correction is testable without expanding commitments.\n \n \n\nHazlo mejor / Make it better\n\nUna corrección concreta puede comprobarse sin ampliar compromisos. / A specific correction is testable without expanding commitments.\n \n \n\nIncluye la pregunta faltante y conserva los límites / Include the missing question and retain the limits\n\nUna corrección concreta puede comprobarse sin ampliar compromisos. / A specific correction is testable without expanding commitments.\n\nAdd option"
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué demuestra que el borrador cumple? / What demonstrates that a draft meets the request?",
+          "opciones": [
+            {
+              "texto": "Compararlo con datos y criterios definidos / Compare it with defined facts and criteria",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Que use palabras largas / That it uses long words",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Que la IA lo apruebe automáticamente / That AI automatically approves it",
+              "correcta_segun_editor": false
+            }
+          ],
+          "texto_original_renderizado": "*\n¿Qué demuestra que el borrador cumple? / What demonstrates that a draft meets the request?\n \n \n\nCompararlo con datos y criterios definidos / Compare it with defined facts and criteria\n\nLa revisión humana necesita criterios y evidencia, no solo apariencia. / Human review needs criteria and evidence, not just appearance.\n \n \n\nQue use palabras largas / That it uses long words\n\nLa revisión humana necesita criterios y evidencia, no solo apariencia. / Human review needs criteria and evidence, not just appearance.\n \n \n\nQue la IA lo apruebe automáticamente / That AI automatically approves it\n\nLa revisión humana necesita criterios y evidencia, no solo apariencia. / Human review needs criteria and evidence, not just appearance.\n\nAdd option"
+        }
+      ],
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/PA-203_Lección_03_Repaso_interactivo_Interactive_review/preguntas_estructuradas.json"
+    },
+    {
+      "title": "PA-203 Lección 04 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué corrección es más verificable? / Which revision request is more testable?",
+          "opciones": [
+            {
+              "texto": "Hazlo mejor / Make it better",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Añade una pregunta sobre ubicación y mantén 90 palabras / Add a location question and keep 90 words",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Inventa los datos faltantes / Invent missing details",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Para qué sirve un ejemplo de estilo? / What is a style example for?",
+          "opciones": [
+            {
+              "texto": "Copiar los datos del ejemplo / Copy example facts",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Sustituir la fuente / Replace the source",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Mostrar tono o estructura sin añadir hechos / Show tone or structure without adding facts",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué conviene guardar al revisar? / What should you retain during revision?",
+          "opciones": [
+            {
+              "texto": "La versión anterior para comparar / The prior version for comparison",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Solo la última respuesta / Only the last answer",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Datos privados reales / Real private data",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué se comprueba después de revisar? / What should you check after a revision?",
+          "opciones": [
+            {
+              "texto": "Que sea más largo / That it is longer",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Que conserve los hechos originales / That it preserves original facts",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Que prometa un precio / That it promises a price",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Cuál es una buena secuencia de mejora? / What is a good revision sequence?",
+          "opciones": [
+            {
+              "texto": "Cambiar todo sin revisar / Change everything without review",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Aceptar siempre el primer borrador / Always accept the first draft",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Comparar, identificar diferencia, corregir y verificar / Compare, identify gap, revise and verify",
+              "correcta_segun_editor": true
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    },
+    {
+      "title": "PA-203 Lección 05 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Cuál es el propósito principal de un correo? / What should a professional email focus on?",
+          "opciones": [
+            {
+              "texto": "Una acción clara / One clear action",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Muchas solicitudes sin relación / Many unrelated requests",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Prometer una fecha no aprobada / Promise an unapproved date",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué debe contener el asunto? / What should the subject line convey?",
+          "opciones": [
+            {
+              "texto": "Una garantía de precio / A price guarantee",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La acción o tema principal / The main action or topic",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Información privada innecesaria / Unnecessary private data",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué parte pide datos concretos? / Which part requests specific details?",
+          "opciones": [
+            {
+              "texto": "El saludo / Greeting",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La firma / Signature",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La solicitud / Request",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué debe evitarse en el cierre? / What should the closing avoid?",
+          "opciones": [
+            {
+              "texto": "Agradecer / Thanking",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Compromisos no autorizados / Unauthorized commitments",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Indicar siguiente paso / Indicating next step",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué hacer antes de enviar un borrador generado por IA? / What should you do before sending an AI draft?",
+          "opciones": [
+            {
+              "texto": "Revisar hechos y destinatario / Check facts and recipient",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Enviarlo sin leer / Send without reading",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Inventar disponibilidad / Invent availability",
+              "correcta_segun_editor": false
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    },
+    {
+      "title": "PA-203 Lección 06 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Cómo resumir una propuesta pendiente de revisión? / How should you summarize a proposal pending review?",
+          "opciones": [
+            {
+              "texto": "Propuesta aprobada / Proposal approved",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Propuesta pendiente de revisión / Proposal pending review",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Propuesta enviada / Proposal sent",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "Si no se conoce el responsable, ¿qué se indica? / If the owner is unknown, what should you state?",
+          "opciones": [
+            {
+              "texto": "Asignar uno al azar / Assign one at random",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Omitir la tarea / Omit the task",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Responsable pendiente / Owner pending",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué son las decisiones? / What are decisions?",
+          "opciones": [
+            {
+              "texto": "Acuerdos explícitos / Explicit agreements",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Ideas no aprobadas / Unapproved ideas",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Suposiciones / Assumptions",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué distingue una propuesta de una acción acordada? / What distinguishes a proposal from an agreed action?",
+          "opciones": [
+            {
+              "texto": "No existe diferencia / There is no difference",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La propuesta aún no está aprobada / A proposal is not yet approved",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Toda propuesta tiene fecha / Every proposal has a deadline",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué debe conservar un resumen? / What must a summary preserve?",
+          "opciones": [
+            {
+              "texto": "Solo las palabras más llamativas / Only striking words",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Plazos inventados / Invented deadlines",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Significado y condiciones de la fuente / Meaning and conditions from the source",
+              "correcta_segun_editor": true
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    },
+    {
+      "title": "PA-203 Lección 07 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué prueba una afirmación convincente? / What does a convincing claim prove?",
+          "opciones": [
+            {
+              "texto": "Que necesariamente es correcta / That it is necessarily correct",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Nada por sí sola: requiere fuente / Nothing by itself: it needs a source",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Que ya fue aprobada / That it was approved",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué hacer con un dato no comprobable? / What should you do with an unverifiable detail?",
+          "opciones": [
+            {
+              "texto": "Marcar incertidumbre, eliminarlo o pedir aclaración / Mark uncertainty, remove it or ask",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Presentarlo como confirmado / Present it as confirmed",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Compartirlo sin revisar / Share without review",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Qué revisar en información externa cambiante? / What should you check for changing external information?",
+          "opciones": [
+            {
+              "texto": "Solo el estilo / Only the style",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Solo el título / Only the title",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "La fuente y la fecha / The source and date",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué permite una fuente que describe opciones? / What does a source describing options allow?",
+          "opciones": [
+            {
+              "texto": "Gastar dinero sin permiso / Spend without permission",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Informar opciones, no autorizar decisiones / Describe options, not authorize decisions",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Confirmar una reserva / Confirm a booking",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué principio protege la privacidad? / Which principle protects privacy?",
+          "opciones": [
+            {
+              "texto": "Compartir solo los datos necesarios / Share only necessary data",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Publicar todos los datos / Publish all data",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Usar datos reales en prácticas / Use real data in practice",
+              "correcta_segun_editor": false
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    },
+    {
+      "title": "PA-203 Lección 08 Repaso interactivo Interactive review",
+      "questions": [
+        {
+          "numero": 1,
+          "enunciado": "¿Qué significa «viernes» en el caso ficticio? / What does 'Friday' mean in the fictional case?",
+          "opciones": [
+            {
+              "texto": "Reserva confirmada / Confirmed booking",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Día solicitado, no reserva confirmada / Requested day, not confirmed booking",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Fecha de pago / Payment date",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "¿Qué datos faltan en la solicitud? / What details are missing from the request?",
+          "opciones": [
+            {
+              "texto": "Dirección, tamaño, horario y tareas / Address, size, time and tasks",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Nombre de la empresa / Company name",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "El día solicitado / Requested day",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "¿Cuál es el estado de la visita sugerida por Luis? / What is the status of Luis's suggested visit?",
+          "opciones": [
+            {
+              "texto": "Aprobada y asignada / Approved and assigned",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Completada / Completed",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Propuesta sin aprobación / Proposal not approved",
+              "correcta_segun_editor": true
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "¿Qué aceptó hacer Ana? / What did Ana agree to do?",
+          "opciones": [
+            {
+              "texto": "Confirmar precio / Confirm price",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Preparar borrador de preguntas / Draft questions",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "Reservar el servicio / Book service",
+              "correcta_segun_editor": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "¿Qué debe evitar el expediente final? / What must the final project avoid?",
+          "opciones": [
+            {
+              "texto": "Precios y decisiones inventados / Invented prices and decisions",
+              "correcta_segun_editor": true
+            },
+            {
+              "texto": "La fuente original / The original source",
+              "correcta_segun_editor": false
+            },
+            {
+              "texto": "Separar documentos / Separating documents",
+              "correcta_segun_editor": false
+            }
+          ]
+        }
+      ],
+      "source": "B66 editorial questions based on PA-203 lesson content; pending pedagogical QA"
+    }
+  ],
+  "existing_catalog_lessons": 2,
+  "notes": [
+    "Copia de preparación sin alterar archivos existentes",
+    "Revisar la asignación de video de Adays antes de publicar",
+    "Las claves de repaso L01 y L02 corregidas están en archivo separado y deben aplicarse al integrar",
+    "Entrega final manual, no autocertificar",
+    "Claves L01/L02 integradas en copia B66, originales de main intactos"
+  ]
+}

@@ -1,0 +1,27 @@
+name: B66 PA-203 video transfer (manual only)
+on:
+  workflow_dispatch:
+jobs:
+  transfer:
+    if: github.ref == 'refs/heads/B66-PA203-preparacion'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout protected test branch
+        uses: actions/checkout@v4
+        with:
+          ref: B66-PA203-preparacion
+          persist-credentials: false
+      - name: Check Supabase credential exists
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          if [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::Repository secret SUPABASE_SERVICE_ROLE_KEY is missing; no videos transferred."
+            exit 1
+          fi
+      - name: Transfer only approved PA-203 MP4 files
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python3 b66/pa203/transfer_pa203_storage.py

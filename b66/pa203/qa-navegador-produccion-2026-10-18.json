@@ -1,0 +1,20 @@
+{
+  "course": "PA-203",
+  "date": "2026-10-18",
+  "target": "https://www.plutonacademic.com/courses.html?course=PA-203",
+  "tested": "live-public-site-read-only",
+  "results": {
+    "lessons_visible": 2,
+    "lessons_expected": 8,
+    "language_switch": "pass for visible lessons only",
+    "video_l1_l2": "sources present, playback unconfirmed",
+    "video_l3_l4": "not testable in live course because lessons absent",
+    "read_aloud": "failed: No se pudo reproducir el audio"
+  },
+  "notes": [
+    "La página pública no corresponde todavía al borrador B66",
+    "No se realizaron modificaciones en producción",
+    "La prueba de audio de lectura no equivale a reproducir el MP4"
+  ],
+  "release_approved": false
+}

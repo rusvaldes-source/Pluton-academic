@@ -1,0 +1,63 @@
+{
+  "version": "B66",
+  "course": "PA-203",
+  "stage": "integration-readiness",
+  "source_sha": "f01af373b54ef13c100af7e2962efda74745a7a5",
+  "checks": {
+    "lessonCount": 8,
+    "notebookCount": 5,
+    "assessmentCount": 6,
+    "autoQuestions": 29,
+    "manualQuestions": 1,
+    "missingText": [],
+    "unverifiedVideos": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "acceptance_tests": [
+    {
+      "id": "T01",
+      "test": "8 lecciones y textos completos",
+      "result": "pass"
+    },
+    {
+      "id": "T02",
+      "test": "29 preguntas automáticas con clave única",
+      "result": "pass"
+    },
+    {
+      "id": "T03",
+      "test": "Reproducción real de 4 MP4",
+      "result": "pending"
+    },
+    {
+      "id": "T04",
+      "test": "Contenido de lecciones 3-8 en interfaz del estudiante",
+      "result": "pending"
+    },
+    {
+      "id": "T05",
+      "test": "Traducción ES/EN de todas las secciones",
+      "result": "pending"
+    },
+    {
+      "id": "T06",
+      "test": "Progreso y corrección interactiva",
+      "result": "pending"
+    },
+    {
+      "id": "T07",
+      "test": "Revisión manual del proyecto final",
+      "result": "pending"
+    },
+    {
+      "id": "T08",
+      "test": "Validación de ubicación del video Adays",
+      "result": "pending"
+    }
+  ],
+  "release_allowed": false
+}

@@ -1,0 +1,68 @@
+{
+  "course": "PA-203",
+  "branch": "B66-PA203-preparacion",
+  "status": "permanent_mp4_stored_and_linked_in_b66_pending_browser_playback_qa",
+  "video_jobs": [
+    {
+      "lesson": 5,
+      "video_id": "05423b95514bd66e8608b753dfd44a00",
+      "presenter": "Adays",
+      "title": "Correos profesionales",
+      "status": "completed_approved",
+      "target_path": "b64/videos/PA-203_Leccion_05_05423b95514bd66e8608b753dfd44a00.mp4",
+      "duration_seconds": 57.3127,
+      "heygen_video_page": "https://app.heygen.com/videos/05423b95514bd66e8608b753dfd44a00",
+      "integrated": true,
+      "note": "MP4 confirmado en storage.objects; reproducción navegador y audio pendientes de QA",
+      "storage": "Supabase Storage pa203-videos",
+      "permanent_mp4_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_05_05423b95514bd66e8608b753dfd44a00.mp4"
+    },
+    {
+      "lesson": 6,
+      "video_id": "2e07f54d434467a07494e38951d85a17",
+      "presenter": "Adays",
+      "title": "Resúmenes y acciones",
+      "status": "completed_approved",
+      "target_path": "b64/videos/PA-203_Leccion_06_2e07f54d434467a07494e38951d85a17.mp4",
+      "duration_seconds": 55.0139,
+      "heygen_video_page": "https://app.heygen.com/videos/2e07f54d434467a07494e38951d85a17",
+      "integrated": true,
+      "note": "MP4 confirmado en storage.objects; reproducción navegador y audio pendientes de QA",
+      "storage": "Supabase Storage pa203-videos",
+      "permanent_mp4_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_06_2e07f54d434467a07494e38951d85a17.mp4"
+    },
+    {
+      "lesson": 7,
+      "video_id": "6c90166c69872a754564584be5aaaa8d",
+      "presenter": "Fundador blazer blanco",
+      "title": "Verificación y privacidad",
+      "status": "completed_approved",
+      "target_path": "b64/videos/PA-203_Leccion_07_6c90166c69872a754564584be5aaaa8d.mp4",
+      "duration_seconds": 60.7086,
+      "heygen_video_page": "https://app.heygen.com/videos/6c90166c69872a754564584be5aaaa8d",
+      "integrated": true,
+      "note": "MP4 confirmado en storage.objects; reproducción navegador y audio pendientes de QA",
+      "storage": "Supabase Storage pa203-videos",
+      "permanent_mp4_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_07_6c90166c69872a754564584be5aaaa8d.mp4"
+    },
+    {
+      "lesson": 8,
+      "video_id": "95b0d1b0e3f5d46cd3c5f36dcb3ae5c6",
+      "presenter": "Fundador blazer blanco",
+      "title": "Proyecto práctico final",
+      "status": "completed_approved",
+      "target_path": "b64/videos/PA-203_Leccion_08_95b0d1b0e3f5d46cd3c5f36dcb3ae5c6.mp4",
+      "duration_seconds": 64,
+      "heygen_video_page": "https://app.heygen.com/videos/95b0d1b0e3f5d46cd3c5f36dcb3ae5c6",
+      "integrated": true,
+      "note": "MP4 confirmado en storage.objects; reproducción navegador y audio pendientes de QA",
+      "storage": "Supabase Storage pa203-videos",
+      "permanent_mp4_url": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_08_95b0d1b0e3f5d46cd3c5f36dcb3ae5c6.mp4"
+    }
+  ],
+  "next_steps": [
+    "Probar reproducción real, audio, duración y móvil en B66",
+    "Corregir otros problemas del curso PA-203 antes de publicar"
+  ],
+  "approval": "Usuario aprobó expresamente los cuatro videos el 2026-10-18; no regenerar ni sustituir"
+}

@@ -1,0 +1,116 @@
+{
+  "version": "B66",
+  "course": "PA-203",
+  "status": "inventario verificado; integración y pruebas pendientes",
+  "source_sha": "c0b940c28328e0f877101311b819a6534a82d821",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "01 01 Organización digital",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/01_01_Organización_digital/contenido_original_ES_EN.txt",
+      "video": "b64/videos/PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4"
+    },
+    {
+      "number": 2,
+      "title": "02 02 Uso responsable de IA",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/02_02_Uso_responsable_de_IA/contenido_original_ES_EN.txt",
+      "video": "b64/videos/PA-203_Leccion_02_2af2c139ccb79853b26a3096cee38e7b.mp4"
+    },
+    {
+      "number": 3,
+      "title": "03 03 Instrucciones claras",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/03_03_Instrucciones_claras/contenido_original_ES_EN.txt",
+      "video": "b64/videos/PA-203_Leccion_03_b51d75a3472e644708f8c5862407214f.mp4"
+    },
+    {
+      "number": 4,
+      "title": "04 04 Mejora con ejemplos",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/04_04_Mejora_con_ejemplos/contenido_original_ES_EN.txt",
+      "video": "b64/videos/PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4"
+    },
+    {
+      "number": 5,
+      "title": "05 05 Correos profesionales",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/05_05_Correos_profesionales/contenido_original_ES_EN.txt",
+      "video": null
+    },
+    {
+      "number": 6,
+      "title": "06 06 Resúmenes y acciones",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/06_06_Resúmenes_y_acciones/contenido_original_ES_EN.txt",
+      "video": null
+    },
+    {
+      "number": 7,
+      "title": "07 07 Verificación y privacidad",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/07_07_Verificación_y_privacidad/contenido_original_ES_EN.txt",
+      "video": null
+    },
+    {
+      "number": 8,
+      "title": "08 08 Proyecto práctico final",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Lecciones/08_08_Proyecto_práctico_final/contenido_original_ES_EN.txt",
+      "video": null
+    }
+  ],
+  "notebooks": [
+    {
+      "title": "PA203 01 Organizacion IA",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_01_Organizacion_IA/contenido_original_ES_EN.txt"
+    },
+    {
+      "title": "PA203 02 Comunicacion Privacidad",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_02_Comunicacion_Privacidad/contenido_original_ES_EN.txt"
+    },
+    {
+      "title": "PA203 03 Cuaderno Modulo 03 ES EN",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_03_Cuaderno_Modulo_03_ES_EN/contenido_original_ES_EN.txt"
+    },
+    {
+      "title": "PA203 04 Cuaderno Modulo 04 ES EN",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_04_Cuaderno_Modulo_04_ES_EN/contenido_original_ES_EN.txt"
+    },
+    {
+      "title": "PA203 06 Cuaderno Modulo 06 ES EN",
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Cuadernos/PA203_06_Cuaderno_Modulo_06_ES_EN/contenido_original_ES_EN.txt"
+    }
+  ],
+  "assessments": [
+    {
+      "title": "Autoevaluación del módulo 1 Module 1 self-check",
+      "questions": 2,
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/Autoevaluación_del_módulo_1_Module_1_self-check/preguntas_estructuradas.json"
+    },
+    {
+      "title": "Entrega del proyecto PA203 PA203 project submission",
+      "questions": 1,
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/Entrega_del_proyecto_PA203_PA203_project_submission/preguntas_estructuradas.json"
+    },
+    {
+      "title": "Evaluación final PA203 PA203 final assessment",
+      "questions": 12,
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/Evaluación_final_PA203_PA203_final_assessment/preguntas_estructuradas.json"
+    },
+    {
+      "title": "PA-203 Lección 01 Repaso interactivo Interactive review",
+      "questions": 5,
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/PA-203_Lección_01_Repaso_interactivo_Interactive_review/preguntas_estructuradas.json"
+    },
+    {
+      "title": "PA-203 Lección 02 Repaso interactivo Interactive review",
+      "questions": 5,
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/PA-203_Lección_02_Repaso_interactivo_Interactive_review/preguntas_estructuradas.json"
+    },
+    {
+      "title": "PA-203 Lección 03 Repaso interactivo Interactive review",
+      "questions": 5,
+      "source": "PLUTON_AUDITORIA_MAESTRA_2026-10-15/PA-203/Evaluaciones/PA-203_Lección_03_Repaso_interactivo_Interactive_review/preguntas_estructuradas.json"
+    }
+  ],
+  "notes": [
+    "No sustituir videos aprobados",
+    "Validar ubicación del video Adays antes de cambios",
+    "No publicar sin autorización",
+    "Proyecto final requiere revisión manual"
+  ]
+}
