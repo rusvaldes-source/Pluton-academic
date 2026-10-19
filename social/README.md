@@ -15,3 +15,18 @@
 **Estado:** archivos de componente y configuración preparados, no integrados a la web pública; ninguna cuenta verificada, logos oficiales aún por incorporar.
 
 **Revisión 16 oct:** para mostrar un enlace se requiere URL HTTPS con ruta de perfil y `verified: true`, confirmado por el administrador. Mientras no haya cuentas verificadas, se oculta el módulo. Los nombres son fallback accesible; logos oficiales aún pendientes.
+
+
+## B73 — corrección del panel público (19 oct 2026)
+
+El pie real de `index.html` carga `b59-social.js`, que utiliza el validador compartido de `social/social-links.js` y exclusivamente `social/social-links.json`. Las copias históricas de configuración no se modifican ni controlan este panel.
+
+- Ya no se dibujan botones inactivos para cuentas sin configurar.
+- Sin cuentas verificadas se muestra un aviso ES/EN; un fallo de carga tiene su propio mensaje.
+- Los enlaces válidos funcionan con teclado, abren una pestaña nueva y tienen objetivos de al menos 44 px.
+- Se admiten las seis redes del archivo, incluido TikTok y WhatsApp Business cuando estén aprobadas.
+- No se añadieron URLs: las seis cuentas siguen pendientes de identificación por el propietario. No se crearon cuentas ni se publicó en redes.
+
+Para activar una cuenta: recibir su URL oficial, verificar que pertenece a la academia y editar su entrada en `social/social-links.json` con URL HTTPS y `verified: true`. Probar el destino real antes de publicar. La prueba usa perfiles ficticios únicamente como fixtures; no acredita titularidad.
+
+Verificación: `node --test tests/social-links.test.mjs` y `LD_LIBRARY_PATH=/tmp/b70-libs node tests/b73-social-browser.cjs` (Chromium y Playwright disponibles en el entorno de trabajo). Cobertura: escritorio/móvil, ES/EN, sin configuración, fallo HTTP, URLs rechazadas, TikTok, teclado y tamaño táctil. Ninguna modificación de cursos, autenticación, pagos, Supabase ni Aula Digital.
