@@ -99,8 +99,10 @@ $('newPasswordForm').addEventListener('submit', async event => {
     $('newPassword').value = '';
     if (error) { $('resetStatus').textContent = language === 'es' ? 'No se pudo actualizar la contraseña.' : 'Could not update password.'; return; }
     $('newPasswordForm').hidden = true;
-    $('resetStatus').textContent = language === 'es' ? 'Contraseña actualizada.' : 'Password updated.';
-    await refresh();
+    $('login').hidden = false;
+    $('resetStatus').textContent = language === 'es' ? 'Contraseña actualizada. Ya puedes iniciar sesión con tu nueva contraseña.' : 'Password updated. You can now sign in with your new password.';
+    await sb.auth.signOut();
+    status(language === 'es' ? 'Inicia sesión con tu nueva contraseña.' : 'Sign in with your new password.');
   } catch { $('resetStatus').textContent = language === 'es' ? 'Error de conexión.' : 'Connection error.'; }
   finally { button.disabled = false; }
 });
