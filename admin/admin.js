@@ -113,12 +113,20 @@ async function loadReports(revision = authRevision) {
 }
 async function loadNews(revision = authRevision) {
   const list = $('newsList'); list.replaceChildren();
-  const { data, error } = await sb.from('pluton_news').select('id,title_es,title_en,status,created_at').order('created_at', { ascending: false }).limit(30);
+  const { data, error } = await sb.from('pluton_news').select('id,title_es,title_en,video_url,status,created_at').order('created_at', { ascending: false }).limit(30);
   if (revision !== authRevision) return;
   if (error) { $('newsStatus').textContent = 'No se pudieron cargar las noticias / News unavailable.'; return; }
   for (const item of data || []) {
     const li = document.createElement('li');
     const name = document.createElement('span'); name.textContent = `${item.title_es} / ${item.title_en} — ${item.status} `; li.append(name);
+    if (item.video_url) {
+      const videoLink = document.createElement('a');
+      videoLink.href = item.video_url;
+      videoLink.target = '_blank';
+      videoLink.rel = 'noopener noreferrer';
+      videoLink.textContent = ' Video / Watch video';
+      li.append(videoLink);
+    }
     if (item.status !== 'published') {
       const next = item.status === 'draft' ? 'review' : 'published';
       const button = document.createElement('button'); button.type = 'button';
@@ -142,8 +150,12 @@ $('newsForm').addEventListener('submit', async event => {
   event.preventDefault();
   if (!sb || $('private').hidden) return;
   $('newsStatus').textContent = 'Guardando / Saving…';
-  const entry = { title_es: $('newsTitleEs').value.trim(), title_en: $('newsTitleEn').value.trim(), body_es: $('newsBodyEs').value.trim(), body_en: $('newsBodyEn').value.trim(), status: 'draft' };
-  if (Object.values(entry).some(v => !v)) { $('newsStatus').textContent = 'Completa todos los campos / Complete all fields.'; return; }
+  const entry = { title_es: $('newsTitleEs').value.trim(), title_en: $('newsTitleEn').value.trim(), body_es: $('newsBodyEs').value.trim(), body_en: $('newsBodyEn').value.trim(), status: 'draft', video_url: $('newsVideoUrl').value.trim() || null };
+  if (Object.entries(entry).filter(([key]) => key !== 'video_url').map(([,value]) => value).some(v => !v)) { $('newsStatus').textContent = 'Completa todos los campos / Complete all fields.'; return; }
+  if (entry.video_url && !/^https:\/\/(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/|vimeo\.com\/)[A-Za-z0-9_/?=&%-]+$/.test(entry.video_url)) {
+    $('newsStatus').textContent = 'Enlace de video no admitido / Unsupported video link.';
+    return;
+  }
   const submitButton = $('newsForm').querySelector('button[type="submit"]');
   if (submitButton.disabled) return;
   submitButton.disabled = true;
