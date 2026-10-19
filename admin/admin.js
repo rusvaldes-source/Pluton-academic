@@ -136,7 +136,9 @@ async function loadNews(revision = authRevision) {
         frame.title = 'Video preview';
         frame.loading = 'lazy';
         frame.allowFullscreen = true;
-        const link = new URL(item.video_url);
+        let link;
+        try { link = new URL(item.video_url); } catch { return; }
+        if (link.protocol !== 'https:') return;
         let id = '';
         if (['youtube.com','www.youtube.com'].includes(link.hostname)) id = link.searchParams.get('v') || link.pathname.replace('/embed/','');
         if (['youtu.be','www.youtu.be'].includes(link.hostname)) id = link.pathname.slice(1);
