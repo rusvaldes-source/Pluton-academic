@@ -86,6 +86,25 @@ $('login').addEventListener('submit', async event => {
   if (error) status('No se pudo iniciar sesión / Sign in failed.');
   else status('Acceso recibido / Sign-in received.');
 });
+$('forgotPassword').addEventListener('click', async () => {
+  if (!sb) return;
+  const email = $('email').value.trim();
+  if (!email || !$('email').checkValidity()) {
+    $('resetStatus').textContent = language === 'es' ? 'Introduce primero tu correo electrónico válido.' : 'Enter your valid email address first.';
+    $('email').focus();
+    return;
+  }
+  const button = $('forgotPassword');
+  button.disabled = true;
+  try {
+    const { error } = await sb.auth.resetPasswordForEmail(email, { redirectTo: new URL('./', location.href).href });
+    $('resetStatus').textContent = error
+      ? (language === 'es' ? 'No se pudo enviar el enlace. Comprueba la configuración de recuperación.' : 'Could not send the link. Check password recovery settings.')
+      : (language === 'es' ? 'Si existe la cuenta, recibirás un correo con el enlace para recuperar tu contraseña.' : 'If the account exists, you will receive a password recovery email.');
+  } catch {
+    $('resetStatus').textContent = language === 'es' ? 'Error de conexión.' : 'Connection error.';
+  } finally { button.disabled = false; }
+});
 $('logout').addEventListener('click', async () => { authRevision++; $('private').hidden = true; clearPrivateData(); if (sb) await sb.auth.signOut(); await refresh(); });
 async function loadReports(revision = authRevision) {
   const list = $('reportsList'); list.replaceChildren();
