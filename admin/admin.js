@@ -126,6 +126,26 @@ async function loadNews(revision = authRevision) {
       videoLink.rel = 'noopener noreferrer';
       videoLink.textContent = ' Abrir video / Open video';
       li.append(videoLink);
+      const preview = document.createElement('button');
+      preview.type = 'button';
+      preview.textContent = 'Vista previa / Preview';
+      preview.addEventListener('click', () => {
+        const existing = li.querySelector('iframe');
+        if (existing) { existing.remove(); return; }
+        const frame = document.createElement('iframe');
+        frame.title = 'Video preview';
+        frame.loading = 'lazy';
+        frame.allowFullscreen = true;
+        const link = new URL(item.video_url);
+        let id = '';
+        if (['youtube.com','www.youtube.com'].includes(link.hostname)) id = link.searchParams.get('v') || link.pathname.replace('/embed/','');
+        if (['youtu.be','www.youtu.be'].includes(link.hostname)) id = link.pathname.slice(1);
+        if (/^[A-Za-z0-9_-]{11}$/.test(id)) frame.src = 'https://www.youtube-nocookie.com/embed/' + id;
+        else if (['vimeo.com','www.vimeo.com'].includes(link.hostname) && /^\/[0-9]+$/.test(link.pathname)) frame.src = 'https://player.vimeo.com/video/' + link.pathname.slice(1);
+        else return;
+        li.append(frame);
+      });
+      li.append(preview);
     }
     if (item.status !== 'published') {
       const next = item.status === 'draft' ? 'review' : 'published';
