@@ -32,5 +32,29 @@
     "5": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_06_728ead1afd1cca067028a3c82d227d74.mp4",
     "6": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_07_8e35afae9cc7cf4673a3dff7a3eb0687.mp4",
     "7": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_08_d1f8544fe893cd91d858c27c6265c9e8.mp4"
+  },
+  "COMP-101": {
+    "0": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/COMP-101/L01/COMP-101_L01_ES.mp4",
+    "1": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/COMP-101/L02/COMP-101_L02_ES.mp4",
+    "2": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/COMP-101/L03/COMP-101_L03_ES.mp4",
+    "3": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/COMP-101/L04/COMP-101_L04_ES.mp4",
+    "4": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/COMP-101/L05/COMP-101_L05_ES.mp4",
+    "5": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/COMP-101/L06/COMP-101_L06_ES.mp4",
+    "6": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/COMP-101/L07/COMP-101_L07_ES.mp4",
+    "7": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/COMP-101/L08/COMP-101_L08_ES.mp4"
+  },
+  "NA-101": {
+    "0": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L01/NA-101_L01_ES.mp4",
+    "1": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L02/NA-101_L02_ES.mp4",
+    "2": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L03/NA-101_L03_ES.mp4",
+    "3": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L04/NA-101_L04_ES.mp4",
+    "4": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L05/NA-101_L05_ES.mp4",
+    "5": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L06/NA-101_L06_ES.mp4",
+    "6": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L07/NA-101_L07_ES.mp4",
+    "7": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L08/NA-101_L08_ES.mp4",
+    "8": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L09/NA-101_L09_ES.mp4",
+    "9": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L10/NA-101_L10_ES.mp4",
+    "10": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L11/NA-101_L11_ES.mp4",
+    "11": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/lesson-videos-b80/NA-101/L12/NA-101_L12_ES.mp4"
   }
 }
