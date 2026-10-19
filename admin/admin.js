@@ -32,7 +32,7 @@ async function refresh() {
   $('private').hidden = false;
   $('who').textContent = user.email || '';
   status('');
-  await Promise.all([loadStudents(), loadNews()]);
+  await Promise.all([loadStudents(), loadNews(), loadReports()]);
 }
 async function loadStudents() {
   const body = $('studentsRows');
@@ -59,6 +59,29 @@ $('login').addEventListener('submit', async event => {
   else await refresh();
 });
 $('logout').addEventListener('click', async () => { if (sb) await sb.auth.signOut(); $('private').hidden = true; await refresh(); });
+async function loadReports() {
+  const list = $('reportsList'); list.replaceChildren();
+  const { data, error } = await sb.from('connect_reports').select('id,post_id,reason,status,created_at').order('created_at', { ascending: false }).limit(50);
+  if (error) { $('reportsStatus').textContent = 'No se pudieron cargar las denuncias / Reports unavailable.'; return; }
+  $('reportsStatus').textContent = `${data.length} denuncias visibles / visible reports`;
+  for (const report of data) {
+    const li = document.createElement('li');
+    const description = document.createElement('span'); description.textContent = `#${report.id} · Post ${report.post_id} · ${report.status} · ${report.reason} `; li.append(description);
+    if (report.status === 'open') {
+      for (const next of ['reviewed','dismissed']) {
+        const button = document.createElement('button'); button.type = 'button'; button.textContent = next === 'reviewed' ? 'Revisada / Reviewed' : 'Descartar / Dismiss';
+        button.addEventListener('click', async () => {
+          if (!window.confirm('¿Confirmar cambio de estado? / Confirm status change?')) return;
+          button.disabled = true;
+          const { error } = await sb.from('connect_reports').update({ status: next, reviewed_at: new Date().toISOString() }).eq('id', report.id).eq('status','open');
+          $('reportsStatus').textContent = error ? 'Error al actualizar / Update failed.' : 'Estado actualizado / Status updated.';
+          await loadReports();
+        }); li.append(button);
+      }
+    }
+    list.append(li);
+  }
+}
 async function loadNews() {
   const list = $('newsList'); list.replaceChildren();
   const { data, error } = await sb.from('pluton_news').select('id,title_es,title_en,status,created_at').order('created_at', { ascending: false }).limit(30);
