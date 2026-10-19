@@ -32,7 +32,7 @@ async function refresh() {
   $('private').hidden = false;
   $('who').textContent = user.email || '';
   status('');
-  await loadStudents();
+  await Promise.all([loadStudents(), loadNews()]);
 }
 async function loadStudents() {
   const body = $('studentsRows');
@@ -59,4 +59,21 @@ $('login').addEventListener('submit', async event => {
   else await refresh();
 });
 $('logout').addEventListener('click', async () => { if (sb) await sb.auth.signOut(); $('private').hidden = true; await refresh(); });
+async function loadNews() {
+  const list = $('newsList'); list.replaceChildren();
+  const { data, error } = await sb.from('pluton_news').select('title_es,title_en,status,created_at').order('created_at', { ascending: false }).limit(30);
+  if (error) { $('newsStatus').textContent = 'No se pudieron cargar las noticias / News unavailable.'; return; }
+  for (const item of data || []) { const li = document.createElement('li'); li.textContent = `${item.title_es} / ${item.title_en} — ${item.status}`; list.append(li); }
+}
+$('newsForm').addEventListener('submit', async event => {
+  event.preventDefault();
+  if (!sb || $('private').hidden) return;
+  $('newsStatus').textContent = 'Guardando / Saving…';
+  const entry = { title_es: $('newsTitleEs').value.trim(), title_en: $('newsTitleEn').value.trim(), body_es: $('newsBodyEs').value.trim(), body_en: $('newsBodyEn').value.trim(), status: 'draft' };
+  if (Object.values(entry).some(v => !v)) { $('newsStatus').textContent = 'Completa todos los campos / Complete all fields.'; return; }
+  const { error } = await sb.from('pluton_news').insert(entry);
+  if (error) { $('newsStatus').textContent = 'No se pudo guardar / Save failed.'; return; }
+  $('newsForm').reset(); $('newsStatus').textContent = 'Borrador guardado / Draft saved.';
+  await loadNews();
+});
 init();
