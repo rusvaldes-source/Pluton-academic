@@ -33,3 +33,8 @@ Pruebas del catálogo con Chromium en 390, 768 y 1440 píxeles: seis portadas di
 ### Ajuste final de encuadre de MKT-201
 
 Edit only the framing of this photograph. Zoom the camera out and extend the room ABOVE the subject so the Black woman's entire hair silhouette is visible, with a generous clear band of background above the highest curls, at least 8% of the full image height. The top of her head and hair MUST NOT touch any edge. Keep the same adult woman, face, natural hair, skin tone, navy blouse, pose, laptop and marketing dashboard, phone, notebook, products and room. Do not change her identity or replace her. Retain all the important desk objects and photographic quality. Wider 16:9 shot with much more headroom, no collage, no new text, no watermark. The only intended change is safer uncropped framing.
+
+
+## Corrección de caché de portadas
+
+Las capturas del propietario muestran marcos B75 nuevos junto con portadas previas. La carga del catálogo ahora utiliza una URL de datos con versión y cache: no-store; el HTML también cambia la versión del script. No se modifican imágenes ni contenido educativo. Regresión: simular una respuesta antigua en catalog.json sin versión; comprobar que las seis portadas nuevas siguen cargando con el recurso versionado, en ES/EN y móvil/escritorio.
