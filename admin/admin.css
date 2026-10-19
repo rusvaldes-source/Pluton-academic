@@ -7,3 +7,6 @@
 #membershipsModule{margin:28px 0;padding:20px;border:1px solid #364664;border-radius:12px;background:#13213a}#membershipsModule h2,#membershipsModule h3{color:#e1b85b}
 
 #moderationModule{margin:28px 0;padding:20px;border:1px solid #364664;border-radius:12px;background:#13213a}#moderationModule h2{color:#e1b85b}#reportsList li{padding:10px 0;border-bottom:1px solid #364664}#reportsList button,#newsList button{margin:4px 6px;padding:7px 10px}#reportsStatus{color:#cbd4e5}
+
+/* News video preview: responsive and contained in the admin list. */
+#newsList iframe { display:block; width:100%; max-width:560px; aspect-ratio:16/9; border:0; margin-top:12px; }
