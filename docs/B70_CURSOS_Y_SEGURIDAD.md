@@ -26,7 +26,7 @@ NA es una introducción teórica, no un programa CNA aprobado ni autorización p
 
 ## Pruebas previas a publicar
 
-- 20 pruebas Node aprobadas, incluido aislamiento de cuentas y conservación del progreso ante un fallo temporal de autenticación/red.
+- 21 pruebas Node aprobadas, incluido aislamiento de cuentas y conservación del progreso ante un fallo temporal de autenticación/red.
 - Navegador Chromium: 20 lecciones, 100 preguntas, respuestas incorrectas/correctas y explicaciones en ambos idiomas; ejercicios, cuadernos y respuestas descargables, notas tras recarga, navegación y vista de 1440 px / 390 px.
 - Pruebas con Auth, contenido y progreso reales de Supabase usando dos cuentas temporales: persistencia, aislamiento de otro usuario y limpieza visual al cerrar sesión. Se usó un puente de red para el entorno de pruebas; las respuestas del backend fueron reales.
 - API real: anónimo recibe 401 al solicitar contenido nuevo o perfiles; estudiante recibe 403 al modificar contenido, guardar progreso con el UUID de otra cuenta o insertar un perfil Premium falso. Consulta de perfil propio sigue disponible (200).
@@ -37,7 +37,7 @@ NA es una introducción teórica, no un programa CNA aprobado ni autorización p
 
 Se retiraron dos políticas permisivas de `profiles`: lectura pública de todos los perfiles e inserción libre de perfiles por estudiantes. El panel actual identifica el perfil por email, no por UUID; por compatibilidad, la política nueva compara el correo firmado en el JWT con el perfil. El navegador solo puede consultar su propio perfil; escritura queda para servidor. No se cambiaron precios, datos de membresías, estado, registro, pagos ni configuración de Auth. Huella de los datos antes/después: `5866ac98b1222008ac9bb446b2be1185` (1 fila, idéntica).
 
-Cabeceras de seguridad limitadas a `/b70/*`: no-store, CSP, bloqueo de objetos y de incrustación por terceros, nosniff y permisos de cámara/micrófono/geolocalización deshabilitados. Material y progreso se protegen en servidor; el mensaje de inicio de sesión no constituye por sí mismo la barrera de seguridad.
+La prueba en el dominio real detectó el beacon existente de Cloudflare; la CSP permite sus dos dominios documentados sin habilitar orígenes arbitrarios. Cabeceras de seguridad limitadas a `/b70/*`: no-store, CSP, bloqueo de objetos y de incrustación por terceros, nosniff y permisos de cámara/micrófono/geolocalización deshabilitados. Material y progreso se protegen en servidor; el mensaje de inicio de sesión no constituye por sí mismo la barrera de seguridad.
 
 Pendientes de seguridad: protección contra contraseñas filtradas desactivada en Supabase; videos y materiales históricos de los tres cursos anteriores aún tienen acceso público. No se modificaron esas URLs para evitar interrumpir los cursos existentes. La auditoría identifica estos pendientes; no se afirma un blindaje total.
 
