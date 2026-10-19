@@ -73,8 +73,8 @@ async function loadReports() {
         button.addEventListener('click', async () => {
           if (!window.confirm('¿Confirmar cambio de estado? / Confirm status change?')) return;
           button.disabled = true;
-          const { error } = await sb.from('connect_reports').update({ status: next, reviewed_at: new Date().toISOString() }).eq('id', report.id).eq('status','open');
-          $('reportsStatus').textContent = error ? 'Error al actualizar / Update failed.' : 'Estado actualizado / Status updated.';
+          const { data: updated, error } = await sb.from('connect_reports').update({ status: next, reviewed_at: new Date().toISOString() }).eq('id', report.id).eq('status','open').select('id');
+          $('reportsStatus').textContent = error || updated?.length !== 1 ? 'No se confirmó el cambio / Change not confirmed.' : 'Estado actualizado / Status updated.';
           await loadReports();
         }); li.append(button);
       }
@@ -99,8 +99,8 @@ async function loadNews() {
         button.disabled = true;
         const patch = { status: next, updated_at: new Date().toISOString() };
         if (next === 'published') patch.published_at = new Date().toISOString();
-        const { error } = await sb.from('pluton_news').update(patch).eq('id', item.id).eq('status', item.status);
-        $('newsStatus').textContent = error ? 'Error al actualizar / Update failed.' : 'Estado actualizado / Status updated.';
+        const { data: updated, error } = await sb.from('pluton_news').update(patch).eq('id', item.id).eq('status', item.status).select('id');
+        $('newsStatus').textContent = error || updated?.length !== 1 ? 'No se confirmó el cambio / Change not confirmed.' : 'Estado actualizado / Status updated.';
         await loadNews();
       });
       li.append(button);
