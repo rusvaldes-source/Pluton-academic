@@ -29,7 +29,7 @@ async function init() {
         clearPrivateData();
         $('login').hidden = false;
       }
-      if (event === 'SIGNED_IN' || event === 'SIGNED_OUT' || event === 'TOKEN_REFRESHED') setTimeout(refresh, 0);
+      if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') setTimeout(refresh, 0);
     });
     await refresh();
   } catch { status('No se pudo conectar con la autenticación / Authentication unavailable.'); }
