@@ -93,7 +93,7 @@ $('login').addEventListener('submit', async event => {
   const { error } = await sb.auth.signInWithPassword({ email: $('email').value, password: $('password').value });
   $('password').value = '';
   if (error) status('No se pudo iniciar sesión / Sign in failed.');
-  else status('Acceso recibido / Sign-in received.');
+  else { status('Abriendo administración… / Opening administration…'); await refresh(); }
 });
 $('newPasswordForm').addEventListener('submit', async event => {
   event.preventDefault();
