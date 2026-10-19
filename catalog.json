@@ -1,6 +1,7 @@
 [
   {
     "code": "PA-101",
+    "cover": "b75/pa101-fundamentos.webp",
     "es": "Asistente de Enfermería: Fundamentos",
     "en": "Nursing Assistant: Foundations",
     "category": "salud",
@@ -59,6 +60,7 @@
   },
   {
     "code": "PA-203",
+    "cover": "fundador.webp",
     "es": "Herramientas Digitales e IA",
     "en": "Digital Tools and AI",
     "category": "profesional",
@@ -267,6 +269,7 @@
   },
   {
     "code": "ID-101",
+    "cover": "b75/id101-ingles.webp",
     "es": "Inglés para el trabajo",
     "en": "Workplace English",
     "category": "idiomas",
@@ -576,6 +579,7 @@
   },
   {
     "code": "MKT-201",
+    "cover": "b75/mkt201-marketing.webp",
     "es": "Marketing digital: primeros pasos",
     "en": "Digital Marketing: First Steps",
     "category": "marketing",
@@ -840,7 +844,7 @@
         "en": "Continuity, comfort and professional learning"
       }
     ],
-    "cover": "b70/cover-na101.svg"
+    "cover": "assets/b74/na101-hija-enfermeria.webp"
   },
   {
     "code": "COMP-101",
@@ -883,6 +887,6 @@
         "en": "Digital security and backup"
       }
     ],
-    "cover": "b70/cover-comp101.svg"
+    "cover": "assets/b74/comp101-hija-computacion.webp"
   }
 ]

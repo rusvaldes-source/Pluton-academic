@@ -1,0 +1,17 @@
+/* B75: only the public catalog cover frames; preserve courses and other images. */
+#mainCatalog article .catalog-visual.pa-illustrated {
+  aspect-ratio:3/2!important;
+  height:auto!important;
+  background:#081a32!important;
+  border:1px solid #b99a5466!important;
+  border-radius:14px!important;
+  overflow:hidden!important;
+}
+#mainCatalog article .catalog-visual.pa-illustrated img {
+  width:100%!important;
+  height:100%!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  transform:none!important;
+}
