@@ -1,17 +1,58 @@
-/* B75: only the public catalog cover frames; preserve courses and other images. */
+/* B76: reuse the approved upper course-card geometry, only in the catalog. */
+#mainCatalog {
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:16px;
+}
+#mainCatalog > article {
+  min-width:0;
+  padding:0;
+  border:1px solid #a889473b;
+  border-radius:17px;
+  overflow:hidden;
+  background:linear-gradient(160deg,#122b4b,#081a32);
+  box-shadow:0 12px 28px #0003;
+}
 #mainCatalog article .catalog-visual.pa-illustrated {
-  aspect-ratio:3/2!important;
-  height:auto!important;
+  order:-1;
+  width:100%!important;
+  height:180px!important;
+  aspect-ratio:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  padding:0!important;
+  margin:0!important;
   background:#081a32!important;
-  border:1px solid #b99a5466!important;
-  border-radius:14px!important;
+  border:0!important;
+  border-radius:0!important;
   overflow:hidden!important;
 }
 #mainCatalog article .catalog-visual.pa-illustrated img {
+  display:block!important;
   width:100%!important;
   height:100%!important;
   aspect-ratio:auto!important;
-  object-fit:contain!important;
-  object-position:center!important;
+  object-fit:cover!important;
+  object-position:center top!important;
   transform:none!important;
+}
+#mainCatalog article .code {margin:16px 16px 0;font-size:11px;letter-spacing:.06em;}
+#mainCatalog article h3 {margin:10px 16px 16px;font-size:17px;line-height:1.3;}
+#mainCatalog article p {margin:0 16px 9px;font-size:14px;}
+#mainCatalog article small {margin:0 16px;font-size:13px;}
+#mainCatalog article .catalog-cta {margin:16px;margin-top:auto;padding:12px 0 0;min-height:44px;font-size:13px;}
+@media(max-width:1100px){
+  #mainCatalog {grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media(max-width:700px){
+  #mainCatalog {grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+  #mainCatalog article .catalog-visual.pa-illustrated {height:145px!important;}
+  #mainCatalog article .code {margin:12px 12px 0;}
+  #mainCatalog article h3 {margin:10px 12px 16px;font-size:15px;}
+  #mainCatalog article p {margin-inline:12px;}
+  #mainCatalog article small {margin-inline:12px;}
+  #mainCatalog article .catalog-cta {margin-inline:12px;}
+}
+@media(max-width:410px){
+  #mainCatalog {grid-template-columns:1fr;}
+  #mainCatalog article .catalog-visual.pa-illustrated {height:200px!important;}
 }

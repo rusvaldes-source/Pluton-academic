@@ -38,3 +38,12 @@ Edit only the framing of this photograph. Zoom the camera out and extend the roo
 ## Corrección de caché de portadas
 
 Las capturas del propietario muestran marcos B75 nuevos junto con portadas previas. La carga del catálogo ahora utiliza una URL de datos con versión y cache: no-store; el HTML también cambia la versión del script. No se modifican imágenes ni contenido educativo. Regresión: simular una respuesta antigua en catalog.json sin versión; comprobar que las seis portadas nuevas siguen cargando con el recurso versionado, en ES/EN y móvil/escritorio.
+
+
+## B76 — medidas de la plantilla superior (19 oct 2026)
+
+El propietario confirmó que las fotos ya cambiaron y pidió usar la presentación de las cinco tarjetas superiores. El catálogo ahora adopta cinco/tres/dos/una columnas con los mismos cortes de 1100/700/410 px, separación de 16/12 px, bordes de 17 px e imágenes de 180/145/200 px de alto. Se elimina el marco interno fijo 3:2 y la imagen pasa al borde superior de la tarjeta. Se mantiene la proporción mediante cover y el punto de encuadre superior protege los rostros; esto puede recortar bordes laterales o inferiores según la pantalla, igual que la plantilla de referencia.
+
+Las seis fuentes existentes se conservan, incluido Marketing con la profesional negra. No se generan, recomprimen ni sustituyen archivos de imagen. El catálogo, las lecciones y los videos permanecen idénticos. La versión de la hoja de estilos cambia para evitar caché antigua.
+
+Verificación comparativa con Chromium a 390, 430, 768 y 1440 px: alturas, número de columnas y radios iguales a la plantilla superior; imagen al ancho de tarjeta; ausencia de desbordamiento; ES/EN; resolución suficiente para densidad 3x en móvil/tableta y 2x en escritorio, sin ampliación de píxeles físicos. Inspección visual de los cuatro tamaños. La versión previa fallaba la comparación de altura (208,66 frente a 200 px en móvil).
