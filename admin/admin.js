@@ -47,6 +47,7 @@ async function refresh() {
   if (!sb) return;
   const revision = ++authRevision;
   $('private').hidden = true;
+  $('setup').hidden = false;
   clearPrivateData();
   const { data: { user } = {}, error } = await sb.auth.getUser();
   if (revision !== authRevision) return;
@@ -55,6 +56,7 @@ async function refresh() {
   if (revision !== authRevision) return;
   if (roleError || allowed !== true) { await sb.auth.signOut(); $('login').hidden = false; $('password').value = ''; return status('Acceso denegado o verificación no disponible / Access denied or verification unavailable.'); }
   $('login').hidden = true;
+  $('setup').hidden = true;
   $('private').hidden = false;
   $('who').textContent = user.email || '';
   status('');
@@ -124,7 +126,7 @@ $('forgotPassword').addEventListener('click', async () => {
   const button = $('forgotPassword');
   button.disabled = true;
   try {
-    const { error } = await sb.auth.resetPasswordForEmail(email, { redirectTo: new URL('./', location.href).href });
+    const { error } = await sb.auth.resetPasswordForEmail(email, { redirectTo: 'https://www.plutonacademic.com/admin/' });
     $('resetStatus').textContent = error
       ? (language === 'es' ? 'No se pudo enviar el enlace. Comprueba la configuración de recuperación.' : 'Could not send the link. Check password recovery settings.')
       : (language === 'es' ? 'Si existe la cuenta, recibirás un correo con el enlace para recuperar tu contraseña.' : 'If the account exists, you will receive a password recovery email.');
