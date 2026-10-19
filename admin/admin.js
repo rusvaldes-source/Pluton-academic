@@ -61,9 +61,29 @@ $('login').addEventListener('submit', async event => {
 $('logout').addEventListener('click', async () => { if (sb) await sb.auth.signOut(); $('private').hidden = true; await refresh(); });
 async function loadNews() {
   const list = $('newsList'); list.replaceChildren();
-  const { data, error } = await sb.from('pluton_news').select('title_es,title_en,status,created_at').order('created_at', { ascending: false }).limit(30);
+  const { data, error } = await sb.from('pluton_news').select('id,title_es,title_en,status,created_at').order('created_at', { ascending: false }).limit(30);
   if (error) { $('newsStatus').textContent = 'No se pudieron cargar las noticias / News unavailable.'; return; }
-  for (const item of data || []) { const li = document.createElement('li'); li.textContent = `${item.title_es} / ${item.title_en} — ${item.status}`; list.append(li); }
+  for (const item of data || []) {
+    const li = document.createElement('li');
+    const name = document.createElement('span'); name.textContent = `${item.title_es} / ${item.title_en} — ${item.status} `; li.append(name);
+    if (item.status !== 'published') {
+      const next = item.status === 'draft' ? 'review' : 'published';
+      const button = document.createElement('button'); button.type = 'button';
+      button.textContent = next === 'review' ? 'Enviar a revisión / Submit for review' : 'Aprobar publicación / Approve publication';
+      button.addEventListener('click', async () => {
+        const question = next === 'published' ? '¿Confirmas la aprobación de esta noticia? / Approve this news item?' : '¿Enviar a revisión? / Send for review?';
+        if (!window.confirm(question)) return;
+        button.disabled = true;
+        const patch = { status: next, updated_at: new Date().toISOString() };
+        if (next === 'published') patch.published_at = new Date().toISOString();
+        const { error } = await sb.from('pluton_news').update(patch).eq('id', item.id).eq('status', item.status);
+        $('newsStatus').textContent = error ? 'Error al actualizar / Update failed.' : 'Estado actualizado / Status updated.';
+        await loadNews();
+      });
+      li.append(button);
+    }
+    list.append(li);
+  }
 }
 $('newsForm').addEventListener('submit', async event => {
   event.preventDefault();
