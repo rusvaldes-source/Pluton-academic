@@ -1,0 +1,2 @@
+#classroom[hidden]{display:none!important}
+@media(max-width:600px){body[data-course] header nav{display:block;width:100%;font-size:.9rem;padding-top:.6rem}body[data-course] header{height:auto;gap:.4rem}}
