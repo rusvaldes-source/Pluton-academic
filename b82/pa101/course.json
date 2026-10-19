@@ -1,0 +1,1743 @@
+{
+  "version": "B82",
+  "code": "PA-101",
+  "title": {
+    "es": "Asistente de Enfermería: Fundamentos",
+    "en": "Nursing Assistant: Foundations"
+  },
+  "level": "introductory_theory",
+  "review_status": "professional_review_pending",
+  "scope": {
+    "es": "Curso teórico de fundamentos con casos ficticios. Revisión profesional pendiente. No acredita un programa CNA, licencia ni competencia práctica. Las técnicas de cuidado requieren capacitación y supervisión apropiadas.",
+    "en": "Theoretical foundations with fictional cases. Professional review pending. This is not an approved CNA program, license or demonstration of practical competence. Care techniques require appropriate training and supervision."
+  },
+  "official_grades": false,
+  "lessons": [
+    {
+      "number": 1,
+      "id": "PA101-L01",
+      "title": {
+        "es": "Seguridad e identidad de la persona",
+        "en": "Safety and personal identification"
+      },
+      "explanation": {
+        "es": "La seguridad comienza antes de una tarea. Un nombre parecido, una habitación compartida o una instrucción incompleta pueden llevar a actuar con la persona equivocada. La identificación consiste en contrastar los identificadores aprobados por el centro con la documentación de la tarea. El número de habitación o el aspecto físico no deben usarse como sustitutos de esa comprobación. Si existe una discrepancia, se detiene el inicio de la tarea y se solicita aclaración.\n\nAntes de ayudar, presenta tu nombre y función, explica lo que se ha solicitado y escucha la respuesta. La disposición a recibir ayuda no se puede deducir del silencio. Una negativa o una duda se comunica al responsable; la necesidad de cumplir un horario no justifica forzar una intervención. También importa el entorno: un cable en el paso, un suelo mojado o un objeto fuera de alcance son hechos que deben resolverse o comunicarse según la función y el protocolo.\n\nUna comprobación útil responde a cuatro preguntas: ¿quién es la persona?, ¿qué tarea está indicada?, ¿acepta la ayuda?, ¿están dadas las condiciones para realizarla dentro de mi formación? Ninguna sustituye a las demás. Reconocer una limitación y pedir apoyo forma parte de la seguridad. En este curso las situaciones son ficticias: no se practican identificaciones, transferencias ni otros cuidados con personas reales.",
+        "en": "Safety starts before a task. Similar names, shared rooms or incomplete instructions can lead someone to assist the wrong person. Identification means checking the facility-approved identifiers against the task documentation. Room number and appearance must not replace that check. If information does not match, pause before starting and request clarification.\n\nIntroduce yourself and your role, explain the requested assistance and listen to the person's response. Silence does not establish willingness to receive help. Report a refusal or concern to the responsible professional; a busy schedule does not justify forcing care. The surroundings matter too. A cable in the walkway, a wet floor or an item out of reach are observations to address or report according to your role and facility procedure.\n\nA useful safety check asks four separate questions: Who is the person? What task is indicated? Does the person accept assistance? Are the conditions and my training appropriate? One answer does not replace the others. Recognizing a limitation and requesting support are safety skills. Every case in this course is fictional; do not practice identification, transfers or other care on real people on the basis of this material."
+      },
+      "example": {
+        "es": "Caso ficticio: en la habitación 204 hay dos personas con nombres similares. La hoja de la tarea no coincide con los identificadores que se presentan. Marta no decide por la cama ocupada ni por un familiar que señala a alguien; solicita al responsable que resuelva la discrepancia antes de empezar.",
+        "en": "Fictional case: two people in room 204 have similar names. The task sheet does not match the identifiers presented. Marta does not choose by bed location or by a relative pointing at someone. She asks the responsible professional to resolve the discrepancy before starting."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "Hay una discrepancia de identidad. Escribe A: empezar por la habitación; B: pausar y aclarar; C: elegir por apariencia.",
+          "en": "Identity information does not match. Enter A: use the room; B: pause and clarify; C: choose by appearance."
+        },
+        "answers": [
+          "B",
+          "b"
+        ],
+        "feedback": {
+          "es": "B. La discrepancia se aclara antes de iniciar la tarea. La habitación no sustituye la identificación.",
+          "en": "B. Resolve the mismatch before starting. Room location does not replace identification."
+        }
+      },
+      "notes_prompt": {
+        "es": "Construye una lista de cuatro comprobaciones previas y explica qué comunicarías si la persona rechaza la ayuda. Usa nombres inventados.",
+        "en": "Build a four-item pre-task checklist and explain what you would report if the person declined help. Use invented names."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Qué dato no debe sustituir la identificación?",
+            "en": "What must not replace identification?"
+          },
+          "options": {
+            "es": [
+              "Los identificadores aprobados",
+              "El procedimiento del centro",
+              "La habitación"
+            ],
+            "en": [
+              "Approved identifiers",
+              "Facility procedure",
+              "Room number"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "Una habitación ubica; no identifica por sí sola a una persona.",
+            "en": "A room locates someone; it does not by itself establish identity."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué hacer si los datos no coinciden?",
+            "en": "What should happen when information does not match?"
+          },
+          "options": {
+            "es": [
+              "Continuar para ahorrar tiempo",
+              "Pausar y solicitar aclaración",
+              "Elegir por parecido"
+            ],
+            "en": [
+              "Continue to save time",
+              "Pause and request clarification",
+              "Choose by resemblance"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "La comprobación debe resolverse antes de la tarea.",
+            "en": "Resolve identification before the task."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué significa una negativa a recibir ayuda?",
+            "en": "What does a refusal of help require?"
+          },
+          "options": {
+            "es": [
+              "Respetarla y comunicarla según el protocolo",
+              "Suponer que la persona no entendió y forzar",
+              "Borrarla de las notas"
+            ],
+            "en": [
+              "Respect and report it under procedure",
+              "Assume misunderstanding and force assistance",
+              "Remove it from notes"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "La elección de la persona debe escucharse y reportarse.",
+            "en": "Listen to and report the person’s choice."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cuál es una observación del entorno?",
+            "en": "Which is an environmental observation?"
+          },
+          "options": {
+            "es": [
+              "La persona es difícil",
+              "Seguro que se caerá",
+              "Un cable cruza el paso"
+            ],
+            "en": [
+              "The person is difficult",
+              "They will certainly fall",
+              "A cable crosses the walkway"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "Describe un hecho observable, sin etiquetas ni predicciones.",
+            "en": "Describe an observable fact, without labels or predictions."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué muestra una conducta segura?",
+            "en": "Which shows safe conduct?"
+          },
+          "options": {
+            "es": [
+              "Actuar fuera de la formación",
+              "Reconocer límites y pedir apoyo",
+              "Ocultar una duda"
+            ],
+            "en": [
+              "Work beyond training",
+              "Recognize limits and request support",
+              "Hide uncertainty"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "Pedir apoyo permite aclarar condiciones antes de actuar.",
+            "en": "Requesting support clarifies conditions before action."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 2,
+      "id": "PA101-L02",
+      "title": {
+        "es": "Higiene de manos y prevención de infecciones",
+        "en": "Hand hygiene and infection prevention"
+      },
+      "explanation": {
+        "es": "Una infección puede transmitirse a través de manos, superficies o equipos contaminados. Las precauciones estándar se aplican a la atención de todas las personas y no dependen de que alguien parezca enfermo. La evaluación de la tarea determina qué protección se necesita; no se escoge equipo de protección por costumbre o por imitación de otra persona.\n\nLa higiene de manos se realiza en los momentos indicados, entre ellos antes y después del contacto con la persona, tras el contacto con su entorno y después de quitarse los guantes. Los guantes no sustituyen esa higiene. Cuando las manos están visiblemente sucias se utiliza agua y jabón; en muchas otras situaciones clínicas se prefiere un preparado de base alcohólica, siguiendo el protocolo y las instrucciones del producto. Hay circunstancias específicas que requieren indicaciones adicionales del equipo responsable.\n\nPiensa en una secuencia, no solo en una tarea aislada: tocar un teléfono, volver a un material limpio y después ayudar a otra persona puede crear oportunidades de contaminación. Separar material limpio de usado y reconocer cuándo cambiar de protección son decisiones que se aprenden con entrenamiento. No se enseñan aquí procedimientos estériles ni la colocación o retirada de equipos que requieran práctica supervisada. La actividad de esta lección consiste en identificar momentos de higiene en una historia ficticia y justificar la elección con una fuente del curso.",
+        "en": "Infection can spread through contaminated hands, surfaces or equipment. Standard precautions apply to care for every person, not only someone who looks ill. The task assessment determines the protection needed; personal protective equipment is not selected simply from habit or by copying another worker.\n\nClean hands at the indicated moments, including before and after contact with a person, after touching their surroundings and after removing gloves. Gloves do not replace hand hygiene. Use soap and water when hands are visibly soiled. An alcohol-based hand rub is preferred in many other clinical situations, subject to facility procedure and product instructions. Some circumstances require additional directions from the responsible team.\n\nThink about a sequence rather than an isolated task. Touching a phone, returning to clean supplies and then assisting another person can create opportunities for contamination. Separating clean and used items and recognizing when protection must change are decisions developed through training. This lesson does not teach sterile procedures or equipment techniques requiring supervised practice. The exercise asks you to identify hand-hygiene moments in a fictional story and justify a choice with a course source."
+      },
+      "example": {
+        "es": "Caso ficticio: Leo termina de ayudar a una persona, se quita los guantes y se dirige al carro de material limpio. Antes de tocar ese material debe reconocer el momento de higiene de manos. Que los guantes parezcan intactos no elimina esa necesidad.",
+        "en": "Fictional case: Leo finishes assisting someone, removes his gloves and approaches a clean-supply cart. He must recognize the hand-hygiene moment before touching those supplies. Gloves appearing intact do not remove that need."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "Tras retirar guantes, escribe A: higiene de manos; B: tocar material limpio inmediatamente; C: reutilizar los guantes.",
+          "en": "After removing gloves enter A: hand hygiene; B: immediately touch clean supplies; C: reuse the gloves."
+        },
+        "answers": [
+          "A",
+          "a"
+        ],
+        "feedback": {
+          "es": "A. La retirada de guantes es un momento de higiene de manos.",
+          "en": "A. Glove removal is a hand-hygiene moment."
+        }
+      },
+      "notes_prompt": {
+        "es": "Dibuja en palabras un recorrido ficticio entre una superficie usada, un teléfono y un carro limpio. Señala dónde consultarías el protocolo.",
+        "en": "Describe a fictional route between a used surface, a phone and a clean cart. Mark where you would consult procedure."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿A quién se aplican las precauciones estándar?",
+            "en": "Who do standard precautions apply to?"
+          },
+          "options": {
+            "es": [
+              "Solo a personas recién ingresadas",
+              "A todas las personas atendidas",
+              "Solo a quienes tienen fiebre"
+            ],
+            "en": [
+              "Only newly admitted people",
+              "Everyone receiving care",
+              "Only people with fever"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "La apariencia no determina si se aplican precauciones estándar.",
+            "en": "Appearance does not determine whether standard precautions apply."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué ocurre después de quitarse los guantes?",
+            "en": "What follows glove removal?"
+          },
+          "options": {
+            "es": [
+              "Se realiza higiene de manos",
+              "Se omite la higiene si no se ven manchas",
+              "Se guarda el mismo par para otra persona"
+            ],
+            "en": [
+              "Perform hand hygiene",
+              "Skip hygiene if no stain is visible",
+              "Keep the same pair for another person"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Los guantes no sustituyen la higiene de manos.",
+            "en": "Gloves do not replace hand hygiene."
+          }
+        },
+        {
+          "question": {
+            "es": "Con suciedad visible, ¿qué método corresponde?",
+            "en": "With visible soil, which method applies?"
+          },
+          "options": {
+            "es": [
+              "Solo secar con papel",
+              "No hacer nada si se usarán guantes",
+              "Agua y jabón"
+            ],
+            "en": [
+              "Only wipe with paper",
+              "Do nothing if gloves will be used",
+              "Soap and water"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La suciedad visible requiere agua y jabón conforme al procedimiento.",
+            "en": "Visible soil calls for soap and water under procedure."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué determina la protección necesaria?",
+            "en": "What determines required protection?"
+          },
+          "options": {
+            "es": [
+              "Lo que llevó alguien ayer",
+              "La evaluación de la tarea y el protocolo",
+              "El color favorito"
+            ],
+            "en": [
+              "What someone wore yesterday",
+              "Task assessment and procedure",
+              "A favorite color"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "La protección se selecciona por el riesgo de la tarea.",
+            "en": "Protection is selected for the task’s exposure risk."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué situación merece revisar el recorrido?",
+            "en": "Which situation warrants reviewing the sequence?"
+          },
+          "options": {
+            "es": [
+              "Pasar de material usado a material limpio",
+              "Leer un objetivo del curso",
+              "Guardar un caso ficticio sin datos personales"
+            ],
+            "en": [
+              "Moving from used to clean items",
+              "Reading a learning objective",
+              "Saving a fictional case without personal data"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "La secuencia puede conectar zonas usadas y limpias.",
+            "en": "The sequence can connect used and clean areas."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 3,
+      "id": "PA101-L03",
+      "title": {
+        "es": "Rol, límites y trabajo en equipo",
+        "en": "Role boundaries and teamwork"
+      },
+      "explanation": {
+        "es": "El asistente participa en un equipo y trabaja dentro de funciones definidas por formación, supervisión, normativa aplicable y políticas del lugar. Una explicación leída en internet o una buena puntuación no autorizan una nueva tarea. Diferencia conocer un concepto, observar una demostración y demostrar una habilidad bajo evaluación: son logros distintos.\n\nAntes de aceptar una asignación hay que comprender qué se solicita, para quién, con qué condiciones y quién supervisa. Si falta formación, equipo o una indicación clara, se comunica la limitación. No se improvisa una técnica para demostrar iniciativa. Tampoco se cambian tratamientos, dietas, dispositivos o decisiones clínicas por cuenta propia. La competencia se demuestra también al reconocer cuándo corresponde detenerse y pedir una aclaración.\n\nEn un relevo se distinguen tres estados: tarea realizada, tarea no realizada y asunto pendiente de seguimiento. Decir que se avisó no significa que el problema esté resuelto. Un reporte útil identifica al receptor y conserva los hechos necesarios para la continuidad. Si aparece una situación urgente se utiliza el sistema de respuesta del centro y la formación recibida, sin esperar a completar una actividad académica. El trabajo escrito de esta lección utiliza encargos inventados para practicar preguntas de aclaración; no asigna tareas clínicas reales.",
+        "en": "An assistant works within a team and within duties defined by training, supervision, applicable requirements and workplace policy. Reading an explanation online or obtaining a good quiz score does not authorize a new task. Understanding a concept, observing a demonstration and demonstrating a skill under assessment are different achievements.\n\nBefore accepting an assignment, understand what is requested, for whom, under which conditions and with whose supervision. Report missing training, equipment or unclear instructions. Do not improvise a technique to appear proactive. Do not independently change treatment, diets, devices or clinical decisions. Competence also includes recognizing when clarification is necessary.\n\nA handover distinguishes completed tasks, tasks not performed and issues requiring follow-up. Saying that someone was notified does not mean the issue is resolved. A useful report identifies the receiver and preserves facts needed for continuity. For an urgent situation, use the facility response system and your training rather than waiting to finish an academic exercise. This lesson uses invented assignments to practice clarification questions; it does not assign real clinical duties."
+      },
+      "example": {
+        "es": "Caso ficticio: a Elena le piden utilizar un equipo que nunca ha aprendido a manejar. Ella explica su limitación, identifica al supervisor y solicita una alternativa segura. En el reporte distingue la solicitud recibida de la tarea efectivamente realizada.",
+        "en": "Fictional case: Elena is asked to use equipment she has not been trained to operate. She explains that limitation, identifies the supervisor and requests a safe alternative. Her report distinguishes the request received from work actually completed."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "Una tarea supera tu formación. A: improvisar; B: ocultarlo; C: explicar la limitación y consultar.",
+          "en": "A task exceeds your training. A: improvise; B: hide it; C: explain the limitation and consult."
+        },
+        "answers": [
+          "C",
+          "c"
+        ],
+        "feedback": {
+          "es": "C. La asignación necesita aclaración y apoyo apropiado antes de realizarse.",
+          "en": "C. The assignment needs clarification and appropriate support before it is performed."
+        }
+      },
+      "notes_prompt": {
+        "es": "Redacta cuatro preguntas para aclarar una asignación y un relevo de tres líneas que diferencie realizado, no realizado y pendiente.",
+        "en": "Write four assignment-clarification questions and a three-line handover distinguishing completed, not completed and pending."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Qué demuestra un cuestionario aprobado?",
+            "en": "What does passing a quiz demonstrate?"
+          },
+          "options": {
+            "es": [
+              "Comprensión teórica de lo evaluado",
+              "Autorización automática para toda técnica",
+              "Una licencia profesional nueva"
+            ],
+            "en": [
+              "Theoretical understanding of tested material",
+              "Automatic authorization for every technique",
+              "A new professional license"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Una prueba teórica no acredita por sí sola competencia práctica.",
+            "en": "A theory test alone does not establish practical competence."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué debe aclararse en una asignación?",
+            "en": "What should an assignment clarify?"
+          },
+          "options": {
+            "es": [
+              "Solo la hora de salida",
+              "Solo el nombre del equipo",
+              "Tarea, persona, condiciones y supervisión"
+            ],
+            "en": [
+              "Only finishing time",
+              "Only the equipment name",
+              "Task, person, conditions and supervision"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La tarea necesita contexto y supervisión definida.",
+            "en": "A task needs context and defined supervision."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué hacer si falta entrenamiento?",
+            "en": "What should happen if training is missing?"
+          },
+          "options": {
+            "es": [
+              "Ocultarlo para no molestar",
+              "Comunicar la limitación",
+              "Aprender con la persona real sin supervisión"
+            ],
+            "en": [
+              "Hide it to avoid inconvenience",
+              "Report the limitation",
+              "Learn on the real person without supervision"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "Expresar la limitación permite organizar apoyo adecuado.",
+            "en": "Stating the limitation allows appropriate support."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué significa haber avisado de un problema?",
+            "en": "What does notifying someone of a problem mean?"
+          },
+          "options": {
+            "es": [
+              "Que se realizó el aviso; puede quedar seguimiento",
+              "Que el problema está resuelto",
+              "Que se puede borrar el hecho"
+            ],
+            "en": [
+              "Notification occurred; follow-up may remain",
+              "The problem is resolved",
+              "The observation may be erased"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Aviso y resolución son estados diferentes.",
+            "en": "Notification and resolution are different states."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué pertenece al trabajo en equipo?",
+            "en": "What belongs to teamwork?"
+          },
+          "options": {
+            "es": [
+              "Modificar indicaciones sin consulta",
+              "Informar únicamente al terminar la semana",
+              "Entregar hechos y pendientes al responsable"
+            ],
+            "en": [
+              "Change instructions independently",
+              "Report only at the end of the week",
+              "Hand over facts and pending issues"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La continuidad necesita información oportuna y clara.",
+            "en": "Continuity needs timely, clear information."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 4,
+      "id": "PA101-L04",
+      "title": {
+        "es": "Cuerpo humano y vocabulario básico",
+        "en": "The human body and basic vocabulary"
+      },
+      "explanation": {
+        "es": "La anatomía estudia estructuras del cuerpo; la fisiología estudia cómo funcionan. Una célula es una unidad viva; tejidos, órganos y sistemas representan niveles de organización. Esta distinción ayuda a aprender vocabulario, sin convertir una observación cotidiana en un diagnóstico.\n\nComo mapa inicial, relaciona el sistema respiratorio con el intercambio de gases, el circulatorio con el transporte de sangre, el digestivo con el procesamiento de alimentos y el urinario con la producción y eliminación de orina. La piel forma parte de la protección corporal; huesos y músculos contribuyen al soporte y movimiento; el sistema nervioso participa en la recepción y coordinación de información. Estos sistemas trabajan de forma relacionada. No puede determinarse la causa de un cambio solo porque se conozca el nombre de un órgano.\n\nEn la comunicación conviene distinguir un síntoma que la persona expresa de un signo observable o medido. “Dice que le duele” no es lo mismo que “la piel se ve enrojecida”. Ambos pueden ser importantes, pero se registran como datos distintos. Las palabras derecha e izquierda deben referirse a la persona, y una abreviatura desconocida debe aclararse en lugar de adivinarse. Este vocabulario sirve para comprender y comunicar; no permite interpretar pruebas, diagnosticar enfermedades ni decidir tratamientos. El ejercicio usa una relación simple de funciones, no un caso diagnóstico.",
+        "en": "Anatomy studies body structures; physiology studies how they work. A cell is a living unit, while tissues, organs and systems represent levels of organization. This distinction helps organize vocabulary without turning an everyday observation into a diagnosis.\n\nAs an introductory map, associate the respiratory system with gas exchange, circulation with blood transport, digestion with processing food, and the urinary system with producing and eliminating urine. Skin contributes to protection; bones and muscles contribute to support and movement; the nervous system receives and coordinates information. Body systems are related. Knowing an organ’s name does not establish the cause of a change.\n\nDistinguish a symptom reported by a person from an observable or measured sign. “The person says it hurts” differs from “the skin appears red.” Both can matter, but they are different kinds of information. Right and left refer to the person. Clarify unfamiliar abbreviations rather than guessing. This vocabulary supports understanding and communication; it does not authorize test interpretation, diagnosis or treatment decisions. The exercise matches a basic function to a system rather than diagnosing a case."
+      },
+      "example": {
+        "es": "Caso ficticio: una ficha dice “lado derecho”. Luis confirma que se refiere al lado derecho de la persona, no al suyo al mirarla de frente. Anota por separado lo que la persona cuenta y lo que él puede observar, sin asignar una enfermedad.",
+        "en": "Fictional case: a note says “right side.” Luis confirms it means the person’s right, not his own right while facing them. He separates what the person reports from what he can observe, without naming a disease."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "¿Qué sistema se relaciona principalmente con el intercambio de gases? A: respiratorio; B: digestivo; C: urinario.",
+          "en": "Which system is mainly associated with gas exchange? A: respiratory; B: digestive; C: urinary."
+        },
+        "answers": [
+          "A",
+          "a"
+        ],
+        "feedback": {
+          "es": "A. Es una asociación de función básica, no un diagnóstico.",
+          "en": "A. This is a basic function association, not a diagnosis."
+        }
+      },
+      "notes_prompt": {
+        "es": "Crea un glosario ES/EN de ocho palabras y clasifica cuatro datos ficticios como reportados u observables.",
+        "en": "Build an eight-word ES/EN glossary and classify four fictional findings as reported or observable."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Qué estudia la anatomía?",
+            "en": "What does anatomy study?"
+          },
+          "options": {
+            "es": [
+              "El precio de equipos",
+              "La programación de turnos",
+              "Las estructuras corporales"
+            ],
+            "en": [
+              "Equipment prices",
+              "Shift scheduling",
+              "Body structures"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La anatomía describe estructuras; la fisiología se centra en funciones.",
+            "en": "Anatomy describes structures; physiology focuses on functions."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Con qué se relaciona la circulación?",
+            "en": "What is circulation associated with?"
+          },
+          "options": {
+            "es": [
+              "La documentación administrativa exclusivamente",
+              "El transporte de sangre",
+              "La asignación de habitaciones"
+            ],
+            "en": [
+              "Administrative documentation only",
+              "Blood transport",
+              "Room assignments"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "Es una relación básica entre sistema y función.",
+            "en": "This is a basic relationship between system and function."
+          }
+        },
+        {
+          "question": {
+            "es": "“La persona dice que le duele” es…",
+            "en": "“The person says it hurts” is…"
+          },
+          "options": {
+            "es": [
+              "Un dato expresado por la persona",
+              "Una causa diagnosticada",
+              "Una prueba de laboratorio"
+            ],
+            "en": [
+              "A person-reported finding",
+              "A diagnosed cause",
+              "A laboratory test"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Debe conservarse la diferencia entre relato e interpretación.",
+            "en": "Preserve the distinction between a report and an interpretation."
+          }
+        },
+        {
+          "question": {
+            "es": "¿De quién es el lado derecho en una descripción corporal?",
+            "en": "Whose right side is used in a body description?"
+          },
+          "options": {
+            "es": [
+              "Siempre del observador",
+              "De quien escribió por última vez",
+              "De la persona descrita"
+            ],
+            "en": [
+              "Always the observer’s",
+              "The last writer’s",
+              "The described person’s"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La referencia corporal es la persona descrita.",
+            "en": "The body reference is the person described."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué hacer con una abreviatura desconocida?",
+            "en": "What should you do with an unfamiliar abbreviation?"
+          },
+          "options": {
+            "es": [
+              "Cambiarla por otra",
+              "Pedir aclaración",
+              "Adivinar por contexto"
+            ],
+            "en": [
+              "Replace it with another one",
+              "Request clarification",
+              "Guess from context"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "Una duda de lenguaje puede afectar la comunicación; se aclara.",
+            "en": "Language uncertainty can affect communication and should be clarified."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 5,
+      "id": "PA101-L05",
+      "title": {
+        "es": "Comunicación respetuosa y privacidad",
+        "en": "Respectful communication and privacy"
+      },
+      "explanation": {
+        "es": "Comunicar es explicar, escuchar y comprobar qué se ha entendido. Presentarse, usar el nombre que la persona prefiere y hablar con palabras claras ayuda a establecer una relación respetuosa. Una barrera de idioma, audición o visión no debe confundirse con falta de capacidad para decidir. Se buscan los apoyos autorizados, sin usar a cualquier acompañante como sustituto automático de un servicio de interpretación cuando este sea necesario.\n\nLa privacidad se protege en la conversación, la pantalla y el registro. Un pasillo, un grupo personal de mensajería o una fotografía del expediente no son canales apropiados por comodidad. El acceso a información debe corresponder a las funciones y a las reglas aplicables. Las normas de privacidad incluyen excepciones y condiciones: no se debe presentar una frase simplificada como si resolviera todos los intercambios para tratamiento. Ante una duda se consulta al responsable designado.\n\nEscuchar no significa prometer resultados. Si la persona expresa una inquietud, describe lo que has entendido y comunica la preocupación a quien corresponda. Evita etiquetas como “difícil” y preguntas que culpen. Para comprobar una explicación, puedes pedir a la persona que exprese con sus palabras lo que se ha hablado, sin examinarla ni avergonzarla. En los ejercicios solo se usan identidades inventadas y documentos simulados.",
+        "en": "Communication includes explaining, listening and checking understanding. Introduce yourself, use the person’s preferred name and choose clear words. A language, hearing or vision barrier should not be mistaken for inability to make decisions. Seek authorized support; a companion is not automatically a substitute for an interpretation service when one is required.\n\nPrivacy applies to conversations, screens and records. A hallway, personal messaging group or photograph of a record is not an appropriate channel simply because it is convenient. Access should match duties and applicable rules. Privacy requirements include conditions and exceptions; a simplified slogan does not settle every treatment-related exchange. Consult the designated responsible person when uncertain.\n\nListening does not mean promising an outcome. Reflect what you understand and communicate a concern to the appropriate team member. Avoid labels such as “difficult” and questions that blame the person. To check an explanation, invite the person to describe the discussion in their own words without testing or embarrassing them. Exercises use invented identities and simulated documents only."
+      },
+      "example": {
+        "es": "Caso ficticio: una compañera propone enviar una foto de la hoja de una residente a un chat personal “para hacerlo rápido”. Ana no envía la imagen y consulta el canal autorizado para comunicar la información necesaria al equipo.",
+        "en": "Fictional case: a coworker proposes sending a resident’s paper record to a personal chat “to save time.” Ana does not send the photograph and checks the authorized channel for communicating necessary information to the team."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "Para compartir información de cuidado, A: chat personal; B: canal autorizado; C: publicación abierta.",
+          "en": "To share care information choose A: personal chat; B: authorized channel; C: public post."
+        },
+        "answers": [
+          "B",
+          "b"
+        ],
+        "feedback": {
+          "es": "B. Se utiliza un canal autorizado y el acceso correspondiente al rol.",
+          "en": "B. Use an authorized channel and role-appropriate access."
+        }
+      },
+      "notes_prompt": {
+        "es": "Reescribe tres frases culpabilizadoras con lenguaje respetuoso y redacta una consulta ficticia sobre un canal de comunicación.",
+        "en": "Rewrite three blaming statements respectfully and draft a fictional question about an authorized communication channel."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Qué ayuda a una comunicación clara?",
+            "en": "What supports clear communication?"
+          },
+          "options": {
+            "es": [
+              "Prometer que todo saldrá bien",
+              "Escuchar y comprobar comprensión",
+              "Hablar más rápido"
+            ],
+            "en": [
+              "Promise everything will go well",
+              "Listen and check understanding",
+              "Speak faster"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "Comprender requiere escuchar y confirmar el significado.",
+            "en": "Understanding requires listening and confirming meaning."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué demuestra una barrera de idioma?",
+            "en": "What does a language barrier establish?"
+          },
+          "options": {
+            "es": [
+              "La necesidad de un apoyo de comunicación",
+              "Incapacidad automática para decidir",
+              "Que se puede ignorar a la persona"
+            ],
+            "en": [
+              "A need for communication support",
+              "Automatic inability to decide",
+              "Permission to ignore the person"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Una barrera de comunicación no determina por sí sola la capacidad.",
+            "en": "A communication barrier alone does not determine capacity."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué canal no se elige por simple comodidad?",
+            "en": "Which channel must not be chosen merely for convenience?"
+          },
+          "options": {
+            "es": [
+              "El sistema autorizado",
+              "Una consulta al supervisor sin datos innecesarios",
+              "Un chat personal con datos de residentes"
+            ],
+            "en": [
+              "The authorized system",
+              "A supervisor query without unnecessary information",
+              "A personal chat containing resident information"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La comodidad no convierte un canal personal en autorizado.",
+            "en": "Convenience does not make a personal channel authorized."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué frase evita etiquetar?",
+            "en": "Which phrase avoids labeling?"
+          },
+          "options": {
+            "es": [
+              "“Siempre causa problemas”",
+              "“Expresa preocupación por la actividad”",
+              "“Es imposible tratar con ella”"
+            ],
+            "en": [
+              "“Always causes trouble”",
+              "“Expresses concern about the activity”",
+              "“She is impossible to work with”"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "Describe la preocupación concreta en vez de juzgar a la persona.",
+            "en": "Describe the specific concern rather than judging the person."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué hacer si una regla de acceso no está clara?",
+            "en": "What if an access rule is unclear?"
+          },
+          "options": {
+            "es": [
+              "Consultar al responsable designado",
+              "Decidir según la curiosidad",
+              "Compartir todo para evitar dudas"
+            ],
+            "en": [
+              "Consult the designated responsible person",
+              "Decide based on curiosity",
+              "Share everything to avoid uncertainty"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Las condiciones de acceso se aclaran por el canal responsable.",
+            "en": "Clarify access conditions through the responsible channel."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 6,
+      "id": "PA101-L06",
+      "title": {
+        "es": "Observación, registro y comunicación de cambios",
+        "en": "Observation, records and reporting changes"
+      },
+      "explanation": {
+        "es": "Observar es prestar atención a hechos relevantes sin atribuirles una causa que no se ha confirmado. Una observación puede ser algo visto, oído o medido dentro de la función autorizada. El relato de la persona también se recoge como tal. Conviene distinguir “dejó parte del almuerzo” de “no tiene apetito por depresión”: la segunda frase añade una explicación que no se deriva de ese único hecho.\n\nUn registro útil responde qué pasó, cuándo, en qué contexto y qué se comunicó. Si se usan mediciones, se necesita entrenamiento, equipo aprobado y las instrucciones del centro. Esta lección no proporciona rangos para diagnosticar ni enseña técnicas de medición. No se inventan datos para completar una casilla, no se copian resultados anteriores y no se convierte un dato ausente en un resultado normal. Un error de registro se corrige mediante el procedimiento autorizado, conservando la trazabilidad que corresponda.\n\nUn cambio que genera preocupación se comunica por el canal y con la prioridad previstos por el centro. Si se reconoce una emergencia, se activa su respuesta urgente conforme a la formación recibida; no se espera al final del turno por terminar notas. Un mensaje enviado no demuestra que alguien lo haya recibido. Cuando procede, se confirma el receptor y se distingue el aviso del seguimiento pendiente. Practicaremos un reporte breve con datos ficticios, sin emitir diagnósticos.",
+        "en": "Observation means attending to relevant facts without assigning an unconfirmed cause. A finding may be seen, heard or measured within an authorized role. Record the person’s own account as a report. Distinguish “left part of lunch” from “has no appetite because of depression”: the latter adds an explanation not established by that single observation.\n\nA useful record states what happened, when, in what context and what was communicated. Measurements require training, approved equipment and facility instructions. This lesson does not provide diagnostic thresholds or teach measurement techniques. Do not invent findings to fill a field, copy earlier results or treat missing information as normal. Correct recording errors through the authorized process, preserving the required audit trail.\n\nReport a concerning change through the facility’s channel with the appropriate priority. For a recognized emergency, activate the urgent response according to training; do not delay to finish notes. Sending a message does not prove it was received. When appropriate, confirm the receiver and distinguish notification from pending follow-up. Practice a short report using fictional information without making diagnoses."
+      },
+      "example": {
+        "es": "Caso ficticio: a las 12:20, Rosa observa que la persona deja casi toda la bandeja y dice “hoy me cuesta comer”. Reporta esas dos observaciones al profesional indicado y anota a quién avisó. No inventa un diagnóstico ni escribe que se resolvió si aún no hubo seguimiento.",
+        "en": "Fictional case: at 12:20 Rosa observes that a person leaves most of the tray and says “eating is difficult today.” She reports both findings to the designated professional and records whom she notified. She does not invent a diagnosis or say the issue is resolved if follow-up is pending."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "A: registrar hechos y aviso; B: inventar una causa; C: copiar el registro de ayer.",
+          "en": "A: record facts and notification; B: invent a cause; C: copy yesterday’s record."
+        },
+        "answers": [
+          "A",
+          "a"
+        ],
+        "feedback": {
+          "es": "A. Los hechos, el contexto y la comunicación se distinguen de las interpretaciones.",
+          "en": "A. Distinguish facts, context and communication from interpretations."
+        }
+      },
+      "notes_prompt": {
+        "es": "Redacta un reporte de cuatro líneas con hora, hecho observado, relato y receptor. Marca qué información todavía falta.",
+        "en": "Write a four-line report including time, observation, reported words and receiver. Mark what remains unknown."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Cuál es un hecho observado?",
+            "en": "Which is an observed fact?"
+          },
+          "options": {
+            "es": [
+              "Dejó la mitad de la bandeja",
+              "Está deprimida con seguridad",
+              "Lo hace para molestar"
+            ],
+            "en": [
+              "Left half the tray",
+              "Is definitely depressed",
+              "Does it to annoy people"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "La cantidad dejada es observable; las otras frases atribuyen causas.",
+            "en": "The amount left is observable; the other statements assign causes."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cómo tratar un dato que no se obtuvo?",
+            "en": "How should an unobtained finding be handled?"
+          },
+          "options": {
+            "es": [
+              "Como resultado normal",
+              "Como el mismo dato de ayer",
+              "Como dato no obtenido, según el procedimiento"
+            ],
+            "en": [
+              "As a normal result",
+              "As yesterday’s finding",
+              "As not obtained, under procedure"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La ausencia de dato no demuestra normalidad.",
+            "en": "Missing information does not establish normality."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué necesita una medición dentro del rol?",
+            "en": "What does a role-appropriate measurement require?"
+          },
+          "options": {
+            "es": [
+              "Una estimación sin registro",
+              "Entrenamiento, equipo e instrucciones aprobados",
+              "Solo haber visto un video"
+            ],
+            "en": [
+              "An unrecorded estimate",
+              "Training, equipment and approved instructions",
+              "Only having watched a video"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "Una demostración en pantalla no sustituye entrenamiento y supervisión.",
+            "en": "A screen demonstration does not replace training and supervision."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué acredita un mensaje enviado?",
+            "en": "What does a sent message establish?"
+          },
+          "options": {
+            "es": [
+              "Que se envió; debe verificarse recepción cuando corresponda",
+              "Que ya se resolvió el problema",
+              "Que ya no hace falta seguimiento"
+            ],
+            "en": [
+              "It was sent; confirm receipt when appropriate",
+              "The problem has been resolved",
+              "Follow-up is no longer needed"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Enviar, recibir y resolver son hechos diferentes.",
+            "en": "Sending, receiving and resolving are different events."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Se retrasa una respuesta urgente para terminar notas?",
+            "en": "Should an urgent response wait for completed notes?"
+          },
+          "options": {
+            "es": [
+              "Sí, siempre",
+              "Solo si hay muchos registros",
+              "No; se activa la respuesta según formación y protocolo"
+            ],
+            "en": [
+              "Yes, always",
+              "Only if there are many records",
+              "No; activate the response under training and procedure"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La documentación no justifica demorar la respuesta urgente.",
+            "en": "Documentation does not justify delaying an urgent response."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 7,
+      "id": "PA101-L07",
+      "title": {
+        "es": "Movilidad, entorno y prevención de caídas",
+        "en": "Mobility, surroundings and fall prevention"
+      },
+      "explanation": {
+        "es": "La movilidad no es igual para todas las personas ni se mantiene siempre igual. Una persona puede necesitar ayuda, un dispositivo o instrucciones específicas del plan. La disposición a levantarse no demuestra por sí sola que la actividad sea segura. Antes de una ayuda de movilidad se revisan las indicaciones vigentes y las condiciones, siempre dentro de la formación y supervisión recibidas.\n\nEl entorno puede facilitar o dificultar una actividad. Objetos en el paso, iluminación insuficiente o elementos de uso frecuente fuera del alcance son observaciones útiles. Informar de un riesgo y evitar que una tarea se inicie sin las condiciones necesarias forma parte de la prevención. Los dispositivos no se usan porque estén disponibles: hay que saber que son los indicados, que se cuenta con entrenamiento y que pueden utilizarse conforme a las instrucciones.\n\nLa movilización segura depende de organización, evaluación, equipo y capacitación; no se reduce a “hacer fuerza correctamente”. No se enseña en esta lección a levantar, transferir, sujetar ni recoger del suelo a una persona. Un accidente o una posible caída requiere la respuesta prevista por el centro y ayuda del equipo correspondiente. La práctica aquí consiste en analizar un plano inventado, identificar condiciones de riesgo y redactar la solicitud de apoyo antes de una actividad ficticia.",
+        "en": "Mobility needs vary between people and can change over time. Someone may need assistance, a device or specific care-plan instructions. Willingness to stand does not by itself establish that an activity is safe. Review current instructions and conditions before mobility assistance, within your training and supervision.\n\nSurroundings can support or interfere with activity. Objects in a walkway, poor lighting or frequently used items out of reach are useful observations. Reporting a risk and preventing a task from starting without appropriate conditions are prevention skills. Available equipment is not automatically appropriate; confirm that it is indicated, that training is in place and that it can be used according to instructions.\n\nSafe handling depends on organization, assessment, equipment and training, not simply “using strength correctly.” This lesson does not teach lifting, transfers, restraint or getting someone up from the floor. An accident or possible fall requires the facility response and appropriate team assistance. The exercise analyzes an invented floor plan, identifies hazards and drafts a request for support before a fictional activity."
+      },
+      "example": {
+        "es": "Caso ficticio: una actividad exige dos personas entrenadas y un dispositivo indicado. Solo hay una persona disponible. Diego no sustituye el requisito por fuerza física: comunica que faltan las condiciones y solicita coordinación.",
+        "en": "Fictional case: an activity requires two trained people and an indicated device. Only one person is available. Diego does not substitute strength for the requirement; he reports the missing conditions and requests coordination."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "Falta la ayuda indicada. A: improvisar; B: posponer el inicio y pedir coordinación; C: cambiar el plan por cuenta propia.",
+          "en": "Indicated assistance is missing. A: improvise; B: pause the start and request coordination; C: change the plan independently."
+        },
+        "answers": [
+          "B",
+          "b"
+        ],
+        "feedback": {
+          "es": "B. Se aclaran y organizan las condiciones antes de iniciar la actividad.",
+          "en": "B. Clarify and arrange the conditions before starting."
+        }
+      },
+      "notes_prompt": {
+        "es": "Describe un plano ficticio con tres riesgos del entorno y redacta una solicitud de apoyo, sin instrucciones de transferencia.",
+        "en": "Describe an invented floor plan with three environmental hazards and write a support request without transfer instructions."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Qué guía las necesidades de ayuda?",
+            "en": "What guides assistance needs?"
+          },
+          "options": {
+            "es": [
+              "Lo que funcionó con otra persona",
+              "La fuerza disponible",
+              "Las indicaciones vigentes y la evaluación correspondiente"
+            ],
+            "en": [
+              "What worked for another person",
+              "Available strength",
+              "Current instructions and appropriate assessment"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "Las necesidades y condiciones son individuales.",
+            "en": "Needs and conditions are individual."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué indica un cable en el paso?",
+            "en": "What does a cable in a walkway indicate?"
+          },
+          "options": {
+            "es": [
+              "Que la tarea debe hacerse más rápido",
+              "Un riesgo del entorno que debe abordarse o reportarse",
+              "Que el paciente tiene una enfermedad concreta"
+            ],
+            "en": [
+              "That the task should be faster",
+              "An environmental hazard to address or report",
+              "That the person has a particular disease"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "El cable es una condición observable del entorno.",
+            "en": "The cable is an observable environmental condition."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Un dispositivo disponible es automáticamente adecuado?",
+            "en": "Is available equipment automatically appropriate?"
+          },
+          "options": {
+            "es": [
+              "No; hay que confirmar indicación y entrenamiento",
+              "Sí, si parece nuevo",
+              "Sí, si está cerca"
+            ],
+            "en": [
+              "No; confirm indication and training",
+              "Yes, if it looks new",
+              "Yes, if it is nearby"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Disponibilidad no equivale a indicación ni competencia.",
+            "en": "Availability does not establish indication or competence."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué sustituye una técnica improvisada?",
+            "en": "What can justify an improvised handling technique?"
+          },
+          "options": {
+            "es": [
+              "La voluntad de terminar",
+              "La confianza personal",
+              "Nada en este curso la autoriza"
+            ],
+            "en": [
+              "Wanting to finish",
+              "Personal confidence",
+              "Nothing in this course authorizes it"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La movilidad requiere entrenamiento y condiciones apropiadas.",
+            "en": "Mobility requires training and appropriate conditions."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué se practica en esta lección?",
+            "en": "What is practiced in this lesson?"
+          },
+          "options": {
+            "es": [
+              "Usar una sujeción",
+              "Análisis de riesgos y solicitud de apoyo",
+              "Levantar a una persona real"
+            ],
+            "en": [
+              "Applying a restraint",
+              "Hazard analysis and support requests",
+              "Lifting a real person"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "La práctica es teórica y utiliza casos inventados.",
+            "en": "Practice is theoretical and uses invented cases."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 8,
+      "id": "PA101-L08",
+      "title": {
+        "es": "Nutrición e hidratación: reconocer necesidades",
+        "en": "Nutrition and hydration: recognizing needs"
+      },
+      "explanation": {
+        "es": "Los alimentos y líquidos forman parte de las necesidades cotidianas, pero ofrecerlos requiere conocer el plan y las preferencias de la persona. “Todos necesitan beber más” no es una instrucción segura para cada situación: pueden existir restricciones o indicaciones específicas. El asistente no establece dietas, consistencias ni cantidades de líquidos por iniciativa propia.\n\nLa autonomía incluye facilitar elecciones compatibles con el plan, explicar la ayuda y escuchar una negativa. Comer menos en una ocasión no demuestra por sí solo una causa clínica; se observan hechos y se comunica lo relevante. En un registro ficticio se puede distinguir lo ofrecido, lo aceptado y la dificultad expresada. No se inventan cantidades para completar una hoja ni se usan datos alimentarios reales de otra persona en la actividad académica.\n\nLas dificultades al tragar requieren atención profesional. El alumno aprende a reconocer que una dificultad expresada, tos durante la ingesta u otra señal preocupante debe comunicarse y que la asistencia no se fuerza. No se dan aquí pruebas caseras para decidir si alguien puede tragar ni maniobras para responder a un atragantamiento. Ante una situación urgente se utiliza el sistema de respuesta previsto y la formación recibida. El objetivo de fundamentos es decidir qué información confirmar y a quién reportar, no diseñar un tratamiento nutricional.",
+        "en": "Food and fluids meet everyday needs, but offering them requires knowledge of the person’s plan and preferences. “Everyone should drink more” is not a safe individual instruction; restrictions or specific directions may apply. An assistant does not independently prescribe diets, textures or fluid amounts.\n\nAutonomy includes supporting choices compatible with the plan, explaining assistance and listening to a refusal. Eating less once does not by itself establish a clinical cause. Observe facts and communicate relevant findings. A fictional record can distinguish what was offered, what was accepted and what difficulty was reported. Do not invent amounts to complete a form or use another person’s real dietary information in this exercise.\n\nSwallowing difficulties require professional attention. Recognize that reported difficulty, coughing during intake or another concerning sign must be communicated and that assistance must not be forced. This lesson provides neither home tests for deciding whether someone can swallow nor choking-response maneuvers. Use the planned response system and your training for an urgent situation. Foundations focuses on what information to confirm and whom to notify, not on designing nutrition treatment."
+      },
+      "example": {
+        "es": "Caso ficticio: una residente tiene una indicación de líquidos que el alumno no entiende y solicita otra bebida. El alumno comunica la solicitud y pide aclaración del plan antes de ofrecer algo diferente. Registra la preferencia sin calificar a la persona de “poco colaboradora”.",
+        "en": "Fictional case: a resident has a fluid instruction the learner does not understand and asks for another drink. The learner communicates the request and seeks clarification before offering something different. The preference is recorded without calling the resident “uncooperative.”"
+      },
+      "exercise": {
+        "prompt": {
+          "es": "Una indicación dietética es confusa. A: preguntar al responsable; B: cambiarla; C: ignorarla.",
+          "en": "A dietary instruction is unclear. A: ask the responsible professional; B: change it; C: ignore it."
+        },
+        "answers": [
+          "A",
+          "a"
+        ],
+        "feedback": {
+          "es": "A. La indicación debe aclararse; el alumno no establece cambios por su cuenta.",
+          "en": "A. Clarify the instruction; the learner does not independently change the plan."
+        }
+      },
+      "notes_prompt": {
+        "es": "Crea un registro ficticio de ofrecido, aceptado y observado, y escribe dos preguntas para aclarar un plan.",
+        "en": "Create a fictional offered/accepted/observed record and two questions to clarify a plan."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Qué se confirma antes de ofrecer alimentos o líquidos?",
+            "en": "What is confirmed before offering food or fluids?"
+          },
+          "options": {
+            "es": [
+              "Lo que aceptó otra persona",
+              "Las indicaciones y preferencias pertinentes",
+              "Solo la hora del día"
+            ],
+            "en": [
+              "What someone else accepted",
+              "Relevant instructions and preferences",
+              "Only the time of day"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "El plan y la persona orientan la ayuda.",
+            "en": "The plan and the person guide assistance."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Quién cambia una dieta por iniciativa propia en este curso?",
+            "en": "Who independently changes a diet in this course?"
+          },
+          "options": {
+            "es": [
+              "El curso no autoriza al alumno a hacerlo",
+              "Cualquier alumno que acierte el cuestionario",
+              "Quien tenga más prisa"
+            ],
+            "en": [
+              "The course does not authorize the learner to do so",
+              "Any learner who passes the quiz",
+              "Whoever is in the greatest hurry"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Una actividad teórica no autoriza cambios de dieta.",
+            "en": "A theoretical activity does not authorize diet changes."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cómo se responde a una negativa?",
+            "en": "How should a refusal be handled?"
+          },
+          "options": {
+            "es": [
+              "Se fuerza para completar la cantidad",
+              "Se registra como aceptado",
+              "Se escucha, respeta y comunica según el plan"
+            ],
+            "en": [
+              "Force intake to finish the amount",
+              "Record it as accepted",
+              "Listen, respect and report under the plan"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "Una negativa no se transforma en consentimiento ni en una ingesta ficticia.",
+            "en": "A refusal does not become consent or fictional intake."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué requiere una dificultad al tragar?",
+            "en": "What does swallowing difficulty require?"
+          },
+          "options": {
+            "es": [
+              "Cambiar consistencias sin consulta",
+              "Comunicación y atención del equipo responsable",
+              "Una prueba casera del alumno"
+            ],
+            "en": [
+              "Changing textures without consultation",
+              "Communication and responsible-team attention",
+              "A learner’s home test"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "La dificultad se comunica; no se improvisan pruebas o tratamientos.",
+            "en": "Report the difficulty; do not improvise tests or treatment."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué dato no debe inventarse?",
+            "en": "Which finding must not be invented?"
+          },
+          "options": {
+            "es": [
+              "La cantidad aceptada",
+              "Un nombre de un caso ficticio",
+              "Un título del cuaderno"
+            ],
+            "en": [
+              "The amount accepted",
+              "A fictional case name",
+              "A workbook title"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Los datos de cuidado no se fabrican para completar un registro.",
+            "en": "Care findings are not fabricated to complete a record."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 9,
+      "id": "PA101-L09",
+      "title": {
+        "es": "Cuidado personal, comodidad y dignidad",
+        "en": "Personal care, comfort and dignity"
+      },
+      "explanation": {
+        "es": "La dignidad se expresa en decisiones pequeñas: cómo se nombra a una persona, quién está presente, qué parte del cuerpo queda expuesta y si se escucha una preferencia. Necesitar ayuda con actividades cotidianas no elimina la autonomía. Antes de una asistencia se explica lo previsto, se busca la aceptación y se permite que la persona haga lo que pueda dentro del plan.\n\nLa higiene, el vestido, el descanso y la comodidad se relacionan con preferencias, cultura, privacidad y condiciones individuales. Un horario conveniente para el personal no es la única consideración. Hay que comunicar molestias y observar cambios sin atribuir causas no confirmadas. Un comentario sobre dolor o una zona de piel que se ve diferente se reporta al responsable; el alumno no clasifica lesiones ni recomienda productos o tratamientos.\n\nLa prevención requiere planificación y supervisión cuando corresponde. Este curso no indica una frecuencia universal de cambios de posición ni enseña curación de heridas, cuidado de dispositivos o técnicas de higiene íntima. Esas tareas requieren indicaciones y capacitación apropiadas. La actividad de fundamentos consiste en redactar una propuesta de ayuda que conserve elección, intimidad y capacidad de la persona. Una buena respuesta muestra cómo pedir permiso, ofrecer una elección posible y comunicar una necesidad que excede el rol.",
+        "en": "Dignity appears in small decisions: how someone is addressed, who is present, which body areas are exposed and whether preferences are heard. Needing help with daily activities does not remove autonomy. Explain the proposed assistance, seek acceptance and allow the person to do what they can within the plan.\n\nHygiene, dressing, rest and comfort involve preferences, culture, privacy and individual circumstances. Staff convenience is not the only consideration. Communicate discomfort and observe changes without assigning unconfirmed causes. A report of pain or a change in skin appearance is communicated to the responsible professional; learners do not classify wounds or recommend products and treatment.\n\nPrevention requires planning and appropriate supervision. This course does not prescribe a universal repositioning schedule or teach wound care, device care or intimate-hygiene techniques. Those tasks require appropriate instructions and training. The foundations exercise drafts an offer of assistance that preserves choice, privacy and the person’s abilities. A strong response explains how to ask permission, offer a feasible choice and report a need beyond the learner’s role."
+      },
+      "example": {
+        "es": "Caso ficticio: a Camila le piden ayudar con el vestido. La persona desea elegir entre dos prendas compatibles con su plan y pide cerrar la puerta. Camila escucha esas preferencias y confirma qué parte de la actividad desea realizar la persona por sí misma.",
+        "en": "Fictional case: Camila is asked to assist with dressing. The person wants to choose between two suitable garments and asks for the door to be closed. Camila hears those preferences and checks which parts the person wishes to do independently."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "¿Qué protege autonomía? A: decidir todo por la persona; B: ignorar preferencias; C: ofrecer elecciones compatibles con el plan.",
+          "en": "What protects autonomy? A: decide everything for the person; B: ignore preferences; C: offer choices compatible with the plan."
+        },
+        "answers": [
+          "C",
+          "c"
+        ],
+        "feedback": {
+          "es": "C. La ayuda debe conservar elecciones y capacidades, además de proteger la intimidad.",
+          "en": "C. Assistance should preserve choices and abilities as well as privacy."
+        }
+      },
+      "notes_prompt": {
+        "es": "Escribe un diálogo de seis líneas para ofrecer ayuda con una actividad ficticia, pedir aceptación y respetar una preferencia.",
+        "en": "Write a six-line dialogue offering help with a fictional activity, seeking acceptance and respecting a preference."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Necesitar ayuda elimina la autonomía?",
+            "en": "Does needing assistance remove autonomy?"
+          },
+          "options": {
+            "es": [
+              "No; se conservan elecciones y capacidades",
+              "Sí, siempre",
+              "Solo si la actividad lleva tiempo"
+            ],
+            "en": [
+              "No; preserve choices and abilities",
+              "Yes, always",
+              "Only if the activity takes time"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "La dependencia en una tarea no elimina la condición de persona que decide.",
+            "en": "Dependence in a task does not remove personhood and choice."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué se hace antes de asistir?",
+            "en": "What happens before assistance?"
+          },
+          "options": {
+            "es": [
+              "Empezar sin hablar",
+              "Elegir por comodidad del personal",
+              "Explicar y buscar aceptación"
+            ],
+            "en": [
+              "Start without speaking",
+              "Choose for staff convenience",
+              "Explain and seek acceptance"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La comunicación forma parte del respeto a la persona.",
+            "en": "Communication is part of respecting the person."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué constituye una preferencia?",
+            "en": "Which is a preference?"
+          },
+          "options": {
+            "es": [
+              "Un resultado de laboratorio inventado",
+              "Elegir entre dos prendas adecuadas",
+              "Un diagnóstico confirmado por el alumno"
+            ],
+            "en": [
+              "An invented laboratory result",
+              "Choosing between two suitable garments",
+              "A diagnosis confirmed by the learner"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "La elección de ropa puede expresar una preferencia cotidiana.",
+            "en": "Clothing choice can express an everyday preference."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué hacer ante un cambio visible en la piel?",
+            "en": "What should happen with a visible skin change?"
+          },
+          "options": {
+            "es": [
+              "Describirlo y comunicarlo al responsable",
+              "Clasificarlo como lesión concreta sin formación",
+              "Recomendar una crema por cuenta propia"
+            ],
+            "en": [
+              "Describe it and report it to the responsible professional",
+              "Classify a specific wound without training",
+              "Independently recommend a cream"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "Observar y comunicar no equivale a diagnosticar o tratar.",
+            "en": "Observation and reporting are not diagnosis or treatment."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué ofrece este curso sobre cambios de posición?",
+            "en": "What does this course provide about repositioning?"
+          },
+          "options": {
+            "es": [
+              "Una frecuencia universal para todas las personas",
+              "Autorización para practicar sin supervisión",
+              "El principio de seguir un plan individual y capacitación"
+            ],
+            "en": [
+              "One universal schedule for everyone",
+              "Permission for unsupervised practice",
+              "The principle of following an individual plan and training"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "Las necesidades e indicaciones individuales requieren revisión apropiada.",
+            "en": "Individual needs and instructions require appropriate review."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    },
+    {
+      "number": 10,
+      "id": "PA101-L10",
+      "title": {
+        "es": "Cambios cognitivos, ética y continuidad",
+        "en": "Cognitive changes, ethics and continuity"
+      },
+      "explanation": {
+        "es": "La memoria, la atención y el lenguaje influyen en las actividades cotidianas. Una dificultad cognitiva no define todo lo que una persona puede comprender o decidir. La demencia no es una parte normal del envejecimiento, pero tampoco corresponde al alumno atribuir ese diagnóstico a una confusión observada. Un cambio nuevo o preocupante se comunica al equipo responsable.\n\nEn la relación cotidiana ayuda presentarse, hablar con claridad, reducir distracciones cuando sea posible y dar tiempo a responder. No se humilla ni se discute para “ganar” una conversación. Si la persona expresa angustia o rechazo, se escucha y se busca apoyo conforme al plan. Este curso no ofrece estrategias para sujetar, sedar ni controlar por fuerza a una persona.\n\nLa ética incluye decir la verdad sobre lo hecho, reconocer errores y comunicar preocupaciones de seguridad o posible maltrato por los canales previstos. No se investiga por cuenta propia ni se promete secreto absoluto ante una situación que necesita protección. El reporte distingue hechos de sospechas y evita divulgar información fuera del equipo autorizado.\n\nLa actividad final combina los fundamentos: identificar la situación ficticia, escuchar una preferencia, reconocer un riesgo, comunicar hechos y dejar claro el seguimiento pendiente. Puedes continuar después con NA-101 para trabajar casos más amplios. Aprobar teoría no acredita competencia clínica ni sustituye entrenamiento práctico supervisado.",
+        "en": "Memory, attention and language influence daily activity. Cognitive difficulty does not define everything a person can understand or decide. Dementia is not a normal part of aging, but a learner should not assign that diagnosis to observed confusion. Communicate a new or concerning change to the responsible team.\n\nIn everyday communication, introduce yourself, speak clearly, reduce distractions where possible and allow response time. Do not humiliate someone or argue to “win.” Listen to distress or refusal and seek support under the plan. This course does not teach restraint, sedation or force-based control.\n\nEthics includes truthful descriptions of work, acknowledging mistakes and reporting safety concerns or suspected mistreatment through designated channels. Do not conduct your own investigation or promise absolute secrecy about a situation needing protection. Separate facts from concerns and avoid disclosure outside the authorized team.\n\nThe final activity combines foundations: identify a fictional situation, hear a preference, recognize a hazard, communicate facts and state pending follow-up. Continue to NA-101 afterward for broader cases. Passing theory does not demonstrate clinical competence or replace supervised practical training."
+      },
+      "example": {
+        "es": "Caso ficticio: Omar nota que una persona suele conversar durante una actividad, pero hoy no puede seguirla como de costumbre y expresa temor. Describe el cambio sin etiquetarlo como demencia, avisa al responsable y diferencia el aviso del seguimiento todavía pendiente.",
+        "en": "Fictional case: Omar notices that a person usually converses during an activity, but today cannot follow it as usual and expresses fear. He describes the change without labeling it dementia, notifies the responsible professional and distinguishes notification from pending follow-up."
+      },
+      "exercise": {
+        "prompt": {
+          "es": "Ante un cambio cognitivo nuevo, A: diagnosticar demencia; B: describir y comunicar el cambio; C: ocultarlo.",
+          "en": "For a new cognitive change choose A: diagnose dementia; B: describe and report the change; C: hide it."
+        },
+        "answers": [
+          "B",
+          "b"
+        ],
+        "feedback": {
+          "es": "B. Se comunica un cambio observado sin atribuir un diagnóstico.",
+          "en": "B. Report an observed change without assigning a diagnosis."
+        }
+      },
+      "notes_prompt": {
+        "es": "Caso final: una persona ficticia rechaza una actividad, hay un obstáculo en el paso y aparece una confusión nueva. Redacta un reporte: hechos, preferencia, riesgo, aviso y seguimiento. Justifica dos límites de tu rol.",
+        "en": "Final case: a fictional person declines an activity, an obstacle blocks the walkway and new confusion appears. Write a report covering facts, preference, risk, notification and follow-up. Justify two role boundaries."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿La demencia es parte normal del envejecimiento?",
+            "en": "Is dementia a normal part of aging?"
+          },
+          "options": {
+            "es": [
+              "Sí, en todas las personas",
+              "Solo por cambiar de habitación",
+              "No"
+            ],
+            "en": [
+              "Yes, in everyone",
+              "Only after a room change",
+              "No"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "No es envejecimiento normal y su diagnóstico corresponde a profesionales.",
+            "en": "It is not normal aging; diagnosis belongs to professionals."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué se hace ante una confusión nueva?",
+            "en": "What should happen with new confusion?"
+          },
+          "options": {
+            "es": [
+              "Suponer que siempre fue así",
+              "Describir y comunicar el cambio",
+              "Etiquetar demencia de inmediato"
+            ],
+            "en": [
+              "Assume it has always been present",
+              "Describe and report the change",
+              "Immediately label dementia"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "Un cambio nuevo necesita comunicación, no una explicación inventada.",
+            "en": "A new change needs communication, not an invented explanation."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué favorece una conversación respetuosa?",
+            "en": "What supports respectful conversation?"
+          },
+          "options": {
+            "es": [
+              "Dar tiempo y usar lenguaje claro",
+              "Humillar para obtener respuesta",
+              "Discutir hasta que acepte"
+            ],
+            "en": [
+              "Allow time and use clear language",
+              "Humiliate to obtain an answer",
+              "Argue until the person agrees"
+            ]
+          },
+          "answer": 0,
+          "feedback": {
+            "es": "El tiempo y la claridad ayudan sin imponer ni humillar.",
+            "en": "Time and clarity help without coercion or humiliation."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cómo se registra una preocupación de posible maltrato?",
+            "en": "How is a concern about possible mistreatment recorded?"
+          },
+          "options": {
+            "es": [
+              "Publicándola en redes",
+              "Prometiendo silencio absoluto",
+              "Separando hechos y sospechas y usando el canal previsto"
+            ],
+            "en": [
+              "Post it on social media",
+              "Promise absolute silence",
+              "Separate facts and concerns and use the designated channel"
+            ]
+          },
+          "answer": 2,
+          "feedback": {
+            "es": "La protección y la privacidad requieren el canal apropiado.",
+            "en": "Protection and privacy require the appropriate channel."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué debe incluir un relevo útil?",
+            "en": "What belongs in a useful handover?"
+          },
+          "options": {
+            "es": [
+              "Resultados inventados para cerrar la lista",
+              "Hechos, acciones realizadas y pendientes",
+              "Solo que ya se mandó un mensaje"
+            ],
+            "en": [
+              "Invented outcomes to finish a checklist",
+              "Facts, completed actions and pending issues",
+              "Only that a message was sent"
+            ]
+          },
+          "answer": 1,
+          "feedback": {
+            "es": "El receptor necesita distinguir lo realizado de lo que requiere seguimiento.",
+            "en": "The receiver needs to distinguish completed work from needed follow-up."
+          }
+        }
+      ],
+      "video": null,
+      "video_status": "not_produced",
+      "source": "B82: desarrollo original a partir de objetivos B64; casos y preguntas nuevos."
+    }
+  ],
+  "notebooks": [
+    {
+      "title": "Cuaderno / Workbook 1",
+      "text": "PA-101 — CUADERNO / WORKBOOK 1\n\nESPAÑOL\nCasos ficticios. No escribas datos de personas reales.\n\n1. Seguridad e identidad de la persona\nConstruye una lista de cuatro comprobaciones previas y explica qué comunicarías si la persona rechaza la ayuda. Usa nombres inventados.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\n2. Higiene de manos y prevención de infecciones\nDibuja en palabras un recorrido ficticio entre una superficie usada, un teléfono y un carro limpio. Señala dónde consultarías el protocolo.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\nENGLISH\nFictional cases only. Do not enter real people’s information.\n\n1. Safety and personal identification\nBuild a four-item pre-task checklist and explain what you would report if the person declined help. Use invented names.\nResponse:\n\nReasoning and source consulted:\n\n\n2. Hand hygiene and infection prevention\nDescribe a fictional route between a used surface, a phone and a clean cart. Mark where you would consult procedure.\nResponse:\n\nReasoning and source consulted:\n\n"
+    },
+    {
+      "title": "Cuaderno / Workbook 2",
+      "text": "PA-101 — CUADERNO / WORKBOOK 2\n\nESPAÑOL\nCasos ficticios. No escribas datos de personas reales.\n\n3. Rol, límites y trabajo en equipo\nRedacta cuatro preguntas para aclarar una asignación y un relevo de tres líneas que diferencie realizado, no realizado y pendiente.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\n4. Cuerpo humano y vocabulario básico\nCrea un glosario ES/EN de ocho palabras y clasifica cuatro datos ficticios como reportados u observables.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\nENGLISH\nFictional cases only. Do not enter real people’s information.\n\n3. Role boundaries and teamwork\nWrite four assignment-clarification questions and a three-line handover distinguishing completed, not completed and pending.\nResponse:\n\nReasoning and source consulted:\n\n\n4. The human body and basic vocabulary\nBuild an eight-word ES/EN glossary and classify four fictional findings as reported or observable.\nResponse:\n\nReasoning and source consulted:\n\n"
+    },
+    {
+      "title": "Cuaderno / Workbook 3",
+      "text": "PA-101 — CUADERNO / WORKBOOK 3\n\nESPAÑOL\nCasos ficticios. No escribas datos de personas reales.\n\n5. Comunicación respetuosa y privacidad\nReescribe tres frases culpabilizadoras con lenguaje respetuoso y redacta una consulta ficticia sobre un canal de comunicación.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\n6. Observación, registro y comunicación de cambios\nRedacta un reporte de cuatro líneas con hora, hecho observado, relato y receptor. Marca qué información todavía falta.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\nENGLISH\nFictional cases only. Do not enter real people’s information.\n\n5. Respectful communication and privacy\nRewrite three blaming statements respectfully and draft a fictional question about an authorized communication channel.\nResponse:\n\nReasoning and source consulted:\n\n\n6. Observation, records and reporting changes\nWrite a four-line report including time, observation, reported words and receiver. Mark what remains unknown.\nResponse:\n\nReasoning and source consulted:\n\n"
+    },
+    {
+      "title": "Cuaderno / Workbook 4",
+      "text": "PA-101 — CUADERNO / WORKBOOK 4\n\nESPAÑOL\nCasos ficticios. No escribas datos de personas reales.\n\n7. Movilidad, entorno y prevención de caídas\nDescribe un plano ficticio con tres riesgos del entorno y redacta una solicitud de apoyo, sin instrucciones de transferencia.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\n8. Nutrición e hidratación: reconocer necesidades\nCrea un registro ficticio de ofrecido, aceptado y observado, y escribe dos preguntas para aclarar un plan.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\nENGLISH\nFictional cases only. Do not enter real people’s information.\n\n7. Mobility, surroundings and fall prevention\nDescribe an invented floor plan with three environmental hazards and write a support request without transfer instructions.\nResponse:\n\nReasoning and source consulted:\n\n\n8. Nutrition and hydration: recognizing needs\nCreate a fictional offered/accepted/observed record and two questions to clarify a plan.\nResponse:\n\nReasoning and source consulted:\n\n"
+    },
+    {
+      "title": "Cuaderno / Workbook 5",
+      "text": "PA-101 — CUADERNO / WORKBOOK 5\n\nESPAÑOL\nCasos ficticios. No escribas datos de personas reales.\n\n9. Cuidado personal, comodidad y dignidad\nEscribe un diálogo de seis líneas para ofrecer ayuda con una actividad ficticia, pedir aceptación y respetar una preferencia.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\n10. Cambios cognitivos, ética y continuidad\nCaso final: una persona ficticia rechaza una actividad, hay un obstáculo en el paso y aparece una confusión nueva. Redacta un reporte: hechos, preferencia, riesgo, aviso y seguimiento. Justifica dos límites de tu rol.\nRespuesta:\n\nJustificación y fuente consultada:\n\n\nENGLISH\nFictional cases only. Do not enter real people’s information.\n\n9. Personal care, comfort and dignity\nWrite a six-line dialogue offering help with a fictional activity, seeking acceptance and respecting a preference.\nResponse:\n\nReasoning and source consulted:\n\n\n10. Cognitive changes, ethics and continuity\nFinal case: a fictional person declines an activity, an obstacle blocks the walkway and new confusion appears. Write a report covering facts, preference, risk, notification and follow-up. Justify two role boundaries.\nResponse:\n\nReasoning and source consulted:\n\n"
+    }
+  ],
+  "assessments": [],
+  "sources": [
+    {
+      "title": "CDC — Hand hygiene",
+      "url": "https://www.cdc.gov/clean-hands/hcp/clinical-safety/index.html",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "CDC — Core infection prevention",
+      "url": "https://www.cdc.gov/infection-control/hcp/core-practices/index.html",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "OSHA — Safe patient handling",
+      "url": "https://www.osha.gov/healthcare/safe-patient-handling",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "HHS — Privacy: minimum necessary and exceptions",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "MedlinePlus — Anatomy",
+      "url": "https://medlineplus.gov/anatomy.html",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "NCI SEER — Introduction to the Human Body",
+      "url": "https://training.seer.cancer.gov/anatomy/body/",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "MedlinePlus — Swallowing problems",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000065.htm",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "MedlinePlus — Dementia",
+      "url": "https://medlineplus.gov/dementia.html",
+      "accessed": "2026-10-19"
+    }
+  ],
+  "final_project": {
+    "es": "Resuelve el caso final de la lección 10. Evalúa tu respuesta con cinco criterios: hechos sin diagnóstico, respeto a la elección, riesgo descrito, receptor del aviso y seguimiento identificado. Es práctica formativa, no una evaluación de competencia clínica.",
+    "en": "Complete the final case in lesson 10. Review five criteria: facts without diagnosis, respect for choice, described risk, notification receiver and identified follow-up. This is formative practice, not a clinical competency assessment."
+  },
+  "final_quiz": [
+    {
+      "question": {
+        "es": "En un caso ficticio, identidad y tarea no coinciden. ¿Qué decisión integra seguridad y rol?",
+        "en": "In a fictional case, identity and task information do not match. Which decision combines safety and role boundaries?"
+      },
+      "options": {
+        "es": [
+          "Elegir por habitación",
+          "Pausar y pedir aclaración al responsable",
+          "Cambiar la documentación sin consultar"
+        ],
+        "en": [
+          "Choose by room",
+          "Pause and ask the responsible professional to clarify",
+          "Change documentation without consultation"
+        ]
+      },
+      "answer": 1,
+      "feedback": {
+        "es": "Se aclara la discrepancia antes de actuar y no se modifica información por cuenta propia.",
+        "en": "Clarify the discrepancy before acting and do not independently change information."
+      }
+    },
+    {
+      "question": {
+        "es": "Tras quitarse guantes y antes de tocar material limpio, ¿qué principio debe recordarse?",
+        "en": "After removing gloves and before touching clean supplies, which principle applies?"
+      },
+      "options": {
+        "es": [
+          "Los guantes no sustituyen la higiene de manos",
+          "Basta con que no haya manchas",
+          "El material limpio elimina la necesidad de higiene"
+        ],
+        "en": [
+          "Gloves do not replace hand hygiene",
+          "No visible stains are enough",
+          "Clean supplies remove the need for hygiene"
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "La higiene se reconoce como parte de la secuencia de la tarea.",
+        "en": "Recognize hand hygiene as part of the task sequence."
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué reporte conserva mejor la información de una negativa?",
+        "en": "Which report best preserves information about a refusal?"
+      },
+      "options": {
+        "es": [
+          "“Es una persona imposible”",
+          "“Rechazó la actividad, se avisó a la responsable y queda seguimiento”",
+          "“Actividad completa” aunque no se hizo"
+        ],
+        "en": [
+          "“The person is impossible”",
+          "“Declined the activity; responsible staff notified; follow-up pending”",
+          "“Activity complete” although it was not done"
+        ]
+      },
+      "answer": 1,
+      "feedback": {
+        "es": "Se distinguen elección, aviso y asunto pendiente sin etiquetas ni datos inventados.",
+        "en": "Distinguish choice, notification and pending follow-up without labels or invented findings."
+      }
+    },
+    {
+      "question": {
+        "es": "Falta la ayuda indicada para una movilidad. ¿Qué demuestra aprendizaje seguro?",
+        "en": "Indicated mobility support is missing. What demonstrates safe learning?"
+      },
+      "options": {
+        "es": [
+          "Sustituirla por confianza",
+          "Usar un equipo distinto sin capacitación",
+          "Comunicar las condiciones faltantes y solicitar coordinación"
+        ],
+        "en": [
+          "Substitute confidence",
+          "Use different equipment without training",
+          "Report missing conditions and request coordination"
+        ]
+      },
+      "answer": 2,
+      "feedback": {
+        "es": "La actividad requiere condiciones, equipo y formación apropiados.",
+        "en": "The activity needs appropriate conditions, equipment and training."
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué demuestra completar PA-101?",
+        "en": "What does completing PA-101 demonstrate?"
+      },
+      "options": {
+        "es": [
+          "Una nueva licencia clínica",
+          "Práctica de conceptos teóricos; la competencia práctica requiere evaluación aparte",
+          "Autorización para cambiar dietas o tratamientos"
+        ],
+        "en": [
+          "A new clinical license",
+          "Practice of theoretical concepts; practical competence needs separate assessment",
+          "Authorization to change diets or treatment"
+        ]
+      },
+      "answer": 1,
+      "feedback": {
+        "es": "El alcance del curso es introductorio y teórico.",
+        "en": "The course is introductory and theoretical."
+      }
+    }
+  ]
+}

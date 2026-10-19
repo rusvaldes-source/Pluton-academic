@@ -1,0 +1,59 @@
+{
+  "code": "PA-101",
+  "cover": "b75/pa101-fundamentos.webp",
+  "es": "Asistente de Enfermería: Fundamentos",
+  "en": "Nursing Assistant: Foundations",
+  "category": "salud",
+  "lessons": [
+    {
+      "es": "Seguridad del paciente",
+      "en": "Patient safety",
+      "content": {
+        "es": "Identifica riesgos de caídas, verifica la identidad antes de asistir y comunica cambios al profesional responsable.",
+        "en": "Identify fall risks, verify identity before care, and report changes to the responsible clinician."
+      },
+      "question": {
+        "es": "¿Qué debes verificar antes de ayudar a un paciente?",
+        "en": "What should you verify before assisting a patient?"
+      },
+      "options": {
+        "es": [
+          "Su identidad",
+          "Su color favorito",
+          "La hora del almuerzo"
+        ],
+        "en": [
+          "Their identity",
+          "Their favorite color",
+          "Lunch time"
+        ]
+      },
+      "answer": 0
+    },
+    {
+      "es": "Higiene de manos y comunicación",
+      "en": "Hand hygiene and communication",
+      "content": {
+        "es": "Realiza higiene de manos antes y después del contacto y utiliza comunicación respetuosa y clara.",
+        "en": "Clean hands before and after contact and use clear, respectful communication."
+      },
+      "question": {
+        "es": "¿Cuándo debes higienizar tus manos?",
+        "en": "When should you clean your hands?"
+      },
+      "options": {
+        "es": [
+          "Solo al terminar el turno",
+          "Antes y después del contacto",
+          "Una vez al día"
+        ],
+        "en": [
+          "Only after the shift",
+          "Before and after contact",
+          "Once daily"
+        ]
+      },
+      "answer": 1
+    }
+  ]
+}
