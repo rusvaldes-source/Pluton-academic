@@ -136,6 +136,7 @@ async function loadNews(revision = authRevision) {
         frame.title = 'Video preview';
         frame.loading = 'lazy';
         frame.allowFullscreen = true;
+        frame.referrerPolicy = 'strict-origin-when-cross-origin';
         let link;
         try { link = new URL(item.video_url); } catch { return; }
         if (link.protocol !== 'https:') return;
