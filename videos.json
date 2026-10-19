@@ -1,8 +1,36 @@
 {
   "PA-203": {
-    "0": "b64/videos/PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4",
-    "1": "b64/videos/PA-203_Leccion_02_2af2c139ccb79853b26a3096cee38e7b.mp4",
-    "2": "b64/videos/PA-203_Leccion_03_b51d75a3472e644708f8c5862407214f.mp4",
-    "3": "b64/videos/PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4"
+    "0": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_01_cc4044a4a2c5c95c4d42eb2175c1a3d1.mp4",
+    "1": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_02_2af2c139ccb79853b26a3096cee38e7b.mp4",
+    "2": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_03_b51d75a3472e644708f8c5862407214f.mp4",
+    "3": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4",
+    "4": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_05_05423b95514bd66e8608b753dfd44a00.mp4",
+    "5": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_06_2e07f54d434467a07494e38951d85a17.mp4",
+    "6": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_07_6c90166c69872a754564584be5aaaa8d.mp4",
+    "7": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/pa203-videos/PA-203_Leccion_08_95b0d1b0e3f5d46cd3c5f36dcb3ae5c6.mp4"
+  },
+  "ID-101": {
+    "0": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_01_364eadf048b173cdc8f1594821621e59.mp4",
+    "1": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_02_5de535132127f232aeb8ae55b3fb9b17.mp4",
+    "2": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_03_03462ec6506efc54df6ae40b9780ad82.mp4",
+    "3": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_04_a04e89dd967105fa6c9f4b48345edca1.mp4",
+    "4": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_05_f52e2b7ef3e9dfb6fb9d31bc30b9e322.mp4",
+    "5": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_06_0b6561f0dbe68389d0b78b24c1a10cc6.mp4",
+    "6": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_07_d9b5120acfa059fe697b6789a8df9707.mp4",
+    "7": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_08_36f0dc3836d955adae2b7cc213a99dd0.mp4",
+    "8": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_09_575d66c0f2f364e28f1842bc4947bc69.mp4",
+    "9": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_10_7980fee93b799ab037a9e8ffa243832a.mp4",
+    "10": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_11_623616e99d880a219d4dc52775cf03ee.mp4",
+    "11": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/id101-videos/ID-101_Leccion_12_95dfb4ed3cdbf72f1d9c29e07eb4af50.mp4"
+  },
+  "MKT-201": {
+    "0": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_01_d50ceac7f0b5568c32fabcc7731136d4.mp4",
+    "1": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_02_d177878a58589c0b8787c0572516c0d6.mp4",
+    "2": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_03_19ff97f87fd9949ed252c215448f0a22.mp4",
+    "3": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_04_808725bb6126138b823ea58a454fb459.mp4",
+    "4": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_05_b5e589293a733d564ae572ac9a134e8d.mp4",
+    "5": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_06_728ead1afd1cca067028a3c82d227d74.mp4",
+    "6": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_07_8e35afae9cc7cf4673a3dff7a3eb0687.mp4",
+    "7": "https://paifjzznyiehwidoqjqb.supabase.co/storage/v1/object/public/mkt201-videos/MKT-201_Leccion_08_d1f8544fe893cd91d858c27c6265c9e8.mp4"
   }
 }
