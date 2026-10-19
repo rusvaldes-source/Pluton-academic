@@ -32,6 +32,22 @@ async function refresh() {
   $('private').hidden = false;
   $('who').textContent = user.email || '';
   status('');
+  await loadStudents();
+}
+async function loadStudents() {
+  const body = $('studentsRows');
+  body.replaceChildren();
+  $('studentsStatus').textContent = language === 'es' ? 'Cargando estudiantes…' : 'Loading students…';
+  const { data, error } = await sb.from('profiles').select('email,membership,status,progress').order('email', { ascending: true }).limit(100);
+  if (error) { $('studentsStatus').textContent = language === 'es' ? 'No se pudo consultar el directorio.' : 'Could not load the directory.'; return; }
+  for (const student of data || []) {
+    const tr = document.createElement('tr');
+    for (const value of [student.email, student.membership, student.status, student.progress]) {
+      const td = document.createElement('td'); td.textContent = String(value ?? '—'); tr.append(td);
+    }
+    body.append(tr);
+  }
+  $('studentsStatus').textContent = (data?.length || 0) + (language === 'es' ? ' registros visibles (máximo 100).' : ' visible records (max 100).');
 }
 $('login').addEventListener('submit', async event => {
   event.preventDefault();
