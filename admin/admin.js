@@ -144,9 +144,22 @@ $('newsForm').addEventListener('submit', async event => {
   $('newsStatus').textContent = 'Guardando / Saving…';
   const entry = { title_es: $('newsTitleEs').value.trim(), title_en: $('newsTitleEn').value.trim(), body_es: $('newsBodyEs').value.trim(), body_en: $('newsBodyEn').value.trim(), status: 'draft' };
   if (Object.values(entry).some(v => !v)) { $('newsStatus').textContent = 'Completa todos los campos / Complete all fields.'; return; }
-  const { error } = await sb.from('pluton_news').insert(entry);
-  if (error) { $('newsStatus').textContent = 'No se pudo guardar / Save failed.'; return; }
-  $('newsForm').reset(); $('newsStatus').textContent = 'Borrador guardado / Draft saved.';
-  await loadNews();
+  const submitButton = $('newsForm').querySelector('button[type="submit"]');
+  if (submitButton.disabled) return;
+  submitButton.disabled = true;
+  try {
+    const { data, error } = await sb.from('pluton_news').insert(entry).select('id');
+    if (error || data?.length !== 1) {
+      $('newsStatus').textContent = 'No se confirmó el guardado / Save not confirmed.';
+      return;
+    }
+    $('newsForm').reset();
+    $('newsStatus').textContent = 'Borrador guardado / Draft saved.';
+    await loadNews();
+  } catch {
+    $('newsStatus').textContent = 'Error de conexión / Connection error.';
+  } finally {
+    submitButton.disabled = false;
+  }
 });
 init();
