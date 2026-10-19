@@ -23,15 +23,16 @@ async function init() {
     sb = createClient(config.url, config.publishableKey);
     $('login').hidden = false;
     sb.auth.onAuthStateChange((event) => {
+      if (event === 'PASSWORD_RECOVERY') { $('newPasswordForm').hidden = false; $('login').hidden = true; $('resetStatus').textContent = language === 'es' ? 'Escribe tu nueva contraseña.' : 'Enter your new password.'; }
       if (event === 'SIGNED_OUT') {
         authRevision++;
         $('private').hidden = true;
         clearPrivateData();
         $('login').hidden = false;
       }
-      if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') setTimeout(refresh, 0);
+      if ((event === 'SIGNED_IN' || event === 'SIGNED_OUT') && $('newPasswordForm').hidden) setTimeout(refresh, 0);
     });
-    await refresh();
+    if ($('newPasswordForm').hidden) await refresh();
   } catch { status('No se pudo conectar con la autenticación / Authentication unavailable.'); }
 }
 async function refresh() {
@@ -85,6 +86,23 @@ $('login').addEventListener('submit', async event => {
   $('password').value = '';
   if (error) status('No se pudo iniciar sesión / Sign in failed.');
   else status('Acceso recibido / Sign-in received.');
+});
+$('newPasswordForm').addEventListener('submit', async event => {
+  event.preventDefault();
+  if (!sb) return;
+  const password = $('newPassword').value;
+  if (password.length < 12) return;
+  const button = $('newPasswordForm').querySelector('button[type="submit"]');
+  button.disabled = true;
+  try {
+    const { error } = await sb.auth.updateUser({ password });
+    $('newPassword').value = '';
+    if (error) { $('resetStatus').textContent = language === 'es' ? 'No se pudo actualizar la contraseña.' : 'Could not update password.'; return; }
+    $('newPasswordForm').hidden = true;
+    $('resetStatus').textContent = language === 'es' ? 'Contraseña actualizada.' : 'Password updated.';
+    await refresh();
+  } catch { $('resetStatus').textContent = language === 'es' ? 'Error de conexión.' : 'Connection error.'; }
+  finally { button.disabled = false; }
 });
 $('forgotPassword').addEventListener('click', async () => {
   if (!sb) return;
