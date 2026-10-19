@@ -84,7 +84,7 @@ $('login').addEventListener('submit', async event => {
   const { error } = await sb.auth.signInWithPassword({ email: $('email').value, password: $('password').value });
   $('password').value = '';
   if (error) status('No se pudo iniciar sesión / Sign in failed.');
-  else await refresh();
+  else status('Acceso recibido / Sign-in received.');
 });
 $('logout').addEventListener('click', async () => { authRevision++; $('private').hidden = true; clearPrivateData(); if (sb) await sb.auth.signOut(); await refresh(); });
 async function loadReports(revision = authRevision) {
