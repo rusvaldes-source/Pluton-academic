@@ -1,1 +1,12 @@
 .b64-main{max-width:1100px;margin:3rem auto;padding:0 1rem}.b64-actions{display:flex;gap:1rem;flex-wrap:wrap}.b64-actions label{display:grid;gap:.4rem}.b64-actions select{padding:.7rem}.b64-entries{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0}.b64-entries button{border:1px solid #a88947;border-radius:7px;background:#102947;color:white;padding:.65rem;cursor:pointer}.b64-reading{background:#fff;color:#14243d;padding:1.5rem;border-radius:12px;line-height:1.65}.b64-reading pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}.b64-reading video{width:100%;max-height:450px;background:#000}.b64-question{border-top:1px solid #ccc;padding:1rem 0}.b64-foot{font-size:.75rem;opacity:.7}
+/* B77: Aula Digital — tarjetas de navegación coherentes con PLUTÓN ACADEMIC */
+.b64-entries{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:.85rem;margin:1.5rem 0}
+.b64-entries button{min-height:82px;width:100%;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:.7rem;padding:1rem 1.1rem;border:1px solid #b9944d;border-radius:13px;background:linear-gradient(145deg,#112e52 0%,#07172e 100%);color:#f7e4b5;font-weight:700;font-size:.95rem;line-height:1.4;box-shadow:0 5px 18px rgba(2,10,25,.18);cursor:pointer;transition:border-color .18s,box-shadow .18s,transform .18s}
+.b64-entries button::after{content:"›";font-size:1.45rem;color:#e0b75e;flex:none}
+.b64-entries button:hover{border-color:#f0d28a;box-shadow:0 7px 20px rgba(2,10,25,.25);transform:translateY(-1px)}
+.b64-entries button:focus-visible{outline:3px solid #e8bd64;outline-offset:3px}
+.b64-entries button[aria-current="true"]{background:linear-gradient(145deg,#244e78,#102b4c);border-color:#f3d28b;box-shadow:inset 4px 0 0 #e9bb60,0 5px 18px rgba(2,10,25,.2)}
+.b64-reading{border:1px solid #c7a05b;box-shadow:0 8px 28px rgba(2,10,25,.1)}
+@media(max-width:560px){.b64-entries{grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}.b64-entries button{font-size:.84rem;padding:.75rem;min-height:90px}}
+@media(max-width:360px){.b64-entries{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.b64-entries button{transition:none}.b64-entries button:hover{transform:none}}
