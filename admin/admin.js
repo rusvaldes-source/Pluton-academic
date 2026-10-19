@@ -12,7 +12,13 @@ function clearPrivateData() {
 $('language').addEventListener('click', () => {
   language = language === 'es' ? 'en' : 'es';
   document.documentElement.lang = language;
-  document.querySelectorAll('[data-es][data-en]').forEach(el => el.textContent = el.dataset[language]);
+  document.querySelectorAll('[data-es][data-en]').forEach(el => {
+    const field = el.querySelector('input, textarea, select');
+    if (field) {
+      const node = Array.from(el.childNodes).find(n => n.nodeType === 3);
+      if (node) node.textContent = el.dataset[language] + ' ';
+    } else el.textContent = el.dataset[language];
+  });
   $('language').textContent = language === 'es' ? 'EN' : 'ES';
 });
 async function init() {
@@ -21,10 +27,12 @@ async function init() {
   try {
     const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
     sb = createClient(config.url, config.publishableKey);
+    $('newPasswordForm').hidden = true;
     $('login').hidden = false;
     sb.auth.onAuthStateChange((event) => {
       if (event === 'PASSWORD_RECOVERY') { $('newPasswordForm').hidden = false; $('login').hidden = true; $('resetStatus').textContent = language === 'es' ? 'Escribe tu nueva contraseña.' : 'Enter your new password.'; }
       if (event === 'SIGNED_OUT') {
+        $('newPasswordForm').hidden = true;
         authRevision++;
         $('private').hidden = true;
         clearPrivateData();
