@@ -22,7 +22,15 @@ async function init() {
     const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
     sb = createClient(config.url, config.publishableKey);
     $('login').hidden = false;
-    sb.auth.onAuthStateChange(() => { setTimeout(refresh, 0); });
+    sb.auth.onAuthStateChange((event) => {
+      if (event === 'SIGNED_OUT') {
+        authRevision++;
+        $('private').hidden = true;
+        clearPrivateData();
+        $('login').hidden = false;
+      }
+      if (event === 'SIGNED_IN' || event === 'SIGNED_OUT' || event === 'TOKEN_REFRESHED') setTimeout(refresh, 0);
+    });
     await refresh();
   } catch { status('No se pudo conectar con la autenticación / Authentication unavailable.'); }
 }
@@ -41,8 +49,18 @@ async function refresh() {
   $('private').hidden = false;
   $('who').textContent = user.email || '';
   status('');
-  await Promise.all([loadStudents(revision), loadNews(revision), loadReports(revision)]);
+  await reloadData(revision);
 }
+async function reloadData(revision = authRevision) {
+  if (!sb || $('private').hidden || revision !== authRevision) return;
+  await Promise.allSettled([loadStudents(revision), loadNews(revision), loadReports(revision)]);
+}
+$('refreshData').addEventListener('click', async () => {
+  if (!sb || $('private').hidden) return;
+  const { data: allowed, error } = await sb.rpc('is_pluton_admin');
+  if (error || allowed !== true) { await refresh(); return; }
+  await reloadData();
+});
 async function loadStudents(revision = authRevision) {
   const body = $('studentsRows');
   body.replaceChildren();
