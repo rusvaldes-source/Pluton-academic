@@ -18,7 +18,7 @@ create policy "Connect profiles read signed in" on public.connect_profiles for s
 create policy "Connect profile insert own" on public.connect_profiles for insert to authenticated with check ((select auth.uid())=user_id);
 create policy "Connect profile update own" on public.connect_profiles for update to authenticated using ((select auth.uid())=user_id) with check ((select auth.uid())=user_id);
 create policy "Connect posts read signed in" on public.connect_posts for select to authenticated using (true);
-create policy "Connect posts insert own" on public.connect_posts for insert to authenticated with check ((select auth.uid())=user_id);
+create policy "Connect posts insert own" on public.connect_posts for insert to authenticated with check ((select auth.uid())=user_id and exists (select 1 from public.connect_profiles cp where cp.user_id=(select auth.uid()) and cp.display_name=author_name));
 create policy "Connect posts delete own" on public.connect_posts for delete to authenticated using ((select auth.uid())=user_id);
 grant select,insert,update on public.connect_profiles to authenticated;
 grant select,insert,delete on public.connect_posts to authenticated;
