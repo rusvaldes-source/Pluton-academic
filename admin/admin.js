@@ -27,7 +27,7 @@ async function refresh() {
   const { data: { user }, error } = await sb.auth.getUser();
   if (error || !user) { $('login').hidden = false; return status('Inicia sesión con una cuenta autorizada / Sign in with an authorized account.'); }
   const { data: allowed, error: roleError } = await sb.rpc('is_pluton_admin');
-  if (roleError || allowed !== true) { $('login').hidden = true; return status('Acceso denegado: cuenta sin permisos de administrador / Access denied.'); }
+  if (roleError || allowed !== true) { await sb.auth.signOut(); $('login').hidden = false; $('password').value = ''; return status('Acceso denegado: cuenta sin permisos de administrador. Sesión cerrada / Access denied. Signed out.'); }
   $('login').hidden = true;
   $('private').hidden = false;
   $('who').textContent = user.email || '';
