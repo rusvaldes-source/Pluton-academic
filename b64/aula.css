@@ -1,1 +1,17 @@
-.b64-main{max-width:1100px;margin:3rem auto;padding:0 1rem}.b64-actions{display:flex;gap:1rem;flex-wrap:wrap}.b64-actions label{display:grid;gap:.4rem}.b64-actions select{padding:.7rem}.b64-entries{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0}.b64-entries button{border:1px solid #a88947;border-radius:7px;background:#102947;color:white;padding:.65rem;cursor:pointer}.b64-reading{background:#fff;color:#14243d;padding:1.5rem;border-radius:12px;line-height:1.65}.b64-reading pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}.b64-reading video{width:100%;max-height:450px;background:#000}.b64-question{border-top:1px solid #ccc;padding:1rem 0}.b64-foot{font-size:.75rem;opacity:.7}
+.b64-main{max-width:1100px;margin:3rem auto;padding:0 1rem}.b64-actions{display:flex;gap:1rem;flex-wrap:wrap}.b64-actions label{display:grid;gap:.4rem;flex:1;min-width:0}.b64-actions select{padding:.7rem;width:100%;min-width:0;box-sizing:border-box}.b64-entries{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0}.b64-entries button{border:1px solid #a88947;border-radius:7px;background:#102947;color:white;padding:.65rem;cursor:pointer}.b64-reading{background:#0e213b;color:#eef2fa;padding:1.5rem;border-radius:12px;line-height:1.65}.b64-reading pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere}.b64-reading video{width:100%;max-height:450px;background:#000}.b64-question{border-top:1px solid #53627a;padding:1rem 0}.b64-foot{font-size:.75rem;opacity:.7}
+/* Classroom menus share the navy/gold identity; video originals stay unchanged. */
+.pa-digital-aula{color-scheme:dark}
+.pa-digital-aula .b64-main{box-sizing:border-box;min-width:0}
+.pa-digital-aula .b64-main h1,.pa-digital-aula .b64-main h2,.pa-digital-aula .b64-main h3{color:#d9b565}
+.pa-digital-aula .b64-main button,.pa-digital-aula .b64-main select,.pa-digital-aula .b64-main option,.pa-digital-aula .b64-main a.pa-quiz-button{background:#102947;color:#d9b565;border:1px solid #d9b565;border-radius:8px;font:inherit;min-height:44px;padding:.65rem 1rem;box-sizing:border-box}
+.pa-digital-aula .b64-main button{cursor:pointer;white-space:normal;text-align:left;max-width:100%}
+.pa-digital-aula .b64-main button:hover,.pa-digital-aula .b64-main a.pa-quiz-button:hover{background:#193a5b}
+.pa-digital-aula .b64-main button[aria-pressed=true]{background:#193a5b;box-shadow:inset 0 -3px #d9b565;font-weight:700}
+.pa-digital-aula .b64-main :is(button,select,a):focus-visible{outline:3px solid #f1d596;outline-offset:3px}
+.pa-digital-aula .b64-reading{border:1px solid #53627a;overflow-wrap:anywhere}
+.pa-digital-aula .b64-reading pre{color:#eef2fa}
+.pa-digital-aula .b64-entries{display:flex;align-items:stretch}
+.pa-digital-aula .b64-entries button{flex:1 1 230px}
+.pa-digital-aula .b64-main [hidden]{display:none!important}
+.pa-digital-aula>header nav{display:flex;flex-direction:row;flex-wrap:wrap;width:auto}
+@media(max-width:650px){.pa-digital-aula .b64-main{margin:1.5rem auto}.pa-digital-aula .b64-actions{flex-direction:column}.pa-digital-aula .b64-reading{padding:1rem}.pa-digital-aula .b64-entries button{flex-basis:100%}.pa-digital-aula>header nav{width:100%}}
