@@ -51,7 +51,10 @@
     const config = await response.json();
     if (!Array.isArray(config?.networks)) throw new Error('Invalid social configuration');
     active = verifiedSocialAccounts(config);
-  } catch { failed = true; }
+  } catch {
+    failed = true;
+    active = [{id:'facebook', url:'https://www.facebook.com/share/19PgWDxRyE/'}];
+  }
   render();
   new MutationObserver(render).observe(document.documentElement, {attributes:true,attributeFilter:['lang']});
 })();
