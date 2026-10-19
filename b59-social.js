@@ -6,9 +6,13 @@
   const heading = root.previousElementSibling?.classList.contains('b60-social-label')
     ? root.previousElementSibling : null;
   const names = Object.freeze({facebook:'Facebook',instagram:'Instagram',youtube:'YouTube',linkedin:'LinkedIn',tiktok:'TikTok',whatsapp:'WhatsApp Business'});
-  let active = [], failed = false;
+  let active = [], failed = false, renderedLocale = null;
   function render() {
     const en = document.documentElement.lang === 'en';
+    const locale = en ? 'en' : 'es';
+    // The global translator rewrites lang after DOM changes; avoid a render loop.
+    if (renderedLocale === locale) return;
+    renderedLocale = locale;
     root.replaceChildren();
     root.setAttribute('aria-label', en ? 'PLUTÓN ACADEMIC social media' : 'Redes sociales de PLUTÓN ACADEMIC');
     if (heading) {

@@ -4,7 +4,7 @@ const http = require('node:http');
 const path = require('node:path');
 const { chromium } = require('/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const root = path.resolve(__dirname, '..');
-const fixture = '<html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/b59.css"><div class="b60-social-label" data-b53-es="Síguenos en redes sociales" data-b53-en="Follow us on social media">Síguenos en redes sociales</div><div id="b59-items" class="b60-social"></div><script defer src="/b59-social.js"></script></html>';
+const fixture = '<html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/b59.css"><button id="languageToggle" onclick="changeLanguage()">ES</button><div class="b60-social-label" data-b53-es="Síguenos en redes sociales" data-b53-en="Follow us on social media">Síguenos en redes sociales</div><div id="b59-items" class="b60-social"></div><script defer src="/language.js"></script><script defer src="/b53-i18n.js"></script><script defer src="/b59-social.js"></script></html>';
 (async () => {
  const server = http.createServer((req,res) => {
   const url = new URL(req.url, 'http://localhost');
@@ -25,7 +25,7 @@ const fixture = '<html lang="es"><meta charset="utf-8"><meta name="viewport" con
    await page.goto(origin);
    await page.locator('#b59-items').getByText('Las cuentas oficiales todavía no están vinculadas.').waitFor();
    assert.equal(await page.locator('#b59-items a, #b59-items [aria-disabled]').count(),0);
-   await page.evaluate(()=>document.documentElement.lang='en');
+   await page.locator('#languageToggle').click();
    await page.locator('#b59-items').getByText('Official accounts have not been linked yet.').waitFor();
    assert.equal(await page.locator('.b60-social-label').innerText(),'Social media');
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
@@ -36,6 +36,7 @@ const fixture = '<html lang="es"><meta charset="utf-8"><meta name="viewport" con
     {id:'instagram',label:'Instagram',url:'https://user:pass@instagram.com/test-fixture',verified:true},
     {id:'linkedin',label:'LinkedIn',url:'https://linkedin.com/company/test-fixture',verified:false}
    ]}}));
+   await page.evaluate(()=>localStorage.setItem('pluton-lang','es'));
    await page.reload();
    await page.locator('#b59-items a').waitFor();
    assert.equal(await page.locator('#b59-items a').count(),1);
@@ -46,6 +47,7 @@ const fixture = '<html lang="es"><meta charset="utf-8"><meta name="viewport" con
    assert.ok((await link.boundingBox()).height>=44);
    await link.focus();assert.equal(await link.evaluate(el=>el===document.activeElement),true);
    await page.route('**/social/social-links.json',r=>r.fulfill({status:503,body:'Unavailable'}));
+   await page.evaluate(()=>localStorage.setItem('pluton-lang','es'));
    await page.reload();
    await page.locator('#b59-items').getByText('No se pudieron cargar las redes sociales. Inténtalo de nuevo más tarde.').waitFor();
    assert.equal(await page.locator('#b59-items a').count(),0);
