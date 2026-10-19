@@ -124,7 +124,7 @@ async function loadNews(revision = authRevision) {
       videoLink.href = item.video_url;
       videoLink.target = '_blank';
       videoLink.rel = 'noopener noreferrer';
-      videoLink.textContent = ' Video / Watch video';
+      videoLink.textContent = ' Abrir video / Open video';
       li.append(videoLink);
     }
     if (item.status !== 'published') {
