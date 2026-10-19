@@ -18,9 +18,9 @@
     {
       "id": "youtube",
       "label": "YouTube",
-      "url": null,
+      "url": "https://www.youtube.com/channel/UC9ivhOmftjj2UDVLtWpTNdw",
       "priority": 3,
-      "verified": false
+      "verified": true
     },
     {
       "id": "linkedin",
