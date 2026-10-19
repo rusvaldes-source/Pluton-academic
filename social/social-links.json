@@ -11,9 +11,9 @@
     {
       "id": "facebook",
       "label": "Facebook",
-      "url": null,
+      "url": "https://www.facebook.com/share/19PgWDxRyE/",
       "priority": 2,
-      "verified": false
+      "verified": true
     },
     {
       "id": "youtube",
