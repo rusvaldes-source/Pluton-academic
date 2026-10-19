@@ -1,0 +1,4 @@
+import {drafts} from './drafts.mjs';
+const draft=drafts[document.body.dataset.document];let lang='es';
+function render(){const i=lang==='es'?0:1;document.documentElement.lang=lang;document.getElementById('title').textContent=draft.title[i];document.getElementById('notice').textContent=i?'DRAFT FOR REVIEW — Operator, jurisdiction and final validation pending. Not the published site policy.':'BORRADOR PARA REVISIÓN — Operador, jurisdicción y validación final pendientes. No es la política publicada del sitio.';document.getElementById('language').textContent=i?'Español':'English';const box=document.getElementById('content');box.replaceChildren();for(const s of draft.sections){const section=document.createElement('section'),h=document.createElement('h2'),p=document.createElement('p');h.textContent=s[i];p.textContent=s[i+2];section.append(h,p);box.append(section)}}
+document.getElementById('language').onclick=()=>{lang=lang==='es'?'en':'es';render()};render();

@@ -1,0 +1,6 @@
+export const monetization=Object.freeze({enabled:false,activationAuthorized:false,accountApproved:false,policyReviewed:false,cmpReady:false,publisherId:null});
+export const providers=[
+ {name:'LibreOffice',purpose:{es:'Documentos, hojas de cálculo y presentaciones. Software libre; revisa compatibilidad de tus archivos.',en:'Documents, spreadsheets and presentations. Free software; check file compatibility.'},url:'https://www.libreoffice.org/',allowedHosts:['www.libreoffice.org'],affiliate:{enabled:false,approved:false,activationAuthorized:false,url:null}},
+ {name:'Canva',purpose:{es:'Diseño de documentos y recursos visuales. Algunas funciones requieren un plan de pago; consulta al proveedor.',en:'Document and visual-resource design. Some features require a paid plan; check with the provider.'},url:'https://www.canva.com/',allowedHosts:['www.canva.com'],affiliate:{enabled:false,approved:false,activationAuthorized:false,url:null}},
+ {name:'CISA',purpose:{es:'Guías públicas para reconocer mensajes engañosos y proteger tus cuentas.',en:'Public guidance for recognizing deceptive messages and protecting accounts.'},url:'https://www.cisa.gov/secure-our-world',allowedHosts:['www.cisa.gov'],affiliate:{enabled:false,approved:false,activationAuthorized:false,url:null}}
+];
