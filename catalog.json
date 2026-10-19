@@ -782,5 +782,107 @@
       }
     ],
     "classroom": "b68/mkt201/index.html"
+  },
+  {
+    "code": "NA-101",
+    "es": "Asistente de Enfermería",
+    "en": "Nursing Assistant",
+    "category": "salud",
+    "video_policy": "scripts_only",
+    "classroom": "b70/na101/index.html",
+    "lessons": [
+      {
+        "es": "Trabajar dentro del rol y respetar decisiones",
+        "en": "Role boundaries and resident choices"
+      },
+      {
+        "es": "Comunicar sin exponer información",
+        "en": "Respectful communication and privacy"
+      },
+      {
+        "es": "Interrumpir la transmisión de infecciones",
+        "en": "Interrupting infection transmission"
+      },
+      {
+        "es": "Identidad, entorno y prevención de incidentes",
+        "en": "Identity, environment and incident prevention"
+      },
+      {
+        "es": "Observar cambios y registrar mediciones",
+        "en": "Observations and measurement records"
+      },
+      {
+        "es": "Reportar, documentar y activar ayuda urgente",
+        "en": "Reporting, documentation and urgent help"
+      },
+      {
+        "es": "Planificar la movilidad sin improvisar",
+        "en": "Planning safe mobility"
+      },
+      {
+        "es": "Higiene personal, piel y comodidad",
+        "en": "Personal hygiene, skin and comfort"
+      },
+      {
+        "es": "Alimentación e hidratación según el plan",
+        "en": "Meals and hydration under the care plan"
+      },
+      {
+        "es": "Eliminación, descanso y entorno cotidiano",
+        "en": "Toileting, rest and daily environment"
+      },
+      {
+        "es": "Apoyar a una persona con cambios cognitivos",
+        "en": "Supporting cognitive changes"
+      },
+      {
+        "es": "Coordinar continuidad, confort y aprendizaje",
+        "en": "Continuity, comfort and professional learning"
+      }
+    ],
+    "cover": "b70/cover-na101.svg"
+  },
+  {
+    "code": "COMP-101",
+    "es": "Computación Básica",
+    "en": "Basic Computing",
+    "category": "tecnologia",
+    "video_policy": "scripts_only",
+    "classroom": "b70/comp101/index.html",
+    "lessons": [
+      {
+        "es": "Conoce tu computadora",
+        "en": "Get to know your computer"
+      },
+      {
+        "es": "Archivos, carpetas y copias",
+        "en": "Files, folders and copies"
+      },
+      {
+        "es": "Navegación web segura",
+        "en": "Safer web browsing"
+      },
+      {
+        "es": "Correo electrónico profesional",
+        "en": "Professional email"
+      },
+      {
+        "es": "Documentos de texto",
+        "en": "Text documents"
+      },
+      {
+        "es": "Hojas de cálculo básicas",
+        "en": "Basic spreadsheets"
+      },
+      {
+        "es": "Videollamadas y colaboración",
+        "en": "Video calls and collaboration"
+      },
+      {
+        "es": "Seguridad digital y respaldo",
+        "en": "Digital security and backup"
+      }
+    ],
+    "cover": "b70/cover-comp101.svg"
   }
 ]
