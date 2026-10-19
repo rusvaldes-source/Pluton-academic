@@ -3,7 +3,12 @@
 // a separately deployed admin-config.js: window.PLUTON_ADMIN_CONFIG = { url, publishableKey }.
 const $ = id => document.getElementById(id);
 const status = msg => { $('status').textContent = msg; };
-let sb, language = 'es';
+let sb, language = 'es', authRevision = 0;
+function clearPrivateData() {
+  for (const id of ['studentsRows','newsList','reportsList']) $(id).replaceChildren();
+  for (const id of ['studentsStatus','newsStatus','reportsStatus','who']) $(id).textContent = '';
+  $('newsForm').reset();
+}
 $('language').addEventListener('click', () => {
   language = language === 'es' ? 'en' : 'es';
   document.documentElement.lang = language;
@@ -23,22 +28,27 @@ async function init() {
 }
 async function refresh() {
   if (!sb) return;
+  const revision = ++authRevision;
   $('private').hidden = true;
+  clearPrivateData();
   const { data: { user } = {}, error } = await sb.auth.getUser();
+  if (revision !== authRevision) return;
   if (error || !user) { $('login').hidden = false; return status('Inicia sesión con una cuenta autorizada / Sign in with an authorized account.'); }
   const { data: allowed, error: roleError } = await sb.rpc('is_pluton_admin');
+  if (revision !== authRevision) return;
   if (roleError || allowed !== true) { await sb.auth.signOut(); $('login').hidden = false; $('password').value = ''; return status('Acceso denegado o verificación no disponible / Access denied or verification unavailable.'); }
   $('login').hidden = true;
   $('private').hidden = false;
   $('who').textContent = user.email || '';
   status('');
-  await Promise.all([loadStudents(), loadNews(), loadReports()]);
+  await Promise.all([loadStudents(revision), loadNews(revision), loadReports(revision)]);
 }
-async function loadStudents() {
+async function loadStudents(revision = authRevision) {
   const body = $('studentsRows');
   body.replaceChildren();
   $('studentsStatus').textContent = language === 'es' ? 'Cargando estudiantes…' : 'Loading students…';
   const { data, error } = await sb.from('profiles').select('email,membership,status,progress').order('email', { ascending: true }).limit(100);
+  if (revision !== authRevision) return;
   if (error) { $('studentsStatus').textContent = language === 'es' ? 'No se pudo consultar el directorio.' : 'Could not load the directory.'; return; }
   for (const student of data || []) {
     const tr = document.createElement('tr');
@@ -58,10 +68,11 @@ $('login').addEventListener('submit', async event => {
   if (error) status('No se pudo iniciar sesión / Sign in failed.');
   else await refresh();
 });
-$('logout').addEventListener('click', async () => { if (sb) await sb.auth.signOut(); $('private').hidden = true; await refresh(); });
-async function loadReports() {
+$('logout').addEventListener('click', async () => { authRevision++; $('private').hidden = true; clearPrivateData(); if (sb) await sb.auth.signOut(); await refresh(); });
+async function loadReports(revision = authRevision) {
   const list = $('reportsList'); list.replaceChildren();
   const { data, error } = await sb.from('connect_reports').select('id,post_id,reason,status,created_at').order('created_at', { ascending: false }).limit(50);
+  if (revision !== authRevision) return;
   if (error) { $('reportsStatus').textContent = 'No se pudieron cargar las denuncias / Reports unavailable.'; return; }
   $('reportsStatus').textContent = `${data.length} denuncias visibles / visible reports`;
   for (const report of data) {
@@ -82,9 +93,10 @@ async function loadReports() {
     list.append(li);
   }
 }
-async function loadNews() {
+async function loadNews(revision = authRevision) {
   const list = $('newsList'); list.replaceChildren();
   const { data, error } = await sb.from('pluton_news').select('id,title_es,title_en,status,created_at').order('created_at', { ascending: false }).limit(30);
+  if (revision !== authRevision) return;
   if (error) { $('newsStatus').textContent = 'No se pudieron cargar las noticias / News unavailable.'; return; }
   for (const item of data || []) {
     const li = document.createElement('li');
