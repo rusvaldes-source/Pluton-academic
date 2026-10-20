@@ -10,3 +10,5 @@ Autorización: terminar biblioteca y curso e integrar tras revisión; audios nue
 Límites: audios nuevos aplazados; escucha humana y QA visual móvil pendientes. No publicar payload completo en repositorio público. El control de acceso previo de cursos antiguos no se altera.
 
 Revisión independiente: un fallo importante detectado y corregido. Supabase devuelve AuthSessionMissingError sin sesión; se trata como estado login. Prueba observada fallar y después pasar. Resto sin hallazgos materiales.
+
+Clips existentes: aeropuerto/hotel/transporte descargados sin regeneración, optimizados960x540contain y decodificadoscompletosffmpeg; VTT y guionesexactosrestaurados. Reproducciónexclusiva y detenciónalnavegar;32pruebasfinalesaprobadas. Revisióndeldeltafinalindependiente sinhallazgosmateriales.
