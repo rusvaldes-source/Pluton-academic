@@ -6,6 +6,6 @@
 #mainCatalog article .catalog-visual.pa-illustrated img{width:100%!important;height:100%!important;aspect-ratio:16/9!important;object-fit:contain!important;object-position:center!important}
 .b57-priority-grid article>img{display:block;width:100%;height:auto!important;aspect-ratio:16/9;object-fit:contain!important;object-position:center!important;background:#081a32}
 
-/* B85: match the full-image framing of the home catalog in My courses. */
-#courseList .pa-b22-course-visual{height:auto!important;max-height:none!important;aspect-ratio:16/9!important;background:#081a32}
-#courseList .pa-b22-course-visual img{display:block;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:16/9!important;object-fit:contain!important;object-position:center!important}
+/* B86: original home covers fill the same 16:9 frame without letterboxing. */
+#courseList .pa-b22-course-visual{height:auto!important;max-height:none!important;aspect-ratio:16/9!important;background:#081a32;overflow:hidden;position:relative}
+#courseList .pa-b22-course-visual img{display:block;position:absolute;inset:0;width:100%!important;height:100%!important;max-height:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center 30%!important}

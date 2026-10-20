@@ -1,4 +1,4 @@
-/* B85: approved course photos in My courses, including dynamic search/language renders. */
-(()=>{'use strict';const photos={'PA-101':'assets/b74/na101-hija-enfermeria.webp','NA-101':'assets/b74/na101-hija-enfermeria.webp','COMP-101':'assets/b74/comp101-hija-computacion.webp'};
+/* B86: same original covers as the home catalog in My courses, including dynamic search/language renders. */
+(()=>{'use strict';const photos={"PA-101":"b75/pa101-fundamentos.webp","PA-203":"fundador.webp","ID-101":"b75/id101-ingles.webp","MKT-201":"b75/mkt201-marketing.webp","NA-101":"assets/b74/na101-hija-enfermeria.webp","COMP-101":"assets/b74/comp101-hija-computacion.webp"};
 function apply(){for(const [code,src] of Object.entries(photos)){const image=document.querySelector('#course-'+code+' .pa-b22-course-visual img');if(image&&image.getAttribute('src')!==src){image.src=src;image.alt=document.querySelector('#course-'+code+' h2')?.textContent||code;}}}
 function mount(){const list=document.getElementById('courseList');if(!list)return;new MutationObserver(apply).observe(list,{childList:true,subtree:true});apply();}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount);else mount();})();
