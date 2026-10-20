@@ -1,0 +1,749 @@
+{
+  "version": "B90",
+  "kind": "library",
+  "title": {
+    "es": "Biblioteca profesional",
+    "en": "Professional library"
+  },
+  "subtitle": {
+    "es": "Lee, comprende y practica",
+    "en": "Read, understand and practice"
+  },
+  "notice": {
+    "es": "Vista de revisión · 4 guías breves originales, no libros completos. Acceso comercial y relación con membresías pendientes. Sin cobros activos.",
+    "en": "Review preview · 4 original short guides, not full books. Commercial access and membership relationship pending. No active payments."
+  },
+  "items": [
+    {
+      "id": "BIB-001",
+      "title": {
+        "es": "Organiza una semana de tu pequeño negocio",
+        "en": "Organize a week in your small business"
+      },
+      "category": {
+        "es": "Administración",
+        "en": "Business administration"
+      },
+      "goal": {
+        "es": "Convierte solicitudes sueltas en un plan semanal que puedas cumplir.",
+        "en": "Turn scattered requests into a weekly plan you can deliver."
+      },
+      "sections": [
+        {
+          "heading": {
+            "es": "Qué vas a organizar",
+            "en": "What to organize"
+          },
+          "body": {
+            "es": "Empieza por tres registros sencillos: solicitudes, trabajos confirmados y tareas de seguimiento. Una solicitud no es una venta. Anota qué se pidió, qué información falta, quién debe responder y cuándo revisarás el caso. Para practicar usa nombres ficticios. No necesitas una aplicación nueva para comenzar: una hoja organizada puede servir.",
+            "en": "Start with three simple lists: requests, confirmed work and follow-up tasks. A request is not a sale. Record what was requested, what information is missing, who must respond and when to review the case. Use fictional names for practice. You do not need a new application to begin; an organized sheet can work."
+          }
+        },
+        {
+          "heading": {
+            "es": "Define estados y límites",
+            "en": "Define statuses and limits"
+          },
+          "body": {
+            "es": "Usa estados claros: nuevo, falta información, presupuesto enviado, confirmado y cerrado. Mueve un caso a confirmado solo después de acordar alcance, fecha y condiciones. Antes de prometer una hora revisa el calendario y el tiempo de traslado. Asigna una persona responsable por cada siguiente acción.",
+            "en": "Use clear statuses: new, awaiting information, estimate sent, confirmed and closed. Mark a case confirmed only after agreeing on scope, date and terms. Before promising a time, check the calendar and travel time. Assign one responsible person to each next action."
+          }
+        },
+        {
+          "heading": {
+            "es": "Caso original: el jueves ocupado",
+            "en": "Original case: a busy Thursday"
+          },
+          "body": {
+            "es": "Mar tiene cuatro horas disponibles el jueves. Un trabajo confirmado necesita dos horas y media y el traslado media hora. Queda una hora de capacidad. Un cliente nuevo pide dos horas. Mar no confirma: ofrece otro horario o consulta otro día. La agenda refleja capacidad real, no deseos.\nRegistro de ejemplo: Cliente ficticio Sol / estado falta información / falta dirección aproximada del servicio y alcance / siguiente acción preguntar por alcance / responsable Mar / revisar hoy a las 3 p.m.",
+            "en": "Mar has four available hours on Thursday. A confirmed job needs two and a half hours, plus half an hour of travel. One hour remains. A new client requests two hours. Mar does not confirm; she offers a different time or day. The schedule reflects real capacity.\nSample record: fictional client Sol / awaiting information / service area and scope missing / next action ask about scope / owner Mar / review today at 3 p.m."
+          }
+        },
+        {
+          "heading": {
+            "es": "Rutina de diez minutos",
+            "en": "A ten-minute routine"
+          },
+          "body": {
+            "es": "Al comenzar el día revisa compromisos y respuestas pendientes. Al terminar, actualiza estados y deja escrita la próxima acción. Cada semana identifica una causa de retraso y prueba una mejora pequeña. Ejemplo: si faltan datos, usa siempre las mismas tres preguntas iniciales. Esta guía organiza trabajo; no registra contabilidad ni calcula impuestos.",
+            "en": "At the start of the day review commitments and pending replies. At the end update statuses and write the next action. Each week identify one cause of delay and try one small improvement. If missing information slows you down, use the same three opening questions. This guide organizes work; it does not perform accounting or calculate taxes."
+          }
+        }
+      ],
+      "practice": {
+        "es": "Crea cinco solicitudes ficticias con estado, próxima acción, responsable y fecha de revisión. Coloca dos trabajos en un calendario sin solaparlos. Cuenta también traslados. Comprueba que ninguna solicitud aparezca como confirmada sin acuerdo.",
+        "en": "Create five fictional requests with status, next action, owner and review date. Schedule two jobs without overlap and include travel time. Check that no request is marked confirmed without agreement."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Una solicitud ya es una venta confirmada?",
+            "en": "Is a request already a confirmed sale?"
+          },
+          "options": {
+            "es": [
+              "Sí.",
+              "No.",
+              "Solo si llegó por teléfono."
+            ],
+            "en": [
+              "Yes.",
+              "No.",
+              "Only by phone."
+            ]
+          },
+          "answer": 1,
+          "explanation": {
+            "es": "Hace falta acordar el trabajo.",
+            "en": "The work still needs agreement."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cuánta capacidad le queda a Mar?",
+            "en": "How much capacity does Mar have left?"
+          },
+          "options": {
+            "es": [
+              "Una hora.",
+              "Dos horas.",
+              "Cuatro horas."
+            ],
+            "en": [
+              "One hour.",
+              "Two hours.",
+              "Four hours."
+            ]
+          },
+          "answer": 0,
+          "explanation": {
+            "es": "4 − 2.5 − 0.5 = 1 hora.",
+            "en": "4 − 2.5 − 0.5 = 1 hour."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué registro permite actuar después?",
+            "en": "Which record helps you act next?"
+          },
+          "options": {
+            "es": [
+              "Solo el nombre.",
+              "Una foto.",
+              "Próxima acción y responsable."
+            ],
+            "en": [
+              "Only a name.",
+              "A photo.",
+              "Next action and owner."
+            ]
+          },
+          "answer": 2,
+          "explanation": {
+            "es": "Indica qué hacer y quién lo hará.",
+            "en": "It identifies what to do and who will do it."
+          }
+        },
+        {
+          "question": {
+            "es": "Si faltan datos, ¿qué estado corresponde?",
+            "en": "If information is missing, which status fits?"
+          },
+          "options": {
+            "es": [
+              "Confirmado.",
+              "Falta información.",
+              "Cerrado."
+            ],
+            "en": [
+              "Confirmed.",
+              "Awaiting information.",
+              "Closed."
+            ]
+          },
+          "answer": 1,
+          "explanation": {
+            "es": "Mantiene visible lo pendiente.",
+            "en": "It keeps the missing information visible."
+          }
+        },
+        {
+          "question": {
+            "es": "Antes de prometer una hora revisas…",
+            "en": "Before promising a time, check…"
+          },
+          "options": {
+            "es": [
+              "Solo el precio.",
+              "Solo el saludo.",
+              "Calendario y traslados."
+            ],
+            "en": [
+              "Only the price.",
+              "Only the greeting.",
+              "Calendar and travel."
+            ]
+          },
+          "answer": 2,
+          "explanation": {
+            "es": "La capacidad incluye traslado.",
+            "en": "Capacity includes travel time."
+          }
+        }
+      ],
+      "status": "written_draft",
+      "origin": "Original Plutón draft · 2026-10-20",
+      "sources": []
+    },
+    {
+      "id": "BIB-002",
+      "title": {
+        "es": "De la solicitud al presupuesto claro",
+        "en": "From a request to a clear estimate"
+      },
+      "category": {
+        "es": "Clientes y servicios",
+        "en": "Customers and services"
+      },
+      "goal": {
+        "es": "Aclara el alcance y prepara una respuesta bilingüe sin promesas ambiguas.",
+        "en": "Clarify scope and prepare a bilingual reply without ambiguous promises."
+      },
+      "sections": [
+        {
+          "heading": {
+            "es": "Pregunta antes de cotizar",
+            "en": "Ask before estimating"
+          },
+          "body": {
+            "es": "Identifica el resultado esperado, las tareas incluidas, las exclusiones y la fecha deseada. Pregunta por los datos que cambian el tiempo o el costo. Resume lo entendido antes de dar un precio. Una respuesta amable puede ser precisa: Gracias por escribir. Para preparar el presupuesto, ¿qué áreas y tareas necesita?",
+            "en": "Identify the expected result, included tasks, exclusions and preferred date. Ask for information that changes time or cost. Summarize your understanding before stating a price. A friendly reply can be precise: Thank you for reaching out. Which areas and tasks should the estimate cover?"
+          }
+        },
+        {
+          "heading": {
+            "es": "Ejemplo con números visibles",
+            "en": "An example with visible numbers"
+          },
+          "body": {
+            "es": "Caso ficticio: cuatro horas a US$22 suman US$88. Materiales US$12 y traslado US$10: costo estimado US$110. Un recargo del 25% sobre el costo añade US$27.50; precio propuesto US$137.50. Esto no es un margen del 25% sobre ventas. El margen ilustrativo sería 27.50 / 137.50 = 20%, antes de otros gastos. Los números sirven para practicar; no son tarifas recomendadas ni ganancia neta.",
+            "en": "Fictional case: four hours at US$22 total US$88. Add US$12 materials and US$10 travel: estimated cost US$110. A 25% markup on cost adds US$27.50; proposed price US$137.50. This is not a 25% sales margin. The illustrative margin is 27.50 / 137.50 = 20%, before other expenses. These numbers are practice data, not recommended rates or net profit."
+          }
+        },
+        {
+          "heading": {
+            "es": "Respuesta original ES/EN",
+            "en": "Original bilingual reply"
+          },
+          "body": {
+            "es": "Gracias por su solicitud. El presupuesto preliminar es US$137.50 para el alcance indicado. No incluye limpieza del horno ni ventanas exteriores. La disponibilidad del viernes a las 9 a.m. está pendiente de confirmación. ¿Desea que revisemos ese horario?\nThank you for your request. The preliminary estimate is US$137.50 for the scope described. Oven cleaning and exterior windows are not included. Friday at 9 a.m. is subject to confirmation. Would you like us to check that time?",
+            "en": "Thank you for your request. The preliminary estimate is US$137.50 for the scope described. Oven cleaning and exterior windows are not included. Friday at 9 a.m. is subject to confirmation. Would you like us to check that time?\nThe reply states price, scope, exclusions and unconfirmed availability. It does not pretend a booking already exists."
+          }
+        },
+        {
+          "heading": {
+            "es": "Cómo tratar un cambio",
+            "en": "How to handle a change"
+          },
+          "body": {
+            "es": "Si añaden una hora de horno, el costo pasa de US$110 a US$132. Con el mismo recargo del 25%, el precio pasa a US$165. Si el límite del cliente es US$160, supera el límite por US$5. Explica el cambio y pide aprobación, o conserva el alcance original. No añadas el servicio en silencio.",
+            "en": "If oven cleaning adds one hour, cost rises from US$110 to US$132. The same 25% markup produces US$165. If the client’s limit is US$160, the proposal exceeds it by US$5. Explain the change and request approval, or retain the original scope. Do not silently add the service."
+          }
+        }
+      ],
+      "practice": {
+        "es": "Redacta dos respuestas: presupuesto original y cambio solicitado. En ambas señala qué está incluido y si el horario está confirmado. Usa el caso del Laboratorio B88 para practicar por separado; esta vista no crea reservas ni manda mensajes.",
+        "en": "Draft two replies: the original estimate and the requested change. State scope and whether the time is confirmed. Use the B88 Laboratory case separately for further practice; this preview does not book work or send messages."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Cuál es el costo inicial?",
+            "en": "What is the initial cost?"
+          },
+          "options": {
+            "es": [
+              "US$110",
+              "US$137.50",
+              "US$160"
+            ],
+            "en": [
+              "US$110",
+              "US$137.50",
+              "US$160"
+            ]
+          },
+          "answer": 0,
+          "explanation": {
+            "es": "88 + 12 + 10 = 110.",
+            "en": "88 + 12 + 10 = 110."
+          }
+        },
+        {
+          "question": {
+            "es": "¿El 25% se aplica aquí sobre…?",
+            "en": "What is the 25% applied to here?"
+          },
+          "options": {
+            "es": [
+              "Ventas.",
+              "Costo.",
+              "Solo el traslado."
+            ],
+            "en": [
+              "Sales.",
+              "Cost.",
+              "Travel only."
+            ]
+          },
+          "answer": 1,
+          "explanation": {
+            "es": "Es un recargo sobre costo.",
+            "en": "It is a markup on cost."
+          }
+        },
+        {
+          "question": {
+            "es": "¿El viernes a las 9 está confirmado?",
+            "en": "Is Friday at 9 confirmed?"
+          },
+          "options": {
+            "es": [
+              "Sí.",
+              "Solo por el precio.",
+              "No, está pendiente."
+            ],
+            "en": [
+              "Yes.",
+              "Because of the price.",
+              "No, it is pending."
+            ]
+          },
+          "answer": 2,
+          "explanation": {
+            "es": "La respuesta dice sujeto a confirmación.",
+            "en": "The reply says subject to confirmation."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cuánto excede US$165 al límite de US$160?",
+            "en": "How far is US$165 over US$160?"
+          },
+          "options": {
+            "es": [
+              "US$5",
+              "US$25",
+              "US$55"
+            ],
+            "en": [
+              "US$5",
+              "US$25",
+              "US$55"
+            ]
+          },
+          "answer": 0,
+          "explanation": {
+            "es": "165 − 160 = 5.",
+            "en": "165 − 160 = 5."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué haces con una tarea adicional?",
+            "en": "What do you do with an additional task?"
+          },
+          "options": {
+            "es": [
+              "La incluyes sin avisar.",
+              "Explicas costo y pides aprobación.",
+              "Confirmas cualquier hora."
+            ],
+            "en": [
+              "Add it silently.",
+              "Explain cost and request approval.",
+              "Confirm any time."
+            ]
+          },
+          "answer": 1,
+          "explanation": {
+            "es": "El cambio requiere acuerdo.",
+            "en": "A change requires agreement."
+          }
+        }
+      ],
+      "status": "written_draft",
+      "origin": "Original Plutón draft · 2026-10-20",
+      "sources": []
+    },
+    {
+      "id": "BIB-003",
+      "title": {
+        "es": "Prepara una entrevista sin inventar experiencia",
+        "en": "Prepare for an interview without inventing experience"
+      },
+      "category": {
+        "es": "Empleo",
+        "en": "Employment"
+      },
+      "goal": {
+        "es": "Organiza una presentación breve con ejemplos verificables.",
+        "en": "Organize a short introduction with examples you can explain honestly."
+      },
+      "sections": [
+        {
+          "heading": {
+            "es": "Parte de lo que sí has hecho",
+            "en": "Start with what you have done"
+          },
+          "body": {
+            "es": "Elige dos habilidades relevantes para el puesto. Busca una situación real que las muestre: trabajo, estudio, voluntariado o una responsabilidad personal pertinente. Identifica el contexto con claridad. Ayudar a organizar una actividad familiar puede mostrar organización, pero no se presenta como empleo remunerado. No añadas certificados ni años de experiencia que no tienes.",
+            "en": "Choose two skills relevant to the role. Find a real example from work, study, volunteering or a relevant personal responsibility. Identify its context clearly. Organizing a family activity can show organization, but it is not paid employment. Do not add certificates or years of experience you do not have."
+          }
+        },
+        {
+          "heading": {
+            "es": "Una estructura breve",
+            "en": "A short structure"
+          },
+          "body": {
+            "es": "Explica situación, tarea, acción y resultado. Mantén el ejemplo concreto: qué debía pasar, qué hiciste tú y qué ocurrió. Si no tienes una cifra verificada, describe el resultado sin inventar porcentajes. Una respuesta de unos 45–60 segundos puede ser un punto de partida, no una regla universal.",
+            "en": "Explain the situation, task, action and result. Keep it specific: what was needed, what you did and what happened. If you do not have a verified number, describe the result without inventing percentages. A 45–60 second answer can be a starting point, not a universal rule."
+          }
+        },
+        {
+          "heading": {
+            "es": "Ejemplo original de primer empleo",
+            "en": "Original first-job example"
+          },
+          "body": {
+            "es": "Estoy buscando mi primera oportunidad en atención al cliente. En una actividad de voluntariado ayudé a organizar la recepción. Preparé una lista de llegada y señalé a cada persona dónde debía esperar. El equipo pudo encontrar los nombres con mayor facilidad. Quiero aprender sus procedimientos y aportar organización.\nI am looking for my first customer service opportunity. During a volunteer event, I helped organize reception. I prepared an arrival list and showed people where to wait. The team could find names more easily. I want to learn your procedures and contribute my organizational skills.\nEs un personaje ficticio. El estudiante debe sustituirlo por hechos propios.",
+            "en": "I am looking for my first customer service opportunity. During a volunteer event, I helped organize reception. I prepared an arrival list and showed people where to wait. The team could find names more easily. I want to learn your procedures and contribute my organizational skills.\nThis is a fictional person. Replace the example with your own facts; do not copy it as your work history."
+          }
+        },
+        {
+          "heading": {
+            "es": "Ensaya y pregunta",
+            "en": "Practice and ask"
+          },
+          "body": {
+            "es": "Ensaya en voz alta y escucha si respondes a la pregunta. Puedes pedir unos segundos para pensar. Prepara una pregunta sobre tareas o capacitación: What training is provided for this role? Si no entiendes: Could you repeat the question, please? No se garantiza conseguir empleo por usar esta guía.",
+            "en": "Practice aloud and check whether you answered the question. You may ask for a moment to think. Prepare a question about duties or training: What training is provided for this role? If you do not understand: Could you repeat the question, please? This guide does not guarantee employment."
+          }
+        }
+      ],
+      "practice": {
+        "es": "Escribe una presentación con dos habilidades verdaderas y un ejemplo. Subraya tu acción concreta. Borra cifras que no puedas justificar. Practica pedir repetición y preguntar por capacitación. El cuestionario evalúa comprensión, no selección laboral.",
+        "en": "Write an introduction with two genuine skills and one example. Underline your own action. Remove numbers you cannot support. Practice asking for repetition and training details. The quiz checks understanding, not employability."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "¿Qué ejemplo es adecuado?",
+            "en": "Which example is suitable?"
+          },
+          "options": {
+            "es": [
+              "Uno real y pertinente.",
+              "Uno inventado más llamativo.",
+              "El de otra persona como propio."
+            ],
+            "en": [
+              "A real, relevant one.",
+              "An invented impressive one.",
+              "Someone else’s story as yours."
+            ]
+          },
+          "answer": 0,
+          "explanation": {
+            "es": "Debe representar lo que hiciste.",
+            "en": "It should represent what you did."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Cómo presentas el voluntariado?",
+            "en": "How should volunteering be presented?"
+          },
+          "options": {
+            "es": [
+              "Como empleo pagado.",
+              "Indicando que fue voluntariado.",
+              "Como certificación."
+            ],
+            "en": [
+              "As paid work.",
+              "Clearly as volunteering.",
+              "As certification."
+            ]
+          },
+          "answer": 1,
+          "explanation": {
+            "es": "Aclara el contexto.",
+            "en": "Identify the context clearly."
+          }
+        },
+        {
+          "question": {
+            "es": "Si no tienes una cifra del resultado…",
+            "en": "If you have no verified result number…"
+          },
+          "options": {
+            "es": [
+              "Inventas 50%.",
+              "Copias una cifra.",
+              "Lo describes sin inventar."
+            ],
+            "en": [
+              "Invent 50%.",
+              "Copy a number.",
+              "Describe it without inventing."
+            ]
+          },
+          "answer": 2,
+          "explanation": {
+            "es": "La precisión no exige inventar números.",
+            "en": "Accuracy does not require invented numbers."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué pregunta sirve para pedir repetición?",
+            "en": "Which asks for repetition?"
+          },
+          "options": {
+            "es": [
+              "Could you repeat the question, please?",
+              "Where is gate B12?",
+              "How much is the fare?"
+            ],
+            "en": [
+              "Could you repeat the question, please?",
+              "Where is gate B12?",
+              "How much is the fare?"
+            ]
+          },
+          "answer": 0,
+          "explanation": {
+            "es": "Solicita escuchar nuevamente la pregunta.",
+            "en": "It asks to hear the question again."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué conviene explicar del ejemplo?",
+            "en": "What should the example explain?"
+          },
+          "options": {
+            "es": [
+              "Solo el nombre de otra persona.",
+              "Tu acción y el resultado.",
+              "Un título inventado."
+            ],
+            "en": [
+              "Only someone else’s name.",
+              "Your action and the result.",
+              "An invented title."
+            ]
+          },
+          "answer": 1,
+          "explanation": {
+            "es": "Permite entender tu contribución.",
+            "en": "It helps the interviewer understand your contribution."
+          }
+        }
+      ],
+      "status": "written_draft",
+      "origin": "Original Plutón draft · 2026-10-20",
+      "sources": []
+    },
+    {
+      "id": "BIB-004",
+      "title": {
+        "es": "Vocabulario para preguntar por una propiedad",
+        "en": "Vocabulary for asking about a property"
+      },
+      "category": {
+        "es": "Bienes raíces",
+        "en": "Real estate"
+      },
+      "goal": {
+        "es": "Reconoce términos básicos y prepara preguntas para una visita.",
+        "en": "Recognize basic terms and prepare questions for a viewing."
+      },
+      "sections": [
+        {
+          "heading": {
+            "es": "Antes de una visita",
+            "en": "Before a viewing"
+          },
+          "body": {
+            "es": "Property: propiedad o inmueble.\nListing: anuncio de una propiedad.\nViewing: visita para ver la propiedad.\nBedroom: dormitorio.\nBathroom: baño.\nRent: alquiler o renta.\nFor sale: en venta.\nUn anuncio describe una oferta; no confirma por sí solo disponibilidad ni todas las condiciones. Esta guía enseña comunicación, no contratos ni requisitos de licencia profesional.",
+            "en": "Property: a home, building or land in this context.\nListing: an advertisement for a property.\nViewing: a visit to see a property.\nBedroom: a room used for sleeping.\nBathroom: a room with bathroom facilities.\nRent: payment for using a property.\nFor sale: offered for purchase.\nA listing does not by itself confirm availability or all terms. This guide teaches communication, not contracts or professional licensing."
+          }
+        },
+        {
+          "heading": {
+            "es": "Preguntas útiles",
+            "en": "Useful questions"
+          },
+          "body": {
+            "es": "Is the property still available? — ¿La propiedad sigue disponible?\nHow many bedrooms does it have? — ¿Cuántos dormitorios tiene?\nWhat is included in the rent? — ¿Qué incluye la renta?\nCan I schedule a viewing? — ¿Puedo programar una visita?\nCould you send the details in writing? — ¿Podría enviar los detalles por escrito?",
+            "en": "Is the property still available?\nHow many bedrooms does it have?\nWhat is included in the rent?\nCan I schedule a viewing?\nCould you send the details in writing?\nAsk separately about availability, features, included items and the viewing. Do not assume details that are missing from a listing."
+          }
+        },
+        {
+          "heading": {
+            "es": "Caso original",
+            "en": "Original case"
+          },
+          "body": {
+            "es": "Un anuncio ficticio dice: Two-bedroom apartment for rent. Una persona pregunta: Is the property still available? La respuesta es: Yes. Would you like to schedule a viewing? La persona contesta: Yes, please. What is included in the rent?\nEl texto no dice que incluya agua, electricidad o estacionamiento. Hay que preguntar y confirmar condiciones. Esta práctica no publica propiedades ni concierta visitas reales.",
+            "en": "A fictional listing says: Two-bedroom apartment for rent. A person asks: Is the property still available? The reply is: Yes. Would you like to schedule a viewing? The person answers: Yes, please. What is included in the rent?\nThe listing does not state that water, electricity or parking are included. Ask and confirm terms. This practice does not list real properties or schedule actual visits."
+          }
+        },
+        {
+          "heading": {
+            "es": "Si encuentras palabras de hipotecas",
+            "en": "If you encounter mortgage terms"
+          },
+          "body": {
+            "es": "Mortgage se refiere a una hipoteca; principal al capital del préstamo; interest a intereses. El pago total puede incluir partidas adicionales. Para ampliar, consulta el glosario oficial del CFPB enlazado al final. No calculamos pagos ni recomendamos financiación en esta guía. La lectura externa es gratuita en su web y no se presenta como contenido exclusivo de Plutón.",
+            "en": "Mortgage refers to a home loan; principal is the loan amount to repay; interest is the borrowing charge. The total payment may include additional items. For more detail, use the official CFPB glossary linked below. This guide does not calculate payments or recommend financing. The external reading is free on its own website and is not exclusive Plutón content."
+          }
+        }
+      ],
+      "practice": {
+        "es": "Lee el anuncio ficticio y escribe tres preguntas: disponibilidad, lo incluido y visita. Explica qué información falta sin inventarla. Practica el diálogo con otra persona; no envíes depósitos ni documentos desde esta muestra.",
+        "en": "Read the fictional listing and write three questions: availability, included items and a viewing. Identify missing information without inventing it. Practice the dialogue; this preview does not accept deposits or documents."
+      },
+      "quiz": [
+        {
+          "question": {
+            "es": "Two-bedroom indica…",
+            "en": "What does two-bedroom indicate?"
+          },
+          "options": {
+            "es": [
+              "Dos baños.",
+              "Dos dormitorios.",
+              "Dos propiedades."
+            ],
+            "en": [
+              "Two bathrooms.",
+              "Two bedrooms.",
+              "Two properties."
+            ]
+          },
+          "answer": 1,
+          "explanation": {
+            "es": "Bedroom es dormitorio.",
+            "en": "Bedroom is a sleeping room."
+          }
+        },
+        {
+          "question": {
+            "es": "For rent significa…",
+            "en": "What does for rent mean?"
+          },
+          "options": {
+            "es": [
+              "En alquiler.",
+              "En venta.",
+              "No disponible."
+            ],
+            "en": [
+              "Offered for rental.",
+              "For sale.",
+              "Unavailable."
+            ]
+          },
+          "answer": 0,
+          "explanation": {
+            "es": "Rent se refiere a alquiler en el anuncio.",
+            "en": "Rent refers to rental in the listing."
+          }
+        },
+        {
+          "question": {
+            "es": "¿Qué pregunta confirma disponibilidad?",
+            "en": "Which question checks availability?"
+          },
+          "options": {
+            "es": [
+              "What’s your name?",
+              "What time is check-out?",
+              "Is the property still available?"
+            ],
+            "en": [
+              "What’s your name?",
+              "What time is check-out?",
+              "Is the property still available?"
+            ]
+          },
+          "answer": 2,
+          "explanation": {
+            "es": "Pregunta si sigue disponible.",
+            "en": "It asks if the property remains available."
+          }
+        },
+        {
+          "question": {
+            "es": "Si el anuncio no menciona electricidad…",
+            "en": "If electricity is not mentioned…"
+          },
+          "options": {
+            "es": [
+              "Asumes que está incluida.",
+              "Preguntas y confirmas.",
+              "Lo afirmas al cliente."
+            ],
+            "en": [
+              "Assume it is included.",
+              "Ask and confirm.",
+              "Tell the client it is included."
+            ]
+          },
+          "answer": 1,
+          "explanation": {
+            "es": "No se puede deducir del ejemplo.",
+            "en": "The example does not establish that."
+          }
+        },
+        {
+          "question": {
+            "es": "Una viewing es…",
+            "en": "What is a viewing?"
+          },
+          "options": {
+            "es": [
+              "Una visita a la propiedad.",
+              "Un préstamo.",
+              "Un certificado."
+            ],
+            "en": [
+              "A property visit.",
+              "A loan.",
+              "A certificate."
+            ]
+          },
+          "answer": 0,
+          "explanation": {
+            "es": "Es la visita para conocer el inmueble.",
+            "en": "It is a visit to see the property."
+          }
+        }
+      ],
+      "status": "written_draft",
+      "origin": "Original Plutón draft · 2026-10-20",
+      "sources": [
+        {
+          "label": "CFPB · Mortgage key terms (external / externo)",
+          "url": "https://www.consumerfinance.gov/consumer-tools/mortgages/answers/key-terms/",
+          "checked": "2026-10-20",
+          "use": "External reference only; no book hosted."
+        }
+      ]
+    }
+  ]
+}
