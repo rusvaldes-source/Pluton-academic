@@ -21,12 +21,12 @@
         {
           "id": "ID001-01-02",
           "title": "Abecedario: letras y nombres",
-          "status": "content_pending"
+          "status": "lesson_text_draft_ready"
         },
         {
           "id": "ID001-01-03",
           "title": "Deletrea tu nombre",
-          "status": "content_pending"
+          "status": "lesson_text_draft_ready"
         }
       ]
     },
@@ -170,17 +170,17 @@
         {
           "id": "ID001-08-01",
           "title": "En el aeropuerto: equipaje, puerta y ayuda",
-          "status": "content_pending"
+          "status": "lesson_text_draft_ready"
         },
         {
           "id": "ID001-08-02",
           "title": "En el hotel: llegada, reserva y salida",
-          "status": "content_pending"
+          "status": "lesson_text_draft_ready"
         },
         {
           "id": "ID001-08-03",
           "title": "Taxi, autobús y direcciones sencillas",
-          "status": "content_pending"
+          "status": "lesson_text_draft_ready"
         }
       ]
     },
