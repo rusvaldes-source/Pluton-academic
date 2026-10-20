@@ -1,0 +1,247 @@
+{
+  "code": "ID-001",
+  "code_status": "provisional",
+  "title_es": "Inglés desde cero: comunicación para la vida diaria",
+  "title_en": "English from Zero: Everyday Communication",
+  "version": "B89",
+  "status": "draft_for_review",
+  "public": false,
+  "replaces_id101": false,
+  "modules": [
+    {
+      "category": 1,
+      "title": "Primer contacto con el inglés",
+      "goal": "Saludar y decir el nombre con apoyo visual.",
+      "lessons": [
+        {
+          "id": "ID001-01-01",
+          "title": "Hola y mi nombre",
+          "status": "lesson_text_draft_ready"
+        },
+        {
+          "id": "ID001-01-02",
+          "title": "Abecedario: letras y nombres",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-01-03",
+          "title": "Deletrea tu nombre",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 2,
+      "title": "Números y datos personales",
+      "goal": "Reconocer y comunicar cantidades, edades y números de teléfono.",
+      "lessons": [
+        {
+          "id": "ID001-02-01",
+          "title": "Números del 0 al 20",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-02-02",
+          "title": "Números del 21 al 100 y precios sencillos",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-02-03",
+          "title": "Mi edad y mi número de teléfono",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 3,
+      "title": "Personas y el verbo to be",
+      "goal": "Usar I, you, he, she, we, they y am/is/are en presentaciones breves.",
+      "lessons": [
+        {
+          "id": "ID001-03-01",
+          "title": "Yo soy: I am",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-03-02",
+          "title": "Tú eres y otras personas",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-03-03",
+          "title": "Preguntas y negaciones con be",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 4,
+      "title": "Construye tus primeras oraciones",
+      "goal": "Relacionar persona, verbo y complemento; nombrar objetos y posesiones.",
+      "lessons": [
+        {
+          "id": "ID001-04-01",
+          "title": "Persona + verbo + complemento",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-04-02",
+          "title": "A/an, objetos y plurales sencillos",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-04-03",
+          "title": "My, your y pertenencias",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 5,
+      "title": "Verbos de todos los días",
+      "goal": "Describir acciones frecuentes y necesidades básicas.",
+      "lessons": [
+        {
+          "id": "ID001-05-01",
+          "title": "Have, need, want, like",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-05-02",
+          "title": "Rutinas con I/you/we/they",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-05-03",
+          "title": "He/she y la terminación -s",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 6,
+      "title": "Pregunta, responde y pide ayuda",
+      "goal": "Hacer preguntas básicas y señalar que no se comprende.",
+      "lessons": [
+        {
+          "id": "ID001-06-01",
+          "title": "Do y does en preguntas",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-06-02",
+          "title": "Don’t y doesn’t en negaciones",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-06-03",
+          "title": "What, where, when y pedir repetición",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 7,
+      "title": "Compras y comida",
+      "goal": "Consultar precios, elegir productos y pedir comida con cortesía.",
+      "lessons": [
+        {
+          "id": "ID001-07-01",
+          "title": "How much y cantidades sencillas",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-07-02",
+          "title": "Quiero pedir: I would like",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-07-03",
+          "title": "Pagar, agradecer y aclarar una compra",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 8,
+      "title": "Viajes: aeropuerto, hotel y transporte",
+      "goal": "Pedir ayuda, localizar servicios y comunicar una reserva.",
+      "lessons": [
+        {
+          "id": "ID001-08-01",
+          "title": "En el aeropuerto: equipaje, puerta y ayuda",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-08-02",
+          "title": "En el hotel: llegada, reserva y salida",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-08-03",
+          "title": "Taxi, autobús y direcciones sencillas",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 9,
+      "title": "Citas, ayuda y servicios cotidianos",
+      "goal": "Pedir una cita, comprender información básica y solicitar repetición.",
+      "lessons": [
+        {
+          "id": "ID001-09-01",
+          "title": "Solicitar una cita y decir día y hora",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-09-02",
+          "title": "En una recepción o farmacia: pedir información",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-09-03",
+          "title": "No entiendo: repetir, hablar despacio y confirmar",
+          "status": "content_pending"
+        }
+      ]
+    },
+    {
+      "category": 10,
+      "title": "Comunícate en situaciones cotidianas",
+      "goal": "Integrar lo aprendido en conversaciones breves, con repetición si hace falta.",
+      "lessons": [
+        {
+          "id": "ID001-10-01",
+          "title": "Del aeropuerto al hotel: conversación guiada",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-10-02",
+          "title": "Compras, comida y una cita: casos breves",
+          "status": "content_pending"
+        },
+        {
+          "id": "ID001-10-03",
+          "title": "Conversación final y plan de práctica",
+          "status": "content_pending"
+        }
+      ]
+    }
+  ],
+  "video_status": "scripts_only_no_renders_requested",
+  "initial_teaching_languages": [
+    "es",
+    "en"
+  ],
+  "additional_language_support": "visual English pathway to be designed; no other-language teaching claimed",
+  "commercial_status": "separate_one_time_purchase_confirmed_price_pending",
+  "pricing_proposal": {
+    "currency": "USD",
+    "launch_price": 10.99,
+    "later_price_to_evaluate": 19.99,
+    "price_approved": false,
+    "checkout_enabled": false,
+    "membership_included": false
+  }
+}
