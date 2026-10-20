@@ -1,0 +1,14 @@
+{
+  "version": "B92",
+  "written_lessons": 30,
+  "categories": 10,
+  "quiz_questions": 150,
+  "narration_scripts": 60,
+  "lesson_audio_complete": 11,
+  "lesson_audio_pending": 49,
+  "support_clips_completed": 3,
+  "blocker": "Provider reports insufficient generative credits",
+  "full_course_publication": false,
+  "content_in_repository": false,
+  "audio_in_repository": false
+}
