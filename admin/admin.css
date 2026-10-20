@@ -11,3 +11,5 @@
 
 /* News video preview: responsive and contained in the admin list. */
 #newsList iframe { display:block; width:100%; max-width:560px; aspect-ratio:16/9; border:0; margin-top:12px; }
+
+a{color:#e1b85b}a:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid white;outline-offset:3px}button:disabled{opacity:.65;cursor:wait}header a{white-space:nowrap}#adminModules{margin-top:28px}

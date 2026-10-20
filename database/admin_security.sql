@@ -1,32 +1,12 @@
--- B58: execute only after reviewing against the existing Supabase schema.
--- Admin roles must be granted manually by a trusted database operator.
-create table if not exists public.admin_users (
-  user_id uuid primary key references auth.users(id) on delete cascade,
-  created_at timestamptz not null default now()
-);
-alter table public.admin_users enable row level security;
-revoke all on public.admin_users from anon, authenticated;
--- SECURITY DEFINER bypasses RLS only in this narrowly scoped boolean check.
-create or replace function public.is_pluton_admin()
-returns boolean language sql stable security definer
-set search_path = '' as $$
-  select exists (select 1 from public.admin_users where user_id = (select auth.uid()));
-$$;
-revoke all on function public.is_pluton_admin() from public;
-grant execute on function public.is_pluton_admin() to authenticated;
--- Example admin-only management table; not a replacement for existing courses schema.
-create table if not exists public.admin_announcements (
-  id uuid primary key default gen_random_uuid(),
-  title text not null check (char_length(title) between 1 and 160),
-  body text not null default '',
-  is_published boolean not null default false,
-  updated_at timestamptz not null default now()
-);
-alter table public.admin_announcements enable row level security;
-revoke all on public.admin_announcements from anon;
-grant select, insert, update, delete on public.admin_announcements to authenticated;
-create policy "Admins manage announcements" on public.admin_announcements
-for all to authenticated using ((select public.is_pluton_admin()))
-with check ((select public.is_pluton_admin()));
--- Assign first admin ONLY from SQL editor with trusted UUID (never browser code):
--- insert into public.admin_users(user_id) values ('<auth.users UUID>');
+-- B94: READ-ONLY verification of the deployed administration permissions.
+-- Do not run the old B58 role bootstrap: the live role source is support_admins.
+-- This file never replaces is_pluton_admin, creates a second role table or grants access.
+select p.proname, p.prosecdef, p.proconfig, pg_get_functiondef(p.oid)
+from pg_proc p join pg_namespace n on n.oid=p.pronamespace
+where n.nspname='public' and p.proname='is_pluton_admin';
+select tablename,policyname,roles,cmd,qual,with_check
+from pg_policies where schemaname='public'
+and tablename in ('support_admins','profiles','pluton_news','connect_reports');
+select c.relname,c.relrowsecurity from pg_class c
+join pg_namespace n on n.oid=c.relnamespace
+where n.nspname='public' and c.relname in ('support_admins','profiles','pluton_news','connect_reports');
