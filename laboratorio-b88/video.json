@@ -1,0 +1,15 @@
+{
+  "version": "B88",
+  "video_id": "0e69039881e85802d57c7e0197978864",
+  "status": "completed",
+  "duration_seconds": 21.911,
+  "resolution": "1920x1080",
+  "avatar_id": "f58c30d6a88b489f959dbeb8bd4e44cc",
+  "voice_id": "9dcc4188924741c18bd74292330208e2",
+  "approved_source_video_id": "b51d75a3472e644708f8c5862407214f",
+  "audio_language": "es",
+  "transcript_languages": ["es", "en"],
+  "local_file": "presentacion.mp4",
+  "delivery": "MP4 incluido en ZIP B88 y en HTML autónomo. Recuperable en HeyGen por video_id; sin URLs temporales en el código.",
+  "publication": "not_authorized"
+}
