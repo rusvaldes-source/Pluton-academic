@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'../b87-prueba');
+test('commercial binaries and their generators are absent from the public source tree',()=>{assert(!fs.existsSync(path.join(root,'archivos')),'commercial download folder must not be in the public source');assert(!fs.existsSync(path.join(root,'build')),'commercial template generators must not be public');});
+test('autonomous page contains no embedded commercial files or direct download routes',()=>{const h=fs.readFileSync(path.join(root,'B87_VISTA_PREVIA.html'),'utf8');assert(!/PLUTON_B87_FILES|application\/zip;base64|application\/pdf;base64|wordprocessingml\.document;base64/.test(h));assert(!/archivos\//.test(h));assert(!/id="(?:downloadSample|openGuide|resumeTemplateWord|resumeTemplatePdf)"/.test(h));});
+test('commerce is closed with no selected payment provider',()=>{const c=JSON.parse(fs.readFileSync(path.join(root,'commerce-config.json')));assert.equal(c.provider,null);assert.equal(c.checkoutEnabled,false);assert.equal(c.downloadsEnabled,false);assert.deepEqual(c.publicAssetUrls,[]);});

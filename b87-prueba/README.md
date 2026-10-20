@@ -1,33 +1,29 @@
-# B87 · PLUTÓN Hoy, herramientas y tienda empresarial
+# B87 catálogo sin descargas comerciales abiertas
 
-Prototipo autorizado por Ruslan el 20 de octubre de 2026. Rama: `B87-Prueba-Hoy-Herramientas-Tienda`. Base: B86 (`f0fd32b`). Sin cambios en la portada, PLUTÓN Noticias, cursos, precios de membresías o autenticación. Sin despliegue solicitado ni realizado por este trabajo.
+Abrir `B87_VISTA_PREVIA.html` o `index.html`. El catálogo permite consultar los tres paquetes y los archivos que incluyen. La compra está desactivada y no se ha elegido proveedor de pagos.
 
-## Probar
+## Qué se cerró
 
-Abrir `B87_VISTA_PREVIA.html` (archivo autónomo) o `index.html` directamente en un navegador moderno. No requiere instalación, servidor, servicios externos, claves ni conexión para funcionar. Incluye ES/EN. El único enlace externo lleva a CareerSource South Florida y se abre únicamente al pulsarlo.
+- Retirados del árbol de código público los 21 archivos comerciales, sus tres ZIP y los generadores que permitían recrearlos.
+- Eliminados los archivos incrustados en la vista autónoma y todas las rutas directas a paquetes, Word, PDF y Excel comerciales.
+- Eliminadas las descargas comerciales de las guías del currículum y del diálogo de productos.
+- Añadidas exclusiones Git para prevenir nuevas incorporaciones accidentales. La exclusión no sustituye una revisión de lo que se sube.
+- Los formularios siguen permitiendo descargar el texto creado por el usuario y sus respuestas de entrevista. Esas herramientas gratuitas no contienen los paquetes comerciales.
 
-## Lo que funciona
+## Conservación
 
-- PLUTÓN Hoy separado de Noticias, con acción diaria rotativa por día de la semana, práctica de inglés, recurso de tecnología y enlace oficial de oportunidades. Contenido editorial de muestra, no noticias en directo.
-- Currículum: formulario, ejemplo ficticio, documento editable y descarga TXT. No traduce el texto introducido ni inventa experiencia.
-- Entrevistas: tres áreas con cinco preguntas ES/EN, respuestas conservadas por pregunta en memoria y exportación TXT. Sin grabaciones o evaluación de personas.
-- Documentos: correo profesional o presupuesto USD con cálculo de subtotal, edición y descarga. No calcula impuestos ni otros cargos.
-- Tienda: seis conceptos de productos, categorías, búsqueda, muestras reales gratuitas en TXT y selección de prueba con total simulado. Los DOC/XLSX/PDF listados son formatos propuestos; no se ofrecen como archivos terminados. Sin cobros, pedidos ni pagos.
+Los archivos comerciales se conservan en la entrega B87 que recibió el propietario y en su copia de trabajo anterior. No se destruyeron ni se convirtieron en productos ficticios. Este ZIP y esta vista del catálogo no los incluyen.
 
-## Persistencia y privacidad
+## Pagos y entrega pendientes
 
-Los datos de los formularios, respuestas y selección permanecen solo en memoria de la pestaña. Recargar o cerrarla los borra. Solo una descarga expresamente solicitada crea un archivo en el dispositivo. Sin localStorage, cookies de seguimiento ni llamadas a IA.
+`commerce-config.json` declara `provider: null`, `checkoutEnabled: false` y `downloadsEnabled: false`. No se ha conectado Stripe, Gumroad ni otro proveedor. Estos campos documentan el estado; no son una autorización de descarga ni un control de acceso. No hay archivo comercial disponible en el frontend aunque alguien altere la interfaz.
 
-## Próxima revisión
+Antes de vender: elegir proveedor, configurar pago real, comprobar la compra en servidor y entregar los archivos desde almacenamiento privado mediante autorización temporal. No colocar los paquetes en el HTML ni en rutas estáticas públicas. Los precios siguen pendientes de aprobación.
 
-Revisar diseño y nombres con Ruslan. Elegir tres productos para producir sus formatos finales, definir licencia y política comercial; después seleccionar pagos, entrega y límites de funciones. La integración pública requiere una instrucción posterior. No activar cobros ni modificar membresías a partir de este prototipo.
+## Límites
+
+Retirar archivos de la versión actual no revoca copias descargadas antes. También pueden permanecer objetos o vistas antiguas en cachés e historial remoto. La revisión de la rama elimina la versión con los archivos comerciales de su historia alcanzable, pero no se declara una purga de los objetos históricos de GitHub; eso requiere el proceso de retirada correspondiente del proveedor. No se promete que una URL histórica conocida deje de funcionar.
 
 ## Verificación
 
-`node --test tests/b87-tools.test.cjs` desde la raíz del repositorio.
-`node --check b87-prueba/app.js` y `node --check b87-prueba/tools.js`.
-La prueba general heredada necesita un ejecutable Playwright no instalado en este entorno. Su ausencia se informa por separado; no implica que esa prueba haya pasado.
-
-Pruebas de interacción: `node --test tests/b87-tools.test.cjs tests/b87-dom.test.cjs` con jsdom 26.1.0 disponible mediante NODE_PATH. Resultado: 10 pruebas aprobadas. La comprobación DOM no valida el aspecto visual. La previsualización local no estuvo disponible en el navegador de esta sesión; el diseño móvil y de escritorio requiere revisión visual antes de integrar.
-
-Tras instalar las dependencias de desarrollo del repositorio, ejecutar `npm run test:b87`. El archivo B87_VISTA_PREVIA.html incluye todos sus estilos y scripts y puede revisarse sin extraer otros archivos.
+`npm run test:b87`: 15 pruebas de lógica e interacción DOM, incluyendo ausencia de archivos, datos incrustados, enlaces de descarga y proveedor elegido. Sintaxis y diff verificados. La revisión visual de navegador y la prueba general heredada permanecen pendientes porque el navegador de prueba no está disponible. No se ha publicado ni modificado main.

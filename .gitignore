@@ -1,3 +1,8 @@
 dist/
 validation/node_modules/
 validation/verified-*.png
+
+# B87 commercial products belong in private delivery storage, never the public site.
+b87-prueba/archivos/
+b87-prueba/build/
+private-commercial/
