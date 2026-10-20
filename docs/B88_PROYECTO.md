@@ -17,3 +17,10 @@ Código en rama B88-Laboratorio-Bilingue-Prueba. Presentación en B88-Presentaci
 
 ## Registro de recuperación
 El entorno temporal se reinició durante la pausa antes de guardar el código. Se recuperaron las ramas y el video existentes, y se reconstruyó el caso desde el diseño y los criterios de esta conversación. No se repitió la generación del video.
+
+## Verificación final
+11 pruebas del Laboratorio y 15 pruebas B87 aprobadas. Revisión independiente realizada; ajustados resultado de calculadora al cambiar idioma y foco de encabezados, cada ajuste con prueba fallida antes de corregir y prueba aprobada después. Sin fallos pendientes en esa revisión.
+
+La prueba general de navegador del proyecto no se completó en este entorno; tampoco se verifica aquí el aspecto en un móvil real. La revisión funcional usa DOM simulado, no sustituye pruebas visuales ni reproducción completa del video en todos los navegadores. El MP4 tiene video H.264 y audio AAC, 1920×1080, 21.911 segundos; fotograma revisado y encuadre preservado con contain.
+
+Los medios binarios se entregan dentro del ZIP y el HTML autónomo. Las ramas contienen fuentes y metadatos del video, sin URLs de descarga temporales. Para clonar la rama y ejecutar su página, copiar presentacion.mp4 y presentacion-poster.jpg desde el ZIP a laboratorio-b88/.
