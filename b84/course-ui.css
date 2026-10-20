@@ -1,0 +1,7 @@
+/* B84: complete course links use the academy navy/gold theme. */
+.pa-course-card a.pa-quiz-button,.pa-course-lesson-link{display:block;background:#102947;color:#d9b565;border:1px solid #a88947;border-radius:8px;padding:.65rem .8rem;min-height:44px;overflow-wrap:anywhere}
+.pa-course-lessons{margin-top:1rem}.pa-course-lessons summary{cursor:pointer;color:#d9b565;padding:.6rem 0}.pa-course-lesson-link{margin:.5rem 0}.pa-course-card{min-width:0}.pa-course-card a:focus-visible{outline:3px solid #f1d596;outline-offset:3px}
+/* Display the full approved artwork instead of cutting it into a tall crop. */
+#mainCatalog article .catalog-visual.pa-illustrated{height:auto!important;aspect-ratio:16/9!important;background:#081a32!important}
+#mainCatalog article .catalog-visual.pa-illustrated img{width:100%!important;height:100%!important;aspect-ratio:16/9!important;object-fit:contain!important;object-position:center!important}
+.b57-priority-grid article>img{display:block;width:100%;height:auto!important;aspect-ratio:16/9;object-fit:contain!important;object-position:center!important;background:#081a32}

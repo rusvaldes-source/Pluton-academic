@@ -1,0 +1,629 @@
+{
+  "ID-101": [
+    {
+      "question": {
+        "es": "Q1: ¿Qué palabra en inglés se refiere a un compañero de trabajo? / Which English word refers to a person you work with?",
+        "en": "Q1: ¿Qué palabra en inglés se refiere a un compañero de trabajo? / Which English word refers to a person you work with?"
+      },
+      "options": {
+        "es": [
+          "proveedor / supplier",
+          "gerente / manager",
+          "cliente / client",
+          "compañero de trabajo / colleague"
+        ],
+        "en": [
+          "proveedor / supplier",
+          "gerente / manager",
+          "cliente / client",
+          "compañero de trabajo / colleague"
+        ]
+      },
+      "answer": 3,
+      "feedback": {
+        "es": "Respuesta de referencia: compañero de trabajo / colleague",
+        "en": "Reference answer: compañero de trabajo / colleague"
+      }
+    },
+    {
+      "question": {
+        "es": "Q2: En el contexto laboral, ¿qué significa “deadline”? / In a work context, what does “deadline” mean?",
+        "en": "Q2: En el contexto laboral, ¿qué significa “deadline”? / In a work context, what does “deadline” mean?"
+      },
+      "options": {
+        "es": [
+          "descanso / break",
+          "fecha límite / due date",
+          "turno / shift",
+          "reunión / meeting"
+        ],
+        "en": [
+          "descanso / break",
+          "fecha límite / due date",
+          "turno / shift",
+          "reunión / meeting"
+        ]
+      },
+      "answer": 1,
+      "feedback": {
+        "es": "Respuesta de referencia: fecha límite / due date",
+        "en": "Reference answer: fecha límite / due date"
+      }
+    },
+    {
+      "question": {
+        "es": "Q3: Acabas de conocer a una nueva colega. ¿Cuál es un saludo y presentación profesional adecuados? / You have just met a new colleague. Which is an appropriate professional greeting and introduction?",
+        "en": "Q3: Acabas de conocer a una nueva colega. ¿Cuál es un saludo y presentación profesional adecuados? / You have just met a new colleague. Which is an appropriate professional greeting and introduction?"
+      },
+      "options": {
+        "es": [
+          "¿Qué pasa? / What’s up?",
+          "Buenos días, soy Ana. Es un placer conocerla. / Good morning, I’m Ana. It’s a pleasure to meet you.",
+          "¡Oye, ven aquí! / Hey, come here!",
+          "Dame tu número ahora. / Give me your number now."
+        ],
+        "en": [
+          "¿Qué pasa? / What’s up?",
+          "Buenos días, soy Ana. Es un placer conocerla. / Good morning, I’m Ana. It’s a pleasure to meet you.",
+          "¡Oye, ven aquí! / Hey, come here!",
+          "Dame tu número ahora. / Give me your number now."
+        ]
+      },
+      "answer": 1,
+      "feedback": {
+        "es": "Respuesta de referencia: Buenos días, soy Ana. Es un placer conocerla. / Good morning, I’m Ana. It’s a pleasure to meet you.",
+        "en": "Reference answer: Buenos días, soy Ana. Es un placer conocerla. / Good morning, I’m Ana. It’s a pleasure to meet you."
+      }
+    },
+    {
+      "question": {
+        "es": "Q4: ¿Cómo puedes presentar a otra persona en una reunión? / How can you introduce another person in a meeting?",
+        "en": "Q4: ¿Cómo puedes presentar a otra persona en una reunión? / How can you introduce another person in a meeting?"
+      },
+      "options": {
+        "es": [
+          "¿Dónde está el baño? / Where is the restroom?",
+          "No conozco a nadie. / I don’t know anyone.",
+          "Ella es mi computadora. / She is my computer.",
+          "Me gustaría presentarles a Carlos, nuestro supervisor. / I’d like to introduce Carlos, our supervisor."
+        ],
+        "en": [
+          "¿Dónde está el baño? / Where is the restroom?",
+          "No conozco a nadie. / I don’t know anyone.",
+          "Ella es mi computadora. / She is my computer.",
+          "Me gustaría presentarles a Carlos, nuestro supervisor. / I’d like to introduce Carlos, our supervisor."
+        ]
+      },
+      "answer": 3,
+      "feedback": {
+        "es": "Respuesta de referencia: Me gustaría presentarles a Carlos, nuestro supervisor. / I’d like to introduce Carlos, our supervisor.",
+        "en": "Reference answer: Me gustaría presentarles a Carlos, nuestro supervisor. / I’d like to introduce Carlos, our supervisor."
+      }
+    },
+    {
+      "question": {
+        "es": "Q5: Tu supervisor dice: “Please send the report by 3 p.m.” ¿Qué debes hacer? / Your supervisor says: “Please send the report by 3 p.m.” What should you do?",
+        "en": "Q5: Tu supervisor dice: “Please send the report by 3 p.m.” ¿Qué debes hacer? / Your supervisor says: “Please send the report by 3 p.m.” What should you do?"
+      },
+      "options": {
+        "es": [
+          "Empezar una reunión a las 3 p. m. / Start a meeting at 3 p.m.",
+          "Cancelar el informe. / Cancel the report.",
+          "Enviar el informe antes de las 3 p. m. / Send the report before 3 p.m.",
+          "Imprimir el informe mañana. / Print the report tomorrow."
+        ],
+        "en": [
+          "Empezar una reunión a las 3 p. m. / Start a meeting at 3 p.m.",
+          "Cancelar el informe. / Cancel the report.",
+          "Enviar el informe antes de las 3 p. m. / Send the report before 3 p.m.",
+          "Imprimir el informe mañana. / Print the report tomorrow."
+        ]
+      },
+      "answer": 2,
+      "feedback": {
+        "es": "Respuesta de referencia: Enviar el informe antes de las 3 p. m. / Send the report before 3 p.m.",
+        "en": "Reference answer: Enviar el informe antes de las 3 p. m. / Send the report before 3 p.m."
+      }
+    },
+    {
+      "question": {
+        "es": "Q6: ¿Cuál es la mejor forma de pedir aclaración si no entiendes una instrucción? / What is the best way to ask for clarification if you do not understand an instruction?",
+        "en": "Q6: ¿Cuál es la mejor forma de pedir aclaración si no entiendes una instrucción? / What is the best way to ask for clarification if you do not understand an instruction?"
+      },
+      "options": {
+        "es": [
+          "No necesito ayuda. / I don’t need help.",
+          "Eso no tiene sentido. / That makes no sense.",
+          "¿Podría repetirlo, por favor? / Could you repeat that, please?",
+          "No voy a hacerlo. / I’m not going to do it."
+        ],
+        "en": [
+          "No necesito ayuda. / I don’t need help.",
+          "Eso no tiene sentido. / That makes no sense.",
+          "¿Podría repetirlo, por favor? / Could you repeat that, please?",
+          "No voy a hacerlo. / I’m not going to do it."
+        ]
+      },
+      "answer": 2,
+      "feedback": {
+        "es": "Respuesta de referencia: ¿Podría repetirlo, por favor? / Could you repeat that, please?",
+        "en": "Reference answer: ¿Podría repetirlo, por favor? / Could you repeat that, please?"
+      }
+    },
+    {
+      "question": {
+        "es": "Q7: Un cliente entra en la oficina. ¿Cuál es una forma cortés de ofrecer ayuda? / A customer enters the office. Which is a polite way to offer help?",
+        "en": "Q7: Un cliente entra en la oficina. ¿Cuál es una forma cortés de ofrecer ayuda? / A customer enters the office. Which is a polite way to offer help?"
+      },
+      "options": {
+        "es": [
+          "¿Cómo puedo ayudarle hoy? / How can I help you today?",
+          "Tiene que esperar. / You have to wait.",
+          "No sé. / I don’t know.",
+          "Vaya a otro lugar. / Go somewhere else."
+        ],
+        "en": [
+          "¿Cómo puedo ayudarle hoy? / How can I help you today?",
+          "Tiene que esperar. / You have to wait.",
+          "No sé. / I don’t know.",
+          "Vaya a otro lugar. / Go somewhere else."
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "Respuesta de referencia: ¿Cómo puedo ayudarle hoy? / How can I help you today?",
+        "en": "Reference answer: ¿Cómo puedo ayudarle hoy? / How can I help you today?"
+      }
+    },
+    {
+      "question": {
+        "es": "Q8: Un cliente está molesto por un retraso. ¿Cuál es la mejor respuesta profesional? / A customer is upset about a delay. What is the best professional response?",
+        "en": "Q8: Un cliente está molesto por un retraso. ¿Cuál es la mejor respuesta profesional? / A customer is upset about a delay. What is the best professional response?"
+      },
+      "options": {
+        "es": [
+          "Lamento el retraso. Permítame revisar el estado de su pedido. / I’m sorry for the delay. Let me check the status of your order.",
+          "No puedo hablar con usted. / I can’t talk to you.",
+          "Debe tener paciencia. / You must be patient.",
+          "No es mi problema. / It’s not my problem."
+        ],
+        "en": [
+          "Lamento el retraso. Permítame revisar el estado de su pedido. / I’m sorry for the delay. Let me check the status of your order.",
+          "No puedo hablar con usted. / I can’t talk to you.",
+          "Debe tener paciencia. / You must be patient.",
+          "No es mi problema. / It’s not my problem."
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "Respuesta de referencia: Lamento el retraso. Permítame revisar el estado de su pedido. / I’m sorry for the delay. Let me check the status of your order.",
+        "en": "Reference answer: Lamento el retraso. Permítame revisar el estado de su pedido. / I’m sorry for the delay. Let me check the status of your order."
+      }
+    },
+    {
+      "question": {
+        "es": "Q9: Ves un piso mojado en el lugar de trabajo. ¿Qué debes hacer primero? / You see a wet floor at work. What should you do first?",
+        "en": "Q9: Ves un piso mojado en el lugar de trabajo. ¿Qué debes hacer primero? / You see a wet floor at work. What should you do first?"
+      },
+      "options": {
+        "es": [
+          "Ignorarlo y continuar trabajando. / Ignore it and continue working.",
+          "Caminar rápido sobre él. / Walk quickly across it.",
+          "Dejar herramientas en el piso mojado. / Leave tools on the wet floor.",
+          "Señalizar el peligro e informar al supervisor. / Mark the hazard and inform the supervisor."
+        ],
+        "en": [
+          "Ignorarlo y continuar trabajando. / Ignore it and continue working.",
+          "Caminar rápido sobre él. / Walk quickly across it.",
+          "Dejar herramientas en el piso mojado. / Leave tools on the wet floor.",
+          "Señalizar el peligro e informar al supervisor. / Mark the hazard and inform the supervisor."
+        ]
+      },
+      "answer": 3,
+      "feedback": {
+        "es": "Respuesta de referencia: Señalizar el peligro e informar al supervisor. / Mark the hazard and inform the supervisor.",
+        "en": "Reference answer: Señalizar el peligro e informar al supervisor. / Mark the hazard and inform the supervisor."
+      }
+    },
+    {
+      "question": {
+        "es": "Q10: ¿Qué significa la instrucción “Wear protective gloves”? / What does the instruction “Wear protective gloves” mean?",
+        "en": "Q10: ¿Qué significa la instrucción “Wear protective gloves”? / What does the instruction “Wear protective gloves” mean?"
+      },
+      "options": {
+        "es": [
+          "Abra la ventana. / Open the window.",
+          "Quítese el casco. / Take off your helmet.",
+          "Lávese las manos. / Wash your hands.",
+          "Use guantes de protección. / Put on protective gloves."
+        ],
+        "en": [
+          "Abra la ventana. / Open the window.",
+          "Quítese el casco. / Take off your helmet.",
+          "Lávese las manos. / Wash your hands.",
+          "Use guantes de protección. / Put on protective gloves."
+        ]
+      },
+      "answer": 3,
+      "feedback": {
+        "es": "Respuesta de referencia: Use guantes de protección. / Put on protective gloves.",
+        "en": "Reference answer: Use guantes de protección. / Put on protective gloves."
+      }
+    },
+    {
+      "question": {
+        "es": "Q11: La impresora no funciona y necesitas imprimir un documento urgente. ¿Cuál es la mejor respuesta? / The printer is not working and you need to print an urgent document. What is the best response?",
+        "en": "Q11: La impresora no funciona y necesitas imprimir un documento urgente. ¿Cuál es la mejor respuesta? / The printer is not working and you need to print an urgent document. What is the best response?"
+      },
+      "options": {
+        "es": [
+          "Esperar sin informar a nadie. / Wait without telling anyone.",
+          "Golpear la impresora. / Hit the printer.",
+          "Eliminar el documento. / Delete the document.",
+          "Revisar la conexión, informar del problema y buscar una alternativa. / Check the connection, report the problem, and find an alternative."
+        ],
+        "en": [
+          "Esperar sin informar a nadie. / Wait without telling anyone.",
+          "Golpear la impresora. / Hit the printer.",
+          "Eliminar el documento. / Delete the document.",
+          "Revisar la conexión, informar del problema y buscar una alternativa. / Check the connection, report the problem, and find an alternative."
+        ]
+      },
+      "answer": 3,
+      "feedback": {
+        "es": "Respuesta de referencia: Revisar la conexión, informar del problema y buscar una alternativa. / Check the connection, report the problem, and find an alternative.",
+        "en": "Reference answer: Revisar la conexión, informar del problema y buscar una alternativa. / Check the connection, report the problem, and find an alternative."
+      }
+    },
+    {
+      "question": {
+        "es": "Q12: Recibes información contradictoria sobre la hora de una reunión. ¿Qué debes decir para resolver el problema? / You receive conflicting information about a meeting time. What should you say to solve the problem?",
+        "en": "Q12: Recibes información contradictoria sobre la hora de una reunión. ¿Qué debes decir para resolver el problema? / You receive conflicting information about a meeting time. What should you say to solve the problem?"
+      },
+      "options": {
+        "es": [
+          "Llegaré a cualquier hora. / I’ll arrive at any time.",
+          "No voy a asistir. / I’m not going to attend.",
+          "La reunión no es importante. / The meeting is not important.",
+          "¿Podemos confirmar la hora correcta de la reunión, por favor? / Could we confirm the correct meeting time, please?"
+        ],
+        "en": [
+          "Llegaré a cualquier hora. / I’ll arrive at any time.",
+          "No voy a asistir. / I’m not going to attend.",
+          "La reunión no es importante. / The meeting is not important.",
+          "¿Podemos confirmar la hora correcta de la reunión, por favor? / Could we confirm the correct meeting time, please?"
+        ]
+      },
+      "answer": 3,
+      "feedback": {
+        "es": "Respuesta de referencia: ¿Podemos confirmar la hora correcta de la reunión, por favor? / Could we confirm the correct meeting time, please?",
+        "en": "Reference answer: ¿Podemos confirmar la hora correcta de la reunión, por favor? / Could we confirm the correct meeting time, please?"
+      }
+    }
+  ],
+  "MKT-201": [
+    {
+      "question": {
+        "es": "¿Qué debes definir antes de publicar contenido? / What should you define before posting content?",
+        "en": "¿Qué debes definir antes de publicar contenido? / What should you define before posting content?"
+      },
+      "options": {
+        "es": [
+          "El color del logotipo / Logo color",
+          "La frecuencia de publicaciones / Posting frequency",
+          "El público objetivo / Target audience"
+        ],
+        "en": [
+          "El color del logotipo / Logo color",
+          "La frecuencia de publicaciones / Posting frequency",
+          "El público objetivo / Target audience"
+        ]
+      },
+      "answer": 2,
+      "feedback": {
+        "es": "Respuesta de referencia: El público objetivo / Target audience",
+        "en": "Reference answer: El público objetivo / Target audience"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué es el \"público objetivo\" (target audience) en marketing digital?",
+        "en": "¿Qué es el \"público objetivo\" (target audience) en marketing digital?"
+      },
+      "options": {
+        "es": [
+          "El grupo de personas al que se dirige una oferta / The group of people an offer is intended for",
+          "Un software de automatización de ventas / Sales automation software",
+          "El diseño visual de un logotipo / The visual design of a logo",
+          "Un método de contabilidad / An accounting method"
+        ],
+        "en": [
+          "El grupo de personas al que se dirige una oferta / The group of people an offer is intended for",
+          "Un software de automatización de ventas / Sales automation software",
+          "El diseño visual de un logotipo / The visual design of a logo",
+          "Un método de contabilidad / An accounting method"
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "Respuesta de referencia: El grupo de personas al que se dirige una oferta / The group of people an offer is intended for",
+        "en": "Reference answer: El grupo de personas al que se dirige una oferta / The group of people an offer is intended for"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Cuál es el propósito principal de una propuesta de valor? / What is the main purpose of a value proposition?",
+        "en": "¿Cuál es el propósito principal de una propuesta de valor? / What is the main purpose of a value proposition?"
+      },
+      "options": {
+        "es": [
+          "Publicar contenido todos los días sin planificación / Publish content every day without planning",
+          "Medir solamente el número de seguidores / Measure only the number of followers",
+          "Explicar por qué una audiencia debería elegir una oferta y qué beneficio recibe / Explain why an audience should choose an offer and what benefit they receive",
+          "Describir únicamente el historial de la empresa / Describe only the company’s history"
+        ],
+        "en": [
+          "Publicar contenido todos los días sin planificación / Publish content every day without planning",
+          "Medir solamente el número de seguidores / Measure only the number of followers",
+          "Explicar por qué una audiencia debería elegir una oferta y qué beneficio recibe / Explain why an audience should choose an offer and what benefit they receive",
+          "Describir únicamente el historial de la empresa / Describe only the company’s history"
+        ]
+      },
+      "answer": 2,
+      "feedback": {
+        "es": "Respuesta de referencia: Explicar por qué una audiencia debería elegir una oferta y qué beneficio recibe / Explain why an audience should choose an offer and what benefit they receive",
+        "en": "Reference answer: Explicar por qué una audiencia debería elegir una oferta y qué beneficio recibe / Explain why an audience should choose an offer and what benefit they receive"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué elemento hace que una propuesta de valor sea más clara? / What element makes a value proposition clearer?",
+        "en": "¿Qué elemento hace que una propuesta de valor sea más clara? / What element makes a value proposition clearer?"
+      },
+      "options": {
+        "es": [
+          "Usar mensajes generales que puedan servir para cualquier persona / Use general messages that could apply to anyone",
+          "Identificar una necesidad del cliente y el beneficio diferencial que se ofrece / Identify a customer need and the differentiating benefit offered",
+          "Incluir la mayor cantidad posible de términos técnicos / Include as many technical terms as possible",
+          "Centrarse en las características internas sin mencionar resultados / Focus on internal features without mentioning outcomes"
+        ],
+        "en": [
+          "Usar mensajes generales que puedan servir para cualquier persona / Use general messages that could apply to anyone",
+          "Identificar una necesidad del cliente y el beneficio diferencial que se ofrece / Identify a customer need and the differentiating benefit offered",
+          "Incluir la mayor cantidad posible de términos técnicos / Include as many technical terms as possible",
+          "Centrarse en las características internas sin mencionar resultados / Focus on internal features without mentioning outcomes"
+        ]
+      },
+      "answer": 1,
+      "feedback": {
+        "es": "Respuesta de referencia: Identificar una necesidad del cliente y el beneficio diferencial que se ofrece / Identify a customer need and the differentiating benefit offered",
+        "en": "Reference answer: Identificar una necesidad del cliente y el beneficio diferencial que se ofrece / Identify a customer need and the differentiating benefit offered"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué acción fortalece una presencia digital coherente? / What action strengthens a consistent digital presence?",
+        "en": "¿Qué acción fortalece una presencia digital coherente? / What action strengthens a consistent digital presence?"
+      },
+      "options": {
+        "es": [
+          "Cambiar el público y el mensaje principal en cada publicación / Change the audience and core message in every post",
+          "Utilizar mensajes, identidad visual y tono reconocibles en los canales seleccionados / Use recognizable messaging, visual identity, and tone across selected channels",
+          "Publicar solo cuando surge una idea espontánea / Post only when a spontaneous idea arises",
+          "Crear perfiles en todos los canales sin mantenerlos / Create profiles on every channel without maintaining them"
+        ],
+        "en": [
+          "Cambiar el público y el mensaje principal en cada publicación / Change the audience and core message in every post",
+          "Utilizar mensajes, identidad visual y tono reconocibles en los canales seleccionados / Use recognizable messaging, visual identity, and tone across selected channels",
+          "Publicar solo cuando surge una idea espontánea / Post only when a spontaneous idea arises",
+          "Crear perfiles en todos los canales sin mantenerlos / Create profiles on every channel without maintaining them"
+        ]
+      },
+      "answer": 1,
+      "feedback": {
+        "es": "Respuesta de referencia: Utilizar mensajes, identidad visual y tono reconocibles en los canales seleccionados / Use recognizable messaging, visual identity, and tone across selected channels",
+        "en": "Reference answer: Utilizar mensajes, identidad visual y tono reconocibles en los canales seleccionados / Use recognizable messaging, visual identity, and tone across selected channels"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Cuál es el criterio más importante para seleccionar un canal digital? / What is the most important criterion for selecting a digital channel?",
+        "en": "¿Cuál es el criterio más importante para seleccionar un canal digital? / What is the most important criterion for selecting a digital channel?"
+      },
+      "options": {
+        "es": [
+          "Que el canal sea nuevo o esté de moda / That the channel is new or trendy",
+          "Que permita publicar el mayor número de mensajes por día / That it allows the greatest number of messages per day",
+          "Que la audiencia objetivo lo use y sea adecuado para el objetivo de negocio / That the target audience uses it and it fits the business goal",
+          "Que requiera el menor esfuerzo de planificación / That it requires the least planning effort"
+        ],
+        "en": [
+          "Que el canal sea nuevo o esté de moda / That the channel is new or trendy",
+          "Que permita publicar el mayor número de mensajes por día / That it allows the greatest number of messages per day",
+          "Que la audiencia objetivo lo use y sea adecuado para el objetivo de negocio / That the target audience uses it and it fits the business goal",
+          "Que requiera el menor esfuerzo de planificación / That it requires the least planning effort"
+        ]
+      },
+      "answer": 2,
+      "feedback": {
+        "es": "Respuesta de referencia: Que la audiencia objetivo lo use y sea adecuado para el objetivo de negocio / That the target audience uses it and it fits the business goal",
+        "en": "Reference answer: Que la audiencia objetivo lo use y sea adecuado para el objetivo de negocio / That the target audience uses it and it fits the business goal"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué caracteriza al contenido con propósito? / What characterizes purposeful content?",
+        "en": "¿Qué caracteriza al contenido con propósito? / What characterizes purposeful content?"
+      },
+      "options": {
+        "es": [
+          "Se publica únicamente para aumentar la cantidad de publicaciones / It is published only to increase the number of posts",
+          "Aporta valor a la audiencia y responde a un objetivo definido / It provides value to the audience and supports a defined objective",
+          "Se crea sin relación con una meta o necesidad de la audiencia / It is created without relation to a goal or audience need",
+          "Repite el mismo mensaje sin adaptarlo al contexto / It repeats the same message without adapting it to context"
+        ],
+        "en": [
+          "Se publica únicamente para aumentar la cantidad de publicaciones / It is published only to increase the number of posts",
+          "Aporta valor a la audiencia y responde a un objetivo definido / It provides value to the audience and supports a defined objective",
+          "Se crea sin relación con una meta o necesidad de la audiencia / It is created without relation to a goal or audience need",
+          "Repite el mismo mensaje sin adaptarlo al contexto / It repeats the same message without adapting it to context"
+        ]
+      },
+      "answer": 1,
+      "feedback": {
+        "es": "Respuesta de referencia: Aporta valor a la audiencia y responde a un objetivo definido / It provides value to the audience and supports a defined objective",
+        "en": "Reference answer: Aporta valor a la audiencia y responde a un objetivo definido / It provides value to the audience and supports a defined objective"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Cuál es un ejemplo de contenido orientado a la fase de consideración? / Which is an example of content aimed at the consideration stage?",
+        "en": "¿Cuál es un ejemplo de contenido orientado a la fase de consideración? / Which is an example of content aimed at the consideration stage?"
+      },
+      "options": {
+        "es": [
+          "Una guía comparativa que ayuda a evaluar soluciones / A comparison guide that helps evaluate solutions",
+          "Un mensaje de bienvenida sin información adicional / A welcome message without additional information",
+          "Una lista sin contexto de fechas de publicación / A list of posting dates without context",
+          "Una publicación que solo muestra el logotipo de la marca / A post that only displays the brand logo"
+        ],
+        "en": [
+          "Una guía comparativa que ayuda a evaluar soluciones / A comparison guide that helps evaluate solutions",
+          "Un mensaje de bienvenida sin información adicional / A welcome message without additional information",
+          "Una lista sin contexto de fechas de publicación / A list of posting dates without context",
+          "Una publicación que solo muestra el logotipo de la marca / A post that only displays the brand logo"
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "Respuesta de referencia: Una guía comparativa que ayuda a evaluar soluciones / A comparison guide that helps evaluate solutions",
+        "en": "Reference answer: Una guía comparativa que ayuda a evaluar soluciones / A comparison guide that helps evaluate solutions"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Para qué sirve principalmente un calendario de contenidos? / What is a content calendar mainly used for?",
+        "en": "¿Para qué sirve principalmente un calendario de contenidos? / What is a content calendar mainly used for?"
+      },
+      "options": {
+        "es": [
+          "Organizar temas, formatos, fechas, canales y responsabilidades / Organize topics, formats, dates, channels, and responsibilities",
+          "Reemplazar el análisis de resultados / Replace results analysis",
+          "Eliminar la necesidad de definir objetivos / Eliminate the need to define objectives",
+          "Publicar exactamente el mismo contenido en todos los canales / Publish exactly the same content on all channels"
+        ],
+        "en": [
+          "Organizar temas, formatos, fechas, canales y responsabilidades / Organize topics, formats, dates, channels, and responsibilities",
+          "Reemplazar el análisis de resultados / Replace results analysis",
+          "Eliminar la necesidad de definir objetivos / Eliminate the need to define objectives",
+          "Publicar exactamente el mismo contenido en todos los canales / Publish exactly the same content on all channels"
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "Respuesta de referencia: Organizar temas, formatos, fechas, canales y responsabilidades / Organize topics, formats, dates, channels, and responsibilities",
+        "en": "Reference answer: Organizar temas, formatos, fechas, canales y responsabilidades / Organize topics, formats, dates, channels, and responsibilities"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué práctica mejora la utilidad de un calendario de contenidos? / What practice improves the usefulness of a content calendar?",
+        "en": "¿Qué práctica mejora la utilidad de un calendario de contenidos? / What practice improves the usefulness of a content calendar?"
+      },
+      "options": {
+        "es": [
+          "Usar el calendario únicamente después de publicar / Use the calendar only after publishing",
+          "Planificar solo una publicación sin considerar prioridades / Plan only one post without considering priorities",
+          "Asignar objetivos y llamados a la acción a las piezas planificadas / Assign objectives and calls to action to planned content pieces",
+          "Evitar registrar formatos y fechas de publicación / Avoid recording formats and publishing dates"
+        ],
+        "en": [
+          "Usar el calendario únicamente después de publicar / Use the calendar only after publishing",
+          "Planificar solo una publicación sin considerar prioridades / Plan only one post without considering priorities",
+          "Asignar objetivos y llamados a la acción a las piezas planificadas / Assign objectives and calls to action to planned content pieces",
+          "Evitar registrar formatos y fechas de publicación / Avoid recording formats and publishing dates"
+        ]
+      },
+      "answer": 2,
+      "feedback": {
+        "es": "Respuesta de referencia: Asignar objetivos y llamados a la acción a las piezas planificadas / Assign objectives and calls to action to planned content pieces",
+        "en": "Reference answer: Asignar objetivos y llamados a la acción a las piezas planificadas / Assign objectives and calls to action to planned content pieces"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué métrica es más útil para evaluar si una campaña genera conversiones? / Which metric is most useful for evaluating whether a campaign generates conversions?",
+        "en": "¿Qué métrica es más útil para evaluar si una campaña genera conversiones? / Which metric is most useful for evaluating whether a campaign generates conversions?"
+      },
+      "options": {
+        "es": [
+          "La tasa de conversión / The conversion rate",
+          "El tamaño del archivo de las imágenes / The file size of images",
+          "El número de colores usados en las publicaciones / The number of colors used in posts",
+          "La antigüedad de la cuenta digital / The age of the digital account"
+        ],
+        "en": [
+          "La tasa de conversión / The conversion rate",
+          "El tamaño del archivo de las imágenes / The file size of images",
+          "El número de colores usados en las publicaciones / The number of colors used in posts",
+          "La antigüedad de la cuenta digital / The age of the digital account"
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "Respuesta de referencia: La tasa de conversión / The conversion rate",
+        "en": "Reference answer: La tasa de conversión / The conversion rate"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué debe hacerse antes de interpretar una métrica de marketing? / What should be done before interpreting a marketing metric?",
+        "en": "¿Qué debe hacerse antes de interpretar una métrica de marketing? / What should be done before interpreting a marketing metric?"
+      },
+      "options": {
+        "es": [
+          "Elegir un objetivo y un indicador relevante para medirlo / Choose an objective and a relevant indicator to measure it",
+          "Ignorar el contexto de la campaña y de la audiencia / Ignore the campaign and audience context",
+          "Dar por hecho que una métrica alta siempre indica éxito / Assume that a high metric always indicates success",
+          "Comparar cifras sin considerar el periodo analizado / Compare figures without considering the period analyzed"
+        ],
+        "en": [
+          "Elegir un objetivo y un indicador relevante para medirlo / Choose an objective and a relevant indicator to measure it",
+          "Ignorar el contexto de la campaña y de la audiencia / Ignore the campaign and audience context",
+          "Dar por hecho que una métrica alta siempre indica éxito / Assume that a high metric always indicates success",
+          "Comparar cifras sin considerar el periodo analizado / Compare figures without considering the period analyzed"
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "Respuesta de referencia: Elegir un objetivo y un indicador relevante para medirlo / Choose an objective and a relevant indicator to measure it",
+        "en": "Reference answer: Elegir un objetivo y un indicador relevante para medirlo / Choose an objective and a relevant indicator to measure it"
+      }
+    },
+    {
+      "question": {
+        "es": "¿Cuál es el mejor enfoque para la mejora continua en marketing digital? / What is the best approach to continuous improvement in digital marketing?",
+        "en": "¿Cuál es el mejor enfoque para la mejora continua en marketing digital? / What is the best approach to continuous improvement in digital marketing?"
+      },
+      "options": {
+        "es": [
+          "Analizar resultados, identificar aprendizajes, probar ajustes y volver a medir / Analyze results, identify learnings, test adjustments, and measure again",
+          "Cambiar toda la estrategia a diario sin revisar datos / Change the entire strategy daily without reviewing data",
+          "Medir resultados una sola vez y no hacer cambios posteriores / Measure results only once and make no later changes",
+          "Mantener las mismas acciones aunque los resultados no cumplan los objetivos / Keep the same actions even when results do not meet objectives"
+        ],
+        "en": [
+          "Analizar resultados, identificar aprendizajes, probar ajustes y volver a medir / Analyze results, identify learnings, test adjustments, and measure again",
+          "Cambiar toda la estrategia a diario sin revisar datos / Change the entire strategy daily without reviewing data",
+          "Medir resultados una sola vez y no hacer cambios posteriores / Measure results only once and make no later changes",
+          "Mantener las mismas acciones aunque los resultados no cumplan los objetivos / Keep the same actions even when results do not meet objectives"
+        ]
+      },
+      "answer": 0,
+      "feedback": {
+        "es": "Respuesta de referencia: Analizar resultados, identificar aprendizajes, probar ajustes y volver a medir / Analyze results, identify learnings, test adjustments, and measure again",
+        "en": "Reference answer: Analizar resultados, identificar aprendizajes, probar ajustes y volver a medir / Analyze results, identify learnings, test adjustments, and measure again"
+      }
+    }
+  ]
+}

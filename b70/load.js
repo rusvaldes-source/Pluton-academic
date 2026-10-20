@@ -13,6 +13,6 @@
   if(!current||current.id!==user.id){subscription.data.subscription.unsubscribe();message('La sesión cambió. Vuelve a entrar.','The session changed. Sign in again.',true);return}
   if(readError||!data?.payload||data.payload.code!==code)throw Error('content');
   window.PlutonCourseClient=client;window.PlutonCourseData=data.payload;window.PlutonCourseUserId=user.id;
-  const script=document.createElement('script');script.src='../../b70/aula.js?v=b80';script.onerror=()=>message('No se pudo abrir el curso. Reintenta.','Could not open the course. Please retry.');document.body.append(script);
+  const script=document.createElement('script');script.src='../../b70/aula.js?v=b84';script.onerror=()=>message('No se pudo abrir el curso. Reintenta.','Could not open the course. Please retry.');document.body.append(script);
  }catch{message('No se pudo cargar el curso. Comprueba tu conexión y reintenta.','Could not load the course. Check your connection and retry.')}
 })();
