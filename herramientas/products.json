@@ -1,0 +1,56 @@
+[
+  {
+    "id": "presupuestos",
+    "category": "business",
+    "es": "Presupuestos y facturas",
+    "en": "Estimates and invoices",
+    "descEs": "Documentos Word y PDF, calculadora Excel de 15 conceptos y guía de uso ES/EN.",
+    "descEn": "Word and PDF documents, a 15-item Excel calculator and an ES/EN guide.",
+    "type": "DOCX + XLSX + PDF",
+    "files": [
+      "presupuesto_servicios.docx",
+      "presupuesto_servicios.pdf",
+      "factura_servicios.docx",
+      "factura_servicios.pdf",
+      "presupuestos_facturas.xlsx",
+      "guia_negocios.docx",
+      "guia_negocios.pdf"
+    ]
+  },
+  {
+    "id": "clientes",
+    "category": "business",
+    "es": "Organización de clientes",
+    "en": "Client organization",
+    "descEs": "Registro de clientes, estados, próximas acciones y avisos de seguimiento en Excel.",
+    "descEn": "Track clients, statuses, next steps and follow-up alerts in Excel.",
+    "type": "XLSX + PDF",
+    "files": [
+      "seguimiento_clientes.xlsx",
+      "guia_clientes.docx",
+      "guia_clientes.pdf"
+    ]
+  },
+  {
+    "id": "empleo",
+    "category": "career",
+    "es": "Búsqueda de empleo",
+    "en": "Job search",
+    "descEs": "Tres modelos de currículum, carta de presentación y seguimiento de solicitudes.",
+    "descEn": "Three resume templates, a cover letter and an application tracker.",
+    "type": "DOCX + XLSX + PDF",
+    "files": [
+      "cv_primer_empleo.docx",
+      "cv_primer_empleo.pdf",
+      "cv_administracion.docx",
+      "cv_administracion.pdf",
+      "cv_servicios.docx",
+      "cv_servicios.pdf",
+      "carta_presentacion.docx",
+      "carta_presentacion.pdf",
+      "seguimiento_empleo.xlsx",
+      "guia_empleo.docx",
+      "guia_empleo.pdf"
+    ]
+  }
+]

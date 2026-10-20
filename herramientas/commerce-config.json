@@ -1,0 +1,8 @@
+{
+  "provider": null,
+  "checkoutEnabled": false,
+  "downloadsEnabled": false,
+  "publicAssetUrls": [],
+  "fulfillment": "requires_server_verified_purchase",
+  "prices": "pending_owner_approval"
+}
