@@ -8,4 +8,4 @@
 
 /* B86: original home covers fill the same 16:9 frame without letterboxing. */
 #courseList .pa-b22-course-visual{height:auto!important;max-height:none!important;aspect-ratio:16/9!important;background:#081a32;overflow:hidden;position:relative}
-#courseList .pa-b22-course-visual img{display:block;position:absolute;inset:0;width:100%!important;height:100%!important;max-height:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center 30%!important}
+#courseList .pa-b22-course-visual img{display:block;position:absolute;inset:0;width:100%!important;height:100%!important;max-height:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center top!important}
