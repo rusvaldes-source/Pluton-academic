@@ -1,12 +1,13 @@
 {
-  "video_id": "4eeb2c997c26980d703fb02abbaa89bd",
-  "avatar_id": "f58c30d6a88b489f959dbeb8bd4e44cc",
+  "key": "b90",
+  "video_id": "aae032c87c1ed8458dc23b224b52dac5",
+  "rejected_video_id": "4eeb2c997c26980d703fb02abbaa89bd",
+  "duration_seconds": 24.18938775510204,
   "voice_id": "9dcc4188924741c18bd74292330208e2",
-  "status": "generation_pending",
-  "local_file": "presentacion.mp4",
-  "audio_language": "es",
-  "transcript_languages": [
-    "es",
-    "en"
-  ]
+  "avatar_id": "f58c30d6a88b489f959dbeb8bd4e44cc",
+  "speech_engine": "elevenlabs",
+  "speech_model": "eleven_multilingual_v2",
+  "language": "es",
+  "locale_override": null,
+  "status": "processing_accent_review_pending"
 }

@@ -13,3 +13,6 @@ Solo se guarda la preferencia pluton-lang. Los ejercicios no envían respuestas 
 
 ## Despliegue
 No actualizar main hasta disponer de ambos videos locales verificados y completar la revisión. Mantener la rama B91-Publicacion-Ingles-Biblioteca como punto de recuperación. Verificar después rutas, Content-Type de videos y contenido público.
+
+## Corrección de voz solicitada por el propietario
+El propietario rechazó el acento español de España. Las primeras generaciones usaban locale es-ES y quedan excluidas. Se confirmó la voz privada Ruslan Valdes — Voz real ES. Se generó audio ES con esa voz mediante eleven_multilingual_v2, sin región forzada, y se pasó ese audio exacto a nuevos renders del mismo avatar. El acento resultante requiere escucha; no se declara aprobado por el propietario ni se publica todavía.
