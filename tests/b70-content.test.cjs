@@ -13,5 +13,7 @@ test('authenticated classroom package has full bilingual lessons and no video re
 });
 test('no new protected content is stored as public course.json',()=>{
  for(const name of ['na101','comp101'])assert.equal(fs.existsSync('b70/'+name+'/course.json'),false);
- assert.ok(fs.readFileSync('b70/load.js','utf8').includes('course_learning_content'));
+ assert.ok(fs.readFileSync('b70/load.js','utf8').includes('PlutonPublishedContent.load(code,client)'));
+ assert.ok(fs.readFileSync('b95/course-loader.js','utf8').includes('b95_course_published'));
+ assert.ok(fs.readFileSync('supabase/migrations/20261021_b95_course_editor.sql','utf8').includes('security invoker'));
 });

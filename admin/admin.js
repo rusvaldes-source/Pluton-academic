@@ -4,7 +4,11 @@
 const $ = id => document.getElementById(id);
 const status = msg => { $('status').textContent = msg; };
 let sb, language = (()=>{try{return localStorage.getItem('pluton-lang')==='en'?'en':'es'}catch{return 'es'}})(), authRevision = 0, authUserId = null, recoveryMode = false;
+let privateModules = [];
 function clearPrivateData() {
+  for (const module of privateModules) { try { module?.unmount?.(); } catch {} }
+  for (const id of ['courseEditor','certificatesEditor']) $(id)?.replaceChildren();
+  privateModules = [];
   for (const id of ['studentsRows','newsList','reportsList']) $(id).replaceChildren();
   for (const id of ['studentsStatus','newsStatus','reportsStatus','who']) $(id).textContent = '';
   $('newsForm').reset();
@@ -37,6 +41,7 @@ $('language').addEventListener('click', () => {
   language = language === 'es' ? 'en' : 'es';
   try { localStorage.setItem('pluton-lang', language); } catch {}
   translate();
+  for (const module of privateModules) module?.setLanguage?.(language);
 });
 translate();
 async function init() {
@@ -105,6 +110,13 @@ async function refresh() {
   $('private').hidden = false;
   $('who').textContent = user.email || '';
   status('');
+  const isCurrent = () => revision === authRevision && !$('private').hidden;
+  for (const [api, id] of [[window.PlutonCourseEditor, 'courseEditor'], [window.PlutonCertificates, 'certificatesEditor']]) {
+    if (api && $(id)) {
+      try { privateModules.push(api.mount({client: sb, container: $(id), isCurrent, language})); }
+      catch { $(id).textContent = language === 'es' ? 'No se pudo abrir el módulo. Actualiza el panel.' : 'Could not open module. Refresh the panel.'; }
+    }
+  }
   await reloadData(revision);
 }
 async function reloadData(revision = authRevision) {
