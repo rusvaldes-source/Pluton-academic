@@ -1,0 +1,3 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const file=path.join(__dirname,'../supabase/migrations/20261021_b96_private_rpc_implementations.sql');
+test('hardening migration preserves public interfaces and moves exactly the reviewed privileged implementations',()=>{assert.ok(fs.existsSync(file),'private RPC hardening migration exists');const sql=fs.readFileSync(file,'utf8');assert.match(sql,/security invoker/i);assert.match(sql,/pg_get_function_arguments/);assert.match(sql,/pg_get_function_result/);assert.match(sql,/pronargs/);assert.match(sql,/set schema pluton_rpc_private/i);assert.match(sql,/<>\s*12/);assert.doesNotMatch(sql,/alter function public\.b95_course_published/i);});

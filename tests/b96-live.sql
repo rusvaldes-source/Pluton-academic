@@ -1,0 +1,56 @@
+-- Run only as a database test transaction. Every record below is rolled back.
+begin;
+do $test$
+declare
+ admin_id uuid;
+ cert public.course_certificates;
+ replay public.course_certificates;
+ rev bigint;
+ failed boolean;
+ request uuid := gen_random_uuid();
+ n integer;
+begin
+ select user_id into admin_id from public.support_admins limit 1;
+ if admin_id is null then raise exception 'No admin fixture'; end if;
+ perform set_config('request.jwt.claims',jsonb_build_object('sub',admin_id,'role','authenticated')::text,true);
+ execute 'set local role authenticated';
+ select revision into rev from public.b96_certificate_courses() where course_code='COMP-101';
+ if rev is null then raise exception 'Missing course fixture'; end if;
+ cert := public.b96_issue_certificate(request,admin_id,'PRUEBA EN TRANSACCION REVERTIDA','COMP-101',rev,current_date,'Evidencia ficticia usada exclusivamente dentro de una prueba revertida.','es',true);
+ if cert.status <> 'issued' or cert.issued_by <> admin_id then raise exception 'Issuance mismatch'; end if;
+ replay := public.b96_issue_certificate(request,admin_id,'PRUEBA EN TRANSACCION REVERTIDA','COMP-101',rev,current_date,'Evidencia ficticia usada exclusivamente dentro de una prueba revertida.','es',true);
+ if replay.id <> cert.id then raise exception 'Replay issued duplicate'; end if;
+ select count(*) into n from public.b96_verify_certificate(cert.verification_code) where status='issued';
+ if n<>1 then raise exception 'Verification mismatch'; end if;
+ failed := false;
+ begin perform public.b96_issue_certificate(gen_random_uuid(),admin_id,'PRUEBA','NA-101',rev,current_date,'Evidencia ficticia para comprobar bloqueo de enfermeria.','es',true); exception when others then failed:=true; end;
+ if not failed then raise exception 'NA-101 not blocked'; end if;
+ failed := false;
+ begin perform public.b96_issue_certificate(gen_random_uuid(),admin_id,'PRUEBA','COMP-101',rev+9000,current_date,'Evidencia ficticia para comprobar conflicto de version.','es',true); exception when others then failed:=true; end;
+ if not failed then raise exception 'Revision not checked'; end if;
+ cert := public.b96_revoke_certificate(cert.id,'Revocacion de prueba revertida');
+ select count(*) into n from public.b96_verify_certificate(cert.verification_code) where status='revoked';
+ if n<>1 then raise exception 'Revocation mismatch'; end if;
+ failed:=false;
+ begin execute 'select * from public.course_certificates'; exception when insufficient_privilege then failed:=true; end;
+ if not failed then raise exception 'Direct browser read allowed'; end if;
+ perform set_config('request.jwt.claims',jsonb_build_object('sub',gen_random_uuid(),'role','authenticated')::text,true);
+ failed:=false;
+ begin perform public.b96_list_certificates(); exception when insufficient_privilege then failed:=true; end;
+ if not failed then raise exception 'Nonadmin list allowed'; end if;
+ failed:=false;
+ begin perform public.b96_revoke_certificate(cert.id,'Unauthorized request should fail'); exception when insufficient_privilege then failed:=true; end;
+ if not failed then raise exception 'Nonadmin revoke allowed'; end if;
+ execute 'reset role';
+ perform set_config('request.jwt.claims','{"role":"anon"}',true);
+ execute 'set local role anon';
+ select count(*) into n from public.b96_verify_certificate(cert.verification_code) where status='revoked';
+ if n<>1 then raise exception 'Anonymous verification unavailable'; end if;
+ failed:=false;
+ begin perform public.b96_list_certificates(); exception when insufficient_privilege then failed:=true; end;
+ if not failed then raise exception 'Anon admin RPC allowed'; end if;
+ execute 'reset role';
+end;
+$test$;
+rollback;
+select 'B96 live transactional checks PASS; all test records rolled back' as result;
