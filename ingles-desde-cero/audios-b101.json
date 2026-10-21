@@ -1,0 +1,161 @@
+{
+  "version": "B101",
+  "narrations": 11,
+  "supporting_recordings": 3,
+  "audio_files": [
+    {
+      "lesson": "ID001-01-01",
+      "language": "es",
+      "kind": "narration",
+      "file": "audios/ID001-01-01-es.mp3",
+      "original": "heygen-speech.wav (3).mp3",
+      "bytes": 2210168,
+      "sha256": "2932f9f18f602b850bd1d1b23eddaea99506925ee65388e6f989bfb827200c36",
+      "duration_seconds": 69.068,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-01-01",
+      "language": "en",
+      "kind": "narration",
+      "file": "audios/ID001-01-01-en.mp3",
+      "original": "heygen-speech.wav.mp3",
+      "bytes": 1819794,
+      "sha256": "422a78acfa6d956d7d9150626192176797cb968aa36f8b1fe3b9dc9e0c5d31c6",
+      "duration_seconds": 56.869,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-01-02",
+      "language": "en",
+      "kind": "narration",
+      "file": "audios/ID001-01-02-en.mp3",
+      "original": "heygen-speech.wav (7).mp3",
+      "bytes": 3431444,
+      "sha256": "93beac550e71281fb36c996126b2d0f340924ef29685c1c85502c26aee1d8bf1",
+      "duration_seconds": 107.233,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-01-02",
+      "language": "es",
+      "kind": "narration",
+      "file": "audios/ID001-01-02-es.mp3",
+      "original": "heygen-speech.wav (8).mp3",
+      "bytes": 3555996,
+      "sha256": "9a2269bebc674bbab1a7620684dd4c5ed8c115ffae404ed09404a8639b131bfd",
+      "duration_seconds": 111.125,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-01-03",
+      "language": "es",
+      "kind": "narration",
+      "file": "audios/ID001-01-03-es.mp3",
+      "original": "heygen-speech.wav (9).mp3",
+      "bytes": 2670759,
+      "sha256": "5d9d6af368db7ec3ac1570eaad4cc268a6e75ff6003a1fc3b38130ef31f80ffd",
+      "duration_seconds": 83.461,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-01-03",
+      "language": "en",
+      "kind": "narration",
+      "file": "audios/ID001-01-03-en.mp3",
+      "original": "heygen-speech.wav (10).mp3",
+      "bytes": 1967751,
+      "sha256": "6d99caaf7f967b33a369c012e6ebe5aa4ceb69e65f4acbfd260983eddcd62518",
+      "duration_seconds": 61.492,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-08-01",
+      "language": "es",
+      "kind": "narration",
+      "file": "audios/ID001-08-01-es.mp3",
+      "original": "heygen-speech.wav (11).mp3",
+      "bytes": 3118811,
+      "sha256": "67b6bb3155a9cbb0e7567120734c231adb22526746cd8b3b7f0b0a1c4797fe8c",
+      "duration_seconds": 97.463,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-08-01",
+      "language": "en",
+      "kind": "narration",
+      "file": "audios/ID001-08-01-en.mp3",
+      "original": "heygen-speech.wav (12).mp3",
+      "bytes": 2313822,
+      "sha256": "0d6a8df5e44859248df78bb65b38aefdd80866058bd8d967ffbce47e22bb9471",
+      "duration_seconds": 72.307,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-08-02",
+      "language": "es",
+      "kind": "narration",
+      "file": "audios/ID001-08-02-es.mp3",
+      "original": "heygen-speech.wav (13).mp3",
+      "bytes": 2929058,
+      "sha256": "11470c62cf6c250f3830df743224e942e989e333836a5ed7099b10ab5e87efc2",
+      "duration_seconds": 91.533,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-08-02",
+      "language": "en",
+      "kind": "narration",
+      "file": "audios/ID001-08-02-en.mp3",
+      "original": "heygen-speech.wav (14).mp3",
+      "bytes": 2277041,
+      "sha256": "34cf0cddd92bb2eb8143ad2ed003d9a38d5b489cc4525860379c73ba14899e17",
+      "duration_seconds": 71.158,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-08-03",
+      "language": "es",
+      "kind": "narration",
+      "file": "audios/ID001-08-03-es.mp3",
+      "original": "heygen-speech.wav (15).mp3",
+      "bytes": 3021009,
+      "sha256": "232fa1e4a006dcc2c2be13506ffc5655bc61ba564d692cf43319ad9467d9915e",
+      "duration_seconds": 94.407,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-08-01",
+      "language": "es",
+      "kind": "support",
+      "file": "audios/ID001-08-01-es-apoyo.mp3",
+      "original": "heygen-speech.wav (4).mp3",
+      "bytes": 579291,
+      "sha256": "5c7cb3718fceadcdb830a3ebf25629863be57de3c8c07f44582d11157b5e4ab0",
+      "duration_seconds": 18.103,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-08-02",
+      "language": "es",
+      "kind": "support",
+      "file": "audios/ID001-08-02-es-apoyo.mp3",
+      "original": "heygen-speech.wav (5).mp3",
+      "bytes": 594338,
+      "sha256": "f82a41d088efb8619498b91f4fac885aca95fa916e3299ecc788c8851ac0ebe3",
+      "duration_seconds": 18.573,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    },
+    {
+      "lesson": "ID001-08-03",
+      "language": "es",
+      "kind": "support",
+      "file": "audios/ID001-08-03-es-apoyo.mp3",
+      "original": "heygen-speech.wav (6).mp3",
+      "bytes": 580963,
+      "sha256": "2c181ff1ea44d4368d522aaa191940dca026a747dac0288d743f97e47f963416",
+      "duration_seconds": 18.155,
+      "matching": "Tema e idioma cotejados por transcripción automática; no certifica calidad de pronunciación."
+    }
+  ]
+}
