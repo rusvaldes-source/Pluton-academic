@@ -225,7 +225,7 @@ button.pa-favorite-toggle:focus-visible { outline:3px solid #fff; outline-offset
 .pa-b53-business-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .pa-b53-business-grid article{background:linear-gradient(160deg,#102b50,#07182d);border:1px solid #b99b55;border-radius:16px;padding:22px;color:#f7f7fa;min-width:0}
 .pa-b53-business-grid h3{font-size:1.12rem;margin:0 0 14px;color:#e6c57b}
-.pa-b53-business-grid strong{font-size:2rem;display:block}
+.pa-b53-business-grid strong{font-size:2rem;display:block;color:var(--gold,#d9b565)}
 .pa-b53-business-grid small{display:block;color:#c5d3e8}
 .pa-b53-business-grid p{line-height:1.55}
 .pa-b53-business-note{margin:20px 0 12px;font-size:.9rem;opacity:.85}
