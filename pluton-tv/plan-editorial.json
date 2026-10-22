@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "status": "planificacion_no_publicado",
+  "objective": "Canal educativo gratuito que atraiga audiencia y motive suscripciones a PLUTÓN ACADEMIC sin publicar cursos completos.",
+  "rules": {
+    "course_videos": "Solo avances cortos aprobados por el fundador; nunca reutilizar lecciones completas.",
+    "external_videos": "Comprobar por archivo licencia para uso comercial, descarga, retransmision, adaptacion y atribucion.",
+    "publishing": "Probar cada video por separado en rama de pruebas. Sin cambios a produccion hasta aprobacion.",
+    "sequence": "Un video por vez: localizar, verificar derechos, guardar copia estable, probar y aprobar."
+  },
+  "weekly_slots": [
+    {
+      "days": "lunes a sabado",
+      "segment": "PLUTÓN DESCUBRE",
+      "topics": [
+        "ciencia",
+        "historia",
+        "astronomia",
+        "cultura"
+      ],
+      "source": "original o licencia verificada"
+    },
+    {
+      "days": "lunes a sabado",
+      "segment": "PLUTÓN APRENDE",
+      "topics": [
+        "ingles practico",
+        "herramientas digitales",
+        "IA",
+        "salud general"
+      ],
+      "source": "capsulas originales o avances aprobados"
+    },
+    {
+      "days": "lunes a sabado",
+      "segment": "PLUTÓN EMPRENDE",
+      "topics": [
+        "negocios",
+        "finanzas personales",
+        "empleo"
+      ],
+      "source": "original o licencia verificada"
+    },
+    {
+      "days": "domingo",
+      "segment": "Domingos de Fe, Familia y Esperanza",
+      "topics": [
+        "familia",
+        "solidaridad",
+        "valores",
+        "esperanza",
+        "respeto a diversas creencias"
+      ],
+      "source": "original o licencia verificada"
+    }
+  ],
+  "first_external_candidate": {
+    "id": "orbits-lucorient-2014",
+    "license_checked": true,
+    "download_verified": false,
+    "playback_verified": false,
+    "approved_for_air": false
+  }
+}
