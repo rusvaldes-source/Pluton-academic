@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publication_status": "candidate_only_not_on_air",
+  "publication_status": "one_test_branch_video_no_production",
   "items": [
     {
       "id": "orbits-lucorient-2014",
@@ -14,8 +14,9 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
       "credit": "Orbits — Lucorient — CC BY-SA 3.0 — Wikimedia Commons. Sin modificaciones.",
       "usage": "Se permite reutilización comercial con atribución; adaptaciones sujetas a compartir igual.",
-      "status": "licencia_revisada_pendiente_descarga_y_prueba",
-      "approved_for_air": false
+      "status": "android_initial_playback_confirmed_added_to_test_branch_pending_full_tv_validation",
+      "approved_for_air": false,
+      "approved_for_test_branch": true
     }
   ]
 }
