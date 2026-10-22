@@ -1,0 +1,47 @@
+{
+  "channel": "PLUTÓN TV",
+  "version": 1,
+  "updated": "2026-10-22",
+  "items": [
+    {
+      "id": "bienvenida",
+      "type": "card",
+      "section": "PLUTÓN EDUCA",
+      "title": "Tu futuro comienza con conocimiento",
+      "description": "Aprende con PLUTÓN ACADEMIC. Educación práctica y accesible.",
+      "duration": 12
+    },
+    {
+      "id": "familia",
+      "type": "card",
+      "section": "PLUTÓN FAMILIA",
+      "title": "15 minutos para conversar",
+      "description": "Dedica un momento sin pantallas para escuchar y compartir en familia.",
+      "duration": 15
+    },
+    {
+      "id": "noticias",
+      "type": "news",
+      "section": "PLUTÓN INFORMA",
+      "title": "Noticias de salud, tecnología y educación",
+      "duration": 15,
+      "category": "tecnologia"
+    },
+    {
+      "id": "emprende",
+      "type": "card",
+      "section": "PLUTÓN EMPRENDE",
+      "title": "Cada proyecto comienza con una idea",
+      "description": "Aprende, comparte y transforma tus conocimientos en oportunidades.",
+      "duration": 12
+    },
+    {
+      "id": "anunciante",
+      "type": "card",
+      "section": "ESPACIO PUBLICITARIO",
+      "title": "Tu negocio puede anunciarse aquí",
+      "description": "Espacio reservado para patrocinadores autorizados. Sin anunciante contratado.",
+      "duration": 10
+    }
+  ]
+}
