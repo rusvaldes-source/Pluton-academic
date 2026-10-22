@@ -28,14 +28,14 @@ export async function onRequestGet({env,request}){
   for(const endpoint of endpoints){
     try{
       const response=await fetch(endpoint,{headers:{Accept:'application/rss+xml, application/xml, text/xml'},signal:AbortSignal.timeout(7000)});
-      if(!response.ok){errors.push('HTTP '+response.status);continue}
+      if(!response.ok){errors.push(new URL(endpoint).hostname+':HTTP '+response.status);continue}
       const items=parse(await response.text());
       if(items.length)return json({items,category,lang,source:lang==='es'&&endpoint===google.toString()?'es':'en'});
-      errors.push('empty feed');
-    }catch(error){errors.push(error instanceof Error?error.name:'unknown')}
+      errors.push(new URL(endpoint).hostname+':empty feed');
+    }catch(error){errors.push(new URL(endpoint).hostname+':'+(error instanceof Error?error.name:'unknown'))}
   }
   console.error('news feeds failed',category,errors.join(','));
-  return json({items:[],error:'News feed unavailable'},502);
+  return json({items:[],error:'News feed unavailable',diagnostic:errors,revision:'news-diag-1'},502);
 }
 export async function onRequest({request,env}) {
   if(request.method!=='GET')return json({error:'Method not allowed'},405);
