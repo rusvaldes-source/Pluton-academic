@@ -17,12 +17,12 @@ Estado: **NO APROBADO PARA PUBLICACIÓN**. Prototipo privado. No modificar la ra
 | Noticias fuera de servicio | Pendiente | El canal continúa funcionando |
 | Domingos de Fe, Familia y Esperanza | Pendiente | Aparece solamente los domingos |
 | Videos sin autorización | Protección implementada; prueba pendiente | No aparecen en rotación |
-| Primer video externo Orbits.webm | **NO VERIFICADO** | Reproduce imagen y avanza al menos 3 s |
+| Primer video externo Orbits.webm | **INICIO DE REPRODUCCIÓN CONFIRMADO EN ANDROID POR CAPTURA DEL USUARIO**; avance continuo ≥3 s y audio sin evidencia concluyente | Reproduce imagen y avanza al menos 3 s |
 | Editor copiar/pegar de PLUTÓN TV | Implementado en página de pruebas; sin autenticación ni publicación | Enlace directo HTTPS, título, derechos, vista previa y ficha de borrador |
 | Confirmación de reproducción en editor | Implementada; pendiente prueba en navegador | Señal visible al avanzar 3 s, sin aprobar automáticamente |
 | Administración privada y publicación | **NO IMPLEMENTADO** | Solo el administrador autenticado puede guardar y publicar; cambios reflejados en TV |
 | Sonido | Pendiente | Silenciar/activar funciona en navegador |
-| Android / móvil | Pendiente | Controles visibles, video reproducible |
+| Android / móvil | Página aislada abierta en Chrome y reproducción iniciada según captura; controles de TV completos pendientes | Controles visibles, video reproducible |
 | Computadora | Pendiente | Controles y reproducción correctos |
 | Accesibilidad básica | Pendiente | Botones operables con teclado y etiquetas claras |
 | Derechos de reproducción | Licencia CC BY-SA 3.0 identificada; revisión final pendiente | Créditos y obligaciones aplicables documentados |
@@ -40,3 +40,7 @@ Estado: **NO APROBADO PARA PUBLICACIÓN**. Prototipo privado. No modificar la ra
 ## Condiciones de salida
 
 No declarar PLUTÓN TV terminado ni autorizar publicación hasta verificar en dispositivos reales, disponer de un video con fuente estable, confirmar los permisos de cada pieza y recibir autorización explícita del fundador.
+
+## Evidencia de prueba en teléfono — 22 octubre 2026
+
+El fundador descargó `prueba-video-externo.html` de GitHub, lo abrió en Chrome para Android y compartió una captura con imagen del video y el mensaje «Reproducción iniciada». Confirmó verbalmente que la prueba le parecía correcta. **Alcance:** se verifica apertura del archivo local y comienzo de reproducción del video externo. No se ha recibido un informe técnico con tiempo transcurrido ≥3 segundos ni prueba independiente del sonido, del reproductor completo de PLUTÓN TV o de su publicación web. Mantener el video sin aprobación para emisión automática.
