@@ -1,0 +1,17 @@
+{
+  "channel": "PLUTÓN TV",
+  "status": "preparacion",
+  "policy": "Integrar uno por uno; no usar enlaces temporales de HeyGen en produccion.",
+  "videos": [
+    {
+      "id": "biblioteca-presentacion-ruslan",
+      "title": "Biblioteca profesional · Presentación de Ruslan",
+      "heygen_video_id": "aae032c87c1ed8458dc23b224b52dac5",
+      "heygen_page": "https://app.heygen.com/videos/aae032c87c1ed8458dc23b224b52dac5",
+      "duration_seconds": 24.1894,
+      "status": "verificado_en_heygen_pendiente_copia_estable",
+      "approved_for_tv": false,
+      "permanent_src": null
+    }
+  ]
+}
