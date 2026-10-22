@@ -29,9 +29,14 @@
       "heygen_video_id": "649c942ce17b0d7c914406c841b70b03",
       "heygen_page": "https://app.heygen.com/videos/649c942ce17b0d7c914406c841b70b03",
       "duration_seconds": 56.4767,
-      "status": "solo_extracto_pendiente",
+      "status": "original_localizado_en_storage_pendiente_extracto_publico",
       "approved_for_tv": false,
-      "permanent_src": null
+      "permanent_src": null,
+      "source_storage": {
+        "provider": "supabase",
+        "bucket": "pa203-videos",
+        "object": "PA-203_Leccion_04_649c942ce17b0d7c914406c841b70b03.mp4"
+      }
     },
     {
       "id": "adays-pa203-l5",
