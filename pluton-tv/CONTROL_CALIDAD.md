@@ -9,6 +9,9 @@ Estado: **NO APROBADO PARA PUBLICACIÓN**. Prototipo privado. No modificar la ra
 | Estructura y código de la página | Pendiente de ejecución en navegador | Carga sin errores JavaScript |
 | Programación desde JSON | Pendiente | Se muestran los espacios correctos |
 | Cambio automático entre tarjetas | Pendiente | Avanza sin congelarse |
+| Modo biblioteca bajo demanda | Implementado; prueba en navegador pendiente | Seleccionar una tarjeta detiene el avance automático y permite cambiar manualmente |
+| Cambio de biblioteca a TV | Implementado; prueba en navegador pendiente | Al desactivar modo biblioteca vuelve la rotación automática |
+| Fin de video en biblioteca | Implementado; prueba en navegador pendiente | No salta al siguiente video sin elección del visitante |
 | Pausar y reanudar | Pendiente | El contador se detiene y continúa |
 | Avance manual | Pendiente | Cambia de programa sin mezclar datos |
 | Noticias fuera de servicio | Pendiente | El canal continúa funcionando |
