@@ -4,7 +4,7 @@
 const json=(value,status=200)=>new Response(JSON.stringify(value),{status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 export async function onRequestGet({env,request}){
   const base=env.PLUTON_SUPABASE_URL;
-  const secret="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBhaWZqenpueWllaHdpZG9xanFiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTExMjkyNzcsImV4cCI6MjEwNjcwNTI3N30.JQTcl818gsTe82y8WYHooEiWWKdJxRNmEbPnk0fkQ10";
+  const secret=env.PLUTON_SUPABASE_SERVICE_ROLE_KEY || env.PLUTON_SUPABASE_ANON_KEY;
   if(!base||!secret)return json({error:'News service not configured'},503);
   let url;
   try{url=new URL(base);if(url.protocol!=='https:'||!url.hostname.endsWith('.supabase.co')||url.username||url.password||url.search||url.hash||url.pathname!=='/')throw Error('Invalid URL')}
@@ -21,7 +21,7 @@ export async function onRequestGet({env,request}){
   endpoint.searchParams.set('offset',String(offset));
   try{
     const response=await fetch(endpoint,{headers:{apikey:secret,Authorization:'Bearer '+secret,Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(8000)});
-    if(!response.ok){ console.error('news upstream non-OK',response.status); return json({error:'News temporarily unavailable',upstream_status:response.status},502); }
+    if(!response.ok){ const detail=await response.json().catch(()=>null); const upstreamCode=typeof detail?.code==='string'?detail.code:null; console.error('news upstream non-OK',response.status,upstreamCode); return json({error:'News temporarily unavailable',upstream_status:response.status,upstream_code:upstreamCode},502); }
     const data=await response.json();
     if(!Array.isArray(data))return json({error:'Unexpected response'},502);
     const clean=data.filter(x=>x&&x.status==='published'&&x.published_at&&x.title_es&&x.title_en).map(x=>({
