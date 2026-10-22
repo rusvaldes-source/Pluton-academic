@@ -19,9 +19,10 @@
       "heygen_video_id": "50a8498d36cda8110ffe92c4332e72c7",
       "heygen_page": "https://app.heygen.com/videos/50a8498d36cda8110ffe92c4332e72c7",
       "duration_seconds": 24.32,
-      "status": "candidato_promocional",
+      "status": "heygen_confirmado_24s_pendiente_copia_mp4_estable",
       "approved_for_tv": false,
-      "permanent_src": null
+      "permanent_src": null,
+      "next_step": "Subir MP4 a almacenamiento permanente y probar reproducción; no usar URL temporal HeyGen"
     },
     {
       "id": "adays-pa203-l4",
