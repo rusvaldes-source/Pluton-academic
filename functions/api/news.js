@@ -18,7 +18,7 @@ export async function onRequestGet({env,request}){
     if(!response.ok)return json({items:[],error:'News feed unavailable'},502);
     const xml=await response.text();
     const entries=xml.match(/<item[ >][\s\S]*?<\/item>/g)||[];
-    const get=(entry,name)=>{const match=entry.match(new RegExp('<'+name+'(?: [^>]*)?>([\s\S]*?)<\/'+name+'>'));return match?match[1].replace(/^<!\[CDATA\[/,'').replace(/\]\]>$/,'').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").trim():''};
+    const get=(entry,name)=>{const start=entry.indexOf('<'+name);if(start<0)return '';const open=entry.indexOf('>',start);const close=entry.indexOf('</'+name+'>',open);if(open<0||close<0)return '';return entry.slice(open+1,close).replace(/^<!\[CDATA\[/,'').replace(/\]\]>$/,'').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").trim()};
     const items=entries.map(entry=>({title:get(entry,'title'),source:get(entry,'source'),link:get(entry,'link')})).filter(x=>x.title&&x.link.startsWith('https://')).slice(0,12);
     return json({items});
   }catch(error){console.error('news feed error',error instanceof Error?error.name:'unknown');return json({items:[],error:'News feed unavailable'},502)}
