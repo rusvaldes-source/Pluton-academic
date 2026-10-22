@@ -1,0 +1,81 @@
+{
+  "timezone": "America/New_York",
+  "status": "propuesta_pendiente_aprobacion",
+  "days": [
+    {
+      "day": 1,
+      "name": "Lunes",
+      "theme": "Tecnología e inteligencia artificial"
+    },
+    {
+      "day": 2,
+      "name": "Martes",
+      "theme": "Emprendimiento y negocios"
+    },
+    {
+      "day": 3,
+      "name": "Miércoles",
+      "theme": "Familia y comunidad"
+    },
+    {
+      "day": 4,
+      "name": "Jueves",
+      "theme": "Salud y bienestar"
+    },
+    {
+      "day": 5,
+      "name": "Viernes",
+      "theme": "Noticias y oportunidades"
+    },
+    {
+      "day": 6,
+      "name": "Sábado",
+      "theme": "Educación para todos"
+    },
+    {
+      "day": 0,
+      "name": "Domingo",
+      "theme": "Fe, Familia y Esperanza",
+      "notes": "Contenido religioso voluntario y plural. Retransmisiones solo con permiso o integración autorizada."
+    }
+  ],
+  "blocks": [
+    {
+      "start": "06:00",
+      "end": "09:00",
+      "type": "tema_del_dia"
+    },
+    {
+      "start": "09:00",
+      "end": "12:00",
+      "type": "educacion"
+    },
+    {
+      "start": "12:00",
+      "end": "15:00",
+      "type": "noticias_entrevistas_anunciantes"
+    },
+    {
+      "start": "15:00",
+      "end": "18:00",
+      "type": "repeticion_tema_del_dia"
+    },
+    {
+      "start": "18:00",
+      "end": "22:00",
+      "type": "familia_especial"
+    },
+    {
+      "start": "22:00",
+      "end": "06:00",
+      "type": "repeticion_nocturna"
+    }
+  ],
+  "rules": [
+    "Horarios propuestos, no implementados aún en el reproductor.",
+    "Los anuncios van entre contenidos; nunca cortan misa, entrevista o lección.",
+    "La reproducción automática de video con sonido está restringida por navegadores.",
+    "Fuentes externas requieren derechos y permisos de integración.",
+    "Mantener main y la página pública intactos hasta aprobación y pruebas."
+  ]
+}
