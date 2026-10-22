@@ -12,6 +12,46 @@
       "status": "verificado_en_heygen_pendiente_copia_estable",
       "approved_for_tv": false,
       "permanent_src": null
+    },
+    {
+      "id": "intro-ingles-ruslan",
+      "title": "Inglés desde cero · Presentación · Ruslan",
+      "heygen_video_id": "50a8498d36cda8110ffe92c4332e72c7",
+      "heygen_page": "https://app.heygen.com/videos/50a8498d36cda8110ffe92c4332e72c7",
+      "duration_seconds": 24.32,
+      "status": "candidato_promocional",
+      "approved_for_tv": false,
+      "permanent_src": null
+    },
+    {
+      "id": "adays-pa203-l4",
+      "title": "PA-203 · Lección 4 · Presentadora Adays",
+      "heygen_video_id": "649c942ce17b0d7c914406c841b70b03",
+      "heygen_page": "https://app.heygen.com/videos/649c942ce17b0d7c914406c841b70b03",
+      "duration_seconds": 56.4767,
+      "status": "solo_extracto_pendiente",
+      "approved_for_tv": false,
+      "permanent_src": null
+    },
+    {
+      "id": "adays-pa203-l5",
+      "title": "PA-203 · Lección 5 · Presentadora Adays",
+      "heygen_video_id": "05423b95514bd66e8608b753dfd44a00",
+      "heygen_page": "https://app.heygen.com/videos/05423b95514bd66e8608b753dfd44a00",
+      "duration_seconds": 57.3127,
+      "status": "solo_extracto_pendiente",
+      "approved_for_tv": false,
+      "permanent_src": null
+    },
+    {
+      "id": "adays-pa203-l6",
+      "title": "PA-203 · Lección 6 · Presentadora Adays",
+      "heygen_video_id": "2e07f54d434467a07494e38951d85a17",
+      "heygen_page": "https://app.heygen.com/videos/2e07f54d434467a07494e38951d85a17",
+      "duration_seconds": 55.0139,
+      "status": "solo_extracto_pendiente",
+      "approved_for_tv": false,
+      "permanent_src": null
     }
   ]
 }
