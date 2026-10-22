@@ -7,11 +7,11 @@
 
 | Área | Ruta en la rama | Reproducción real |
 | --- | --- | --- |
-| Inglés desde cero | `pluton-tv/prueba-video-ingles.html` | Pendiente |
-| Herramientas digitales / Adays | `pluton-tv/prueba-adays-pa203.html` | Pendiente |
-| Enfermería | `pluton-tv/prueba-enfermeria.html` | Pendiente |
-| Computación básica | `pluton-tv/prueba-computacion.html` | Pendiente |
-| Marketing digital | `pluton-tv/prueba-marketing.html` | Pendiente |
+| Inglés desde cero | `pluton-tv/prueba-video-ingles.html` | Imagen y audio confirmados por usuario en teléfono; duración completa pendiente de confirmar |
+| Herramientas digitales / Adays | `pluton-tv/prueba-adays-pa203.html` | Imagen y audio confirmados por usuario en teléfono; duración completa pendiente de confirmar |
+| Enfermería | `pluton-tv/prueba-enfermeria.html` | Imagen y audio confirmados por usuario en teléfono; duración completa pendiente de confirmar |
+| Computación básica | `pluton-tv/prueba-computacion.html` | Imagen y audio confirmados por usuario en teléfono; duración completa pendiente de confirmar |
+| Marketing digital | `pluton-tv/prueba-marketing.html` | Imagen y audio confirmados por usuario en teléfono; duración completa pendiente de confirmar |
 | Astronomía / Orbits | `pluton-tv/prueba-video-externo.html` | Reproducción reportada como correcta en Android Chrome; repetir antes del lanzamiento |
 
 ## Cómo aprobar cada prueba en un navegador real
@@ -33,4 +33,4 @@
 
 ## Criterio de cierre
 
-Solo marcar **listo para publicar** cuando los cinco MP4 estén probados en un navegador real, existan clips promocionales separados y se apruebe el canal. Las verificaciones de código por sí solas **no equivalen** a comprobar la reproducción.
+**2026-10-22:** El usuario confirmó haber abierto y visto los cinco MP4 originales desde su teléfono: todos se ven y se escuchan bien. No confirmó expresamente haber visto cada uno hasta el último segundo; esa comprobación sigue pendiente. Los enlaces directos a Supabase no equivalen a probar las páginas HTML ni el avance automático del canal.\n\nSolo marcar **listo para publicar** cuando se compruebe la duración completa y la reproducción en el canal, existan clips promocionales separados y se apruebe la publicación. Las verificaciones de código por sí solas **no equivalen** a comprobar la reproducción.
