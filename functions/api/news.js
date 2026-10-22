@@ -28,7 +28,9 @@ export async function onRequestGet({env,request}){
       id:x.id,title_es:x.title_es,title_en:x.title_en,body_es:x.body_es,body_en:x.body_en,
       status:'published',published_at:x.published_at,video_url:x.video_url
     }));
-    return json(clean);
+    const lang=req.searchParams.get('lang')==='en'?'en':'es';
+    const items=clean.map(x=>({title:lang==='en'?x.title_en:x.title_es,source:'PLUTÓN ACADEMIC',link:x.video_url||''}));
+    return json({items});
   }catch(error){ const kind=error instanceof Error?error.name:'UnknownError'; console.error('news upstream exception',kind); return json({error:'News temporarily unavailable',failure_type:kind},502); }
 }
 export async function onRequest({request,env}) {
