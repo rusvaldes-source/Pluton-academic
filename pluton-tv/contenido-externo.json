@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "publication_status": "candidate_only_not_on_air",
+  "items": [
+    {
+      "id": "orbits-lucorient-2014",
+      "title": "Órbitas de los planetas interiores",
+      "duration_seconds": 48,
+      "topic": "Astronomía y ciencia",
+      "author": "Lucorient",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Orbits.webm",
+      "original_media_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Orbits.webm",
+      "license": "CC BY-SA 3.0 Unported",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "credit": "Orbits — Lucorient — CC BY-SA 3.0 — Wikimedia Commons. Sin modificaciones.",
+      "usage": "Se permite reutilización comercial con atribución; adaptaciones sujetas a compartir igual.",
+      "status": "licencia_revisada_pendiente_descarga_y_prueba",
+      "approved_for_air": false
+    }
+  ]
+}
