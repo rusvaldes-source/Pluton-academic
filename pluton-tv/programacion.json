@@ -1,6 +1,6 @@
 {
   "channel": "PLUTÓN TV",
-  "version": 2,
+  "version": 3,
   "updated": "2026-10-22",
   "items": [
     {
@@ -10,6 +10,22 @@
       "title": "Tu futuro comienza con conocimiento",
       "description": "Aprende con PLUTÓN ACADEMIC. Educación práctica y accesible.",
       "duration": 12
+    },
+    {
+      "id": "promocion-cursos",
+      "type": "card",
+      "section": "CONOCE NUESTROS CURSOS",
+      "title": "Descubre una lección. Continúa aprendiendo.",
+      "description": "PLUTÓN TV comparte pequeñas muestras. Las lecciones completas, actividades y certificados están en PLUTÓN ACADEMIC.",
+      "duration": 16
+    },
+    {
+      "id": "ciencia-cultura",
+      "type": "card",
+      "section": "PLUTÓN DESCUBRE",
+      "title": "Ciencia, historia y cultura para todos",
+      "description": "Próximamente: cápsulas audiovisuales originales y material educativo con derechos de retransmisión verificados.",
+      "duration": 14
     },
     {
       "id": "familia",
@@ -65,5 +81,11 @@
         0
       ]
     }
-  ]
+  ],
+  "policy": {
+    "course_content": "Solo fragmentos promocionales autorizados; nunca lecciones completas ni videos de cursos por defecto.",
+    "external_content": "Exigir licencia compatible con descarga, redistribucion y uso comercial, o permiso expreso; conservar creditos.",
+    "sunday": "Domingos de Fe, Familia y Esperanza solo domingos, inclusivo y respetuoso.",
+    "publishing": "Prototipo separado; produccion requiere aprobacion."
+  }
 }
