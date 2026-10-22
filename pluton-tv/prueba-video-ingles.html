@@ -7,7 +7,10 @@ const end=20;
 v.src=source;
 document.getElementById('play').onclick=async()=>{try{if(v.currentTime>=end)v.currentTime=0;await v.play();s.textContent='Reproduciendo muestra de prueba'}catch(e){s.textContent='No se pudo iniciar: '+e.message}};
 document.getElementById('pause').onclick=()=>{v.pause();s.textContent='Pausado'};
-v.addEventListener('timeupdate',()=>{if(v.currentTime>=end){v.pause();v.currentTime=0;s.textContent='Fin de la muestra de 20 segundos'}});
+function stopAtLimit(){if(v.currentTime>=end){v.pause();v.currentTime=0;s.textContent='Fin de la muestra de 20 segundos';return true}return false}
+v.addEventListener('timeupdate',stopAtLimit);
+v.addEventListener('seeking',()=>{if(v.currentTime>=end){v.currentTime=0;v.pause();s.textContent='La prueba solo permite reproducir los primeros 20 segundos'}});
+v.addEventListener('play',()=>{if(v.currentTime>=end)stopAtLimit()});
 v.addEventListener('loadedmetadata',()=>s.textContent='MP4 cargado · duración original: '+Math.round(v.duration)+' segundos');
 v.addEventListener('error',()=>s.textContent='Error de reproducción: '+(v.error?.code||'desconocido')+'. Revisar URL, permisos y formato MP4.');
 </script></body></html>
