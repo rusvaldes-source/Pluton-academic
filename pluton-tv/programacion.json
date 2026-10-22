@@ -1,6 +1,6 @@
 {
   "channel": "PLUTÓN TV",
-  "version": 4,
+  "version": 5,
   "updated": "2026-10-22",
   "items": [
     {
@@ -39,6 +39,30 @@
       "title": "Ciencia, historia y cultura para todos",
       "description": "Próximamente: cápsulas audiovisuales originales y material educativo con derechos de retransmisión verificados.",
       "duration": 14
+    },
+    {
+      "id": "micro-ciencia-luz",
+      "type": "card",
+      "section": "PLUTÓN DESCUBRE · CIENCIA",
+      "title": "¿Por qué vemos un relámpago antes de oír el trueno?",
+      "description": "La luz viaja muchísimo más rápido que el sonido. Por eso vemos primero el destello y después escuchamos el trueno.",
+      "duration": 18
+    },
+    {
+      "id": "micro-tecnologia-seguridad",
+      "type": "card",
+      "section": "PLUTÓN DIGITAL · TECNOLOGÍA",
+      "title": "Una regla para proteger tus cuentas",
+      "description": "Activa la verificación en dos pasos cuando esté disponible. Aunque alguien descubra tu contraseña, necesitará una segunda comprobación para entrar.",
+      "duration": 20
+    },
+    {
+      "id": "micro-salud-manos",
+      "type": "card",
+      "section": "PLUTÓN BIENESTAR · SALUD",
+      "title": "Un hábito sencillo: lavarse las manos",
+      "description": "Usa agua y jabón y frota todas las superficies durante al menos 20 segundos. Es una medida cotidiana que ayuda a reducir la transmisión de gérmenes.",
+      "duration": 20
     },
     {
       "id": "familia",
