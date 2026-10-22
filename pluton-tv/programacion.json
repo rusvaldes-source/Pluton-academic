@@ -1,6 +1,6 @@
 {
   "channel": "PLUTÓN TV",
-  "version": 3,
+  "version": 4,
   "updated": "2026-10-22",
   "items": [
     {
@@ -18,6 +18,19 @@
       "title": "Descubre una lección. Continúa aprendiendo.",
       "description": "PLUTÓN TV comparte pequeñas muestras. Las lecciones completas, actividades y certificados están en PLUTÓN ACADEMIC.",
       "duration": 16
+    },
+    {
+      "id": "orbits-lucorient-2014",
+      "type": "video",
+      "section": "PLUTÓN DESCUBRE · CIENCIA",
+      "title": "Órbitas de los planetas interiores",
+      "description": "Animación educativa de astronomía sobre el movimiento orbital. Duración aproximada: 48 segundos.",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Orbits.webm",
+      "duration": 48,
+      "approved_for_tv": true,
+      "source_page": "https://commons.wikimedia.org/wiki/File:Orbits.webm",
+      "credit": "Orbits — Lucorient — CC BY-SA 3.0 — Wikimedia Commons",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.es"
     },
     {
       "id": "ciencia-cultura",
