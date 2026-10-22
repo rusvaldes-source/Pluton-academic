@@ -4,7 +4,7 @@
 const json=(value,status=200)=>new Response(JSON.stringify(value),{status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 export async function onRequestGet({env,request}){
   const base=env.PLUTON_SUPABASE_URL;
-  const secret=env.PLUTON_SUPABASE_SERVICE_ROLE_KEY || env.PLUTON_SUPABASE_ANON_KEY;
+  const secret=env.PLUTON_SUPABASE_SERVICE_ROLE_KEY;
   if(!base||!secret)return json({error:'News service not configured'},503);
   let url;
   try{url=new URL(base);if(url.protocol!=='https:'||!url.hostname.endsWith('.supabase.co')||url.username||url.password||url.search||url.hash||url.pathname!=='/')throw Error('Invalid URL')}
