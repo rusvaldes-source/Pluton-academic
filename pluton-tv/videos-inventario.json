@@ -19,10 +19,16 @@
       "heygen_video_id": "50a8498d36cda8110ffe92c4332e72c7",
       "heygen_page": "https://app.heygen.com/videos/50a8498d36cda8110ffe92c4332e72c7",
       "duration_seconds": 24.32,
-      "status": "heygen_confirmado_24s_pendiente_copia_mp4_estable",
+      "status": "presentacion_verificada_y_leccion_1_localizada_extracto_pendiente",
       "approved_for_tv": false,
       "permanent_src": null,
-      "next_step": "Subir MP4 a almacenamiento permanente y probar reproducción; no usar URL temporal HeyGen"
+      "next_step": "Usar presentación corta existente si está alojada en plataforma; localizar su ruta. No enlazar lección completa.",
+      "existing_course_source": {
+        "provider": "supabase",
+        "bucket": "id101-videos",
+        "object": "ID-101_Leccion_01_364eadf048b173cdc8f1594821621e59.mp4",
+        "note": "Lección 1 existente; no confundir con presentación de 24 s ni exponer el MP4 completo en PLUTÓN TV"
+      }
     },
     {
       "id": "adays-pa203-l4",
