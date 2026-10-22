@@ -21,7 +21,7 @@ export async function onRequestGet({env,request}){
   endpoint.searchParams.set('offset',String(offset));
   try{
     const response=await fetch(endpoint,{headers:{apikey:secret,Authorization:'Bearer '+secret,Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(8000)});
-    if(!response.ok)return json({error:'News temporarily unavailable'},502);
+    if(!response.ok){ console.error('news upstream non-OK',response.status); return json({error:'News temporarily unavailable',upstream_status:response.status},502); }
     const data=await response.json();
     if(!Array.isArray(data))return json({error:'Unexpected response'},502);
     const clean=data.filter(x=>x&&x.status==='published'&&x.published_at&&x.title_es&&x.title_en).map(x=>({
@@ -29,7 +29,7 @@ export async function onRequestGet({env,request}){
       status:'published',published_at:x.published_at,video_url:x.video_url
     }));
     return json(clean);
-  }catch{return json({error:'News temporarily unavailable'},502)}
+  }catch(error){ const kind=error instanceof Error?error.name:'UnknownError'; console.error('news upstream exception',kind); return json({error:'News temporarily unavailable',failure_type:kind},502); }
 }
 export async function onRequest({request,env}) {
   if(request.method!=='GET')return json({error:'Method not allowed'},405);
