@@ -18,6 +18,9 @@ Estado: **NO APROBADO PARA PUBLICACIÓN**. Prototipo privado. No modificar la ra
 | Domingos de Fe, Familia y Esperanza | Pendiente | Aparece solamente los domingos |
 | Videos sin autorización | Protección implementada; prueba pendiente | No aparecen en rotación |
 | Primer video externo Orbits.webm | **NO VERIFICADO** | Reproduce imagen y avanza al menos 3 s |
+| Editor copiar/pegar de PLUTÓN TV | Implementado en página de pruebas; sin autenticación ni publicación | Enlace directo HTTPS, título, derechos, vista previa y ficha de borrador |
+| Confirmación de reproducción en editor | Implementada; pendiente prueba en navegador | Señal visible al avanzar 3 s, sin aprobar automáticamente |
+| Administración privada y publicación | **NO IMPLEMENTADO** | Solo el administrador autenticado puede guardar y publicar; cambios reflejados en TV |
 | Sonido | Pendiente | Silenciar/activar funciona en navegador |
 | Android / móvil | Pendiente | Controles visibles, video reproducible |
 | Computadora | Pendiente | Controles y reproducción correctos |
