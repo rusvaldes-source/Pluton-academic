@@ -1,6 +1,6 @@
 {
   "channel": "PLUTÓN TV",
-  "version": 1,
+  "version": 2,
   "updated": "2026-10-22",
   "items": [
     {
@@ -42,6 +42,28 @@
       "title": "Tu negocio puede anunciarse aquí",
       "description": "Espacio reservado para patrocinadores autorizados. Sin anunciante contratado.",
       "duration": 10
+    },
+    {
+      "id": "domingo-fe",
+      "type": "card",
+      "section": "DOMINGOS · FE Y ESPERANZA",
+      "title": "Domingos de Fe, Familia y Esperanza",
+      "description": "Un espacio inclusivo de reflexión, respeto y esperanza para todas las familias.",
+      "duration": 20,
+      "days": [
+        0
+      ]
+    },
+    {
+      "id": "domingo-deporte",
+      "type": "card",
+      "section": "DOMINGOS · DEPORTES",
+      "title": "Deporte, unión y comunidad",
+      "description": "Espacio dominical para contenido deportivo y familiar autorizado.",
+      "duration": 15,
+      "days": [
+        0
+      ]
     }
   ]
 }
