@@ -1,6 +1,6 @@
 {
   "channel": "PLUTÓN TV",
-  "version": 6,
+  "version": 7,
   "updated": "2026-10-23",
   "items": [
     {
@@ -74,11 +74,11 @@
     },
     {
       "id": "noticias",
-      "type": "news",
+      "type": "card",
       "section": "PLUTÓN INFORMA",
-      "title": "Noticias de salud, tecnología y educación",
-      "duration": 5,
-      "category": "tecnologia"
+      "title": "Información educativa para tu día",
+      "description": "Explora contenidos sobre tecnología, salud y aprendizaje. Próximamente incorporaremos noticias con fuentes verificadas.",
+      "duration": 5
     },
     {
       "id": "emprende",
@@ -123,6 +123,6 @@
     "course_content": "Solo fragmentos promocionales autorizados; nunca lecciones completas ni videos de cursos por defecto.",
     "external_content": "Exigir licencia compatible con descarga, redistribucion y uso comercial, o permiso expreso; conservar creditos.",
     "sunday": "Domingos de Fe, Familia y Esperanza solo domingos, inclusivo y respetuoso.",
-    "publishing": "Prototipo separado; produccion requiere aprobacion."
+    "publishing": "Primera versión pública con contenidos previamente aprobados; los borradores del panel permanecen privados y requieren revisión antes de añadirse a la programación."
   }
 }
