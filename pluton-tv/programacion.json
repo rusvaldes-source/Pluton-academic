@@ -1,7 +1,7 @@
 {
   "channel": "PLUTÓN TV",
-  "version": 5,
-  "updated": "2026-10-22",
+  "version": 6,
+  "updated": "2026-10-23",
   "items": [
     {
       "id": "bienvenida",
@@ -9,7 +9,7 @@
       "section": "PLUTÓN EDUCA",
       "title": "Tu futuro comienza con conocimiento",
       "description": "Aprende con PLUTÓN ACADEMIC. Educación práctica y accesible.",
-      "duration": 12
+      "duration": 5
     },
     {
       "id": "promocion-cursos",
@@ -17,7 +17,7 @@
       "section": "CONOCE NUESTROS CURSOS",
       "title": "Descubre una lección. Continúa aprendiendo.",
       "description": "PLUTÓN TV comparte pequeñas muestras. Las lecciones completas, actividades y certificados están en PLUTÓN ACADEMIC.",
-      "duration": 16
+      "duration": 5
     },
     {
       "id": "orbits-lucorient-2014",
@@ -38,7 +38,7 @@
       "section": "PLUTÓN DESCUBRE",
       "title": "Ciencia, historia y cultura para todos",
       "description": "Próximamente: cápsulas audiovisuales originales y material educativo con derechos de retransmisión verificados.",
-      "duration": 14
+      "duration": 5
     },
     {
       "id": "micro-ciencia-luz",
@@ -46,7 +46,7 @@
       "section": "PLUTÓN DESCUBRE · CIENCIA",
       "title": "¿Por qué vemos un relámpago antes de oír el trueno?",
       "description": "La luz viaja muchísimo más rápido que el sonido. Por eso vemos primero el destello y después escuchamos el trueno.",
-      "duration": 18
+      "duration": 5
     },
     {
       "id": "micro-tecnologia-seguridad",
@@ -54,7 +54,7 @@
       "section": "PLUTÓN DIGITAL · TECNOLOGÍA",
       "title": "Una regla para proteger tus cuentas",
       "description": "Activa la verificación en dos pasos cuando esté disponible. Aunque alguien descubra tu contraseña, necesitará una segunda comprobación para entrar.",
-      "duration": 20
+      "duration": 5
     },
     {
       "id": "micro-salud-manos",
@@ -62,7 +62,7 @@
       "section": "PLUTÓN BIENESTAR · SALUD",
       "title": "Un hábito sencillo: lavarse las manos",
       "description": "Usa agua y jabón y frota todas las superficies durante al menos 20 segundos. Es una medida cotidiana que ayuda a reducir la transmisión de gérmenes.",
-      "duration": 20
+      "duration": 5
     },
     {
       "id": "familia",
@@ -70,14 +70,14 @@
       "section": "PLUTÓN FAMILIA",
       "title": "15 minutos para conversar",
       "description": "Dedica un momento sin pantallas para escuchar y compartir en familia.",
-      "duration": 15
+      "duration": 5
     },
     {
       "id": "noticias",
       "type": "news",
       "section": "PLUTÓN INFORMA",
       "title": "Noticias de salud, tecnología y educación",
-      "duration": 15,
+      "duration": 5,
       "category": "tecnologia"
     },
     {
@@ -86,7 +86,7 @@
       "section": "PLUTÓN EMPRENDE",
       "title": "Cada proyecto comienza con una idea",
       "description": "Aprende, comparte y transforma tus conocimientos en oportunidades.",
-      "duration": 12
+      "duration": 5
     },
     {
       "id": "anunciante",
@@ -94,7 +94,7 @@
       "section": "ESPACIO PUBLICITARIO",
       "title": "Tu negocio puede anunciarse aquí",
       "description": "Espacio reservado para patrocinadores autorizados. Sin anunciante contratado.",
-      "duration": 10
+      "duration": 5
     },
     {
       "id": "domingo-fe",
@@ -102,7 +102,7 @@
       "section": "DOMINGOS · FE Y ESPERANZA",
       "title": "Domingos de Fe, Familia y Esperanza",
       "description": "Un espacio inclusivo de reflexión, respeto y esperanza para todas las familias.",
-      "duration": 20,
+      "duration": 5,
       "days": [
         0
       ]
@@ -113,7 +113,7 @@
       "section": "DOMINGOS · DEPORTES",
       "title": "Deporte, unión y comunidad",
       "description": "Espacio dominical para contenido deportivo y familiar autorizado.",
-      "duration": 15,
+      "duration": 5,
       "days": [
         0
       ]
