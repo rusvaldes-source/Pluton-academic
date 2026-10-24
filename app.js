@@ -60,12 +60,18 @@ function openLogin() {
       >
 
       <label>Contraseña</label>
-      <input
-        id="authPassword"
-        type="password"
-        autocomplete="current-password"
-        placeholder="Contraseña"
-      >
+      <div class="pa-password-field" style="display:flex;align-items:center;gap:8px">
+        <input
+          id="authPassword"
+          type="password"
+          autocomplete="current-password"
+          placeholder="Contraseña"
+          style="flex:1;min-width:0"
+        >
+        <button type="button" id="authPasswordToggle" onclick="toggleAuthPassword()" aria-label="Mostrar contraseña" aria-pressed="false" title="Mostrar contraseña" style="width:44px;min-width:44px;height:44px;display:grid;place-items:center" >
+          <svg id="authEyeIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+      </div>
 
       <button type="button" onclick="signIn()">
         Iniciar sesión
@@ -83,6 +89,24 @@ function openLogin() {
     </div>
     `
   );
+}
+
+// Mostrar u ocultar contraseña sin modificar el valor ni enviar el formulario.
+function toggleAuthPassword() {
+  const input = document.getElementById('authPassword');
+  const button = document.getElementById('authPasswordToggle');
+  const icon = document.getElementById('authEyeIcon');
+  if (!input || !button || !icon) return;
+  const visible = input.type === 'password';
+  input.type = visible ? 'text' : 'password';
+  button.setAttribute('aria-pressed', String(visible));
+  const english = window.plutonLanguage?.current?.() === 'en';
+  const label = visible ? (english ? 'Hide password' : 'Ocultar contraseña') : (english ? 'Show password' : 'Mostrar contraseña');
+  button.setAttribute('aria-label', label);
+  button.title = label;
+  icon.innerHTML = visible
+    ? '<path d="m3 3 18 18"/><path d="M10.6 5.1A11 11 0 0 1 12 5c6.4 0 10 7 10 7a15 15 0 0 1-3.2 3.9"/><path d="M6.4 6.4C3.6 8.2 2 12 2 12s3.6 7 10 7a10 10 0 0 0 4.2-.9"/><path d="M10 10a3 3 0 0 0 4 4"/>'
+    : '<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>';
 }
 
 // CREAR CUENTA
