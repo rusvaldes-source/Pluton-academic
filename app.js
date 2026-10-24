@@ -196,18 +196,31 @@ async function resetPassword() {
   } catch(e) { authError(e); }
 }
 
-// CURSOS
+// B101: never unlock a course on checkout redirect; only verified webhook can grant access.
+async function purchaseCourse(code) {
+  if (!sb) return show('Compra', '<p>Servicio de registro no disponible.</p>');
+  const { data: { user } } = await sb.auth.getUser();
+  if (!user) { openLogin(); authMessage('Crea tu cuenta gratis o inicia sesión antes de comprar.'); return; }
+  const { data: { session } } = await sb.auth.getSession();
+  if (!session?.access_token) { openLogin(); return; }
+  const response = await fetch(SUPABASE_URL + '/functions/v1/b101-create-checkout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'apikey': SUPABASE_PUBLISHABLE_KEY, 'Authorization': 'Bearer ' + session.access_token },
+    body: JSON.stringify({ course_code: code })
+  });
+  const result = await response.json().catch(() => ({}));
+  if (result.already_owned) { window.location.href = 'courses.html'; return; }
+  if (!response.ok || !/^https:\/\/checkout\.stripe\.com\//.test(result.url || '')) {
+    show('Compra no disponible', '<p>El pago seguro todavía no está disponible. Inténtalo más tarde.</p>');
+    return;
+  }
+  window.location.assign(result.url);
+}
 function course(code) {
-  show(
-    (window.plutonLanguage?.current()==='en'?'Course ':'Curso ') + code,
-    `
-    <p>Este curso forma parte del catálogo de PLUTÓN ACADEMIC.</p>
-    <p>Precio: $9.99 USD por curso, pago único. Regístrate gratis con correo, contraseña y perfil para comprar cuando esté habilitado el pago seguro.</p>
-    <button type="button" onclick="closeModal(); openLogin();">
-      Iniciar sesión
-    </button>
-    `
-  );
+  const safeCode = String(code || '').trim().toUpperCase();
+  if (!/^[A-Z]{2,5}-[0-9]{3}$/.test(safeCode)) return;
+  show('Curso ' + safeCode, '<p>Precio único: $9.99 USD. Se requiere una cuenta gratuita.</p><button type="button" id="b101-buy">Comprar curso</button>');
+  document.getElementById('b101-buy')?.addEventListener('click', () => purchaseCourse(safeCode));
 }
 
 // B101: las membresías individuales se han retirado de la oferta.
