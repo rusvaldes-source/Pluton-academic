@@ -2,7 +2,17 @@
 
 <html lang="es">
 <head>
-<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<script>
+/* Password recovery links issued before the dedicated reset page existed:
+   forward recovery credentials unchanged to the reset form. */
+(function(){
+  var q=new URLSearchParams(location.search), h=new URLSearchParams(location.hash.slice(1));
+  if(q.get('type')==='recovery'||h.get('type')==='recovery'){
+    location.replace('https://plutonacademic.com/reset-password.html'+location.search+location.hash);
+  }
+})();
+</script><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>PLUTÓN ACADEMIC | Tu futuro comienza con conocimiento</title>
 <link href="styles.css?v=b98-business-gold" rel="stylesheet"/><link href="b59.css?v=b63-20261017" rel="stylesheet"/><link href="b75/catalog-photos.css?v=b76-template-1" rel="stylesheet"/>
 <link rel="stylesheet" href="b84/course-ui.css?v=b84"><link rel="stylesheet" href="herramientas/entry.css?v=b87-publica-1"><link rel="stylesheet" href="recursos-pluton/entry.css?v=b91"></head>
@@ -118,7 +128,7 @@
 <div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="modal-card"><button class="x" onclick="closeModal()">×</button><span class="eyebrow">PLUTÓN ACADEMIC</span><h2 id="modalTitle">Área del estudiante</h2><div id="modalText"></div></div></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="language.js?v=b84"></script>
-<script src="app.js?v=b104-resume-checkout"></script><script src="news.js?v=b56-20261010"></script><script src="daily.js?v=b106-public-quiz"></script><script src="catalog-ui.js?v=b75-portadas-2"></script>
+<script src="app.js?v=b107-recovery-fix"></script><script src="news.js?v=b56-20261010"></script><script src="daily.js?v=b106-public-quiz"></script><script src="catalog-ui.js?v=b75-portadas-2"></script>
 <script src="resource-ui.js?v=b84"></script><script src="progress-sync.js?v=b56-20261010"></script><script src="progress-ui.js?v=b56-20261010"></script><script src="visual-enhancements.js?v=b56-20261010"></script><script src="global-search.js?v=b56-20261010"></script><script src="b53-i18n.js?v=b56-20261010" defer></script>
 <script src="b59-social.js?v=b76-facebook" defer></script>
 <style>
