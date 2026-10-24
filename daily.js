@@ -29,7 +29,15 @@ document.addEventListener('DOMContentLoaded',()=>{
    questions=data.flatMap(course=>(course.lessons||[]).filter(lesson=>lesson.question?.es&&lesson.question?.en&&Array.isArray(lesson.options?.es)&&Array.isArray(lesson.options?.en)&&lesson.options.es.length>=2&&lesson.options.en.length>=2&&Number.isInteger(lesson.answer)&&lesson.answer>=0&&lesson.answer<lesson.options.es.length&&lesson.answer<lesson.options.en.length).map(lesson=>({course,lesson})));
    if(!questions.length)throw Error('No valid questions');
    render();
- }).catch(()=>{const q=document.getElementById('dailyQuestion');if(q)q.textContent='Reto temporalmente no disponible / Challenge temporarily unavailable';});
+ }).catch(()=>{
+   // Public fallback: the homepage challenge must not depend on a catalog download.
+   questions=[{course:{code:'PA-203'},lesson:{
+     question:{es:'¿Cuál es una buena práctica para proteger una cuenta digital?',en:'Which is a good practice for protecting a digital account?'},
+     options:{es:['Compartir la contraseña','Activar la verificación en dos pasos','Usar la misma contraseña en todas partes'],en:['Share the password','Enable two-step verification','Reuse the same password everywhere']},
+     answer:1
+   }}];
+   render();
+ });
  document.getElementById('languageToggle')?.addEventListener('click',()=>setTimeout(render,0));
 });
 })();
