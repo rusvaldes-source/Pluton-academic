@@ -148,4 +148,63 @@
   window.addEventListener('languagechange',applyCoursePrices);
 })();
 </script>
+
+<style>
+.pa-b103-buy{display:block;width:100%;margin:8px 0;padding:12px 14px;border:0;border-radius:9px;background:#d6af59;color:#102039;font-weight:800;cursor:pointer;text-align:center}
+.pa-b103-zero{border:1px solid #b9964d;border-radius:16px;padding:15px;background:#10243d;overflow:hidden}
+.pa-b103-zero img{width:100%;height:185px;object-fit:cover;border-radius:10px}
+.pa-b103-zero h3{margin:12px 0 4px}
+.pa-b103-zero a{color:#f0cd78}
+</style>
+<script>
+(function(){
+ const PRICE_ES='$9.99 USD · Pago único por curso',PRICE_EN='$9.99 USD · One-time payment per course';
+ function lang(){return (document.documentElement.lang||'es').toLowerCase().startsWith('en')?'en':'es'}
+ function buy(code){if(typeof window.course==='function')window.course(code);else if(typeof window.purchaseCourse==='function')window.purchaseCourse(code)}
+ function codeFor(card){
+  const text=card.textContent||'';
+  const match=text.match(/\b(?:PA-101|PA-203|ID-101|MKT-201|NA-101|COMP-101|ID-001)\b/);
+  if(match)return match[0];
+  const href=card.querySelector('a[href*="course="]')?.getAttribute('href')||'';
+  const m=href.match(/course=([A-Z]+-[0-9]+)/);
+  return m?m[1]:null;
+ }
+ function update(){
+  const catalog=document.getElementById('mainCatalog');
+  if(!catalog)return;
+  if(!catalog.querySelector('[data-b103-zero]')){
+   const card=document.createElement('article');
+   card.className='pa-b103-zero';
+   card.setAttribute('data-b103-zero','true');
+   card.setAttribute('data-cat','Idiomas');
+   card.innerHTML='<img src="assets/b57/estudiante-02.webp" alt="Estudiante aprendiendo inglés desde cero" loading="lazy"><h3 data-b53-es="Inglés desde cero" data-b53-en="English from Zero">Inglés desde cero</h3><small>ID-001 · IDIOMAS</small><div class="pa-b102-course-price" data-b53-es="'+PRICE_ES+'" data-b53-en="'+PRICE_EN+'">'+PRICE_ES+'</div><button type="button" class="pa-b103-buy" data-b103-code="ID-001">Comprar curso · $9.99</button><a href="ingles-desde-cero/">Ver presentación del curso →</a>';
+   catalog.appendChild(card);
+  }
+  document.querySelectorAll('#mainCatalog article, #rutas-destacadas .b57-priority-grid article').forEach(function(card){
+   const code=codeFor(card);if(!code)return;
+   let btn=card.querySelector('.pa-b103-buy');
+   if(!btn){
+    btn=document.createElement('button');
+    btn.type='button';btn.className='pa-b103-buy';btn.dataset.b103Code=code;
+    const price=card.querySelector('.pa-b102-course-price');
+    if(price)price.insertAdjacentElement('afterend',btn);else card.appendChild(btn);
+   }
+   btn.textContent=lang()==='en'?'Buy course · $9.99':'Comprar curso · $9.99';
+   const price=card.querySelector('.pa-b102-course-price');
+   if(price){price.textContent=lang()==='en'?PRICE_EN:PRICE_ES;price.style.cursor='pointer';price.setAttribute('role','button');price.setAttribute('tabindex','0');price.setAttribute('aria-label',(lang()==='en'?'Buy course ':'Comprar curso ')+code+' $9.99');}
+  });
+ }
+ document.addEventListener('click',function(e){
+  const btn=e.target.closest('.pa-b103-buy');
+  if(btn){e.preventDefault();buy(btn.dataset.b103Code);return}
+  const price=e.target.closest('.pa-b102-course-price');
+  if(price){const card=price.closest('article');const code=card&&codeFor(card);if(code){e.preventDefault();buy(code)}}
+ });
+ document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.matches('.pa-b102-course-price')){e.preventDefault();e.target.click()}});
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',update);else update();
+ const target=document.getElementById('mainCatalog');
+ if(target)new MutationObserver(function(){update()}).observe(target,{childList:true});
+ window.addEventListener('languagechange',update);
+})();
+</script>
 </body></html>
