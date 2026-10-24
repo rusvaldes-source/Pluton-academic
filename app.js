@@ -140,7 +140,7 @@ async function signUp() {
     return;
   }
 
-  authMessage('Revisa tu correo para confirmar tu cuenta.');
+  authMessage('Revisa tu correo para confirmar tu cuenta. Después inicia sesión para continuar con la compra.');
   } catch(e) { authError(e); }
 }
 
@@ -167,6 +167,14 @@ async function signIn() {
     return;
   }
 
+  // Continue the checkout selected before authentication, if present.
+  const pending = sessionStorage.getItem('pa-pending-course');
+  if (pending && /^[A-Z]{2,5}-[0-9]{3}$/.test(pending)) {
+    sessionStorage.removeItem('pa-pending-course');
+    closeModal();
+    await purchaseCourse(pending);
+    return;
+  }
   window.location.href = 'dashboard.html';
   } catch(e) { authError(e); }
 }
@@ -200,9 +208,9 @@ async function resetPassword() {
 async function purchaseCourse(code) {
   if (!sb) return show('Compra', '<p>Servicio de registro no disponible.</p>');
   const { data: { user } } = await sb.auth.getUser();
-  if (!user) { openLogin(); authMessage('Crea tu cuenta gratis o inicia sesión antes de comprar.'); return; }
+  if (!user) { sessionStorage.setItem('pa-pending-course', String(code).toUpperCase()); openLogin(); authMessage('Crea tu cuenta gratis o inicia sesión antes de comprar.'); return; }
   const { data: { session } } = await sb.auth.getSession();
-  if (!session?.access_token) { openLogin(); return; }
+  if (!session?.access_token) { sessionStorage.setItem('pa-pending-course', String(code).toUpperCase()); openLogin(); return; }
   const response = await fetch(SUPABASE_URL + '/functions/v1/b101-create-checkout', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'apikey': SUPABASE_PUBLISHABLE_KEY, 'Authorization': 'Bearer ' + session.access_token },
