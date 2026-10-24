@@ -51,7 +51,7 @@ function openLogin() {
     'Área del estudiante',
     `
     <div class="auth-box">
-      <label>Correo electrónico</label>
+      <label>Nombre para tu perfil</label><input id="authName" type="text" autocomplete="name" maxlength="80" placeholder="Tu nombre"><label>Correo electrónico</label>
       <input
         id="authEmail"
         type="email"
@@ -113,7 +113,9 @@ function toggleAuthPassword() {
 async function signUp() {
   const email = document.getElementById('authEmail')?.value.trim();
   const password = document.getElementById('authPassword')?.value;
+  const displayName = document.getElementById('authName')?.value.trim();
 
+  if (!displayName) return authMessage('Escribe tu nombre para crear tu perfil.');
   if (!email || !password || password.length < 6) {
     authMessage(
       'Escribe un correo válido y una contraseña de al menos 6 caracteres.'
@@ -128,7 +130,8 @@ async function signUp() {
     email,
     password,
     options: {
-      emailRedirectTo: window.location.origin
+      emailRedirectTo: window.location.origin,
+      data: { full_name: displayName }
     }
   });
 
@@ -199,7 +202,7 @@ function course(code) {
     (window.plutonLanguage?.current()==='en'?'Course ':'Curso ') + code,
     `
     <p>Este curso forma parte del catálogo de PLUTÓN ACADEMIC.</p>
-    <p>Inicia sesión para acceder al contenido y progreso académico.</p>
+    <p>Precio: $9.99 USD por curso, pago único. Regístrate gratis con correo, contraseña y perfil para comprar cuando esté habilitado el pago seguro.</p>
     <button type="button" onclick="closeModal(); openLogin();">
       Iniciar sesión
     </button>
@@ -207,16 +210,9 @@ function course(code) {
   );
 }
 
-// MEMBRESÍAS
-function plan(name) {
-  show(
-    (window.plutonLanguage?.current()==='en'?'Membership ':'Membresía ') + name,
-    `
-    <p>${window.plutonLanguage?.current()==='en'?'You have selected the membership':'Has seleccionado la membresía'} <strong>${name}</strong>.</p>
-    <p>El sistema de suscripción y pagos se habilitará desde esta sección.</p>
-    `
-  );
-}
+// B101: las membresías individuales se han retirado de la oferta.
+// No iniciar un cobro sin un checkout de Stripe verificado en el servidor.
+function plan() { show('Cursos a $9.99', '<p>Regístrate gratis para comprar cursos individualmente. El pago estará disponible cuando se complete la verificación de Stripe.</p><button type="button" onclick="closeModal();openLogin()">Crear cuenta</button>'); }
 
 // COMUNIDAD / CRECIMIENTO
 function growth(name) {
