@@ -51,7 +51,7 @@ function openLogin() {
     'Área del estudiante',
     `
     <div class="auth-box">
-      <label>Correo electrónico</label>
+      <label>Nombre para tu perfil</label><input id="authName" type="text" autocomplete="name" maxlength="80" placeholder="Tu nombre"><label>Correo electrónico</label>
       <input
         id="authEmail"
         type="email"
@@ -113,7 +113,9 @@ function toggleAuthPassword() {
 async function signUp() {
   const email = document.getElementById('authEmail')?.value.trim();
   const password = document.getElementById('authPassword')?.value;
+  const displayName = document.getElementById('authName')?.value.trim();
 
+  if (!displayName) return authMessage('Escribe tu nombre para crear tu perfil.');
   if (!email || !password || password.length < 6) {
     authMessage(
       'Escribe un correo válido y una contraseña de al menos 6 caracteres.'
@@ -128,7 +130,8 @@ async function signUp() {
     email,
     password,
     options: {
-      emailRedirectTo: window.location.origin
+      emailRedirectTo: window.location.origin,
+      data: { full_name: displayName }
     }
   });
 
@@ -193,30 +196,36 @@ async function resetPassword() {
   } catch(e) { authError(e); }
 }
 
-// CURSOS
+// B101: never unlock a course on checkout redirect; only verified webhook can grant access.
+async function purchaseCourse(code) {
+  if (!sb) return show('Compra', '<p>Servicio de registro no disponible.</p>');
+  const { data: { user } } = await sb.auth.getUser();
+  if (!user) { openLogin(); authMessage('Crea tu cuenta gratis o inicia sesión antes de comprar.'); return; }
+  const { data: { session } } = await sb.auth.getSession();
+  if (!session?.access_token) { openLogin(); return; }
+  const response = await fetch(SUPABASE_URL + '/functions/v1/b101-create-checkout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'apikey': SUPABASE_PUBLISHABLE_KEY, 'Authorization': 'Bearer ' + session.access_token },
+    body: JSON.stringify({ course_code: code })
+  });
+  const result = await response.json().catch(() => ({}));
+  if (result.already_owned) { window.location.href = 'courses.html'; return; }
+  if (!response.ok || !/^https:\/\/checkout\.stripe\.com\//.test(result.url || '')) {
+    show('Compra no disponible', '<p>El pago seguro todavía no está disponible. Inténtalo más tarde.</p>');
+    return;
+  }
+  window.location.assign(result.url);
+}
 function course(code) {
-  show(
-    (window.plutonLanguage?.current()==='en'?'Course ':'Curso ') + code,
-    `
-    <p>Este curso forma parte del catálogo de PLUTÓN ACADEMIC.</p>
-    <p>Inicia sesión para acceder al contenido y progreso académico.</p>
-    <button type="button" onclick="closeModal(); openLogin();">
-      Iniciar sesión
-    </button>
-    `
-  );
+  const safeCode = String(code || '').trim().toUpperCase();
+  if (!/^[A-Z]{2,5}-[0-9]{3}$/.test(safeCode)) return;
+  show('Curso ' + safeCode, '<p>Precio único: $9.99 USD. Se requiere una cuenta gratuita.</p><button type="button" id="b101-buy">Comprar curso</button>');
+  document.getElementById('b101-buy')?.addEventListener('click', () => purchaseCourse(safeCode));
 }
 
-// MEMBRESÍAS
-function plan(name) {
-  show(
-    (window.plutonLanguage?.current()==='en'?'Membership ':'Membresía ') + name,
-    `
-    <p>${window.plutonLanguage?.current()==='en'?'You have selected the membership':'Has seleccionado la membresía'} <strong>${name}</strong>.</p>
-    <p>El sistema de suscripción y pagos se habilitará desde esta sección.</p>
-    `
-  );
-}
+// B101: las membresías individuales se han retirado de la oferta.
+// No iniciar un cobro sin un checkout de Stripe verificado en el servidor.
+function plan() { show('Cursos a $9.99', '<p>Regístrate gratis para comprar cursos individualmente. El pago estará disponible cuando se complete la verificación de Stripe.</p><button type="button" onclick="closeModal();openLogin()">Crear cuenta</button>'); }
 
 // COMUNIDAD / CRECIMIENTO
 function growth(name) {

@@ -15,7 +15,7 @@ function studentValue(element, value) {
 
 async function loadStudent() {
   const emailEl = document.getElementById('student-email');
-  const membershipEl = document.getElementById('membership');
+  const purchasesEl = document.getElementById('purchasedCourses');
   try {
     if (!sb) throw new Error('Supabase no está disponible');
     const { data, error } = await sb.auth.getSession();
@@ -23,25 +23,24 @@ async function loadStudent() {
     const user = data?.session?.user;
     if (!user) {
       studentStatus(emailEl, 'Sesión no iniciada');
-      studentValue(membershipEl, '—');
+      studentValue(purchasesEl, '—');
       return;
     }
     studentValue(emailEl, user.email || window.plutonLanguage?.text('Usuario') || 'Usuario');
-    studentStatus(membershipEl, 'Comprobando...');
-    const { data: profile, error: profileError } = await sb.from('profiles')
-      .select('membership').eq('email', user.email).maybeSingle();
-    if (profileError) {
-      console.error('Profile lookup:', profileError);
-      studentStatus(membershipEl, 'No disponible');
+    studentStatus(purchasesEl, 'Comprobando...');
+    const { data: purchases, error: purchaseError } = await sb.from('course_purchase_access')
+      .select('course_code').eq('user_id', user.id).eq('active', true);
+    if (purchaseError) {
+      console.error('Purchase access lookup:', purchaseError);
+      studentStatus(purchasesEl, 'No disponible');
       return;
     }
-    if (profile?.membership) studentValue(membershipEl, profile.membership);
-    else studentStatus(membershipEl, 'Sin membresía');
+    studentValue(purchasesEl, purchases?.length ? purchases.map(p => p.course_code).join(', ') : 'Aún no has comprado cursos');
     translateDashboard();
   } catch (error) {
     console.error('Dashboard:', error);
     studentStatus(emailEl, 'Error al cargar tu cuenta');
-    studentStatus(membershipEl, 'No disponible');
+    studentStatus(purchasesEl, 'No disponible');
   }
 }
 
@@ -57,12 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Traducción explícita y estable; evita alterar correo o datos del perfil.
 const dashboardStrings={es:{courseHint:'Explora las lecciones disponibles y registra tu avance.',goCourses:'Abrir mis cursos →',overall:'Progreso general: ',admin:'Administración'},en:{courseHint:'Explore available lessons and track your progress.',goCourses:'Open my courses →',overall:'Overall progress: ',admin:'Administration'}};
-const dashboardLabels={'Panel del Estudiante':'Student Dashboard','Bienvenido':'Welcome','Mi membresía':'My membership','Mis cursos':'My courses','Mi progreso':'My progress','Cerrar sesión':'Sign out','Inicio':'Home','Cargando tu cuenta...':'Loading your account...','Cargando...':'Loading...','Sin membresía':'No membership','Sesión no iniciada':'Not signed in','Comprobando...':'Checking...','Error al cargar tu cuenta':'Error loading your account','No disponible':'Unavailable'};
+const dashboardLabels={'Panel del Estudiante':'Student Dashboard','Bienvenido':'Welcome','Mis compras':'My purchases','Mis cursos':'My courses','Mi progreso':'My progress','Cerrar sesión':'Sign out','Inicio':'Home','Cargando tu cuenta...':'Loading your account...','Cargando...':'Loading...','Aún no has comprado cursos':'No purchased courses yet','Sesión no iniciada':'Not signed in','Comprobando...':'Checking...','Error al cargar tu cuenta':'Error loading your account','No disponible':'Unavailable'};
 function dashboardLang(){return localStorage.getItem('pluton-lang')==='en'?'en':'es';}
 function translateDashboard(){
  const lang=dashboardLang(),reverse=Object.fromEntries(Object.entries(dashboardLabels).map(([a,b])=>[b,a]));
  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
- while(n=walker.nextNode()){if(n.parentElement?.closest('[data-i18n],#student-email,#membership,#overallProgress,script'))continue;const v=n.nodeValue.trim(),es=reverse[v]||v;if(dashboardLabels[es])n.nodeValue=n.nodeValue.replace(v,lang==='en'?dashboardLabels[es]:es);}
+ while(n=walker.nextNode()){if(n.parentElement?.closest('[data-i18n],#student-email,#purchasedCourses,#overallProgress,script'))continue;const v=n.nodeValue.trim(),es=reverse[v]||v;if(dashboardLabels[es])n.nodeValue=n.nodeValue.replace(v,lang==='en'?dashboardLabels[es]:es);}
  document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=dashboardStrings[lang][el.dataset.i18n]||el.textContent;});
  document.querySelectorAll('[data-student-status]').forEach(el=>{el.textContent=window.plutonLanguage?.text(el.dataset.studentStatus)||el.dataset.studentStatus;});
  const b=document.getElementById('languageToggle');if(b)b.textContent=lang==='en'?'EN':'ES';document.documentElement.lang=lang;refreshProgress();
