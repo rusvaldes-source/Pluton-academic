@@ -182,7 +182,7 @@ async function resetPassword() {
   authMessage('Enviando enlace...');
 
   try { const { error } = await sb.auth.resetPasswordForEmail(email, {
-    redirectTo: window.location.origin + '/reset-password.html' + '/reset-password.html'
+    redirectTo: window.location.origin + '/reset-password.html'
   });
 
   if (error) {
