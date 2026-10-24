@@ -35,7 +35,28 @@ async function loadStudent() {
       studentStatus(purchasesEl, 'No disponible');
       return;
     }
-    studentValue(purchasesEl, purchases?.length ? purchases.map(p => p.course_code).join(', ') : 'Aún no has comprado cursos');
+    const owned = purchases || [];
+    if (owned.length) {
+      const catalog = await fetch('catalog.json').then(r => r.ok ? r.json() : []).catch(() => []);
+      const names = Object.fromEntries(catalog.map(item => [item.code, item[dashboardLang()] || item.es || item.code]));
+      purchasesEl.textContent = '';
+      const list = document.createElement('div');
+      list.className = 'pa-owned-courses';
+      owned.forEach(item => {
+        const card = document.createElement('article');
+        card.style.cssText = 'padding:16px;margin:10px 0;border:1px solid #bd9a4c;border-radius:12px';
+        const title = document.createElement('strong');
+        title.textContent = names[item.course_code] || (item.course_code === 'ID-001' ? 'Inglés desde cero' : item.course_code);
+        const link = document.createElement('a');
+        link.className = 'pa-link';
+        link.style.cssText = 'display:block;margin-top:8px';
+        link.href = 'courses.html?course=' + encodeURIComponent(item.course_code);
+        link.textContent = dashboardLang() === 'en' ? 'Open purchased course →' : 'Abrir curso comprado →';
+        card.append(title, link);
+        list.appendChild(card);
+      });
+      purchasesEl.appendChild(list);
+    } else studentValue(purchasesEl, 'Aún no has comprado cursos');
     translateDashboard();
   } catch (error) {
     console.error('Dashboard:', error);
@@ -84,3 +105,27 @@ const originalTranslateDashboard=translateDashboard;translateDashboard=function(
 document.addEventListener('DOMContentLoaded',()=>fetch('catalog.json').then(r=>r.json()).then(data=>{window.plutonDashboardCatalog=data;refreshProgress();refreshNextCourse()}).catch(()=>refreshNextCourse()));
 
 document.addEventListener('pluton-progress-updated',()=>{refreshProgress();refreshNextCourse()});document.addEventListener('pluton-sync-status',refreshProgress);
+
+
+// B105: Checkout redirects never grant access; only the verified Stripe webhook does.
+async function waitForVerifiedCheckout() {
+  if (new URLSearchParams(location.search).get('checkout') !== 'success') return;
+  const el = document.getElementById('checkoutVerification');
+  if (!el) return;
+  el.hidden = false;
+  el.textContent = 'Verificando el pago con Stripe…';
+  let previous = '';
+  for (let i = 0; i < 8; i++) {
+    await loadStudent();
+    const content = document.getElementById('purchasedCourses')?.textContent || '';
+    if (content && content !== 'Aún no has comprado cursos' && content !== 'Comprobando...' && content !== 'No disponible') {
+      el.textContent = 'Pago confirmado. Tu curso comprado aparece en Mis compras.';
+      history.replaceState(null, '', location.pathname);
+      return;
+    }
+    previous = content;
+    await new Promise(resolve => setTimeout(resolve, 1500));
+  }
+  el.textContent = 'El pago está pendiente de confirmación. Actualiza el panel en unos momentos. Si no aparece, contacta con soporte.';
+}
+document.addEventListener('DOMContentLoaded', waitForVerifiedCheckout);
