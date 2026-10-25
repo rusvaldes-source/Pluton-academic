@@ -30,11 +30,13 @@ Deno.serve(async (req) => {
   const session = await resp.json();
   const code = session.metadata?.course_code;
   const userId = session.metadata?.user_id;
-  if (session.mode !== "payment" || session.payment_status !== "paid" || session.amount_total !== 999 || session.currency !== "usd" || session.client_reference_id !== userId || !/^[a-f0-9-]{36}$/.test(userId || "") || !/^[A-Z]{2,5}-[0-9]{3}$/.test(code || "")) return new Response("Session validation failed", { status: 400 });
+  if (session.id !== sessionId || session.mode !== "payment" || session.payment_status !== "paid" || session.amount_total !== 999 || session.currency !== "usd" || session.client_reference_id !== userId || !/^[a-f0-9-]{36}$/.test(userId || "") || !/^[A-Z]{2,6}-[0-9]{3}$/.test(code || "")) return new Response("Session validation failed", { status: 400 });
   const admin = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
-  const { data: course } = await admin.from("course_editor_state").select("course_code").eq("course_code", code).maybeSingle();
+  const { data: course } = await admin.from(["ELEC-101", "HVAC-101", "BEAUTY-101"].includes(code) ? "course_premium_content" : "course_editor_state").select("course_code").eq("course_code", code).maybeSingle();
   if (!course) return new Response("Unknown course", { status: 400 });
-  const { error } = await admin.from("course_purchase_access").upsert({ user_id: userId, course_code: code, active: true }, { onConflict: "user_id,course_code" });
+  const { error } = ["ELEC-101", "HVAC-101", "BEAUTY-101"].includes(code)
+    ? await admin.rpc("b107_grant_purchase", { p_session_id: sessionId, p_user_id: userId, p_course_code: code })
+    : await admin.from("course_purchase_access").upsert({ user_id: userId, course_code: code, active: true }, { onConflict: "user_id,course_code" });
   if (error) { console.error("Access grant failed", error.code); return new Response("Database unavailable", { status: 503 }); }
   return new Response("ok", { status: 200 });
 });

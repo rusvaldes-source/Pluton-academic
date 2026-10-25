@@ -169,7 +169,7 @@ async function signIn() {
 
   // Continue the checkout selected before authentication, if present.
   const pending = sessionStorage.getItem('pa-pending-course');
-  if (pending && /^[A-Z]{2,5}-[0-9]{3}$/.test(pending)) {
+  if (pending && /^[A-Z]{2,6}-[0-9]{3}$/.test(pending)) {
     sessionStorage.removeItem('pa-pending-course');
     closeModal();
     await purchaseCourse(pending);
@@ -226,8 +226,10 @@ async function purchaseCourse(code) {
 }
 function course(code) {
   const safeCode = String(code || '').trim().toUpperCase();
-  if (!/^[A-Z]{2,5}-[0-9]{3}$/.test(safeCode)) return;
-  show('Curso ' + safeCode, '<p>Precio único: $9.99 USD. Se requiere una cuenta gratuita.</p><button type="button" id="b101-buy">Comprar curso</button>');
+  if (!/^[A-Z]{2,6}-[0-9]{3}$/.test(safeCode)) return;
+  const professionalEnglish = ['ELEC-101','HVAC-101','BEAUTY-101'].includes(safeCode) && localStorage.getItem('pluton-lang') === 'en';
+  if (professionalEnglish) show('Course ' + safeCode, '<p>One-time payment: $9.99 USD. A free account is required.</p><button type="button" id="b101-buy">Buy course</button>');
+  else show('Curso ' + safeCode, '<p>Precio único: $9.99 USD. Se requiere una cuenta gratuita.</p><button type="button" id="b101-buy">Comprar curso</button>');
   document.getElementById('b101-buy')?.addEventListener('click', () => purchaseCourse(safeCode));
 }
 

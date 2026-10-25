@@ -1,0 +1,44 @@
+[
+  {
+    "code": "ELEC-101",
+    "approved": true,
+    "origin": "AI-generated / Generada con IA",
+    "cover": "b107/covers/electricidad-banner-aprobado.webp",
+    "original": "b107/covers/originales/ELEC-101-banner-aprobado.png",
+    "original_sha256": "dc686fbde563fe662314aafb8e68fcf478561b04198c637d27205f378f029c63",
+    "sha256": "f79dd0cbaf7907663205dbef7d1d0ae535a01f484b6ee7d172f4860d8a24748a",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "cropped": false
+  },
+  {
+    "code": "HVAC-101",
+    "approved": true,
+    "origin": "AI-generated / Generada con IA",
+    "cover": "b107/covers/aire-acondicionado-banner-aprobado.webp",
+    "original": "b107/covers/originales/HVAC-101-banner-aprobado.png",
+    "original_sha256": "d869b78c815a000b337a7740966c4e083a6b79f392e6077855a6104977fff1f8",
+    "sha256": "a512f4bbfffa41d5e587e97061b70603db67bdd9f9f3b2e9bff3af75d6b0c9fd",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "cropped": false
+  },
+  {
+    "code": "BEAUTY-101",
+    "approved": true,
+    "origin": "AI-generated / Generada con IA",
+    "cover": "b107/covers/belleza-banner-aprobado.webp",
+    "original": "b107/covers/originales/BEAUTY-101-banner-aprobado.png",
+    "original_sha256": "afc9c828af846844bbb3dcb846b191e85551e07a6b4937acdf90fea8d793b3a3",
+    "sha256": "dfb485e9540b1866c536720c6c33daccbb35fee2f3fc971a61081cc42ab92fe5",
+    "dimensions": [
+      1672,
+      940
+    ],
+    "cropped": false
+  }
+]

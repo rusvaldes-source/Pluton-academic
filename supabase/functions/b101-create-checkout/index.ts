@@ -19,9 +19,9 @@ Deno.serve(async (req) => {
   if (authError || !user?.email) return respond({ error: "Sign in required" }, 401);
   let code = "";
   try { code = String((await req.json()).course_code || "").trim().toUpperCase(); } catch { return respond({ error: "Invalid request" }, 400); }
-  if (!/^[A-Z]{2,5}-[0-9]{3}$/.test(code)) return respond({ error: "Invalid course" }, 400);
+  if (!/^[A-Z]{2,6}-[0-9]{3}$/.test(code)) return respond({ error: "Invalid course" }, 400);
   const admin = createClient(url, service);
-  const { data: course, error: courseError } = await admin.from("course_editor_state").select("course_code").eq("course_code", code).maybeSingle();
+  const { data: course, error: courseError } = await admin.from(["ELEC-101", "HVAC-101", "BEAUTY-101"].includes(code) ? "course_premium_content" : "course_editor_state").select("course_code").eq("course_code", code).maybeSingle();
   if (courseError || !course) return respond({ error: "Course not found" }, 404);
   const { data: access } = await admin.from("course_purchase_access").select("active").eq("user_id", user.id).eq("course_code", code).maybeSingle();
   if (access?.active) return respond({ already_owned: true });
@@ -37,8 +37,8 @@ Deno.serve(async (req) => {
   form.set("metadata[course_code]", code);
   form.set("payment_intent_data[metadata][user_id]", user.id);
   form.set("payment_intent_data[metadata][course_code]", code);
-  form.set("success_url", origin + "/dashboard.html?checkout=success");
-  form.set("cancel_url", origin + "/index.html#cursos");
+  form.set("success_url", origin + "/dashboard.html?checkout=success&course=" + encodeURIComponent(code));
+  form.set("cancel_url", origin + "/index.html?course=" + encodeURIComponent(code) + "#cursos");
   const stripe = await fetch("https://api.stripe.com/v1/checkout/sessions", { method: "POST", headers: { Authorization: "Bearer " + stripeKey, "Content-Type": "application/x-www-form-urlencoded" }, body: form });
   const result = await stripe.json();
   if (!stripe.ok || !result.url) { console.error("Stripe checkout failed", stripe.status); return respond({ error: "Checkout unavailable" }, 502); }

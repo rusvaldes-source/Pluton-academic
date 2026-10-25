@@ -1,0 +1,1 @@
+(()=>{const p=new URLSearchParams(location.search),code=p.get('course')||p.get('code');if(['ELEC-101','HVAC-101','BEAUTY-101'].includes(code)){p.set('course',code);location.replace('b107/index.html?'+p.toString())}})();

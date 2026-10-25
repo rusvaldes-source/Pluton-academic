@@ -1091,5 +1091,296 @@
       }
     ],
     "cover": "assets/b74/comp101-hija-computacion.webp"
+  },
+  {
+    "code": "ELEC-101",
+    "es": "Electricidad e Instalaciones Eléctricas",
+    "en": "Electricity and Electrical Installations",
+    "category": "construccion",
+    "cover": "b107/covers/electricidad-banner-aprobado.webp",
+    "description": {
+      "es": "Fundamentos, seguridad, circuitos e interpretación de instalaciones eléctricas.",
+      "en": "Fundamentals, safety, circuits, and understanding electrical installations."
+    },
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "classroom": "b107/index.html?course=ELEC-101",
+    "lessons": [
+      {
+        "es": "Carga, corriente y camino cerrado",
+        "en": "Charge, current, and the closed path"
+      },
+      {
+        "es": "Materiales, CC y CA",
+        "en": "Materials, DC, and AC"
+      },
+      {
+        "es": "Ley de Ohm y unidades",
+        "en": "Ohm’s law and units"
+      },
+      {
+        "es": "Potencia, energía y calentamiento",
+        "en": "Power, energy, and heating"
+      },
+      {
+        "es": "Herramientas y preparación del banco",
+        "en": "Tools and bench preparation"
+      },
+      {
+        "es": "Multímetro y mediciones del modelo",
+        "en": "Multimeter and model measurements"
+      },
+      {
+        "es": "Riesgos y decisión de detenerse",
+        "en": "Hazards and the decision to stop"
+      },
+      {
+        "es": "Desenergización, LOTO y límites del curso",
+        "en": "Deenergization, LOTO, and course boundaries"
+      },
+      {
+        "es": "Circuitos en serie",
+        "en": "Series circuits"
+      },
+      {
+        "es": "Circuitos en paralelo y leyes de nodos",
+        "en": "Parallel circuits and node laws"
+      },
+      {
+        "es": "Arquitectura residencial: lectura conceptual",
+        "en": "Residential architecture: conceptual reading"
+      },
+      {
+        "es": "Cargas, demanda y documentación",
+        "en": "Loads, demand, and documentation"
+      },
+      {
+        "es": "Interruptores y tomacorrientes: funciones",
+        "en": "Switches and receptacles: functions"
+      },
+      {
+        "es": "Protecciones, puesta a tierra y unión",
+        "en": "Protection, grounding, and bonding"
+      },
+      {
+        "es": "Símbolos, nodos y esquemas",
+        "en": "Symbols, nodes, and schematics"
+      },
+      {
+        "es": "Planos de planta, cuadro de cargas y revisión",
+        "en": "Floor plans, load schedules, and review"
+      },
+      {
+        "es": "Diagnóstico lógico de circuito abierto",
+        "en": "Logical diagnosis of an open circuit"
+      },
+      {
+        "es": "Sobrecarga, corto y conexión resistiva",
+        "en": "Overload, short, and resistive connection"
+      },
+      {
+        "es": "Proyecto integrador: modelo y cálculos",
+        "en": "Capstone: model and calculations"
+      },
+      {
+        "es": "Informe, revisión y trayectoria responsable",
+        "en": "Reporting, review, and responsible progression"
+      }
+    ]
+  },
+  {
+    "code": "HVAC-101",
+    "es": "Aire Acondicionado y Refrigeración",
+    "en": "Air Conditioning and Refrigeration",
+    "category": "profesional",
+    "cover": "b107/covers/aire-acondicionado-banner-aprobado.webp",
+    "description": {
+      "es": "Fundamentos de refrigeración, componentes, mantenimiento y diagnóstico básico.",
+      "en": "Refrigeration fundamentals, components, maintenance, and basic diagnostics."
+    },
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "classroom": "b107/index.html?course=HVAC-101",
+    "lessons": [
+      {
+        "es": "Qué hace un sistema HVAC",
+        "en": "What an HVAC system does"
+      },
+      {
+        "es": "Calor, temperatura y unidades",
+        "en": "Heat, temperature, and units"
+      },
+      {
+        "es": "Las cuatro etapas del ciclo",
+        "en": "The four cycle stages"
+      },
+      {
+        "es": "Presión, saturación y refrigerantes",
+        "en": "Pressure, saturation, and refrigerants"
+      },
+      {
+        "es": "Compresores e intercambiadores",
+        "en": "Compressors and heat exchangers"
+      },
+      {
+        "es": "Expansión, ventiladores y controles",
+        "en": "Expansion, fans, and controls"
+      },
+      {
+        "es": "Instrumentos y calidad de datos",
+        "en": "Instruments and data quality"
+      },
+      {
+        "es": "Planos, placas y documentación",
+        "en": "Diagrams, nameplates, and documentation"
+      },
+      {
+        "es": "Energía peligrosa y límites de práctica",
+        "en": "Hazardous energy and practice boundaries"
+      },
+      {
+        "es": "Refrigerantes, ambiente y credenciales",
+        "en": "Refrigerants, environment, and credentials"
+      },
+      {
+        "es": "Sistemas residenciales y selección conceptual",
+        "en": "Residential systems and conceptual selection"
+      },
+      {
+        "es": "Aire, humedad y distribución",
+        "en": "Air, moisture, and distribution"
+      },
+      {
+        "es": "Planificar instalación sin intervenir",
+        "en": "Planning installation without intervention"
+      },
+      {
+        "es": "Mantenimiento preventivo y registro",
+        "en": "Preventive maintenance and records"
+      },
+      {
+        "es": "Método de diagnóstico basado en evidencia",
+        "en": "Evidence-based diagnostic method"
+      },
+      {
+        "es": "Casos de hielo, agua y ciclos cortos",
+        "en": "Ice, water, and short-cycle cases"
+      },
+      {
+        "es": "Capacidad, consumo y eficiencia",
+        "en": "Capacity, consumption, and efficiency"
+      },
+      {
+        "es": "Mejoras y verificación de resultados",
+        "en": "Improvements and result verification"
+      },
+      {
+        "es": "Proyecto: construir un informe técnico",
+        "en": "Project: building a technical report"
+      },
+      {
+        "es": "Defensa, comunicación y siguiente paso",
+        "en": "Defense, communication, and next steps"
+      }
+    ]
+  },
+  {
+    "code": "BEAUTY-101",
+    "es": "Belleza y Estética Profesional",
+    "en": "Professional Beauty and Aesthetics",
+    "category": "profesional",
+    "cover": "b107/covers/belleza-banner-aprobado.webp",
+    "description": {
+      "es": "Higiene, atención al cliente, cuidado de piel, cabello y uñas.",
+      "en": "Hygiene, client care, and foundations of skin care, hair, and nails."
+    },
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "classroom": "b107/index.html?course=BEAUTY-101",
+    "lessons": [
+      {
+        "es": "Identidad profesional y alcance",
+        "en": "Professional identity and scope"
+      },
+      {
+        "es": "Ética, inclusión y portafolio",
+        "en": "Ethics, inclusion, and portfolio"
+      },
+      {
+        "es": "Limpieza, desinfección y flujo",
+        "en": "Cleaning, disinfection, and workflow"
+      },
+      {
+        "es": "Exposición, ergonomía y respuesta segura",
+        "en": "Exposure, ergonomics, and safe response"
+      },
+      {
+        "es": "Consulta y consentimiento informado",
+        "en": "Consultation and informed consent"
+      },
+      {
+        "es": "Contraindicaciones y comunicación de límites",
+        "en": "Contraindications and communicating limits"
+      },
+      {
+        "es": "Piel: estructura y observación cosmética",
+        "en": "Skin: structure and cosmetic observation"
+      },
+      {
+        "es": "Selección conservadora y tolerancia",
+        "en": "Conservative selection and tolerance"
+      },
+      {
+        "es": "Color, cobertura y diseño de maquillaje",
+        "en": "Color, coverage, and makeup design"
+      },
+      {
+        "es": "Aplicación higiénica y control del acabado",
+        "en": "Hygienic application and finish control"
+      },
+      {
+        "es": "Cabello: fibra, sección y desenredado",
+        "en": "Hair: fiber, sectioning, and detangling"
+      },
+      {
+        "es": "Peinado sin calor y riesgo térmico",
+        "en": "Heat-free styling and thermal risk"
+      },
+      {
+        "es": "Uña: estructura y forma en soporte artificial",
+        "en": "Nail: structure and shaping on artificial supports"
+      },
+      {
+        "es": "Esmaltado y pedicura simulada segura",
+        "en": "Polish and safe simulated pedicure"
+      },
+      {
+        "es": "Herramientas, mantenimiento y trazabilidad",
+        "en": "Tools, maintenance, and traceability"
+      },
+      {
+        "es": "Etiquetas, almacenamiento y compras",
+        "en": "Labels, storage, and purchasing"
+      },
+      {
+        "es": "Costos, precios y agenda realista",
+        "en": "Costs, pricing, and realistic scheduling"
+      },
+      {
+        "es": "Servicio, reclamaciones y comunicación comercial",
+        "en": "Service, complaints, and commercial communication"
+      },
+      {
+        "es": "Proyecto integrado: planificación y ejecución",
+        "en": "Integrated project: planning and execution"
+      },
+      {
+        "es": "Revisión, defensa y desarrollo profesional",
+        "en": "Review, defense, and professional development"
+      }
+    ]
   }
 ]
