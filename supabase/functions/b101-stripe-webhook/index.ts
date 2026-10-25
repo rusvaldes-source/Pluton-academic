@@ -34,9 +34,9 @@ Deno.serve(async (req) => {
   const admin = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
   const { data: course } = await admin.from(["ELEC-101", "HVAC-101", "BEAUTY-101"].includes(code) ? "course_premium_content" : "course_editor_state").select("course_code").eq("course_code", code).maybeSingle();
   if (!course) return new Response("Unknown course", { status: 400 });
-  const { error } = ["ELEC-101", "HVAC-101", "BEAUTY-101"].includes(code)
-    ? await admin.rpc("b107_grant_purchase", { p_session_id: sessionId, p_user_id: userId, p_course_code: code })
-    : await admin.from("course_purchase_access").upsert({ user_id: userId, course_code: code, active: true }, { onConflict: "user_id,course_code" });
+  const { error } = await admin.rpc("b107_grant_purchase", {
+    p_session_id: sessionId, p_user_id: userId, p_course_code: code,
+  });
   if (error) { console.error("Access grant failed", error.code); return new Response("Database unavailable", { status: 503 }); }
   return new Response("ok", { status: 200 });
 });

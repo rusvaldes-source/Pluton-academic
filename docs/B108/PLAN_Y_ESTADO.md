@@ -38,3 +38,13 @@ Decisión: ejecutar directamente sin preguntas rutinarias, según orden del fund
 
 ### Avance 1 — F10
 Reproducido con jsdom: alternar EN destruía select/input/textarea. Corrección mínima: textos traducibles en spans dentro de etiquetas; controles y valores conservados. Prueba nueva falla antes y pasa después. Suite dirigida: 6/6. npm test basal falla ENOENT por ruta padre del catálogo (F23 ya inventariado), sin cambios de este paquete. No publicado.
+
+### Avance 2 — F01/F05, preparado sin aplicar en producción
+- Restricción SELECT por compra activa en ambas tablas heredadas. Se usa política restrictiva para que una política permisiva antigua no abra acceso. Anónimo denegado por política separada sin consultar compras; dueño, otra cuenta, revocado y admin probados en PostgreSQL local.
+- Extensión del registro atómico B107 a los diez códigos y uso uniforme por webhook. Firma, consulta de Stripe, importe, moneda y códigos se conservan. Repetir sesión registrada no reactiva acceso revocado; sesión vinculada a otra identidad falla; nueva sesión legítima funciona.
+- Orden obligatorio: SQL de sesiones antes del webhook. Conciliar pagos heredados previos al registro antes del cambio. El registro no inventa historial de Stripe ni reconstruye transacciones antiguas.
+- SQL de lectura no se aplica aisladamente: F01/F02 siguen abiertos hasta coordinar rutas estáticas, multimedia privada y reproductores. No se borraron/copiaron payloads ni medios a GitHub; originales sin cambios.
+- Pruebas dirigidas: 8/8 aprobadas (incluyen 10 códigos dentro de los casos). RED observado para traducción, lectura de otro alumno y upsert heredado antes de correcciones.
+- Suite cjs: 129 casos, 124 aprobados, 4 fallos, 1 omitido. Tres fallos históricos: b87-publication (navegación), b91-publication (membresía antigua), b91-publication (muestra ID-001). Cuarto: b107-classroom no arranca porque depende de fixtures privados en ruta absoluta ausente en esta nueva sesión; no es evidencia de regresión del aula. No se publican fixtures privados para resolverlo.
+- npm test: sigue fallo basal ENOENT de ruta padre. No se declara suite general verde.
+- F10 listo para revisión en rama. F01/F05 componentes probados, aún sin despliegue; los demás P0/P1 pendientes. Stripe configurado por el fundador; no se cambiaron claves, precios ni modo.
