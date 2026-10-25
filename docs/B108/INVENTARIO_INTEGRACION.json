@@ -1,0 +1,199 @@
+{
+  "version": "B108",
+  "base_remote_commit": "eae4ebe3a5862c80dd0753090a175228cfb2de0c",
+  "inventory_self": "docs/B108/INVENTARIO_INTEGRACION.json (excluded from own hashes)",
+  "files": [
+    {
+      "path": "b64/aula.js",
+      "change": "modified",
+      "bytes": 2043,
+      "sha256": "10d3cb54ced3015e73625cf8cc6f5c22ce004604fa149d38fff23e8fb0453ea6"
+    },
+    {
+      "path": "b66/pa203/pa203-aula.js",
+      "change": "modified",
+      "bytes": 16021,
+      "sha256": "0fcd5daa5d9c883bcfa19fd18131bafa1853e4d6dce1ac907457cd2bf759d645"
+    },
+    {
+      "path": "b66/pa203/pa203-prueba.html",
+      "change": "modified",
+      "bytes": 4401,
+      "sha256": "af6446f1960652a9788f706f347245f070c9311fd03b06e44eab0698a008b11a"
+    },
+    {
+      "path": "b67/aula.js",
+      "change": "modified",
+      "bytes": 11746,
+      "sha256": "38ab8cf110fd4198dbb35744f21affd21b9ff1bd92fcebf0d8aaf047f81263ae"
+    },
+    {
+      "path": "b67/id101/index.html",
+      "change": "modified",
+      "bytes": 1562,
+      "sha256": "41689e0cefd6013c3b48cee447c2ee003c5b03acc451688371e1f023275101ba"
+    },
+    {
+      "path": "b68/mkt201/index.html",
+      "change": "modified",
+      "bytes": 1581,
+      "sha256": "56b663b535e3158cfa5b0f9f1b111ffa40eb76079a6dda91c219f3298e8569c8"
+    },
+    {
+      "path": "b70/aula.js",
+      "change": "modified",
+      "bytes": 12476,
+      "sha256": "b203365e7bd2449efdeee5758fe0fc83798b227555396d887cd1183e4494d02b"
+    },
+    {
+      "path": "b70/comp101/index.html",
+      "change": "modified",
+      "bytes": 1758,
+      "sha256": "90578101f4b1062e06652bab2af5f0d9ba7de09783ecefa458c9f916694bdb9e"
+    },
+    {
+      "path": "b70/na101/index.html",
+      "change": "modified",
+      "bytes": 1750,
+      "sha256": "1a4210fa527ae95fa96c250c6321cd3f836435b0e1dab58c93e5c3947605afb7"
+    },
+    {
+      "path": "b82/pa101/aula.js",
+      "change": "modified",
+      "bytes": 12230,
+      "sha256": "299a7dcc1211a35f9db1617583820c2e77ef8bcdbe74b2a11189b492f7e1cff8"
+    },
+    {
+      "path": "b82/pa101/index.html",
+      "change": "modified",
+      "bytes": 1756,
+      "sha256": "5a25a4e6ce8f28509fc61288a94a5846d2dc4a099f4b589b6a10b98e1583f036"
+    },
+    {
+      "path": "b95/course-loader.js",
+      "change": "modified",
+      "bytes": 1579,
+      "sha256": "777d2db150626e6c815175cb049ba21f487205de9553327c8f5a00d4a55c0f89"
+    },
+    {
+      "path": "daily.js",
+      "change": "modified",
+      "bytes": 3254,
+      "sha256": "6c21984bbcdc14cbafb73c8d8b95af91da6afc174249f5253fef956c8183a901"
+    },
+    {
+      "path": "database/b108_media_finalize.sql",
+      "change": "created",
+      "bytes": 1172,
+      "sha256": "abc5a1932c3db292d94d08a1d937fe8bfce005be98ef170e21118731f7cc33d0"
+    },
+    {
+      "path": "database/b108_media_prepare.sql",
+      "change": "created",
+      "bytes": 13390,
+      "sha256": "434117418c798ae5d856a6b8f458df41778df8e0c9affadc24826a09248db4b9"
+    },
+    {
+      "path": "docs/B108/ACTIVACION_F01_F02.md",
+      "change": "created",
+      "bytes": 5344,
+      "sha256": "11fd60701b70e19318a09aab028e97302dc604d259acab7b9529172d2bc4c371"
+    },
+    {
+      "path": "docs/B108/PLAN_Y_ESTADO.md",
+      "change": "modified",
+      "bytes": 7858,
+      "sha256": "88ee6a84d45eaf8ee7834aff3f5f7d6b9ad6ed1dbf71076b09a1a59e17cb8d78"
+    },
+    {
+      "path": "docs/B108/VERIFICACION_ARCHIVOS.json",
+      "change": "created",
+      "bytes": 1119,
+      "sha256": "523368f217a89d0cd4ac257eb7a79627b19e31a6a544a5732fb3a6ae874aac05"
+    },
+    {
+      "path": "index.html",
+      "change": "modified",
+      "bytes": 33433,
+      "sha256": "3e9b67d25b1421c9c4e381c71c4131884a5ee6e8aa4e0104f816cb7a2014f035"
+    },
+    {
+      "path": "ingles-desde-cero/audios-b102.js",
+      "change": "modified",
+      "bytes": 7268,
+      "sha256": "14bb3d5e2481705dff214d3b8e3f3d50c1ebd3880418a309fbf4ca8818b6c652"
+    },
+    {
+      "path": "ingles-desde-cero/index.html",
+      "change": "modified",
+      "bytes": 2471,
+      "sha256": "b6ce5d463110d66d9d55d226508e92442990fc0b74544c0e3e1014a72b868c90"
+    },
+    {
+      "path": "scripts/build-b108-public.py",
+      "change": "created",
+      "bytes": 5949,
+      "sha256": "1c012803fa8565c02cac730fc93cc57edfa188ae40ead813ecbc62a3bccaab67"
+    },
+    {
+      "path": "scripts/import-b108-audio.py",
+      "change": "created",
+      "bytes": 3427,
+      "sha256": "9e473ed157a79a84da08fb6f2dfd7560063e6ce3e95791ea46a26bedb82ade26"
+    },
+    {
+      "path": "scripts/prepare-b108-media.py",
+      "change": "created",
+      "bytes": 2167,
+      "sha256": "6db466d93653742bca6ea0e01a651e2f1b3c1f6f32f61a9ee43632ea75309a5d"
+    },
+    {
+      "path": "tests/b108-build.test.cjs",
+      "change": "created",
+      "bytes": 2340,
+      "sha256": "1b539ef3657d5f884cd3e0d137aa547a32c97e5e15c9717426a057d24cc988e3"
+    },
+    {
+      "path": "tests/b108-classroom-media.test.cjs",
+      "change": "created",
+      "bytes": 1720,
+      "sha256": "476f15c0145ecfdfb625c1130279430de0dce8a6f3af61a291eefc78bbe95093"
+    },
+    {
+      "path": "tests/b108-loader.test.cjs",
+      "change": "created",
+      "bytes": 1512,
+      "sha256": "632133316e4e82720e9c7082367988a834be0852e490ca4ca8e066eadf024d31"
+    },
+    {
+      "path": "tests/b108-media-rls.test.cjs",
+      "change": "created",
+      "bytes": 5588,
+      "sha256": "0e6a16e35adae3754c2ed0f0b5c58bdd42a595293131495fb6515d56332ce07c"
+    },
+    {
+      "path": "tests/b108-public-integration.test.cjs",
+      "change": "created",
+      "bytes": 2374,
+      "sha256": "1ce84fb64bfac9e81e442c12a02fc593e5ef9d72098ae82e280217fef1c28d4f"
+    },
+    {
+      "path": "tests/b108_import_test.py",
+      "change": "created",
+      "bytes": 2785,
+      "sha256": "0dcd232b4b5f25a02c52779b2a57d501a892214f41adeb9acd71ca08d21fafce"
+    },
+    {
+      "path": "tests/b95-classrooms.test.cjs",
+      "change": "modified",
+      "bytes": 3383,
+      "sha256": "516d7327d4350d8f0a07621ebc8574943a1ae1c844004e1023b77a17af935967"
+    },
+    {
+      "path": "tests/b95-loader.test.cjs",
+      "change": "modified",
+      "bytes": 1182,
+      "sha256": "4d89a2f690e22a12f1a799e822604d1d02a9f851df6e18408be50c469d07f34a"
+    }
+  ]
+}

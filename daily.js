@@ -25,7 +25,7 @@ function render(){
  try{if(localStorage.getItem(key)==='done')feedback.textContent=l==='en'?'Today’s challenge completed on this device.':'Reto de hoy completado en este dispositivo.'}catch(e){}
 }
 document.addEventListener('DOMContentLoaded',()=>{
- fetch('catalog.json').then(r=>{if(!r.ok)throw Error('catalog');return r.json()}).then(data=>{
+ fetch('b108/daily-questions.json').then(r=>{if(!r.ok)throw Error('catalog');return r.json()}).then(data=>{
    questions=data.flatMap(course=>(course.lessons||[]).filter(lesson=>lesson.question?.es&&lesson.question?.en&&Array.isArray(lesson.options?.es)&&Array.isArray(lesson.options?.en)&&lesson.options.es.length>=2&&lesson.options.en.length>=2&&Number.isInteger(lesson.answer)&&lesson.answer>=0&&lesson.answer<lesson.options.es.length&&lesson.answer<lesson.options.en.length).map(lesson=>({course,lesson})));
    if(!questions.length)throw Error('No valid questions');
    render();

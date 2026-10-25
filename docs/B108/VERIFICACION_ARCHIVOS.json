@@ -1,0 +1,40 @@
+{
+  "version": "B108",
+  "status": "STAGED_NOT_DEPLOYED",
+  "public_build_files": 304,
+  "catalog_metadata_courses": 9,
+  "catalog_metadata_lessons": 118,
+  "ID001_separate_course_lessons": 30,
+  "total_courses": 10,
+  "total_lessons": 148,
+  "daily_existing_public_questions": 38,
+  "missing_local_html_dependencies": [],
+  "media_inventory_objects": 93,
+  "videos_unchanged": 48,
+  "premium_recordings_existing": 45,
+  "public_sample_recordings": 14,
+  "targeted_node_tests": {
+    "pass": 36,
+    "fail": 0
+  },
+  "python_import_tests": {
+    "pass": 2,
+    "fail": 0
+  },
+  "browser_test": "not_run_local_chromium_download_truncated",
+  "production_mutations": false,
+  "stripe_configuration_changed": false,
+  "general_node_suite": {
+    "total": 147,
+    "pass": 142,
+    "fail": 4,
+    "skip": 1,
+    "failures": [
+      "b107-classroom: missing private fixtures",
+      "b87-publication: historical navigation contract",
+      "b91-publication: historical membership price",
+      "b91-publication: historical ID001 scope"
+    ]
+  },
+  "npm_test": "baseline ENOENT: catalog.json resolved in parent directory"
+}

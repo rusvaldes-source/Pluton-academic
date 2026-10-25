@@ -25,7 +25,7 @@ Archivos iniciales: database/b108_purchase_read.sql, database/b108_purchase_sess
 
 - [x] Base estable recuperada y rama remota verificada.
 - [x] Dependencias instaladas con npm ci --ignore-scripts.
-- [ ] Primer paquete implementado y probado.
+- [x] Primer paquete implementado y probado en rama.
 - [ ] Restricción estática y multimedia coordinadas.
 - [ ] Soporte completo.
 - [ ] Evaluación y certificados.
@@ -51,3 +51,12 @@ Reproducido con jsdom: alternar EN destruía select/input/textarea. Corrección 
 
 ### Avance 3 — Reproductor privado compartido
 Implementado b108/media.js y seis pruebas conductuales RED→GREEN: firma de 300 segundos, bloqueo sin cuenta/permiso, coincidencia curso/depósito/ruta, rechazo de dominios ajenos, cambio de cuenta durante firma y retirada del medio al cerrar sesión. Se conservan las catorce grabaciones de las seis muestras aprobadas de ID-001. El resto requiere bucket privado. El usuario carga o renueva el recurso explícitamente. Todavía falta conectar las aulas y preparar la publicación filtrada; no desplegado.
+
+### Avance 4 — Integración F01/F02 preparada y verificada
+- Aulas heredadas y audio activo ID-001 conectados a firma privada; Aula Digital anterior deja de descargar textos completos. Cargador exige cuenta, descarta lectura cruzada y limpia al cambiar de usuario.
+- Build filtrado reproducible: 304 archivos públicos, catálogo de nueve registros/118 títulos más ID-001 separado (10 cursos, 148 lecciones en total). Cero dependencias locales HTML faltantes. Sin payloads, manuales completos, respuestas de curso, SQL, ZIP ni audios premium en la salida. Se conserva el banco de 38 preguntas del Reto gratuito y las seis muestras con 14 audios.
+- Inventario exacto: 48 videos existentes +45 audios premium existentes. PREPARE no cambia visibilidad antigua; FINALIZE exige todos los objetos y 45 recibos de hash. Importador no sobrescribe y verifica descarga antes del recibo. No se generaron ni reemplazaron medios.
+- Pruebas dirigidas: 36/36 Node y 2/2 Python aprobadas. Suite general: 147 casos, 142 aprobados, cuatro fallos y uno omitido; los mismos tres contratos históricos b87/b91 y el arranque de b107-classroom por fixtures privados ausentes. npm test mantiene ENOENT basal de catálogo en carpeta padre.
+- Prueba visual/reproducción nueva no ejecutada: Chromium no pudo instalarse por descarga truncada. No se presenta jsdom como prueba visual, móvil física ni playback real.
+- Producción sin cambios: faltan importar/verificar remotos, validar en entorno aislado, coordinar configuración de salida Cloudflare/SQL y resolver copias completas del historial público de GitHub. F01/F02 no se declaran cerrados en producción.
+- Procedimiento y límites completos: docs/B108/ACTIVACION_F01_F02.md. Estado verificable: docs/B108/VERIFICACION_ARCHIVOS.json. Los demás P1 siguen pendientes según el orden original.
