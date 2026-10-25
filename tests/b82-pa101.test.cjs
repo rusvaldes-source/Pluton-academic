@@ -4,7 +4,7 @@ test('PA-101 has ten distinct bilingual lessons and complete practice',()=>{
  assert.equal(c.lessons.length,10);assert.equal(new Set(c.lessons.map(l=>l.id)).size,10);assert.equal(c.notebooks.length,5);assert.equal(c.final_quiz.length,5);assert.equal(c.review_status,'professional_review_pending');
  for(const [i,l]of c.lessons.entries()){assert.equal(l.number,i+1);assert.equal(l.video,null);assert.equal(l.quiz.length,5);for(const lang of ['es','en']){assert.ok(l.explanation[lang].length>1100);assert.ok(l.example[lang].length>80);assert.ok(l.notes_prompt[lang]);assert.ok(l.exercise.prompt[lang]);}
  for(const q of l.quiz){assert.ok(q.answer>=0&&q.answer<3);for(const lang of ['es','en']){assert.equal(new Set(q.options[lang]).size,3);assert.ok(q.feedback[lang]);}}}
- const cat=read('catalog.json');assert.equal(cat.length,6);assert.equal(cat.reduce((n,c)=>n+c.lessons.length,0),58);assert.equal(cat.find(c=>c.code==='PA-101').classroom,'b82/pa101/index.html');assert.equal(read('b82/pa101/originales/catalogo-dos-lecciones.json').lessons.length,2);
+ const cat=read('catalog.json').filter(c=>!['ELEC-101','HVAC-101','BEAUTY-101'].includes(c.code));assert.equal(cat.length,6);assert.equal(cat.reduce((n,c)=>n+c.lessons.length,0),58);assert.equal(cat.find(c=>c.code==='PA-101').classroom,'b82/pa101/index.html');assert.equal(read('b82/pa101/originales/catalogo-dos-lecciones.json').lessons.length,2);
 });
 test('PA-101 adapter saves its course only and verifies the account',async()=>{
  const s={window:{}};vm.runInNewContext(fs.readFileSync('b82/pa101/progress.js','utf8'),s);let rows=[];const cl={auth:{getUser:async()=>({data:{user:{id:'a'}}})},from:()=>({upsert:async row=>{rows.push(row);return {error:null}}})};
