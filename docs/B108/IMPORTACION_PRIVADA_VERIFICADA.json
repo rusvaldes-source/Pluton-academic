@@ -1,0 +1,502 @@
+{
+  "version": "B108",
+  "date": "2026-10-25",
+  "migration_applied": "b108_legacy_media_prepare",
+  "private_bucket": "b108-course-media",
+  "private_audio_objects": 45,
+  "private_audio_bytes": 125852908,
+  "verified_remote_sha256_receipts": 45,
+  "replaced_originals": 0,
+  "import_results": [
+    {
+      "index": 0,
+      "status": 200,
+      "result": {
+        "index": 0,
+        "object_name": "ID-001/B102_ID001-02-01-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": false
+      }
+    },
+    {
+      "index": 1,
+      "status": 200,
+      "result": {
+        "index": 1,
+        "object_name": "ID-001/B102_ID001-02-01-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 2,
+      "status": 200,
+      "result": {
+        "index": 2,
+        "object_name": "ID-001/B102_ID001-02-02-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 3,
+      "status": 200,
+      "result": {
+        "index": 3,
+        "object_name": "ID-001/B102_ID001-02-02-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 4,
+      "status": 200,
+      "result": {
+        "index": 4,
+        "object_name": "ID-001/B102_ID001-02-03-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 5,
+      "status": 200,
+      "result": {
+        "index": 5,
+        "object_name": "ID-001/B102_ID001-02-03-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 6,
+      "status": 200,
+      "result": {
+        "index": 6,
+        "object_name": "ID-001/B102_ID001-03-01-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 7,
+      "status": 200,
+      "result": {
+        "index": 7,
+        "object_name": "ID-001/B102_ID001-03-01-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 8,
+      "status": 200,
+      "result": {
+        "index": 8,
+        "object_name": "ID-001/B102_ID001-03-02-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 9,
+      "status": 200,
+      "result": {
+        "index": 9,
+        "object_name": "ID-001/B102_ID001-03-02-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 10,
+      "status": 200,
+      "result": {
+        "index": 10,
+        "object_name": "ID-001/B102_ID001-03-03-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 11,
+      "status": 200,
+      "result": {
+        "index": 11,
+        "object_name": "ID-001/B102_ID001-03-03-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 12,
+      "status": 200,
+      "result": {
+        "index": 12,
+        "object_name": "ID-001/B102_ID001-04-01-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 13,
+      "status": 200,
+      "result": {
+        "index": 13,
+        "object_name": "ID-001/B102_ID001-04-01-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 14,
+      "status": 200,
+      "result": {
+        "index": 14,
+        "object_name": "ID-001/B102_ID001-04-02-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 15,
+      "status": 200,
+      "result": {
+        "index": 15,
+        "object_name": "ID-001/B102_ID001-04-02-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 16,
+      "status": 200,
+      "result": {
+        "index": 16,
+        "object_name": "ID-001/B102_ID001-04-03-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 17,
+      "status": 200,
+      "result": {
+        "index": 17,
+        "object_name": "ID-001/B102_ID001-04-03-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 18,
+      "status": 200,
+      "result": {
+        "index": 18,
+        "object_name": "ID-001/B102_ID001-05-01-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 19,
+      "status": 200,
+      "result": {
+        "index": 19,
+        "object_name": "ID-001/B102_ID001-05-01-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 20,
+      "status": 200,
+      "result": {
+        "index": 20,
+        "object_name": "ID-001/B102_ID001-05-02-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 21,
+      "status": 200,
+      "result": {
+        "index": 21,
+        "object_name": "ID-001/B102_ID001-05-02-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 22,
+      "status": 200,
+      "result": {
+        "index": 22,
+        "object_name": "ID-001/B102_ID001-05-03-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 23,
+      "status": 200,
+      "result": {
+        "index": 23,
+        "object_name": "ID-001/B102_ID001-05-03-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 24,
+      "status": 200,
+      "result": {
+        "index": 24,
+        "object_name": "ID-001/B102_ID001-06-01-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 25,
+      "status": 200,
+      "result": {
+        "index": 25,
+        "object_name": "ID-001/B102_ID001-06-01-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 26,
+      "status": 200,
+      "result": {
+        "index": 26,
+        "object_name": "ID-001/B102_ID001-06-02-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 27,
+      "status": 200,
+      "result": {
+        "index": 27,
+        "object_name": "ID-001/B102_ID001-06-02-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 28,
+      "status": 200,
+      "result": {
+        "index": 28,
+        "object_name": "ID-001/B102_ID001-06-03-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 29,
+      "status": 200,
+      "result": {
+        "index": 29,
+        "object_name": "ID-001/B102_ID001-06-03-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 30,
+      "status": 200,
+      "result": {
+        "index": 30,
+        "object_name": "ID-001/B102_ID001-07-01-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 31,
+      "status": 200,
+      "result": {
+        "index": 31,
+        "object_name": "ID-001/B102_ID001-07-01-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 32,
+      "status": 200,
+      "result": {
+        "index": 32,
+        "object_name": "ID-001/B102_ID001-07-02-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 33,
+      "status": 200,
+      "result": {
+        "index": 33,
+        "object_name": "ID-001/B102_ID001-07-02-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 34,
+      "status": 200,
+      "result": {
+        "index": 34,
+        "object_name": "ID-001/B102_ID001-07-03-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 35,
+      "status": 200,
+      "result": {
+        "index": 35,
+        "object_name": "ID-001/B102_ID001-09-01-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 36,
+      "status": 200,
+      "result": {
+        "index": 36,
+        "object_name": "ID-001/B102_ID001-09-01-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 37,
+      "status": 200,
+      "result": {
+        "index": 37,
+        "object_name": "ID-001/B102_ID001-09-02-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 38,
+      "status": 200,
+      "result": {
+        "index": 38,
+        "object_name": "ID-001/B102_ID001-09-02-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 39,
+      "status": 200,
+      "result": {
+        "index": 39,
+        "object_name": "ID-001/B102_ID001-09-03-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 40,
+      "status": 200,
+      "result": {
+        "index": 40,
+        "object_name": "ID-001/B102_ID001-09-03-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 41,
+      "status": 200,
+      "result": {
+        "index": 41,
+        "object_name": "ID-001/B102_ID001-10-01-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 42,
+      "status": 200,
+      "result": {
+        "index": 42,
+        "object_name": "ID-001/B102_ID001-10-01-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 43,
+      "status": 200,
+      "result": {
+        "index": 43,
+        "object_name": "ID-001/B102_ID001-10-02-en_Ruslan.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    },
+    {
+      "index": 44,
+      "status": 200,
+      "result": {
+        "index": 44,
+        "object_name": "ID-001/B102_ID001-10-02-es_Adays.mp3",
+        "hash_verified": true,
+        "uploaded": true
+      }
+    }
+  ],
+  "live_checks": {
+    "live_http_checks": [
+      {
+        "check": "closed_importer",
+        "status": 410
+      },
+      {
+        "check": "public_audio_denied",
+        "status": 400
+      },
+      {
+        "check": "anonymous_sign_denied",
+        "status": 400
+      }
+    ],
+    "hash_matched_originals_decodable": 45,
+    "decoding_limit": "Local originals decoded; remote bytes match SHA-256. Not a browser playback test."
+  },
+  "production_postgres_rls_transaction_rolled_back": {
+    "anonymous": 0,
+    "without_purchase": 0,
+    "active_purchase": 45,
+    "different_course_denied": 0,
+    "revoked_purchase": 0
+  },
+  "active_purchases_after_rollback": 0,
+  "b107_objects_unchanged": 79,
+  "legacy_public_buckets_unchanged": 4,
+  "importer_closed_http": 410,
+  "temporary_import_credential_removed": true,
+  "stripe_configuration_changed": false,
+  "main_merged": false,
+  "cloudflare_login_required": true,
+  "browser_playback_complete": false,
+  "history_visibility_changed": false,
+  "limits": [
+    "RLS checked on actual production database using a rolled-back transaction; not a paid checkout.",
+    "HTTP denial and remote hashes verified; full browser playback awaits Cloudflare preview.",
+    "Public Git history remains public until access and deployment integration are reviewed."
+  ]
+}

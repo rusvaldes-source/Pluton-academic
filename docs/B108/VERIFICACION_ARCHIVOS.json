@@ -1,6 +1,6 @@
 {
   "version": "B108",
-  "status": "STAGED_NOT_DEPLOYED",
+  "status": "PRIVATE_IMPORT_COMPLETE_PUBLIC_CUTOVER_PENDING",
   "public_build_files": 304,
   "catalog_metadata_courses": 9,
   "catalog_metadata_lessons": 118,
@@ -14,7 +14,7 @@
   "premium_recordings_existing": 45,
   "public_sample_recordings": 14,
   "targeted_node_tests": {
-    "pass": 36,
+    "pass": 39,
     "fail": 0
   },
   "python_import_tests": {
@@ -22,7 +22,7 @@
     "fail": 0
   },
   "browser_test": "not_run_local_chromium_download_truncated",
-  "production_mutations": false,
+  "production_mutations": true,
   "stripe_configuration_changed": false,
   "general_node_suite": {
     "total": 147,
@@ -36,5 +36,8 @@
       "b91-publication: historical ID001 scope"
     ]
   },
-  "npm_test": "baseline ENOENT: catalog.json resolved in parent directory"
+  "npm_test": "baseline ENOENT: catalog.json resolved in parent directory",
+  "production_mutations_scope": "Additive media preparation, 45 private audio objects, metadata verification receipts. No main, Stripe, legacy visibility or paid-access cutover changes.",
+  "private_audio_import_verified": 45,
+  "import_endpoint_closed_http": 410
 }

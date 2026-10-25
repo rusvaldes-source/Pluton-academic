@@ -1,6 +1,6 @@
 # B108 — Activación coordinada de acceso y medios
 
-Estado: preparado en rama; no aplicado a producción. Stripe conserva su configuración y precio. No borra originales ni reescribe historial.
+Estado: PREPARE aplicada y 45 audios privados importados/verificados. READ, FINALIZE, webhook y publicación filtrada siguen sin activar. Stripe conserva su configuración y precio. No borra originales ni reescribe historial.
 
 ## Componentes
 
@@ -28,7 +28,7 @@ Estado: preparado en rama; no aplicado a producción. Stripe conserva su configu
 
 ## Límites que impiden declarar cierre total ahora
 
-- Aún no se importaron esos 45 objetos ni se aplicaron los SQL en producción.
+- Importación completada: 45 objetos y 45 recibos SHA-256; PREPARE aplicada. READ/FINALIZE siguen pendientes para coordinar con Cloudflare.
 - Aún no se configuró ni publicó la salida filtrada en Cloudflare.
 - La disponibilidad de copias completas en el **historial público de GitHub** no se corrige con RLS ni con el build. Se necesita conservar ese historial en un destino privado y decidir el tratamiento del repositorio público, comprobando antes la integración con Cloudflare. No se borró historia ni se cambió visibilidad sin revisión.
 - La instalación de Chromium local falló por descarga truncada. En esta etapa hay pruebas DOM/PostgreSQL y validación de archivos, pero no se declara una nueva prueba visual o reproducción real de este paquete.
