@@ -48,3 +48,6 @@ Reproducido con jsdom: alternar EN destruía select/input/textarea. Corrección 
 - Suite cjs: 129 casos, 124 aprobados, 4 fallos, 1 omitido. Tres fallos históricos: b87-publication (navegación), b91-publication (membresía antigua), b91-publication (muestra ID-001). Cuarto: b107-classroom no arranca porque depende de fixtures privados en ruta absoluta ausente en esta nueva sesión; no es evidencia de regresión del aula. No se publican fixtures privados para resolverlo.
 - npm test: sigue fallo basal ENOENT de ruta padre. No se declara suite general verde.
 - F10 listo para revisión en rama. F01/F05 componentes probados, aún sin despliegue; los demás P0/P1 pendientes. Stripe configurado por el fundador; no se cambiaron claves, precios ni modo.
+
+### Avance 3 — Reproductor privado compartido
+Implementado b108/media.js y seis pruebas conductuales RED→GREEN: firma de 300 segundos, bloqueo sin cuenta/permiso, coincidencia curso/depósito/ruta, rechazo de dominios ajenos, cambio de cuenta durante firma y retirada del medio al cerrar sesión. Se conservan las catorce grabaciones de las seis muestras aprobadas de ID-001. El resto requiere bucket privado. El usuario carga o renueva el recurso explícitamente. Todavía falta conectar las aulas y preparar la publicación filtrada; no desplegado.
