@@ -60,3 +60,6 @@ Implementado b108/media.js y seis pruebas conductuales RED→GREEN: firma de 300
 - Prueba visual/reproducción nueva no ejecutada: Chromium no pudo instalarse por descarga truncada. No se presenta jsdom como prueba visual, móvil física ni playback real.
 - Producción sin cambios: faltan importar/verificar remotos, validar en entorno aislado, coordinar configuración de salida Cloudflare/SQL y resolver copias completas del historial público de GitHub. F01/F02 no se declaran cerrados en producción.
 - Procedimiento y límites completos: docs/B108/ACTIVACION_F01_F02.md. Estado verificable: docs/B108/VERIFICACION_ARCHIVOS.json. Los demás P1 siguen pendientes según el orden original.
+
+### Avance 5 — Preparación de importación remota acotada
+No hay claves servidor en el entorno local. Se prepara importador temporal en Edge que usa las credenciales existentes exclusivamente dentro de Supabase. La plantilla pública no contiene token: exige hash de un secreto aleatorio, vencimiento, índice del manifiesto cerrado de 45 archivos y cotejo SHA-256 antes/después de guardar. No sobrescribe. Tres pruebas RED→GREEN aprobadas. El endpoint se sellará con HTTP 410 al terminar. Cloudflare requiere iniciar sesión; no hay conexión de Cloudflare disponible. Todavía no aplicado en este avance.
