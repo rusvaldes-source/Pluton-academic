@@ -35,16 +35,30 @@ async function bind(el,raw,code){
   const current=await sb.auth.getUser();if(current.error||current.data?.user?.id!==owner||started!==epoch||runs.get(el)!==run)throw Error('account');
   const signed=new URL(result.data.signedUrl),expected='/storage/v1/object/sign/'+dest.bucket+'/'+dest.path;
   if(signed.origin!==storageOrigin||decodeURIComponent(signed.pathname)!==expected||!signed.searchParams.get('token'))throw Error('signed URL');
-  el.src=signed.href;for(const item of playing)if(!item.el.isConnected||item.el===el)playing.delete(item);playing.add({el,owner});return true;
+  el.src=signed.href;if(el instanceof HTMLMediaElement){el.preload='metadata';try{el.load()}catch{}}for(const item of playing)if(!item.el.isConnected||item.el===el)playing.delete(item);playing.add({el,owner});return true;
  }catch{if(runs.get(el)===run)clear(el);return false;}
 }
 function attach(el,raw,code){
- el.preload='none';
- queueMicrotask(()=>{if(!el.isConnected)return;const button=document.createElement('button'),status=document.createElement('span');button.type='button';button.textContent=tr('Cargar / renovar recurso','Load / refresh media');status.setAttribute('role','status');el.after(button,status);
- async function load(){button.disabled=true;status.textContent=tr('Comprobando acceso…','Checking access…');const ok=await bind(el,raw,code);status.textContent=ok?tr('Recurso listo.','Media ready.'):tr('No disponible. Comprueba tu acceso y reintenta.','Unavailable. Check access and retry.');button.disabled=false;}
- button.addEventListener('click',load);el.addEventListener('error',()=>{status.textContent=tr('Reintenta cargar el recurso.','Try refreshing the media.');});
- void load();
- });
+ if(el.dataset.plutonMediaAttached)return;el.dataset.plutonMediaAttached='1';
+ el.controls=true;el.preload='metadata';
+ function start(){
+  if(!el.isConnected){const observer=new MutationObserver(()=>{if(el.isConnected){observer.disconnect();start()}});observer.observe(document.documentElement,{subtree:true,childList:true});return}
+  const button=document.createElement('button'),status=document.createElement('span');button.type='button';button.textContent=tr('Renovar audio o video','Refresh audio or video');status.setAttribute('role','status');el.after(button,status);
+  let validUntil=0,loading=null,authorized=false;
+  async function load(){
+   if(loading)return loading;
+   loading=(async()=>{button.disabled=true;status.textContent=tr('Comprobando acceso…','Checking access…');try{
+    const ok=await bind(el,raw,code);authorized=ok;validUntil=ok?Date.now()+240000:0;
+    status.textContent=ok?tr('Audio o video listo.','Audio or video ready.'):tr('No disponible. Comprueba tu acceso y reintenta.','Unavailable. Check access and retry.');
+    return ok;
+   }finally{button.disabled=false;loading=null}})();return loading;
+  }
+  button.addEventListener('click',()=>{void load()});
+  el.addEventListener('play',()=>{if(authorized&&Date.now()>validUntil){try{el.pause()}catch{}status.textContent=tr('Renovando acceso. Pulsa Play nuevamente.','Refreshing access. Press Play again.');void load();}});
+  el.addEventListener('error',()=>{validUntil=0;status.textContent=tr('Reintenta cargar el recurso.','Try refreshing the media.');});
+  void load();
+ }
+ queueMicrotask(start);
 }
 window.PlutonPrivateMedia={bind,attach};
 })();
