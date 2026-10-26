@@ -1,0 +1,40 @@
+{
+  "version": "B114",
+  "publication_status": "pending",
+  "courses": [
+    {
+      "code": "FA-101",
+      "title": {
+        "es": "Primeros Auxilios y Emergencias",
+        "en": "First Aid and Emergencies"
+      },
+      "lessons": 10,
+      "cover": "covers/FA-101.webp",
+      "professional_review_required": true
+    },
+    {
+      "code": "DRV-101",
+      "title": {
+        "es": "Formación para Conductores de Camiones CDL con inglés profesional",
+        "en": "CDL Truck Driver Training with Professional English"
+      },
+      "lessons": 12,
+      "cover": "covers/DRV-101.webp",
+      "professional_review_required": true
+    },
+    {
+      "code": "MED-201",
+      "title": {
+        "es": "Facturación y Codificación Médica en Estados Unidos",
+        "en": "Medical Billing and Coding in the United States"
+      },
+      "lessons": 12,
+      "cover": "covers/MED-201.webp",
+      "professional_review_required": true
+    }
+  ],
+  "notes": {
+    "es": "Catálogo informativo; el contenido pagado solo se sirve tras verificar acceso.",
+    "en": "Informational catalog; paid content is served only after access checks."
+  }
+}
