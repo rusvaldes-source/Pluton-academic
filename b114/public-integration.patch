@@ -1,0 +1,308 @@
+--- a/admin/course-editor.js
++++ b/admin/course-editor.js
+@@ -1,6 +1,6 @@
+ /* B95: drafts never become student content until the transactional publish RPC succeeds. */
+ (()=>{'use strict';
+-const courses=['PA-203','ID-101','MKT-201','PA-101','NA-101','COMP-101','ID-001'];let current;
++const courses=['PA-203','ID-101','MKT-201','PA-101','NA-101','COMP-101','ID-001','FA-101','DRV-101','MED-201'];let current;
+ const copy=x=>JSON.parse(JSON.stringify(x));
+ function mount({client,container,isCurrent=()=>true,language=()=> 'es'}){
+  if(!container)return{clear(){},unmount(){},setLanguage(){}};
+--- a/admin/certificates.js
++++ b/admin/certificates.js
+@@ -2,7 +2,7 @@
+ (() => {
+  'use strict';
+  const instances = new Set();
+- const allowedCourses = new Set(['PA-203','ID-101','MKT-201','PA-101','COMP-101','ID-001']);
++ const allowedCourses = new Set(['PA-203','ID-101','MKT-201','PA-101','COMP-101','ID-001','FA-101','DRV-101','MED-201']);
+  const uuid = () => crypto.randomUUID();
+  const escaped = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function mount({client,container,isCurrent = () => true,language = 'es'}) {
+--- a/scripts/build-b108-public.py
++++ b/scripts/build-b108-public.py
+@@ -6,16 +6,16 @@
+  'support/index.html','admin/index.html','certificados/verificar/index.html','noticias/index.html',
+  'biblioteca/index.html','ingles-desde-cero/index.html','herramientas/index.html',
+  'b66/pa203/pa203-prueba.html','b67/id101/index.html','b68/mkt201/index.html',
+- 'b70/na101/index.html','b70/comp101/index.html','b82/pa101/index.html','b107/index.html'}
+-JS_DIRS = {'admin','b107','b108','b95','b67','b70','b82/pa101','b66/pa203','assets/b59','recursos-pluton','biblioteca','herramientas','noticias','certificados/verificar','support','b84','b75'}
++ 'b70/na101/index.html','b70/comp101/index.html','b82/pa101/index.html','b107/index.html','b114/index.html','b114/aula.html'}
++JS_DIRS = {'b114','admin','b107','b108','b95','b67','b70','b82/pa101','b66/pa203','assets/b59','recursos-pluton','biblioteca','herramientas','noticias','certificados/verificar','support','b84','b75'}
+ ENGLISH_JS = {'content.js','access.js','syllabus.js','syllabus-view.js','audios-b102.js'}
+-PUBLIC_JSON = {'herramientas/products.json','herramientas/commerce-config.json','assets/b59/social-links.json','social-links.json','social/social-links.json'}
++PUBLIC_JSON = {'b114/catalog.json','b114/syllabus.json','herramientas/products.json','herramientas/commerce-config.json','assets/b59/social-links.json','social-links.json','social/social-links.json'}
+ PUBLIC_MEDIA = {'PLUTON_BIENVENIDA_EN.mp4','PLUTON_BIENVENIDA_ES.mp4','biblioteca/presentacion.mp4','ingles-desde-cero/presentacion.mp4',
+  'ingles-desde-cero/clips/airport.mp4','ingles-desde-cero/clips/hotel.mp4','ingles-desde-cero/clips/transport.mp4'}
+ SAMPLES = {f'ingles-desde-cero/audios/ID001-{lesson}-{lang}{suffix}.mp3'
+  for lesson in ('01-01','01-02','01-03','08-01','08-02','08-03') for lang in ('es','en') for suffix in ('','-apoyo')
+  if (not suffix or lesson.startswith('08-') and lang=='es') and not (lesson=='08-03' and lang=='en')}
+-IMAGE_ROOTS = {'assets','b75','b70','b107','biblioteca','ingles-desde-cero'}
++IMAGE_ROOTS = {'b114','assets','b75','b70','b107','biblioteca','ingles-desde-cero'}
+ 
+ def allowed(path):
+  name=path.as_posix(); parent=path.parent.as_posix(); ext=path.suffix.lower()
+--- a/dashboard.js
++++ b/dashboard.js
+@@ -9,13 +9,13 @@
+ function tr(es,en){return dashboardLang()==='en'?en:es;}
+ function studentStatus(el,value){if(el){el.dataset.studentStatus=value;el.textContent=dashboardLang()==='en'?(dashboardLabels[value]||value):value;}}
+ function studentValue(el,value){if(el){delete el.dataset.studentStatus;el.textContent=value;}}
+-function classroomURL(code,lesson=0){return B107_CODES.has(code)?'b107/index.html?course='+encodeURIComponent(code)+'&lesson='+lesson+'&lang='+dashboardLang():'courses.html?course='+encodeURIComponent(code);}
++function classroomURL(code,lesson=0){if(['FA-101','DRV-101','MED-201'].includes(code))return 'b114/aula.html?course='+encodeURIComponent(code)+'&lesson='+lesson+'&lang='+dashboardLang();return B107_CODES.has(code)?'b107/index.html?course='+encodeURIComponent(code)+'&lesson='+lesson+'&lang='+dashboardLang():'courses.html?course='+encodeURIComponent(code);}
+ function renderPurchases(){
+  const el=document.getElementById('purchasedCourses');if(!el)return;
+  if(!dashboardUser)return;
+  if(!dashboardOwned.length){studentStatus(el,'Aún no has comprado cursos');return;}
+  delete el.dataset.studentStatus;el.replaceChildren();const list=document.createElement('div');list.className='pa-owned-courses';
+- dashboardOwned.forEach(code=>{const card=document.createElement('article');card.style.cssText='padding:16px;margin:10px 0;border:1px solid #bd9a4c;border-radius:12px';const title=document.createElement('strong');const c=dashboardCatalog.find(c=>c.code===code);title.textContent=c?.[dashboardLang()]||c?.es||code;const link=document.createElement('a');link.className='pa-link';link.style.cssText='display:block;margin-top:8px';link.href=classroomURL(code);link.textContent=tr('Abrir curso comprado →','Open purchased course →');card.append(title,link);list.append(card)});el.append(list);
++ dashboardOwned.forEach(code=>{const card=document.createElement('article');card.style.cssText='padding:16px;margin:10px 0;border:1px solid #bd9a4c;border-radius:12px';const title=document.createElement('strong');const c=dashboardCatalog.find(c=>c.code===code);title.textContent=c?.[dashboardLang()]||c?.es||code;const link=document.createElement('a');link.className='pa-link';link.style.cssText='display:block;margin-top:8px';link.href=classroomURL(code);link.textContent=tr('Abrir curso comprado →','Open purchased course →');if(['FA-101','DRV-101','MED-201'].includes(code)){const photo=document.createElement('img');photo.src='b114/covers/'+code+'.webp';photo.alt=title.textContent;photo.style.cssText='display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px';card.append(photo)}card.append(title,link);list.append(card)});el.append(list);
+ }
+ function invalidateDashboard(){dashboardGeneration++;dashboardUser=null;dashboardOwned=[];dashboardProgress=null;studentStatus(document.getElementById('student-email'),'Comprobando...');studentStatus(document.getElementById('purchasedCourses'),'Comprobando...');checkoutState='';const checkout=document.getElementById('checkoutVerification');if(checkout){checkout.hidden=true;checkout.textContent='';}refreshProgress();refreshNextCourse();}
+ async function loadStudent(){
+--- a/courses.js
++++ b/courses.js
+@@ -5,7 +5,7 @@
+ const completedKey=code=>'pluton-completed-'+code;
+ const courseLanguage=()=>window.plutonLanguage?.current()||'es';
+ const escapeText=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+-function renderCourses(){const el=document.getElementById('courseList');if(!el)return;const lang=courseLanguage();document.getElementById('learningNotice').textContent=lang==='en'?'Learning activities and quiz results are saved on this device only. Educational material does not replace supervised professional training.':'Las actividades y respuestas se guardan solo en este dispositivo. El material educativo no sustituye la formación profesional supervisada.';const shown=catalog.filter(c=>!lessonSearch||[c.es,c.en,c.code].join(' ').toLocaleLowerCase().includes(lessonSearch));const count=document.getElementById('lessonCount');if(count)count.textContent=(lang==='en'?'Courses found: ':'Cursos encontrados: ')+shown.length;el.innerHTML=shown.map(c=>{if(c.classroom)return `<article id="course-${escapeText(c.code)}" class="pa-course-card">${({"ELEC-101":"b107/covers/electricidad-banner-aprobado.webp","HVAC-101":"b107/covers/aire-acondicionado-banner-aprobado.webp","BEAUTY-101":"b107/covers/belleza-banner-aprobado.webp"}[c.code])?`<div class="pa-b22-course-visual"><img src="${escapeText(c.cover)}" alt="${escapeText(c[lang])}" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover"></div>`:""}<h2>${escapeText(c[lang])}</h2><small>${escapeText(c.code)}</small><p>${c.lessons.length} ${c.code==='PA-101'?(lang==='en'?'lessons with exercises; 10 videos pending':'lecciones con ejercicios; 10 videos pendientes'):(lang==='en'?'lessons with videos, practice and quizzes':'lecciones con videos, práctica y cuestionarios')}</p><a class="pa-quiz-button" href="${escapeText(classroomHref(c))}">${lang==='en'?'Enter course':'Entrar al curso'}</a><details class="pa-course-lessons"><summary>${lang==='en'?'Choose a lesson':'Elegir una lección'}</summary>${c.lessons.map((l,i)=>`<a class="pa-course-lesson-link" href="${escapeText(classroomHref(c,i))}">${i+1}. ${escapeText(l[lang])}</a>`).join('')}</details></article>`;let completed=[];try{completed=JSON.parse(localStorage.getItem(completedKey(c.code))||'[]')}catch(e){}return `<article id="course-${escapeText(c.code)}" class="pa-course-card"><h2>${escapeText(c[lang])}</h2><small>${escapeText(c.code)}</small><p>${lang==='en'?'Progress':'Progreso'}: ${Math.round(completed.length/c.lessons.length*100)}%</p>${c.lessons.map((l,i)=>`<details class="pa-lesson" ${completed.includes(i)?'data-done="yes"':''}><summary>${escapeText(l[lang])} ${completed.includes(i)?'✓':''}</summary>${lessonVideo(c.code,i)}<p>${escapeText(l.content[lang])}</p><div class="pa-study-tools" data-code="${escapeText(c.code)}" data-lesson="${i}"><div class="pa-study-actions"><button type="button" class="pa-read-aloud" data-code="${escapeText(c.code)}" data-lesson="${i}">${lang==='en'?'🔊 Listen':'🔊 Escuchar'}</button><button type="button" class="pa-stop-audio">${lang==='en'?'Stop':'Detener'}</button><button type="button" class="pa-flashcard-toggle">${lang==='en'?'Study card':'Tarjeta de estudio'}</button><button type="button" class="pa-print-lesson">${lang==='en'?'Print / Save PDF':'Imprimir / Guardar PDF'}</button></div><div class="pa-flashcard" hidden><p class="pa-flashcard-front">${escapeText(l.question[lang])}</p><button type="button" class="pa-reveal-answer">${lang==='en'?'Reveal answer':'Ver respuesta'}</button><p class="pa-flashcard-back" hidden>${escapeText(l.options[lang][l.answer])}</p></div><p class="pa-study-message" aria-live="polite"></p></div><section class="pa-personal-notes" data-code="${escapeText(c.code)}" data-lesson="${i}"><label for="note-${escapeText(c.code)}-${i}">${lang==='en'?'My personal notes':'Mis notas personales'}</label><textarea id="note-${escapeText(c.code)}-${i}" class="pa-notes-input" rows="3" placeholder="${lang==='en'?'Write what you learned…':'Escribe lo que aprendiste…'}"></textarea><div class="pa-notes-footer"><button type="button" class="pa-notes-save">${lang==='en'?'Save notes':'Guardar notas'}</button><span class="pa-notes-status" aria-live="polite"></span></div><small>${lang==='en'?'Saved on this device only. Do not enter sensitive information.':'Se guardan solo en este dispositivo. No escribas información sensible.'}</small></section><p><strong>${escapeText(l.question[lang])}</strong></p>${l.options[lang].map((option,j)=>`<label class="pa-option"><input type="radio" name="quiz-${c.code}-${i}" value="${j}"> ${escapeText(option)}</label>`).join('')}<button type="button" class="pa-quiz-button" data-code="${c.code}" data-lesson="${i}">${lang==='en'?'Check answer':'Comprobar respuesta'}</button><p class="pa-feedback" aria-live="polite"></p></details>`).join('')}</article>`}).join('')}
++function renderCourses(){const el=document.getElementById('courseList');if(!el)return;const lang=courseLanguage();document.getElementById('learningNotice').textContent=lang==='en'?'Learning activities and quiz results are saved on this device only. Educational material does not replace supervised professional training.':'Las actividades y respuestas se guardan solo en este dispositivo. El material educativo no sustituye la formación profesional supervisada.';const shown=catalog.filter(c=>!lessonSearch||[c.es,c.en,c.code].join(' ').toLocaleLowerCase().includes(lessonSearch));const count=document.getElementById('lessonCount');if(count)count.textContent=(lang==='en'?'Courses found: ':'Cursos encontrados: ')+shown.length;el.innerHTML=shown.map(c=>{if(c.classroom)return `<article id="course-${escapeText(c.code)}" class="pa-course-card">${({"ELEC-101":"b107/covers/electricidad-banner-aprobado.webp","HVAC-101":"b107/covers/aire-acondicionado-banner-aprobado.webp","BEAUTY-101":"b107/covers/belleza-banner-aprobado.webp","FA-101":"b114/covers/FA-101.webp","DRV-101":"b114/covers/DRV-101.webp","MED-201":"b114/covers/MED-201.webp"}[c.code])?`<div class="pa-b22-course-visual"><img src="${escapeText(c.cover)}" alt="${escapeText(c[lang])}" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover"></div>`:""}<h2>${escapeText(c[lang])}</h2><small>${escapeText(c.code)}</small><p>${c.lessons.length} ${c.code==='PA-101'?(lang==='en'?'lessons with exercises; 10 videos pending':'lecciones con ejercicios; 10 videos pendientes'):(lang==='en'?'lessons with videos, practice and quizzes':'lecciones con videos, práctica y cuestionarios')}</p><a class="pa-quiz-button" href="${escapeText(classroomHref(c))}">${lang==='en'?'Enter course':'Entrar al curso'}</a><details class="pa-course-lessons"><summary>${lang==='en'?'Choose a lesson':'Elegir una lección'}</summary>${c.lessons.map((l,i)=>`<a class="pa-course-lesson-link" href="${escapeText(classroomHref(c,i))}">${i+1}. ${escapeText(l[lang])}</a>`).join('')}</details></article>`;let completed=[];try{completed=JSON.parse(localStorage.getItem(completedKey(c.code))||'[]')}catch(e){}return `<article id="course-${escapeText(c.code)}" class="pa-course-card"><h2>${escapeText(c[lang])}</h2><small>${escapeText(c.code)}</small><p>${lang==='en'?'Progress':'Progreso'}: ${Math.round(completed.length/c.lessons.length*100)}%</p>${c.lessons.map((l,i)=>`<details class="pa-lesson" ${completed.includes(i)?'data-done="yes"':''}><summary>${escapeText(l[lang])} ${completed.includes(i)?'✓':''}</summary>${lessonVideo(c.code,i)}<p>${escapeText(l.content[lang])}</p><div class="pa-study-tools" data-code="${escapeText(c.code)}" data-lesson="${i}"><div class="pa-study-actions"><button type="button" class="pa-read-aloud" data-code="${escapeText(c.code)}" data-lesson="${i}">${lang==='en'?'🔊 Listen':'🔊 Escuchar'}</button><button type="button" class="pa-stop-audio">${lang==='en'?'Stop':'Detener'}</button><button type="button" class="pa-flashcard-toggle">${lang==='en'?'Study card':'Tarjeta de estudio'}</button><button type="button" class="pa-print-lesson">${lang==='en'?'Print / Save PDF':'Imprimir / Guardar PDF'}</button></div><div class="pa-flashcard" hidden><p class="pa-flashcard-front">${escapeText(l.question[lang])}</p><button type="button" class="pa-reveal-answer">${lang==='en'?'Reveal answer':'Ver respuesta'}</button><p class="pa-flashcard-back" hidden>${escapeText(l.options[lang][l.answer])}</p></div><p class="pa-study-message" aria-live="polite"></p></div><section class="pa-personal-notes" data-code="${escapeText(c.code)}" data-lesson="${i}"><label for="note-${escapeText(c.code)}-${i}">${lang==='en'?'My personal notes':'Mis notas personales'}</label><textarea id="note-${escapeText(c.code)}-${i}" class="pa-notes-input" rows="3" placeholder="${lang==='en'?'Write what you learned…':'Escribe lo que aprendiste…'}"></textarea><div class="pa-notes-footer"><button type="button" class="pa-notes-save">${lang==='en'?'Save notes':'Guardar notas'}</button><span class="pa-notes-status" aria-live="polite"></span></div><small>${lang==='en'?'Saved on this device only. Do not enter sensitive information.':'Se guardan solo en este dispositivo. No escribas información sensible.'}</small></section><p><strong>${escapeText(l.question[lang])}</strong></p>${l.options[lang].map((option,j)=>`<label class="pa-option"><input type="radio" name="quiz-${c.code}-${i}" value="${j}"> ${escapeText(option)}</label>`).join('')}<button type="button" class="pa-quiz-button" data-code="${c.code}" data-lesson="${i}">${lang==='en'?'Check answer':'Comprobar respuesta'}</button><p class="pa-feedback" aria-live="polite"></p></details>`).join('')}</article>`}).join('')}
+ document.addEventListener('click',event=>{const b=event.target.closest('.pa-quiz-button');if(!b)return;const c=catalog.find(x=>x.code===b.dataset.code),i=Number(b.dataset.lesson),lesson=c?.lessons[i];if(!lesson)return;const box=b.closest('details'),selected=box.querySelector('input[type="radio"]:checked'),lang=courseLanguage(),feedback=box.querySelector('.pa-feedback');if(!selected){feedback.textContent=lang==='en'?'Choose an answer first.':'Selecciona una respuesta.';return}if(Number(selected.value)!==lesson.answer){feedback.textContent=lang==='en'?'Try again.':'Inténtalo de nuevo.';return}let completed=[];try{completed=JSON.parse(localStorage.getItem(completedKey(c.code))||'[]')}catch(e){}completed=[...new Set([...completed,i])];localStorage.setItem(completedKey(c.code),JSON.stringify(completed));localStorage.setItem('pluton-progress-'+c.code,String(Math.round(completed.length/c.lessons.length*100)));window.plutonSync?.markCompleted(c.code,i);feedback.textContent=lang==='en'?'Correct! Lesson completed.':'¡Correcto! Lección completada.';const summary=box.querySelector('summary');if(!summary.textContent.includes('✓'))summary.textContent+=' ✓';box.closest('article').querySelector('p').textContent=(lang==='en'?'Progress: ':'Progreso: ')+Math.round(completed.length/c.lessons.length*100)+'%'});
+ async function loadOwnedCourses(){
+  const list=document.getElementById('courseList'),count=document.getElementById('lessonCount');
+--- a/app.js
++++ b/app.js
+@@ -206,6 +206,7 @@
+ 
+ // B101: never unlock a course on checkout redirect; only verified webhook can grant access.
+ async function purchaseCourse(code) {
++  if (['FA-101','DRV-101','MED-201'].includes(String(code).toUpperCase())) return show('PLUTÓN ACADEMIC', '<p>Precio y habilitación de venta pendientes de aprobación. / Price and sales activation awaiting approval.</p>');
+   if (!sb) return show('Compra', '<p>Servicio de registro no disponible.</p>');
+   const { data: { user } } = await sb.auth.getUser();
+   if (!user) { sessionStorage.setItem('pa-pending-course', String(code).toUpperCase()); openLogin(); authMessage('Crea tu cuenta gratis o inicia sesión antes de comprar.'); return; }
+@@ -227,6 +228,7 @@
+ function course(code) {
+   const safeCode = String(code || '').trim().toUpperCase();
+   if (!/^[A-Z]{2,6}-[0-9]{3}$/.test(safeCode)) return;
++  if (['FA-101','DRV-101','MED-201'].includes(safeCode)) return show(safeCode, '<p>Precio pendiente de aprobación. / Price awaiting approval.</p>');
+   const professionalEnglish = ['ELEC-101','HVAC-101','BEAUTY-101'].includes(safeCode) && localStorage.getItem('pluton-lang') === 'en';
+   if (professionalEnglish) show('Course ' + safeCode, '<p>One-time payment: $9.99 USD. A free account is required.</p><button type="button" id="b101-buy">Buy course</button>');
+   else show('Curso ' + safeCode, '<p>Precio único: $9.99 USD. Se requiere una cuenta gratuita.</p><button type="button" id="b101-buy">Comprar curso</button>');
+--- a/catalog.json
++++ b/catalog.json
+@@ -1384,2 +1384,214 @@
+     ]
++  },
++  {
++    "code": "FA-101",
++    "cover": "b114/covers/FA-101.webp",
++    "es": "Primeros Auxilios y Emergencias",
++    "en": "First Aid and Emergencies",
++    "category": "salud",
++    "classroom": "b114/aula.html?course=FA-101",
++    "price_cents": null,
++    "currency": "usd",
++    "payment_type": "one_time",
++    "publication_status": "pending_approval",
++    "lessons": [
++      {
++        "id": "FA-101-L01",
++        "es": "Seguridad de la escena",
++        "en": "Scene Safety"
++      },
++      {
++        "id": "FA-101-L02",
++        "es": "Activación de emergencias y evaluación inicial",
++        "en": "Calling Emergency Services and Initial Assessment"
++      },
++      {
++        "id": "FA-101-L03",
++        "es": "RCP y uso del DEA: fundamentos",
++        "en": "CPR and AED Fundamentals"
++      },
++      {
++        "id": "FA-101-L04",
++        "es": "Atragantamiento y obstrucción de vías respiratorias",
++        "en": "Choking and Airway Obstruction"
++      },
++      {
++        "id": "FA-101-L05",
++        "es": "Hemorragias y heridas",
++        "en": "Bleeding and Wounds"
++      },
++      {
++        "id": "FA-101-L06",
++        "es": "Quemaduras y lesiones térmicas",
++        "en": "Burns and Thermal Injuries"
++      },
++      {
++        "id": "FA-101-L07",
++        "es": "Fracturas y lesiones musculoesqueléticas",
++        "en": "Fractures and Musculoskeletal Injuries"
++      },
++      {
++        "id": "FA-101-L08",
++        "es": "Emergencias médicas frecuentes",
++        "en": "Common Medical Emergencies"
++      },
++      {
++        "id": "FA-101-L09",
++        "es": "Emergencias ambientales y preparación",
++        "en": "Environmental Emergencies and Preparedness"
++      },
++      {
++        "id": "FA-101-L10",
++        "es": "Simulaciones y evaluación final",
++        "en": "Scenarios and Final Assessment"
++      }
++    ]
++  },
++  {
++    "code": "DRV-101",
++    "cover": "b114/covers/DRV-101.webp",
++    "es": "Formación para Conductores de Camiones CDL con Inglés Profesional",
++    "en": "CDL Truck Driver Preparation with Professional English",
++    "category": "profesional",
++    "classroom": "b114/aula.html?course=DRV-101",
++    "price_cents": null,
++    "currency": "usd",
++    "payment_type": "one_time",
++    "publication_status": "pending_approval",
++    "lessons": [
++      {
++        "id": "DRV-101-L01",
++        "es": "Introducción a la CDL y clases de licencia",
++        "en": "Introduction to CDL and License Classes"
++      },
++      {
++        "id": "DRV-101-L02",
++        "es": "Inspección previa al viaje",
++        "en": "Pre-trip Inspection"
++      },
++      {
++        "id": "DRV-101-L03",
++        "es": "Controles básicos y maniobras",
++        "en": "Basic Vehicle Control and Maneuvers"
++      },
++      {
++        "id": "DRV-101-L04",
++        "es": "Conducción segura y gestión del espacio",
++        "en": "Safe Driving and Space Management"
++      },
++      {
++        "id": "DRV-101-L05",
++        "es": "Frenos de aire",
++        "en": "Air Brakes"
++      },
++      {
++        "id": "DRV-101-L06",
++        "es": "Combinaciones de vehículos",
++        "en": "Combination Vehicles"
++      },
++      {
++        "id": "DRV-101-L07",
++        "es": "Carga, sujeción y distribución de peso",
++        "en": "Cargo Securement and Weight Distribution"
++      },
++      {
++        "id": "DRV-101-L08",
++        "es": "Horas de servicio y registros",
++        "en": "Hours of Service and Logs"
++      },
++      {
++        "id": "DRV-101-L09",
++        "es": "Condiciones adversas y emergencias",
++        "en": "Adverse Conditions and Emergencies"
++      },
++      {
++        "id": "DRV-101-L10",
++        "es": "Inglés profesional: inspecciones y documentación",
++        "en": "Professional English: Inspections and Documents"
++      },
++      {
++        "id": "DRV-101-L11",
++        "es": "Inglés profesional: comunicación en carretera",
++        "en": "Professional English: Road Communication"
++      },
++      {
++        "id": "DRV-101-L12",
++        "es": "Repaso CDL y situaciones prácticas",
++        "en": "CDL Review and Practical Scenarios"
++      }
++    ]
++  },
++  {
++    "code": "MED-201",
++    "cover": "b114/covers/MED-201.webp",
++    "es": "Facturación y Codificación Médica en Estados Unidos",
++    "en": "Medical Billing and Coding in the United States",
++    "category": "salud",
++    "classroom": "b114/aula.html?course=MED-201",
++    "price_cents": null,
++    "currency": "usd",
++    "payment_type": "one_time",
++    "publication_status": "pending_approval",
++    "lessons": [
++      {
++        "id": "MED-201-L01",
++        "es": "Sistema sanitario y ciclo de ingresos",
++        "en": "Healthcare System and Revenue Cycle"
++      },
++      {
++        "id": "MED-201-L02",
++        "es": "Terminología médica y anatomía básica",
++        "en": "Medical Terminology and Basic Anatomy"
++      },
++      {
++        "id": "MED-201-L03",
++        "es": "Privacidad y manejo de información de salud",
++        "en": "Privacy and Health Information Handling"
++      },
++      {
++        "id": "MED-201-L04",
++        "es": "Documentación clínica y necesidad médica",
++        "en": "Clinical Documentation and Medical Necessity"
++      },
++      {
++        "id": "MED-201-L05",
++        "es": "ICD-10-CM: conceptos y estructura",
++        "en": "ICD-10-CM: Concepts and Structure"
++      },
++      {
++        "id": "MED-201-L06",
++        "es": "CPT y HCPCS Level II: conceptos",
++        "en": "CPT and HCPCS Level II: Concepts"
++      },
++      {
++        "id": "MED-201-L07",
++        "es": "Modificadores y servicios frecuentes",
++        "en": "Modifiers and Common Services"
++      },
++      {
++        "id": "MED-201-L08",
++        "es": "Elegibilidad, seguros y beneficios",
++        "en": "Eligibility, Insurance and Benefits"
++      },
++      {
++        "id": "MED-201-L09",
++        "es": "Reclamaciones y formularios",
++        "en": "Claims and Forms"
++      },
++      {
++        "id": "MED-201-L10",
++        "es": "Denegaciones, apelaciones y correcciones",
++        "en": "Denials, Appeals and Corrections"
++      },
++      {
++        "id": "MED-201-L11",
++        "es": "Cumplimiento, fraude y auditoría",
++        "en": "Compliance, Fraud and Audits"
++      },
++      {
++        "id": "MED-201-L12",
++        "es": "Casos integradores y evaluación final",
++        "en": "Integrated Cases and Final Assessment"
++      }
++    ]
+   }

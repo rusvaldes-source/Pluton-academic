@@ -101,5 +101,52 @@ using (
 -- Private payload seed is supplied separately in the owner's private package.
 -- All three courses remain unpublished until an approved release.
 notify pgrst,'reload schema';
-commit;
 
+-- B95 existing RPC routing only: retain deployed signatures, invoker/definer and guards.
+-- Public b95_editor_publish remains its unchanged private wrapper.
+CREATE OR REPLACE FUNCTION public.b95_course_published(p_course_code text)
+ RETURNS jsonb
+ LANGUAGE plpgsql
+ SET search_path TO ''
+AS $function$
+declare p jsonb; stamp text;
+begin
+ if p_course_code='ID-001' then select payload,updated_at::text into p,stamp from public.course_premium_content where course_code=p_course_code;
+ elsif p_course_code in ('NA-101','COMP-101','FA-101','DRV-101','MED-201') then select payload,updated_at::text into p,stamp from public.course_learning_content where course_code=p_course_code and published;
+ else select payload,revision::text into p,stamp from public.course_public_content where course_code=p_course_code; end if;
+ if p is null then return null; end if;
+ return jsonb_build_object('payload',p,'revision',stamp);
+end;$function$;
+
+CREATE OR REPLACE FUNCTION pluton_rpc_private.b95_editor_publish(p_course_code text, p_expected_draft bigint, p_expected_published bigint)
+ RETURNS jsonb
+ LANGUAGE plpgsql
+ SECURITY DEFINER
+ SET search_path TO ''
+AS $function$
+declare s public.course_editor_state; next_revision bigint; actual jsonb;
+begin
+ perform pluton_course_private.require_admin();
+ select * into s from public.course_editor_state where course_code=p_course_code for update;
+ if not found then raise exception 'unknown_course'; end if;
+ if s.draft_revision is distinct from p_expected_draft or s.published_revision is distinct from p_expected_published then raise exception 'version_conflict' using errcode='40001'; end if;
+ if s.draft_payload is null then raise exception 'draft_required'; end if;
+ perform pluton_course_private.validate_tree(pluton_course_private.snapshot(p_course_code),s.draft_payload);
+ -- Detect external changes made outside the editor as well as simultaneous editors.
+ if p_course_code='ID-001' then select payload into actual from public.course_premium_content where course_code=p_course_code for update;
+ elsif p_course_code in ('NA-101','COMP-101','FA-101','DRV-101','MED-201') then select payload into actual from public.course_learning_content where course_code=p_course_code for update;
+ else select payload into actual from public.course_public_content where course_code=p_course_code for update; end if;
+ if actual is distinct from pluton_course_private.snapshot(p_course_code) then raise exception 'version_conflict' using errcode='40001'; end if;
+ next_revision:=s.published_revision+1;
+ if p_course_code='ID-001' then
+  update public.course_premium_content set payload=s.draft_payload,updated_at=now() where course_code=p_course_code;
+  perform pluton_course_private.refresh_preview(s.draft_payload,next_revision);
+ elsif p_course_code in ('NA-101','COMP-101','FA-101','DRV-101','MED-201') then update public.course_learning_content set payload=s.draft_payload,updated_at=now() where course_code=p_course_code;
+ else update public.course_public_content set payload=s.draft_payload,revision=next_revision,updated_at=now() where course_code=p_course_code; end if;
+ insert into public.course_content_versions(course_code,revision,payload,created_by) values(p_course_code,next_revision,s.draft_payload,auth.uid());
+ update public.course_editor_state set published_revision=next_revision,draft_payload=null,draft_revision=draft_revision+1,updated_at=now(),updated_by=auth.uid() where course_code=p_course_code;
+ return pluton_course_private.editor_response(p_course_code);
+end;$function$;
+
+
+commit;

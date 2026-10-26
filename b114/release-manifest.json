@@ -1,0 +1,51 @@
+{
+  "version": "B114",
+  "base_commit": "510fe3fa3ce9e00528f0200a8c6418ce35e17bb2",
+  "applied": false,
+  "existing_courses": 9,
+  "new_courses": 3,
+  "existing_files_proposed": [
+    {
+      "path": "admin/course-editor.js",
+      "before_sha256": "ee9c56c17896ac819acea2ca237ea80710fd968d2bf08a1ca47a0986f5ff341d",
+      "after_sha256": "842dd8dd0554c6dc906281264e1648bf818596ba06055e45bd4ebd68f6c34b8b"
+    },
+    {
+      "path": "admin/certificates.js",
+      "before_sha256": "393a6c9699ffd9b2f83102d88d9adbc247c24ae2e7b4932276390fb20d1e6712",
+      "after_sha256": "9790f2c6bc319c767fd93e51d22b177b3108e8263dab1c7abcc6c0a38c3782a2"
+    },
+    {
+      "path": "scripts/build-b108-public.py",
+      "before_sha256": "af342d7ce8db2fe591d3070e9fd16b6bee29d071e02a43ff0a2831755a343ef8",
+      "after_sha256": "72e19fd308418062c19292eb5b45c2e7448093f0e739ef7b5a559e4b4bf8788e"
+    },
+    {
+      "path": "dashboard.js",
+      "before_sha256": "4e38af52e65fc97b9bed14093ff3394c3de9a92c13a52299be754288d6ac3562",
+      "after_sha256": "9cf4b1c882f4b2cb60c51dfe2192022c1abbea18e2d66b5e71f278ec2ceb202c"
+    },
+    {
+      "path": "courses.js",
+      "before_sha256": "564781dfafbe244432e84144cd86c4f2b4284a4a4e80c9febab858d51d998cf9",
+      "after_sha256": "e066ca96afcea5fe026db7fb7d7db362366eca9486c40c8d96053a54068e7ef2"
+    },
+    {
+      "path": "app.js",
+      "before_sha256": "100a3e5561e6c61bb21121032f3b814239cee411fdfc1e1f806d79b429c9c617",
+      "after_sha256": "f606a29412ca006f9d3926647a2d15d4bb9eb006adc3ddefd6d6882b4a570aa8"
+    },
+    {
+      "path": "catalog.json",
+      "before_sha256": "473f255dbcb97e44a86139ad7fc07cd0b1d756fe33fe14e90fcdb9579603134b",
+      "after_sha256": "0f0373cfb654513590e50fe6feae784c5b04e5b90e4906b35d65b6c644e2ab15"
+    }
+  ],
+  "publication_gates": [
+    "Founder approval",
+    "Professional review",
+    "Approved new prices and separate Stripe product configuration",
+    "Authorized staging Auth/Storage/purchase end-to-end tests"
+  ],
+  "new_course_sales": "blocked until separately approved; existing Stripe code untouched beyond new-code-only UI guard"
+}

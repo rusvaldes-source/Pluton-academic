@@ -1,69 +1,5 @@
 [
   {
-    "code": "DRV-101",
-    "title": {
-      "es": "Formación para Conductores de Camiones CDL con Inglés Profesional",
-      "en": "CDL Truck Driver Preparation with Professional English"
-    },
-    "price": null,
-    "cover": "covers/DRV-101.webp",
-    "lessonCount": 12,
-    "scope": {
-      "es": "Preparación teórica introductoria. No expide CDL ni sustituye ELDT, formación práctica, evaluación de inglés o exámenes oficiales. Confirma los requisitos federales y del estado aplicables antes de conducir.",
-      "en": "Introductory theory preparation. It does not issue a CDL or replace ELDT, hands-on training, English assessment or official examinations. Confirm applicable federal and state requirements before driving."
-    },
-    "topics": [
-      {
-        "es": "Introducción al transporte comercial estadounidense",
-        "en": "Introduction to U.S. commercial transportation"
-      },
-      {
-        "es": "Licencias CDL y requisitos",
-        "en": "CDL types and requirements"
-      },
-      {
-        "es": "Normas generales de seguridad",
-        "en": "General safety rules"
-      },
-      {
-        "es": "Inspección del vehículo antes del viaje",
-        "en": "Pre-trip vehicle inspection"
-      },
-      {
-        "es": "Frenos de aire y sistemas del camión",
-        "en": "Air brakes and truck systems"
-      },
-      {
-        "es": "Conducción defensiva",
-        "en": "Defensive driving"
-      },
-      {
-        "es": "Señales y reglamentos de tránsito",
-        "en": "Traffic signs and rules"
-      },
-      {
-        "es": "Horas de servicio y registros",
-        "en": "Hours of service and records"
-      },
-      {
-        "es": "Transporte de carga y documentación",
-        "en": "Cargo transport and documentation"
-      },
-      {
-        "es": "Inglés profesional para conductores",
-        "en": "Professional English for drivers"
-      },
-      {
-        "es": "Comunicación con inspectores y autoridades",
-        "en": "Communicating with inspectors and authorities"
-      },
-      {
-        "es": "Preparación teórica para exámenes CDL",
-        "en": "Preparing for CDL knowledge tests"
-      }
-    ]
-  },
-  {
     "code": "FA-101",
     "title": {
       "es": "Primeros Auxilios y Emergencias",
@@ -78,46 +14,112 @@
     },
     "topics": [
       {
-        "es": "Fundamentos de primeros auxilios",
-        "en": "Foundations of first aid"
+        "es": "Seguridad de la escena",
+        "en": "Scene Safety"
       },
       {
-        "es": "Evaluación inicial y seguridad de la escena",
-        "en": "Initial assessment and scene safety"
+        "es": "Activación de emergencias y evaluación inicial",
+        "en": "Calling Emergency Services and Initial Assessment"
       },
       {
-        "es": "Reanimación cardiopulmonar y DEA en adultos",
-        "en": "Adult CPR and AED"
+        "es": "RCP y uso del DEA: fundamentos",
+        "en": "CPR and AED Fundamentals"
       },
       {
         "es": "Atragantamiento y obstrucción de vías respiratorias",
-        "en": "Choking and airway obstruction"
+        "en": "Choking and Airway Obstruction"
       },
       {
-        "es": "Hemorragias, heridas y vendajes",
-        "en": "Bleeding, wounds and dressings"
+        "es": "Hemorragias y heridas",
+        "en": "Bleeding and Wounds"
       },
       {
-        "es": "Quemaduras y lesiones",
-        "en": "Burns and injuries"
+        "es": "Quemaduras y lesiones térmicas",
+        "en": "Burns and Thermal Injuries"
       },
       {
-        "es": "Fracturas e inmovilización",
-        "en": "Fractures and immobilization"
+        "es": "Fracturas y lesiones musculoesqueléticas",
+        "en": "Fractures and Musculoskeletal Injuries"
       },
       {
-        "es": "Emergencias cardiovasculares y respiratorias",
-        "en": "Cardiovascular and breathing emergencies"
+        "es": "Emergencias médicas frecuentes",
+        "en": "Common Medical Emergencies"
       },
       {
-        "es": "Convulsiones y pérdida de conciencia",
-        "en": "Seizures and loss of consciousness"
+        "es": "Emergencias ambientales y preparación",
+        "en": "Environmental Emergencies and Preparedness"
       },
       {
-        "es": "Actuación y activación del 911",
-        "en": "Emergency action and calling 911"
+        "es": "Simulaciones y evaluación final",
+        "en": "Scenarios and Final Assessment"
       }
-    ]
+    ],
+    "professional_review_required": true
+  },
+  {
+    "code": "DRV-101",
+    "title": {
+      "es": "Formación para Conductores de Camiones CDL con Inglés Profesional",
+      "en": "CDL Truck Driver Preparation with Professional English"
+    },
+    "price": null,
+    "cover": "covers/DRV-101.webp",
+    "lessonCount": 12,
+    "scope": {
+      "es": "Preparación teórica introductoria. No expide CDL ni sustituye ELDT, formación práctica, evaluación de inglés o exámenes oficiales. Confirma los requisitos federales y del estado aplicables antes de conducir.",
+      "en": "Introductory theory preparation. It does not issue a CDL or replace ELDT, hands-on training, English assessment or official examinations. Confirm applicable federal and state requirements before driving."
+    },
+    "topics": [
+      {
+        "es": "Introducción a la CDL y clases de licencia",
+        "en": "Introduction to CDL and License Classes"
+      },
+      {
+        "es": "Inspección previa al viaje",
+        "en": "Pre-trip Inspection"
+      },
+      {
+        "es": "Controles básicos y maniobras",
+        "en": "Basic Vehicle Control and Maneuvers"
+      },
+      {
+        "es": "Conducción segura y gestión del espacio",
+        "en": "Safe Driving and Space Management"
+      },
+      {
+        "es": "Frenos de aire",
+        "en": "Air Brakes"
+      },
+      {
+        "es": "Combinaciones de vehículos",
+        "en": "Combination Vehicles"
+      },
+      {
+        "es": "Carga, sujeción y distribución de peso",
+        "en": "Cargo Securement and Weight Distribution"
+      },
+      {
+        "es": "Horas de servicio y registros",
+        "en": "Hours of Service and Logs"
+      },
+      {
+        "es": "Condiciones adversas y emergencias",
+        "en": "Adverse Conditions and Emergencies"
+      },
+      {
+        "es": "Inglés profesional: inspecciones y documentación",
+        "en": "Professional English: Inspections and Documents"
+      },
+      {
+        "es": "Inglés profesional: comunicación en carretera",
+        "en": "Professional English: Road Communication"
+      },
+      {
+        "es": "Repaso CDL y situaciones prácticas",
+        "en": "CDL Review and Practical Scenarios"
+      }
+    ],
+    "professional_review_required": true
   },
   {
     "code": "MED-201",
@@ -134,53 +136,54 @@
     },
     "topics": [
       {
-        "es": "Introducción al sistema sanitario estadounidense",
-        "en": "Introduction to the U.S. healthcare system"
+        "es": "Sistema sanitario y ciclo de ingresos",
+        "en": "Healthcare System and Revenue Cycle"
       },
       {
-        "es": "Terminología médica básica",
-        "en": "Basic medical terminology"
+        "es": "Terminología médica y anatomía básica",
+        "en": "Medical Terminology and Basic Anatomy"
       },
       {
-        "es": "Anatomía aplicada a la codificación",
-        "en": "Anatomy applied to coding"
+        "es": "Privacidad y manejo de información de salud",
+        "en": "Privacy and Health Information Handling"
       },
       {
-        "es": "Clasificación ICD-10-CM",
-        "en": "ICD-10-CM classification"
+        "es": "Documentación clínica y necesidad médica",
+        "en": "Clinical Documentation and Medical Necessity"
       },
       {
-        "es": "Códigos CPT y HCPCS",
-        "en": "CPT and HCPCS codes"
+        "es": "ICD-10-CM: conceptos y estructura",
+        "en": "ICD-10-CM: Concepts and Structure"
       },
       {
-        "es": "Seguros médicos y cobertura",
-        "en": "Health insurance and coverage"
+        "es": "CPT y HCPCS Level II: conceptos",
+        "en": "CPT and HCPCS Level II: Concepts"
       },
       {
-        "es": "Medicare y Medicaid",
-        "en": "Medicare and Medicaid"
+        "es": "Modificadores y servicios frecuentes",
+        "en": "Modifiers and Common Services"
       },
       {
-        "es": "Procesamiento de reclamaciones médicas",
-        "en": "Healthcare claim processing"
+        "es": "Elegibilidad, seguros y beneficios",
+        "en": "Eligibility, Insurance and Benefits"
       },
       {
-        "es": "Facturación electrónica",
-        "en": "Electronic billing"
+        "es": "Reclamaciones y formularios",
+        "en": "Claims and Forms"
       },
       {
-        "es": "Denegaciones y correcciones",
-        "en": "Denials and corrections"
+        "es": "Denegaciones, apelaciones y correcciones",
+        "en": "Denials, Appeals and Corrections"
       },
       {
-        "es": "Privacidad y normativa HIPAA",
-        "en": "Privacy and HIPAA"
+        "es": "Cumplimiento, fraude y auditoría",
+        "en": "Compliance, Fraud and Audits"
       },
       {
-        "es": "Ejercicios prácticos de codificación y facturación",
-        "en": "Practical coding and billing exercises"
+        "es": "Casos integradores y evaluación final",
+        "en": "Integrated Cases and Final Assessment"
       }
-    ]
+    ],
+    "professional_review_required": true
   }
 ]
