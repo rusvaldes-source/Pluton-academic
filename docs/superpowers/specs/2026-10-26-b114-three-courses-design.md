@@ -36,11 +36,22 @@ Preparar SQL de integración, sin ejecutarlo en producción: ampliar solo listas
 
 ## Contenido y materiales
 
-Redactar las 34 lecciones completas en ES/EN, ejercicios y 170 preguntas originales de práctica con explicaciones. Usar fuentes oficiales actuales: AHA/Red Cross para primeros auxilios, FMCSA y manual CDL estatal aplicable para conducción, CDC/CMS/HHS para codificación, facturación y privacidad. Conservar edición y fecha consultada. No reproducir tablas CPT licenciadas; explicar su uso con material autorizado o ejemplos que no requieran reproducirlo.
+Redactar las 34 lecciones completas en ES/EN, ejercicios y 170 preguntas originales de práctica, cada una disponible en ambos idiomas, con explicaciones. Usar fuentes oficiales actuales: AHA/Red Cross para primeros auxilios, FMCSA y manual CDL estatal aplicable para conducción, CDC/CMS/HHS para codificación, facturación y privacidad. Conservar edición y fecha consultada. No reproducir tablas CPT licenciadas; explicar su uso con material autorizado o ejemplos que no requieran reproducirlo.
+
+Orden de lecciones, conforme a la orden del fundador:
+- FA-101: fundamentos; evaluación inicial y escena; RCP; atragantamiento; hemorragias/heridas/vendajes; quemaduras/lesiones; fracturas/inmovilización; emergencias cardiovasculares/respiratorias; convulsiones/pérdida de conciencia; actuación y 911.
+- DRV-101: transporte comercial; CDL/requisitos; seguridad; inspección previa; frenos de aire/sistemas; conducción defensiva; señales/reglamentos; horas/registros; carga/documentación; inglés profesional; comunicación con inspectores/autoridades; preparación teórica CDL.
+- MED-201: sistema sanitario; terminología; anatomía aplicada; ICD-10-CM; CPT/HCPCS; seguros/cobertura; Medicare/Medicaid; reclamaciones; facturación electrónica; denegaciones/correcciones; HIPAA; práctica integrada.
+
+Destino de entrega privada elegido: archivo ZIP privado en los archivos del propietario de ChatGPT, con JSON del modelo existente, guiones y manifiesto SHA-256. No compartir públicamente ni incluir su contenido en GitHub. El código de prueba cargará los datos solo desde ese paquete en un servidor local de pruebas, sin convertirlos en archivos públicos de producción.
+
+Entorno de pruebas propuesto: Postgres local efímero con esquema mínimo reproducido de los metadatos auditados y usuarios/compras sintéticos, más pruebas de navegador local. No existe todavía una instancia de staging verificada. Las pruebas locales se etiquetarán como tales; una prueba real de Auth/Storage/Stripe exige un entorno staging autorizado y no se dará por realizada con mocks. No crear proyectos cloud de pago.
+
+Lista inicial verificable de ampliaciones: adaptadores nuevos derivados de b70/load.js y b70/progress.js; reproducción nueva derivada de B108 con rutas exclusivas; restricciones course_learning_content_course_code_check, course_editor_state_course_code_check y course_certificates_course_code_check; ramas de lectura/publicación B95 para que enruten los nuevos códigos hacia course_learning_content; nuevas filas de contenido y versiones; revisión de enumeración de cursos del admin de certificados. Ningún cambio de esas ampliaciones se aplicará a la base productiva en esta fase. La revisión de definiciones completas antes de escribir SQL puede descubrir otra lista cerrada: documentarla, sin modificar políticas existentes.
 
 Revisión profesional pendiente antes de comercialización de contenido clínico o regulatorio. FA-101 es formación educativa, no sustituto de práctica supervisada ni certificación de RCP. DRV-101 no acredita ELDT ni autoriza conducir; comprobar requisitos FMCSA y estatales. MED-201 no otorga licencia ni certificación profesional. No usar datos de pacientes reales en ejercicios.
 
-Multimedia: registrar por curso/lección/idioma/tipo el archivo, origen, permisos y estado. Partir de estado pendiente, sin inventar URLs ni reutilizar contenido anterior. No generar videos de pago ni contratar servicios con esta orden. Cuando existan archivos reales aprobados, verificar reproducción efectiva y acceso privado. Los guiones pueden entregarse como preparación, claramente diferenciados de archivos reproducibles.
+Multimedia: registrar por curso/lección/idioma/tipo el archivo, origen, permisos y estado. Partir de estado pendiente, sin inventar URLs ni reutilizar contenido anterior. No generar videos de pago ni contratar servicios con esta orden. Cuando existan archivos reales aprobados, verificar reproducción efectiva y acceso privado. Los guiones pueden entregarse como preparación, claramente diferenciados de archivos reproducibles. La primera entrega revisable puede incluir medios pendientes y nunca se describirá como tres cursos terminados o listos para vender mientras falten los requisitos.
 
 ## Pruebas y criterios de entrega
 
