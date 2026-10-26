@@ -25,7 +25,7 @@ async function init(){
   const client=window.supabase.createClient('https://paifjzznyiehwidoqjqb.supabase.co','sb_publishable_-Ip2JRpDGn-Ehx2C94Tk3Q_jg7p7VLz');
   const loaded=await load(code,client,clear);
   document.body.dataset.course=code;window.PlutonCourseClient=client;window.PlutonCourseData=loaded.payload;window.PlutonCourseUserId=loaded.owner;
-  window.PlutonB114Media.use(client);
+  window.PlutonB114Media.use(client,loaded.owner);
   const script=document.createElement('script');script.src='aula.js';script.onerror=clear;document.body.append(script);
   window.addEventListener('pagehide',clear,{once:true});window.addEventListener('pageshow',e=>{if(e.persisted)location.reload()});
  }catch(error){box.hidden=false;shell.hidden=true;box.textContent=error.message==='sign_in_required'?'Inicia sesión en la portada y regresa al curso. / Sign in on the homepage, then return to this course.':'Curso pendiente de habilitación o sin acceso comprado. / Course not enabled yet or no purchased access.';}

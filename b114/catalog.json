@@ -1,40 +1,186 @@
-{
-  "version": "B114",
-  "publication_status": "pending",
-  "courses": [
-    {
-      "code": "FA-101",
-      "title": {
-        "es": "Primeros Auxilios y Emergencias",
-        "en": "First Aid and Emergencies"
-      },
-      "lessons": 10,
-      "cover": "covers/FA-101.webp",
-      "professional_review_required": true
+[
+  {
+    "code": "DRV-101",
+    "title": {
+      "es": "Formación para Conductores de Camiones CDL con Inglés Profesional",
+      "en": "CDL Truck Driver Preparation with Professional English"
     },
-    {
-      "code": "DRV-101",
-      "title": {
-        "es": "Formación para Conductores de Camiones CDL con inglés profesional",
-        "en": "CDL Truck Driver Training with Professional English"
-      },
-      "lessons": 12,
-      "cover": "covers/DRV-101.webp",
-      "professional_review_required": true
+    "price": null,
+    "cover": "covers/DRV-101.webp",
+    "lessonCount": 12,
+    "scope": {
+      "es": "Preparación teórica introductoria. No expide CDL ni sustituye ELDT, formación práctica, evaluación de inglés o exámenes oficiales. Confirma los requisitos federales y del estado aplicables antes de conducir.",
+      "en": "Introductory theory preparation. It does not issue a CDL or replace ELDT, hands-on training, English assessment or official examinations. Confirm applicable federal and state requirements before driving."
     },
-    {
-      "code": "MED-201",
-      "title": {
-        "es": "Facturación y Codificación Médica en Estados Unidos",
-        "en": "Medical Billing and Coding in the United States"
+    "topics": [
+      {
+        "es": "Introducción al transporte comercial estadounidense",
+        "en": "Introduction to U.S. commercial transportation"
       },
-      "lessons": 12,
-      "cover": "covers/MED-201.webp",
-      "professional_review_required": true
-    }
-  ],
-  "notes": {
-    "es": "Catálogo informativo; el contenido pagado solo se sirve tras verificar acceso.",
-    "en": "Informational catalog; paid content is served only after access checks."
+      {
+        "es": "Licencias CDL y requisitos",
+        "en": "CDL types and requirements"
+      },
+      {
+        "es": "Normas generales de seguridad",
+        "en": "General safety rules"
+      },
+      {
+        "es": "Inspección del vehículo antes del viaje",
+        "en": "Pre-trip vehicle inspection"
+      },
+      {
+        "es": "Frenos de aire y sistemas del camión",
+        "en": "Air brakes and truck systems"
+      },
+      {
+        "es": "Conducción defensiva",
+        "en": "Defensive driving"
+      },
+      {
+        "es": "Señales y reglamentos de tránsito",
+        "en": "Traffic signs and rules"
+      },
+      {
+        "es": "Horas de servicio y registros",
+        "en": "Hours of service and records"
+      },
+      {
+        "es": "Transporte de carga y documentación",
+        "en": "Cargo transport and documentation"
+      },
+      {
+        "es": "Inglés profesional para conductores",
+        "en": "Professional English for drivers"
+      },
+      {
+        "es": "Comunicación con inspectores y autoridades",
+        "en": "Communicating with inspectors and authorities"
+      },
+      {
+        "es": "Preparación teórica para exámenes CDL",
+        "en": "Preparing for CDL knowledge tests"
+      }
+    ]
+  },
+  {
+    "code": "FA-101",
+    "title": {
+      "es": "Primeros Auxilios y Emergencias",
+      "en": "First Aid and Emergencies"
+    },
+    "price": null,
+    "cover": "covers/FA-101.webp",
+    "lessonCount": 10,
+    "scope": {
+      "es": "Formación introductoria para reconocer emergencias y organizar ayuda inicial. No equivale a certificación RCP ni habilita para procedimientos clínicos. Practica destrezas con instructor cualificado. Ante una emergencia real en Estados Unidos llama al 911 y sigue al operador.",
+      "en": "Introductory education for recognizing emergencies and organizing initial help. It is not CPR certification or authorization for clinical procedures. Practice skills with a qualified instructor. For an actual emergency in the United States call 911 and follow the dispatcher."
+    },
+    "topics": [
+      {
+        "es": "Fundamentos de primeros auxilios",
+        "en": "Foundations of first aid"
+      },
+      {
+        "es": "Evaluación inicial y seguridad de la escena",
+        "en": "Initial assessment and scene safety"
+      },
+      {
+        "es": "Reanimación cardiopulmonar y DEA en adultos",
+        "en": "Adult CPR and AED"
+      },
+      {
+        "es": "Atragantamiento y obstrucción de vías respiratorias",
+        "en": "Choking and airway obstruction"
+      },
+      {
+        "es": "Hemorragias, heridas y vendajes",
+        "en": "Bleeding, wounds and dressings"
+      },
+      {
+        "es": "Quemaduras y lesiones",
+        "en": "Burns and injuries"
+      },
+      {
+        "es": "Fracturas e inmovilización",
+        "en": "Fractures and immobilization"
+      },
+      {
+        "es": "Emergencias cardiovasculares y respiratorias",
+        "en": "Cardiovascular and breathing emergencies"
+      },
+      {
+        "es": "Convulsiones y pérdida de conciencia",
+        "en": "Seizures and loss of consciousness"
+      },
+      {
+        "es": "Actuación y activación del 911",
+        "en": "Emergency action and calling 911"
+      }
+    ]
+  },
+  {
+    "code": "MED-201",
+    "title": {
+      "es": "Facturación y Codificación Médica en Estados Unidos",
+      "en": "Medical Billing and Coding in the United States"
+    },
+    "price": null,
+    "cover": "covers/MED-201.webp",
+    "lessonCount": 12,
+    "scope": {
+      "es": "Formación introductoria con casos ficticios. No constituye asesoría para una reclamación real ni otorga certificación profesional. Verifica edición de códigos, reglas del pagador y revisión cualificada antes de uso profesional. No se reproducen tablas CPT licenciadas ni datos reales de pacientes.",
+      "en": "Introductory education using fictional cases. It is not advice for an actual claim and does not grant professional certification. Verify code editions, payer rules and qualified review before professional use. No licensed CPT tables or real patient data are reproduced."
+    },
+    "topics": [
+      {
+        "es": "Introducción al sistema sanitario estadounidense",
+        "en": "Introduction to the U.S. healthcare system"
+      },
+      {
+        "es": "Terminología médica básica",
+        "en": "Basic medical terminology"
+      },
+      {
+        "es": "Anatomía aplicada a la codificación",
+        "en": "Anatomy applied to coding"
+      },
+      {
+        "es": "Clasificación ICD-10-CM",
+        "en": "ICD-10-CM classification"
+      },
+      {
+        "es": "Códigos CPT y HCPCS",
+        "en": "CPT and HCPCS codes"
+      },
+      {
+        "es": "Seguros médicos y cobertura",
+        "en": "Health insurance and coverage"
+      },
+      {
+        "es": "Medicare y Medicaid",
+        "en": "Medicare and Medicaid"
+      },
+      {
+        "es": "Procesamiento de reclamaciones médicas",
+        "en": "Healthcare claim processing"
+      },
+      {
+        "es": "Facturación electrónica",
+        "en": "Electronic billing"
+      },
+      {
+        "es": "Denegaciones y correcciones",
+        "en": "Denials and corrections"
+      },
+      {
+        "es": "Privacidad y normativa HIPAA",
+        "en": "Privacy and HIPAA"
+      },
+      {
+        "es": "Ejercicios prácticos de codificación y facturación",
+        "en": "Practical coding and billing exercises"
+      }
+    ]
   }
-}
+]
