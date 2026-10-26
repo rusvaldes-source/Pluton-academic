@@ -19,7 +19,7 @@ IMAGE_ROOTS = {'assets','b75','b70','b107','biblioteca','ingles-desde-cero'}
 
 def allowed(path):
  name=path.as_posix(); parent=path.parent.as_posix(); ext=path.suffix.lower()
- if name in ENTRIES|PUBLIC_JSON|PUBLIC_MEDIA|SAMPLES|{'_headers','robots.txt','favicon.ico','integration/b58-fundadores-foto.webp'}: return True
+ if name in ENTRIES|PUBLIC_JSON|PUBLIC_MEDIA|SAMPLES|{'_headers','robots.txt','sitemap.xml','favicon.ico','integration/b58-fundadores-foto.webp'}: return True
  if any(p.startswith('.') or p in {'node_modules','dist','tests','documentation','database','docs','scripts','originales','originals'} for p in path.parts):return False
  if ext=='.js':
   if len(path.parts)==1:return path.name not in {'sites-worker.js'}

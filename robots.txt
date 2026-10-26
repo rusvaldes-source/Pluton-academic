@@ -1,0 +1,6 @@
+# PLUTÓN ACADEMIC — B111
+# Public pages may be crawled. Private pages use noindex and require their existing access controls.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.plutonacademic.com/sitemap.xml
