@@ -41,6 +41,7 @@ function attach(el,raw,code){
  queueMicrotask(()=>{if(!el.isConnected)return;const button=document.createElement('button'),status=document.createElement('span');button.type='button';button.textContent=tr('Cargar / renovar recurso','Load / refresh media');status.setAttribute('role','status');el.after(button,status);
  async function load(){button.disabled=true;status.textContent=tr('Comprobando acceso…','Checking access…');const ok=await bind(el,raw,code);status.textContent=ok?tr('Recurso listo.','Media ready.'):tr('No disponible. Comprueba tu acceso y reintenta.','Unavailable. Check access and retry.');button.disabled=false;}
  button.addEventListener('click',load);el.addEventListener('error',()=>{status.textContent=tr('Reintenta cargar el recurso.','Try refreshing the media.');});
+ void load();
  });
 }
 window.PlutonPrivateMedia={bind,attach};
