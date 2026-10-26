@@ -10,7 +10,7 @@ async function load(code,client,onChange=()=>{}){
   const result=await client.from('course_learning_content').select('payload,updated_at').eq('course_code',code).eq('published',true).maybeSingle();
   const latest=await client.auth.getUser(),payload=result.data?.payload;
   if(changed||latest.error||latest.data?.user?.id!==owner)throw Error('account_changed');
-  if(result.error||!payload||payload.code!==code||payload.lessons?.length!==counts[code]||payload.lessons.some(l=>l.quiz?.length!==5))throw Error('course_unavailable');
+  if(result.error||!payload||payload.code!==code||!Array.isArray(payload.lessons)||payload.lessons.length!==counts[code]||payload.lessons.some(l=>!l||!l.title||!l.explanation||!l.example||!l.exercise||!Array.isArray(l.quiz)||l.quiz.length!==5||l.quiz.some(q=>!q||!q.question||!Array.isArray(q.options?.es)||!Array.isArray(q.options?.en)||q.options.es.length<2||q.options.es.length!==q.options.en.length||!Number.isInteger(q.answer)||q.answer<0||q.answer>=q.options.es.length)))throw Error('course_unavailable');
   Object.defineProperty(payload,'_publishedRevision',{value:String(result.data.updated_at),enumerable:false});
   return {owner,payload,client,stop:()=>subscription.data?.subscription?.unsubscribe()};
  }catch(error){subscription.data?.subscription?.unsubscribe();throw error;}
