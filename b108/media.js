@@ -21,7 +21,9 @@ function target(raw,code){
  const parts=u.pathname.slice(prefix.length).split('/').map(decodeURIComponent),bucket=parts.shift(),path=parts.join('/');
  if(!path||parts.some(x=>!x||x==='.'||x==='..'||x.includes('\\')||x.includes('/')))throw Error('path');
  const mapped=bucketCourses[bucket]||(bucket==='lesson-videos-b80'&&['NA-101','COMP-101'].includes(parts[0])?parts[0]:null);
- if(mapped!==code)throw Error('course');return {bucket,path};
+ // PA-101 includes the existing nursing library as explicitly labelled support.
+ // Storage RLS independently checks the purchase and the published support list.
+ if(mapped!==code&&!(code==='PA-101'&&mapped==='NA-101'&&bucket==='lesson-videos-b80'))throw Error('course');return {bucket,path};
 }
 async function bind(el,raw,code){
  const run={};runs.set(el,run);clear(el);const started=epoch;
