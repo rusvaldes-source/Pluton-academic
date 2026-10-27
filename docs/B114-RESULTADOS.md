@@ -26,10 +26,10 @@ La última lectura autenticada anterior registró 2,543 créditos disponibles. N
 | Prueba | Resultado | Entorno y límite |
 |---|---|---|
 | Estructura y coincidencia del temario | 2/2 | Payloads privados reales; 34 lecciones, 170 preguntas |
-| Acceso, render, progreso, medios, SQL e integridad | 18/18 | JSDOM y Postgres local PGlite; usuarios sintéticos |
+| Acceso, render, progreso, medios, SQL e integridad | 21/21 | JSDOM y Postgres local PGlite; usuarios sintéticos |
 | Navegador de escritorio y móvil | Aprobado | Chromium real local: 1440×1000 y 390×844 |
 | Reproducción | 272 comprobaciones aprobadas | 34 lecciones × 2 idiomas × audio/video × 2 tamaños, con los clips actualmente enlazados |
-| Parche de integración | 1/1 | Aplicado en directorio desechable; conserva exactamente los 10 cursos anteriores |
+| Parche de integración | 1/1 | Aplicado en directorio desechable; conserva exactamente los 9 cursos anteriores |
 | Regresiones dirigidas existentes | 11/11 | Acceso B108, loader, políticas de medios, rutas B109 y enfermería B110 |
 | SEO B111 | 4/4 | Pruebas existentes, sin modificar portada |
 | npm test general anterior | Falló | Exige 26 cursos y agota espera; catálogo base real contiene 10. También requirió raíz explícita y SDK fijado como fixture del harness |
@@ -67,3 +67,12 @@ Se observaron permisos existentes amplios, incluido `TRUNCATE`, para `anon` y `a
 Se reutilizó el formato B70 y las tablas existentes. Se mantuvo revisión local separada de producción, con el coste de posponer la validación real. Se usaron videos de resumen narrado, cuyo alcance no sustituye demostraciones. Se mantuvieron prácticas por dispositivo y constancias revisadas, que no son notas ni títulos oficiales. Se propuso un bucket privado separado, pendiente de aplicación y prueba real. Se conservaron clips de apoyo identificados al cambiar el temario; aún faltan los específicos indicados. Se preparó un parche sin aplicarlo y se bloquearon ventas nuevas hasta aprobación de precios. No hay menores diferidos declarados por el revisor.
 
 El inventario de archivos y sus SHA-256, evidencias completas, fuentes oficiales, guiones pendientes e instrucciones de revisión se incluyen en el ZIP privado. No se ha modificado ningún archivo preexistente de la base publicada; los cambios actuales son adiciones dedicadas a B114.
+
+
+## Estado verificado tras reanudación — 26 de octubre
+
+Los 136 objetos originales están cargados en el bucket privado b114-course-media; comparación previa de nombre, tamaño y ETag: 136/136. Las tres políticas B114 están aplicadas. Se aplicó b114_private_course_drafts: FA-101 tiene 10 lecciones/50 preguntas; DRV-101 y MED-201, 12/60 cada uno. Los tres tienen published=false. No hay filas B114 en course_editor_state y no se activaron ventas. Las huellas de los contenidos NA-101 y COMP-101 coinciden antes y después. Una consulta real con rol authenticated sin propietario devolvió cero borradores y cero medios B114; no equivale a una compra real ni a reproducción remota autenticada.
+
+La semilla anterior NO debe ejecutarse: crearía filas administrativas que el Checkout desplegado acepta como cursos de 999 centavos. Se conserva por trazabilidad, no como instrucción de instalación. La plantilla segura separada no incluye respuestas en GitHub. Stripe no fue modificado. MAIN no fue modificado. El fundador ya autorizó publicar; siguen pendientes los precios específicos, 14 narraciones y videos específicos y las pruebas finales de compra/reproducción remota y revisión profesional.
+
+Suite local actual: 21/21, contenido 2/2 e integración de parche 1/1. El parche de siete archivos sigue preparado y probado de forma aislada, sin aplicarse a MAIN. Las referencias históricas de este informe a propuestas no aplicadas quedan sustituidas únicamente para las políticas de Storage y los tres borradores privados.
