@@ -16,7 +16,11 @@ Deno.serve(async req => {
   if(req.method!=="POST" || !allowedOrigins.has(origin)) return new Response(JSON.stringify({error:"Not allowed"}),{status:403,headers});
   const auth=req.headers.get("authorization")||"";
   if(!auth.startsWith("Bearer ")) return new Response(JSON.stringify({error:"Authentication required"}),{status:401,headers});
-  const url=Deno.env.get("SUPABASE_URL"),anon=Deno.env.get("SUPABASE_ANON_KEY");
+  const url=Deno.env.get("SUPABASE_URL");
+  const published=Deno.env.get("SUPABASE_PUBLISHABLE_KEYS");
+  let publishable="";
+  try { const keys=JSON.parse(published||"{}"); publishable=Object.values(keys).find(v=>typeof v==="string")||""; } catch {}
+  const anon=Deno.env.get("SUPABASE_ANON_KEY")||publishable;
   if(!url||!anon) return new Response(JSON.stringify({error:"Service not configured"}),{status:503,headers});
   const userResponse=await fetch(url+"/auth/v1/user",{headers:{"apikey":anon,"Authorization":auth}});
   if(!userResponse.ok) return new Response(JSON.stringify({error:"Invalid session"}),{status:401,headers});
