@@ -97,6 +97,24 @@ using (
   where a.user_id=(select auth.uid()) and a.course_code=split_part(objects.name,'/',1) and a.active
  ))
 );
+
+-- Narrow restrictive guards make purchase checks authoritative even if another
+-- permissive policy is added later; other buckets' behavior remains unchanged.
+create policy b114_media_purchase_guard on storage.objects as restrictive for select to authenticated
+using (bucket_id <> 'b114-course-media' or (
+ bucket_id='b114-course-media'
+ and (select auth.uid()) is not null
+ and split_part(name,'/',1) in ('FA-101','DRV-101','MED-201')
+ and split_part(name,'/',2) ~ ('^'||split_part(name,'/',1)||'-L[0-9]{2}-(es|en)\.(mp3|mp4)$')
+ and array_length(string_to_array(name,'/'),1)=2
+ and ((select public.is_pluton_admin()) or exists(
+  select 1 from public.course_purchase_access a
+  where a.user_id=(select auth.uid()) and a.course_code=split_part(objects.name,'/',1) and a.active
+ ))
+));
+create policy b114_media_anon_guard on storage.objects as restrictive for select to anon
+using (bucket_id <> 'b114-course-media');
+
 -- No anon SELECT and no browser INSERT/UPDATE/DELETE policies are created.
 -- Private payload seed is supplied separately in the owner's private package.
 -- All three courses remain unpublished until an approved release.

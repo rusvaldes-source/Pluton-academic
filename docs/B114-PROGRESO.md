@@ -36,3 +36,9 @@ Ruling: preparar un parche revisable para catálogo público, fotos, rutas, list
 Ruling: mantener bloqueada la venta de los tres códigos nuevos en el parche — sus precios no están aprobados y Stripe no debe cambiarse — no se podrá vender B114 hasta habilitación posterior autorizada.
 
 Pendientes de cierre: material específico bloqueado por autenticación, revisión profesional, precios, pruebas reales aisladas de compra/Auth/Storage y autorización de publicación. MAIN continúa en 510fe3fa3ce9e00528f0200a8c6418ce35e17bb2. Ninguna mutación de producción realizada.
+
+2026-10-26 — El fundador autorizó instalar B114; se recuperó el acceso autenticado al panel de Supabase. Se creó el bucket nuevo y privado `b114-course-media` y se cargaron los 136 archivos originales (68 MP3 y 68 MP4). Se compararon nombre, tamaño y ETag de cada objeto remoto con el archivo local: 136/136 coinciden. No se reemplazó material anterior. Los 14 audios y 14 videos específicos de temas incorporados siguen pendientes.
+
+Se identificó un riesgo en la propuesta: otras políticas permisivas futuras podrían autorizar el bucket nuevo sin compra. Se añadieron dos políticas restrictivas exclusivas de B114 para requerir compra exacta a usuarios autenticados y negar anónimos, sin cambiar políticas ni el comportamiento de otros buckets. Dos pruebas reprodujeron el riesgo antes de corregirlo (RED) y después pasaron junto a la suite B114: 20/20. Las políticas son propuesta, no se han aplicado.
+
+Antes de integración se compararon los cuatro procedimientos B95/B96 propuestos con las definiciones activas: sus cuerpos coinciden después de quitar exclusivamente los tres códigos nuevos. Las tres restricciones de códigos coinciden con la base esperada. El panel advierte exceso de cached egress (6.75 GB de 5 GB) y posible restricción desde el 20 de noviembre de 2026 si continúa el exceso. No se contrató ningún plan.
