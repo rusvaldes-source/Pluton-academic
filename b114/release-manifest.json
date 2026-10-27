@@ -1,7 +1,7 @@
 {
   "version": "B114",
   "base_commit": "510fe3fa3ce9e00528f0200a8c6418ce35e17bb2",
-  "applied": false,
+  "applied": true,
   "existing_courses": 9,
   "new_courses": 3,
   "existing_files_proposed": [
@@ -33,12 +33,12 @@
     {
       "path": "app.js",
       "before_sha256": "100a3e5561e6c61bb21121032f3b814239cee411fdfc1e1f806d79b429c9c617",
-      "after_sha256": "f606a29412ca006f9d3926647a2d15d4bb9eb006adc3ddefd6d6882b4a570aa8"
+      "after_sha256": "100a3e5561e6c61bb21121032f3b814239cee411fdfc1e1f806d79b429c9c617"
     },
     {
       "path": "catalog.json",
       "before_sha256": "473f255dbcb97e44a86139ad7fc07cd0b1d756fe33fe14e90fcdb9579603134b",
-      "after_sha256": "0f0373cfb654513590e50fe6feae784c5b04e5b90e4906b35d65b6c644e2ab15"
+      "after_sha256": "3a9b5794ff560d3639d2057a2b0fa86003c126aa83842c713d2160593c9fbb4f"
     }
   ],
   "publication_gates": [
@@ -47,5 +47,6 @@
     "Approved new prices and separate Stripe product configuration",
     "Authorized staging Auth/Storage/purchase end-to-end tests"
   ],
-  "new_course_sales": "blocked until separately approved; existing Stripe code untouched beyond new-code-only UI guard"
+  "new_course_sales": "blocked until separately approved; existing Stripe code untouched beyond new-code-only UI guard",
+  "status": "Integrated at approved one-time price $9.99; multimedia additions disclosed"
 }

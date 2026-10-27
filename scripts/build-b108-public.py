@@ -6,16 +6,16 @@ ENTRIES = {'index.html','courses.html','dashboard.html','aula-b64.html','reset-p
  'support/index.html','admin/index.html','certificados/verificar/index.html','noticias/index.html',
  'biblioteca/index.html','ingles-desde-cero/index.html','herramientas/index.html',
  'b66/pa203/pa203-prueba.html','b67/id101/index.html','b68/mkt201/index.html',
- 'b70/na101/index.html','b70/comp101/index.html','b82/pa101/index.html','b107/index.html'}
-JS_DIRS = {'admin','b107','b108','b95','b67','b70','b82/pa101','b66/pa203','assets/b59','recursos-pluton','biblioteca','herramientas','noticias','certificados/verificar','support','b84','b75'}
+ 'b70/na101/index.html','b70/comp101/index.html','b82/pa101/index.html','b107/index.html','b114/index.html','b114/aula.html'}
+JS_DIRS = {'b114','admin','b107','b108','b95','b67','b70','b82/pa101','b66/pa203','assets/b59','recursos-pluton','biblioteca','herramientas','noticias','certificados/verificar','support','b84','b75'}
 ENGLISH_JS = {'content.js','access.js','syllabus.js','syllabus-view.js','audios-b102.js'}
-PUBLIC_JSON = {'herramientas/products.json','herramientas/commerce-config.json','assets/b59/social-links.json','social-links.json','social/social-links.json'}
+PUBLIC_JSON = {'b114/catalog.json','b114/syllabus.json','herramientas/products.json','herramientas/commerce-config.json','assets/b59/social-links.json','social-links.json','social/social-links.json'}
 PUBLIC_MEDIA = {'PLUTON_BIENVENIDA_EN.mp4','PLUTON_BIENVENIDA_ES.mp4','biblioteca/presentacion.mp4','ingles-desde-cero/presentacion.mp4',
  'ingles-desde-cero/clips/airport.mp4','ingles-desde-cero/clips/hotel.mp4','ingles-desde-cero/clips/transport.mp4'}
 SAMPLES = {f'ingles-desde-cero/audios/ID001-{lesson}-{lang}{suffix}.mp3'
  for lesson in ('01-01','01-02','01-03','08-01','08-02','08-03') for lang in ('es','en') for suffix in ('','-apoyo')
  if (not suffix or lesson.startswith('08-') and lang=='es') and not (lesson=='08-03' and lang=='en')}
-IMAGE_ROOTS = {'assets','b75','b70','b107','biblioteca','ingles-desde-cero'}
+IMAGE_ROOTS = {'b114','assets','b75','b70','b107','biblioteca','ingles-desde-cero'}
 
 def allowed(path):
  name=path.as_posix(); parent=path.parent.as_posix(); ext=path.suffix.lower()

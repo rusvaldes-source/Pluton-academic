@@ -5,7 +5,7 @@
       "es": "Primeros Auxilios y Emergencias",
       "en": "First Aid and Emergencies"
     },
-    "price": null,
+    "price": 9.99,
     "cover": "covers/FA-101.webp",
     "lessonCount": 10,
     "scope": {
@@ -62,7 +62,7 @@
       "es": "Formación para Conductores de Camiones CDL con Inglés Profesional",
       "en": "CDL Truck Driver Preparation with Professional English"
     },
-    "price": null,
+    "price": 9.99,
     "cover": "covers/DRV-101.webp",
     "lessonCount": 12,
     "scope": {
@@ -127,7 +127,7 @@
       "es": "Facturación y Codificación Médica en Estados Unidos",
       "en": "Medical Billing and Coding in the United States"
     },
-    "price": null,
+    "price": 9.99,
     "cover": "covers/MED-201.webp",
     "lessonCount": 12,
     "scope": {

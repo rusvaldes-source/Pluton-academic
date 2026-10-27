@@ -1382,5 +1382,217 @@
         "en": "Review, defense, and professional development"
       }
     ]
+  },
+  {
+    "code": "FA-101",
+    "cover": "b114/covers/FA-101.webp",
+    "es": "Primeros Auxilios y Emergencias",
+    "en": "First Aid and Emergencies",
+    "category": "salud",
+    "classroom": "b114/aula.html?course=FA-101",
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "publication_status": "pending_approval",
+    "lessons": [
+      {
+        "id": "FA-101-L01",
+        "es": "Seguridad de la escena",
+        "en": "Scene Safety"
+      },
+      {
+        "id": "FA-101-L02",
+        "es": "Activación de emergencias y evaluación inicial",
+        "en": "Calling Emergency Services and Initial Assessment"
+      },
+      {
+        "id": "FA-101-L03",
+        "es": "RCP y uso del DEA: fundamentos",
+        "en": "CPR and AED Fundamentals"
+      },
+      {
+        "id": "FA-101-L04",
+        "es": "Atragantamiento y obstrucción de vías respiratorias",
+        "en": "Choking and Airway Obstruction"
+      },
+      {
+        "id": "FA-101-L05",
+        "es": "Hemorragias y heridas",
+        "en": "Bleeding and Wounds"
+      },
+      {
+        "id": "FA-101-L06",
+        "es": "Quemaduras y lesiones térmicas",
+        "en": "Burns and Thermal Injuries"
+      },
+      {
+        "id": "FA-101-L07",
+        "es": "Fracturas y lesiones musculoesqueléticas",
+        "en": "Fractures and Musculoskeletal Injuries"
+      },
+      {
+        "id": "FA-101-L08",
+        "es": "Emergencias médicas frecuentes",
+        "en": "Common Medical Emergencies"
+      },
+      {
+        "id": "FA-101-L09",
+        "es": "Emergencias ambientales y preparación",
+        "en": "Environmental Emergencies and Preparedness"
+      },
+      {
+        "id": "FA-101-L10",
+        "es": "Simulaciones y evaluación final",
+        "en": "Scenarios and Final Assessment"
+      }
+    ]
+  },
+  {
+    "code": "DRV-101",
+    "cover": "b114/covers/DRV-101.webp",
+    "es": "Formación para Conductores de Camiones CDL con Inglés Profesional",
+    "en": "CDL Truck Driver Preparation with Professional English",
+    "category": "profesional",
+    "classroom": "b114/aula.html?course=DRV-101",
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "publication_status": "pending_approval",
+    "lessons": [
+      {
+        "id": "DRV-101-L01",
+        "es": "Introducción a la CDL y clases de licencia",
+        "en": "Introduction to CDL and License Classes"
+      },
+      {
+        "id": "DRV-101-L02",
+        "es": "Inspección previa al viaje",
+        "en": "Pre-trip Inspection"
+      },
+      {
+        "id": "DRV-101-L03",
+        "es": "Controles básicos y maniobras",
+        "en": "Basic Vehicle Control and Maneuvers"
+      },
+      {
+        "id": "DRV-101-L04",
+        "es": "Conducción segura y gestión del espacio",
+        "en": "Safe Driving and Space Management"
+      },
+      {
+        "id": "DRV-101-L05",
+        "es": "Frenos de aire",
+        "en": "Air Brakes"
+      },
+      {
+        "id": "DRV-101-L06",
+        "es": "Combinaciones de vehículos",
+        "en": "Combination Vehicles"
+      },
+      {
+        "id": "DRV-101-L07",
+        "es": "Carga, sujeción y distribución de peso",
+        "en": "Cargo Securement and Weight Distribution"
+      },
+      {
+        "id": "DRV-101-L08",
+        "es": "Horas de servicio y registros",
+        "en": "Hours of Service and Logs"
+      },
+      {
+        "id": "DRV-101-L09",
+        "es": "Condiciones adversas y emergencias",
+        "en": "Adverse Conditions and Emergencies"
+      },
+      {
+        "id": "DRV-101-L10",
+        "es": "Inglés profesional: inspecciones y documentación",
+        "en": "Professional English: Inspections and Documents"
+      },
+      {
+        "id": "DRV-101-L11",
+        "es": "Inglés profesional: comunicación en carretera",
+        "en": "Professional English: Road Communication"
+      },
+      {
+        "id": "DRV-101-L12",
+        "es": "Repaso CDL y situaciones prácticas",
+        "en": "CDL Review and Practical Scenarios"
+      }
+    ]
+  },
+  {
+    "code": "MED-201",
+    "cover": "b114/covers/MED-201.webp",
+    "es": "Facturación y Codificación Médica en Estados Unidos",
+    "en": "Medical Billing and Coding in the United States",
+    "category": "salud",
+    "classroom": "b114/aula.html?course=MED-201",
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "publication_status": "pending_approval",
+    "lessons": [
+      {
+        "id": "MED-201-L01",
+        "es": "Sistema sanitario y ciclo de ingresos",
+        "en": "Healthcare System and Revenue Cycle"
+      },
+      {
+        "id": "MED-201-L02",
+        "es": "Terminología médica y anatomía básica",
+        "en": "Medical Terminology and Basic Anatomy"
+      },
+      {
+        "id": "MED-201-L03",
+        "es": "Privacidad y manejo de información de salud",
+        "en": "Privacy and Health Information Handling"
+      },
+      {
+        "id": "MED-201-L04",
+        "es": "Documentación clínica y necesidad médica",
+        "en": "Clinical Documentation and Medical Necessity"
+      },
+      {
+        "id": "MED-201-L05",
+        "es": "ICD-10-CM: conceptos y estructura",
+        "en": "ICD-10-CM: Concepts and Structure"
+      },
+      {
+        "id": "MED-201-L06",
+        "es": "CPT y HCPCS Level II: conceptos",
+        "en": "CPT and HCPCS Level II: Concepts"
+      },
+      {
+        "id": "MED-201-L07",
+        "es": "Modificadores y servicios frecuentes",
+        "en": "Modifiers and Common Services"
+      },
+      {
+        "id": "MED-201-L08",
+        "es": "Elegibilidad, seguros y beneficios",
+        "en": "Eligibility, Insurance and Benefits"
+      },
+      {
+        "id": "MED-201-L09",
+        "es": "Reclamaciones y formularios",
+        "en": "Claims and Forms"
+      },
+      {
+        "id": "MED-201-L10",
+        "es": "Denegaciones, apelaciones y correcciones",
+        "en": "Denials, Appeals and Corrections"
+      },
+      {
+        "id": "MED-201-L11",
+        "es": "Cumplimiento, fraude y auditoría",
+        "en": "Compliance, Fraud and Audits"
+      },
+      {
+        "id": "MED-201-L12",
+        "es": "Casos integradores y evaluación final",
+        "en": "Integrated Cases and Final Assessment"
+      }
+    ]
   }
 ]

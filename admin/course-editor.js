@@ -1,6 +1,6 @@
 /* B95: drafts never become student content until the transactional publish RPC succeeds. */
 (()=>{'use strict';
-const courses=['PA-203','ID-101','MKT-201','PA-101','NA-101','COMP-101','ID-001'];let current;
+const courses=['PA-203','ID-101','MKT-201','PA-101','NA-101','COMP-101','ID-001','FA-101','DRV-101','MED-201'];let current;
 const copy=x=>JSON.parse(JSON.stringify(x));
 function mount({client,container,isCurrent=()=>true,language=()=> 'es'}){
  if(!container)return{clear(){},unmount(){},setLanguage(){}};

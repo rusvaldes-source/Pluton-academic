@@ -13,7 +13,7 @@ class PayloadTests(unittest.TestCase):
    with self.subTest(code=code):
     path=ROOT/'content'/f'{code}.json'
     self.assertTrue(path.exists(),f'Missing private course {code}')
-    c=json.loads(path.read_text()); self.assertEqual(c['code'],code);self.assertIsNone(c['price']);self.assertEqual(len(c['lessons']),count)
+    c=json.loads(path.read_text()); self.assertEqual(c['code'],code);self.assertEqual(c['price'],9.99);self.assertEqual(len(c['lessons']),count)
     self.assertEqual(len({l['id'] for l in c['lessons']}),count)
     for l in c['lessons']:
      self.assertEqual(len(l['quiz']),5)
