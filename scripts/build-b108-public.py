@@ -16,11 +16,18 @@ SAMPLES = {f'ingles-desde-cero/audios/ID001-{lesson}-{lang}{suffix}.mp3'
  for lesson in ('01-01','01-02','01-03','08-01','08-02','08-03') for lang in ('es','en') for suffix in ('','-apoyo')
  if (not suffix or lesson.startswith('08-') and lang=='es') and not (lesson=='08-03' and lang=='en')}
 IMAGE_ROOTS = {'b114','assets','b75','b70','b107','biblioteca','ingles-desde-cero'}
+# Only these app files are intended for the public deployment.
+APP_FILES = {f'app-pluton/{name}' for name in (
+ 'acceso.html','app.css','app.js','icon-180.png','icon-192.png','icon-512.png',
+ 'index.html','instalar.html','lecciones.html','lessons-ui.js','manifest.webmanifest',
+ 'mis-cursos.html','owned-lessons.js','panel.css','panel.js','signin-core.js','signin-ui.js')}
+
 
 def allowed(path):
  name=path.as_posix(); parent=path.parent.as_posix(); ext=path.suffix.lower()
  if name in ENTRIES|PUBLIC_JSON|PUBLIC_MEDIA|SAMPLES|{'_headers','robots.txt','sitemap.xml','favicon.ico','integration/b58-fundadores-foto.webp'}: return True
  if any(p.startswith('.') or p in {'node_modules','dist','tests','documentation','database','docs','scripts','originales','originals'} for p in path.parts):return False
+ if name in APP_FILES:return True
  if ext=='.js':
   if len(path.parts)==1:return path.name not in {'sites-worker.js'}
   return parent in JS_DIRS or parent=='ingles-desde-cero' and path.name in ENGLISH_JS or name=='b64/aula.js'
