@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta name="theme-color" content="#061326">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="app-pluton/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="app-pluton/icon-180.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel del Estudiante | PLUTÓN ACADEMIC</title>
+  <link rel="stylesheet" href="styles.css?v=b56-20261010">
+  <link rel="stylesheet" href="app-pluton/panel.css">
+</head>
+
+<body>
+  <main class="student-dashboard">
+    <header>
+      <a class="app-panel-brand" href="app-pluton/"><img src="app-pluton/icon-180.png" width="46" height="46" alt=""><span>PLUTÓN <b>ACADEMIC</b></span></a>
+      <p>Panel del Estudiante</p><button id="languageToggle" class="language-toggle" type="button" onclick="changeDashboardLanguage()">EN</button>
+    </header>
+
+    <section>
+      <h2>Bienvenido</h2>
+      <p id="student-email">Cargando tu cuenta...</p><a id="app-login-link" class="app-login-link" href="app-pluton/acceso.html" data-app-es="Iniciar sesión" data-app-en="Sign in" hidden>Iniciar sesión</a>
+    </section>
+
+    <section>
+      <h2>Mis compras</h2><p id="checkoutVerification" role="status" hidden></p>
+      <strong id="purchasedCourses">Cargando...</strong>
+    </section>
+
+    <section>
+      <h2>Mis cursos</h2>
+      <p data-i18n="courseHint">Consulta tus cursos comprados y registra tu avance.</p><a class="pa-link" href="courses.html" data-i18n="goCourses">Abrir mis cursos →</a>
+    </section>
+
+    <section>
+      <h2>Mi progreso</h2>
+      <p id="overallProgress" data-i18n="overall">Progreso general: 0%</p><p id="progressSyncStatus" role="status"></p>
+    </section>
+
+    <section class="pa-next-step"><h2 id="nextTitle">Continúa aprendiendo</h2><p id="nextCourse">Buscando tu próxima lección…</p><a class="pa-link" id="nextCourseLink" href="courses.html">Continuar curso →</a></section>
+    <section><h2 id="dashboardDailyTitle">Tu reto de hoy</h2><p id="dashboardDailyText">Practica una pregunta nueva cada día.</p><a class="pa-link" href="index.html#reto" id="dashboardDailyLink">Ver reto diario →</a></section>
+    <section class="pa-study-journal"><h2 id="journalTitle">Mi cuaderno de estudio</h2><p id="journalHint">Escribe un resumen o una meta. Se guarda únicamente en este dispositivo.</p><label for="journalNotes" id="journalLabel">Mis notas</label><textarea id="journalNotes" rows="5" maxlength="2500" placeholder="Hoy aprendí…"></textarea><div class="pa-journal-actions"><button type="button" id="journalSave">Guardar notas</button><button type="button" id="journalClear" class="pa-outline">Borrar notas</button></div><p id="journalStatus" role="status"></p></section>
+    <button id="logoutButton" type="button">Cerrar sesión</button>
+  </main>
+<nav class="app-panel-nav" aria-label="Navegación de la app"><a href="app-pluton/" data-app-es="Inicio" data-app-en="Home">Inicio</a><a aria-current="page" href="app-pluton/mis-cursos.html" data-app-es="Mis cursos" data-app-en="My courses">Mis cursos</a><a href="app-pluton/lecciones.html" data-app-es="Lecciones" data-app-en="Lessons">Lecciones</a></nav>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="language.js?v=b56-20261010"></script>
+<script src="progress-sync.js?v=b56-20261010"></script><script src="dashboard.js?v=b112-owned-only"></script>
+<script src="app-pluton/panel.js" defer></script>
+<script src="study-tools.js?v=b56-20261010"></script><script src="global-search.js?v=b56-20261010"></script><script src="lesson-resume.js?v=b56-20261010"></script></body>
+</html>
