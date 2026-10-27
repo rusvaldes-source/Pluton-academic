@@ -2,7 +2,7 @@
 (() => {
  'use strict';
  const instances = new Set();
- const allowedCourses = new Set(['PA-203','ID-101','MKT-201','PA-101','COMP-101','ID-001']);
+ const allowedCourses = new Set(['PA-203','ID-101','MKT-201','PA-101','COMP-101','ID-001','FA-101','DRV-101','MED-201']);
  const uuid = () => crypto.randomUUID();
  const escaped = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function mount({client,container,isCurrent = () => true,language = 'es'}) {

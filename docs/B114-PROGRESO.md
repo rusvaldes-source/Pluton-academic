@@ -1,0 +1,52 @@
+# SDD ledger — plan: docs/superpowers/plans/2026-10-26-b114-three-courses.md
+
+2026-10-26: Founder authorized autonomous implementation, photos everywhere courses appear in review, use existing ElevenLabs credits. Approval to publish production is still withheld.
+
+Pre-flight: Task 1 payload consumed by Task 2 renderer and Task 3 narration/video; Task 4 packaging requires all three. B70 equivalent schema selected; no parallel course schema.
+
+Ruling: Use local isolated preview and prepare SQL without applying it to production — founder explicitly prohibits deployment before review — live Auth/Stripe/Storage end-to-end remains unverified until authorized staging or deployment.
+
+Ruling: Narrated educational slide videos will use new photographs and lesson keypoints with real ElevenLabs narration — no authorization to buy extra avatar generation and no need to alter existing videos — these are not hands-on procedural demonstrations or avatar videos.
+
+Ruling: Retain existing device-local quiz practice and reviewed participation certificates — reuse existing functionality as ordered — no official grade or professional credential is implied.
+
+Task 1: content draft complete privately (34 bilingual lessons, 170 bilingual questions, worked cases, exercises and sources). Validation RED for missing payloads then GREEN with `python3 tests/b114-content.test.py`. Content is introductory and professional review remains pending.
+
+Task 2: content/progress adapter subset RED→GREEN, `node --test tests/b114-classroom.test.cjs` → 4/4. Production loader rejects guest, wrong course and account race. Renderer and integration tests still pending.
+
+Task 3: three photographs generated and inspected; founder asked to see them and replied Listo. Ruslan clonada voice located. Eight initial narrations generated without regeneration; real first MP3 probed at 19.644 seconds. Full narration queue prepared: 68 files, 14,049 characters total; observed initial billing one credit per character despite Flash model, so budget uses that observed rate. Target reserve 2,543 credits if no extra generation. No plan changes or purchases.
+
+Ruling: Use a new private b114-course-media bucket in the unapplied integration proposal — existing media policies enumerate other course prefixes — no current bucket, policy or rule will be modified; live provisioning requires later publication authorization.
+
+ Referencias existentes confirmadas en main: `b67/id101/course.json` (ID-101), `b68/mkt201/course.json` (MKT-201), `b82/pa101/course.json` (PA-101), `b95/course-loader.js` (contenido publicado protegido). Decisión del fundador: seguir las estructuras de cursos ya presentados, sin crear otra plataforma. Para la integración B114 reutilizar campos bilingües, explicación, ejemplo, ejercicio, quiz, progreso y control de compra existente. No alterar Stripe ni RLS de producción. Pendiente: adjuntar payloads de los tres cursos, audios/videos reales y pruebas E2E antes de fusionar.
+
+2026-10-26: Se incorpora el commit remoto 9c08b44 y su syllabus sin eliminar los originales privados. Conciliación de temario y material en curso.
+
+2026-10-26 — Recuperación y conciliación final de esta sesión:
+- Integrado el historial remoto hasta 9c08b44 sin comenzar de cero. El temario vigente es b114/syllabus.json; se conservaron los payloads y medios originales en el paquete privado.
+- Task 1: 34 lecciones bilingües y 170 preguntas conciliadas al temario. Se ampliaron los temas nuevos por escrito; siguen sujetas a revisión profesional. Validador de contenido: 2/2.
+- Task 2: aula y catálogo aislados, 3 fotos, cinco preguntas por lección, ejercicios, cuaderno, progreso. Suite de acceso/render/SQL/integridad: 18/18. El progreso real en Supabase no se ha escrito; la prueba de navegador usa una cuenta local ficticia.
+- Task 3: 68 MP3 originales y 68 MP4 de resumen narrado conservados, 14.37 minutos de audio en total. Las 34 lecciones enlazan 58 pares localizados distintos; se indica el tema original de cada clip de apoyo. No hubo regeneraciones ni compras en esta sesión. Falta material específico de siete temas incorporados por el último temario (14 audios ES/EN y 14 videos derivados). Cola privada preparada: 2,243 caracteres, frente a los 2,543 créditos de la última lectura anterior. ElevenLabs muestra inicio de sesión; no se generó nada desde esa pantalla.
+- Navegador real Chromium local, 1440×1000 y 390×844: 34 lecciones por tamaño, idiomas, cuestionarios, ejercicio, progreso tras recarga y 272 comprobaciones de reproducción aprobadas. No son pruebas de Auth/Storage/Stripe reales.
+- Task 4: propuesta SQL no aplicada, semilla privada con published=false, parche de integración pública NO aplicado; el parche se aplica y valida en un directorio desechable conservando los 10 cursos anteriores. Regresiones dirigidas existentes: 11/11 y B111: 4/4. npm test completo falla por expectativa anterior de 26 cursos frente al catálogo real de 10; no se alteraron pruebas ajenas para ocultarlo.
+- Revisión independiente: corregido aislamiento de ejercicios/cuadernos por revisión (RED→GREEN), completada ruta B95 para nuevos códigos (RED→GREEN), conciliadas las pruebas estáticas con SDK fijado y esquema real. Sin menores diferidos informados por el revisor.
+
+Ruling: conservar audios/videos previos como material de apoyo identificado y preparar una cola separada para siete temas nuevos — evita regenerar originales y confundir temas — hasta recuperar autenticación faltan 14 narraciones específicas y sus videos; B114 no se declara terminada para venta.
+Ruling: preparar un parche revisable para catálogo público, fotos, rutas, listas administrativas y compilación sin aplicarlo a archivos existentes — mantiene intacta la versión aprobada — requiere aplicarlo y comprobarlo en un entorno autorizado antes de publicar.
+Ruling: mantener bloqueada la venta de los tres códigos nuevos en el parche — sus precios no están aprobados y Stripe no debe cambiarse — no se podrá vender B114 hasta habilitación posterior autorizada.
+
+Pendientes de cierre: material específico bloqueado por autenticación, revisión profesional, precios, pruebas reales aisladas de compra/Auth/Storage y autorización de publicación. MAIN continúa en 510fe3fa3ce9e00528f0200a8c6418ce35e17bb2. Ninguna mutación de producción realizada.
+
+2026-10-26 — El fundador autorizó instalar B114; se recuperó el acceso autenticado al panel de Supabase. Se creó el bucket nuevo y privado `b114-course-media` y se cargaron los 136 archivos originales (68 MP3 y 68 MP4). Se compararon nombre, tamaño y ETag de cada objeto remoto con el archivo local: 136/136 coinciden. No se reemplazó material anterior. Los 14 audios y 14 videos específicos de temas incorporados siguen pendientes.
+
+Se identificó un riesgo en la propuesta: otras políticas permisivas futuras podrían autorizar el bucket nuevo sin compra. Se añadieron dos políticas restrictivas exclusivas de B114 para requerir compra exacta a usuarios autenticados y negar anónimos, sin cambiar políticas ni el comportamiento de otros buckets. Dos pruebas reprodujeron el riesgo antes de corregirlo (RED) y después pasaron junto a la suite B114: 20/20. Las políticas son propuesta, no se han aplicado.
+
+Antes de integración se compararon los cuatro procedimientos B95/B96 propuestos con las definiciones activas: sus cuerpos coinciden después de quitar exclusivamente los tres códigos nuevos. Las tres restricciones de códigos coinciden con la base esperada. El panel advierte exceso de cached egress (6.75 GB de 5 GB) y posible restricción desde el 20 de noviembre de 2026 si continúa el exceso. No se contrató ningún plan.
+
+2026-10-26 — Reanudación verificada contra Supabase: 136 objetos presentes, bucket privado y las tres políticas B114 ya aplicadas. Los contenidos anteriores siguen publicados y sus huellas son NA-101 3245436604ba692b8a825de467a6aead y COMP-101 bc1e2df4518b6dff9d3c02fdf5222d4d. No existen registros administrativos ni contenidos B114 todavía.
+Ruling: no ejecutar la semilla anterior, porque insertar course_editor_state hace que b101-create-checkout acepte el código y cobre 999 centavos, aunque el contenido esté sin publicar. Crear únicamente borradores privados en course_learning_content; no habilitar ventas sin precios aprobados. Plantilla separada b114_private_draft.sql, sin contenido privado en GitHub. Prueba de inserción de 34 lecciones/170 preguntas, preservación de contenido anterior y rechazo de ejecución duplicada: RED (plantilla ausente) → GREEN; suite B114 21/21. No se ha modificado MAIN. La autorización previa de publicación existe; no corresponde pedirla otra vez. El precio sigue pendiente.
+Corrección de inventario anterior: el catálogo base contiene 9 cursos; 12 al integrar los tres nuevos. La alerta de cuota no impidió la carga ya completada.
+
+2026-10-26 — Aplicada y verificada migración b114_private_course_drafts: 3 borradores, 34 lecciones, 170 preguntas; published=false en todos; cero filas administrativas B114. Huellas de NA-101/COMP-101 idénticas a preflight. Rol authenticated sin identidad: cero borradores y cero objetos B114 visibles. No es prueba de compra ni reproducción remota. MAIN y Stripe intactos. Código de plantilla respaldado antes de aplicar en d11e5afbdcabf3494f38860ca7f75a717c7f2ed1. Dos descargas parciales ajenas se preservaron con sus huellas fuera del repositorio, sin borrarlas ni incorporarlas a B114.
+
+2026-10-26 — El fundador ordenó integrar ya en MAIN y confirmó que todos los cursos tienen el mismo precio: $9.99, pago único. Aplicado el parche preparado a los siete archivos revisados; retiradas las dos guardas temporales de precio sin modificar el Checkout original. Catálogo público: 12 cursos, con tres fotos B114 y rutas propias; compilación 200 archivos/152 títulos, sin respuestas privadas ni medios pagados. Ajustados avisos bilingües al precio aprobado y al alcance real de materiales pendientes. Activación preparada reutilizando los tres borradores existentes, sin duplicar payloads ni subir medios: database/b114_activate_existing.sql. Prueba de activación RED→GREEN, compra exacta y repetición rechazada; suite 23/23, integración 2/2 y contenido 2/2. Revisión independiente previa ya completada; sin repetir autoría ni generación. La suite histórica npm test requiere PLUTON_SOURCE_ROOT; al repetir aún falta su navegador en este entorno reanudado, pendiente de restaurarlo. Los 14 audios/videos específicos siguen pendientes por orden previa del fundador; no se declaran terminados.

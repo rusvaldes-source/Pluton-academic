@@ -1,0 +1,189 @@
+[
+  {
+    "code": "FA-101",
+    "title": {
+      "es": "Primeros Auxilios y Emergencias",
+      "en": "First Aid and Emergencies"
+    },
+    "price": 9.99,
+    "cover": "covers/FA-101.webp",
+    "lessonCount": 10,
+    "scope": {
+      "es": "Formación introductoria para reconocer emergencias y organizar ayuda inicial. No equivale a certificación RCP ni habilita para procedimientos clínicos. Practica destrezas con instructor cualificado. Ante una emergencia real en Estados Unidos llama al 911 y sigue al operador.",
+      "en": "Introductory education for recognizing emergencies and organizing initial help. It is not CPR certification or authorization for clinical procedures. Practice skills with a qualified instructor. For an actual emergency in the United States call 911 and follow the dispatcher."
+    },
+    "topics": [
+      {
+        "es": "Seguridad de la escena",
+        "en": "Scene Safety"
+      },
+      {
+        "es": "Activación de emergencias y evaluación inicial",
+        "en": "Calling Emergency Services and Initial Assessment"
+      },
+      {
+        "es": "RCP y uso del DEA: fundamentos",
+        "en": "CPR and AED Fundamentals"
+      },
+      {
+        "es": "Atragantamiento y obstrucción de vías respiratorias",
+        "en": "Choking and Airway Obstruction"
+      },
+      {
+        "es": "Hemorragias y heridas",
+        "en": "Bleeding and Wounds"
+      },
+      {
+        "es": "Quemaduras y lesiones térmicas",
+        "en": "Burns and Thermal Injuries"
+      },
+      {
+        "es": "Fracturas y lesiones musculoesqueléticas",
+        "en": "Fractures and Musculoskeletal Injuries"
+      },
+      {
+        "es": "Emergencias médicas frecuentes",
+        "en": "Common Medical Emergencies"
+      },
+      {
+        "es": "Emergencias ambientales y preparación",
+        "en": "Environmental Emergencies and Preparedness"
+      },
+      {
+        "es": "Simulaciones y evaluación final",
+        "en": "Scenarios and Final Assessment"
+      }
+    ],
+    "professional_review_required": true
+  },
+  {
+    "code": "DRV-101",
+    "title": {
+      "es": "Formación para Conductores de Camiones CDL con Inglés Profesional",
+      "en": "CDL Truck Driver Preparation with Professional English"
+    },
+    "price": 9.99,
+    "cover": "covers/DRV-101.webp",
+    "lessonCount": 12,
+    "scope": {
+      "es": "Preparación teórica introductoria. No expide CDL ni sustituye ELDT, formación práctica, evaluación de inglés o exámenes oficiales. Confirma los requisitos federales y del estado aplicables antes de conducir.",
+      "en": "Introductory theory preparation. It does not issue a CDL or replace ELDT, hands-on training, English assessment or official examinations. Confirm applicable federal and state requirements before driving."
+    },
+    "topics": [
+      {
+        "es": "Introducción a la CDL y clases de licencia",
+        "en": "Introduction to CDL and License Classes"
+      },
+      {
+        "es": "Inspección previa al viaje",
+        "en": "Pre-trip Inspection"
+      },
+      {
+        "es": "Controles básicos y maniobras",
+        "en": "Basic Vehicle Control and Maneuvers"
+      },
+      {
+        "es": "Conducción segura y gestión del espacio",
+        "en": "Safe Driving and Space Management"
+      },
+      {
+        "es": "Frenos de aire",
+        "en": "Air Brakes"
+      },
+      {
+        "es": "Combinaciones de vehículos",
+        "en": "Combination Vehicles"
+      },
+      {
+        "es": "Carga, sujeción y distribución de peso",
+        "en": "Cargo Securement and Weight Distribution"
+      },
+      {
+        "es": "Horas de servicio y registros",
+        "en": "Hours of Service and Logs"
+      },
+      {
+        "es": "Condiciones adversas y emergencias",
+        "en": "Adverse Conditions and Emergencies"
+      },
+      {
+        "es": "Inglés profesional: inspecciones y documentación",
+        "en": "Professional English: Inspections and Documents"
+      },
+      {
+        "es": "Inglés profesional: comunicación en carretera",
+        "en": "Professional English: Road Communication"
+      },
+      {
+        "es": "Repaso CDL y situaciones prácticas",
+        "en": "CDL Review and Practical Scenarios"
+      }
+    ],
+    "professional_review_required": true
+  },
+  {
+    "code": "MED-201",
+    "title": {
+      "es": "Facturación y Codificación Médica en Estados Unidos",
+      "en": "Medical Billing and Coding in the United States"
+    },
+    "price": 9.99,
+    "cover": "covers/MED-201.webp",
+    "lessonCount": 12,
+    "scope": {
+      "es": "Formación introductoria con casos ficticios. No constituye asesoría para una reclamación real ni otorga certificación profesional. Verifica edición de códigos, reglas del pagador y revisión cualificada antes de uso profesional. No se reproducen tablas CPT licenciadas ni datos reales de pacientes.",
+      "en": "Introductory education using fictional cases. It is not advice for an actual claim and does not grant professional certification. Verify code editions, payer rules and qualified review before professional use. No licensed CPT tables or real patient data are reproduced."
+    },
+    "topics": [
+      {
+        "es": "Sistema sanitario y ciclo de ingresos",
+        "en": "Healthcare System and Revenue Cycle"
+      },
+      {
+        "es": "Terminología médica y anatomía básica",
+        "en": "Medical Terminology and Basic Anatomy"
+      },
+      {
+        "es": "Privacidad y manejo de información de salud",
+        "en": "Privacy and Health Information Handling"
+      },
+      {
+        "es": "Documentación clínica y necesidad médica",
+        "en": "Clinical Documentation and Medical Necessity"
+      },
+      {
+        "es": "ICD-10-CM: conceptos y estructura",
+        "en": "ICD-10-CM: Concepts and Structure"
+      },
+      {
+        "es": "CPT y HCPCS Level II: conceptos",
+        "en": "CPT and HCPCS Level II: Concepts"
+      },
+      {
+        "es": "Modificadores y servicios frecuentes",
+        "en": "Modifiers and Common Services"
+      },
+      {
+        "es": "Elegibilidad, seguros y beneficios",
+        "en": "Eligibility, Insurance and Benefits"
+      },
+      {
+        "es": "Reclamaciones y formularios",
+        "en": "Claims and Forms"
+      },
+      {
+        "es": "Denegaciones, apelaciones y correcciones",
+        "en": "Denials, Appeals and Corrections"
+      },
+      {
+        "es": "Cumplimiento, fraude y auditoría",
+        "en": "Compliance, Fraud and Audits"
+      },
+      {
+        "es": "Casos integradores y evaluación final",
+        "en": "Integrated Cases and Final Assessment"
+      }
+    ],
+    "professional_review_required": true
+  }
+]

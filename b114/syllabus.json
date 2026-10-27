@@ -1,0 +1,297 @@
+{
+  "version": "B114",
+  "status": "curriculum_outline_only",
+  "disclaimer": {
+    "es": "Material introductorio; no sustituye formación práctica, certificación oficial ni normas vigentes.",
+    "en": "Introductory material; not a substitute for hands-on training, official certification or current regulations."
+  },
+  "courses": [
+    {
+      "code": "FA-101",
+      "lessons": [
+        {
+          "number": 1,
+          "id": "FA-101-L01",
+          "title": {
+            "es": "Seguridad de la escena",
+            "en": "Scene Safety"
+          }
+        },
+        {
+          "number": 2,
+          "id": "FA-101-L02",
+          "title": {
+            "es": "Activación de emergencias y evaluación inicial",
+            "en": "Calling Emergency Services and Initial Assessment"
+          }
+        },
+        {
+          "number": 3,
+          "id": "FA-101-L03",
+          "title": {
+            "es": "RCP y uso del DEA: fundamentos",
+            "en": "CPR and AED Fundamentals"
+          }
+        },
+        {
+          "number": 4,
+          "id": "FA-101-L04",
+          "title": {
+            "es": "Atragantamiento y obstrucción de vías respiratorias",
+            "en": "Choking and Airway Obstruction"
+          }
+        },
+        {
+          "number": 5,
+          "id": "FA-101-L05",
+          "title": {
+            "es": "Hemorragias y heridas",
+            "en": "Bleeding and Wounds"
+          }
+        },
+        {
+          "number": 6,
+          "id": "FA-101-L06",
+          "title": {
+            "es": "Quemaduras y lesiones térmicas",
+            "en": "Burns and Thermal Injuries"
+          }
+        },
+        {
+          "number": 7,
+          "id": "FA-101-L07",
+          "title": {
+            "es": "Fracturas y lesiones musculoesqueléticas",
+            "en": "Fractures and Musculoskeletal Injuries"
+          }
+        },
+        {
+          "number": 8,
+          "id": "FA-101-L08",
+          "title": {
+            "es": "Emergencias médicas frecuentes",
+            "en": "Common Medical Emergencies"
+          }
+        },
+        {
+          "number": 9,
+          "id": "FA-101-L09",
+          "title": {
+            "es": "Emergencias ambientales y preparación",
+            "en": "Environmental Emergencies and Preparedness"
+          }
+        },
+        {
+          "number": 10,
+          "id": "FA-101-L10",
+          "title": {
+            "es": "Simulaciones y evaluación final",
+            "en": "Scenarios and Final Assessment"
+          }
+        }
+      ]
+    },
+    {
+      "code": "DRV-101",
+      "lessons": [
+        {
+          "number": 1,
+          "id": "DRV-101-L01",
+          "title": {
+            "es": "Introducción a la CDL y clases de licencia",
+            "en": "Introduction to CDL and License Classes"
+          }
+        },
+        {
+          "number": 2,
+          "id": "DRV-101-L02",
+          "title": {
+            "es": "Inspección previa al viaje",
+            "en": "Pre-trip Inspection"
+          }
+        },
+        {
+          "number": 3,
+          "id": "DRV-101-L03",
+          "title": {
+            "es": "Controles básicos y maniobras",
+            "en": "Basic Vehicle Control and Maneuvers"
+          }
+        },
+        {
+          "number": 4,
+          "id": "DRV-101-L04",
+          "title": {
+            "es": "Conducción segura y gestión del espacio",
+            "en": "Safe Driving and Space Management"
+          }
+        },
+        {
+          "number": 5,
+          "id": "DRV-101-L05",
+          "title": {
+            "es": "Frenos de aire",
+            "en": "Air Brakes"
+          }
+        },
+        {
+          "number": 6,
+          "id": "DRV-101-L06",
+          "title": {
+            "es": "Combinaciones de vehículos",
+            "en": "Combination Vehicles"
+          }
+        },
+        {
+          "number": 7,
+          "id": "DRV-101-L07",
+          "title": {
+            "es": "Carga, sujeción y distribución de peso",
+            "en": "Cargo Securement and Weight Distribution"
+          }
+        },
+        {
+          "number": 8,
+          "id": "DRV-101-L08",
+          "title": {
+            "es": "Horas de servicio y registros",
+            "en": "Hours of Service and Logs"
+          }
+        },
+        {
+          "number": 9,
+          "id": "DRV-101-L09",
+          "title": {
+            "es": "Condiciones adversas y emergencias",
+            "en": "Adverse Conditions and Emergencies"
+          }
+        },
+        {
+          "number": 10,
+          "id": "DRV-101-L10",
+          "title": {
+            "es": "Inglés profesional: inspecciones y documentación",
+            "en": "Professional English: Inspections and Documents"
+          }
+        },
+        {
+          "number": 11,
+          "id": "DRV-101-L11",
+          "title": {
+            "es": "Inglés profesional: comunicación en carretera",
+            "en": "Professional English: Road Communication"
+          }
+        },
+        {
+          "number": 12,
+          "id": "DRV-101-L12",
+          "title": {
+            "es": "Repaso CDL y situaciones prácticas",
+            "en": "CDL Review and Practical Scenarios"
+          }
+        }
+      ]
+    },
+    {
+      "code": "MED-201",
+      "lessons": [
+        {
+          "number": 1,
+          "id": "MED-201-L01",
+          "title": {
+            "es": "Sistema sanitario y ciclo de ingresos",
+            "en": "Healthcare System and Revenue Cycle"
+          }
+        },
+        {
+          "number": 2,
+          "id": "MED-201-L02",
+          "title": {
+            "es": "Terminología médica y anatomía básica",
+            "en": "Medical Terminology and Basic Anatomy"
+          }
+        },
+        {
+          "number": 3,
+          "id": "MED-201-L03",
+          "title": {
+            "es": "Privacidad y manejo de información de salud",
+            "en": "Privacy and Health Information Handling"
+          }
+        },
+        {
+          "number": 4,
+          "id": "MED-201-L04",
+          "title": {
+            "es": "Documentación clínica y necesidad médica",
+            "en": "Clinical Documentation and Medical Necessity"
+          }
+        },
+        {
+          "number": 5,
+          "id": "MED-201-L05",
+          "title": {
+            "es": "ICD-10-CM: conceptos y estructura",
+            "en": "ICD-10-CM: Concepts and Structure"
+          }
+        },
+        {
+          "number": 6,
+          "id": "MED-201-L06",
+          "title": {
+            "es": "CPT y HCPCS Level II: conceptos",
+            "en": "CPT and HCPCS Level II: Concepts"
+          }
+        },
+        {
+          "number": 7,
+          "id": "MED-201-L07",
+          "title": {
+            "es": "Modificadores y servicios frecuentes",
+            "en": "Modifiers and Common Services"
+          }
+        },
+        {
+          "number": 8,
+          "id": "MED-201-L08",
+          "title": {
+            "es": "Elegibilidad, seguros y beneficios",
+            "en": "Eligibility, Insurance and Benefits"
+          }
+        },
+        {
+          "number": 9,
+          "id": "MED-201-L09",
+          "title": {
+            "es": "Reclamaciones y formularios",
+            "en": "Claims and Forms"
+          }
+        },
+        {
+          "number": 10,
+          "id": "MED-201-L10",
+          "title": {
+            "es": "Denegaciones, apelaciones y correcciones",
+            "en": "Denials, Appeals and Corrections"
+          }
+        },
+        {
+          "number": 11,
+          "id": "MED-201-L11",
+          "title": {
+            "es": "Cumplimiento, fraude y auditoría",
+            "en": "Compliance, Fraud and Audits"
+          }
+        },
+        {
+          "number": 12,
+          "id": "MED-201-L12",
+          "title": {
+            "es": "Casos integradores y evaluación final",
+            "en": "Integrated Cases and Final Assessment"
+          }
+        }
+      ]
+    }
+  ]
+}
