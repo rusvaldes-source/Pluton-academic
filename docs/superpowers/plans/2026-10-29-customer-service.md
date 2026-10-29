@@ -20,3 +20,9 @@ Files: support/index.html; support/support.js; support/support.css; tests/b115-s
 - [ ] Implementar en sección existente; conservar recuperación y campos.
 - [ ] Pruebas, revisión independiente, migración aditiva y despliegue función; verificar sin revelar claves.
 - [ ] Publicar solo archivos revisados; comprobar remoto y ejecutar verificar-respaldo.py --all.
+
+## Execution ledger
+- Backend, quota and UI implemented; 13 initial tests green. Independent review found missing sign-in target and spaced card filter; regression tests failed then fixed.
+- Production schema was read: support_tickets user_id, subject length3..160, category/status; support_messages ticket_id,sender_id,body. No triggers. Existing RLS enforces ownership. Old database/support_tickets.sql is not current production schema.
+- npm test baseline cannot run in this environment: legacy source-root default, missing Chromium (download failed) and missing fixtures/supabase-2.117.3.js. Targeted real handler, PGlite and JSDOM tests run instead; no claim of whole-site browser regression.
+- Decisions: lifetime 400 calls (no automatic reset), 20/user/day, 5/user/minute; at exhaustion support ticket stays available. Budget bound covers this service only, not other OpenAI usage.
