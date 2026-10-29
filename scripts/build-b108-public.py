@@ -25,7 +25,7 @@ APP_FILES = {f'app-pluton/{name}' for name in (
 
 def allowed(path):
  name=path.as_posix(); parent=path.parent.as_posix(); ext=path.suffix.lower()
- if name in ENTRIES|PUBLIC_JSON|PUBLIC_MEDIA|SAMPLES|{'_headers','robots.txt','sitemap.xml','favicon.ico','integration/b58-fundadores-foto.webp'}: return True
+ if name in ENTRIES|PUBLIC_JSON|PUBLIC_MEDIA|SAMPLES|{'_headers','robots.txt','sitemap.xml','favicon.ico','integration/b58-fundadores-foto.webp','social/social-links.js'}: return True
  if any(p.startswith('.') or p in {'node_modules','dist','tests','documentation','database','docs','scripts','originales','originals'} for p in path.parts):return False
  if name in APP_FILES:return True
  if ext=='.js':
