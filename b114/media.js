@@ -1,5 +1,5 @@
 /* Dedicated new-course media; never grants access from the browser. */
-(()=>{'use strict';let client=null,epoch=0;const attached=new Set(),origin='https://paifjzznyiehwidoqjqb.supabase.co',codes=['FA-101','DRV-101','MED-201'];
+(()=>{'use strict';let client=null,epoch=0;const attached=new Set(),origin='https://paifjzznyiehwidoqjqb.supabase.co',codes=['FA-101','DRV-101','MED-201','FAM-101','FAM-102','PSI-101','PSI-102'];
 function clear(){epoch++;for(const el of attached){try{el.pause()}catch{}el.removeAttribute('src');try{el.load()}catch{}}attached.clear();}
 function path(raw,code){if(!codes.includes(code)||typeof raw!=='string'||!new RegExp('^'+code+'/'+code+'-L[0-9]{2}-(es|en)\\.(mp3|mp4)$').test(raw))throw Error('invalid_media');return raw;}
 window.PlutonB114Media={use(sb,owner){client=sb;sb.auth.onAuthStateChange((_event,session)=>{if(!owner||session?.user?.id!==owner)clear();});},async attach(el,raw,code){
