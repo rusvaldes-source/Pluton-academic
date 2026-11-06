@@ -1,6 +1,6 @@
 /* B114: existing private content table and purchase RLS; no preview fallback. */
 (()=>{'use strict';
-const counts=Object.freeze({'FA-101':10,'DRV-101':12,'MED-201':12});
+const counts=Object.freeze({'FA-101':10,'DRV-101':12,'MED-201':12,'FAM-101':15,'FAM-102':15,'PSI-101':15,'PSI-102':15});
 async function load(code,client,onChange=()=>{}){
  if(!Object.hasOwn(counts,code)||!client)throw Error('course_unavailable');
  const first=await client.auth.getUser(),owner=first.data?.user?.id;

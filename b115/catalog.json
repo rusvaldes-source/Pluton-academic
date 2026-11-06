@@ -1,0 +1,374 @@
+[
+  {
+    "code": "FAM-101",
+    "es": "Crianza Positiva y Educación de los Hijos",
+    "en": "Positive Parenting and Raising Children",
+    "category": "familia",
+    "classroom": "b114/aula.html?course=FAM-101",
+    "cover": "b114/covers/FAM-101-es.webp",
+    "covers": {
+      "es": "b114/covers/FAM-101-es.webp",
+      "en": "b114/covers/FAM-101-en.webp"
+    },
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "publication_status": "pending_approval",
+    "lessons": [
+      {
+        "id": "FAM-101-L01",
+        "es": "La crianza positiva: conexión y orientación",
+        "en": "Positive parenting: connection and guidance"
+      },
+      {
+        "id": "FAM-101-L02",
+        "es": "Expectativas según el desarrollo y la accesibilidad",
+        "en": "Developmental expectations and accessibility"
+      },
+      {
+        "id": "FAM-101-L03",
+        "es": "Escuchar y conversar con respeto",
+        "en": "Listening and respectful conversation"
+      },
+      {
+        "id": "FAM-101-L04",
+        "es": "Reconocer emociones sin permitir daño",
+        "en": "Recognizing emotions while preventing harm"
+      },
+      {
+        "id": "FAM-101-L05",
+        "es": "La pausa del cuidador y la corregulación",
+        "en": "Caregiver pauses and co-regulation"
+      },
+      {
+        "id": "FAM-101-L06",
+        "es": "Límites claros y reglas enseñables",
+        "en": "Clear limits and teachable rules"
+      },
+      {
+        "id": "FAM-101-L07",
+        "es": "Rutinas flexibles y transiciones",
+        "en": "Flexible routines and transitions"
+      },
+      {
+        "id": "FAM-101-L08",
+        "es": "Reconocer esfuerzos y enseñar habilidades",
+        "en": "Recognizing effort and teaching skills"
+      },
+      {
+        "id": "FAM-101-L09",
+        "es": "Consecuencias relacionadas y reparación",
+        "en": "Related consequences and repair"
+      },
+      {
+        "id": "FAM-101-L10",
+        "es": "Comprender conductas difíciles con observación",
+        "en": "Understanding difficult behavior through observation"
+      },
+      {
+        "id": "FAM-101-L11",
+        "es": "Conflictos entre niños y solución de problemas",
+        "en": "Conflict between children and problem solving"
+      },
+      {
+        "id": "FAM-101-L12",
+        "es": "Autonomía, responsabilidades y decisiones",
+        "en": "Autonomy, responsibilities, and decisions"
+      },
+      {
+        "id": "FAM-101-L13",
+        "es": "Acuerdos entre cuidadores, escuela y comunidad",
+        "en": "Agreements among caregivers, school, and community"
+      },
+      {
+        "id": "FAM-101-L14",
+        "es": "Protección, privacidad y búsqueda de apoyo",
+        "en": "Protection, privacy, and seeking support"
+      },
+      {
+        "id": "FAM-101-L15",
+        "es": "Plan familiar de práctica y revisión",
+        "en": "A family plan for practice and review"
+      }
+    ]
+  },
+  {
+    "code": "FAM-102",
+    "es": "Cómo Entender y Educar a los Adolescentes",
+    "en": "Understanding and Raising Teenagers",
+    "category": "familia",
+    "classroom": "b114/aula.html?course=FAM-102",
+    "cover": "b114/covers/FAM-102-es.webp",
+    "covers": {
+      "es": "b114/covers/FAM-102-es.webp",
+      "en": "b114/covers/FAM-102-en.webp"
+    },
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "publication_status": "pending_approval",
+    "lessons": [
+      {
+        "id": "FAM-102-L01",
+        "es": "Cambios y ritmos diversos",
+        "en": "Changes and different paces"
+      },
+      {
+        "id": "FAM-102-L02",
+        "es": "Cuerpo, descanso y cuidado cotidiano",
+        "en": "Body, rest and everyday care"
+      },
+      {
+        "id": "FAM-102-L03",
+        "es": "Pensamiento, identidad y pertenencia",
+        "en": "Thinking, identity and belonging"
+      },
+      {
+        "id": "FAM-102-L04",
+        "es": "Emociones y acompañamiento adulto",
+        "en": "Emotions and adult support"
+      },
+      {
+        "id": "FAM-102-L05",
+        "es": "Escuchar y conversar con respeto",
+        "en": "Listening and speaking respectfully"
+      },
+      {
+        "id": "FAM-102-L06",
+        "es": "Independencia con apoyo gradual",
+        "en": "Independence with gradual support"
+      },
+      {
+        "id": "FAM-102-L07",
+        "es": "Responsabilidad y habilidades prácticas",
+        "en": "Responsibility and practical skills"
+      },
+      {
+        "id": "FAM-102-L08",
+        "es": "Límites claros y consecuencias educativas",
+        "en": "Clear limits and educational consequences"
+      },
+      {
+        "id": "FAM-102-L09",
+        "es": "Amistades, presión y decisiones",
+        "en": "Friendships, pressure and decisions"
+      },
+      {
+        "id": "FAM-102-L10",
+        "es": "Tecnología, redes y privacidad",
+        "en": "Technology, social media and privacy"
+      },
+      {
+        "id": "FAM-102-L11",
+        "es": "Prevenir y responder al acoso",
+        "en": "Preventing and responding to bullying"
+      },
+      {
+        "id": "FAM-102-L12",
+        "es": "Conflictos y reparación sin humillación",
+        "en": "Conflict and repair without humiliation"
+      },
+      {
+        "id": "FAM-102-L13",
+        "es": "Convivencia segura y redes protectoras",
+        "en": "Safe coexistence and protective networks"
+      },
+      {
+        "id": "FAM-102-L14",
+        "es": "Cuándo buscar apoyo profesional",
+        "en": "When to seek professional support"
+      },
+      {
+        "id": "FAM-102-L15",
+        "es": "Plan familiar de acompañamiento",
+        "en": "A family support plan"
+      }
+    ]
+  },
+  {
+    "code": "PSI-101",
+    "es": "Inteligencia Emocional para la Vida Diaria",
+    "en": "Emotional Intelligence for Everyday Life",
+    "category": "familia",
+    "classroom": "b114/aula.html?course=PSI-101",
+    "cover": "b114/covers/PSI-101-es.webp",
+    "covers": {
+      "es": "b114/covers/PSI-101-es.webp",
+      "en": "b114/covers/PSI-101-en.webp"
+    },
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "publication_status": "pending_approval",
+    "lessons": [
+      {
+        "id": "PSI-101-L01",
+        "es": "Reconocer emociones sin juzgarlas",
+        "en": "Recognizing emotions without judging them"
+      },
+      {
+        "id": "PSI-101-L02",
+        "es": "Ampliar el vocabulario emocional",
+        "en": "Expanding emotional vocabulary"
+      },
+      {
+        "id": "PSI-101-L03",
+        "es": "Detectar patrones y necesidades",
+        "en": "Noticing patterns and needs"
+      },
+      {
+        "id": "PSI-101-L04",
+        "es": "Pausar antes de responder",
+        "en": "Pausing before responding"
+      },
+      {
+        "id": "PSI-101-L05",
+        "es": "Regular la activación con opciones accesibles",
+        "en": "Regulating activation with accessible options"
+      },
+      {
+        "id": "PSI-101-L06",
+        "es": "Tolerar frustración y ajustar el plan",
+        "en": "Tolerating frustration and adjusting plans"
+      },
+      {
+        "id": "PSI-101-L07",
+        "es": "Construir autoestima realista",
+        "en": "Building realistic self esteem"
+      },
+      {
+        "id": "PSI-101-L08",
+        "es": "Examinar interpretaciones con flexibilidad",
+        "en": "Examining interpretations flexibly"
+      },
+      {
+        "id": "PSI-101-L09",
+        "es": "Practicar empatía sin adivinar",
+        "en": "Practicing empathy without guessing"
+      },
+      {
+        "id": "PSI-101-L10",
+        "es": "Escuchar y validar con límites",
+        "en": "Listening and validating with limits"
+      },
+      {
+        "id": "PSI-101-L11",
+        "es": "Pedir con claridad y poner límites",
+        "en": "Making clear requests and setting boundaries"
+      },
+      {
+        "id": "PSI-101-L12",
+        "es": "Resolver desacuerdos y reparar errores",
+        "en": "Resolving disagreements and repairing mistakes"
+      },
+      {
+        "id": "PSI-101-L13",
+        "es": "Cuidar vínculos y redes de apoyo",
+        "en": "Caring for relationships and support networks"
+      },
+      {
+        "id": "PSI-101-L14",
+        "es": "Acompañar emociones en la vida familiar",
+        "en": "Supporting emotions in family life"
+      },
+      {
+        "id": "PSI-101-L15",
+        "es": "Integrar práctica, reflexión y búsqueda de ayuda",
+        "en": "Integrating practice, reflection, and help seeking"
+      }
+    ]
+  },
+  {
+    "code": "PSI-102",
+    "es": "Manejo del Estrés y Bienestar Emocional",
+    "en": "Stress Management and Emotional Well-being",
+    "category": "familia",
+    "classroom": "b114/aula.html?course=PSI-102",
+    "cover": "b114/covers/PSI-102-es.webp",
+    "covers": {
+      "es": "b114/covers/PSI-102-es.webp",
+      "en": "b114/covers/PSI-102-en.webp"
+    },
+    "price_cents": 999,
+    "currency": "usd",
+    "payment_type": "one_time",
+    "publication_status": "pending_approval",
+    "lessons": [
+      {
+        "id": "PSI-102-L01",
+        "es": "Comprender el estrés cotidiano",
+        "en": "Understanding everyday stress"
+      },
+      {
+        "id": "PSI-102-L02",
+        "es": "Identificar desencadenantes y patrones",
+        "en": "Identifying triggers and patterns"
+      },
+      {
+        "id": "PSI-102-L03",
+        "es": "Atención al presente y anclajes accesibles",
+        "en": "Present attention and accessible anchors"
+      },
+      {
+        "id": "PSI-102-L04",
+        "es": "Respiración suave y opcional",
+        "en": "Gentle optional breathing"
+      },
+      {
+        "id": "PSI-102-L05",
+        "es": "Descanso breve y relajación adaptable",
+        "en": "Brief rest and adaptable relaxation"
+      },
+      {
+        "id": "PSI-102-L06",
+        "es": "Emociones y lenguaje respetuoso",
+        "en": "Emotions and respectful language"
+      },
+      {
+        "id": "PSI-102-L07",
+        "es": "Pensamientos, hechos y alternativas",
+        "en": "Thoughts, facts, and alternatives"
+      },
+      {
+        "id": "PSI-102-L08",
+        "es": "Sueño y rutinas posibles",
+        "en": "Sleep and feasible routines"
+      },
+      {
+        "id": "PSI-102-L09",
+        "es": "Hábitos cotidianos sin perfeccionismo",
+        "en": "Everyday habits without perfectionism"
+      },
+      {
+        "id": "PSI-102-L10",
+        "es": "Tiempo, prioridades y carga real",
+        "en": "Time, priorities, and actual workload"
+      },
+      {
+        "id": "PSI-102-L11",
+        "es": "Límites y comunicación de necesidades",
+        "en": "Boundaries and communicating needs"
+      },
+      {
+        "id": "PSI-102-L12",
+        "es": "Resolver problemas y manejar incertidumbre",
+        "en": "Problem solving and handling uncertainty"
+      },
+      {
+        "id": "PSI-102-L13",
+        "es": "Resiliencia y autocompasión práctica",
+        "en": "Resilience and practical self-compassion"
+      },
+      {
+        "id": "PSI-102-L14",
+        "es": "Redes de apoyo y cuidado compartido",
+        "en": "Support networks and shared care"
+      },
+      {
+        "id": "PSI-102-L15",
+        "es": "Plan personal y búsqueda de atención",
+        "en": "Personal plan and seeking care"
+      }
+    ]
+  }
+]
