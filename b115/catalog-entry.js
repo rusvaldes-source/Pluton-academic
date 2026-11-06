@@ -4,7 +4,7 @@ function setText(el,value){if(el&&el.textContent!==value)el.textContent=value;}
 function draw(){const root=document.getElementById('mainCatalog');if(!root)return;const en=document.documentElement.lang==='en';
  const filters=document.getElementById('catalogFilters');if(filters&&!filters.querySelector('.b115-family-filter')){const link=document.createElement('a');link.className='b115-family-filter';link.href='b115/index.html?lang='+(en?'en':'es');link.textContent=en?'Family and well-being':'Familia y bienestar';filters.append(link)}
  for(const card of root.querySelectorAll('article')){const code=card.querySelector('.code')?.textContent.trim();if(!codes.has(code))continue;
-  const image=card.querySelector('img');if(image)image.src='b114/covers/'+code+'-'+(en?'en':'es')+'.webp';setText(card.querySelector('small'),en?'Family and well-being':'Familia y bienestar');
+  const image=card.querySelector('img');if(image)image.src='b114/covers/'+code+'-'+(en?'en':'es')+'.webp?v=b115-fotos-20261106';setText(card.querySelector('small'),en?'Family and well-being':'Familia y bienestar');
   let price=card.querySelector('.b115-price');if(!price){price=document.createElement('p');price.className='b115-price';card.append(price)}setText(price,en?'$9.99 USD · One-time payment':'$9.99 USD · Pago único');
   let buy=card.querySelector('.b115-buy');if(!buy){buy=document.createElement('button');buy.type='button';buy.className='catalog-cta b115-buy';buy.addEventListener('click',()=>{if(typeof window.course==='function')window.course(code)});card.append(buy)}setText(buy,en?'Buy course':'Comprar curso');
   const details=card.querySelector('a.catalog-cta');if(details)details.href='b115/index.html?course='+encodeURIComponent(code)+'&lang='+(en?'en':'es');
