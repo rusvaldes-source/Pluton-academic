@@ -9,7 +9,7 @@ function dashboardLang(){return localStorage.getItem('pluton-lang')==='en'?'en':
 function tr(es,en){return dashboardLang()==='en'?en:es;}
 function studentStatus(el,value){if(el){el.dataset.studentStatus=value;el.textContent=dashboardLang()==='en'?(dashboardLabels[value]||value):value;}}
 function studentValue(el,value){if(el){delete el.dataset.studentStatus;el.textContent=value;}}
-function classroomURL(code,lesson=0){if(code==='ID-001')return 'ingles-desde-cero/#course-access';if(['FA-101','DRV-101','MED-201'].includes(code))return 'b114/aula.html?course='+encodeURIComponent(code)+'&lesson='+lesson+'&lang='+dashboardLang();return B107_CODES.has(code)?'b107/index.html?course='+encodeURIComponent(code)+'&lesson='+lesson+'&lang='+dashboardLang():'courses.html?course='+encodeURIComponent(code);}
+function classroomURL(code,lesson=0){if(code==='ID-001')return 'ingles-desde-cero/#course-access';if(['FA-101','DRV-101','MED-201'].includes(code))return 'b114/aula.html?course='+encodeURIComponent(code)+'&lesson='+lesson+'&lang='+dashboardLang();if(B107_CODES.has(code))return 'b107/index.html?course='+encodeURIComponent(code)+'&lesson='+lesson+'&lang='+dashboardLang();const entry=dashboardCatalog.find(c=>c.code===code);if(entry?.classroom){const url=new URL(entry.classroom,location.href);url.searchParams.set('lang',dashboardLang());return url.pathname.replace(/^\//,'')+url.search+url.hash;}return 'courses.html?course='+encodeURIComponent(code);}
 function renderPurchases(){
  const el=document.getElementById('purchasedCourses');if(!el)return;
  if(!dashboardUser)return;
