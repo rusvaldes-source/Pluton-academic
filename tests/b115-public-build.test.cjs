@@ -12,3 +12,19 @@ test('production build ships B115 catalog, scripts and eight covers while exclud
   for(const f of ['b115/course.json','b115/private.sql','b115/audios/FAM-101-L01-es.mp3','b115/REVISAR.html'])assert.equal(fs.existsSync(path.join(out,f)),false,f);
  }finally{fs.rmSync(dir,{recursive:true});}
 });
+test('homepage B115 decoration settles with the existing global translator',async()=>{
+ const {JSDOM}=require('jsdom'),dom=new JSDOM(fs.readFileSync('index.html','utf8'),{url:'https://www.plutonacademic.com/index.html?b115_buy=FAM-101#cursos',runScripts:'outside-only',pretendToBeVisual:true});
+ const w=dom.window,Real=w.MutationObserver,counts=[];let exceeded=false;
+ w.MutationObserver=class extends Real{constructor(callback){const count={calls:0};counts.push(count);super((records,observer)=>{if(++count.calls>60){exceeded=true;observer.disconnect();return}callback(records,observer)})}};
+ w.fetch=async()=>({ok:true,json:async()=>JSON.parse(fs.readFileSync('catalog.json','utf8'))});let requested=null;w.course=code=>{requested=code};
+ try{
+  w.eval(fs.readFileSync('language.js','utf8'));
+  for(const script of [...w.document.querySelectorAll('script:not([src])')].map(s=>s.textContent).filter(s=>s.includes('function applyCoursePrices')||s.includes('const PRICE_ES=')))w.eval(script);
+  for(const file of ['b107/catalog.js','b115/catalog-entry.js','catalog-ui.js'])w.eval(fs.readFileSync(file,'utf8'));
+  await new Promise(resolve=>setTimeout(resolve,150));
+  assert.equal(exceeded,false,'mutation observers must settle instead of blocking browser input');assert.equal(requested,'FAM-101');
+  assert.equal(w.document.querySelectorAll('.b115-buy').length,4);
+  const before=counts.map(c=>c.calls);w.document.documentElement.lang=w.document.documentElement.lang;await new Promise(resolve=>setTimeout(resolve,100));
+  assert.equal(exceeded,false);assert.ok(counts.every((c,i)=>c.calls-before[i]<10),'writing the same locale must not cause repeated decoration');
+ }finally{dom.window.close()}
+});
