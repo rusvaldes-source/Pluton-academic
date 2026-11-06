@@ -1,0 +1,86 @@
+[
+  {
+    "course": "FAM-101",
+    "original": "Positive Parenting Family Course Banner.png",
+    "original_library_id": "libfile_9efb101b72088191b3d6e2428f672dd5",
+    "original_sha256": "80618ad4c3c9924f6c7f401f7ec4a8a6757138066f1af6c2a8c0accc2861960f",
+    "original_dimensions": [
+      1672,
+      941
+    ],
+    "display": "Full original framing, WebP optimization only; Spanish labels in original used in both interface languages.",
+    "webp": {
+      "es": {
+        "path": "b114/covers/FAM-101-es.webp",
+        "sha256": "c7f483d2963cd38eb2dd18f56f9d148a91c172e59b2cdf6057e5ffc1bd8df3ef"
+      },
+      "en": {
+        "path": "b114/covers/FAM-101-en.webp",
+        "sha256": "c7f483d2963cd38eb2dd18f56f9d148a91c172e59b2cdf6057e5ffc1bd8df3ef"
+      }
+    }
+  },
+  {
+    "course": "FAM-102",
+    "original": "Understanding and guiding adolescents.png",
+    "original_library_id": "libfile_16b8d0f6d67081919cec0b6c3540cb7c",
+    "original_sha256": "f25b185bca37d7d7c6f5b8e14957bc7603a8c8a040540ac937831a7b1a6b8536",
+    "original_dimensions": [
+      1672,
+      941
+    ],
+    "display": "Full original framing, WebP optimization only; Spanish labels in original used in both interface languages.",
+    "webp": {
+      "es": {
+        "path": "b114/covers/FAM-102-es.webp",
+        "sha256": "5d3e4dff4088a9fa37719d9b3f994e1c5b921a6b4717af760ed19614967c027e"
+      },
+      "en": {
+        "path": "b114/covers/FAM-102-en.webp",
+        "sha256": "5d3e4dff4088a9fa37719d9b3f994e1c5b921a6b4717af760ed19614967c027e"
+      }
+    }
+  },
+  {
+    "course": "PSI-101",
+    "original": "Emotional Intelligence for Everyday Life.png",
+    "original_library_id": "libfile_e0a7d7f9af208191852000b10e90fa4c",
+    "original_sha256": "de5f0af908140ecd1b8a7ced370f5cd3046fcf280a85b3a48882373255ddae67",
+    "original_dimensions": [
+      1672,
+      941
+    ],
+    "display": "Full original framing, WebP optimization only; Spanish labels in original used in both interface languages.",
+    "webp": {
+      "es": {
+        "path": "b114/covers/PSI-101-es.webp",
+        "sha256": "2bd5fd3f2402f890ec4eb47f8bff2439e9d48d40ce3bf34e6902b07576141899"
+      },
+      "en": {
+        "path": "b114/covers/PSI-101-en.webp",
+        "sha256": "2bd5fd3f2402f890ec4eb47f8bff2439e9d48d40ce3bf34e6902b07576141899"
+      }
+    }
+  },
+  {
+    "course": "PSI-102",
+    "original": "Quiet morning pause for emotional wellbeing.png",
+    "original_library_id": "libfile_1af51e0985d0819194c10c9d7d7bf3d6",
+    "original_sha256": "e90f413877f54730717213a5da6fc747feec8c3372f099499a37128377c157ed",
+    "original_dimensions": [
+      1672,
+      941
+    ],
+    "display": "Full original framing, WebP optimization only; Spanish labels in original used in both interface languages.",
+    "webp": {
+      "es": {
+        "path": "b114/covers/PSI-102-es.webp",
+        "sha256": "e1a47552655c5c6b2697b4db5550d687ab672e1745f1837aaabb263f226a2d8b"
+      },
+      "en": {
+        "path": "b114/covers/PSI-102-en.webp",
+        "sha256": "e1a47552655c5c6b2697b4db5550d687ab672e1745f1837aaabb263f226a2d8b"
+      }
+    }
+  }
+]
