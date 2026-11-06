@@ -23,7 +23,8 @@ test('homepage B115 decoration settles with the existing global translator',asyn
   for(const file of ['b107/catalog.js','b115/catalog-entry.js','catalog-ui.js'])w.eval(fs.readFileSync(file,'utf8'));
   await new Promise(resolve=>setTimeout(resolve,150));
   assert.equal(exceeded,false,'mutation observers must settle instead of blocking browser input');assert.equal(requested,'FAM-101');
-  assert.equal(w.document.querySelectorAll('.b115-buy').length,4);
+  assert.equal(w.document.querySelectorAll('.b115-buy,.b115-price').length,0);
+  for(const code of ['FAM-101','FAM-102','PSI-101','PSI-102']){const card=[...w.document.querySelectorAll('#mainCatalog article')].find(c=>c.querySelector('.code')?.textContent===code);assert.equal(card.querySelectorAll('.pa-b102-course-price').length,1);assert.equal(card.querySelectorAll('.pa-b103-buy').length,1);card.querySelector('.pa-b103-buy').click();assert.equal(requested,code,'existing gold purchase button must retain checkout routing');}
   const before=counts.map(c=>c.calls);w.document.documentElement.lang=w.document.documentElement.lang;await new Promise(resolve=>setTimeout(resolve,100));
   assert.equal(exceeded,false);assert.ok(counts.every((c,i)=>c.calls-before[i]<10),'writing the same locale must not cause repeated decoration');
  }finally{for(const observer of observers)observer.disconnect();dom.window.close()}
