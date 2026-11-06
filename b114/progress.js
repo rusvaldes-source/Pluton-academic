@@ -1,5 +1,5 @@
 /* Reuses B70 progress API and existing owner-protected table. */
-(()=>{'use strict';const counts={'FA-101':10,'DRV-101':12,'MED-201':12};
+(()=>{'use strict';const counts={'FA-101':10,'DRV-101':12,'MED-201':12,'FAM-101':15,'FAM-102':15,'PSI-101':15,'PSI-102':15};
 window.PlutonCourseProgress={
  async load(client,code,count){
   if(counts[code]!==count)return {ok:false,reason:'invalid'};
