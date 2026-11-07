@@ -87,3 +87,24 @@
 @media(max-width:410px) {
   #mainCatalog > article.pa-b103-zero > img {height:200px}
 }
+
+/* B118: the three approved photographs carry internal framing that looks
+   inset in narrow catalog cards. Crop within the existing panoramic viewport
+   rather than changing the source files or any purchase controls. */
+#mainCatalog article .catalog-visual.pa-illustrated:has(img[src*="id101-ingles"]),
+#mainCatalog article .catalog-visual.pa-illustrated:has(img[src*="mkt201-marketing"]),
+#mainCatalog article .catalog-visual.pa-illustrated:has(img[src*="comp101-hija-computacion"]) {
+  overflow:hidden!important;
+  margin:0!important;
+  border-radius:0!important;
+}
+#mainCatalog article .catalog-visual.pa-illustrated img[src*="id101-ingles"],
+#mainCatalog article .catalog-visual.pa-illustrated img[src*="mkt201-marketing"],
+#mainCatalog article .catalog-visual.pa-illustrated img[src*="comp101-hija-computacion"] {
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 35%!important;
+  transform:scale(1.12)!important;
+  transform-origin:center!important;
+}
