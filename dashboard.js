@@ -22,7 +22,7 @@ async function loadStudent(){
  const generation=++dashboardGeneration;const current=()=>generation===dashboardGeneration;let user;
  try{
   if(!sb)throw Error('Supabase unavailable');
-  const verified=await sb.auth.getUser();if(!current())return {owned:[],stale:true};if(verified.error)throw verified.error;user=verified.data?.user;
+  const verified=await sb.auth.getUser();if(!current())return {owned:[],stale:true};if(verified.error&&verified.error.name!=='AuthSessionMissingError')throw verified.error;user=verified.data?.user;
   dashboardUser=user?.id||null;dashboardOwned=[];dashboardProgress=null;
   if(!user){studentStatus(document.getElementById('student-email'),'Sesión no iniciada');studentValue(document.getElementById('purchasedCourses'),'—');refreshProgress();refreshNextCourse();return {owned:[]};}
   const profile=user.user_metadata||{};
@@ -39,7 +39,7 @@ async function loadStudent(){
    if(!progress.error){dashboardProgress=new Map(codes.map(c=>[c,new Set()]));for(const row of progress.data||[])if(row.user_id===user.id&&dashboardProgress.has(row.course_code)&&row.completed===true&&Number.isInteger(row.lesson_number)&&row.lesson_number>=1&&row.lesson_number<=20)dashboardProgress.get(row.course_code).add(row.lesson_number);}
   }else dashboardProgress=new Map();
   renderPurchases();refreshProgress();refreshNextCourse();return {owned:[...dashboardOwned],userId:user.id};
- }catch(error){if(!current())return {owned:[],stale:true};dashboardOwned=[];dashboardProgress=null;studentStatus(document.getElementById('purchasedCourses'),'No disponible');if(!user)studentStatus(document.getElementById('student-email'),'Error al cargar tu cuenta');refreshProgress();refreshNextCourse();return {owned:[],error:true};}
+ }catch(error){if(!current())return {owned:[],stale:true};dashboardOwned=[];dashboardProgress=null;studentStatus(document.getElementById('purchasedCourses'),'No disponible');if(!user)studentStatus(document.getElementById('student-email'),error?.name==='AuthSessionMissingError'?'Sesión no iniciada':'Error al cargar tu cuenta');refreshProgress();refreshNextCourse();return {owned:[],error:true};}
 }
 function legacyCompleted(c){try{const list=JSON.parse(localStorage.getItem('pluton-completed-'+c.code)||'[]');return new Set(Array.isArray(list)?list.filter(i=>Number.isInteger(i)&&i>=0&&i<c.lessons.length):[]);}catch{return new Set();}}
 function refreshProgress(){let total=0,done=0;for(const c of dashboardCatalog){if(B107_CODES.has(c.code)||!Array.isArray(c.lessons))continue;total+=c.lessons.length;done+=legacyCompleted(c).size;}
