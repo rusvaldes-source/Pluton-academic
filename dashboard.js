@@ -25,6 +25,10 @@ async function loadStudent(){
   const verified=await sb.auth.getUser();if(!current())return {owned:[],stale:true};if(verified.error)throw verified.error;user=verified.data?.user;
   dashboardUser=user?.id||null;dashboardOwned=[];dashboardProgress=null;
   if(!user){studentStatus(document.getElementById('student-email'),'Sesión no iniciada');studentValue(document.getElementById('purchasedCourses'),'—');refreshProgress();refreshNextCourse();return {owned:[]};}
+  const profile=user.user_metadata||{};
+  const studentName=[profile.full_name,profile.name,profile.display_name].find(v=>typeof v==='string'&&v.trim());
+  const heading=document.getElementById('student-welcome');
+  if(heading)heading.textContent=studentName?('Panel de '+studentName.trim().slice(0,80)):tr('Bienvenido','Welcome');
   studentValue(document.getElementById('student-email'),user.email||tr('Usuario','User'));studentStatus(document.getElementById('purchasedCourses'),'Comprobando...');
   const purchases=await sb.from('course_purchase_access').select('course_code').eq('user_id',user.id).eq('active',true);
   if(!current()||dashboardUser!==user.id)return {owned:[],stale:true};if(purchases.error)throw purchases.error;
