@@ -1,2 +1,12 @@
-.catalog-visual img.b107-cover{object-fit:contain;object-position:center;background:#10243a}
+/* Keep the approved panoramic card geometry for all catalog photos.
+   This stylesheet previously set object-fit:contain on B107 covers,
+   creating square/letterboxed images beside panoramic course banners. */
+#mainCatalog article .catalog-visual img.b107-cover {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  background:#10243a;
+}
 [data-b107-description]{line-height:1.5}
