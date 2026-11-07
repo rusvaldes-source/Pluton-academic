@@ -255,3 +255,58 @@ function growth(name) {
  document.querySelectorAll('.courses article[data-cat]').forEach(card=>{card.hidden=btn.dataset.filter!=='all'&&card.dataset.cat!==btn.dataset.filter;});
  }));
  });
+
+/* B126: Visible, session-bound student identity on the public home page. */
+(function(){
+ function safeName(user){
+  const m=user?.user_metadata||{};
+  const name=[m.full_name,m.name,m.display_name].find(v=>typeof v==='string'&&v.trim());
+  return name?name.trim().slice(0,80):'';
+ }
+ function initIdentity(){
+  if(!sb?.auth)return;
+  const header=document.querySelector('header');
+  if(!header)return;
+  const panel=document.createElement('div');
+  panel.id='pa-student-identity';
+  panel.setAttribute('aria-live','polite');
+  panel.style.cssText='display:none;box-sizing:border-box;width:100%;padding:12px 16px;margin:8px 0;background:#10243d;border:1px solid #d6af59;border-radius:12px;color:#fff;flex-wrap:wrap;align-items:center;gap:10px';
+  const welcome=document.createElement('strong');
+  welcome.style.cssText='flex:1 1 180px;overflow-wrap:anywhere';
+  const link=document.createElement('a');
+  link.href='dashboard.html';link.textContent='Mi panel / My dashboard';
+  link.style.cssText='display:inline-flex;align-items:center;min-height:42px;padding:9px 12px;border-radius:8px;background:#e7c56f;color:#102039;font-weight:800;text-decoration:none';
+  const logout=document.createElement('button');
+  logout.type='button';logout.textContent='Cerrar sesión / Log out';
+  logout.style.cssText='min-height:42px;padding:9px 12px;border:1px solid #e7c56f;border-radius:8px;background:transparent;color:#f2d384;font-weight:700;cursor:pointer';
+  logout.addEventListener('click',async()=>{
+   logout.disabled=true;
+   const {error}=await sb.auth.signOut();
+   logout.disabled=false;
+   if(error){window.alert('No se pudo cerrar la sesión. Inténtalo de nuevo.');return;}
+   render(null);
+  });
+  panel.append(welcome,link,logout);
+  header.insertAdjacentElement('afterend',panel);
+  let generation=0;
+  function render(user){
+   if(!user){panel.style.display='none';return;}
+   const name=safeName(user);
+   welcome.textContent=name?'¡Bienvenido/a, '+name+'!':'Sesión iniciada: '+(user.email||'Estudiante');
+   panel.style.display='flex';
+  }
+  async function refresh(){
+   const current=++generation;
+   const {data,error}=await sb.auth.getUser();
+   if(current!==generation)return;
+   render(error?null:data?.user);
+  }
+  sb.auth.onAuthStateChange((_event,session)=>{
+   generation++;
+   render(session?.user||null);
+  });
+  refresh();
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initIdentity);
+ else initIdentity();
+})();
