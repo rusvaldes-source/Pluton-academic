@@ -108,3 +108,28 @@
   transform:scale(1.12)!important;
   transform-origin:center!important;
 }
+
+/* B120: only the two remaining approved course covers.
+   Preserve the existing course cards, buttons, pricing and layout. */
+#mainCatalog article .catalog-visual.pa-illustrated:has(img[src*="na101"]),
+#mainCatalog article .catalog-visual.pa-illustrated:has(img[src*="enfermeria"]) {
+  overflow:hidden!important;
+}
+#mainCatalog article .catalog-visual.pa-illustrated img[src*="na101"],
+#mainCatalog article .catalog-visual.pa-illustrated img[src*="enfermeria"] {
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 35%!important;
+  transform:scale(1.10)!important;
+  transform-origin:center!important;
+}
+#mainCatalog > article.pa-b103-zero {overflow:hidden!important;}
+#mainCatalog > article.pa-b103-zero > img {
+  width:100%!important;
+  object-fit:cover!important;
+  object-position:center 35%!important;
+  transform:scale(1.08)!important;
+  transform-origin:center top!important;
+}
