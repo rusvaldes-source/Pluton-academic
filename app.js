@@ -289,9 +289,25 @@ function growth(name) {
   panel.append(welcome,link,logout);
   header.insertAdjacentElement('afterend',panel);
   let generation=0;
+  const loginButtons=Array.from(document.querySelectorAll('button[onclick="openLogin()"]'));
+  const panelLinks=loginButtons.map(button=>{
+   const anchor=document.createElement('a');
+   anchor.href='dashboard.html';
+   anchor.className=button.className;
+   anchor.style.cssText='display:none;align-items:center;justify-content:center;text-align:center;text-decoration:none;min-height:42px';
+   anchor.setAttribute('aria-label','Abrir mi panel de estudiante');
+   button.insertAdjacentElement('afterend',anchor);
+   return {button,anchor};
+  });
   function render(user){
+   const name=user?safeName(user):'';
+   for(const {button,anchor} of panelLinks){
+    button.hidden=!!user;
+    button.style.display=user?'none':'';
+    anchor.style.display=user?'inline-flex':'none';
+    if(user)anchor.textContent=name?'Panel de '+name:'Mi panel';
+   }
    if(!user){panel.style.display='none';return;}
-   const name=safeName(user);
    welcome.textContent=name?'¡Bienvenido/a, '+name+'!':'Sesión iniciada: '+(user.email||'Estudiante');
    panel.style.display='flex';
   }
