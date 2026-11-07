@@ -56,3 +56,34 @@
   #mainCatalog {grid-template-columns:1fr;}
   #mainCatalog article .catalog-visual.pa-illustrated {height:200px!important;}
 }
+
+/* ID-001 is inserted as a standalone card rather than a .catalog-visual.
+   Match the approved edge-to-edge photographic header without touching
+   course pricing, purchase buttons or their handlers. */
+#mainCatalog > article.pa-b103-zero {
+  padding:0;
+}
+#mainCatalog > article.pa-b103-zero > img {
+  display:block;
+  width:100%;
+  height:180px;
+  margin:0;
+  border-radius:0;
+  object-fit:cover;
+  object-position:center top;
+}
+#mainCatalog > article.pa-b103-zero > :not(img) {
+  margin-left:16px;
+  margin-right:16px;
+}
+#mainCatalog > article.pa-b103-zero > .pa-b103-buy {
+  width:calc(100% - 32px);
+}
+@media(max-width:700px) {
+  #mainCatalog > article.pa-b103-zero > img {height:145px}
+  #mainCatalog > article.pa-b103-zero > :not(img) {margin-left:12px;margin-right:12px}
+  #mainCatalog > article.pa-b103-zero > .pa-b103-buy {width:calc(100% - 24px)}
+}
+@media(max-width:410px) {
+  #mainCatalog > article.pa-b103-zero > img {height:200px}
+}
