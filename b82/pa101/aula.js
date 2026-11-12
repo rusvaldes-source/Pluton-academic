@@ -14,7 +14,7 @@ function supportVideos(parent){
  select.setAttribute('aria-label',tr('Elegir video de apoyo','Choose a support video'));
  videos.forEach((item,i)=>select.add(new Option((i+1)+'. '+local(item.title),i)));label.append(select);
  const player=document.createElement('div');parent.append(player);
- function show(){player.querySelectorAll('video').forEach(v=>{try{v.pause()}catch{}v.removeAttribute('src')});player.replaceChildren();const item=videos[Number(select.value)];text('h4',local(item.title),player);const v=document.createElement('video');v.controls=true;v.playsInline=true;v.setAttribute('aria-label',local(item.title));player.append(v);const source=typeof item.video==='string'?item.video:item.video?.[lang];if(source){window.PlutonPrivateMedia?.attach(v,source,code)}else{text('p',tr('Video no disponible en este idioma.','Video unavailable in this language.'),player);v.remove()}}
+ function show(){player.querySelectorAll('video').forEach(v=>{try{v.pause()}catch{}v.removeAttribute('src')});player.replaceChildren();const item=videos[Number(select.value)];text('h4',local(item.title),player);const v=document.createElement('video');v.controls=true;v.playsInline=true;v.setAttribute('aria-label',local(item.title));player.append(v);const source=typeof item.video==='string'?(lang==='es'?item.video:null):item.video?.[lang];if(source){window.PlutonPrivateMedia?.attach(v,source,code)}else{text('p',tr('Video no disponible en este idioma.','Video unavailable in this language.'),player);v.remove()}}
  select.onchange=show;show();return true;
 }
 function paragraphs(value,parent){String(value).split(/\n\s*\n/).filter(Boolean).forEach(p=>text('p',p,parent))}
