@@ -7,14 +7,14 @@ function write(part,value){try{localStorage.setItem(key(part),JSON.stringify(val
 function text(tag,value,parent){const e=document.createElement(tag);e.textContent=value;if(parent)parent.append(e);return e}
 function section(title){const s=document.createElement('section');text('h3',title,s);$('lessonContent').append(s);return s}
 function supportVideos(parent){
- const videos=(course.support_videos||[]).filter(item=>item?.video&&item?.title);
+ const videos=(course.support_videos||[]).filter(item=>item?.title&&(typeof item.video==='string'||(item.video&&typeof item.video==='object')));
  if(!videos.length)return false;
  text('p',tr('Biblioteca de videos de apoyo de Enfermería. Son materiales complementarios; conserva el contenido y las actividades de cada lección.','Nursing support video library. These are supplementary materials; use the written content and activities for each lesson.'),parent);
  const label=text('label',tr('Elegir video de apoyo','Choose a support video'),parent),select=document.createElement('select');select.dataset.supportVideos='';
  select.setAttribute('aria-label',tr('Elegir video de apoyo','Choose a support video'));
  videos.forEach((item,i)=>select.add(new Option((i+1)+'. '+local(item.title),i)));label.append(select);
  const player=document.createElement('div');parent.append(player);
- function show(){player.querySelectorAll('video').forEach(v=>{try{v.pause()}catch{}v.removeAttribute('src')});player.replaceChildren();const item=videos[Number(select.value)];text('h4',local(item.title),player);const v=document.createElement('video');v.controls=true;v.playsInline=true;v.setAttribute('aria-label',local(item.title));player.append(v);window.PlutonPrivateMedia?.attach(v,item.video,code);}
+ function show(){player.querySelectorAll('video').forEach(v=>{try{v.pause()}catch{}v.removeAttribute('src')});player.replaceChildren();const item=videos[Number(select.value)];text('h4',local(item.title),player);const v=document.createElement('video');v.controls=true;v.playsInline=true;v.setAttribute('aria-label',local(item.title));player.append(v);const source=typeof item.video==='string'?item.video:item.video?.[lang];if(source){window.PlutonPrivateMedia?.attach(v,source,code)}else{text('p',tr('Video no disponible en este idioma.','Video unavailable in this language.'),player);v.remove()}}
  select.onchange=show;show();return true;
 }
 function paragraphs(value,parent){String(value).split(/\n\s*\n/).filter(Boolean).forEach(p=>text('p',p,parent))}
